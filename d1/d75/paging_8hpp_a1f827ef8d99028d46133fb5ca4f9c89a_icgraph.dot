@@ -1,0 +1,12 @@
+digraph "get_new_page"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="get_new_page",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Returns a new page in memory for use."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="liballoc_alloc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$da/d45/heap_8hpp.html#ac17a7bc03af86f215d779f1798aed8e8",tooltip="This is the hook into the local system which allocates pages. It accepts an integer parameter which i..."];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="tasks_new",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d2/dbd/tasks_8hpp.html#a65c4921579a6bad97c037bc8db69fb26",tooltip="Creates a new kernel task with a provided entry point, register storage struct, and task state struct..."];
+}

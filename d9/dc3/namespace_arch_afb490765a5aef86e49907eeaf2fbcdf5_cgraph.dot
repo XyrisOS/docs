@@ -1,0 +1,12 @@
+digraph "Arch::criticalRegion"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Arch::criticalRegion",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Arch::interruptsDisable",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d9/dc3/namespace_arch.html#a67338613dbfca6fe14dd88023972fb72",tooltip=" "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Arch::interruptsEnable",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d9/dc3/namespace_arch.html#a4f60a6b7d741009fa04838e0743efebc",tooltip=" "];
+}

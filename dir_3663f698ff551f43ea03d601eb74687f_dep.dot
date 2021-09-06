@@ -1,0 +1,11 @@
+digraph "spkr" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_aa74cb49fdf9b71a4ed99e37b64b0c24 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="dev" fontname="Helvetica", fontsize="10", URL="dir_aa74cb49fdf9b71a4ed99e37b64b0c24.html"]
+  dir_3663f698ff551f43ea03d601eb74687f [shape=box, label="spkr", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_3663f698ff551f43ea03d601eb74687f.html"];
+  }
+  dir_4a04b9aac4eefdd334a78e565f4616f2 [shape=box label="arch" fillcolor="white" style="filled" color="red" URL="dir_4a04b9aac4eefdd334a78e565f4616f2.html"];
+  dir_3663f698ff551f43ea03d601eb74687f->dir_4a04b9aac4eefdd334a78e565f4616f2 [headlabel="1", labeldistance=1.5 headhref="dir_000014_000002.html"];
+}

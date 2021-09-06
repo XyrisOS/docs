@@ -1,0 +1,41 @@
+digraph "ports.cpp"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="ports.cpp",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="CPU port access functions."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="arch/i386/ports.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d8/d9f/ports_8hpp.html",tooltip="Ports header file. Provides inline functions for getting and setting values at different ports...."];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="stdint.h",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node2 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="arch/i386/arch-i386.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$df/d6c/arch-i386_8hpp.html",tooltip="i386 architecture implementation of arch.hpp"];
+  Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="arch/i386/gdt.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$df/d77/gdt_8hpp.html",tooltip="The Global Descriptor Table (GDT) is specific to the IA32 architecture. It contains entries telling t..."];
+  Node5 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="arch/i386/idt.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dd/d12/idt_8hpp.html",tooltip="Interrupt Descriptor Table header."];
+  Node6 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="arch/i386/isr.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d4/ddc/isr_8hpp.html",tooltip="Interrupt Service Routine header."];
+  Node7 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="arch/i386/panic.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$da/d6a/panic_8hpp.html",tooltip=" "];
+  Node8 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="meta/compiler.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d2/d3d/compiler_8hpp.html",tooltip="Compiler meta directives."];
+  Node8 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="arch/i386/timer.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$df/d05/timer_8hpp.html",tooltip=" "];
+  Node10 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="cpuid.h",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node4 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="stddef.h",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node4 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

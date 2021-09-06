@@ -1,0 +1,13 @@
+digraph "page_directory"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="page_directory",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Page directory contains pointers to all of the virtual memory addresses for the page tables along wit..."];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" tables" ,fontname="Helvetica"];
+  Node2 [label="page_table",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d4/dc1/structpage__table.html",tooltip="Page table structure as defined in accordance to the Intel Developer Manual Vol. 3a p...."];
+  Node3 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" pages" ,fontname="Helvetica"];
+  Node3 [label="page_table_entry",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d0/d0c/structpage__table__entry.html",tooltip="Page table entry defined in accordance to the Intel Developer Manual Vol. 3a p. 4-12."];
+  Node4 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" tablesPhysical" ,fontname="Helvetica"];
+  Node4 [label="page_directory_entry",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dd/df9/structpage__directory__entry.html",tooltip="Page directory entry structure as defined in accordance to the Intel Developer Manual Vol...."];
+}

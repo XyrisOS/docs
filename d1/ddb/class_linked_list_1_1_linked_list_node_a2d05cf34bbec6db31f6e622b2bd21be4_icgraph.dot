@@ -1,0 +1,14 @@
+digraph "LinkedList::LinkedListNode::Previous"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="LinkedList::LinkedListNode\l::Previous",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Get the previous node in the linked list."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="LinkedList::LinkedList\l::InsertBefore",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d9/d3d/class_linked_list_1_1_linked_list.html#ad6f051958ade263b0b53b83e53806ebd",tooltip=" "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="LinkedList::LinkedList\l::Remove",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d9/d3d/class_linked_list_1_1_linked_list.html#aece1b84c2f9bac294c6ff87a80378bf5",tooltip=" "];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="LinkedList::LinkedList\l::RemoveBefore",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d9/d3d/class_linked_list_1_1_linked_list.html#a631411e2e77f3407cf964caab293ee24",tooltip=" "];
+}

@@ -1,0 +1,10 @@
+digraph "LinkedList::LinkedList::RemoveAfter"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="LinkedList::LinkedList\l::RemoveAfter",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="LinkedList::LinkedListNode\l::Next",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d1/ddb/class_linked_list_1_1_linked_list_node.html#ae8904177c84fd9d61718eed06a0a8bf7",tooltip="Get the next node in the linked list."];
+}

@@ -1,0 +1,19 @@
+digraph "animation.cpp"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="animation.cpp",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="A simple animation for testing duble FrameBuffer."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="apps/animation.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d6/d5a/animation_8hpp.html",tooltip=" "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="dev/graphics/graphics.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d9/d31/graphics_8hpp.html",tooltip=" "];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="stdint.h",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node3 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="dev/graphics/framebuffer.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d7/d1a/framebuffer_8hpp.html",tooltip=" "];
+  Node5 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="meta/compiler.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d2/d3d/compiler_8hpp.html",tooltip="Compiler meta directives."];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

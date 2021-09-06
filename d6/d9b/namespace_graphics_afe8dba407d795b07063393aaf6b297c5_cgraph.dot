@@ -1,0 +1,14 @@
+digraph "Graphics::resetDoubleBuffer"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Graphics::resetDoubleBuffer",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Fill the backbuffer with '0'."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Graphics::Framebuffer\l::getHeight",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d0/dcb/class_graphics_1_1_framebuffer.html#a1056e91da94b6937b0a6deeb3a859368",tooltip=" "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Graphics::Framebuffer\l::getPitch",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d0/dcb/class_graphics_1_1_framebuffer.html#a4b6694a0728b42872a51eb15a631cd51",tooltip=" "];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="memset",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d5/d24/string_8cpp.html#adc296efabb90c20113d5420e4d162d14",tooltip="Sets the number of bytes in memory at ptr to the value."];
+}

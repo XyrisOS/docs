@@ -1,0 +1,19 @@
+digraph "errno.h"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="errno.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="POSIX error number header."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="errno.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d1/db0/errno_8cpp.html",tooltip=" "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="mutex.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d0/dbb/mutex_8cpp.html",tooltip=" "];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="RingBuffer.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d6/d15/_ring_buffer_8hpp.html",tooltip="A ring buffer is a buffer method where the same memory used to contain data is reused...."];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="rs232.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d4/dc7/rs232_8cpp.html",tooltip=" "];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="semaphore.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$da/d20/semaphore_8cpp.html",tooltip=" "];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="heap.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$de/d90/heap_8cpp.html",tooltip="Liballoc heap implementation."];
+}

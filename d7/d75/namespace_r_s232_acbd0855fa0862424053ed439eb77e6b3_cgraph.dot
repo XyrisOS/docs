@@ -1,0 +1,20 @@
+digraph "RS232::init"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="RS232::init",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Activates the RS232 serial driver."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="RS232::printf",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d7/d75/namespace_r_s232.html#a394b7ac1c601a47c2881a460eb41171a",tooltip="Prints a formatted string to serial output."];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="RS232::vprintf",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d7/d75/namespace_r_s232.html#a04a4582da3c891beaa849f3ce2189975",tooltip="Prints a formatted string to serial output using a va_list of arguments."];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="printf_helper",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d4/d64/printf_8cpp.html#a85a2fff114bf015eba22a1dc163bf1ba",tooltip="Perform all printf operations on the format string using the provided argument list and uses the call..."];
+  Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="strlen",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d5/d24/string_8cpp.html#a2dee044e4e667b5b789b493abd21cfa4",tooltip="Returns the length of a string."];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="register_interrupt\l_handler",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d3/d68/isr_8cpp.html#acc90c1ac3bbcb4fc45ccda7cde4882c7",tooltip=" "];
+  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="writeByte",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d7/d27/ports_8cpp.html#aa89191491445201430ae9a8feb3184d9",tooltip="Writes a byte (8 bits) to the CPU bus at a given port address."];
+}
