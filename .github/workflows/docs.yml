@@ -1,6 +1,7 @@
 name: Build on External Push
 
 on:
+  workflow_dispatch:
   repository_dispatch:
     types: [push_dev]
 
@@ -9,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Install packages
-        run: sudo apt install rsync doxygen-latex 
+        run: sudo apt install rsync doxygen-latex
       - name: Checkout
         uses: actions/checkout@v2
         with:
@@ -18,14 +19,8 @@ jobs:
           submodules: true
       - name: Build Xyris Docs
         run: make docs
-      - name: 'Upload Artifact'
-          uses: actions/upload-artifact@v2
-          with:
-            name: os-image-debug
-            path: docs/build/
       - name: Deploy to Github Pages
         uses: JamesIves/github-pages-deploy-action@4.1.5
         with:
           branch: gh-pages
           folder: docs/build/html
-
