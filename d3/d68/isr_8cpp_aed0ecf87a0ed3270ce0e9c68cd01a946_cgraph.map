@@ -1,0 +1,6 @@
+<map id="isr_install" name="isr_install">
+<area shape="rect" id="node1" title=" " alt="" coords="5,56,91,83"/>
+<area shape="rect" id="node2" href="$d9/d87/idt_8cpp.html#ac026ee8412818db472b59fa2fad922fe" title="Sets the handler function (via address) for a specific IDT." alt="" coords="139,5,241,32"/>
+<area shape="rect" id="node3" href="$d9/d87/idt_8cpp.html#aacb15cc09678bbe5e09fb652c56e884e" title="Calls the lidt instruction and installs the IDT onto the CPU." alt="" coords="153,56,227,83"/>
+<area shape="rect" id="node4" href="$d7/d27/ports_8cpp.html#aa89191491445201430ae9a8feb3184d9" title="Writes a byte (8 bits) to the CPU bus at a given port address." alt="" coords="147,107,233,133"/>
+</map>

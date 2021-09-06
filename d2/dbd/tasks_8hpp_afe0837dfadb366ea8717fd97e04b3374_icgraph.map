@@ -1,0 +1,4 @@
+<map id="tasks_nano_sleep" name="tasks_nano_sleep">
+<area shape="rect" id="node1" title="Sleep for a given period of time (in nanoseconds)." alt="" coords="201,5,340,32"/>
+<area shape="rect" id="node2" href="$dc/da3/namespace_apps.html#aebbc688ed6a7097af1dd858ca0559d4b" title="Starts a task to display number of primes found by find_primes." alt="" coords="5,5,153,32"/>
+</map>

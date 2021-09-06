@@ -1,0 +1,13 @@
+<map id="arch&#45;i386.hpp" name="arch&#45;i386.hpp">
+<area shape="rect" id="node1" title="i386 architecture implementation of arch.hpp" alt="" coords="543,5,653,32"/>
+<area shape="rect" id="node2" href="$df/d77/gdt_8hpp.html" title="The Global Descriptor Table (GDT) is specific to the IA32 architecture. It contains entries telling t..." alt="" coords="5,80,140,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="400,155,471,181"/>
+<area shape="rect" id="node4" href="$dd/d12/idt_8hpp.html" title="Interrupt Descriptor Table header." alt="" coords="215,80,346,107"/>
+<area shape="rect" id="node5" href="$d4/ddc/isr_8hpp.html" title="Interrupt Service Routine header." alt="" coords="371,80,500,107"/>
+<area shape="rect" id="node6" href="$da/d6a/panic_8hpp.html" title=" " alt="" coords="869,80,1018,107"/>
+<area shape="rect" id="node8" href="$d8/d9f/ports_8hpp.html" title="Ports header file. Provides inline functions for getting and setting values at different ports...." alt="" coords="525,80,671,107"/>
+<area shape="rect" id="node9" href="$df/d05/timer_8hpp.html" title=" " alt="" coords="696,80,844,107"/>
+<area shape="rect" id="node10" title=" " alt="" coords="1042,80,1111,107"/>
+<area shape="rect" id="node11" title=" " alt="" coords="1135,80,1210,107"/>
+<area shape="rect" id="node7" href="$d2/d3d/compiler_8hpp.html" title="Compiler meta directives." alt="" coords="871,155,1015,181"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="tasks_exit" name="tasks_exit">
+<area shape="rect" id="node1" title="Exits the current task." alt="" coords="5,5,95,32"/>
+<area shape="rect" id="node2" href="$d7/d75/namespace_r_s232.html#a394b7ac1c601a47c2881a460eb41171a" title="Prints a formatted string to serial output." alt="" coords="143,5,249,32"/>
+<area shape="rect" id="node3" href="$d7/d75/namespace_r_s232.html#a04a4582da3c891beaa849f3ce2189975" title="Prints a formatted string to serial output using a va_list of arguments." alt="" coords="297,5,412,32"/>
+<area shape="rect" id="node4" href="$d4/d64/printf_8cpp.html#a85a2fff114bf015eba22a1dc163bf1ba" title="Perform all printf operations on the format string using the provided argument list and uses the call..." alt="" coords="460,5,565,32"/>
+<area shape="rect" id="node5" href="$d5/d24/string_8cpp.html#a2dee044e4e667b5b789b493abd21cfa4" title="Returns the length of a string." alt="" coords="613,5,672,32"/>
+</map>

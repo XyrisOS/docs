@@ -1,0 +1,8 @@
+<map id="register_interrupt_handler" name="register_interrupt_handler">
+<area shape="rect" id="node1" title=" " alt="" coords="440,49,575,90"/>
+<area shape="rect" id="node2" href="$db/de6/namespace_r_t_c.html#af746e6ba38c234affd66f9d86223ae89" title="Initializes the Real Time Clock driver for the x86_64 architecture." alt="" coords="309,5,383,32"/>
+<area shape="rect" id="node3" href="$d7/d75/namespace_r_s232.html#acbd0855fa0862424053ed439eb77e6b3" title="Activates the RS232 serial driver." alt="" coords="300,56,392,83"/>
+<area shape="rect" id="node4" href="$df/d05/timer_8hpp.html#afe097e48aba5e0fc040df42695ab6b5b" title="Initialize the CPU timer with the given frequency." alt="" coords="303,107,389,133"/>
+<area shape="rect" id="node5" href="$d9/dc3/namespace_arch.html#ae2cfdc55544d6519edd56c09cb7873c4" title=" " alt="" coords="149,107,252,133"/>
+<area shape="rect" id="node6" href="$d2/dd2/entry_8cpp.html#aafd1870c38d36a8eddccb5457857533e" title="This is the Xyris kernel entry point. This function is called directly from the assembly written in b..." alt="" coords="5,107,101,133"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="RingBuffer::IsFull" name="RingBuffer::IsFull">
+<area shape="rect" id="node1" title="Query whether the circular buffer is full." alt="" coords="208,5,340,32"/>
+<area shape="rect" id="node2" href="$d4/d8f/class_ring_buffer.html#a2a644c2dcc95dce638c02419af31ba35" title="Writes a byte into the circular buffer." alt="" coords="5,5,160,32"/>
+</map>

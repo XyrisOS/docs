@@ -1,0 +1,6 @@
+<map id="LinkedList::LinkedList::InsertBefore" name="LinkedList::LinkedList::InsertBefore">
+<area shape="rect" id="node1" title=" " alt="" coords="5,71,165,112"/>
+<area shape="rect" id="node2" href="$d1/ddb/class_linked_list_1_1_linked_list_node.html#a2d05cf34bbec6db31f6e622b2bd21be4" title="Get the previous node in the linked list." alt="" coords="213,5,408,47"/>
+<area shape="rect" id="node3" href="$d1/ddb/class_linked_list_1_1_linked_list_node.html#a172e4bbf50886e47edd82c3844d8c219" title="Set the node&#39;s next pointer." alt="" coords="213,71,408,112"/>
+<area shape="rect" id="node4" href="$d1/ddb/class_linked_list_1_1_linked_list_node.html#aa580eb0aa8117dcd4e794ebc58075008" title="Set the node&#39;s previous pointer." alt="" coords="213,136,408,177"/>
+</map>

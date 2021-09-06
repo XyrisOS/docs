@@ -1,0 +1,6 @@
+<map id="RTC::init" name="RTC::init">
+<area shape="rect" id="node1" title="Initializes the Real Time Clock driver for the x86_64 architecture." alt="" coords="5,64,80,91"/>
+<area shape="rect" id="node2" href="$d7/d27/ports_8cpp.html#aecbddae5080adf82c5938a97695cdc3e" title="Reads a byte (8 bits) off the CPU bus at a given port address." alt="" coords="155,5,236,32"/>
+<area shape="rect" id="node3" href="$d3/d68/isr_8cpp.html#acc90c1ac3bbcb4fc45ccda7cde4882c7" title=" " alt="" coords="128,57,263,98"/>
+<area shape="rect" id="node4" href="$d7/d27/ports_8cpp.html#aa89191491445201430ae9a8feb3184d9" title="Writes a byte (8 bits) to the CPU bus at a given port address." alt="" coords="153,123,238,149"/>
+</map>

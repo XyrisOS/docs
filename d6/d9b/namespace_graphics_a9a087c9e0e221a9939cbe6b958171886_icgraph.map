@@ -1,0 +1,6 @@
+<map id="Graphics::pixel" name="Graphics::pixel">
+<area shape="rect" id="node1" title="Draws a pixel at a given coordinate." alt="" coords="413,31,532,57"/>
+<area shape="rect" id="node2" href="$dc/d65/namespace_graphics_1_1_font.html#ae8d46d81e70d6c7edb55424a5f465f8b" title="Draw the character at the given coordinates in the given color." alt="" coords="208,5,365,32"/>
+<area shape="rect" id="node3" href="$d6/d9b/namespace_graphics.html#a0c60e5c671ea347d63839d16c3712268" title="Draws and fills a rectangle of a given width and height, and color at the provided coordinates." alt="" coords="220,56,353,83"/>
+<area shape="rect" id="node4" href="$dc/da3/namespace_apps.html#a01ace99cc76e0adcf1428dadf9134e3e" title="Run a simple animation." alt="" coords="5,56,160,83"/>
+</map>

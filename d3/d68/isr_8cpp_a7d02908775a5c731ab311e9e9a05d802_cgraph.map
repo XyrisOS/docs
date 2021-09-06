@@ -1,0 +1,4 @@
+<map id="irq_handler" name="irq_handler">
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,100,32"/>
+<area shape="rect" id="node2" href="$d7/d27/ports_8cpp.html#aa89191491445201430ae9a8feb3184d9" title="Writes a byte (8 bits) to the CPU bus at a given port address." alt="" coords="148,5,233,32"/>
+</map>

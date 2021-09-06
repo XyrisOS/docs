@@ -1,0 +1,4 @@
+<map id="tasks_get_self_time" name="tasks_get_self_time">
+<area shape="rect" id="node1" title="Returns the lifetime of the current task (in nanoseconds)." alt="" coords="5,5,159,32"/>
+<area shape="rect" id="node2" href="$d5/d9d/tasks_8cpp.html#a253cc97fa008fce21eeb67d012a9fced" title=" " alt="" coords="207,5,353,32"/>
+</map>

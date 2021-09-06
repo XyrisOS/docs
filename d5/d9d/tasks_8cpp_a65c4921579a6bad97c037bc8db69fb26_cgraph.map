@@ -1,0 +1,5 @@
+<map id="tasks_new" name="tasks_new">
+<area shape="rect" id="node1" title="Creates a new kernel task with a provided entry point, register storage struct, and task state struct..." alt="" coords="5,31,96,57"/>
+<area shape="rect" id="node2" href="$d1/d5e/paging_8cpp.html#a1f827ef8d99028d46133fb5ca4f9c89a" title="Returns a new page in memory for use." alt="" coords="144,5,260,32"/>
+<area shape="rect" id="node3" href="$da/d45/heap_8hpp.html#a1c8580582aae58105f16108d4ec89e9a" title=" " alt="" coords="169,56,235,83"/>
+</map>

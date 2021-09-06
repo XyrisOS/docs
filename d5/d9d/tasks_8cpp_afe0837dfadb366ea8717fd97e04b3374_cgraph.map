@@ -1,0 +1,4 @@
+<map id="tasks_nano_sleep" name="tasks_nano_sleep">
+<area shape="rect" id="node1" title="Sleep for a given period of time (in nanoseconds)." alt="" coords="5,5,144,32"/>
+<area shape="rect" id="node2" href="$d5/d9d/tasks_8cpp.html#a1280b6050df9305a3afc0b8f609e581c" title="Sleeps until the provided absolute time (in nanoseconds)." alt="" coords="192,5,367,32"/>
+</map>

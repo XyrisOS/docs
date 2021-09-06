@@ -1,0 +1,4 @@
+<map id="Graphics::getFramebuffer" name="Graphics::getFramebuffer">
+<area shape="rect" id="node1" title="Get a pointer to the active framebuffer." alt="" coords="161,5,348,32"/>
+<area shape="rect" id="node2" href="$d6/d9b/namespace_graphics.html#a07a66de579f4136325cb15218dd71110" title="Initializes the framebuffer (if available)" alt="" coords="5,5,113,32"/>
+</map>

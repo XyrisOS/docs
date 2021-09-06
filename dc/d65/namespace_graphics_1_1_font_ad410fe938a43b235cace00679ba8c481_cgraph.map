@@ -1,0 +1,9 @@
+<map id="Graphics::Font::Draw" name="Graphics::Font::Draw">
+<area shape="rect" id="node1" title="Draw the character at the given coordinates in the given color." alt="" coords="5,143,163,170"/>
+<area shape="rect" id="node2" href="$d6/d9b/namespace_graphics.html#a9a087c9e0e221a9939cbe6b958171886" title="Draws a pixel at a given coordinate." alt="" coords="211,143,329,170"/>
+<area shape="rect" id="node3" href="$d0/dcb/class_graphics_1_1_framebuffer.html#a5e05c50e2f80ac599bf8a3f44c1ec076" title=" " alt="" coords="377,5,544,47"/>
+<area shape="rect" id="node4" href="$d0/dcb/class_graphics_1_1_framebuffer.html#a73d1c153ef281443e94ae0ad3a4fdf3e" title=" " alt="" coords="377,71,544,112"/>
+<area shape="rect" id="node5" href="$d0/dcb/class_graphics_1_1_framebuffer.html#a4b6694a0728b42872a51eb15a631cd51" title=" " alt="" coords="377,136,544,177"/>
+<area shape="rect" id="node6" href="$d0/dcb/class_graphics_1_1_framebuffer.html#af6383d53d6a69242b6eb8e56067f4d19" title=" " alt="" coords="377,201,544,243"/>
+<area shape="rect" id="node7" href="$d0/dcb/class_graphics_1_1_framebuffer.html#af04917a01257164d99f15d84a1f67e9f" title=" " alt="" coords="377,267,544,308"/>
+</map>

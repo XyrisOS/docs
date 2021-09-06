@@ -1,0 +1,4 @@
+<map id="RS232::write" name="RS232::write">
+<area shape="rect" id="node1" title="Write bytes to the serial device." alt="" coords="5,5,109,32"/>
+<area shape="rect" id="node2" href="$d7/d27/ports_8cpp.html#aa89191491445201430ae9a8feb3184d9" title="Writes a byte (8 bits) to the CPU bus at a given port address." alt="" coords="157,5,243,32"/>
+</map>

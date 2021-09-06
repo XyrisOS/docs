@@ -1,0 +1,6 @@
+<map id="tasks_sync_block" name="tasks_sync_block">
+<area shape="rect" id="node1" title=" " alt="" coords="335,31,471,57"/>
+<area shape="rect" id="node2" href="$d4/de8/class_mutex.html#aa732ae651974555965dcaf9ad9e87882" title="Locks a provided mutex. This call will block if the mutex is already locked." alt="" coords="169,5,271,32"/>
+<area shape="rect" id="node4" href="$d4/dbd/class_semaphore.html#ac3b3b6cd0044efda8fbd2dbd0fb6d995" title="Waiting on a semaphore decrements the count value. When a count value is 0, the semaphore is locked a..." alt="" coords="153,56,287,83"/>
+<area shape="rect" id="node3" href="$d7/d75/namespace_r_s232.html#aa77ae4139fa5feba01809614f595edb6" title="Reads bytes from the serial buffer." alt="" coords="5,5,105,32"/>
+</map>

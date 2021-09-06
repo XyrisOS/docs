@@ -1,0 +1,7 @@
+<map id="Graphics::swap" name="Graphics::swap">
+<area shape="rect" id="node1" title="Swap the data on backbuffer to memory video buffer and show in the screen." alt="" coords="5,111,127,138"/>
+<area shape="rect" id="node2" href="$d0/dcb/class_graphics_1_1_framebuffer.html#af62e5c11c830410a3213e2b17075b158" title=" " alt="" coords="175,5,341,47"/>
+<area shape="rect" id="node3" href="$d0/dcb/class_graphics_1_1_framebuffer.html#a1056e91da94b6937b0a6deeb3a859368" title=" " alt="" coords="175,71,341,112"/>
+<area shape="rect" id="node4" href="$d0/dcb/class_graphics_1_1_framebuffer.html#a4b6694a0728b42872a51eb15a631cd51" title=" " alt="" coords="175,136,341,177"/>
+<area shape="rect" id="node5" href="$d5/d24/string_8cpp.html#a370712322c794e949c996946f2283ea8" title=" " alt="" coords="219,202,297,229"/>
+</map>

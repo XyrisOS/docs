@@ -1,0 +1,5 @@
+<map id="strcat" name="strcat">
+<area shape="rect" id="node1" title="Concatanates source onto destination." alt="" coords="5,31,64,57"/>
+<area shape="rect" id="node2" href="$d5/d24/string_8cpp.html#a370712322c794e949c996946f2283ea8" title=" " alt="" coords="112,5,191,32"/>
+<area shape="rect" id="node3" href="$d5/d24/string_8cpp.html#a2dee044e4e667b5b789b493abd21cfa4" title="Returns the length of a string." alt="" coords="122,56,181,83"/>
+</map>

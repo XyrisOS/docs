@@ -1,0 +1,4 @@
+<map id="RingBuffer::Peek" name="RingBuffer::Peek">
+<area shape="rect" id="node1" title="Grab the latest bytes of data from the buffer without removing it." alt="" coords="5,5,136,32"/>
+<area shape="rect" id="node2" href="$d4/d8f/class_ring_buffer.html#a336d91f1498d76bdc46e58ab4048361c" title="Query whether the circular buffer is empty." alt="" coords="184,5,335,32"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="Apps::spinner" name="Apps::spinner">
+<area shape="rect" id="node1" title="Starts a spinner in an infinite loop." alt="" coords="5,111,116,138"/>
+<area shape="rect" id="node2" href="$d8/db5/namespace_console.html#aa92244db771ad2578967dd9f8fcac912" title=" " alt="" coords="164,111,281,138"/>
+<area shape="rect" id="node3" href="$d6/d9b/namespace_graphics.html#afb7733fe050948fc3a09cd9a87071ffc" title="Swap the data on backbuffer to memory video buffer and show in the screen." alt="" coords="329,111,451,138"/>
+<area shape="rect" id="node4" href="$d0/dcb/class_graphics_1_1_framebuffer.html#af62e5c11c830410a3213e2b17075b158" title=" " alt="" coords="499,5,665,47"/>
+<area shape="rect" id="node5" href="$d0/dcb/class_graphics_1_1_framebuffer.html#a1056e91da94b6937b0a6deeb3a859368" title=" " alt="" coords="499,71,665,112"/>
+<area shape="rect" id="node6" href="$d0/dcb/class_graphics_1_1_framebuffer.html#a4b6694a0728b42872a51eb15a631cd51" title=" " alt="" coords="499,136,665,177"/>
+<area shape="rect" id="node7" href="$d5/d24/string_8cpp.html#a370712322c794e949c996946f2283ea8" title=" " alt="" coords="543,202,621,229"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="readByte" name="readByte">
+<area shape="rect" id="node1" title="Reads a byte (8 bits) off the CPU bus at a given port address." alt="" coords="128,5,209,32"/>
+<area shape="rect" id="node2" href="$db/de6/namespace_r_t_c.html#af746e6ba38c234affd66f9d86223ae89" title="Initializes the Real Time Clock driver for the x86_64 architecture." alt="" coords="5,5,80,32"/>
+</map>

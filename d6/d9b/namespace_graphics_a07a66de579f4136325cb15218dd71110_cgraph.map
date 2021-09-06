@@ -1,0 +1,14 @@
+<map id="Graphics::init" name="Graphics::init">
+<area shape="rect" id="node1" title="Initializes the framebuffer (if available)" alt="" coords="5,225,113,251"/>
+<area shape="rect" id="node2" href="$d0/dcb/class_graphics_1_1_framebuffer.html#af62e5c11c830410a3213e2b17075b158" title=" " alt="" coords="171,5,338,47"/>
+<area shape="rect" id="node3" href="$d6/d9b/namespace_graphics.html#af129f7076fdd0d3a4f109a652a0ba8ec" title="Get a pointer to the active framebuffer." alt="" coords="161,71,348,98"/>
+<area shape="rect" id="node4" href="$d0/dcb/class_graphics_1_1_framebuffer.html#a1056e91da94b6937b0a6deeb3a859368" title=" " alt="" coords="171,123,338,164"/>
+<area shape="rect" id="node5" href="$d0/dcb/class_graphics_1_1_framebuffer.html#a4b6694a0728b42872a51eb15a631cd51" title=" " alt="" coords="171,188,338,229"/>
+<area shape="rect" id="node6" href="$da/d45/heap_8hpp.html#a1c8580582aae58105f16108d4ec89e9a" title=" " alt="" coords="221,254,288,281"/>
+<area shape="rect" id="node7" href="$d1/d5e/paging_8cpp.html#aba5d81fb70dde3b40c4bb71b0c9cbe1d" title=" " alt="" coords="186,305,323,331"/>
+<area shape="rect" id="node8" href="$d5/d24/string_8cpp.html#a370712322c794e949c996946f2283ea8" title=" " alt="" coords="215,355,294,382"/>
+<area shape="rect" id="node9" href="$d7/d75/namespace_r_s232.html#a394b7ac1c601a47c2881a460eb41171a" title="Prints a formatted string to serial output." alt="" coords="201,406,308,433"/>
+<area shape="rect" id="node10" href="$d7/d75/namespace_r_s232.html#a04a4582da3c891beaa849f3ce2189975" title="Prints a formatted string to serial output using a va_list of arguments." alt="" coords="396,406,511,433"/>
+<area shape="rect" id="node11" href="$d4/d64/printf_8cpp.html#a85a2fff114bf015eba22a1dc163bf1ba" title="Perform all printf operations on the format string using the provided argument list and uses the call..." alt="" coords="559,406,664,433"/>
+<area shape="rect" id="node12" href="$d5/d24/string_8cpp.html#a2dee044e4e667b5b789b493abd21cfa4" title="Returns the length of a string." alt="" coords="712,406,771,433"/>
+</map>

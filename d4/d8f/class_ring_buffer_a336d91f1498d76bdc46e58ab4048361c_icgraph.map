@@ -1,0 +1,5 @@
+<map id="RingBuffer::IsEmpty" name="RingBuffer::IsEmpty">
+<area shape="rect" id="node1" title="Query whether the circular buffer is empty." alt="" coords="209,31,360,57"/>
+<area shape="rect" id="node2" href="$d4/d8f/class_ring_buffer.html#a39af34442e82d4cd5694f8a460e4a045" title="Dequeues from the circular buffer and writes the value to the data pointer." alt="" coords="5,5,161,32"/>
+<area shape="rect" id="node3" href="$d4/d8f/class_ring_buffer.html#a7a71ef8d0f13f03308eaba134a480da3" title="Grab the latest bytes of data from the buffer without removing it." alt="" coords="18,56,149,83"/>
+</map>

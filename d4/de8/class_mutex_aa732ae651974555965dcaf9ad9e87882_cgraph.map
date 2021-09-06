@@ -1,0 +1,4 @@
+<map id="Mutex::Lock" name="Mutex::Lock">
+<area shape="rect" id="node1" title="Locks a provided mutex. This call will block if the mutex is already locked." alt="" coords="5,5,107,32"/>
+<area shape="rect" id="node2" href="$d5/d9d/tasks_8cpp.html#a2432c50b4d4264b5d5295bdb4f19e0d2" title=" " alt="" coords="155,5,291,32"/>
+</map>

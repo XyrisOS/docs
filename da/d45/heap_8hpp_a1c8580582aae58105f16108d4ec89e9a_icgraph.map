@@ -1,0 +1,7 @@
+<map id="malloc" name="malloc">
+<area shape="rect" id="node1" title=" " alt="" coords="172,81,239,108"/>
+<area shape="rect" id="node2" href="$d6/d9b/namespace_graphics.html#a07a66de579f4136325cb15218dd71110" title="Initializes the framebuffer (if available)" alt="" coords="11,5,119,32"/>
+<area shape="rect" id="node3" href="$d1/dd1/cxx_8cpp.html#a205ed048fdf5259c2e8e0cb60ee8f719" title=" " alt="" coords="11,56,119,83"/>
+<area shape="rect" id="node4" href="$d1/dd1/cxx_8cpp.html#a63ce4f64887b9307317aee5baae6b18f" title=" " alt="" coords="5,107,124,133"/>
+<area shape="rect" id="node5" href="$d2/dbd/tasks_8hpp.html#a65c4921579a6bad97c037bc8db69fb26" title="Creates a new kernel task with a provided entry point, register storage struct, and task state struct..." alt="" coords="19,157,110,184"/>
+</map>
