@@ -16,6 +16,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
         with:
+          ref: dev
+          repository: XyrisOS/xyris
           submodules: true
       - name: Build Xyris Docs
         run: make docs
