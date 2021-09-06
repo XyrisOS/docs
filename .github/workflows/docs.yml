@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Install packages
-        run: sudo apt install rsync doxygen-latex
+        run: sudo apt install rsync doxygen-latex graphviz
       - name: Checkout
         uses: actions/checkout@v2
         with:
