@@ -1,10 +1,7 @@
 <map id="gcc.cpp" name="gcc.cpp">
-<area shape="rect" id="node1" title=" " alt="" coords="187,5,258,32"/>
-<area shape="rect" id="node2" href="$d7/d9c/_arch_8hpp.html" title="Computer architecture initialization definitions." alt="" coords="167,80,278,107"/>
+<area shape="rect" id="node1" title=" " alt="" coords="141,5,211,32"/>
+<area shape="rect" id="node2" href="$d7/d9c/_arch_8hpp.html" title="Computer architecture initialization definitions." alt="" coords="121,80,231,107"/>
 <area shape="rect" id="node3" title=" " alt="" coords="5,155,80,181"/>
-<area shape="rect" id="node4" title=" " alt="" coords="502,304,573,331"/>
-<area shape="rect" id="node5" href="$d2/d1f/_handoff_8hpp.html" title=" " alt="" coords="271,155,406,181"/>
-<area shape="rect" id="node8" href="$d2/d3d/compiler_8hpp.html" title="Compiler meta directives." alt="" coords="171,304,315,331"/>
-<area shape="rect" id="node6" title=" " alt="" coords="155,229,237,256"/>
-<area shape="rect" id="node7" href="$d7/d1a/framebuffer_8hpp.html" title=" " alt="" coords="261,229,475,256"/>
+<area shape="rect" id="node4" title=" " alt="" coords="273,155,343,181"/>
+<area shape="rect" id="node5" href="$d2/d3d/compiler_8hpp.html" title="Compiler meta directives." alt="" coords="104,155,248,181"/>
 </map>

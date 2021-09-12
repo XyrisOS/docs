@@ -101,199 +101,197 @@ $(document).ready(function(){initNavTree('dd/d53/font_8cpp_source.html','../../'
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="../../df/d50/font_8hpp.html">dev/graphics/font.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="../../d9/d31/graphics_8hpp.html">dev/graphics/graphics.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="../../d2/daf/stdio_8hpp.html">lib/stdio.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="../../d6/d9b/namespace_graphics.html">   18</a></span>&#160;<span class="keyword">namespace </span><a class="code" href="../../d6/d9b/namespace_graphics.html">Graphics</a> {</div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="../../dc/d65/namespace_graphics_1_1_font.html">   19</a></span>&#160;<span class="keyword">namespace </span>Font {</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="../../dd/d53/font_8cpp.html#a87709e147f3177d8f6bb38c411548a3f">   21</a></span>&#160;<span class="preprocessor">#define FONT_COUNT 128</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">// *Huge* shout out to SkiftOS for providing this font. We tried to</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">// use bdf2c to get a custom font, but because of licensing issues we</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">// had to unfortunately abandon the idea. Fonts are a pain, so go check</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">// out the work that SkiftOS has done. They deserve it.</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">static</span> uint8_t fontData[<a class="code" href="../../dd/d53/font_8cpp.html#a87709e147f3177d8f6bb38c411548a3f">FONT_COUNT</a>][<a class="code" href="../../df/d50/font_8hpp.html#a7b2e9cc063e140c50b67a4f224988a45">FONT_WIDTH</a>] = {</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }, <span class="comment">// U+0000 (null)</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }, <span class="comment">// U+0001</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }, <span class="comment">// U+0002</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }, <span class="comment">// U+0003</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }, <span class="comment">// U+0004</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }, <span class="comment">// U+0005</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }, <span class="comment">// U+0006</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }, <span class="comment">// U+0007</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }, <span class="comment">// U+0008</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }, <span class="comment">// U+0009</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }, <span class="comment">// U+000A</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }, <span class="comment">// U+000B</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }, <span class="comment">// U+000C</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }, <span class="comment">// U+000D</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }, <span class="comment">// U+000E</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }, <span class="comment">// U+000F</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }, <span class="comment">// U+0010</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }, <span class="comment">// U+0011</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }, <span class="comment">// U+0012</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }, <span class="comment">// U+0013</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }, <span class="comment">// U+0014</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }, <span class="comment">// U+0015</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }, <span class="comment">// U+0016</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }, <span class="comment">// U+0017</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }, <span class="comment">// U+0018</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }, <span class="comment">// U+0019</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }, <span class="comment">// U+001A</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }, <span class="comment">// U+001B</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }, <span class="comment">// U+001C</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }, <span class="comment">// U+001D</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }, <span class="comment">// U+001E</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }, <span class="comment">// U+001F</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }, <span class="comment">// U+0020 (space)</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    { 0x18, 0x3C, 0x3C, 0x18, 0x18, 0x00, 0x18, 0x00 }, <span class="comment">// U+0021 (!)</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    { 0x36, 0x36, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }, <span class="comment">// U+0022 (&quot;)</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    { 0x36, 0x36, 0x7F, 0x36, 0x7F, 0x36, 0x36, 0x00 }, <span class="comment">// U+0023 (#)</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    { 0x0C, 0x3E, 0x03, 0x1E, 0x30, 0x1F, 0x0C, 0x00 }, <span class="comment">// U+0024 ($)</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    { 0x00, 0x63, 0x33, 0x18, 0x0C, 0x66, 0x63, 0x00 }, <span class="comment">// U+0025 (%)</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    { 0x1C, 0x36, 0x1C, 0x6E, 0x3B, 0x33, 0x6E, 0x00 }, <span class="comment">// U+0026 (&amp;)</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    { 0x06, 0x06, 0x03, 0x00, 0x00, 0x00, 0x00, 0x00 }, <span class="comment">// U+0027 (&#39;)</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    { 0x18, 0x0C, 0x06, 0x06, 0x06, 0x0C, 0x18, 0x00 }, <span class="comment">// U+0028 (()</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    { 0x06, 0x0C, 0x18, 0x18, 0x18, 0x0C, 0x06, 0x00 }, <span class="comment">// U+0029 ())</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    { 0x00, 0x66, 0x3C, 0xFF, 0x3C, 0x66, 0x00, 0x00 }, <span class="comment">// U+002A (*)</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    { 0x00, 0x0C, 0x0C, 0x3F, 0x0C, 0x0C, 0x00, 0x00 }, <span class="comment">// U+002B (+)</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    { 0x00, 0x00, 0x00, 0x00, 0x00, 0x0C, 0x0C, 0x06 }, <span class="comment">// U+002C (,)</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    { 0x00, 0x00, 0x00, 0x3F, 0x00, 0x00, 0x00, 0x00 }, <span class="comment">// U+002D (-)</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    { 0x00, 0x00, 0x00, 0x00, 0x00, 0x0C, 0x0C, 0x00 }, <span class="comment">// U+002E (.)</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    { 0x60, 0x30, 0x18, 0x0C, 0x06, 0x03, 0x01, 0x00 }, <span class="comment">// U+002F (/)</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    { 0x3E, 0x63, 0x73, 0x7B, 0x6F, 0x67, 0x3E, 0x00 }, <span class="comment">// U+0030 (0)</span></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    { 0x0C, 0x0E, 0x0C, 0x0C, 0x0C, 0x0C, 0x3F, 0x00 }, <span class="comment">// U+0031 (1)</span></div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    { 0x1E, 0x33, 0x30, 0x1C, 0x06, 0x33, 0x3F, 0x00 }, <span class="comment">// U+0032 (2)</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    { 0x1E, 0x33, 0x30, 0x1C, 0x30, 0x33, 0x1E, 0x00 }, <span class="comment">// U+0033 (3)</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    { 0x38, 0x3C, 0x36, 0x33, 0x7F, 0x30, 0x78, 0x00 }, <span class="comment">// U+0034 (4)</span></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    { 0x3F, 0x03, 0x1F, 0x30, 0x30, 0x33, 0x1E, 0x00 }, <span class="comment">// U+0035 (5)</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    { 0x1C, 0x06, 0x03, 0x1F, 0x33, 0x33, 0x1E, 0x00 }, <span class="comment">// U+0036 (6)</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    { 0x3F, 0x33, 0x30, 0x18, 0x0C, 0x0C, 0x0C, 0x00 }, <span class="comment">// U+0037 (7)</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    { 0x1E, 0x33, 0x33, 0x1E, 0x33, 0x33, 0x1E, 0x00 }, <span class="comment">// U+0038 (8)</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    { 0x1E, 0x33, 0x33, 0x3E, 0x30, 0x18, 0x0E, 0x00 }, <span class="comment">// U+0039 (9)</span></div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    { 0x00, 0x0C, 0x0C, 0x00, 0x00, 0x0C, 0x0C, 0x00 }, <span class="comment">// U+003A (:)</span></div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    { 0x00, 0x0C, 0x0C, 0x00, 0x00, 0x0C, 0x0C, 0x06 }, <span class="comment">// U+003B (;)</span></div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    { 0x18, 0x0C, 0x06, 0x03, 0x06, 0x0C, 0x18, 0x00 }, <span class="comment">// U+003C (&lt;)</span></div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    { 0x00, 0x00, 0x3F, 0x00, 0x00, 0x3F, 0x00, 0x00 }, <span class="comment">// U+003D (=)</span></div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    { 0x06, 0x0C, 0x18, 0x30, 0x18, 0x0C, 0x06, 0x00 }, <span class="comment">// U+003E (&gt;)</span></div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    { 0x1E, 0x33, 0x30, 0x18, 0x0C, 0x00, 0x0C, 0x00 }, <span class="comment">// U+003F (?)</span></div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    { 0x3E, 0x63, 0x7B, 0x7B, 0x7B, 0x03, 0x1E, 0x00 }, <span class="comment">// U+0040 (@)</span></div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    { 0x0C, 0x1E, 0x33, 0x33, 0x3F, 0x33, 0x33, 0x00 }, <span class="comment">// U+0041 (A)</span></div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    { 0x3F, 0x66, 0x66, 0x3E, 0x66, 0x66, 0x3F, 0x00 }, <span class="comment">// U+0042 (B)</span></div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    { 0x3C, 0x66, 0x03, 0x03, 0x03, 0x66, 0x3C, 0x00 }, <span class="comment">// U+0043 (C)</span></div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    { 0x1F, 0x36, 0x66, 0x66, 0x66, 0x36, 0x1F, 0x00 }, <span class="comment">// U+0044 (D)</span></div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    { 0x7F, 0x46, 0x16, 0x1E, 0x16, 0x46, 0x7F, 0x00 }, <span class="comment">// U+0045 (E)</span></div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    { 0x7F, 0x46, 0x16, 0x1E, 0x16, 0x06, 0x0F, 0x00 }, <span class="comment">// U+0046 (F)</span></div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    { 0x3C, 0x66, 0x03, 0x03, 0x73, 0x66, 0x7C, 0x00 }, <span class="comment">// U+0047 (G)</span></div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    { 0x33, 0x33, 0x33, 0x3F, 0x33, 0x33, 0x33, 0x00 }, <span class="comment">// U+0048 (H)</span></div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    { 0x1E, 0x0C, 0x0C, 0x0C, 0x0C, 0x0C, 0x1E, 0x00 }, <span class="comment">// U+0049 (I)</span></div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    { 0x78, 0x30, 0x30, 0x30, 0x33, 0x33, 0x1E, 0x00 }, <span class="comment">// U+004A (J)</span></div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    { 0x67, 0x66, 0x36, 0x1E, 0x36, 0x66, 0x67, 0x00 }, <span class="comment">// U+004B (K)</span></div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    { 0x0F, 0x06, 0x06, 0x06, 0x46, 0x66, 0x7F, 0x00 }, <span class="comment">// U+004C (L)</span></div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    { 0x63, 0x77, 0x7F, 0x7F, 0x6B, 0x63, 0x63, 0x00 }, <span class="comment">// U+004D (M)</span></div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    { 0x63, 0x67, 0x6F, 0x7B, 0x73, 0x63, 0x63, 0x00 }, <span class="comment">// U+004E (N)</span></div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    { 0x1C, 0x36, 0x63, 0x63, 0x63, 0x36, 0x1C, 0x00 }, <span class="comment">// U+004F (O)</span></div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    { 0x3F, 0x66, 0x66, 0x3E, 0x06, 0x06, 0x0F, 0x00 }, <span class="comment">// U+0050 (P)</span></div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    { 0x1E, 0x33, 0x33, 0x33, 0x3B, 0x1E, 0x38, 0x00 }, <span class="comment">// U+0051 (Q)</span></div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    { 0x3F, 0x66, 0x66, 0x3E, 0x36, 0x66, 0x67, 0x00 }, <span class="comment">// U+0052 (R)</span></div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    { 0x1E, 0x33, 0x07, 0x0E, 0x38, 0x33, 0x1E, 0x00 }, <span class="comment">// U+0053 (S)</span></div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    { 0x3F, 0x2D, 0x0C, 0x0C, 0x0C, 0x0C, 0x1E, 0x00 }, <span class="comment">// U+0054 (T)</span></div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    { 0x33, 0x33, 0x33, 0x33, 0x33, 0x33, 0x3F, 0x00 }, <span class="comment">// U+0055 (U)</span></div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    { 0x33, 0x33, 0x33, 0x33, 0x33, 0x1E, 0x0C, 0x00 }, <span class="comment">// U+0056 (V)</span></div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    { 0x63, 0x63, 0x63, 0x6B, 0x7F, 0x77, 0x63, 0x00 }, <span class="comment">// U+0057 (W)</span></div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    { 0x63, 0x63, 0x36, 0x1C, 0x1C, 0x36, 0x63, 0x00 }, <span class="comment">// U+0058 (X)</span></div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    { 0x33, 0x33, 0x33, 0x1E, 0x0C, 0x0C, 0x1E, 0x00 }, <span class="comment">// U+0059 (Y)</span></div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    { 0x7F, 0x63, 0x31, 0x18, 0x4C, 0x66, 0x7F, 0x00 }, <span class="comment">// U+005A (Z)</span></div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    { 0x1E, 0x06, 0x06, 0x06, 0x06, 0x06, 0x1E, 0x00 }, <span class="comment">// U+005B ([)</span></div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    { 0x03, 0x06, 0x0C, 0x18, 0x30, 0x60, 0x40, 0x00 }, <span class="comment">// U+005C (\)</span></div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    { 0x1E, 0x18, 0x18, 0x18, 0x18, 0x18, 0x1E, 0x00 }, <span class="comment">// U+005D (])</span></div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    { 0x08, 0x1C, 0x36, 0x63, 0x00, 0x00, 0x00, 0x00 }, <span class="comment">// U+005E (^)</span></div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xFF }, <span class="comment">// U+005F (_)</span></div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    { 0x0C, 0x0C, 0x18, 0x00, 0x00, 0x00, 0x00, 0x00 }, <span class="comment">// U+0060 (`)</span></div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    { 0x00, 0x00, 0x1E, 0x30, 0x3E, 0x33, 0x6E, 0x00 }, <span class="comment">// U+0061 (a)</span></div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    { 0x07, 0x06, 0x06, 0x3E, 0x66, 0x66, 0x3B, 0x00 }, <span class="comment">// U+0062 (b)</span></div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    { 0x00, 0x00, 0x1E, 0x33, 0x03, 0x33, 0x1E, 0x00 }, <span class="comment">// U+0063 (c)</span></div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    { 0x38, 0x30, 0x30, 0x3e, 0x33, 0x33, 0x6E, 0x00 }, <span class="comment">// U+0064 (d)</span></div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    { 0x00, 0x00, 0x1E, 0x33, 0x3f, 0x03, 0x1E, 0x00 }, <span class="comment">// U+0065 (e)</span></div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    { 0x1C, 0x36, 0x06, 0x0f, 0x06, 0x06, 0x0F, 0x00 }, <span class="comment">// U+0066 (f)</span></div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    { 0x00, 0x00, 0x6E, 0x33, 0x33, 0x3E, 0x30, 0x1F }, <span class="comment">// U+0067 (g)</span></div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    { 0x07, 0x06, 0x36, 0x6E, 0x66, 0x66, 0x67, 0x00 }, <span class="comment">// U+0068 (h)</span></div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    { 0x0C, 0x00, 0x0E, 0x0C, 0x0C, 0x0C, 0x1E, 0x00 }, <span class="comment">// U+0069 (i)</span></div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    { 0x30, 0x00, 0x30, 0x30, 0x30, 0x33, 0x33, 0x1E }, <span class="comment">// U+006A (j)</span></div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    { 0x07, 0x06, 0x66, 0x36, 0x1E, 0x36, 0x67, 0x00 }, <span class="comment">// U+006B (k)</span></div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    { 0x0E, 0x0C, 0x0C, 0x0C, 0x0C, 0x0C, 0x1E, 0x00 }, <span class="comment">// U+006C (l)</span></div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    { 0x00, 0x00, 0x33, 0x7F, 0x7F, 0x6B, 0x63, 0x00 }, <span class="comment">// U+006D (m)</span></div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    { 0x00, 0x00, 0x1F, 0x33, 0x33, 0x33, 0x33, 0x00 }, <span class="comment">// U+006E (n)</span></div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    { 0x00, 0x00, 0x1E, 0x33, 0x33, 0x33, 0x1E, 0x00 }, <span class="comment">// U+006F (o)</span></div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    { 0x00, 0x00, 0x3B, 0x66, 0x66, 0x3E, 0x06, 0x0F }, <span class="comment">// U+0070 (p)</span></div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    { 0x00, 0x00, 0x6E, 0x33, 0x33, 0x3E, 0x30, 0x78 }, <span class="comment">// U+0071 (q)</span></div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    { 0x00, 0x00, 0x3B, 0x6E, 0x66, 0x06, 0x0F, 0x00 }, <span class="comment">// U+0072 (r)</span></div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    { 0x00, 0x00, 0x3E, 0x03, 0x1E, 0x30, 0x1F, 0x00 }, <span class="comment">// U+0073 (s)</span></div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    { 0x08, 0x0C, 0x3E, 0x0C, 0x0C, 0x2C, 0x18, 0x00 }, <span class="comment">// U+0074 (t)</span></div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    { 0x00, 0x00, 0x33, 0x33, 0x33, 0x33, 0x6E, 0x00 }, <span class="comment">// U+0075 (u)</span></div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    { 0x00, 0x00, 0x33, 0x33, 0x33, 0x1E, 0x0C, 0x00 }, <span class="comment">// U+0076 (v)</span></div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    { 0x00, 0x00, 0x63, 0x6B, 0x7F, 0x7F, 0x36, 0x00 }, <span class="comment">// U+0077 (w)</span></div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    { 0x00, 0x00, 0x63, 0x36, 0x1C, 0x36, 0x63, 0x00 }, <span class="comment">// U+0078 (x)</span></div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    { 0x00, 0x00, 0x33, 0x33, 0x33, 0x3E, 0x30, 0x1F }, <span class="comment">// U+0079 (y)</span></div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    { 0x00, 0x00, 0x3F, 0x19, 0x0C, 0x26, 0x3F, 0x00 }, <span class="comment">// U+007A (z)</span></div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    { 0x38, 0x0C, 0x0C, 0x07, 0x0C, 0x0C, 0x38, 0x00 }, <span class="comment">// U+007B ({)</span></div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    { 0x18, 0x18, 0x18, 0x00, 0x18, 0x18, 0x18, 0x00 }, <span class="comment">// U+007C (|)</span></div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    { 0x07, 0x0C, 0x0C, 0x38, 0x0C, 0x0C, 0x07, 0x00 }, <span class="comment">// U+007D (})</span></div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    { 0x6E, 0x3B, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }, <span class="comment">// U+007E (~)</span></div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }  <span class="comment">// U+007F</span></div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;};</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160; </div>
-<div class="line"><a name="l00158"></a><span class="lineno"><a class="line" href="../../dc/d65/namespace_graphics_1_1_font.html#ae8d46d81e70d6c7edb55424a5f465f8b">  158</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../dc/d65/namespace_graphics_1_1_font.html#ae8d46d81e70d6c7edb55424a5f465f8b">Draw</a>(<span class="keywordtype">char</span> c, uint32_t x, uint32_t y, uint32_t fore)</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;{</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    <span class="comment">// Convert screen coordinates to pixel coordinates</span></div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    x *= <a class="code" href="../../df/d50/font_8hpp.html#a7b2e9cc063e140c50b67a4f224988a45">FONT_WIDTH</a>;</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    y *= <a class="code" href="../../df/d50/font_8hpp.html#a33f4fac49f2a5e27e2857eb27f054510">FONT_HEIGHT</a>;</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <span class="comment">// Draw the font glyph</span></div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    uint8_t fp = (uint8_t)c;</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> fy = 0; fy &lt;= <a class="code" href="../../df/d50/font_8hpp.html#a33f4fac49f2a5e27e2857eb27f054510">FONT_HEIGHT</a>; fy++) {</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> fx = 0; fx &lt;= <a class="code" href="../../df/d50/font_8hpp.html#a7b2e9cc063e140c50b67a4f224988a45">FONT_WIDTH</a>; fx++) {</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;            <span class="keywordflow">if</span> (fx != <a class="code" href="../../df/d50/font_8hpp.html#a7b2e9cc063e140c50b67a4f224988a45">FONT_WIDTH</a> &amp;&amp; fy != <a class="code" href="../../df/d50/font_8hpp.html#a33f4fac49f2a5e27e2857eb27f054510">FONT_HEIGHT</a> &amp;&amp; (fontData[fp][fy] &amp; (1 &lt;&lt; fx))) {</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;                <span class="comment">// Current position is part of the font glyph.</span></div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;                <a class="code" href="../../d6/d9b/namespace_graphics.html#a9a087c9e0e221a9939cbe6b958171886">pixel</a>(x + fx, y + fy, fore);</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;            }</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        }</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    }</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;}</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160; </div>
-<div class="line"><a name="l00175"></a><span class="lineno"><a class="line" href="../../dc/d65/namespace_graphics_1_1_font.html#ad410fe938a43b235cace00679ba8c481">  175</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../dc/d65/namespace_graphics_1_1_font.html#ae8d46d81e70d6c7edb55424a5f465f8b">Draw</a>(<span class="keywordtype">char</span> c, uint32_t x, uint32_t y, uint32_t fore, uint32_t back)</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;{</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    <span class="comment">// Convert screen coordinates to pixel coordinates</span></div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    x *= <a class="code" href="../../df/d50/font_8hpp.html#a7b2e9cc063e140c50b67a4f224988a45">FONT_WIDTH</a>;</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    y *= <a class="code" href="../../df/d50/font_8hpp.html#a33f4fac49f2a5e27e2857eb27f054510">FONT_HEIGHT</a>;</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    <span class="comment">// Draw the font glyph</span></div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    uint8_t fp = (uint8_t)c;</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> fy = 0; fy &lt; 9; fy++) {</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> fx = 0; fx &lt; 9; fx++) {</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;            <span class="keywordflow">if</span> (fx != <a class="code" href="../../df/d50/font_8hpp.html#a7b2e9cc063e140c50b67a4f224988a45">FONT_WIDTH</a> &amp;&amp; fy != <a class="code" href="../../df/d50/font_8hpp.html#a33f4fac49f2a5e27e2857eb27f054510">FONT_HEIGHT</a> &amp;&amp; (fontData[fp][fy] &amp; (1 &lt;&lt; fx))) {</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;                <span class="comment">// Current position is part of the font glyph.</span></div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;                <a class="code" href="../../d6/d9b/namespace_graphics.html#a9a087c9e0e221a9939cbe6b958171886">pixel</a>(x + fx, y + fy, fore);</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;            } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;                <span class="comment">// Not part of the glyph. Draw background color.</span></div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;                <a class="code" href="../../d6/d9b/namespace_graphics.html#a9a087c9e0e221a9939cbe6b958171886">pixel</a>(x + fx, y + fy, back);</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;            }</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;        }</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    }</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;}</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160; </div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;} <span class="comment">// !font</span></div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;} <span class="comment">// !fb</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="../../d6/d9b/namespace_graphics.html">   17</a></span>&#160;<span class="keyword">namespace </span><a class="code" href="../../d6/d9b/namespace_graphics.html">Graphics</a> {</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="../../dc/d65/namespace_graphics_1_1_font.html">   18</a></span>&#160;<span class="keyword">namespace </span>Font {</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="../../dd/d53/font_8cpp.html#a87709e147f3177d8f6bb38c411548a3f">   20</a></span>&#160;<span class="preprocessor">#define FONT_COUNT 128</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">// *Huge* shout out to SkiftOS for providing this font. We tried to</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">// use bdf2c to get a custom font, but because of licensing issues we</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">// had to unfortunately abandon the idea. Fonts are a pain, so go check</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">// out the work that SkiftOS has done. They deserve it.</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">static</span> uint8_t fontData[<a class="code" href="../../dd/d53/font_8cpp.html#a87709e147f3177d8f6bb38c411548a3f">FONT_COUNT</a>][<a class="code" href="../../df/d50/font_8hpp.html#a7b2e9cc063e140c50b67a4f224988a45">FONT_WIDTH</a>] = {</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }, <span class="comment">// U+0000 (null)</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }, <span class="comment">// U+0001</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }, <span class="comment">// U+0002</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }, <span class="comment">// U+0003</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }, <span class="comment">// U+0004</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }, <span class="comment">// U+0005</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }, <span class="comment">// U+0006</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }, <span class="comment">// U+0007</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }, <span class="comment">// U+0008</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }, <span class="comment">// U+0009</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }, <span class="comment">// U+000A</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }, <span class="comment">// U+000B</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }, <span class="comment">// U+000C</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }, <span class="comment">// U+000D</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }, <span class="comment">// U+000E</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }, <span class="comment">// U+000F</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }, <span class="comment">// U+0010</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }, <span class="comment">// U+0011</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }, <span class="comment">// U+0012</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }, <span class="comment">// U+0013</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }, <span class="comment">// U+0014</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }, <span class="comment">// U+0015</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }, <span class="comment">// U+0016</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }, <span class="comment">// U+0017</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }, <span class="comment">// U+0018</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }, <span class="comment">// U+0019</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }, <span class="comment">// U+001A</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }, <span class="comment">// U+001B</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }, <span class="comment">// U+001C</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }, <span class="comment">// U+001D</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }, <span class="comment">// U+001E</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }, <span class="comment">// U+001F</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }, <span class="comment">// U+0020 (space)</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    { 0x18, 0x3C, 0x3C, 0x18, 0x18, 0x00, 0x18, 0x00 }, <span class="comment">// U+0021 (!)</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    { 0x36, 0x36, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }, <span class="comment">// U+0022 (&quot;)</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    { 0x36, 0x36, 0x7F, 0x36, 0x7F, 0x36, 0x36, 0x00 }, <span class="comment">// U+0023 (#)</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    { 0x0C, 0x3E, 0x03, 0x1E, 0x30, 0x1F, 0x0C, 0x00 }, <span class="comment">// U+0024 ($)</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    { 0x00, 0x63, 0x33, 0x18, 0x0C, 0x66, 0x63, 0x00 }, <span class="comment">// U+0025 (%)</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    { 0x1C, 0x36, 0x1C, 0x6E, 0x3B, 0x33, 0x6E, 0x00 }, <span class="comment">// U+0026 (&amp;)</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    { 0x06, 0x06, 0x03, 0x00, 0x00, 0x00, 0x00, 0x00 }, <span class="comment">// U+0027 (&#39;)</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    { 0x18, 0x0C, 0x06, 0x06, 0x06, 0x0C, 0x18, 0x00 }, <span class="comment">// U+0028 (()</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    { 0x06, 0x0C, 0x18, 0x18, 0x18, 0x0C, 0x06, 0x00 }, <span class="comment">// U+0029 ())</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    { 0x00, 0x66, 0x3C, 0xFF, 0x3C, 0x66, 0x00, 0x00 }, <span class="comment">// U+002A (*)</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    { 0x00, 0x0C, 0x0C, 0x3F, 0x0C, 0x0C, 0x00, 0x00 }, <span class="comment">// U+002B (+)</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    { 0x00, 0x00, 0x00, 0x00, 0x00, 0x0C, 0x0C, 0x06 }, <span class="comment">// U+002C (,)</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    { 0x00, 0x00, 0x00, 0x3F, 0x00, 0x00, 0x00, 0x00 }, <span class="comment">// U+002D (-)</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    { 0x00, 0x00, 0x00, 0x00, 0x00, 0x0C, 0x0C, 0x00 }, <span class="comment">// U+002E (.)</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    { 0x60, 0x30, 0x18, 0x0C, 0x06, 0x03, 0x01, 0x00 }, <span class="comment">// U+002F (/)</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    { 0x3E, 0x63, 0x73, 0x7B, 0x6F, 0x67, 0x3E, 0x00 }, <span class="comment">// U+0030 (0)</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    { 0x0C, 0x0E, 0x0C, 0x0C, 0x0C, 0x0C, 0x3F, 0x00 }, <span class="comment">// U+0031 (1)</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    { 0x1E, 0x33, 0x30, 0x1C, 0x06, 0x33, 0x3F, 0x00 }, <span class="comment">// U+0032 (2)</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    { 0x1E, 0x33, 0x30, 0x1C, 0x30, 0x33, 0x1E, 0x00 }, <span class="comment">// U+0033 (3)</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    { 0x38, 0x3C, 0x36, 0x33, 0x7F, 0x30, 0x78, 0x00 }, <span class="comment">// U+0034 (4)</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    { 0x3F, 0x03, 0x1F, 0x30, 0x30, 0x33, 0x1E, 0x00 }, <span class="comment">// U+0035 (5)</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    { 0x1C, 0x06, 0x03, 0x1F, 0x33, 0x33, 0x1E, 0x00 }, <span class="comment">// U+0036 (6)</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    { 0x3F, 0x33, 0x30, 0x18, 0x0C, 0x0C, 0x0C, 0x00 }, <span class="comment">// U+0037 (7)</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    { 0x1E, 0x33, 0x33, 0x1E, 0x33, 0x33, 0x1E, 0x00 }, <span class="comment">// U+0038 (8)</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    { 0x1E, 0x33, 0x33, 0x3E, 0x30, 0x18, 0x0E, 0x00 }, <span class="comment">// U+0039 (9)</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    { 0x00, 0x0C, 0x0C, 0x00, 0x00, 0x0C, 0x0C, 0x00 }, <span class="comment">// U+003A (:)</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    { 0x00, 0x0C, 0x0C, 0x00, 0x00, 0x0C, 0x0C, 0x06 }, <span class="comment">// U+003B (;)</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    { 0x18, 0x0C, 0x06, 0x03, 0x06, 0x0C, 0x18, 0x00 }, <span class="comment">// U+003C (&lt;)</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    { 0x00, 0x00, 0x3F, 0x00, 0x00, 0x3F, 0x00, 0x00 }, <span class="comment">// U+003D (=)</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    { 0x06, 0x0C, 0x18, 0x30, 0x18, 0x0C, 0x06, 0x00 }, <span class="comment">// U+003E (&gt;)</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    { 0x1E, 0x33, 0x30, 0x18, 0x0C, 0x00, 0x0C, 0x00 }, <span class="comment">// U+003F (?)</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    { 0x3E, 0x63, 0x7B, 0x7B, 0x7B, 0x03, 0x1E, 0x00 }, <span class="comment">// U+0040 (@)</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    { 0x0C, 0x1E, 0x33, 0x33, 0x3F, 0x33, 0x33, 0x00 }, <span class="comment">// U+0041 (A)</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    { 0x3F, 0x66, 0x66, 0x3E, 0x66, 0x66, 0x3F, 0x00 }, <span class="comment">// U+0042 (B)</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    { 0x3C, 0x66, 0x03, 0x03, 0x03, 0x66, 0x3C, 0x00 }, <span class="comment">// U+0043 (C)</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    { 0x1F, 0x36, 0x66, 0x66, 0x66, 0x36, 0x1F, 0x00 }, <span class="comment">// U+0044 (D)</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    { 0x7F, 0x46, 0x16, 0x1E, 0x16, 0x46, 0x7F, 0x00 }, <span class="comment">// U+0045 (E)</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    { 0x7F, 0x46, 0x16, 0x1E, 0x16, 0x06, 0x0F, 0x00 }, <span class="comment">// U+0046 (F)</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    { 0x3C, 0x66, 0x03, 0x03, 0x73, 0x66, 0x7C, 0x00 }, <span class="comment">// U+0047 (G)</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    { 0x33, 0x33, 0x33, 0x3F, 0x33, 0x33, 0x33, 0x00 }, <span class="comment">// U+0048 (H)</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    { 0x1E, 0x0C, 0x0C, 0x0C, 0x0C, 0x0C, 0x1E, 0x00 }, <span class="comment">// U+0049 (I)</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    { 0x78, 0x30, 0x30, 0x30, 0x33, 0x33, 0x1E, 0x00 }, <span class="comment">// U+004A (J)</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    { 0x67, 0x66, 0x36, 0x1E, 0x36, 0x66, 0x67, 0x00 }, <span class="comment">// U+004B (K)</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    { 0x0F, 0x06, 0x06, 0x06, 0x46, 0x66, 0x7F, 0x00 }, <span class="comment">// U+004C (L)</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    { 0x63, 0x77, 0x7F, 0x7F, 0x6B, 0x63, 0x63, 0x00 }, <span class="comment">// U+004D (M)</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    { 0x63, 0x67, 0x6F, 0x7B, 0x73, 0x63, 0x63, 0x00 }, <span class="comment">// U+004E (N)</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    { 0x1C, 0x36, 0x63, 0x63, 0x63, 0x36, 0x1C, 0x00 }, <span class="comment">// U+004F (O)</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    { 0x3F, 0x66, 0x66, 0x3E, 0x06, 0x06, 0x0F, 0x00 }, <span class="comment">// U+0050 (P)</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    { 0x1E, 0x33, 0x33, 0x33, 0x3B, 0x1E, 0x38, 0x00 }, <span class="comment">// U+0051 (Q)</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    { 0x3F, 0x66, 0x66, 0x3E, 0x36, 0x66, 0x67, 0x00 }, <span class="comment">// U+0052 (R)</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    { 0x1E, 0x33, 0x07, 0x0E, 0x38, 0x33, 0x1E, 0x00 }, <span class="comment">// U+0053 (S)</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    { 0x3F, 0x2D, 0x0C, 0x0C, 0x0C, 0x0C, 0x1E, 0x00 }, <span class="comment">// U+0054 (T)</span></div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    { 0x33, 0x33, 0x33, 0x33, 0x33, 0x33, 0x3F, 0x00 }, <span class="comment">// U+0055 (U)</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    { 0x33, 0x33, 0x33, 0x33, 0x33, 0x1E, 0x0C, 0x00 }, <span class="comment">// U+0056 (V)</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    { 0x63, 0x63, 0x63, 0x6B, 0x7F, 0x77, 0x63, 0x00 }, <span class="comment">// U+0057 (W)</span></div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    { 0x63, 0x63, 0x36, 0x1C, 0x1C, 0x36, 0x63, 0x00 }, <span class="comment">// U+0058 (X)</span></div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    { 0x33, 0x33, 0x33, 0x1E, 0x0C, 0x0C, 0x1E, 0x00 }, <span class="comment">// U+0059 (Y)</span></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    { 0x7F, 0x63, 0x31, 0x18, 0x4C, 0x66, 0x7F, 0x00 }, <span class="comment">// U+005A (Z)</span></div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    { 0x1E, 0x06, 0x06, 0x06, 0x06, 0x06, 0x1E, 0x00 }, <span class="comment">// U+005B ([)</span></div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    { 0x03, 0x06, 0x0C, 0x18, 0x30, 0x60, 0x40, 0x00 }, <span class="comment">// U+005C (\)</span></div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    { 0x1E, 0x18, 0x18, 0x18, 0x18, 0x18, 0x1E, 0x00 }, <span class="comment">// U+005D (])</span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    { 0x08, 0x1C, 0x36, 0x63, 0x00, 0x00, 0x00, 0x00 }, <span class="comment">// U+005E (^)</span></div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xFF }, <span class="comment">// U+005F (_)</span></div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    { 0x0C, 0x0C, 0x18, 0x00, 0x00, 0x00, 0x00, 0x00 }, <span class="comment">// U+0060 (`)</span></div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    { 0x00, 0x00, 0x1E, 0x30, 0x3E, 0x33, 0x6E, 0x00 }, <span class="comment">// U+0061 (a)</span></div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    { 0x07, 0x06, 0x06, 0x3E, 0x66, 0x66, 0x3B, 0x00 }, <span class="comment">// U+0062 (b)</span></div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    { 0x00, 0x00, 0x1E, 0x33, 0x03, 0x33, 0x1E, 0x00 }, <span class="comment">// U+0063 (c)</span></div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    { 0x38, 0x30, 0x30, 0x3e, 0x33, 0x33, 0x6E, 0x00 }, <span class="comment">// U+0064 (d)</span></div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    { 0x00, 0x00, 0x1E, 0x33, 0x3f, 0x03, 0x1E, 0x00 }, <span class="comment">// U+0065 (e)</span></div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    { 0x1C, 0x36, 0x06, 0x0f, 0x06, 0x06, 0x0F, 0x00 }, <span class="comment">// U+0066 (f)</span></div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    { 0x00, 0x00, 0x6E, 0x33, 0x33, 0x3E, 0x30, 0x1F }, <span class="comment">// U+0067 (g)</span></div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    { 0x07, 0x06, 0x36, 0x6E, 0x66, 0x66, 0x67, 0x00 }, <span class="comment">// U+0068 (h)</span></div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    { 0x0C, 0x00, 0x0E, 0x0C, 0x0C, 0x0C, 0x1E, 0x00 }, <span class="comment">// U+0069 (i)</span></div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    { 0x30, 0x00, 0x30, 0x30, 0x30, 0x33, 0x33, 0x1E }, <span class="comment">// U+006A (j)</span></div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    { 0x07, 0x06, 0x66, 0x36, 0x1E, 0x36, 0x67, 0x00 }, <span class="comment">// U+006B (k)</span></div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    { 0x0E, 0x0C, 0x0C, 0x0C, 0x0C, 0x0C, 0x1E, 0x00 }, <span class="comment">// U+006C (l)</span></div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    { 0x00, 0x00, 0x33, 0x7F, 0x7F, 0x6B, 0x63, 0x00 }, <span class="comment">// U+006D (m)</span></div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    { 0x00, 0x00, 0x1F, 0x33, 0x33, 0x33, 0x33, 0x00 }, <span class="comment">// U+006E (n)</span></div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    { 0x00, 0x00, 0x1E, 0x33, 0x33, 0x33, 0x1E, 0x00 }, <span class="comment">// U+006F (o)</span></div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    { 0x00, 0x00, 0x3B, 0x66, 0x66, 0x3E, 0x06, 0x0F }, <span class="comment">// U+0070 (p)</span></div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    { 0x00, 0x00, 0x6E, 0x33, 0x33, 0x3E, 0x30, 0x78 }, <span class="comment">// U+0071 (q)</span></div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    { 0x00, 0x00, 0x3B, 0x6E, 0x66, 0x06, 0x0F, 0x00 }, <span class="comment">// U+0072 (r)</span></div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    { 0x00, 0x00, 0x3E, 0x03, 0x1E, 0x30, 0x1F, 0x00 }, <span class="comment">// U+0073 (s)</span></div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    { 0x08, 0x0C, 0x3E, 0x0C, 0x0C, 0x2C, 0x18, 0x00 }, <span class="comment">// U+0074 (t)</span></div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    { 0x00, 0x00, 0x33, 0x33, 0x33, 0x33, 0x6E, 0x00 }, <span class="comment">// U+0075 (u)</span></div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    { 0x00, 0x00, 0x33, 0x33, 0x33, 0x1E, 0x0C, 0x00 }, <span class="comment">// U+0076 (v)</span></div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    { 0x00, 0x00, 0x63, 0x6B, 0x7F, 0x7F, 0x36, 0x00 }, <span class="comment">// U+0077 (w)</span></div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    { 0x00, 0x00, 0x63, 0x36, 0x1C, 0x36, 0x63, 0x00 }, <span class="comment">// U+0078 (x)</span></div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    { 0x00, 0x00, 0x33, 0x33, 0x33, 0x3E, 0x30, 0x1F }, <span class="comment">// U+0079 (y)</span></div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    { 0x00, 0x00, 0x3F, 0x19, 0x0C, 0x26, 0x3F, 0x00 }, <span class="comment">// U+007A (z)</span></div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    { 0x38, 0x0C, 0x0C, 0x07, 0x0C, 0x0C, 0x38, 0x00 }, <span class="comment">// U+007B ({)</span></div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    { 0x18, 0x18, 0x18, 0x00, 0x18, 0x18, 0x18, 0x00 }, <span class="comment">// U+007C (|)</span></div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    { 0x07, 0x0C, 0x0C, 0x38, 0x0C, 0x0C, 0x07, 0x00 }, <span class="comment">// U+007D (})</span></div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    { 0x6E, 0x3B, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }, <span class="comment">// U+007E (~)</span></div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }  <span class="comment">// U+007F</span></div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;};</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160; </div>
+<div class="line"><a name="l00157"></a><span class="lineno"><a class="line" href="../../dc/d65/namespace_graphics_1_1_font.html#ae8d46d81e70d6c7edb55424a5f465f8b">  157</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../dc/d65/namespace_graphics_1_1_font.html#ae8d46d81e70d6c7edb55424a5f465f8b">Draw</a>(<span class="keywordtype">char</span> c, uint32_t x, uint32_t y, uint32_t fore)</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;{</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <span class="comment">// Convert screen coordinates to pixel coordinates</span></div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    x *= <a class="code" href="../../df/d50/font_8hpp.html#a7b2e9cc063e140c50b67a4f224988a45">FONT_WIDTH</a>;</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    y *= <a class="code" href="../../df/d50/font_8hpp.html#a33f4fac49f2a5e27e2857eb27f054510">FONT_HEIGHT</a>;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    <span class="comment">// Draw the font glyph</span></div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    uint8_t fp = (uint8_t)c;</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> fy = 0; fy &lt;= <a class="code" href="../../df/d50/font_8hpp.html#a33f4fac49f2a5e27e2857eb27f054510">FONT_HEIGHT</a>; fy++) {</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> fx = 0; fx &lt;= <a class="code" href="../../df/d50/font_8hpp.html#a7b2e9cc063e140c50b67a4f224988a45">FONT_WIDTH</a>; fx++) {</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;            <span class="keywordflow">if</span> (fx != <a class="code" href="../../df/d50/font_8hpp.html#a7b2e9cc063e140c50b67a4f224988a45">FONT_WIDTH</a> &amp;&amp; fy != <a class="code" href="../../df/d50/font_8hpp.html#a33f4fac49f2a5e27e2857eb27f054510">FONT_HEIGHT</a> &amp;&amp; (fontData[fp][fy] &amp; (1 &lt;&lt; fx))) {</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;                <span class="comment">// Current position is part of the font glyph.</span></div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;                <a class="code" href="../../d6/d9b/namespace_graphics.html#a9a087c9e0e221a9939cbe6b958171886">pixel</a>(x + fx, y + fy, fore);</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;            }</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        }</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    }</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;}</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160; </div>
+<div class="line"><a name="l00174"></a><span class="lineno"><a class="line" href="../../dc/d65/namespace_graphics_1_1_font.html#ad410fe938a43b235cace00679ba8c481">  174</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../dc/d65/namespace_graphics_1_1_font.html#ae8d46d81e70d6c7edb55424a5f465f8b">Draw</a>(<span class="keywordtype">char</span> c, uint32_t x, uint32_t y, uint32_t fore, uint32_t back)</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;{</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    <span class="comment">// Convert screen coordinates to pixel coordinates</span></div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    x *= <a class="code" href="../../df/d50/font_8hpp.html#a7b2e9cc063e140c50b67a4f224988a45">FONT_WIDTH</a>;</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    y *= <a class="code" href="../../df/d50/font_8hpp.html#a33f4fac49f2a5e27e2857eb27f054510">FONT_HEIGHT</a>;</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    <span class="comment">// Draw the font glyph</span></div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    uint8_t fp = (uint8_t)c;</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> fy = 0; fy &lt; 9; fy++) {</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> fx = 0; fx &lt; 9; fx++) {</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;            <span class="keywordflow">if</span> (fx != <a class="code" href="../../df/d50/font_8hpp.html#a7b2e9cc063e140c50b67a4f224988a45">FONT_WIDTH</a> &amp;&amp; fy != <a class="code" href="../../df/d50/font_8hpp.html#a33f4fac49f2a5e27e2857eb27f054510">FONT_HEIGHT</a> &amp;&amp; (fontData[fp][fy] &amp; (1 &lt;&lt; fx))) {</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;                <span class="comment">// Current position is part of the font glyph.</span></div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;                <a class="code" href="../../d6/d9b/namespace_graphics.html#a9a087c9e0e221a9939cbe6b958171886">pixel</a>(x + fx, y + fy, fore);</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;            } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;                <span class="comment">// Not part of the glyph. Draw background color.</span></div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;                <a class="code" href="../../d6/d9b/namespace_graphics.html#a9a087c9e0e221a9939cbe6b958171886">pixel</a>(x + fx, y + fy, back);</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;            }</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;        }</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    }</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;}</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160; </div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;} <span class="comment">// !font</span></div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;} <span class="comment">// !fb</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="astdio_8hpp_html"><div class="ttname"><a href="../../d2/daf/stdio_8hpp.html">stdio.hpp</a></div></div>
-<div class="ttc" id="afont_8cpp_html_a87709e147f3177d8f6bb38c411548a3f"><div class="ttname"><a href="../../dd/d53/font_8cpp.html#a87709e147f3177d8f6bb38c411548a3f">FONT_COUNT</a></div><div class="ttdeci">#define FONT_COUNT</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d53/font_8cpp_source.html#l00021">font.cpp:21</a></div></div>
-<div class="ttc" id="afont_8hpp_html_a33f4fac49f2a5e27e2857eb27f054510"><div class="ttname"><a href="../../df/d50/font_8hpp.html#a33f4fac49f2a5e27e2857eb27f054510">FONT_HEIGHT</a></div><div class="ttdeci">#define FONT_HEIGHT</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d50/font_8hpp_source.html#l00016">font.hpp:16</a></div></div>
+<div class="ttc" id="afont_8cpp_html_a87709e147f3177d8f6bb38c411548a3f"><div class="ttname"><a href="../../dd/d53/font_8cpp.html#a87709e147f3177d8f6bb38c411548a3f">FONT_COUNT</a></div><div class="ttdeci">#define FONT_COUNT</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d53/font_8cpp_source.html#l00020">font.cpp:20</a></div></div>
+<div class="ttc" id="afont_8hpp_html_a33f4fac49f2a5e27e2857eb27f054510"><div class="ttname"><a href="../../df/d50/font_8hpp.html#a33f4fac49f2a5e27e2857eb27f054510">FONT_HEIGHT</a></div><div class="ttdeci">#define FONT_HEIGHT</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d50/font_8hpp_source.html#l00015">font.hpp:15</a></div></div>
 <div class="ttc" id="agraphics_8hpp_html"><div class="ttname"><a href="../../d9/d31/graphics_8hpp.html">graphics.hpp</a></div></div>
 <div class="ttc" id="afont_8hpp_html"><div class="ttname"><a href="../../df/d50/font_8hpp.html">font.hpp</a></div></div>
-<div class="ttc" id="anamespace_graphics_html_a9a087c9e0e221a9939cbe6b958171886"><div class="ttname"><a href="../../d6/d9b/namespace_graphics.html#a9a087c9e0e221a9939cbe6b958171886">Graphics::pixel</a></div><div class="ttdeci">void pixel(uint32_t x, uint32_t y, uint32_t color)</div><div class="ttdoc">Draws a pixel at a given coordinate.</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d99/graphics_8cpp_source.html#l00055">graphics.cpp:55</a></div></div>
-<div class="ttc" id="anamespace_graphics_html"><div class="ttname"><a href="../../d6/d9b/namespace_graphics.html">Graphics</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d53/font_8cpp_source.html#l00018">font.cpp:18</a></div></div>
-<div class="ttc" id="anamespace_graphics_1_1_font_html_ae8d46d81e70d6c7edb55424a5f465f8b"><div class="ttname"><a href="../../dc/d65/namespace_graphics_1_1_font.html#ae8d46d81e70d6c7edb55424a5f465f8b">Graphics::Font::Draw</a></div><div class="ttdeci">void Draw(char c, uint32_t x, uint32_t y, uint32_t fore)</div><div class="ttdoc">Draw the character at the given coordinates in the given color.</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d53/font_8cpp_source.html#l00158">font.cpp:158</a></div></div>
-<div class="ttc" id="afont_8hpp_html_a7b2e9cc063e140c50b67a4f224988a45"><div class="ttname"><a href="../../df/d50/font_8hpp.html#a7b2e9cc063e140c50b67a4f224988a45">FONT_WIDTH</a></div><div class="ttdeci">#define FONT_WIDTH</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d50/font_8hpp_source.html#l00015">font.hpp:15</a></div></div>
+<div class="ttc" id="anamespace_graphics_html_a9a087c9e0e221a9939cbe6b958171886"><div class="ttname"><a href="../../d6/d9b/namespace_graphics.html#a9a087c9e0e221a9939cbe6b958171886">Graphics::pixel</a></div><div class="ttdeci">void pixel(uint32_t x, uint32_t y, uint32_t color)</div><div class="ttdoc">Draws a pixel at a given coordinate.</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d99/graphics_8cpp_source.html#l00050">graphics.cpp:50</a></div></div>
+<div class="ttc" id="anamespace_graphics_html"><div class="ttname"><a href="../../d6/d9b/namespace_graphics.html">Graphics</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d53/font_8cpp_source.html#l00017">font.cpp:17</a></div></div>
+<div class="ttc" id="anamespace_graphics_1_1_font_html_ae8d46d81e70d6c7edb55424a5f465f8b"><div class="ttname"><a href="../../dc/d65/namespace_graphics_1_1_font.html#ae8d46d81e70d6c7edb55424a5f465f8b">Graphics::Font::Draw</a></div><div class="ttdeci">void Draw(char c, uint32_t x, uint32_t y, uint32_t fore)</div><div class="ttdoc">Draw the character at the given coordinates in the given color.</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d53/font_8cpp_source.html#l00157">font.cpp:157</a></div></div>
+<div class="ttc" id="afont_8hpp_html_a7b2e9cc063e140c50b67a4f224988a45"><div class="ttname"><a href="../../df/d50/font_8hpp.html#a7b2e9cc063e140c50b67a4f224988a45">FONT_WIDTH</a></div><div class="ttdeci">#define FONT_WIDTH</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d50/font_8hpp_source.html#l00014">font.hpp:14</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

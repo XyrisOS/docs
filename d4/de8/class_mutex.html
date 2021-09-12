@@ -154,12 +154,12 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/dbb/mutex_8cpp_source.html#l00026">26</a> of file <a class="el" href="../../d0/dbb/mutex_8cpp_source.html">mutex.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    : <a class="code" href="../../d4/de8/class_mutex.html#aa705395a113c774187d4824b85dc9280">locked</a>(<span class="keyword">false</span>)</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;{</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="../../dd/dc4/structtask__sync.html">task_sync</a>.<a class="code" href="../../dd/dc4/structtask__sync.html#a89cc556553145f650472b59f883e6ebd">dbg_name</a> = name;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    tasks_sync_init(&amp;<a class="code" href="../../dd/dc4/structtask__sync.html">task_sync</a>);</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;};</div>
+<p class="definition">Definition at line <a class="el" href="../../d0/dbb/mutex_8cpp_source.html#l00024">24</a> of file <a class="el" href="../../d0/dbb/mutex_8cpp_source.html">mutex.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    : <a class="code" href="../../d4/de8/class_mutex.html#aa705395a113c774187d4824b85dc9280">locked</a>(<span class="keyword">false</span>)</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="../../dd/dc4/structtask__sync.html">task_sync</a>.<a class="code" href="../../dd/dc4/structtask__sync.html#a89cc556553145f650472b59f883e6ebd">dbg_name</a> = name;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    tasks_sync_init(&amp;<a class="code" href="../../dd/dc4/structtask__sync.html">task_sync</a>);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;};</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -180,10 +180,10 @@ Private Attributes</h2></td></tr>
 
 <p>Destroys a mutex and removes it from memory. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/dbb/mutex_8cpp_source.html#l00033">33</a> of file <a class="el" href="../../d0/dbb/mutex_8cpp_source.html">mutex.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;{</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="comment">// Nothing to destruct yet</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../d0/dbb/mutex_8cpp_source.html#l00031">31</a> of file <a class="el" href="../../d0/dbb/mutex_8cpp_source.html">mutex.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;{</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="comment">// Nothing to destruct yet</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -206,16 +206,16 @@ Private Attributes</h2></td></tr>
 <p>Locks a provided mutex. This call will block if the mutex is already locked. </p>
 <dl class="section return"><dt>Returns</dt><dd>int Returns 0 on success and -1 on error. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/dbb/mutex_8cpp_source.html#l00038">38</a> of file <a class="el" href="../../d0/dbb/mutex_8cpp_source.html">mutex.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;{</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="comment">// Check if the Mutex is unlocked</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordflow">while</span> (__atomic_test_and_set(&amp;<a class="code" href="../../d4/de8/class_mutex.html#aa705395a113c774187d4824b85dc9280">locked</a>, __ATOMIC_RELEASE)) {</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="comment">// Block the current kernel task</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <a class="code" href="../../d2/dbd/tasks_8hpp.html#a5dc14e36eb87557e7c264d8596f37b55">TASK_ONLY</a> <a class="code" href="../../d5/d9d/tasks_8cpp.html#a2432c50b4d4264b5d5295bdb4f19e0d2">tasks_sync_block</a>(&amp;<a class="code" href="../../dd/dc4/structtask__sync.html">task_sync</a>);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    }</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="comment">// Success, return 0</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../d0/dbb/mutex_8cpp_source.html#l00036">36</a> of file <a class="el" href="../../d0/dbb/mutex_8cpp_source.html">mutex.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;{</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="comment">// Check if the Mutex is unlocked</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordflow">while</span> (__atomic_test_and_set(&amp;<a class="code" href="../../d4/de8/class_mutex.html#aa705395a113c774187d4824b85dc9280">locked</a>, __ATOMIC_RELEASE)) {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="comment">// Block the current kernel task</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <a class="code" href="../../d2/dbd/tasks_8hpp.html#a5dc14e36eb87557e7c264d8596f37b55">TASK_ONLY</a> <a class="code" href="../../d5/d9d/tasks_8cpp.html#a2432c50b4d4264b5d5295bdb4f19e0d2">tasks_sync_block</a>(&amp;<a class="code" href="../../dd/dc4/structtask__sync.html">task_sync</a>);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    }</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="comment">// Success, return 0</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;}</div>
 </div><!-- fragment --><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -259,16 +259,16 @@ Private Attributes</h2></td></tr>
 <p>Attempts to lock a mutex. If the mutex is currently locked then the function will return and set errno accordingly. </p>
 <dl class="section return"><dt>Returns</dt><dd>int Returns 0 on success and -1 on error. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/dbb/mutex_8cpp_source.html#l00049">49</a> of file <a class="el" href="../../d0/dbb/mutex_8cpp_source.html">mutex.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;{</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="comment">// If we cannot immediately acquire the lock then just return an error</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordflow">if</span> (__atomic_test_and_set(&amp;<a class="code" href="../../d4/de8/class_mutex.html#aa705395a113c774187d4824b85dc9280">locked</a>, __ATOMIC_RELEASE)) {</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <a class="code" href="../../d1/db0/errno_8cpp.html#ad65a8842cc674e3ddf69355898c0ecbf">errno</a> = <a class="code" href="../../d8/dc2/errno_8h.html#a2d1678d5a7cc8ce499643f3b8957def4">EINVAL</a>;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keywordflow">return</span> -1;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    }</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="comment">// Success, return 0</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../d0/dbb/mutex_8cpp_source.html#l00047">47</a> of file <a class="el" href="../../d0/dbb/mutex_8cpp_source.html">mutex.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;{</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="comment">// If we cannot immediately acquire the lock then just return an error</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordflow">if</span> (__atomic_test_and_set(&amp;<a class="code" href="../../d4/de8/class_mutex.html#aa705395a113c774187d4824b85dc9280">locked</a>, __ATOMIC_RELEASE)) {</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <a class="code" href="../../d1/db0/errno_8cpp.html#ad65a8842cc674e3ddf69355898c0ecbf">errno</a> = <a class="code" href="../../d8/dc2/errno_8h.html#a2d1678d5a7cc8ce499643f3b8957def4">EINVAL</a>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keywordflow">return</span> -1;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    }</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="comment">// Success, return 0</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -290,14 +290,14 @@ Private Attributes</h2></td></tr>
 <p>Unlocks a mutex for others to use. </p>
 <dl class="section return"><dt>Returns</dt><dd>int Returns 0 on success and -1 on error. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/dbb/mutex_8cpp_source.html#l00060">60</a> of file <a class="el" href="../../d0/dbb/mutex_8cpp_source.html">mutex.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;{</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="comment">// Clear the lock</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    __atomic_clear(&amp;<a class="code" href="../../d4/de8/class_mutex.html#aa705395a113c774187d4824b85dc9280">locked</a>, __ATOMIC_RELEASE);</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <a class="code" href="../../d2/dbd/tasks_8hpp.html#a5dc14e36eb87557e7c264d8596f37b55">TASK_ONLY</a> <a class="code" href="../../d5/d9d/tasks_8cpp.html#a95269b08443b913d1ca443794e4aa3ad">tasks_sync_unblock</a>(&amp;<a class="code" href="../../dd/dc4/structtask__sync.html">task_sync</a>);</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="comment">// Success, return 0</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../d0/dbb/mutex_8cpp_source.html#l00058">58</a> of file <a class="el" href="../../d0/dbb/mutex_8cpp_source.html">mutex.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;{</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="comment">// Clear the lock</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    __atomic_clear(&amp;<a class="code" href="../../d4/de8/class_mutex.html#aa705395a113c774187d4824b85dc9280">locked</a>, __ATOMIC_RELEASE);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <a class="code" href="../../d2/dbd/tasks_8hpp.html#a5dc14e36eb87557e7c264d8596f37b55">TASK_ONLY</a> <a class="code" href="../../d5/d9d/tasks_8cpp.html#a95269b08443b913d1ca443794e4aa3ad">tasks_sync_unblock</a>(&amp;<a class="code" href="../../dd/dc4/structtask__sync.html">task_sync</a>);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="comment">// Success, return 0</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;}</div>
 </div><!-- fragment --><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -380,10 +380,10 @@ Private Attributes</h2></td></tr>
 </div><!-- doc-content -->
 <div class="ttc" id="astructtask__sync_html_a89cc556553145f650472b59f883e6ebd"><div class="ttname"><a href="../../dd/dc4/structtask__sync.html#a89cc556553145f650472b59f883e6ebd">task_sync::dbg_name</a></div><div class="ttdeci">const char * dbg_name</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dbd/tasks_8hpp_source.html#l00058">tasks.hpp:58</a></div></div>
 <div class="ttc" id="astructtask__sync_html"><div class="ttname"><a href="../../dd/dc4/structtask__sync.html">task_sync</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dbd/tasks_8hpp_source.html#l00055">tasks.hpp:55</a></div></div>
-<div class="ttc" id="atasks_8cpp_html_a95269b08443b913d1ca443794e4aa3ad"><div class="ttname"><a href="../../d5/d9d/tasks_8cpp.html#a95269b08443b913d1ca443794e4aa3ad">tasks_sync_unblock</a></div><div class="ttdeci">void tasks_sync_unblock(struct task_sync *ts)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d9d/tasks_8cpp_source.html#l00573">tasks.cpp:573</a></div></div>
+<div class="ttc" id="atasks_8cpp_html_a95269b08443b913d1ca443794e4aa3ad"><div class="ttname"><a href="../../d5/d9d/tasks_8cpp.html#a95269b08443b913d1ca443794e4aa3ad">tasks_sync_unblock</a></div><div class="ttdeci">void tasks_sync_unblock(struct task_sync *ts)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d9d/tasks_8cpp_source.html#l00571">tasks.cpp:571</a></div></div>
 <div class="ttc" id="atasks_8hpp_html_a5dc14e36eb87557e7c264d8596f37b55"><div class="ttname"><a href="../../d2/dbd/tasks_8hpp.html#a5dc14e36eb87557e7c264d8596f37b55">TASK_ONLY</a></div><div class="ttdeci">#define TASK_ONLY</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dbd/tasks_8hpp_source.html#l00046">tasks.hpp:46</a></div></div>
 <div class="ttc" id="aerrno_8h_html_a2d1678d5a7cc8ce499643f3b8957def4"><div class="ttname"><a href="../../d8/dc2/errno_8h.html#a2d1678d5a7cc8ce499643f3b8957def4">EINVAL</a></div><div class="ttdeci">#define EINVAL</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dc2/errno_8h_source.html#l00053">errno.h:53</a></div></div>
-<div class="ttc" id="atasks_8cpp_html_a2432c50b4d4264b5d5295bdb4f19e0d2"><div class="ttname"><a href="../../d5/d9d/tasks_8cpp.html#a2432c50b4d4264b5d5295bdb4f19e0d2">tasks_sync_block</a></div><div class="ttdeci">void tasks_sync_block(struct task_sync *ts)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d9d/tasks_8cpp_source.html#l00558">tasks.cpp:558</a></div></div>
+<div class="ttc" id="atasks_8cpp_html_a2432c50b4d4264b5d5295bdb4f19e0d2"><div class="ttname"><a href="../../d5/d9d/tasks_8cpp.html#a2432c50b4d4264b5d5295bdb4f19e0d2">tasks_sync_block</a></div><div class="ttdeci">void tasks_sync_block(struct task_sync *ts)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d9d/tasks_8cpp_source.html#l00556">tasks.cpp:556</a></div></div>
 <div class="ttc" id="aerrno_8cpp_html_ad65a8842cc674e3ddf69355898c0ecbf"><div class="ttname"><a href="../../d1/db0/errno_8cpp.html#ad65a8842cc674e3ddf69355898c0ecbf">errno</a></div><div class="ttdeci">int errno</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/db0/errno_8cpp_source.html#l00015">errno.cpp:15</a></div></div>
 <div class="ttc" id="aclass_mutex_html_aa705395a113c774187d4824b85dc9280"><div class="ttname"><a href="../../d4/de8/class_mutex.html#aa705395a113c774187d4824b85dc9280">Mutex::locked</a></div><div class="ttdeci">bool locked</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/da6/mutex_8hpp_source.html#l00052">mutex.hpp:52</a></div></div>
 <!-- start footer part -->

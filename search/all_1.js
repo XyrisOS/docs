@@ -25,8 +25,8 @@ var searchData=
   ['argument_80',['argument',['../df/d0d/struct_boot_1_1argument.html',1,'Boot']]],
   ['arguments_2ecpp_81',['Arguments.cpp',['../d4/d85/_arguments_8cpp.html',1,'']]],
   ['arguments_2ehpp_82',['Arguments.hpp',['../d5/d87/_arguments_8hpp.html',1,'']]],
-  ['arguments_5fend_83',['ARGUMENTS_END',['../d0/d29/sections_8hpp.html#a5792d07871b0b80b8d7dbce1e50bbb60',1,'sections.hpp']]],
-  ['arguments_5fstart_84',['ARGUMENTS_START',['../d0/d29/sections_8hpp.html#ab6cfcb4cbc2276fb775a7112b5c65130',1,'sections.hpp']]],
+  ['arguments_5fend_83',['ARGUMENTS_END',['../d5/d87/_arguments_8hpp.html#a5792d07871b0b80b8d7dbce1e50bbb60',1,'Arguments.hpp']]],
+  ['arguments_5fstart_84',['ARGUMENTS_START',['../d5/d87/_arguments_8hpp.html#ab6cfcb4cbc2276fb775a7112b5c65130',1,'Arguments.hpp']]],
   ['assert_85',['assert',['../d2/d54/assert_8hpp.html#af576bf8ffa22a44e53018c67095ffbf0',1,'assert.hpp']]],
   ['assert_2ehpp_86',['assert.hpp',['../d2/d54/assert_8hpp.html',1,'']]]
 ];

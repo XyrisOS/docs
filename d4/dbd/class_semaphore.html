@@ -178,13 +178,13 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../da/d20/semaphore_8cpp_source.html#l00037">37</a> of file <a class="el" href="../../da/d20/semaphore_8cpp_source.html">semaphore.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    : <a class="code" href="../../d4/dbd/class_semaphore.html#a0dc2c888f5a2044bc146eadbc724c4e5">shared</a>(share)</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    , <a class="code" href="../../d4/dbd/class_semaphore.html#a4c735ac721eaad04681acecfaf08aedf">count</a>(val)</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="../../dd/dc4/structtask__sync.html">task_sync</a>.<a class="code" href="../../dd/dc4/structtask__sync.html#a89cc556553145f650472b59f883e6ebd">dbg_name</a> = name;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    tasks_sync_init(&amp;<a class="code" href="../../dd/dc4/structtask__sync.html">task_sync</a>);</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../da/d20/semaphore_8cpp_source.html#l00035">35</a> of file <a class="el" href="../../da/d20/semaphore_8cpp_source.html">semaphore.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    : <a class="code" href="../../d4/dbd/class_semaphore.html#a0dc2c888f5a2044bc146eadbc724c4e5">shared</a>(share)</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    , <a class="code" href="../../d4/dbd/class_semaphore.html#a4c735ac721eaad04681acecfaf08aedf">count</a>(val)</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;{</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="../../dd/dc4/structtask__sync.html">task_sync</a>.<a class="code" href="../../dd/dc4/structtask__sync.html#a89cc556553145f650472b59f883e6ebd">dbg_name</a> = name;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    tasks_sync_init(&amp;<a class="code" href="../../dd/dc4/structtask__sync.html">task_sync</a>);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -205,10 +205,10 @@ Private Attributes</h2></td></tr>
 
 <p>Destroys a semaphore by removing it from memory. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../da/d20/semaphore_8cpp_source.html#l00045">45</a> of file <a class="el" href="../../da/d20/semaphore_8cpp_source.html">semaphore.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;{</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="comment">// Nothing to destruct</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../da/d20/semaphore_8cpp_source.html#l00043">43</a> of file <a class="el" href="../../da/d20/semaphore_8cpp_source.html">semaphore.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;{</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="comment">// Nothing to destruct</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -238,11 +238,11 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>int Returns 0 on success and -1 on failure. When an error occurs errno is set. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../da/d20/semaphore_8cpp_source.html#l00111">111</a> of file <a class="el" href="../../da/d20/semaphore_8cpp_source.html">semaphore.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;{</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    __atomic_load(&amp;<a class="code" href="../../d4/dbd/class_semaphore.html#a4c735ac721eaad04681acecfaf08aedf">count</a>, val, __ATOMIC_ACQUIRE);</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../da/d20/semaphore_8cpp_source.html#l00109">109</a> of file <a class="el" href="../../da/d20/semaphore_8cpp_source.html">semaphore.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;{</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    __atomic_load(&amp;<a class="code" href="../../d4/dbd/class_semaphore.html#a4c735ac721eaad04681acecfaf08aedf">count</a>, val, __ATOMIC_ACQUIRE);</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -264,12 +264,12 @@ Private Attributes</h2></td></tr>
 <p>Increments the semaphore's counter. This is used to indicate that the thread or process is done utilizing the reference variable and that it is available for use. </p>
 <dl class="section return"><dt>Returns</dt><dd>int Returns 0 on success and -1 on failure. When an error occurs errno is set. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../da/d20/semaphore_8cpp_source.html#l00104">104</a> of file <a class="el" href="../../da/d20/semaphore_8cpp_source.html">semaphore.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;{</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    __atomic_fetch_add(&amp;<a class="code" href="../../d4/dbd/class_semaphore.html#a4c735ac721eaad04681acecfaf08aedf">count</a>, 1, __ATOMIC_RELEASE);</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <a class="code" href="../../d2/dbd/tasks_8hpp.html#a5dc14e36eb87557e7c264d8596f37b55">TASK_ONLY</a> <a class="code" href="../../d5/d9d/tasks_8cpp.html#a95269b08443b913d1ca443794e4aa3ad">tasks_sync_unblock</a>(&amp;<a class="code" href="../../dd/dc4/structtask__sync.html">task_sync</a>);</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../da/d20/semaphore_8cpp_source.html#l00102">102</a> of file <a class="el" href="../../da/d20/semaphore_8cpp_source.html">semaphore.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;{</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    __atomic_fetch_add(&amp;<a class="code" href="../../d4/dbd/class_semaphore.html#a4c735ac721eaad04681acecfaf08aedf">count</a>, 1, __ATOMIC_RELEASE);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <a class="code" href="../../d2/dbd/tasks_8hpp.html#a5dc14e36eb87557e7c264d8596f37b55">TASK_ONLY</a> <a class="code" href="../../d5/d9d/tasks_8cpp.html#a95269b08443b913d1ca443794e4aa3ad">tasks_sync_unblock</a>(&amp;<a class="code" href="../../dd/dc4/structtask__sync.html">task_sync</a>);</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;}</div>
 </div><!-- fragment --><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -309,23 +309,23 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>int Returns 0 on success and -1 on failure. When an error occurs errno is set. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../da/d20/semaphore_8cpp_source.html#l00086">86</a> of file <a class="el" href="../../da/d20/semaphore_8cpp_source.html">semaphore.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;{</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="comment">// TODO: Add the timer functionality here.</span></div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    (void)usec;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="comment">// Used to store the current value of the semaphore for atomic comparison later.</span></div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    uint32_t curVal = <a class="code" href="../../d4/dbd/class_semaphore.html#a4c735ac721eaad04681acecfaf08aedf">count</a>;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="comment">// Compare the semaphore&#39;s current value to the value recorded earlier.</span></div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="comment">// If the semaphore counter is already 0 then just skip the compare and exhange.</span></div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordflow">do</span> {</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <span class="keywordflow">while</span> (curVal == 0) {</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            curVal = <a class="code" href="../../d4/dbd/class_semaphore.html#a4c735ac721eaad04681acecfaf08aedf">count</a>;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        }</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <span class="comment">// Fail using atomic relaxed because it may allow us to get to the &quot;waiting&quot; state faster.</span></div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    } <span class="keywordflow">while</span> (!<a class="code" href="../../da/d20/semaphore_8cpp.html#a80bfcf34f6237c6e9458164649f1de22">COMPARE_EXCHANGE</a>(curVal, __ATOMIC_ACQUIRE));</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="comment">// Return success</span></div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../da/d20/semaphore_8cpp_source.html#l00084">84</a> of file <a class="el" href="../../da/d20/semaphore_8cpp_source.html">semaphore.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;{</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="comment">// TODO: Add the timer functionality here.</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    (void)usec;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="comment">// Used to store the current value of the semaphore for atomic comparison later.</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    uint32_t curVal = <a class="code" href="../../d4/dbd/class_semaphore.html#a4c735ac721eaad04681acecfaf08aedf">count</a>;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="comment">// Compare the semaphore&#39;s current value to the value recorded earlier.</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="comment">// If the semaphore counter is already 0 then just skip the compare and exhange.</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordflow">do</span> {</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <span class="keywordflow">while</span> (curVal == 0) {</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            curVal = <a class="code" href="../../d4/dbd/class_semaphore.html#a4c735ac721eaad04681acecfaf08aedf">count</a>;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        }</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="comment">// Fail using atomic relaxed because it may allow us to get to the &quot;waiting&quot; state faster.</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    } <span class="keywordflow">while</span> (!<a class="code" href="../../da/d20/semaphore_8cpp.html#a80bfcf34f6237c6e9458164649f1de22">COMPARE_EXCHANGE</a>(curVal, __ATOMIC_ACQUIRE));</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="comment">// Return success</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -347,24 +347,24 @@ Private Attributes</h2></td></tr>
 <p>Functionally the same as sem_wait except that instead of blocking when the semaphore is locked, errno is set instead. </p>
 <dl class="section return"><dt>Returns</dt><dd>int Returns 0 on success and -1 on failure. When an error occurs errno is set. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../da/d20/semaphore_8cpp_source.html#l00067">67</a> of file <a class="el" href="../../da/d20/semaphore_8cpp_source.html">semaphore.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;{</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="comment">// Used to store the current value of the semaphore for atomic comparison later.</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    uint32_t curVal = <a class="code" href="../../d4/dbd/class_semaphore.html#a4c735ac721eaad04681acecfaf08aedf">count</a>;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="comment">// Compare the semaphore&#39;s current value to the value recorded earlier.</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="comment">// If the semaphore counter is already 0 then just skip the compare and exhange.</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordflow">do</span> {</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="comment">// If the value is 0 then go ahead and return after setting errno.</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="keywordflow">if</span> (curVal == 0) {</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            <span class="comment">// Set errno and return 0.</span></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            <a class="code" href="../../d1/db0/errno_8cpp.html#ad65a8842cc674e3ddf69355898c0ecbf">errno</a> = <a class="code" href="../../d8/dc2/errno_8h.html#af0fac1cea1165b4debec7f686edf3313">EAGAIN</a>;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            <span class="keywordflow">return</span> -1;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        }</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="comment">// We need to fail on an Atomic Acquire Release because it will fail less often (i.e. fewer loop iterations)</span></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    } <span class="keywordflow">while</span> (!<a class="code" href="../../da/d20/semaphore_8cpp.html#a80bfcf34f6237c6e9458164649f1de22">COMPARE_EXCHANGE</a>(curVal, __ATOMIC_ACQUIRE));</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="comment">// To get here the semaphore must not have been locked.</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../da/d20/semaphore_8cpp_source.html#l00065">65</a> of file <a class="el" href="../../da/d20/semaphore_8cpp_source.html">semaphore.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;{</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="comment">// Used to store the current value of the semaphore for atomic comparison later.</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    uint32_t curVal = <a class="code" href="../../d4/dbd/class_semaphore.html#a4c735ac721eaad04681acecfaf08aedf">count</a>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="comment">// Compare the semaphore&#39;s current value to the value recorded earlier.</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="comment">// If the semaphore counter is already 0 then just skip the compare and exhange.</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordflow">do</span> {</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="comment">// If the value is 0 then go ahead and return after setting errno.</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keywordflow">if</span> (curVal == 0) {</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            <span class="comment">// Set errno and return 0.</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            <a class="code" href="../../d1/db0/errno_8cpp.html#ad65a8842cc674e3ddf69355898c0ecbf">errno</a> = <a class="code" href="../../d8/dc2/errno_8h.html#af0fac1cea1165b4debec7f686edf3313">EAGAIN</a>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            <span class="keywordflow">return</span> -1;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        }</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="comment">// We need to fail on an Atomic Acquire Release because it will fail less often (i.e. fewer loop iterations)</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    } <span class="keywordflow">while</span> (!<a class="code" href="../../da/d20/semaphore_8cpp.html#a80bfcf34f6237c6e9458164649f1de22">COMPARE_EXCHANGE</a>(curVal, __ATOMIC_ACQUIRE));</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="comment">// To get here the semaphore must not have been locked.</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -386,22 +386,22 @@ Private Attributes</h2></td></tr>
 <p>Waiting on a semaphore decrements the count value. When a count value is 0, the semaphore is locked and the process or thread must sleep and wait until the semaphore is unlocked by calling post. </p>
 <dl class="section return"><dt>Returns</dt><dd>int Returns 0 on success and -1 on failure When an error occurs errno is set. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../da/d20/semaphore_8cpp_source.html#l00050">50</a> of file <a class="el" href="../../da/d20/semaphore_8cpp_source.html">semaphore.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;{</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="comment">// Used to store the current value of the semaphore for atomic comparison later.</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    uint32_t curVal = <a class="code" href="../../d4/dbd/class_semaphore.html#a4c735ac721eaad04681acecfaf08aedf">count</a>;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="comment">// Compare the semaphore&#39;s current value to the value recorded earlier.</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="comment">// If the semaphore counter is already 0 then just skip the compare and exhange.</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordflow">do</span> {</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keywordflow">while</span> (curVal == 0) {</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            <a class="code" href="../../d2/dbd/tasks_8hpp.html#a5dc14e36eb87557e7c264d8596f37b55">TASK_ONLY</a> <a class="code" href="../../d5/d9d/tasks_8cpp.html#a2432c50b4d4264b5d5295bdb4f19e0d2">tasks_sync_block</a>(&amp;<a class="code" href="../../dd/dc4/structtask__sync.html">task_sync</a>);</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            curVal = <a class="code" href="../../d4/dbd/class_semaphore.html#a4c735ac721eaad04681acecfaf08aedf">count</a>;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        }</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="comment">// Fail using atomic relaxed because it may allow us to get to the &quot;waiting&quot; state faster.</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    } <span class="keywordflow">while</span> (!<a class="code" href="../../da/d20/semaphore_8cpp.html#a80bfcf34f6237c6e9458164649f1de22">COMPARE_EXCHANGE</a>(curVal, __ATOMIC_RELAXED));</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="comment">// Return success</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../da/d20/semaphore_8cpp_source.html#l00048">48</a> of file <a class="el" href="../../da/d20/semaphore_8cpp_source.html">semaphore.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;{</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="comment">// Used to store the current value of the semaphore for atomic comparison later.</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    uint32_t curVal = <a class="code" href="../../d4/dbd/class_semaphore.html#a4c735ac721eaad04681acecfaf08aedf">count</a>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="comment">// Compare the semaphore&#39;s current value to the value recorded earlier.</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="comment">// If the semaphore counter is already 0 then just skip the compare and exhange.</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordflow">do</span> {</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keywordflow">while</span> (curVal == 0) {</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            <a class="code" href="../../d2/dbd/tasks_8hpp.html#a5dc14e36eb87557e7c264d8596f37b55">TASK_ONLY</a> <a class="code" href="../../d5/d9d/tasks_8cpp.html#a2432c50b4d4264b5d5295bdb4f19e0d2">tasks_sync_block</a>(&amp;<a class="code" href="../../dd/dc4/structtask__sync.html">task_sync</a>);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            curVal = <a class="code" href="../../d4/dbd/class_semaphore.html#a4c735ac721eaad04681acecfaf08aedf">count</a>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        }</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="comment">// Fail using atomic relaxed because it may allow us to get to the &quot;waiting&quot; state faster.</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    } <span class="keywordflow">while</span> (!<a class="code" href="../../da/d20/semaphore_8cpp.html#a80bfcf34f6237c6e9458164649f1de22">COMPARE_EXCHANGE</a>(curVal, __ATOMIC_RELAXED));</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="comment">// Return success</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;}</div>
 </div><!-- fragment --><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -499,12 +499,12 @@ Private Attributes</h2></td></tr>
 <div class="ttc" id="aerrno_8h_html_af0fac1cea1165b4debec7f686edf3313"><div class="ttname"><a href="../../d8/dc2/errno_8h.html#af0fac1cea1165b4debec7f686edf3313">EAGAIN</a></div><div class="ttdeci">#define EAGAIN</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dc2/errno_8h_source.html#l00031">errno.h:31</a></div></div>
 <div class="ttc" id="astructtask__sync_html"><div class="ttname"><a href="../../dd/dc4/structtask__sync.html">task_sync</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dbd/tasks_8hpp_source.html#l00055">tasks.hpp:55</a></div></div>
 <div class="ttc" id="aclass_semaphore_html_a0dc2c888f5a2044bc146eadbc724c4e5"><div class="ttname"><a href="../../d4/dbd/class_semaphore.html#a0dc2c888f5a2044bc146eadbc724c4e5">Semaphore::shared</a></div><div class="ttdeci">bool shared</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d5a/semaphore_8hpp_source.html#l00086">semaphore.hpp:86</a></div></div>
-<div class="ttc" id="atasks_8cpp_html_a95269b08443b913d1ca443794e4aa3ad"><div class="ttname"><a href="../../d5/d9d/tasks_8cpp.html#a95269b08443b913d1ca443794e4aa3ad">tasks_sync_unblock</a></div><div class="ttdeci">void tasks_sync_unblock(struct task_sync *ts)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d9d/tasks_8cpp_source.html#l00573">tasks.cpp:573</a></div></div>
+<div class="ttc" id="atasks_8cpp_html_a95269b08443b913d1ca443794e4aa3ad"><div class="ttname"><a href="../../d5/d9d/tasks_8cpp.html#a95269b08443b913d1ca443794e4aa3ad">tasks_sync_unblock</a></div><div class="ttdeci">void tasks_sync_unblock(struct task_sync *ts)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d9d/tasks_8cpp_source.html#l00571">tasks.cpp:571</a></div></div>
 <div class="ttc" id="atasks_8hpp_html_a5dc14e36eb87557e7c264d8596f37b55"><div class="ttname"><a href="../../d2/dbd/tasks_8hpp.html#a5dc14e36eb87557e7c264d8596f37b55">TASK_ONLY</a></div><div class="ttdeci">#define TASK_ONLY</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dbd/tasks_8hpp_source.html#l00046">tasks.hpp:46</a></div></div>
 <div class="ttc" id="aclass_semaphore_html_a4c735ac721eaad04681acecfaf08aedf"><div class="ttname"><a href="../../d4/dbd/class_semaphore.html#a4c735ac721eaad04681acecfaf08aedf">Semaphore::count</a></div><div class="ttdeci">uint32_t count</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d5a/semaphore_8hpp_source.html#l00087">semaphore.hpp:87</a></div></div>
-<div class="ttc" id="atasks_8cpp_html_a2432c50b4d4264b5d5295bdb4f19e0d2"><div class="ttname"><a href="../../d5/d9d/tasks_8cpp.html#a2432c50b4d4264b5d5295bdb4f19e0d2">tasks_sync_block</a></div><div class="ttdeci">void tasks_sync_block(struct task_sync *ts)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d9d/tasks_8cpp_source.html#l00558">tasks.cpp:558</a></div></div>
+<div class="ttc" id="atasks_8cpp_html_a2432c50b4d4264b5d5295bdb4f19e0d2"><div class="ttname"><a href="../../d5/d9d/tasks_8cpp.html#a2432c50b4d4264b5d5295bdb4f19e0d2">tasks_sync_block</a></div><div class="ttdeci">void tasks_sync_block(struct task_sync *ts)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d9d/tasks_8cpp_source.html#l00556">tasks.cpp:556</a></div></div>
 <div class="ttc" id="aerrno_8cpp_html_ad65a8842cc674e3ddf69355898c0ecbf"><div class="ttname"><a href="../../d1/db0/errno_8cpp.html#ad65a8842cc674e3ddf69355898c0ecbf">errno</a></div><div class="ttdeci">int errno</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/db0/errno_8cpp_source.html#l00015">errno.cpp:15</a></div></div>
-<div class="ttc" id="asemaphore_8cpp_html_a80bfcf34f6237c6e9458164649f1de22"><div class="ttname"><a href="../../da/d20/semaphore_8cpp.html#a80bfcf34f6237c6e9458164649f1de22">COMPARE_EXCHANGE</a></div><div class="ttdeci">#define COMPARE_EXCHANGE(curVal, failure_memorder)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d20/semaphore_8cpp_source.html#l00029">semaphore.cpp:29</a></div></div>
+<div class="ttc" id="asemaphore_8cpp_html_a80bfcf34f6237c6e9458164649f1de22"><div class="ttname"><a href="../../da/d20/semaphore_8cpp.html#a80bfcf34f6237c6e9458164649f1de22">COMPARE_EXCHANGE</a></div><div class="ttdeci">#define COMPARE_EXCHANGE(curVal, failure_memorder)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d20/semaphore_8cpp_source.html#l00027">semaphore.cpp:27</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

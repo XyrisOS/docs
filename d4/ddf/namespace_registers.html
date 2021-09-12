@@ -133,12 +133,12 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d8/dfb/regs_8hpp_source.html#l00045">45</a> of file <a class="el" href="../../d8/dfb/regs_8hpp_source.html">regs.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;{</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">struct </span>CR0 x;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keyword">asm</span> <span class="keyword">volatile</span>(<span class="stringliteral">&quot;mov %%cr0, %0&quot;</span>: <span class="stringliteral">&quot;=r&quot;</span>(x));</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordflow">return</span> x;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../d8/dfb/regs_8hpp_source.html#l00044">44</a> of file <a class="el" href="../../d8/dfb/regs_8hpp_source.html">regs.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;{</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keyword">struct </span>CR0 x;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">asm</span> <span class="keyword">volatile</span>(<span class="stringliteral">&quot;mov %%cr0, %0&quot;</span>: <span class="stringliteral">&quot;=r&quot;</span>(x));</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordflow">return</span> x;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}</div>
 </div><!-- fragment --><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -177,12 +177,12 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d8/dfb/regs_8hpp_source.html#l00057">57</a> of file <a class="el" href="../../d8/dfb/regs_8hpp_source.html">regs.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;{</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keyword">struct </span>CR3 x;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keyword">asm</span> <span class="keyword">volatile</span>(<span class="stringliteral">&quot;mov %%cr3, %0&quot;</span>: <span class="stringliteral">&quot;=r&quot;</span>(x));</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordflow">return</span> x;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../d8/dfb/regs_8hpp_source.html#l00056">56</a> of file <a class="el" href="../../d8/dfb/regs_8hpp_source.html">regs.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;{</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keyword">struct </span>CR3 x;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keyword">asm</span> <span class="keyword">volatile</span>(<span class="stringliteral">&quot;mov %%cr3, %0&quot;</span>: <span class="stringliteral">&quot;=r&quot;</span>(x));</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordflow">return</span> x;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -210,10 +210,10 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d8/dfb/regs_8hpp_source.html#l00052">52</a> of file <a class="el" href="../../d8/dfb/regs_8hpp_source.html">regs.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;{</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keyword">asm</span> <span class="keyword">volatile</span>(<span class="stringliteral">&quot;mov %0, %%cr0&quot;</span>:: <span class="stringliteral">&quot;r&quot;</span>(x));</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../d8/dfb/regs_8hpp_source.html#l00051">51</a> of file <a class="el" href="../../d8/dfb/regs_8hpp_source.html">regs.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;{</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keyword">asm</span> <span class="keyword">volatile</span>(<span class="stringliteral">&quot;mov %0, %%cr0&quot;</span>:: <span class="stringliteral">&quot;r&quot;</span>(x));</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;}</div>
 </div><!-- fragment --><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="../../closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -253,10 +253,10 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d8/dfb/regs_8hpp_source.html#l00064">64</a> of file <a class="el" href="../../d8/dfb/regs_8hpp_source.html">regs.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;{</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keyword">asm</span> <span class="keyword">volatile</span>(<span class="stringliteral">&quot;mov %0, %%cr3&quot;</span>:: <span class="stringliteral">&quot;r&quot;</span>(x));</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../d8/dfb/regs_8hpp_source.html#l00063">63</a> of file <a class="el" href="../../d8/dfb/regs_8hpp_source.html">regs.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;{</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keyword">asm</span> <span class="keyword">volatile</span>(<span class="stringliteral">&quot;mov %0, %%cr3&quot;</span>:: <span class="stringliteral">&quot;r&quot;</span>(x));</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>

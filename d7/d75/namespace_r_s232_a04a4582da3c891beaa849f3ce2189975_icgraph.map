@@ -1,11 +1,10 @@
 <map id="RS232::vprintf" name="RS232::vprintf">
-<area shape="rect" id="node1" title="Prints a formatted string to serial output using a va_list of arguments." alt="" coords="652,149,767,176"/>
-<area shape="rect" id="node2" href="$d7/d75/namespace_r_s232.html#a394b7ac1c601a47c2881a460eb41171a" title="Prints a formatted string to serial output." alt="" coords="497,149,604,176"/>
-<area shape="rect" id="node3" href="$df/d70/class_boot_1_1_handoff.html#a63449bd33cc1e30ec2b8ae2bf9ef155d" title=" " alt="" coords="5,149,176,176"/>
-<area shape="rect" id="node4" href="$d6/d9b/namespace_graphics.html#a07a66de579f4136325cb15218dd71110" title="Initializes the framebuffer (if available)" alt="" coords="283,48,391,75"/>
-<area shape="rect" id="node5" href="$d7/d75/namespace_r_s232.html#acbd0855fa0862424053ed439eb77e6b3" title="Activates the RS232 serial driver." alt="" coords="291,99,383,125"/>
-<area shape="rect" id="node6" href="$df/d70/class_boot_1_1_handoff.html#a660bc107223f5e3bf5b8c4604fed265c" title=" " alt="" coords="224,149,449,176"/>
-<area shape="rect" id="node7" href="$df/d70/class_boot_1_1_handoff.html#aa2d1c752220db05f3602f99d07d0dca3" title=" " alt="" coords="233,200,441,227"/>
-<area shape="rect" id="node8" href="$d4/db9/trace_8hpp.html#a9f452d4e0d092c1052a36cd56e9f77b6" title=" " alt="" coords="288,251,385,277"/>
-<area shape="rect" id="node9" href="$d2/dbd/tasks_8hpp.html#ac7a1f4f04e6d7bdbc47de59c05a61262" title="Exits the current task." alt="" coords="292,301,381,328"/>
+<area shape="rect" id="node1" title="Prints a formatted string to serial output using a va_list of arguments." alt="" coords="652,118,767,145"/>
+<area shape="rect" id="node2" href="$d7/d75/namespace_r_s232.html#a394b7ac1c601a47c2881a460eb41171a" title="Prints a formatted string to serial output." alt="" coords="497,118,604,145"/>
+<area shape="rect" id="node3" href="$df/d70/class_boot_1_1_handoff.html#a63449bd33cc1e30ec2b8ae2bf9ef155d" title=" " alt="" coords="5,93,176,120"/>
+<area shape="rect" id="node4" href="$d7/d75/namespace_r_s232.html#acbd0855fa0862424053ed439eb77e6b3" title="Activates the RS232 serial driver." alt="" coords="291,42,383,69"/>
+<area shape="rect" id="node5" href="$df/d70/class_boot_1_1_handoff.html#a660bc107223f5e3bf5b8c4604fed265c" title=" " alt="" coords="224,93,449,120"/>
+<area shape="rect" id="node6" href="$df/d70/class_boot_1_1_handoff.html#aa2d1c752220db05f3602f99d07d0dca3" title=" " alt="" coords="233,144,441,170"/>
+<area shape="rect" id="node7" href="$d4/db9/trace_8hpp.html#a9f452d4e0d092c1052a36cd56e9f77b6" title=" " alt="" coords="288,194,385,221"/>
+<area shape="rect" id="node8" href="$d2/dbd/tasks_8hpp.html#ac7a1f4f04e6d7bdbc47de59c05a61262" title="Exits the current task." alt="" coords="292,245,381,272"/>
 </map>

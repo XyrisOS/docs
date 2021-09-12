@@ -1,18 +1,17 @@
 <map id="strlen" name="strlen">
-<area shape="rect" id="node1" title="Returns the length of a string." alt="" coords="968,164,1027,191"/>
-<area shape="rect" id="node2" href="$d2/daf/stdio_8hpp.html#a85a2fff114bf015eba22a1dc163bf1ba" title="Perform all printf operations on the format string using the provided argument list and uses the call..." alt="" coords="815,113,920,140"/>
-<area shape="rect" id="node14" href="$d4/da0/string_8hpp.html#a4807334c4e90264cee03c6c529ff3846" title="Reverses the inputted string." alt="" coords="832,164,903,191"/>
-<area shape="rect" id="node16" href="$d4/da0/string_8hpp.html#adb8723e585ed29f2370cddf90f6891bc" title="Concatanates source onto destination." alt="" coords="838,215,897,241"/>
-<area shape="rect" id="node3" href="$d2/daf/stdio_8hpp.html#a626c6babba88d2b34beacfb116a71fb8" title="Sends formatted output to a string using an argument list." alt="" coords="669,63,749,89"/>
-<area shape="rect" id="node6" href="$d7/d75/namespace_r_s232.html#a04a4582da3c891beaa849f3ce2189975" title="Prints a formatted string to serial output using a va_list of arguments." alt="" coords="652,113,767,140"/>
-<area shape="rect" id="node4" href="$d2/daf/stdio_8hpp.html#a4a8483991af81c2a4ae0025f4d2fb5e7" title="Sends formatted output to a string." alt="" coords="515,44,587,71"/>
+<area shape="rect" id="node1" title="Returns the length of a string." alt="" coords="968,144,1027,171"/>
+<area shape="rect" id="node2" href="$d2/daf/stdio_8hpp.html#a85a2fff114bf015eba22a1dc163bf1ba" title="Perform all printf operations on the format string using the provided argument list and uses the call..." alt="" coords="815,93,920,120"/>
+<area shape="rect" id="node13" href="$d4/da0/string_8hpp.html#a4807334c4e90264cee03c6c529ff3846" title="Reverses the inputted string." alt="" coords="832,144,903,171"/>
+<area shape="rect" id="node15" href="$d4/da0/string_8hpp.html#adb8723e585ed29f2370cddf90f6891bc" title="Concatanates source onto destination." alt="" coords="838,195,897,221"/>
+<area shape="rect" id="node3" href="$d2/daf/stdio_8hpp.html#a626c6babba88d2b34beacfb116a71fb8" title="Sends formatted output to a string using an argument list." alt="" coords="669,43,749,69"/>
+<area shape="rect" id="node6" href="$d7/d75/namespace_r_s232.html#a04a4582da3c891beaa849f3ce2189975" title="Prints a formatted string to serial output using a va_list of arguments." alt="" coords="652,93,767,120"/>
+<area shape="rect" id="node4" href="$d2/daf/stdio_8hpp.html#a4a8483991af81c2a4ae0025f4d2fb5e7" title="Sends formatted output to a string." alt="" coords="515,31,587,57"/>
 <area shape="rect" id="node5" href="$d4/db9/trace_8hpp.html#a9f452d4e0d092c1052a36cd56e9f77b6" title=" " alt="" coords="288,5,385,32"/>
-<area shape="rect" id="node7" href="$d7/d75/namespace_r_s232.html#a394b7ac1c601a47c2881a460eb41171a" title="Prints a formatted string to serial output." alt="" coords="497,132,604,159"/>
-<area shape="rect" id="node8" href="$df/d70/class_boot_1_1_handoff.html#a63449bd33cc1e30ec2b8ae2bf9ef155d" title=" " alt="" coords="5,208,176,235"/>
-<area shape="rect" id="node9" href="$d6/d9b/namespace_graphics.html#a07a66de579f4136325cb15218dd71110" title="Initializes the framebuffer (if available)" alt="" coords="283,107,391,133"/>
-<area shape="rect" id="node10" href="$d7/d75/namespace_r_s232.html#acbd0855fa0862424053ed439eb77e6b3" title="Activates the RS232 serial driver." alt="" coords="291,157,383,184"/>
-<area shape="rect" id="node11" href="$df/d70/class_boot_1_1_handoff.html#a660bc107223f5e3bf5b8c4604fed265c" title=" " alt="" coords="224,208,449,235"/>
-<area shape="rect" id="node12" href="$df/d70/class_boot_1_1_handoff.html#aa2d1c752220db05f3602f99d07d0dca3" title=" " alt="" coords="233,259,441,285"/>
-<area shape="rect" id="node13" href="$d2/dbd/tasks_8hpp.html#ac7a1f4f04e6d7bdbc47de59c05a61262" title="Exits the current task." alt="" coords="292,309,381,336"/>
-<area shape="rect" id="node15" href="$d4/da0/string_8hpp.html#a44b3294305d8f0b6a4ec2e411755cda2" title="Converts an integer into its ASCII representation. (This does not have a standard,..." alt="" coords="686,164,733,191"/>
+<area shape="rect" id="node7" href="$d7/d75/namespace_r_s232.html#a394b7ac1c601a47c2881a460eb41171a" title="Prints a formatted string to serial output." alt="" coords="497,107,604,133"/>
+<area shape="rect" id="node8" href="$df/d70/class_boot_1_1_handoff.html#a63449bd33cc1e30ec2b8ae2bf9ef155d" title=" " alt="" coords="5,157,176,184"/>
+<area shape="rect" id="node9" href="$d7/d75/namespace_r_s232.html#acbd0855fa0862424053ed439eb77e6b3" title="Activates the RS232 serial driver." alt="" coords="291,107,383,133"/>
+<area shape="rect" id="node10" href="$df/d70/class_boot_1_1_handoff.html#a660bc107223f5e3bf5b8c4604fed265c" title=" " alt="" coords="224,157,449,184"/>
+<area shape="rect" id="node11" href="$df/d70/class_boot_1_1_handoff.html#aa2d1c752220db05f3602f99d07d0dca3" title=" " alt="" coords="233,208,441,235"/>
+<area shape="rect" id="node12" href="$d2/dbd/tasks_8hpp.html#ac7a1f4f04e6d7bdbc47de59c05a61262" title="Exits the current task." alt="" coords="292,259,381,285"/>
+<area shape="rect" id="node14" href="$d4/da0/string_8hpp.html#a44b3294305d8f0b6a4ec2e411755cda2" title="Converts an integer into its ASCII representation. (This does not have a standard,..." alt="" coords="686,144,733,171"/>
 </map>

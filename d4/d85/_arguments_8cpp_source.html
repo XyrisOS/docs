@@ -100,32 +100,30 @@ $(document).ready(function(){initNavTree('d4/d85/_arguments_8cpp_source.html','.
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="../../d5/d87/_arguments_8hpp.html">boot/Arguments.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="../../d2/daf/stdio_8hpp.html">lib/stdio.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="../../d4/da0/string_8hpp.html">lib/string.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="../../d0/d29/sections_8hpp.html">meta/sections.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="../../da/d80/namespace_boot.html">   16</a></span>&#160;<span class="keyword">namespace </span><a class="code" href="../../da/d80/namespace_boot.html">Boot</a> {</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="../../da/d80/namespace_boot.html#a06e63f208a6743c77e14c9428a7446c9">   18</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../da/d80/namespace_boot.html#a06e63f208a6743c77e14c9428a7446c9">parseCommandLine</a>(<span class="keywordtype">char</span>* cmdline)</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">struct</span> <a class="code" href="../../df/d0d/struct_boot_1_1argument.html">argument</a>* arg = <a class="code" href="../../d0/d29/sections_8hpp.html#aa8aad5af1209bbb4688b75ea2ce8ea6f">_ARGUMENTS_START</a>; arg &lt; <a class="code" href="../../d0/d29/sections_8hpp.html#a929e82d6c89c817ac193ae905aa4fc48">_ARGUMENTS_END</a>; arg++) {</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="../../d5/d24/string_8cpp.html#ae1e87cf0776db5e2c3f9350b61e56000">strstr</a>(cmdline, arg-&gt;arg)) {</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;            arg-&gt;callback(arg-&gt;arg);</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        }</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    }</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;}</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;} <span class="comment">// !namespace Boot</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="../../da/d80/namespace_boot.html">   15</a></span>&#160;<span class="keyword">namespace </span><a class="code" href="../../da/d80/namespace_boot.html">Boot</a> {</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="../../da/d80/namespace_boot.html#a06e63f208a6743c77e14c9428a7446c9">   17</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../da/d80/namespace_boot.html#a06e63f208a6743c77e14c9428a7446c9">parseCommandLine</a>(<span class="keywordtype">char</span>* cmdline)</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">struct</span> <a class="code" href="../../df/d0d/struct_boot_1_1argument.html">argument</a>* arg = <a class="code" href="../../d5/d87/_arguments_8hpp.html#aa8aad5af1209bbb4688b75ea2ce8ea6f">_ARGUMENTS_START</a>; arg &lt; <a class="code" href="../../d5/d87/_arguments_8hpp.html#a929e82d6c89c817ac193ae905aa4fc48">_ARGUMENTS_END</a>; arg++) {</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="../../d5/d24/string_8cpp.html#ae1e87cf0776db5e2c3f9350b61e56000">strstr</a>(cmdline, arg-&gt;arg)) {</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;            arg-&gt;callback(arg-&gt;arg);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        }</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    }</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;}</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;} <span class="comment">// !namespace Boot</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="astdio_8hpp_html"><div class="ttname"><a href="../../d2/daf/stdio_8hpp.html">stdio.hpp</a></div></div>
 <div class="ttc" id="astruct_boot_1_1argument_html"><div class="ttname"><a href="../../df/d0d/struct_boot_1_1argument.html">Boot::argument</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d87/_arguments_8hpp_source.html#l00022">Arguments.hpp:22</a></div></div>
-<div class="ttc" id="astring_8cpp_html_ae1e87cf0776db5e2c3f9350b61e56000"><div class="ttname"><a href="../../d5/d24/string_8cpp.html#ae1e87cf0776db5e2c3f9350b61e56000">strstr</a></div><div class="ttdeci">const char * strstr(const char *haystack, const char *needle)</div><div class="ttdoc">Locates a substring (needle) within a containing string (haystack)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d24/string_8cpp_source.html#l00066">string.cpp:66</a></div></div>
+<div class="ttc" id="a_arguments_8hpp_html_aa8aad5af1209bbb4688b75ea2ce8ea6f"><div class="ttname"><a href="../../d5/d87/_arguments_8hpp.html#aa8aad5af1209bbb4688b75ea2ce8ea6f">_ARGUMENTS_START</a></div><div class="ttdeci">struct Boot::argument _ARGUMENTS_START[0]</div></div>
+<div class="ttc" id="astring_8cpp_html_ae1e87cf0776db5e2c3f9350b61e56000"><div class="ttname"><a href="../../d5/d24/string_8cpp.html#ae1e87cf0776db5e2c3f9350b61e56000">strstr</a></div><div class="ttdeci">const char * strstr(const char *haystack, const char *needle)</div><div class="ttdoc">Locates a substring (needle) within a containing string (haystack)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d24/string_8cpp_source.html#l00065">string.cpp:65</a></div></div>
+<div class="ttc" id="a_arguments_8hpp_html_a929e82d6c89c817ac193ae905aa4fc48"><div class="ttname"><a href="../../d5/d87/_arguments_8hpp.html#a929e82d6c89c817ac193ae905aa4fc48">_ARGUMENTS_END</a></div><div class="ttdeci">struct Boot::argument _ARGUMENTS_END[0]</div></div>
 <div class="ttc" id="a_arguments_8hpp_html"><div class="ttname"><a href="../../d5/d87/_arguments_8hpp.html">Arguments.hpp</a></div></div>
 <div class="ttc" id="astring_8hpp_html"><div class="ttname"><a href="../../d4/da0/string_8hpp.html">string.hpp</a></div><div class="ttdoc">Standard string and memory utility library.</div></div>
-<div class="ttc" id="asections_8hpp_html_a929e82d6c89c817ac193ae905aa4fc48"><div class="ttname"><a href="../../d0/d29/sections_8hpp.html#a929e82d6c89c817ac193ae905aa4fc48">_ARGUMENTS_END</a></div><div class="ttdeci">struct Boot::argument _ARGUMENTS_END[0]</div></div>
-<div class="ttc" id="asections_8hpp_html"><div class="ttname"><a href="../../d0/d29/sections_8hpp.html">sections.hpp</a></div><div class="ttdoc">Kernel ELF section definitions.</div></div>
-<div class="ttc" id="anamespace_boot_html"><div class="ttname"><a href="../../da/d80/namespace_boot.html">Boot</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d85/_arguments_8cpp_source.html#l00016">Arguments.cpp:16</a></div></div>
-<div class="ttc" id="asections_8hpp_html_aa8aad5af1209bbb4688b75ea2ce8ea6f"><div class="ttname"><a href="../../d0/d29/sections_8hpp.html#aa8aad5af1209bbb4688b75ea2ce8ea6f">_ARGUMENTS_START</a></div><div class="ttdeci">struct Boot::argument _ARGUMENTS_START[0]</div></div>
-<div class="ttc" id="anamespace_boot_html_a06e63f208a6743c77e14c9428a7446c9"><div class="ttname"><a href="../../da/d80/namespace_boot.html#a06e63f208a6743c77e14c9428a7446c9">Boot::parseCommandLine</a></div><div class="ttdeci">void parseCommandLine(char *cmdline)</div><div class="ttdoc">Parse a command line for registered arguments.</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d85/_arguments_8cpp_source.html#l00018">Arguments.cpp:18</a></div></div>
+<div class="ttc" id="anamespace_boot_html"><div class="ttname"><a href="../../da/d80/namespace_boot.html">Boot</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d85/_arguments_8cpp_source.html#l00015">Arguments.cpp:15</a></div></div>
+<div class="ttc" id="anamespace_boot_html_a06e63f208a6743c77e14c9428a7446c9"><div class="ttname"><a href="../../da/d80/namespace_boot.html#a06e63f208a6743c77e14c9428a7446c9">Boot::parseCommandLine</a></div><div class="ttdeci">void parseCommandLine(char *cmdline)</div><div class="ttdoc">Parse a command line for registered arguments.</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d85/_arguments_8cpp_source.html#l00017">Arguments.cpp:17</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

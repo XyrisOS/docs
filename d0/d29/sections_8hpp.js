@@ -1,7 +1,5 @@
 var sections_8hpp =
 [
-    [ "ARGUMENTS_END", "d0/d29/sections_8hpp.html#a5792d07871b0b80b8d7dbce1e50bbb60", null ],
-    [ "ARGUMENTS_START", "d0/d29/sections_8hpp.html#ab6cfcb4cbc2276fb775a7112b5c65130", null ],
     [ "BSS_END", "d0/d29/sections_8hpp.html#a8885566a7b405e61ea4b55adbe108d35", null ],
     [ "BSS_START", "d0/d29/sections_8hpp.html#aaa4cac0bc6572368838af44d9cd914a0", null ],
     [ "CTORS_END", "d0/d29/sections_8hpp.html#a59c90a103c1f262d2b4203e1a9149dab", null ],
@@ -16,8 +14,6 @@ var sections_8hpp =
     [ "PAGE_TABLES_END", "d0/d29/sections_8hpp.html#a058cf06bbeed32ec8c8d084d29e4e823", null ],
     [ "PAGE_TABLES_START", "d0/d29/sections_8hpp.html#a823f9064f6a8b21bfa0d71de8e3b6aa4", null ],
     [ "SECTION", "d0/d29/sections_8hpp.html#a9982c2dc93e94348913cd6b7b0618973", null ],
-    [ "_ARGUMENTS_END", "d0/d29/sections_8hpp.html#a929e82d6c89c817ac193ae905aa4fc48", null ],
-    [ "_ARGUMENTS_START", "d0/d29/sections_8hpp.html#aa8aad5af1209bbb4688b75ea2ce8ea6f", null ],
     [ "_BSS_END", "d0/d29/sections_8hpp.html#a0ca4382078059b8f7852a26385becf55", null ],
     [ "_BSS_START", "d0/d29/sections_8hpp.html#a672570938e1a6282f4860f753832b3e3", null ],
     [ "_CTORS_END", "d0/d29/sections_8hpp.html#a20f39770bc6cfb32f4811b29c5c7860f", null ],

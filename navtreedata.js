@@ -68,8 +68,8 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"d2/dbd/tasks_8hpp_source.html",
-"d4/ddc/isr_8hpp.html#aaf8a8dc035d379d8173b06a2ebd881a1",
+"d3/d1c/structidt__register.html",
+"d4/ddc/isr_8hpp.html#acc90c1ac3bbcb4fc45ccda7cde4882c7",
 "d8/da4/stivale2_8_s_source.html",
 "da/da5/spkr_8cpp_source.html",
 "functions_func.html"
