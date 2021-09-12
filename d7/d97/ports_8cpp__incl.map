@@ -2,7 +2,7 @@
 <area shape="rect" id="node1" title="CPU port access functions." alt="" coords="382,5,465,32"/>
 <area shape="rect" id="node2" href="$d8/d9f/ports_8hpp.html" title="Ports header file. Provides inline functions for getting and setting values at different ports...." alt="" coords="350,80,497,107"/>
 <area shape="rect" id="node3" title=" " alt="" coords="233,304,304,331"/>
-<area shape="rect" id="node4" href="$df/d6c/arch-i386_8hpp.html" title="i386 architecture implementation of arch.hpp" alt="" coords="336,155,511,181"/>
+<area shape="rect" id="node4" href="$dd/de9/_arch_8i386_8hpp.html" title="i386 architecture implementation of Arch.hpp" alt="" coords="336,155,511,181"/>
 <area shape="rect" id="node5" href="$df/d77/gdt_8hpp.html" title="The Global Descriptor Table (GDT) is specific to the IA32 architecture. It contains entries telling t..." alt="" coords="44,229,179,256"/>
 <area shape="rect" id="node6" href="$dd/d12/idt_8hpp.html" title="Interrupt Descriptor Table header." alt="" coords="203,229,334,256"/>
 <area shape="rect" id="node7" href="$d4/ddc/isr_8hpp.html" title="Interrupt Service Routine header." alt="" coords="359,229,488,256"/>

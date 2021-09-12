@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['read_5fcr0_1756',['read_cr0',['../d8/dfb/regs_8hpp.html#a0f06ad2ba78f085b1274fe804cb4b495',1,'regs.hpp']]],
-  ['read_5fcr3_1757',['read_cr3',['../d8/dfb/regs_8hpp.html#a3b1cda61e78f75b22d810272042ce807',1,'regs.hpp']]],
   ['repo_5furl_1758',['REPO_URL',['../db/df8/defines_8hpp.html#a48dbeb83837dd1fe90b3bf1d004f5a8a',1,'defines.hpp']]],
   ['rs_5f232_5fcom1_1759',['RS_232_COM1',['../db/d90/rs232_8hpp.html#ae025cfd96aece589c9882a20e88ec1fa',1,'rs232.hpp']]],
   ['rs_5f232_5fcom1_5firq_1760',['RS_232_COM1_IRQ',['../d4/dc7/rs232_8cpp.html#a4bf1fea207823c2e74e774193e5179e7',1,'rs232.cpp']]],

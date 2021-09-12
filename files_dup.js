@@ -2,14 +2,13 @@ var files_dup =
 [
     [ "animation.cpp", "d8/ddb/animation_8cpp.html", "d8/ddb/animation_8cpp" ],
     [ "animation.hpp", "d6/d5a/animation_8hpp.html", "d6/d5a/animation_8hpp" ],
-    [ "arch-i386.cpp", "d2/d2e/arch-i386_8cpp.html", "d2/d2e/arch-i386_8cpp" ],
-    [ "arch-i386.hpp", "df/d6c/arch-i386_8hpp.html", "df/d6c/arch-i386_8hpp" ],
-    [ "arch.hpp", "d2/d76/arch_8hpp.html", "d2/d76/arch_8hpp" ],
+    [ "Arch.hpp", "d7/d9c/_arch_8hpp.html", "d7/d9c/_arch_8hpp" ],
+    [ "Arch.i386.cpp", "d3/d50/_arch_8i386_8cpp.html", "d3/d50/_arch_8i386_8cpp" ],
+    [ "Arch.i386.hpp", "dd/de9/_arch_8i386_8hpp.html", "dd/de9/_arch_8i386_8hpp" ],
     [ "Arguments.cpp", "d4/d85/_arguments_8cpp.html", "d4/d85/_arguments_8cpp" ],
     [ "Arguments.hpp", "d5/d87/_arguments_8hpp.html", "d5/d87/_arguments_8hpp" ],
     [ "assert.hpp", "d2/d54/assert_8hpp.html", "d2/d54/assert_8hpp" ],
-    [ "bitset.cpp", "dc/d7b/bitset_8cpp.html", null ],
-    [ "bitset.hpp", "d6/d86/bitset_8hpp.html", [
+    [ "Bitset.hpp", "d9/d35/_bitset_8hpp.html", [
       [ "Bitset", "d6/d09/class_bitset.html", "d6/d09/class_bitset" ]
     ] ],
     [ "boot.S", "d8/d6a/boot_8_s.html", null ],
@@ -21,7 +20,6 @@ var files_dup =
     [ "crtn.S", "da/da2/crtn_8_s.html", null ],
     [ "cxx.cpp", "d1/dd1/cxx_8cpp.html", "d1/dd1/cxx_8cpp" ],
     [ "defines.hpp", "db/df8/defines_8hpp.html", "db/df8/defines_8hpp" ],
-    [ "early_panic.cpp", "d4/d52/early__panic_8cpp.html", "d4/d52/early__panic_8cpp" ],
     [ "entry.cpp", "d2/dd2/entry_8cpp.html", "d2/dd2/entry_8cpp" ],
     [ "errno.cpp", "d1/db0/errno_8cpp.html", "d1/db0/errno_8cpp" ],
     [ "errno.h", "d8/dc2/errno_8h.html", "d8/dc2/errno_8h" ],
@@ -58,6 +56,7 @@ var files_dup =
     ] ],
     [ "paging.cpp", "d1/d5e/paging_8cpp.html", "d1/d5e/paging_8cpp" ],
     [ "paging.hpp", "d1/d75/paging_8hpp.html", "d1/d75/paging_8hpp" ],
+    [ "boot/panic.cpp", "d3/d22/boot_2panic_8cpp.html", "d3/d22/boot_2panic_8cpp" ],
     [ "panic.cpp", "d6/d1e/panic_8cpp.html", "d6/d1e/panic_8cpp" ],
     [ "panic.hpp", "da/d6a/panic_8hpp.html", null ],
     [ "ports.cpp", "d7/d27/ports_8cpp.html", "d7/d27/ports_8cpp" ],
@@ -87,6 +86,7 @@ var files_dup =
     [ "stack.cpp", "d8/d87/stack_8cpp.html", "d8/d87/stack_8cpp" ],
     [ "stack.hpp", "df/d47/stack_8hpp.html", "df/d47/stack_8hpp" ],
     [ "stdio.hpp", "d2/daf/stdio_8hpp.html", "d2/daf/stdio_8hpp" ],
+    [ "stivale.cpp", "da/de5/stivale_8cpp.html", null ],
     [ "stivale2.S", "d8/da4/stivale2_8_s.html", null ],
     [ "string.cpp", "d5/d24/string_8cpp.html", "d5/d24/string_8cpp" ],
     [ "string.hpp", "d4/da0/string_8hpp.html", "d4/da0/string_8hpp" ],

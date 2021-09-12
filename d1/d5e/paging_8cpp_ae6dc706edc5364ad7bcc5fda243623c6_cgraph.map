@@ -1,0 +1,4 @@
+<map id="map_kernel_range_virtual" name="map_kernel_range_virtual">
+<area shape="rect" id="node1" title="Map an address range into the kernel virtual address space." alt="" coords="5,5,196,32"/>
+<area shape="rect" id="node2" href="$d1/d5e/paging_8cpp.html#abdb9a2f0a828ec365b6bde6f4c3eb3f7" title="Map a page into the kernel address space." alt="" coords="244,5,381,32"/>
+</map>

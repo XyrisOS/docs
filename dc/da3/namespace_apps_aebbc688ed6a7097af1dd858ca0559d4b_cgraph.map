@@ -1,15 +1,11 @@
 <map id="Apps::show_primes" name="Apps::show_primes">
-<area shape="rect" id="node1" title="Starts a task to display number of primes found by find_primes." alt="" coords="5,129,153,156"/>
-<area shape="rect" id="node2" href="$d6/d09/class_bitset.html#abde1d6cdc2a360906f01a25511d0cf9b" title=" " alt="" coords="225,56,316,83"/>
-<area shape="rect" id="node6" href="$d8/db5/namespace_console.html#aa92244db771ad2578967dd9f8fcac912" title=" " alt="" coords="212,129,329,156"/>
-<area shape="rect" id="node12" href="$d5/d9d/tasks_8cpp.html#afe0837dfadb366ea8717fd97e04b3374" title="Sleep for a given period of time (in nanoseconds)." alt="" coords="201,180,340,207"/>
-<area shape="rect" id="node3" href="$d6/d09/class_bitset.html#a60d018e6ded385ab8faf0592065c6550" title=" " alt="" coords="423,5,527,32"/>
-<area shape="rect" id="node5" href="$d6/d09/class_bitset.html#a6bc7c74b2174dad5665fc63d13c937f2" title=" " alt="" coords="422,56,529,83"/>
-<area shape="rect" id="node4" href="$d6/d09/class_bitset.html#aa882bdd0b6527349626863d4c93b6ed3" title=" " alt="" coords="631,5,757,32"/>
-<area shape="rect" id="node7" href="$d6/d9b/namespace_graphics.html#afb7733fe050948fc3a09cd9a87071ffc" title="Swap the data on backbuffer to memory video buffer and show in the screen." alt="" coords="415,129,536,156"/>
-<area shape="rect" id="node8" href="$d0/dcb/class_graphics_1_1_framebuffer.html#af62e5c11c830410a3213e2b17075b158" title=" " alt="" coords="611,57,777,98"/>
-<area shape="rect" id="node9" href="$d0/dcb/class_graphics_1_1_framebuffer.html#a1056e91da94b6937b0a6deeb3a859368" title=" " alt="" coords="611,122,777,163"/>
-<area shape="rect" id="node10" href="$d0/dcb/class_graphics_1_1_framebuffer.html#a4b6694a0728b42872a51eb15a631cd51" title=" " alt="" coords="611,187,777,229"/>
-<area shape="rect" id="node11" href="$d5/d24/string_8cpp.html#a370712322c794e949c996946f2283ea8" title=" " alt="" coords="655,253,733,280"/>
-<area shape="rect" id="node13" href="$d5/d9d/tasks_8cpp.html#a1280b6050df9305a3afc0b8f609e581c" title="Sleeps until the provided absolute time (in nanoseconds)." alt="" coords="388,180,563,207"/>
+<area shape="rect" id="node1" title="Starts a task to display number of primes found by find_primes." alt="" coords="5,137,153,163"/>
+<area shape="rect" id="node2" href="$d8/db5/namespace_console.html#aa92244db771ad2578967dd9f8fcac912" title=" " alt="" coords="212,111,329,138"/>
+<area shape="rect" id="node8" href="$d5/d9d/tasks_8cpp.html#afe0837dfadb366ea8717fd97e04b3374" title="Sleep for a given period of time (in nanoseconds)." alt="" coords="201,162,340,189"/>
+<area shape="rect" id="node3" href="$d6/d9b/namespace_graphics.html#afb7733fe050948fc3a09cd9a87071ffc" title="Swap the data on backbuffer to memory video buffer and show in the screen." alt="" coords="415,111,536,138"/>
+<area shape="rect" id="node4" href="$d0/dcb/class_graphics_1_1_framebuffer.html#af62e5c11c830410a3213e2b17075b158" title=" " alt="" coords="611,5,777,47"/>
+<area shape="rect" id="node5" href="$d0/dcb/class_graphics_1_1_framebuffer.html#a1056e91da94b6937b0a6deeb3a859368" title=" " alt="" coords="611,71,777,112"/>
+<area shape="rect" id="node6" href="$d0/dcb/class_graphics_1_1_framebuffer.html#a4b6694a0728b42872a51eb15a631cd51" title=" " alt="" coords="611,136,777,177"/>
+<area shape="rect" id="node7" href="$d5/d24/string_8cpp.html#a370712322c794e949c996946f2283ea8" title=" " alt="" coords="655,202,733,229"/>
+<area shape="rect" id="node9" href="$d5/d9d/tasks_8cpp.html#a1280b6050df9305a3afc0b8f609e581c" title="Sleeps until the provided absolute time (in nanoseconds)." alt="" coords="388,162,563,189"/>
 </map>

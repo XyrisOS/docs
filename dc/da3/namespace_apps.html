@@ -120,34 +120,16 @@ Functions</h2></td></tr>
 
 <p>Starts a task to find prime numbers. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/dde/primes_8cpp_source.html#l00030">30</a> of file <a class="el" href="../../d0/dde/primes_8cpp_source.html">primes.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;{</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code" href="../../d0/dde/primes_8cpp.html#a7fffd785ab95c3ef9ad3b6fe92782489">PRIMES_SIZE</a>; i++)</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        primes[i] = SIZE_MAX;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordflow">for</span> (prime_current = 2; prime_current &lt; <a class="code" href="../../d0/dde/primes_8cpp.html#a940645b8b38b41954bc8a9d244ce7fa0">PRIME_MAX_SQRT</a>; prime_current++) {</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keywordflow">if</span> (!map.<a class="code" href="../../d6/d09/class_bitset.html#abde1d6cdc2a360906f01a25511d0cf9b">Get</a>(prime_current)) <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> j = prime_current * prime_current; j &lt; <a class="code" href="../../d0/dde/primes_8cpp.html#aa62c7fb21b0b1a4d6411ebd3c4bd764b">PRIME_MAX</a>; j += prime_current) {</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            map.<a class="code" href="../../d6/d09/class_bitset.html#adcdb6630365092a52dd086238a1bfee7">Clear</a>(j);</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        }</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    }</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div>
-</div><!-- fragment --><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="../../dc/da3/namespace_apps_a123741423e248d0925dba5b3a79a1849_cgraph.png" border="0" usemap="#dc/da3/namespace_apps_a123741423e248d0925dba5b3a79a1849_cgraph" alt=""/></div>
-<map name="dc/da3/namespace_apps_a123741423e248d0925dba5b3a79a1849_cgraph" id="dc/da3/namespace_apps_a123741423e248d0925dba5b3a79a1849_cgraph">
-<area shape="rect" title="Starts a task to find prime numbers." alt="" coords="5,31,144,57"/>
-<area shape="rect" href="../../d6/d09/class_bitset.html#adcdb6630365092a52dd086238a1bfee7" title=" " alt="" coords="192,5,295,32"/>
-<area shape="rect" href="../../d6/d09/class_bitset.html#abde1d6cdc2a360906f01a25511d0cf9b" title=" " alt="" coords="198,56,289,83"/>
-<area shape="rect" href="../../d6/d09/class_bitset.html#a60d018e6ded385ab8faf0592065c6550" title=" " alt="" coords="344,5,448,32"/>
-<area shape="rect" href="../../d6/d09/class_bitset.html#a6bc7c74b2174dad5665fc63d13c937f2" title=" " alt="" coords="343,56,449,83"/>
-<area shape="rect" href="../../d6/d09/class_bitset.html#aa882bdd0b6527349626863d4c93b6ed3" title=" " alt="" coords="497,31,623,57"/>
-</map>
-</div>
-
+<p class="definition">Definition at line <a class="el" href="../../d0/dde/primes_8cpp_source.html#l00029">29</a> of file <a class="el" href="../../d0/dde/primes_8cpp_source.html">primes.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;{</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordflow">for</span> (prime_current = 2; prime_current &lt; <a class="code" href="../../d0/dde/primes_8cpp.html#a940645b8b38b41954bc8a9d244ce7fa0">PRIME_MAX_SQRT</a>; prime_current++) {</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="keywordflow">if</span> (!map.Test(prime_current)) <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> j = prime_current * prime_current; j &lt; <a class="code" href="../../d0/dde/primes_8cpp.html#aa62c7fb21b0b1a4d6411ebd3c4bd764b">PRIME_MAX</a>; j += prime_current) {</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            map.Reset(j);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        }</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    }</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aebbc688ed6a7097af1dd858ca0559d4b"></a>
@@ -168,40 +150,36 @@ Functions</h2></td></tr>
 
 <p>Starts a task to display number of primes found by find_primes. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/dde/primes_8cpp_source.html#l00043">43</a> of file <a class="el" href="../../d0/dde/primes_8cpp_source.html">primes.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;{</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordflow">do</span> {</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <a class="code" href="../../d5/d9d/tasks_8cpp.html#afe0837dfadb366ea8717fd97e04b3374">tasks_nano_sleep</a>(1000ULL * 1000 * 1000);</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keywordtype">size_t</span> pct = (prime_current * 100) / <a class="code" href="../../d0/dde/primes_8cpp.html#a940645b8b38b41954bc8a9d244ce7fa0">PRIME_MAX_SQRT</a>;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <a class="code" href="../../d8/db5/namespace_console.html#aa92244db771ad2578967dd9f8fcac912">Console::printf</a>(<span class="stringliteral">&quot;\e[s\e[23;0fComputing primes: %%%u\e[u&quot;</span>, pct);</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    } <span class="keywordflow">while</span> (prime_current &lt; <a class="code" href="../../d0/dde/primes_8cpp.html#a940645b8b38b41954bc8a9d244ce7fa0">PRIME_MAX_SQRT</a>);</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">size_t</span> count = 0;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 2; i &lt; <a class="code" href="../../d0/dde/primes_8cpp.html#aa62c7fb21b0b1a4d6411ebd3c4bd764b">PRIME_MAX</a>; i++) {</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        count += map.<a class="code" href="../../d6/d09/class_bitset.html#abde1d6cdc2a360906f01a25511d0cf9b">Get</a>(i);</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    }</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="../../d8/db5/namespace_console.html#aa92244db771ad2578967dd9f8fcac912">Console::printf</a>(<span class="stringliteral">&quot;\e[s\e[23;0fFound %u primes between 2 and %u.\e[u&quot;</span>, count, <a class="code" href="../../d0/dde/primes_8cpp.html#aa62c7fb21b0b1a4d6411ebd3c4bd764b">PRIME_MAX</a>);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;}</div>
-</div><!-- fragment --><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="../../d0/dde/primes_8cpp_source.html#l00039">39</a> of file <a class="el" href="../../d0/dde/primes_8cpp_source.html">primes.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordflow">do</span> {</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <a class="code" href="../../d5/d9d/tasks_8cpp.html#afe0837dfadb366ea8717fd97e04b3374">tasks_nano_sleep</a>(1000ULL * 1000 * 1000);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keywordtype">size_t</span> pct = (prime_current * 100) / <a class="code" href="../../d0/dde/primes_8cpp.html#a940645b8b38b41954bc8a9d244ce7fa0">PRIME_MAX_SQRT</a>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <a class="code" href="../../d8/db5/namespace_console.html#aa92244db771ad2578967dd9f8fcac912">Console::printf</a>(<span class="stringliteral">&quot;\e[s\e[23;0fComputing primes: %%%u\e[u&quot;</span>, pct);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    } <span class="keywordflow">while</span> (prime_current &lt; <a class="code" href="../../d0/dde/primes_8cpp.html#a940645b8b38b41954bc8a9d244ce7fa0">PRIME_MAX_SQRT</a>);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">size_t</span> count = 0;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 2; i &lt; <a class="code" href="../../d0/dde/primes_8cpp.html#aa62c7fb21b0b1a4d6411ebd3c4bd764b">PRIME_MAX</a>; i++) {</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        count += map.Test(i);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    }</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="code" href="../../d8/db5/namespace_console.html#aa92244db771ad2578967dd9f8fcac912">Console::printf</a>(<span class="stringliteral">&quot;\e[s\e[23;0fFound %u primes between 2 and %u.\e[u&quot;</span>, count, <a class="code" href="../../d0/dde/primes_8cpp.html#aa62c7fb21b0b1a4d6411ebd3c4bd764b">PRIME_MAX</a>);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;}</div>
+</div><!-- fragment --><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="../../dc/da3/namespace_apps_aebbc688ed6a7097af1dd858ca0559d4b_cgraph.png" border="0" usemap="#dc/da3/namespace_apps_aebbc688ed6a7097af1dd858ca0559d4b_cgraph" alt=""/></div>
 <map name="dc/da3/namespace_apps_aebbc688ed6a7097af1dd858ca0559d4b_cgraph" id="dc/da3/namespace_apps_aebbc688ed6a7097af1dd858ca0559d4b_cgraph">
-<area shape="rect" title="Starts a task to display number of primes found by find_primes." alt="" coords="5,129,153,156"/>
-<area shape="rect" href="../../d6/d09/class_bitset.html#abde1d6cdc2a360906f01a25511d0cf9b" title=" " alt="" coords="225,56,316,83"/>
-<area shape="rect" href="../../d8/db5/namespace_console.html#aa92244db771ad2578967dd9f8fcac912" title=" " alt="" coords="212,129,329,156"/>
-<area shape="rect" href="../../d5/d9d/tasks_8cpp.html#afe0837dfadb366ea8717fd97e04b3374" title="Sleep for a given period of time (in nanoseconds)." alt="" coords="201,180,340,207"/>
-<area shape="rect" href="../../d6/d09/class_bitset.html#a60d018e6ded385ab8faf0592065c6550" title=" " alt="" coords="423,5,527,32"/>
-<area shape="rect" href="../../d6/d09/class_bitset.html#a6bc7c74b2174dad5665fc63d13c937f2" title=" " alt="" coords="422,56,529,83"/>
-<area shape="rect" href="../../d6/d09/class_bitset.html#aa882bdd0b6527349626863d4c93b6ed3" title=" " alt="" coords="631,5,757,32"/>
-<area shape="rect" href="../../d6/d9b/namespace_graphics.html#afb7733fe050948fc3a09cd9a87071ffc" title="Swap the data on backbuffer to memory video buffer and show in the screen." alt="" coords="415,129,536,156"/>
-<area shape="rect" href="../../d0/dcb/class_graphics_1_1_framebuffer.html#af62e5c11c830410a3213e2b17075b158" title=" " alt="" coords="611,57,777,98"/>
-<area shape="rect" href="../../d0/dcb/class_graphics_1_1_framebuffer.html#a1056e91da94b6937b0a6deeb3a859368" title=" " alt="" coords="611,122,777,163"/>
-<area shape="rect" href="../../d0/dcb/class_graphics_1_1_framebuffer.html#a4b6694a0728b42872a51eb15a631cd51" title=" " alt="" coords="611,187,777,229"/>
-<area shape="rect" href="../../d5/d24/string_8cpp.html#a370712322c794e949c996946f2283ea8" title=" " alt="" coords="655,253,733,280"/>
-<area shape="rect" href="../../d5/d9d/tasks_8cpp.html#a1280b6050df9305a3afc0b8f609e581c" title="Sleeps until the provided absolute time (in nanoseconds)." alt="" coords="388,180,563,207"/>
+<area shape="rect" title="Starts a task to display number of primes found by find_primes." alt="" coords="5,137,153,163"/>
+<area shape="rect" href="../../d8/db5/namespace_console.html#aa92244db771ad2578967dd9f8fcac912" title=" " alt="" coords="212,111,329,138"/>
+<area shape="rect" href="../../d5/d9d/tasks_8cpp.html#afe0837dfadb366ea8717fd97e04b3374" title="Sleep for a given period of time (in nanoseconds)." alt="" coords="201,162,340,189"/>
+<area shape="rect" href="../../d6/d9b/namespace_graphics.html#afb7733fe050948fc3a09cd9a87071ffc" title="Swap the data on backbuffer to memory video buffer and show in the screen." alt="" coords="415,111,536,138"/>
+<area shape="rect" href="../../d0/dcb/class_graphics_1_1_framebuffer.html#af62e5c11c830410a3213e2b17075b158" title=" " alt="" coords="611,5,777,47"/>
+<area shape="rect" href="../../d0/dcb/class_graphics_1_1_framebuffer.html#a1056e91da94b6937b0a6deeb3a859368" title=" " alt="" coords="611,71,777,112"/>
+<area shape="rect" href="../../d0/dcb/class_graphics_1_1_framebuffer.html#a4b6694a0728b42872a51eb15a631cd51" title=" " alt="" coords="611,136,777,177"/>
+<area shape="rect" href="../../d5/d24/string_8cpp.html#a370712322c794e949c996946f2283ea8" title=" " alt="" coords="655,202,733,229"/>
+<area shape="rect" href="../../d5/d9d/tasks_8cpp.html#a1280b6050df9305a3afc0b8f609e581c" title="Sleeps until the provided absolute time (in nanoseconds)." alt="" coords="388,162,563,189"/>
 </map>
 </div>
 
@@ -237,11 +215,11 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keyword">asm</span> <span class="keyword">volatile</span>(<span class="stringliteral">&quot;hlt&quot;</span>);</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    }</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;}</div>
-</div><!-- fragment --><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div><!-- fragment --><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="../../dc/da3/namespace_apps_aaa2be84c7a45c27af1e3bddb75e87a48_cgraph.png" border="0" usemap="#dc/da3/namespace_apps_aaa2be84c7a45c27af1e3bddb75e87a48_cgraph" alt=""/></div>
 <map name="dc/da3/namespace_apps_aaa2be84c7a45c27af1e3bddb75e87a48_cgraph" id="dc/da3/namespace_apps_aaa2be84c7a45c27af1e3bddb75e87a48_cgraph">
 <area shape="rect" title="Starts a spinner in an infinite loop." alt="" coords="5,111,116,138"/>
@@ -291,11 +269,11 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <a class="code" href="../../d6/d9b/namespace_graphics.html#afb7733fe050948fc3a09cd9a87071ffc">Graphics::swap</a>();</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    }</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;}</div>
-</div><!-- fragment --><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div><!-- fragment --><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="../../dc/da3/namespace_apps_a01ace99cc76e0adcf1428dadf9134e3e_cgraph.png" border="0" usemap="#dc/da3/namespace_apps_a01ace99cc76e0adcf1428dadf9134e3e_cgraph" alt=""/></div>
 <map name="dc/da3/namespace_apps_a01ace99cc76e0adcf1428dadf9134e3e_cgraph" id="dc/da3/namespace_apps_a01ace99cc76e0adcf1428dadf9134e3e_cgraph">
 <area shape="rect" title="Run a simple animation." alt="" coords="5,373,160,399"/>
@@ -320,15 +298,12 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aprimes_8cpp_html_a940645b8b38b41954bc8a9d244ce7fa0"><div class="ttname"><a href="../../d0/dde/primes_8cpp.html#a940645b8b38b41954bc8a9d244ce7fa0">PRIME_MAX_SQRT</a></div><div class="ttdeci">#define PRIME_MAX_SQRT</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dde/primes_8cpp_source.html#l00022">primes.cpp:22</a></div></div>
-<div class="ttc" id="aprimes_8cpp_html_a7fffd785ab95c3ef9ad3b6fe92782489"><div class="ttname"><a href="../../d0/dde/primes_8cpp.html#a7fffd785ab95c3ef9ad3b6fe92782489">PRIMES_SIZE</a></div><div class="ttdeci">#define PRIMES_SIZE</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dde/primes_8cpp_source.html#l00024">primes.cpp:24</a></div></div>
-<div class="ttc" id="anamespace_graphics_html_afb7733fe050948fc3a09cd9a87071ffc"><div class="ttname"><a href="../../d6/d9b/namespace_graphics.html#afb7733fe050948fc3a09cd9a87071ffc">Graphics::swap</a></div><div class="ttdeci">void swap()</div><div class="ttdoc">Swap the data on backbuffer to memory video buffer and show in the screen.</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d99/graphics_8cpp_source.html#l00099">graphics.cpp:99</a></div></div>
+<div class="ttc" id="anamespace_graphics_html_afb7733fe050948fc3a09cd9a87071ffc"><div class="ttname"><a href="../../d6/d9b/namespace_graphics.html#afb7733fe050948fc3a09cd9a87071ffc">Graphics::swap</a></div><div class="ttdeci">void swap()</div><div class="ttdoc">Swap the data on backbuffer to memory video buffer and show in the screen.</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d99/graphics_8cpp_source.html#l00095">graphics.cpp:95</a></div></div>
 <div class="ttc" id="atasks_8cpp_html_afe0837dfadb366ea8717fd97e04b3374"><div class="ttname"><a href="../../d5/d9d/tasks_8cpp.html#afe0837dfadb366ea8717fd97e04b3374">tasks_nano_sleep</a></div><div class="ttdeci">void tasks_nano_sleep(uint64_t time)</div><div class="ttdoc">Sleep for a given period of time (in nanoseconds).</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d9d/tasks_8cpp_source.html#l00505">tasks.cpp:505</a></div></div>
-<div class="ttc" id="anamespace_graphics_html_afe8dba407d795b07063393aaf6b297c5"><div class="ttname"><a href="../../d6/d9b/namespace_graphics.html#afe8dba407d795b07063393aaf6b297c5">Graphics::resetDoubleBuffer</a></div><div class="ttdeci">void resetDoubleBuffer()</div><div class="ttdoc">Fill the backbuffer with '0'.</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d99/graphics_8cpp_source.html#l00092">graphics.cpp:92</a></div></div>
-<div class="ttc" id="aclass_bitset_html_adcdb6630365092a52dd086238a1bfee7"><div class="ttname"><a href="../../d6/d09/class_bitset.html#adcdb6630365092a52dd086238a1bfee7">Bitset::Clear</a></div><div class="ttdeci">ALWAYS_INLINE void Clear(size_t addr)</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d86/bitset_8hpp_source.html#l00027">bitset.hpp:27</a></div></div>
-<div class="ttc" id="aclass_bitset_html_abde1d6cdc2a360906f01a25511d0cf9b"><div class="ttname"><a href="../../d6/d09/class_bitset.html#abde1d6cdc2a360906f01a25511d0cf9b">Bitset::Get</a></div><div class="ttdeci">ALWAYS_INLINE bool Get(size_t addr)</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d86/bitset_8hpp_source.html#l00026">bitset.hpp:26</a></div></div>
+<div class="ttc" id="anamespace_graphics_html_afe8dba407d795b07063393aaf6b297c5"><div class="ttname"><a href="../../d6/d9b/namespace_graphics.html#afe8dba407d795b07063393aaf6b297c5">Graphics::resetDoubleBuffer</a></div><div class="ttdeci">void resetDoubleBuffer()</div><div class="ttdoc">Fill the backbuffer with '0'.</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d99/graphics_8cpp_source.html#l00088">graphics.cpp:88</a></div></div>
 <div class="ttc" id="aprimes_8cpp_html_aa62c7fb21b0b1a4d6411ebd3c4bd764b"><div class="ttname"><a href="../../d0/dde/primes_8cpp.html#aa62c7fb21b0b1a4d6411ebd3c4bd764b">PRIME_MAX</a></div><div class="ttdeci">#define PRIME_MAX</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dde/primes_8cpp_source.html#l00023">primes.cpp:23</a></div></div>
 <div class="ttc" id="anamespace_console_html_aa92244db771ad2578967dd9f8fcac912"><div class="ttname"><a href="../../d8/db5/namespace_console.html#aa92244db771ad2578967dd9f8fcac912">Console::printf</a></div><div class="ttdeci">int printf(const char *fmt,...)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dda/console_8cpp_source.html#l00270">console.cpp:270</a></div></div>
-<div class="ttc" id="anamespace_graphics_html_a0c60e5c671ea347d63839d16c3712268"><div class="ttname"><a href="../../d6/d9b/namespace_graphics.html#a0c60e5c671ea347d63839d16c3712268">Graphics::putrect</a></div><div class="ttdeci">void putrect(uint32_t x, uint32_t y, uint32_t w, uint32_t h, uint32_t color)</div><div class="ttdoc">Draws and fills a rectangle of a given width and height, and color at the provided coordinates.</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d99/graphics_8cpp_source.html#l00077">graphics.cpp:77</a></div></div>
+<div class="ttc" id="anamespace_graphics_html_a0c60e5c671ea347d63839d16c3712268"><div class="ttname"><a href="../../d6/d9b/namespace_graphics.html#a0c60e5c671ea347d63839d16c3712268">Graphics::putrect</a></div><div class="ttdeci">void putrect(uint32_t x, uint32_t y, uint32_t w, uint32_t h, uint32_t color)</div><div class="ttdoc">Draws and fills a rectangle of a given width and height, and color at the provided coordinates.</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d99/graphics_8cpp_source.html#l00073">graphics.cpp:73</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

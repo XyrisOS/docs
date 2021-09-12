@@ -1,6 +1,5 @@
 <map id="Arch::interruptsDisable" name="Arch::interruptsDisable">
-<area shape="rect" id="node1" title=" " alt="" coords="496,31,667,57"/>
-<area shape="rect" id="node2" href="$d9/dc3/namespace_arch.html#afb490765a5aef86e49907eeaf2fbcdf5" title=" " alt="" coords="300,31,448,57"/>
-<area shape="rect" id="node3" href="$d9/dc3/namespace_arch.html#ae2cfdc55544d6519edd56c09cb7873c4" title=" " alt="" coords="149,5,252,32"/>
-<area shape="rect" id="node4" href="$d2/dd2/entry_8cpp.html#aafd1870c38d36a8eddccb5457857533e" title="This is the Xyris kernel entry point. This function is called directly from the assembly written in b..." alt="" coords="5,31,101,57"/>
+<area shape="rect" id="node1" title=" " alt="" coords="352,5,523,32"/>
+<area shape="rect" id="node2" href="$d9/dc3/namespace_arch.html#afb490765a5aef86e49907eeaf2fbcdf5" title=" " alt="" coords="156,5,304,32"/>
+<area shape="rect" id="node3" href="$d9/dc3/namespace_arch.html#ae2cfdc55544d6519edd56c09cb7873c4" title=" " alt="" coords="5,5,108,32"/>
 </map>

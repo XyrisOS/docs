@@ -1,7 +1,8 @@
 var searchData=
 [
-  ['register_5fcr0_911',['register_cr0',['../d1/d15/structregister__cr0.html',1,'']]],
-  ['register_5fcr3_912',['register_cr3',['../d4/d22/structregister__cr3.html',1,'']]],
-  ['registers_913',['registers',['../df/d94/structregisters.html',1,'']]],
-  ['ringbuffer_914',['RingBuffer',['../d4/d8f/class_ring_buffer.html',1,'']]]
+  ['page_907',['page',['../d7/d1a/structpage.html',1,'']]],
+  ['page_5fdirectory_908',['page_directory',['../d7/dc8/structpage__directory.html',1,'']]],
+  ['page_5fdirectory_5fentry_909',['page_directory_entry',['../dd/df9/structpage__directory__entry.html',1,'']]],
+  ['page_5ftable_910',['page_table',['../d4/dc1/structpage__table.html',1,'']]],
+  ['page_5ftable_5fentry_911',['page_table_entry',['../d0/d0c/structpage__table__entry.html',1,'']]]
 ];

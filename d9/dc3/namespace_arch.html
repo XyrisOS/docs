@@ -101,6 +101,12 @@ Functions</h2></td></tr>
 <tr class="memitem:afb490765a5aef86e49907eeaf2fbcdf5"><td class="memTemplParams" colspan="2">template&lt;typename Function &gt; </td></tr>
 <tr class="memitem:afb490765a5aef86e49907eeaf2fbcdf5"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d9/dc3/namespace_arch.html#afb490765a5aef86e49907eeaf2fbcdf5">criticalRegion</a> (Function critWork)</td></tr>
 <tr class="separator:afb490765a5aef86e49907eeaf2fbcdf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7de730d1ad36442850e24c8f70a71025"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dc3/namespace_arch.html#a7de730d1ad36442850e24c8f70a71025">pagingEnable</a> ()</td></tr>
+<tr class="separator:a7de730d1ad36442850e24c8f70a71025"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a287e1a6078785463ae3b2548b7816463"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dc3/namespace_arch.html#a287e1a6078785463ae3b2548b7816463">pagingDisable</a> ()</td></tr>
+<tr class="separator:a287e1a6078785463ae3b2548b7816463"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafa209714385e256bc62253af36e7b37"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dc3/namespace_arch.html#aafa209714385e256bc62253af36e7b37">pageInvalidate</a> (void *pageAddr)</td></tr>
+<tr class="separator:aafa209714385e256bc62253af36e7b37"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4820f7704587c305ba0e1d986b4e4b50"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dc3/namespace_arch.html#a4820f7704587c305ba0e1d986b4e4b50">cpuGetVendor</a> ()</td></tr>
 <tr class="separator:a4820f7704587c305ba0e1d986b4e4b50"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b5c3d61a88a304409174b651a4851ad"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dc3/namespace_arch.html#a8b5c3d61a88a304409174b651a4851ad">cpuGetModel</a> ()</td></tr>
@@ -122,17 +128,14 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d2e/arch-i386_8cpp_source.html#l00060">60</a> of file <a class="el" href="../../d2/d2e/arch-i386_8cpp_source.html">arch-i386.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;{</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="comment">// The CPU model is broken up across 3 different calls, each using</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="comment">// EAX, EBX, ECX, and EDX to store the string, so we basically</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="comment">// are appending all 4 register values to this char array each time.</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">char</span> model[48];</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    i386::cpuid(0x80000002, (<span class="keywordtype">int</span>*)(model));</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    i386::cpuid(0x80000003, (<span class="keywordtype">int</span>*)(model + 16));</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    i386::cpuid(0x80000004, (<span class="keywordtype">int</span>*)(model + 32));</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordflow">return</span> model;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../d3/d50/_arch_8i386_8cpp_source.html#l00079">79</a> of file <a class="el" href="../../d3/d50/_arch_8i386_8cpp_source.html">Arch.i386.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;{</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">int</span> model[12];</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    __cpuid(0x80000002, model[0], model[1], model[2], model[3]);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    __cpuid(0x80000003, model[4], model[5], model[6], model[7]);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    __cpuid(0x80000004, model[8], model[9], model[10], model[11]);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordflow">return</span> (<span class="keywordtype">char</span>*)model;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -151,12 +154,12 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d2e/arch-i386_8cpp_source.html#l00053">53</a> of file <a class="el" href="../../d2/d2e/arch-i386_8cpp_source.html">arch-i386.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;{</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">int</span> vendor[4];</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    i386::cpuid(0, vendor);</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordflow">return</span> (<span class="keywordtype">char</span>*)vendor;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../d3/d50/_arch_8i386_8cpp_source.html#l00072">72</a> of file <a class="el" href="../../d3/d50/_arch_8i386_8cpp_source.html">Arch.i386.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;{</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">int</span> vendor[4];</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    __cpuid(0, vendor[0], vendor[1], vendor[2], vendor[3]);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordflow">return</span> (<span class="keywordtype">char</span>*)vendor;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -175,14 +178,14 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d2e/arch-i386_8cpp_source.html#l00036">36</a> of file <a class="el" href="../../d2/d2e/arch-i386_8cpp_source.html">arch-i386.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;{</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="../../d9/dc3/namespace_arch.html#afb490765a5aef86e49907eeaf2fbcdf5">Arch::criticalRegion</a>([]() {</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <a class="code" href="../../d7/de6/gdt_8cpp.html#aa2a6cef9d7f1d9430289dcbb74530bf3">gdt_install</a>();               <span class="comment">// Initialize the Global Descriptor Table</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <a class="code" href="../../d3/d68/isr_8cpp.html#aed0ecf87a0ed3270ce0e9c68cd01a946">isr_install</a>();               <span class="comment">// Initialize Interrupt Service Requests</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <a class="code" href="../../dc/de5/timer_8cpp.html#afe097e48aba5e0fc040df42695ab6b5b">timer_init</a>(1000);            <span class="comment">// Programmable Interrupt Timer (1ms)</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    });</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../d3/d50/_arch_8i386_8cpp_source.html#l00038">38</a> of file <a class="el" href="../../d3/d50/_arch_8i386_8cpp_source.html">Arch.i386.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;{</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="../../d9/dc3/namespace_arch.html#afb490765a5aef86e49907eeaf2fbcdf5">Arch::criticalRegion</a>([]() {</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <a class="code" href="../../d7/de6/gdt_8cpp.html#aa2a6cef9d7f1d9430289dcbb74530bf3">gdt_install</a>();               <span class="comment">// Initialize the Global Descriptor Table</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <a class="code" href="../../d3/d68/isr_8cpp.html#aed0ecf87a0ed3270ce0e9c68cd01a946">isr_install</a>();               <span class="comment">// Initialize Interrupt Service Requests</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <a class="code" href="../../dc/de5/timer_8cpp.html#afe097e48aba5e0fc040df42695ab6b5b">timer_init</a>(1000);            <span class="comment">// Programmable Interrupt Timer (1ms)</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    });</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;}</div>
 </div><!-- fragment --><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -206,17 +209,6 @@ Functions</h2></td></tr>
 <area shape="rect" href="../../d3/d68/isr_8cpp.html#acc90c1ac3bbcb4fc45ccda7cde4882c7" title=" " alt="" coords="370,361,505,402"/>
 </map>
 </div>
-<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="../../closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="../../d9/dc3/namespace_arch_ae2cfdc55544d6519edd56c09cb7873c4_icgraph.png" border="0" usemap="#d9/dc3/namespace_arch_ae2cfdc55544d6519edd56c09cb7873c4_icgraph" alt=""/></div>
-<map name="d9/dc3/namespace_arch_ae2cfdc55544d6519edd56c09cb7873c4_icgraph" id="d9/dc3/namespace_arch_ae2cfdc55544d6519edd56c09cb7873c4_icgraph">
-<area shape="rect" title=" " alt="" coords="149,5,252,32"/>
-<area shape="rect" href="../../d2/dd2/entry_8cpp.html#aafd1870c38d36a8eddccb5457857533e" title="This is the Xyris kernel entry point. This function is called directly from the assembly written in b..." alt="" coords="5,5,101,32"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -238,17 +230,17 @@ template&lt;typename Function &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d76/arch_8hpp_source.html#l00057">57</a> of file <a class="el" href="../../d2/d76/arch_8hpp_source.html">arch.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;{</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <a class="code" href="../../d9/dc3/namespace_arch.html#a67338613dbfca6fe14dd88023972fb72">interruptsDisable</a>();</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    critWork();</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <a class="code" href="../../d9/dc3/namespace_arch.html#a4f60a6b7d741009fa04838e0743efebc">interruptsEnable</a>();</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}</div>
-</div><!-- fragment --><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="../../d7/d9c/_arch_8hpp_source.html#l00067">67</a> of file <a class="el" href="../../d7/d9c/_arch_8hpp_source.html">Arch.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;{</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <a class="code" href="../../d9/dc3/namespace_arch.html#a67338613dbfca6fe14dd88023972fb72">interruptsDisable</a>();</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    critWork();</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <a class="code" href="../../d9/dc3/namespace_arch.html#a4f60a6b7d741009fa04838e0743efebc">interruptsEnable</a>();</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;}</div>
+</div><!-- fragment --><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="../../d9/dc3/namespace_arch_afb490765a5aef86e49907eeaf2fbcdf5_cgraph.png" border="0" usemap="#d9/dc3/namespace_arch_afb490765a5aef86e49907eeaf2fbcdf5_cgraph" alt=""/></div>
 <map name="d9/dc3/namespace_arch_afb490765a5aef86e49907eeaf2fbcdf5_cgraph" id="d9/dc3/namespace_arch_afb490765a5aef86e49907eeaf2fbcdf5_cgraph">
 <area shape="rect" title=" " alt="" coords="5,31,153,57"/>
@@ -256,16 +248,15 @@ template&lt;typename Function &gt; </div>
 <area shape="rect" href="../../d9/dc3/namespace_arch.html#a4f60a6b7d741009fa04838e0743efebc" title=" " alt="" coords="203,56,370,83"/>
 </map>
 </div>
-<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="../../closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="../../closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="../../d9/dc3/namespace_arch_afb490765a5aef86e49907eeaf2fbcdf5_icgraph.png" border="0" usemap="#d9/dc3/namespace_arch_afb490765a5aef86e49907eeaf2fbcdf5_icgraph" alt=""/></div>
 <map name="d9/dc3/namespace_arch_afb490765a5aef86e49907eeaf2fbcdf5_icgraph" id="d9/dc3/namespace_arch_afb490765a5aef86e49907eeaf2fbcdf5_icgraph">
-<area shape="rect" title=" " alt="" coords="300,31,448,57"/>
-<area shape="rect" href="../../d9/dc3/namespace_arch.html#ae2cfdc55544d6519edd56c09cb7873c4" title=" " alt="" coords="149,5,252,32"/>
-<area shape="rect" href="../../d2/dd2/entry_8cpp.html#aafd1870c38d36a8eddccb5457857533e" title="This is the Xyris kernel entry point. This function is called directly from the assembly written in b..." alt="" coords="5,31,101,57"/>
+<area shape="rect" title=" " alt="" coords="156,5,304,32"/>
+<area shape="rect" href="../../d9/dc3/namespace_arch.html#ae2cfdc55544d6519edd56c09cb7873c4" title=" " alt="" coords="5,5,108,32"/>
 </map>
 </div>
 
@@ -286,21 +277,20 @@ template&lt;typename Function &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d2e/arch-i386_8cpp_source.html#l00045">45</a> of file <a class="el" href="../../d2/d2e/arch-i386_8cpp_source.html">arch-i386.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                         {</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keyword">asm</span> <span class="keyword">volatile</span>(<span class="stringliteral">&quot;cli&quot;</span>);</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}</div>
-</div><!-- fragment --><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="../../closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="../../d3/d50/_arch_8i386_8cpp_source.html#l00047">47</a> of file <a class="el" href="../../d3/d50/_arch_8i386_8cpp_source.html">Arch.i386.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                         {</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keyword">asm</span> <span class="keyword">volatile</span>(<span class="stringliteral">&quot;cli&quot;</span>);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}</div>
+</div><!-- fragment --><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="../../closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="../../d9/dc3/namespace_arch_a67338613dbfca6fe14dd88023972fb72_icgraph.png" border="0" usemap="#d9/dc3/namespace_arch_a67338613dbfca6fe14dd88023972fb72_icgraph" alt=""/></div>
 <map name="d9/dc3/namespace_arch_a67338613dbfca6fe14dd88023972fb72_icgraph" id="d9/dc3/namespace_arch_a67338613dbfca6fe14dd88023972fb72_icgraph">
-<area shape="rect" title=" " alt="" coords="496,31,667,57"/>
-<area shape="rect" href="../../d9/dc3/namespace_arch.html#afb490765a5aef86e49907eeaf2fbcdf5" title=" " alt="" coords="300,31,448,57"/>
-<area shape="rect" href="../../d9/dc3/namespace_arch.html#ae2cfdc55544d6519edd56c09cb7873c4" title=" " alt="" coords="149,5,252,32"/>
-<area shape="rect" href="../../d2/dd2/entry_8cpp.html#aafd1870c38d36a8eddccb5457857533e" title="This is the Xyris kernel entry point. This function is called directly from the assembly written in b..." alt="" coords="5,31,101,57"/>
+<area shape="rect" title=" " alt="" coords="352,5,523,32"/>
+<area shape="rect" href="../../d9/dc3/namespace_arch.html#afb490765a5aef86e49907eeaf2fbcdf5" title=" " alt="" coords="156,5,304,32"/>
+<area shape="rect" href="../../d9/dc3/namespace_arch.html#ae2cfdc55544d6519edd56c09cb7873c4" title=" " alt="" coords="5,5,108,32"/>
 </map>
 </div>
 
@@ -321,21 +311,115 @@ template&lt;typename Function &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d2e/arch-i386_8cpp_source.html#l00049">49</a> of file <a class="el" href="../../d2/d2e/arch-i386_8cpp_source.html">arch-i386.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                        {</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keyword">asm</span> <span class="keyword">volatile</span>(<span class="stringliteral">&quot;sti&quot;</span>);</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../d3/d50/_arch_8i386_8cpp_source.html#l00051">51</a> of file <a class="el" href="../../d3/d50/_arch_8i386_8cpp_source.html">Arch.i386.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                        {</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keyword">asm</span> <span class="keyword">volatile</span>(<span class="stringliteral">&quot;sti&quot;</span>);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;}</div>
+</div><!-- fragment --><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="../../closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="../../d9/dc3/namespace_arch_a4f60a6b7d741009fa04838e0743efebc_icgraph.png" border="0" usemap="#d9/dc3/namespace_arch_a4f60a6b7d741009fa04838e0743efebc_icgraph" alt=""/></div>
+<map name="d9/dc3/namespace_arch_a4f60a6b7d741009fa04838e0743efebc_icgraph" id="d9/dc3/namespace_arch_a4f60a6b7d741009fa04838e0743efebc_icgraph">
+<area shape="rect" title=" " alt="" coords="352,5,519,32"/>
+<area shape="rect" href="../../d9/dc3/namespace_arch.html#afb490765a5aef86e49907eeaf2fbcdf5" title=" " alt="" coords="156,5,304,32"/>
+<area shape="rect" href="../../d9/dc3/namespace_arch.html#ae2cfdc55544d6519edd56c09cb7873c4" title=" " alt="" coords="5,5,108,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aafa209714385e256bc62253af36e7b37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aafa209714385e256bc62253af36e7b37">&#9670;&nbsp;</a></span>pageInvalidate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Arch::pageInvalidate </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>pageAddr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d50/_arch_8i386_8cpp_source.html#l00067">67</a> of file <a class="el" href="../../d3/d50/_arch_8i386_8cpp_source.html">Arch.i386.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;{</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;   <span class="keyword">asm</span> <span class="keyword">volatile</span>(<span class="stringliteral">&quot;invlpg (%0)&quot;</span> ::<span class="stringliteral">&quot;r&quot;</span> (pageAddr) : <span class="stringliteral">&quot;memory&quot;</span>);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a287e1a6078785463ae3b2548b7816463"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a287e1a6078785463ae3b2548b7816463">&#9670;&nbsp;</a></span>pagingDisable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Arch::pagingDisable </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d50/_arch_8i386_8cpp_source.html#l00061">61</a> of file <a class="el" href="../../d3/d50/_arch_8i386_8cpp_source.html">Arch.i386.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                     {</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keyword">struct </span><a class="code" href="../../d3/dde/struct_registers_1_1_c_r0.html">Registers::CR0</a> cr0 = <a class="code" href="../../d4/ddf/namespace_registers.html#aea57042ad4cd3d217fe32bdc95adeec1">Registers::readCR0</a>();</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    cr0.<a class="code" href="../../d3/dde/struct_registers_1_1_c_r0.html#a7133adbd62893ef9ca9c92a52d9cddb4">paging</a> = 0;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <a class="code" href="../../d4/ddf/namespace_registers.html#a113bb16f2d30345fb54c5875ddd739ee">Registers::writeCR0</a>(cr0);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;}</div>
 </div><!-- fragment --><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="../../closed.png" alt="+"/> Here is the caller graph for this function:</div>
+  <img id="dynsection-5-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="../../d9/dc3/namespace_arch_a4f60a6b7d741009fa04838e0743efebc_icgraph.png" border="0" usemap="#d9/dc3/namespace_arch_a4f60a6b7d741009fa04838e0743efebc_icgraph" alt=""/></div>
-<map name="d9/dc3/namespace_arch_a4f60a6b7d741009fa04838e0743efebc_icgraph" id="d9/dc3/namespace_arch_a4f60a6b7d741009fa04838e0743efebc_icgraph">
-<area shape="rect" title=" " alt="" coords="496,31,663,57"/>
-<area shape="rect" href="../../d9/dc3/namespace_arch.html#afb490765a5aef86e49907eeaf2fbcdf5" title=" " alt="" coords="300,31,448,57"/>
-<area shape="rect" href="../../d9/dc3/namespace_arch.html#ae2cfdc55544d6519edd56c09cb7873c4" title=" " alt="" coords="149,5,252,32"/>
-<area shape="rect" href="../../d2/dd2/entry_8cpp.html#aafd1870c38d36a8eddccb5457857533e" title="This is the Xyris kernel entry point. This function is called directly from the assembly written in b..." alt="" coords="5,31,101,57"/>
+<div class="center"><img src="../../d9/dc3/namespace_arch_a287e1a6078785463ae3b2548b7816463_cgraph.png" border="0" usemap="#d9/dc3/namespace_arch_a287e1a6078785463ae3b2548b7816463_cgraph" alt=""/></div>
+<map name="d9/dc3/namespace_arch_a287e1a6078785463ae3b2548b7816463_cgraph" id="d9/dc3/namespace_arch_a287e1a6078785463ae3b2548b7816463_cgraph">
+<area shape="rect" title=" " alt="" coords="5,31,157,57"/>
+<area shape="rect" href="../../d4/ddf/namespace_registers.html#aea57042ad4cd3d217fe32bdc95adeec1" title=" " alt="" coords="207,5,354,32"/>
+<area shape="rect" href="../../d4/ddf/namespace_registers.html#a113bb16f2d30345fb54c5875ddd739ee" title=" " alt="" coords="205,56,356,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a7de730d1ad36442850e24c8f70a71025"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7de730d1ad36442850e24c8f70a71025">&#9670;&nbsp;</a></span>pagingEnable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Arch::pagingEnable </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d50/_arch_8i386_8cpp_source.html#l00055">55</a> of file <a class="el" href="../../d3/d50/_arch_8i386_8cpp_source.html">Arch.i386.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                    {</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">struct </span><a class="code" href="../../d3/dde/struct_registers_1_1_c_r0.html">Registers::CR0</a> cr0 = <a class="code" href="../../d4/ddf/namespace_registers.html#aea57042ad4cd3d217fe32bdc95adeec1">Registers::readCR0</a>();</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    cr0.<a class="code" href="../../d3/dde/struct_registers_1_1_c_r0.html#a7133adbd62893ef9ca9c92a52d9cddb4">paging</a> = 1;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <a class="code" href="../../d4/ddf/namespace_registers.html#a113bb16f2d30345fb54c5875ddd739ee">Registers::writeCR0</a>(cr0);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;}</div>
+</div><!-- fragment --><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="../../d9/dc3/namespace_arch_a7de730d1ad36442850e24c8f70a71025_cgraph.png" border="0" usemap="#d9/dc3/namespace_arch_a7de730d1ad36442850e24c8f70a71025_cgraph" alt=""/></div>
+<map name="d9/dc3/namespace_arch_a7de730d1ad36442850e24c8f70a71025_cgraph" id="d9/dc3/namespace_arch_a7de730d1ad36442850e24c8f70a71025_cgraph">
+<area shape="rect" title=" " alt="" coords="5,31,152,57"/>
+<area shape="rect" href="../../d4/ddf/namespace_registers.html#aea57042ad4cd3d217fe32bdc95adeec1" title=" " alt="" coords="202,5,349,32"/>
+<area shape="rect" href="../../d4/ddf/namespace_registers.html#a113bb16f2d30345fb54c5875ddd739ee" title=" " alt="" coords="200,56,351,83"/>
 </map>
 </div>
 
@@ -343,11 +427,15 @@ template&lt;typename Function &gt; </div>
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="anamespace_arch_html_a67338613dbfca6fe14dd88023972fb72"><div class="ttname"><a href="../../d9/dc3/namespace_arch.html#a67338613dbfca6fe14dd88023972fb72">Arch::interruptsDisable</a></div><div class="ttdeci">void interruptsDisable()</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d2e/arch-i386_8cpp_source.html#l00045">arch-i386.cpp:45</a></div></div>
-<div class="ttc" id="anamespace_arch_html_a4f60a6b7d741009fa04838e0743efebc"><div class="ttname"><a href="../../d9/dc3/namespace_arch.html#a4f60a6b7d741009fa04838e0743efebc">Arch::interruptsEnable</a></div><div class="ttdeci">void interruptsEnable()</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d2e/arch-i386_8cpp_source.html#l00049">arch-i386.cpp:49</a></div></div>
+<div class="ttc" id="astruct_registers_1_1_c_r0_html_a7133adbd62893ef9ca9c92a52d9cddb4"><div class="ttname"><a href="../../d3/dde/struct_registers_1_1_c_r0.html#a7133adbd62893ef9ca9c92a52d9cddb4">Registers::CR0::paging</a></div><div class="ttdeci">uint32_t paging</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dfb/regs_8hpp_source.html#l00033">regs.hpp:33</a></div></div>
+<div class="ttc" id="anamespace_registers_html_aea57042ad4cd3d217fe32bdc95adeec1"><div class="ttname"><a href="../../d4/ddf/namespace_registers.html#aea57042ad4cd3d217fe32bdc95adeec1">Registers::readCR0</a></div><div class="ttdeci">struct CR0 readCR0()</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dfb/regs_8hpp_source.html#l00045">regs.hpp:45</a></div></div>
+<div class="ttc" id="anamespace_arch_html_a67338613dbfca6fe14dd88023972fb72"><div class="ttname"><a href="../../d9/dc3/namespace_arch.html#a67338613dbfca6fe14dd88023972fb72">Arch::interruptsDisable</a></div><div class="ttdeci">void interruptsDisable()</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d50/_arch_8i386_8cpp_source.html#l00047">Arch.i386.cpp:47</a></div></div>
+<div class="ttc" id="anamespace_arch_html_a4f60a6b7d741009fa04838e0743efebc"><div class="ttname"><a href="../../d9/dc3/namespace_arch.html#a4f60a6b7d741009fa04838e0743efebc">Arch::interruptsEnable</a></div><div class="ttdeci">void interruptsEnable()</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d50/_arch_8i386_8cpp_source.html#l00051">Arch.i386.cpp:51</a></div></div>
 <div class="ttc" id="atimer_8cpp_html_afe097e48aba5e0fc040df42695ab6b5b"><div class="ttname"><a href="../../dc/de5/timer_8cpp.html#afe097e48aba5e0fc040df42695ab6b5b">timer_init</a></div><div class="ttdeci">void timer_init(uint32_t freq)</div><div class="ttdoc">Initialize the CPU timer with the given frequency.</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/de5/timer_8cpp_source.html#l00033">timer.cpp:33</a></div></div>
 <div class="ttc" id="agdt_8cpp_html_aa2a6cef9d7f1d9430289dcbb74530bf3"><div class="ttname"><a href="../../d7/de6/gdt_8cpp.html#aa2a6cef9d7f1d9430289dcbb74530bf3">gdt_install</a></div><div class="ttdeci">void gdt_install()</div><div class="ttdoc">Setup and install the GDT onto the system.</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/de6/gdt_8cpp_source.html#l00055">gdt.cpp:55</a></div></div>
-<div class="ttc" id="anamespace_arch_html_afb490765a5aef86e49907eeaf2fbcdf5"><div class="ttname"><a href="../../d9/dc3/namespace_arch.html#afb490765a5aef86e49907eeaf2fbcdf5">Arch::criticalRegion</a></div><div class="ttdeci">void criticalRegion(Function critWork)</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d76/arch_8hpp_source.html#l00057">arch.hpp:57</a></div></div>
+<div class="ttc" id="anamespace_arch_html_afb490765a5aef86e49907eeaf2fbcdf5"><div class="ttname"><a href="../../d9/dc3/namespace_arch.html#afb490765a5aef86e49907eeaf2fbcdf5">Arch::criticalRegion</a></div><div class="ttdeci">void criticalRegion(Function critWork)</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d9c/_arch_8hpp_source.html#l00067">Arch.hpp:67</a></div></div>
+<div class="ttc" id="astruct_registers_1_1_c_r0_html"><div class="ttname"><a href="../../d3/dde/struct_registers_1_1_c_r0.html">Registers::CR0</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dfb/regs_8hpp_source.html#l00018">regs.hpp:18</a></div></div>
+<div class="ttc" id="anamespace_registers_html_a113bb16f2d30345fb54c5875ddd739ee"><div class="ttname"><a href="../../d4/ddf/namespace_registers.html#a113bb16f2d30345fb54c5875ddd739ee">Registers::writeCR0</a></div><div class="ttdeci">void writeCR0(struct CR0 x)</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dfb/regs_8hpp_source.html#l00052">regs.hpp:52</a></div></div>
 <div class="ttc" id="aisr_8cpp_html_aed0ecf87a0ed3270ce0e9c68cd01a946"><div class="ttname"><a href="../../d3/d68/isr_8cpp.html#aed0ecf87a0ed3270ce0e9c68cd01a946">isr_install</a></div><div class="ttdeci">void isr_install()</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d68/isr_8cpp_source.html#l00026">isr.cpp:26</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

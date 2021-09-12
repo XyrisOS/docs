@@ -1,6 +1,5 @@
 <map id="gdt_set_gate" name="gdt_set_gate">
-<area shape="rect" id="node1" title=" " alt="" coords="439,5,545,32"/>
-<area shape="rect" id="node2" href="$df/d77/gdt_8hpp.html#aa2a6cef9d7f1d9430289dcbb74530bf3" title="Setup and install the GDT onto the system." alt="" coords="300,5,391,32"/>
-<area shape="rect" id="node3" href="$d9/dc3/namespace_arch.html#ae2cfdc55544d6519edd56c09cb7873c4" title=" " alt="" coords="149,5,252,32"/>
-<area shape="rect" id="node4" href="$d2/dd2/entry_8cpp.html#aafd1870c38d36a8eddccb5457857533e" title="This is the Xyris kernel entry point. This function is called directly from the assembly written in b..." alt="" coords="5,5,101,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="295,5,401,32"/>
+<area shape="rect" id="node2" href="$df/d77/gdt_8hpp.html#aa2a6cef9d7f1d9430289dcbb74530bf3" title="Setup and install the GDT onto the system." alt="" coords="156,5,247,32"/>
+<area shape="rect" id="node3" href="$d9/dc3/namespace_arch.html#ae2cfdc55544d6519edd56c09cb7873c4" title=" " alt="" coords="5,5,108,32"/>
 </map>

@@ -114,7 +114,7 @@ $(document).ready(function(){initNavTree('d6/d1e/panic_8cpp.html','../../'); ini
 <area shape="rect" href="../../d2/daf/stdio_8hpp.html" title=" " alt="" coords="1621,80,1723,107"/>
 <area shape="rect" href="../../d4/da0/string_8hpp.html" title="Standard string and memory utility library." alt="" coords="2184,528,2291,555"/>
 <area shape="rect" href="../../d4/db9/trace_8hpp.html" title="Kernel stack tracing." alt="" coords="2416,229,2525,256"/>
-<area shape="rect" href="../../df/d6c/arch-i386_8hpp.html" title="i386 architecture implementation of arch.hpp" alt="" coords="871,453,1046,480"/>
+<area shape="rect" href="../../dd/de9/_arch_8i386_8hpp.html" title="i386 architecture implementation of Arch.hpp" alt="" coords="871,453,1046,480"/>
 <area shape="rect" title=" " alt="" coords="1389,603,1459,629"/>
 <area shape="rect" href="../../d2/d3d/compiler_8hpp.html" title="Compiler meta directives." alt="" coords="5,603,149,629"/>
 <area shape="rect" href="../../df/d77/gdt_8hpp.html" title="The Global Descriptor Table (GDT) is specific to the IA32 architecture. It contains entries telling t..." alt="" coords="891,528,1026,555"/>
@@ -124,7 +124,7 @@ $(document).ready(function(){initNavTree('d6/d1e/panic_8cpp.html','../../'); ini
 <area shape="rect" href="../../df/d05/timer_8hpp.html" title=" " alt="" coords="667,528,815,555"/>
 <area shape="rect" title=" " alt="" coords="573,528,643,555"/>
 <area shape="rect" title=" " alt="" coords="2245,603,2320,629"/>
-<area shape="rect" href="../../d2/d76/arch_8hpp.html" title="Computer architecture initialization definitions." alt="" coords="1525,379,1635,405"/>
+<area shape="rect" href="../../d7/d9c/_arch_8hpp.html" title="Computer architecture initialization definitions." alt="" coords="1525,379,1635,405"/>
 <area shape="rect" href="../../d2/d1f/_handoff_8hpp.html" title=" " alt="" coords="1513,453,1647,480"/>
 <area shape="rect" title=" " alt="" coords="1613,528,1696,555"/>
 <area shape="rect" title=" " alt="" coords="1795,155,1869,181"/>
@@ -305,7 +305,7 @@ Functions</h2></td></tr>
 <p>Halts kernel execution and prints register info. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">regs</td><td>Registers struct </td></tr>
+    <tr><td class="paramname">regs</td><td><a class="el" href="../../d4/ddf/namespace_registers.html">Registers</a> struct </td></tr>
     <tr><td class="paramname">file</td><td>File causing the issue </td></tr>
     <tr><td class="paramname">line</td><td>Line with the error </td></tr>
     <tr><td class="paramname">func</td><td>Function containing error </td></tr>
@@ -323,7 +323,7 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        msg,</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <span class="stringliteral">&quot;Exception: %i (%s)\n\n&quot;</span>,</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        regs-&gt;<a class="code" href="../../df/d94/structregisters.html#abee3a5b36ae0a28f77cbb6bca9839fe2">int_num</a>,</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <a class="code" href="../../d2/d2e/arch-i386_8cpp.html#a2914beed3662fd1a1074e550d3753aef">exception_descriptions</a>[regs-&gt;<a class="code" href="../../df/d94/structregisters.html#abee3a5b36ae0a28f77cbb6bca9839fe2">int_num</a>]);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <a class="code" href="../../d3/d50/_arch_8i386_8cpp.html#a2914beed3662fd1a1074e550d3753aef">exception_descriptions</a>[regs-&gt;<a class="code" href="../../df/d94/structregisters.html#abee3a5b36ae0a28f77cbb6bca9839fe2">int_num</a>]);</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="comment">// Print to VGA and serial</span></div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <a class="code" href="../../d8/db5/namespace_console.html#aa92244db771ad2578967dd9f8fcac912">Console::printf</a>(<span class="stringliteral">&quot;%s&quot;</span>, msg);</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <a class="code" href="../../d7/d75/namespace_r_s232.html#a394b7ac1c601a47c2881a460eb41171a">RS232::printf</a>(<span class="stringliteral">&quot;%s&quot;</span>, msg);</div>
@@ -345,7 +345,7 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keyword">asm</span> <span class="keyword">volatile</span>(<span class="stringliteral">&quot;mov %%cr2, %0&quot;</span></div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                 : <span class="stringliteral">&quot;=r&quot;</span>(faulting_address));</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="comment">// The error code gives us details of what happened.</span></div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="../../d0/d0c/structpage__table__entry.html#a304077fa2f2b7da187e118e9e1d61221">present</a> = !(regs-&gt;<a class="code" href="../../df/d94/structregisters.html#a1f90b3d484c66002c9ffcd0e54e97c2c">err_code</a> &amp; 0x1); <span class="comment">// Page not present</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordtype">int</span> present = !(regs-&gt;<a class="code" href="../../df/d94/structregisters.html#a1f90b3d484c66002c9ffcd0e54e97c2c">err_code</a> &amp; 0x1); <span class="comment">// Page not present</span></div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordtype">int</span> rw = regs-&gt;<a class="code" href="../../df/d94/structregisters.html#a1f90b3d484c66002c9ffcd0e54e97c2c">err_code</a> &amp; 0x2;         <span class="comment">// Write operation?</span></div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordtype">int</span> us = regs-&gt;<a class="code" href="../../df/d94/structregisters.html#a1f90b3d484c66002c9ffcd0e54e97c2c">err_code</a> &amp; 0x4;         <span class="comment">// Processor was in user-mode?</span></div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keywordtype">int</span> reserved = regs-&gt;<a class="code" href="../../df/d94/structregisters.html#a1f90b3d484c66002c9ffcd0e54e97c2c">err_code</a> &amp; 0x8;   <span class="comment">// Overwritten CPU-reserved bits of page entry?</span></div>
@@ -353,7 +353,7 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="comment">// If we have a page fault, print out page fault info</span></div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordflow">if</span> (regs-&gt;<a class="code" href="../../df/d94/structregisters.html#abee3a5b36ae0a28f77cbb6bca9839fe2">int_num</a> == <a class="code" href="../../d4/ddc/isr_8hpp.html#a0419334e5d2a04960bcb98c595e92928a81f3242916a5ab92ab86fadfec185795">ISR_PAGE_FAULT</a>) {</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        <span class="comment">// Output an error message.</span></div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">char</span>* real = (<a class="code" href="../../d0/d0c/structpage__table__entry.html#a304077fa2f2b7da187e118e9e1d61221">present</a> ? <span class="stringliteral">&quot;present &quot;</span> : <span class="stringliteral">&quot;missing &quot;</span>);</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">char</span>* real = (present ? <span class="stringliteral">&quot;present &quot;</span> : <span class="stringliteral">&quot;missing &quot;</span>);</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">char</span>* rws = (rw ? <span class="stringliteral">&quot;reading &quot;</span> : <span class="stringliteral">&quot;writing &quot;</span>);</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">char</span>* uss = (us ? <span class="stringliteral">&quot;user-mode &quot;</span> : <span class="stringliteral">&quot;kernel &quot;</span>);</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">char</span>* avail = (reserved ? <span class="stringliteral">&quot;reserved&quot;</span> : <span class="stringliteral">&quot;available&quot;</span>);</div>
@@ -384,13 +384,12 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aprintf_8cpp_html_a4a8483991af81c2a4ae0025f4d2fb5e7"><div class="ttname"><a href="../../d4/d64/printf_8cpp.html#a4a8483991af81c2a4ae0025f4d2fb5e7">ksprintf</a></div><div class="ttdeci">int ksprintf(char *buf, const char *fmt,...)</div><div class="ttdoc">Sends formatted output to a string.</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d64/printf_8cpp_source.html#l00327">printf.cpp:327</a></div></div>
-<div class="ttc" id="aarch-i386_8cpp_html_a2914beed3662fd1a1074e550d3753aef"><div class="ttname"><a href="../../d2/d2e/arch-i386_8cpp.html#a2914beed3662fd1a1074e550d3753aef">exception_descriptions</a></div><div class="ttdeci">const char * exception_descriptions[32][16]</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d2e/arch-i386_8cpp_source.html#l00016">arch-i386.cpp:16</a></div></div>
 <div class="ttc" id="atrace_8cpp_html_a9f452d4e0d092c1052a36cd56e9f77b6"><div class="ttname"><a href="../../d9/d55/trace_8cpp.html#a9f452d4e0d092c1052a36cd56e9f77b6">stack_trace</a></div><div class="ttdeci">void stack_trace(size_t max)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d55/trace_8cpp_source.html#l00019">trace.cpp:19</a></div></div>
-<div class="ttc" id="astructregisters_html_a1f90b3d484c66002c9ffcd0e54e97c2c"><div class="ttname"><a href="../../df/d94/structregisters.html#a1f90b3d484c66002c9ffcd0e54e97c2c">registers::err_code</a></div><div class="ttdeci">uint32_t err_code</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d6c/arch-i386_8hpp_source.html#l00050">arch-i386.hpp:50</a></div></div>
+<div class="ttc" id="astructregisters_html_a1f90b3d484c66002c9ffcd0e54e97c2c"><div class="ttname"><a href="../../df/d94/structregisters.html#a1f90b3d484c66002c9ffcd0e54e97c2c">registers::err_code</a></div><div class="ttdeci">uint32_t err_code</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/de9/_arch_8i386_8hpp_source.html#l00050">Arch.i386.hpp:50</a></div></div>
 <div class="ttc" id="anamespace_console_html_aa92244db771ad2578967dd9f8fcac912"><div class="ttname"><a href="../../d8/db5/namespace_console.html#aa92244db771ad2578967dd9f8fcac912">Console::printf</a></div><div class="ttdeci">int printf(const char *fmt,...)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dda/console_8cpp_source.html#l00270">console.cpp:270</a></div></div>
-<div class="ttc" id="astructpage__table__entry_html_a304077fa2f2b7da187e118e9e1d61221"><div class="ttname"><a href="../../d0/d0c/structpage__table__entry.html#a304077fa2f2b7da187e118e9e1d61221">page_table_entry::present</a></div><div class="ttdeci">uint32_t present</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d75/paging_8hpp_source.html#l00061">paging.hpp:61</a></div></div>
+<div class="ttc" id="a_arch_8i386_8cpp_html_a2914beed3662fd1a1074e550d3753aef"><div class="ttname"><a href="../../d3/d50/_arch_8i386_8cpp.html#a2914beed3662fd1a1074e550d3753aef">exception_descriptions</a></div><div class="ttdeci">const char * exception_descriptions[32][16]</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d50/_arch_8i386_8cpp_source.html#l00018">Arch.i386.cpp:18</a></div></div>
 <div class="ttc" id="aisr_8hpp_html_a0419334e5d2a04960bcb98c595e92928a81f3242916a5ab92ab86fadfec185795"><div class="ttname"><a href="../../d4/ddc/isr_8hpp.html#a0419334e5d2a04960bcb98c595e92928a81f3242916a5ab92ab86fadfec185795">ISR_PAGE_FAULT</a></div><div class="ttdeci">@ ISR_PAGE_FAULT</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/ddc/isr_8hpp_source.html#l00038">isr.hpp:38</a></div></div>
-<div class="ttc" id="astructregisters_html_abee3a5b36ae0a28f77cbb6bca9839fe2"><div class="ttname"><a href="../../df/d94/structregisters.html#abee3a5b36ae0a28f77cbb6bca9839fe2">registers::int_num</a></div><div class="ttdeci">uint32_t int_num</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d6c/arch-i386_8hpp_source.html#l00050">arch-i386.hpp:50</a></div></div>
+<div class="ttc" id="astructregisters_html_abee3a5b36ae0a28f77cbb6bca9839fe2"><div class="ttname"><a href="../../df/d94/structregisters.html#abee3a5b36ae0a28f77cbb6bca9839fe2">registers::int_num</a></div><div class="ttdeci">uint32_t int_num</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/de9/_arch_8i386_8hpp_source.html#l00050">Arch.i386.hpp:50</a></div></div>
 <div class="ttc" id="anamespace_r_s232_html_a394b7ac1c601a47c2881a460eb41171a"><div class="ttname"><a href="../../d7/d75/namespace_r_s232.html#a394b7ac1c601a47c2881a460eb41171a">RS232::printf</a></div><div class="ttdeci">int printf(const char *format,...)</div><div class="ttdoc">Prints a formatted string to serial output.</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dc7/rs232_8cpp_source.html#l00080">rs232.cpp:80</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

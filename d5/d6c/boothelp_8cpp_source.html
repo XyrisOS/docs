@@ -90,7 +90,7 @@ $(document).ready(function(){initNavTree('d5/d6c/boothelp_8cpp_source.html','../
 <a href="../../d5/d6c/boothelp_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/**</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * @file boothelp.cpp</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * @author James T. Sprinkle (the-grue@hotmail.com)</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * @brief</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * @brief Maps bootloader information into memory</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * @version 0.1</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * @date 2021-08-07</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> *</span></div>
@@ -164,23 +164,22 @@ $(document).ready(function(){initNavTree('d5/d6c/boothelp_8cpp_source.html','../
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment"> * the entire area.</span></div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> uint32_t</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<a class="code" href="../../d2/d3d/compiler_8hpp.html#ad6171d02712b4d180426a0a81781e2a7">OPTIMIZE</a>(0)</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<a class="code" href="../../d0/d29/sections_8hpp.html#a9982c2dc93e94348913cd6b7b0618973">SECTION</a>(&quot;.early_text&quot;)</div>
-<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="../../d5/d6c/boothelp_8cpp.html#a162cf1be3b687973d59b81c7f1977f8e">   82</a></span>&#160;<a class="code" href="../../d5/d6c/boothelp_8cpp.html#a162cf1be3b687973d59b81c7f1977f8e">multiboot2_mmap_helper</a>(<span class="keywordtype">void</span>* baseaddr)</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;{</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keyword">struct </span>multiboot_fixed {</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        uint32_t total_size;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        uint32_t reserved;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    };</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keyword">auto</span> fixed = (<span class="keyword">struct </span>multiboot_fixed*)baseaddr;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordflow">return</span> fixed-&gt;total_size;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;}</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> uint32_t</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<a class="code" href="../../d2/d3d/compiler_8hpp.html#ad6171d02712b4d180426a0a81781e2a7">OPTIMIZE</a>(0)</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<a class="code" href="../../d0/d29/sections_8hpp.html#a9982c2dc93e94348913cd6b7b0618973">SECTION</a>(&quot;.early_text&quot;)</div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="../../d5/d6c/boothelp_8cpp.html#a162cf1be3b687973d59b81c7f1977f8e">   81</a></span>&#160;<a class="code" href="../../d5/d6c/boothelp_8cpp.html#a162cf1be3b687973d59b81c7f1977f8e">multiboot2_mmap_helper</a>(<span class="keywordtype">void</span>* baseaddr)</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;{</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keyword">struct </span>multiboot_fixed {</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        uint32_t total_size;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        uint32_t reserved;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    };</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keyword">auto</span> fixed = (<span class="keyword">struct </span>multiboot_fixed*)baseaddr;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordflow">return</span> fixed-&gt;total_size;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aboothelp_8cpp_html_a162cf1be3b687973d59b81c7f1977f8e"><div class="ttname"><a href="../../d5/d6c/boothelp_8cpp.html#a162cf1be3b687973d59b81c7f1977f8e">multiboot2_mmap_helper</a></div><div class="ttdeci">uint32_t multiboot2_mmap_helper(void *baseaddr)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d6c/boothelp_8cpp_source.html#l00082">boothelp.cpp:82</a></div></div>
+<div class="ttc" id="aboothelp_8cpp_html_a162cf1be3b687973d59b81c7f1977f8e"><div class="ttname"><a href="../../d5/d6c/boothelp_8cpp.html#a162cf1be3b687973d59b81c7f1977f8e">multiboot2_mmap_helper</a></div><div class="ttdeci">uint32_t multiboot2_mmap_helper(void *baseaddr)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d6c/boothelp_8cpp_source.html#l00081">boothelp.cpp:81</a></div></div>
 <div class="ttc" id="asections_8hpp_html_a9982c2dc93e94348913cd6b7b0618973"><div class="ttname"><a href="../../d0/d29/sections_8hpp.html#a9982c2dc93e94348913cd6b7b0618973">SECTION</a></div><div class="ttdeci">#define SECTION(x)</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d29/sections_8hpp_source.html#l00017">sections.hpp:17</a></div></div>
 <div class="ttc" id="asections_8hpp_html"><div class="ttname"><a href="../../d0/d29/sections_8hpp.html">sections.hpp</a></div><div class="ttdoc">Kernel ELF section definitions.</div></div>
 <div class="ttc" id="aboothelp_8cpp_html_a57a1896409edf2efbb2442444cc249d4"><div class="ttname"><a href="../../d5/d6c/boothelp_8cpp.html#a57a1896409edf2efbb2442444cc249d4">stivale2_mmap_helper</a></div><div class="ttdeci">uint32_t stivale2_mmap_helper(void *baseaddr)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d6c/boothelp_8cpp_source.html#l00035">boothelp.cpp:35</a></div></div>

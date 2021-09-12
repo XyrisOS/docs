@@ -98,7 +98,7 @@ $(document).ready(function(){initNavTree('d8/d87/stack_8cpp_source.html','../../
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="../../df/d47/stack_8hpp.html">meta/stack.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="../../d2/d76/arch_8hpp.html">arch/arch.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="../../d7/d9c/_arch_8hpp.html">arch/Arch.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">/**</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> * @brief This function is the global handler for all</span></div>
@@ -110,16 +110,16 @@ $(document).ready(function(){initNavTree('d8/d87/stack_8cpp_source.html','../../
 <div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="../../d8/d87/stack_8cpp.html#a17b0c1b06985967e1477112366945404">   21</a></span>&#160;uintptr_t <a class="code" href="../../d8/d87/stack_8cpp.html#a17b0c1b06985967e1477112366945404">__stack_chk_guard</a> = <a class="code" href="../../df/d47/stack_8hpp.html#adc3192edb8f484b8bd460a9f5e3ab023">STACK_CHK_GUARD</a>;</div>
 <div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="../../df/d47/stack_8hpp.html#a051883e0ce55ef4ec9e2ac77874d4e5c">   22</a></span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> <span class="keywordtype">void</span> <a class="code" href="../../d8/d87/stack_8cpp.html#a051883e0ce55ef4ec9e2ac77874d4e5c">__stack_chk_fail</a>(<span class="keywordtype">void</span>)</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="../../d2/d76/arch_8hpp.html#a989b3cb2d90490770f9c9c030acb1ba5">PANIC</a>(<span class="stringliteral">&quot;Smashed stack detected.&quot;</span>);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="../../d7/d9c/_arch_8hpp.html#a989b3cb2d90490770f9c9c030acb1ba5">PANIC</a>(<span class="stringliteral">&quot;Smashed stack detected.&quot;</span>);</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="astack_8cpp_html_a17b0c1b06985967e1477112366945404"><div class="ttname"><a href="../../d8/d87/stack_8cpp.html#a17b0c1b06985967e1477112366945404">__stack_chk_guard</a></div><div class="ttdeci">uintptr_t __stack_chk_guard</div><div class="ttdoc">This function is the global handler for all stack protection. GCC will automatically write the canary...</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d87/stack_8cpp_source.html#l00021">stack.cpp:21</a></div></div>
-<div class="ttc" id="aarch_8hpp_html"><div class="ttname"><a href="../../d2/d76/arch_8hpp.html">arch.hpp</a></div><div class="ttdoc">Computer architecture initialization definitions.</div></div>
 <div class="ttc" id="astack_8hpp_html"><div class="ttname"><a href="../../df/d47/stack_8hpp.html">stack.hpp</a></div><div class="ttdoc">Stack management functionality.</div></div>
 <div class="ttc" id="astack_8cpp_html_a051883e0ce55ef4ec9e2ac77874d4e5c"><div class="ttname"><a href="../../d8/d87/stack_8cpp.html#a051883e0ce55ef4ec9e2ac77874d4e5c">__stack_chk_fail</a></div><div class="ttdeci">void __stack_chk_fail(void)</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d87/stack_8cpp_source.html#l00022">stack.cpp:22</a></div></div>
+<div class="ttc" id="a_arch_8hpp_html"><div class="ttname"><a href="../../d7/d9c/_arch_8hpp.html">Arch.hpp</a></div><div class="ttdoc">Computer architecture initialization definitions.</div></div>
 <div class="ttc" id="astack_8hpp_html_adc3192edb8f484b8bd460a9f5e3ab023"><div class="ttname"><a href="../../df/d47/stack_8hpp.html#adc3192edb8f484b8bd460a9f5e3ab023">STACK_CHK_GUARD</a></div><div class="ttdeci">#define STACK_CHK_GUARD</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d47/stack_8hpp_source.html#l00017">stack.hpp:17</a></div></div>
-<div class="ttc" id="aarch_8hpp_html_a989b3cb2d90490770f9c9c030acb1ba5"><div class="ttname"><a href="../../d2/d76/arch_8hpp.html#a989b3cb2d90490770f9c9c030acb1ba5">PANIC</a></div><div class="ttdeci">#define PANIC(x)</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d76/arch_8hpp_source.html#l00025">arch.hpp:25</a></div></div>
+<div class="ttc" id="a_arch_8hpp_html_a989b3cb2d90490770f9c9c030acb1ba5"><div class="ttname"><a href="../../d7/d9c/_arch_8hpp.html#a989b3cb2d90490770f9c9c030acb1ba5">PANIC</a></div><div class="ttdeci">#define PANIC(x)</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d9c/_arch_8hpp_source.html#l00035">Arch.hpp:35</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

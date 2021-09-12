@@ -107,47 +107,31 @@ $(document).ready(function(){initNavTree('d7/dc8/structpage__directory.html','..
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:abe6e6224a0a979e42486f3fe3dc11bc5"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="../../d4/dc1/structpage__table.html">page_table</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dc8/structpage__directory.html#abe6e6224a0a979e42486f3fe3dc11bc5">tables</a> [1024]</td></tr>
-<tr class="separator:abe6e6224a0a979e42486f3fe3dc11bc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa106af3baa762ad9b3b13205c70b238b"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="../../d4/dc1/structpage__table.html">page_table</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dc8/structpage__directory.html#aa106af3baa762ad9b3b13205c70b238b">tablesVirtual</a> [1024]</td></tr>
+<tr class="separator:aa106af3baa762ad9b3b13205c70b238b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca6fe9dd45fd84da120c934a3c9d577d"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="../../dd/df9/structpage__directory__entry.html">page_directory_entry</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dc8/structpage__directory.html#aca6fe9dd45fd84da120c934a3c9d577d">tablesPhysical</a> [1024]</td></tr>
 <tr class="separator:aca6fe9dd45fd84da120c934a3c9d577d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a623dbd21e49b44f9b3ff8427d1978249"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dc8/structpage__directory.html#a623dbd21e49b44f9b3ff8427d1978249">physical_addr</a></td></tr>
-<tr class="separator:a623dbd21e49b44f9b3ff8427d1978249"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea3be122a67fde42070f559b07f830a2"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dc8/structpage__directory.html#aea3be122a67fde42070f559b07f830a2">physAddr</a></td></tr>
+<tr class="separator:aea3be122a67fde42070f559b07f830a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Page directory contains pointers to all of the virtual memory addresses for the page tables along with their corresponding physical memory locations of the page tables. Page table entry defined in accordance to the Intel Developer Manual Vol. 3a p. 4-12. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d75/paging_8hpp_source.html#l00109">109</a> of file <a class="el" href="../../d1/d75/paging_8hpp_source.html">paging.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/d75/paging_8hpp_source.html#l00112">112</a> of file <a class="el" href="../../d1/d75/paging_8hpp_source.html">paging.hpp</a>.</p>
 </div><h2 class="groupheader">Field Documentation</h2>
-<a id="a623dbd21e49b44f9b3ff8427d1978249"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a623dbd21e49b44f9b3ff8427d1978249">&#9670;&nbsp;</a></span>physical_addr</h2>
+<a id="aea3be122a67fde42070f559b07f830a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea3be122a67fde42070f559b07f830a2">&#9670;&nbsp;</a></span>physAddr</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t page_directory::physical_addr</td>
+          <td class="memname">uint32_t page_directory::physAddr</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d75/paging_8hpp_source.html#l00113">113</a> of file <a class="el" href="../../d1/d75/paging_8hpp_source.html">paging.hpp</a>.</p>
-
-</div>
-</div>
-<a id="abe6e6224a0a979e42486f3fe3dc11bc5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abe6e6224a0a979e42486f3fe3dc11bc5">&#9670;&nbsp;</a></span>tables</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">struct <a class="el" href="../../d4/dc1/structpage__table.html">page_table</a>* page_directory::tables[1024]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="../../d1/d75/paging_8hpp_source.html#l00111">111</a> of file <a class="el" href="../../d1/d75/paging_8hpp_source.html">paging.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/d75/paging_8hpp_source.html#l00116">116</a> of file <a class="el" href="../../d1/d75/paging_8hpp_source.html">paging.hpp</a>.</p>
 
 </div>
 </div>
@@ -163,7 +147,23 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d75/paging_8hpp_source.html#l00112">112</a> of file <a class="el" href="../../d1/d75/paging_8hpp_source.html">paging.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/d75/paging_8hpp_source.html#l00115">115</a> of file <a class="el" href="../../d1/d75/paging_8hpp_source.html">paging.hpp</a>.</p>
+
+</div>
+</div>
+<a id="aa106af3baa762ad9b3b13205c70b238b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa106af3baa762ad9b3b13205c70b238b">&#9670;&nbsp;</a></span>tablesVirtual</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="../../d4/dc1/structpage__table.html">page_table</a>* page_directory::tablesVirtual[1024]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d75/paging_8hpp_source.html#l00114">114</a> of file <a class="el" href="../../d1/d75/paging_8hpp_source.html">paging.hpp</a>.</p>
 
 </div>
 </div>

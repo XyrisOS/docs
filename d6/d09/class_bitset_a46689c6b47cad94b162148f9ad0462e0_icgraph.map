@@ -1,0 +1,6 @@
+<map id="Bitset::Test" name="Bitset::Test">
+<area shape="rect" id="node1" title="Return the value of the bit at the given position." alt="" coords="195,56,289,83"/>
+<area shape="rect" id="node2" href="$d6/d09/class_bitset.html#a129678507e12370ee6005fe598f9b02b" title="Finds and returns the position of the first clear bit." alt="" coords="5,5,147,32"/>
+<area shape="rect" id="node3" href="$d6/d09/class_bitset.html#a009b018c67ee48fa626d0f2f6204f759" title="Flip the bit at the given position." alt="" coords="30,56,122,83"/>
+<area shape="rect" id="node4" href="$d6/d09/class_bitset.html#ab9e7d4965e2fe7fdc9d63f0405559927" title="Return the value of the bit at the given position Same functionality as Test() as an operator This op..." alt="" coords="9,107,143,133"/>
+</map>

@@ -1,13 +1,13 @@
 var structpage__directory__entry =
 [
     [ "accessed", "dd/df9/structpage__directory__entry.html#ad88333050da349b0f205ced7ac44b53b", null ],
-    [ "cache_disable", "dd/df9/structpage__directory__entry.html#ab86f995a3ff505ebdff1077039ecd41c", null ],
-    [ "ignored_a", "dd/df9/structpage__directory__entry.html#a2caf92cfa28d62d4b1ea04df64d62238", null ],
-    [ "ignored_b", "dd/df9/structpage__directory__entry.html#a1f8b5dd8804f4f61cfcfc47cce6d953c", null ],
-    [ "page_size", "dd/df9/structpage__directory__entry.html#ab0e4c073818ce926e0b9efd9d82b81e7", null ],
+    [ "cacheDisable", "dd/df9/structpage__directory__entry.html#a3fa15aaa4c143f18f9a76b86d598cfc5", null ],
+    [ "ignoredA", "dd/df9/structpage__directory__entry.html#a73b5a5c1f82cf05ac9cf962d68f766ff", null ],
+    [ "ignoredB", "dd/df9/structpage__directory__entry.html#af6d2bd31a3ffbb6bbd05353ba768a17f", null ],
     [ "present", "dd/df9/structpage__directory__entry.html#ac5b5f5ab165ce60453db02e68bd7cc22", null ],
-    [ "read_write", "dd/df9/structpage__directory__entry.html#adb6ea39d39f84837b017446a9f4b3e4b", null ],
-    [ "table_addr", "dd/df9/structpage__directory__entry.html#ab84bb318469a7ea48b844c242a276bb8", null ],
+    [ "readWrite", "dd/df9/structpage__directory__entry.html#a17d1c472e7717bd192f1ec26e5028b6b", null ],
+    [ "size", "dd/df9/structpage__directory__entry.html#a95afbb96ab05483c5bec14ea20e18d41", null ],
+    [ "tableAddr", "dd/df9/structpage__directory__entry.html#a4d30560c3d83b0d25b67edfcca9bf1ad", null ],
     [ "usermode", "dd/df9/structpage__directory__entry.html#ab5bece4c8b82a7d8065a3c9c3bb27a1f", null ],
-    [ "write_through", "dd/df9/structpage__directory__entry.html#ae4cb777ec0ae0d363ffcd9585bf76a4c", null ]
+    [ "writeThrough", "dd/df9/structpage__directory__entry.html#a9640283f192a7366daad94483798755d", null ]
 ];

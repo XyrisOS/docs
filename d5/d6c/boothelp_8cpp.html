@@ -101,7 +101,7 @@ $(document).ready(function(){initNavTree('d5/d6c/boothelp_8cpp.html','../../'); 
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="../../db/d71/boothelp_8cpp__incl.png" border="0" usemap="#boothelp_8cpp" alt=""/></div>
 <map name="boothelp_8cpp" id="boothelp_8cpp">
-<area shape="rect" title=" " alt="" coords="228,5,335,32"/>
+<area shape="rect" title="Maps bootloader information into memory." alt="" coords="228,5,335,32"/>
 <area shape="rect" title=" " alt="" coords="25,304,96,331"/>
 <area shape="rect" href="../../d0/d29/sections_8hpp.html" title="Kernel ELF section definitions." alt="" coords="42,80,185,107"/>
 <area shape="rect" href="../../d2/d3d/compiler_8hpp.html" title="Compiler meta directives." alt="" coords="210,80,354,107"/>
@@ -123,7 +123,8 @@ Functions</h2></td></tr>
 <tr class="separator:a162cf1be3b687973d59b81c7f1977f8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><dl class="section author"><dt>Author</dt><dd>James T. Sprinkle (<a href="#" onclick="location.href='mai'+'lto:'+'the'+'-g'+'rue'+'@h'+'otm'+'ai'+'l.c'+'om'; return false;">the-g<span style="display: none;">.nosp@m.</span>rue@<span style="display: none;">.nosp@m.</span>hotma<span style="display: none;">.nosp@m.</span>il.c<span style="display: none;">.nosp@m.</span>om</a>) </dd></dl>
+<div class="textblock"><p>Maps bootloader information into memory. </p>
+<dl class="section author"><dt>Author</dt><dd>James T. Sprinkle (<a href="#" onclick="location.href='mai'+'lto:'+'the'+'-g'+'rue'+'@h'+'otm'+'ai'+'l.c'+'om'; return false;">the-g<span style="display: none;">.nosp@m.</span>rue@<span style="display: none;">.nosp@m.</span>hotma<span style="display: none;">.nosp@m.</span>il.c<span style="display: none;">.nosp@m.</span>om</a>) </dd></dl>
 <dl class="section version"><dt>Version</dt><dd>0.1 </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>2021-08-07</dd></dl>
 <dl class="section copyright"><dt>Copyright</dt><dd>Copyright the Xyris Contributors (c) 2021 </dd></dl>
@@ -146,16 +147,16 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d6c/boothelp_8cpp_source.html#l00082">82</a> of file <a class="el" href="../../d5/d6c/boothelp_8cpp_source.html">boothelp.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;{</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keyword">struct </span>multiboot_fixed {</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        uint32_t total_size;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        uint32_t reserved;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    };</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keyword">auto</span> fixed = (<span class="keyword">struct </span>multiboot_fixed*)baseaddr;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordflow">return</span> fixed-&gt;total_size;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../d5/d6c/boothelp_8cpp_source.html#l00081">81</a> of file <a class="el" href="../../d5/d6c/boothelp_8cpp_source.html">boothelp.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;{</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keyword">struct </span>multiboot_fixed {</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        uint32_t total_size;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        uint32_t reserved;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    };</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keyword">auto</span> fixed = (<span class="keyword">struct </span>multiboot_fixed*)baseaddr;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordflow">return</span> fixed-&gt;total_size;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>

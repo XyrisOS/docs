@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['semaphore_915',['Semaphore',['../d4/dbd/class_semaphore.html',1,'']]],
-  ['stackframe_916',['stackframe',['../db/dcb/structstackframe.html',1,'']]]
+  ['registers_912',['registers',['../df/d94/structregisters.html',1,'']]],
+  ['ringbuffer_913',['RingBuffer',['../d4/d8f/class_ring_buffer.html',1,'']]]
 ];

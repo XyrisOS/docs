@@ -90,7 +90,7 @@ $(document).ready(function(){initNavTree('d8/d9f/ports_8hpp.html','../../'); ini
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
-<code>#include &lt;<a class="el" href="../../df/d6c/arch-i386_8hpp_source.html">arch/i386/arch-i386.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="../../dd/de9/_arch_8i386_8hpp_source.html">arch/i386/Arch.i386.hpp</a>&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Include dependency graph for ports.hpp:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -100,7 +100,7 @@ $(document).ready(function(){initNavTree('d8/d9f/ports_8hpp.html','../../'); ini
 <map name="ports_8hpp" id="ports_8hpp">
 <area shape="rect" title="Ports header file. Provides inline functions for getting and setting values at different ports...." alt="" coords="382,5,465,32"/>
 <area shape="rect" title=" " alt="" coords="233,229,304,256"/>
-<area shape="rect" href="../../df/d6c/arch-i386_8hpp.html" title="i386 architecture implementation of arch.hpp" alt="" coords="336,80,511,107"/>
+<area shape="rect" href="../../dd/de9/_arch_8i386_8hpp.html" title="i386 architecture implementation of Arch.hpp" alt="" coords="336,80,511,107"/>
 <area shape="rect" href="../../df/d77/gdt_8hpp.html" title="The Global Descriptor Table (GDT) is specific to the IA32 architecture. It contains entries telling t..." alt="" coords="44,155,179,181"/>
 <area shape="rect" href="../../dd/d12/idt_8hpp.html" title="Interrupt Descriptor Table header." alt="" coords="203,155,334,181"/>
 <area shape="rect" href="../../d4/ddc/isr_8hpp.html" title="Interrupt Service Routine header." alt="" coords="359,155,488,181"/>
@@ -119,9 +119,9 @@ $(document).ready(function(){initNavTree('d8/d9f/ports_8hpp.html','../../'); ini
 <div class="center"><img src="../../d4/d6f/ports_8hpp__dep__incl.png" border="0" usemap="#ports_8hppdep" alt=""/></div>
 <map name="ports_8hppdep" id="ports_8hppdep">
 <area shape="rect" title="Ports header file. Provides inline functions for getting and setting values at different ports...." alt="" coords="318,5,401,32"/>
-<area shape="rect" href="../../df/d6c/arch-i386_8hpp.html" title="i386 architecture implementation of arch.hpp" alt="" coords="304,80,415,107"/>
+<area shape="rect" href="../../dd/de9/_arch_8i386_8hpp.html" title="i386 architecture implementation of Arch.hpp" alt="" coords="304,80,415,107"/>
 <area shape="rect" href="../../d7/d27/ports_8cpp.html" title="CPU port access functions." alt="" coords="439,80,522,107"/>
-<area shape="rect" href="../../d2/d2e/arch-i386_8cpp.html" title="i386 architecture implementation of arch.hpp" alt="" coords="5,155,116,181"/>
+<area shape="rect" href="../../d3/d50/_arch_8i386_8cpp.html" title="i386 architecture implementation of Arch.hpp" alt="" coords="5,155,116,181"/>
 <area shape="rect" href="../../df/d77/gdt_8hpp.html" title="The Global Descriptor Table (GDT) is specific to the IA32 architecture. It contains entries telling t..." alt="" coords="140,155,211,181"/>
 <area shape="rect" href="../../dd/d12/idt_8hpp.html" title="Interrupt Descriptor Table header." alt="" coords="235,155,302,181"/>
 <area shape="rect" href="../../d4/ddc/isr_8hpp.html" title="Interrupt Service Routine header." alt="" coords="327,155,392,181"/>
@@ -323,14 +323,13 @@ Functions</h2></td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="../../d8/d9f/ports_8hpp_aa89191491445201430ae9a8feb3184d9_icgraph.png" border="0" usemap="#d8/d9f/ports_8hpp_aa89191491445201430ae9a8feb3184d9_icgraph" alt=""/></div>
 <map name="d8/d9f/ports_8hpp_aa89191491445201430ae9a8feb3184d9_icgraph" id="d8/d9f/ports_8hpp_aa89191491445201430ae9a8feb3184d9_icgraph">
-<area shape="rect" title="Writes a byte (8 bits) to the CPU bus at a given port address." alt="" coords="452,107,537,133"/>
-<area shape="rect" href="../../db/de6/namespace_r_t_c.html#af746e6ba38c234affd66f9d86223ae89" title="Initializes the Real Time Clock driver for the x86_64 architecture." alt="" coords="315,5,389,32"/>
-<area shape="rect" href="../../d7/d75/namespace_r_s232.html#acbd0855fa0862424053ed439eb77e6b3" title="Activates the RS232 serial driver." alt="" coords="306,56,398,83"/>
-<area shape="rect" href="../../d4/ddc/isr_8hpp.html#a7d02908775a5c731ab311e9e9a05d802" title=" " alt="" coords="305,107,399,133"/>
-<area shape="rect" href="../../d4/ddc/isr_8hpp.html#aed0ecf87a0ed3270ce0e9c68cd01a946" title=" " alt="" coords="309,157,395,184"/>
-<area shape="rect" href="../../d7/d75/namespace_r_s232.html#a4f82e14c1586b0fdcc0f71a0806e4e7e" title="Write bytes to the serial device." alt="" coords="300,208,404,235"/>
-<area shape="rect" href="../../d9/dc3/namespace_arch.html#ae2cfdc55544d6519edd56c09cb7873c4" title=" " alt="" coords="149,157,252,184"/>
-<area shape="rect" href="../../d2/dd2/entry_8cpp.html#aafd1870c38d36a8eddccb5457857533e" title="This is the Xyris kernel entry point. This function is called directly from the assembly written in b..." alt="" coords="5,157,101,184"/>
+<area shape="rect" title="Writes a byte (8 bits) to the CPU bus at a given port address." alt="" coords="308,107,393,133"/>
+<area shape="rect" href="../../db/de6/namespace_r_t_c.html#af746e6ba38c234affd66f9d86223ae89" title="Initializes the Real Time Clock driver for the x86_64 architecture." alt="" coords="171,5,245,32"/>
+<area shape="rect" href="../../d7/d75/namespace_r_s232.html#acbd0855fa0862424053ed439eb77e6b3" title="Activates the RS232 serial driver." alt="" coords="162,56,254,83"/>
+<area shape="rect" href="../../d4/ddc/isr_8hpp.html#a7d02908775a5c731ab311e9e9a05d802" title=" " alt="" coords="161,107,255,133"/>
+<area shape="rect" href="../../d4/ddc/isr_8hpp.html#aed0ecf87a0ed3270ce0e9c68cd01a946" title=" " alt="" coords="165,157,251,184"/>
+<area shape="rect" href="../../d7/d75/namespace_r_s232.html#a4f82e14c1586b0fdcc0f71a0806e4e7e" title="Write bytes to the serial device." alt="" coords="156,208,260,235"/>
+<area shape="rect" href="../../d9/dc3/namespace_arch.html#ae2cfdc55544d6519edd56c09cb7873c4" title=" " alt="" coords="5,157,108,184"/>
 </map>
 </div>
 
