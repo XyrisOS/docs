@@ -9,6 +9,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: Update packages
+        run: sudo apt update
       - name: Install packages
         run: sudo apt install rsync doxygen-latex graphviz
       - name: Checkout
