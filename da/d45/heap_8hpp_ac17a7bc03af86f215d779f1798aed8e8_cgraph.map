@@ -1,4 +1,7 @@
 <map id="liballoc_alloc" name="liballoc_alloc">
-<area shape="rect" id="node1" title="This is the hook into the local system which allocates pages. It accepts an integer parameter which i..." alt="" coords="5,5,112,32"/>
-<area shape="rect" id="node2" href="$d1/d5e/paging_8cpp.html#a1f827ef8d99028d46133fb5ca4f9c89a" title="Returns a new page in memory for use." alt="" coords="160,5,276,32"/>
+<area shape="rect" id="node1" title="This is the hook into the local system which allocates pages. It accepts an integer parameter which i..." alt="" coords="5,31,112,57"/>
+<area shape="rect" id="node2" href="$d2/d46/namespace_paging.html#a7719e756c617d0bafd750620a306612c" title="Returns a new page in memory for use. If less than one page is requested, exactly one page will be al..." alt="" coords="160,31,291,57"/>
+<area shape="rect" id="node3" href="$d4/de8/class_mutex.html#aa732ae651974555965dcaf9ad9e87882" title="Locks a provided mutex. This call will block if the mutex is already locked." alt="" coords="375,5,477,32"/>
+<area shape="rect" id="node5" href="$d2/d46/namespace_paging.html#a0f248342ae645da1817c3bd94f984bd2" title="Map a page into the kernel address space." alt="" coords="339,56,513,83"/>
+<area shape="rect" id="node4" href="$d5/d9d/tasks_8cpp.html#a2432c50b4d4264b5d5295bdb4f19e0d2" title=" " alt="" coords="561,5,697,32"/>
 </map>

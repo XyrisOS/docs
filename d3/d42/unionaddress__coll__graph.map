@@ -1,5 +1,0 @@
-<map id="address" name="address">
-<area shape="rect" id="node1" title="Address union. Represents a memory address that can be used to address a page in virtual memory,..." alt="" coords="37,95,111,121"/>
-<area shape="rect" id="node2" href="$d7/d1a/structpage.html" title="Virtual address structure. Represents an address in virtual memory that redirects to a physical page ..." alt="" coords="5,5,60,32"/>
-<area shape="rect" id="node3" href="$d5/d77/structframe.html" title="Page frame structure. This represents a the address to a single unit of memory in RAM...." alt="" coords="85,5,146,32"/>
-</map>

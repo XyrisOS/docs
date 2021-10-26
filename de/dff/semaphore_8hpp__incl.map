@@ -1,9 +1,11 @@
 <map id="semaphore.hpp" name="semaphore.hpp">
-<area shape="rect" id="node1" title=" " alt="" coords="247,5,369,32"/>
-<area shape="rect" id="node2" title=" " alt="" coords="273,304,343,331"/>
-<area shape="rect" id="node3" href="$d2/dbd/tasks_8hpp.html" title=" " alt="" coords="206,80,317,107"/>
-<area shape="rect" id="node4" href="$d7/d9c/_arch_8hpp.html" title="Computer architecture initialization definitions." alt="" coords="109,229,219,256"/>
-<area shape="rect" id="node7" href="$d1/d75/paging_8hpp.html" title=" " alt="" coords="87,155,219,181"/>
-<area shape="rect" id="node5" title=" " alt="" coords="5,304,80,331"/>
-<area shape="rect" id="node6" href="$d2/d3d/compiler_8hpp.html" title="Compiler meta directives." alt="" coords="104,304,248,331"/>
+<area shape="rect" id="node1" title=" " alt="" coords="314,5,437,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="351,379,422,405"/>
+<area shape="rect" id="node3" href="$d2/dbd/tasks_8hpp.html" title=" " alt="" coords="274,80,384,107"/>
+<area shape="rect" id="node4" href="$d7/d9c/_arch_8hpp.html" title="Computer architecture initialization definitions." alt="" coords="23,304,134,331"/>
+<area shape="rect" id="node7" href="$d1/d75/paging_8hpp.html" title=" " alt="" coords="227,155,359,181"/>
+<area shape="rect" id="node5" href="$d2/d3d/compiler_8hpp.html" title="Compiler meta directives." alt="" coords="161,379,305,405"/>
+<area shape="rect" id="node6" title=" " alt="" coords="41,379,116,405"/>
+<area shape="rect" id="node8" href="$d6/dc1/_memory_map_8hpp.html" title="Memory map containing a number of Memory sections that describe the physical memory layout." alt="" coords="173,229,344,256"/>
+<area shape="rect" id="node9" href="$d0/d91/_memory_section_8hpp.html" title=" " alt="" coords="158,304,348,331"/>
 </map>

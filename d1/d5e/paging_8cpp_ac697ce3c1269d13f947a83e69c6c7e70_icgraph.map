@@ -1,4 +1,0 @@
-<map id="free_page" name="free_page">
-<area shape="rect" id="node1" title="Frees pages starting at a given page address." alt="" coords="156,5,243,32"/>
-<area shape="rect" id="node2" href="$da/d45/heap_8hpp.html#af18d86433f6454a9b2b4d7316c640525" title="This frees previously allocated memory. The void* parameter passed to the function is the exact same ..." alt="" coords="5,5,108,32"/>
-</map>

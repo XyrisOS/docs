@@ -145,7 +145,7 @@ $(document).ready(function(){initNavTree('d3/dd6/framebuffer_8cpp_source.html','
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
 <div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="../../d0/dcb/class_graphics_1_1_framebuffer.html#a3636a6b223a9600aaf05e70f79a12155">   57</a></span>&#160;<a class="code" href="../../d0/dcb/class_graphics_1_1_framebuffer.html#ac3aa6dfc58922ba2075e0071fffff3c1">Framebuffer::Framebuffer</a>(uint32_t width, uint32_t height,</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                                 uint16_t depth, uint32_t pitch,</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                                 <span class="keywordtype">void</span>* addr, <a class="code" href="../../d6/d9b/namespace_graphics.html#a504dfc028c1d2f4ec0c4bf4ec2cbe7f8">FramebufferMemoryModel</a> model,</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                                 <span class="keywordtype">void</span>* addr, <a class="code" href="../../d6/d9b/namespace_graphics.html#a504dfc028c1d2f4ec0c4bf4ec2cbe7f8">FramebufferMemoryModel</a> <a class="code" href="../../d9/d7a/namespace_arch_1_1_c_p_u.html#a85dcde91876c9d4f28baf43399cda7f4">model</a>,</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                                 uint8_t redMaskSize, uint8_t redMaskShift,</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                                 uint8_t greenMaskSize, uint8_t greenMaskShift,</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                                 uint8_t blueMaskSize, uint8_t blueMaskShift)</div>
@@ -160,7 +160,7 @@ $(document).ready(function(){initNavTree('d3/dd6/framebuffer_8cpp_source.html','
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    , _greenMaskShift(greenMaskShift)</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    , _blueMaskSize(blueMaskSize)</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    , _blueMaskShift(blueMaskShift)</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    , _memoryModel(model)</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    , _memoryModel(<a class="code" href="../../d9/d7a/namespace_arch_1_1_c_p_u.html#a85dcde91876c9d4f28baf43399cda7f4">model</a>)</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;{</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="comment">// All parameters constructor</span></div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordflow">if</span> (!framebuffer)</div>
@@ -181,6 +181,7 @@ $(document).ready(function(){initNavTree('d3/dd6/framebuffer_8cpp_source.html','
 <div class="ttc" id="aframebuffer_8hpp_html"><div class="ttname"><a href="../../d7/d1a/framebuffer_8hpp.html">framebuffer.hpp</a></div></div>
 <div class="ttc" id="anamespace_graphics_html"><div class="ttname"><a href="../../d6/d9b/namespace_graphics.html">Graphics</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d53/font_8cpp_source.html#l00017">font.cpp:17</a></div></div>
 <div class="ttc" id="aclass_graphics_1_1_framebuffer_html"><div class="ttname"><a href="../../d0/dcb/class_graphics_1_1_framebuffer.html">Graphics::Framebuffer</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d1a/framebuffer_8hpp_source.html#l00022">framebuffer.hpp:22</a></div></div>
+<div class="ttc" id="anamespace_arch_1_1_c_p_u_html_a85dcde91876c9d4f28baf43399cda7f4"><div class="ttname"><a href="../../d9/d7a/namespace_arch_1_1_c_p_u.html#a85dcde91876c9d4f28baf43399cda7f4">Arch::CPU::model</a></div><div class="ttdeci">const char * model()</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d50/_arch_8i386_8cpp_source.html#l00076">Arch.i386.cpp:76</a></div></div>
 <div class="ttc" id="anamespace_graphics_html_af129f7076fdd0d3a4f109a652a0ba8ec"><div class="ttname"><a href="../../d6/d9b/namespace_graphics.html#af129f7076fdd0d3a4f109a652a0ba8ec">Graphics::getFramebuffer</a></div><div class="ttdeci">Framebuffer * getFramebuffer()</div><div class="ttdoc">Get a pointer to the active framebuffer.</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dd6/framebuffer_8cpp_source.html#l00081">framebuffer.cpp:81</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

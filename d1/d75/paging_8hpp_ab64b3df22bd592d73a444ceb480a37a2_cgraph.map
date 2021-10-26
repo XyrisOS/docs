@@ -1,4 +1,0 @@
-<map id="map_kernel_range_physical" name="map_kernel_range_physical">
-<area shape="rect" id="node1" title="Map a kernel address range into physical memory." alt="" coords="5,5,208,32"/>
-<area shape="rect" id="node2" href="$d1/d5e/paging_8cpp.html#abdb9a2f0a828ec365b6bde6f4c3eb3f7" title="Map a page into the kernel address space." alt="" coords="256,5,393,32"/>
-</map>

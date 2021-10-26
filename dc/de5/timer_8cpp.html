@@ -93,6 +93,7 @@ $(document).ready(function(){initNavTree('dc/de5/timer_8cpp.html','../../'); ini
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="../../df/d05/timer_8hpp_source.html">arch/i386/timer.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="../../d4/ddc/isr_8hpp_source.html">arch/i386/isr.hpp</a>&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Include dependency graph for timer.cpp:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -100,18 +101,15 @@ $(document).ready(function(){initNavTree('dc/de5/timer_8cpp.html','../../'); ini
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="../../d1/d2b/timer_8cpp__incl.png" border="0" usemap="#timer_8cpp" alt=""/></div>
 <map name="timer_8cpp" id="timer_8cpp">
-<area shape="rect" title="Programmable Interrupt Timer driver functions." alt="" coords="428,5,511,32"/>
-<area shape="rect" href="../../df/d05/timer_8hpp.html" title=" " alt="" coords="396,80,544,107"/>
-<area shape="rect" href="../../dd/de9/_arch_8i386_8hpp.html" title="i386 architecture implementation of Arch.hpp" alt="" coords="382,155,557,181"/>
-<area shape="rect" title=" " alt="" coords="277,304,348,331"/>
-<area shape="rect" href="../../df/d77/gdt_8hpp.html" title="The Global Descriptor Table (GDT) is specific to the IA32 architecture. It contains entries telling t..." alt="" coords="245,229,380,256"/>
-<area shape="rect" href="../../dd/d12/idt_8hpp.html" title="Interrupt Descriptor Table header." alt="" coords="404,229,535,256"/>
-<area shape="rect" href="../../d4/ddc/isr_8hpp.html" title="Interrupt Service Routine header." alt="" coords="752,229,881,256"/>
-<area shape="rect" href="../../da/d6a/panic_8hpp.html" title=" " alt="" coords="906,229,1055,256"/>
-<area shape="rect" href="../../d8/d9f/ports_8hpp.html" title="Ports header file. Provides inline functions for getting and setting values at different ports...." alt="" coords="23,229,170,256"/>
-<area shape="rect" title=" " alt="" coords="559,229,628,256"/>
-<area shape="rect" title=" " alt="" coords="652,229,727,256"/>
-<area shape="rect" href="../../d2/d3d/compiler_8hpp.html" title="Compiler meta directives." alt="" coords="908,304,1052,331"/>
+<area shape="rect" title="Programmable Interrupt Timer driver functions." alt="" coords="108,5,191,32"/>
+<area shape="rect" href="../../df/d05/timer_8hpp.html" title=" " alt="" coords="131,80,279,107"/>
+<area shape="rect" href="../../d4/ddc/isr_8hpp.html" title="Interrupt Service Routine header." alt="" coords="29,229,158,256"/>
+<area shape="rect" href="../../dd/de9/_arch_8i386_8hpp.html" title="i386 architecture implementation of Arch.hpp" alt="" coords="169,155,343,181"/>
+<area shape="rect" title=" " alt="" coords="221,304,291,331"/>
+<area shape="rect" href="../../d9/d4f/_memory_8hpp.html" title="Architecture memory management API." alt="" coords="354,229,489,256"/>
+<area shape="rect" href="../../d8/dfb/regs_8hpp.html" title=" " alt="" coords="513,229,655,256"/>
+<area shape="rect" href="../../d8/d9f/ports_8hpp.html" title="Ports header file. Provides inline functions for getting and setting values at different ports...." alt="" coords="183,229,329,256"/>
+<area shape="rect" title=" " alt="" coords="465,304,540,331"/>
 </map>
 </div>
 </div>
@@ -162,7 +160,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/de5/timer_8cpp_source.html#l00018">18</a> of file <a class="el" href="../../dc/de5/timer_8cpp_source.html">timer.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/de5/timer_8cpp_source.html#l00019">19</a> of file <a class="el" href="../../dc/de5/timer_8cpp_source.html">timer.cpp</a>.</p>
 
 </div>
 </div>
@@ -179,7 +177,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/de5/timer_8cpp_source.html#l00016">16</a> of file <a class="el" href="../../dc/de5/timer_8cpp_source.html">timer.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/de5/timer_8cpp_source.html#l00017">17</a> of file <a class="el" href="../../dc/de5/timer_8cpp_source.html">timer.cpp</a>.</p>
 
 </div>
 </div>
@@ -208,15 +206,15 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/de5/timer_8cpp_source.html#l00051">51</a> of file <a class="el" href="../../dc/de5/timer_8cpp_source.html">timer.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                        {</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    uint32_t start = <a class="code" href="../../dc/de5/timer_8cpp.html#a8c702713be164664bf7d3c5f9cc9002d">timer_tick</a>;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    uint32_t <span class="keyword">final</span> = start + ms;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="comment">// Waste CPU cycles like a slob</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordflow">while</span> (<a class="code" href="../../dc/de5/timer_8cpp.html#a8c702713be164664bf7d3c5f9cc9002d">timer_tick</a> &lt; <span class="keyword">final</span>);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="comment">// Return now that we&#39;ve waited long enough</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../dc/de5/timer_8cpp_source.html#l00052">52</a> of file <a class="el" href="../../dc/de5/timer_8cpp_source.html">timer.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                        {</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    uint32_t start = <a class="code" href="../../dc/de5/timer_8cpp.html#a8c702713be164664bf7d3c5f9cc9002d">timer_tick</a>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    uint32_t <span class="keyword">final</span> = start + ms;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="comment">// Waste CPU cycles like a slob</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordflow">while</span> (<a class="code" href="../../dc/de5/timer_8cpp.html#a8c702713be164664bf7d3c5f9cc9002d">timer_tick</a> &lt; <span class="keyword">final</span>);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="comment">// Return now that we&#39;ve waited long enough</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -239,19 +237,19 @@ Variables</h2></td></tr>
 <p>Initialize the CPU timer with the given frequency. </p>
 <p>Sleep Timer Non-Busy Waiting Idea: Create a struct that contains the end time and the callback function pointer that should be called when timer_tick = end After each timer_tick we check our end time and call the function if we're equal. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/de5/timer_8cpp_source.html#l00030">30</a> of file <a class="el" href="../../dc/de5/timer_8cpp_source.html">timer.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                               {</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="comment">/* Install the function we just wrote */</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="code" href="../../d3/d68/isr_8cpp.html#acc90c1ac3bbcb4fc45ccda7cde4882c7">register_interrupt_handler</a>(<a class="code" href="../../d4/ddc/isr_8hpp.html#a01b4023ebbcebf993035ca8f0f7d2225acdb333eeb7aa4b08f250af6b077e1892">IRQ0</a>, timer_callback);</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="comment">/* Get the PIT value: hardware clock at 1193180 Hz */</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    uint32_t divisor = 1193180 / freq;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    uint8_t low  = (uint8_t)(divisor &amp; 0xFF);</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    uint8_t high = (uint8_t)((divisor &gt;&gt; 8) &amp; 0xFF);</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="comment">/* Send the command */</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="../../d7/d27/ports_8cpp.html#aa89191491445201430ae9a8feb3184d9">writeByte</a>(<a class="code" href="../../df/d05/timer_8hpp.html#abbc68cc890d6df8ae88e338b5cf1f1cb">TIMER_COMMAND_PORT</a>, 0x36);</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="../../d7/d27/ports_8cpp.html#aa89191491445201430ae9a8feb3184d9">writeByte</a>(<a class="code" href="../../df/d05/timer_8hpp.html#aed1aab994ad876be2344591496ac2cd6">TIMER_DATA_PORT</a>, low);</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="../../d7/d27/ports_8cpp.html#aa89191491445201430ae9a8feb3184d9">writeByte</a>(<a class="code" href="../../df/d05/timer_8hpp.html#aed1aab994ad876be2344591496ac2cd6">TIMER_DATA_PORT</a>, high);</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../dc/de5/timer_8cpp_source.html#l00031">31</a> of file <a class="el" href="../../dc/de5/timer_8cpp_source.html">timer.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                               {</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="comment">/* Install the function we just wrote */</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="../../d3/d68/isr_8cpp.html#acc90c1ac3bbcb4fc45ccda7cde4882c7">register_interrupt_handler</a>(<a class="code" href="../../d4/ddc/isr_8hpp.html#a01b4023ebbcebf993035ca8f0f7d2225acdb333eeb7aa4b08f250af6b077e1892">IRQ0</a>, timer_callback);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="comment">/* Get the PIT value: hardware clock at 1193180 Hz */</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    uint32_t divisor = 1193180 / freq;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    uint8_t low  = (uint8_t)(divisor &amp; 0xFF);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    uint8_t high = (uint8_t)((divisor &gt;&gt; 8) &amp; 0xFF);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="comment">/* Send the command */</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="../../d7/d27/ports_8cpp.html#aa89191491445201430ae9a8feb3184d9">writeByte</a>(<a class="code" href="../../df/d05/timer_8hpp.html#abbc68cc890d6df8ae88e338b5cf1f1cb">TIMER_COMMAND_PORT</a>, 0x36);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="../../d7/d27/ports_8cpp.html#aa89191491445201430ae9a8feb3184d9">writeByte</a>(<a class="code" href="../../df/d05/timer_8hpp.html#aed1aab994ad876be2344591496ac2cd6">TIMER_DATA_PORT</a>, low);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="../../d7/d27/ports_8cpp.html#aa89191491445201430ae9a8feb3184d9">writeByte</a>(<a class="code" href="../../df/d05/timer_8hpp.html#aed1aab994ad876be2344591496ac2cd6">TIMER_DATA_PORT</a>, high);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;}</div>
 </div><!-- fragment --><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -270,8 +268,8 @@ Variables</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="../../dc/de5/timer_8cpp_afe097e48aba5e0fc040df42695ab6b5b_icgraph.png" border="0" usemap="#dc/de5/timer_8cpp_afe097e48aba5e0fc040df42695ab6b5b_icgraph" alt=""/></div>
 <map name="dc/de5/timer_8cpp_afe097e48aba5e0fc040df42695ab6b5b_icgraph" id="dc/de5/timer_8cpp_afe097e48aba5e0fc040df42695ab6b5b_icgraph">
-<area shape="rect" title="Initialize the CPU timer with the given frequency." alt="" coords="156,5,241,32"/>
-<area shape="rect" href="../../d9/dc3/namespace_arch.html#ae2cfdc55544d6519edd56c09cb7873c4" title=" " alt="" coords="5,5,108,32"/>
+<area shape="rect" title="Initialize the CPU timer with the given frequency." alt="" coords="168,5,253,32"/>
+<area shape="rect" href="../../d9/d7a/namespace_arch_1_1_c_p_u.html#a56d04c0a3e1b9d49d69c5d8d33875731" title=" " alt="" coords="5,5,120,32"/>
 </map>
 </div>
 
@@ -293,13 +291,13 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/de5/timer_8cpp_source.html#l00060">60</a> of file <a class="el" href="../../dc/de5/timer_8cpp_source.html">timer.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                                             {</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordflow">if</span> (_callback_count &lt; <a class="code" href="../../dc/de5/timer_8cpp.html#aea0bffe478318f476a4bedee63256b2c">MAX_CALLBACKS</a> - 1) {</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        _callbacks[_callback_count] = func;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        _callback_count++;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    }</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../dc/de5/timer_8cpp_source.html#l00061">61</a> of file <a class="el" href="../../dc/de5/timer_8cpp_source.html">timer.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                                             {</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordflow">if</span> (_callback_count &lt; <a class="code" href="../../dc/de5/timer_8cpp.html#aea0bffe478318f476a4bedee63256b2c">MAX_CALLBACKS</a> - 1) {</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        _callbacks[_callback_count] = func;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        _callback_count++;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    }</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -316,17 +314,17 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/de5/timer_8cpp_source.html#l00014">14</a> of file <a class="el" href="../../dc/de5/timer_8cpp_source.html">timer.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/de5/timer_8cpp_source.html#l00015">15</a> of file <a class="el" href="../../dc/de5/timer_8cpp_source.html">timer.cpp</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aisr_8hpp_html_a01b4023ebbcebf993035ca8f0f7d2225acdb333eeb7aa4b08f250af6b077e1892"><div class="ttname"><a href="../../d4/ddc/isr_8hpp.html#a01b4023ebbcebf993035ca8f0f7d2225acdb333eeb7aa4b08f250af6b077e1892">IRQ0</a></div><div class="ttdeci">@ IRQ0</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/ddc/isr_8hpp_source.html#l00051">isr.hpp:51</a></div></div>
-<div class="ttc" id="atimer_8cpp_html_a8c702713be164664bf7d3c5f9cc9002d"><div class="ttname"><a href="../../dc/de5/timer_8cpp.html#a8c702713be164664bf7d3c5f9cc9002d">timer_tick</a></div><div class="ttdeci">volatile uint32_t timer_tick</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/de5/timer_8cpp_source.html#l00014">timer.cpp:14</a></div></div>
-<div class="ttc" id="aisr_8cpp_html_acc90c1ac3bbcb4fc45ccda7cde4882c7"><div class="ttname"><a href="../../d3/d68/isr_8cpp.html#acc90c1ac3bbcb4fc45ccda7cde4882c7">register_interrupt_handler</a></div><div class="ttdeci">void register_interrupt_handler(uint8_t n, isr_cb_t handler)</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d68/isr_8cpp_source.html#l00049">isr.cpp:49</a></div></div>
+<div class="ttc" id="atimer_8cpp_html_a8c702713be164664bf7d3c5f9cc9002d"><div class="ttname"><a href="../../dc/de5/timer_8cpp.html#a8c702713be164664bf7d3c5f9cc9002d">timer_tick</a></div><div class="ttdeci">volatile uint32_t timer_tick</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/de5/timer_8cpp_source.html#l00015">timer.cpp:15</a></div></div>
+<div class="ttc" id="aisr_8cpp_html_acc90c1ac3bbcb4fc45ccda7cde4882c7"><div class="ttname"><a href="../../d3/d68/isr_8cpp.html#acc90c1ac3bbcb4fc45ccda7cde4882c7">register_interrupt_handler</a></div><div class="ttdeci">void register_interrupt_handler(uint8_t n, isr_cb_t handler)</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d68/isr_8cpp_source.html#l00050">isr.cpp:50</a></div></div>
 <div class="ttc" id="aports_8cpp_html_aa89191491445201430ae9a8feb3184d9"><div class="ttname"><a href="../../d7/d27/ports_8cpp.html#aa89191491445201430ae9a8feb3184d9">writeByte</a></div><div class="ttdeci">void writeByte(uint16_t port, uint8_t data)</div><div class="ttdoc">Writes a byte (8 bits) to the CPU bus at a given port address.</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d27/ports_8cpp_source.html#l00019">ports.cpp:19</a></div></div>
-<div class="ttc" id="atimer_8cpp_html_aea0bffe478318f476a4bedee63256b2c"><div class="ttname"><a href="../../dc/de5/timer_8cpp.html#aea0bffe478318f476a4bedee63256b2c">MAX_CALLBACKS</a></div><div class="ttdeci">#define MAX_CALLBACKS</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/de5/timer_8cpp_source.html#l00018">timer.cpp:18</a></div></div>
+<div class="ttc" id="atimer_8cpp_html_aea0bffe478318f476a4bedee63256b2c"><div class="ttname"><a href="../../dc/de5/timer_8cpp.html#aea0bffe478318f476a4bedee63256b2c">MAX_CALLBACKS</a></div><div class="ttdeci">#define MAX_CALLBACKS</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/de5/timer_8cpp_source.html#l00019">timer.cpp:19</a></div></div>
 <div class="ttc" id="atimer_8hpp_html_aed1aab994ad876be2344591496ac2cd6"><div class="ttname"><a href="../../df/d05/timer_8hpp.html#aed1aab994ad876be2344591496ac2cd6">TIMER_DATA_PORT</a></div><div class="ttdeci">#define TIMER_DATA_PORT</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d05/timer_8hpp_source.html#l00016">timer.hpp:16</a></div></div>
 <div class="ttc" id="atimer_8hpp_html_abbc68cc890d6df8ae88e338b5cf1f1cb"><div class="ttname"><a href="../../df/d05/timer_8hpp.html#abbc68cc890d6df8ae88e338b5cf1f1cb">TIMER_COMMAND_PORT</a></div><div class="ttdeci">#define TIMER_COMMAND_PORT</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d05/timer_8hpp_source.html#l00015">timer.hpp:15</a></div></div>
 <!-- start footer part -->

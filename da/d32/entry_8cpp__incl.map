@@ -1,22 +1,24 @@
 <map id="entry.cpp" name="entry.cpp">
-<area shape="rect" id="node1" title="The entry point into the Xyris kernel." alt="" coords="927,5,1008,32"/>
-<area shape="rect" id="node2" href="$d2/daf/stdio_8hpp.html" title=" " alt="" coords="750,80,852,107"/>
-<area shape="rect" id="node4" href="$de/d99/time_8hpp.html" title="Time lib code." alt="" coords="1123,229,1223,256"/>
-<area shape="rect" id="node5" title=" " alt="" coords="602,304,672,331"/>
-<area shape="rect" id="node6" href="$d2/dbd/tasks_8hpp.html" title=" " alt="" coords="300,80,411,107"/>
-<area shape="rect" id="node7" href="$d7/d9c/_arch_8hpp.html" title="Computer architecture initialization definitions." alt="" coords="23,229,134,256"/>
-<area shape="rect" id="node10" href="$d1/d75/paging_8hpp.html" title=" " alt="" coords="59,155,191,181"/>
-<area shape="rect" id="node11" href="$d2/d1f/_handoff_8hpp.html" title=" " alt="" coords="379,155,514,181"/>
-<area shape="rect" id="node13" href="$d9/d31/graphics_8hpp.html" title=" " alt="" coords="738,155,930,181"/>
-<area shape="rect" id="node14" href="$d5/ddc/console_8hpp.html" title="Framebuffer console." alt="" coords="700,229,886,256"/>
-<area shape="rect" id="node15" href="$d9/d89/rtc_8hpp.html" title=" " alt="" coords="1006,155,1122,181"/>
-<area shape="rect" id="node16" href="$db/d90/rs232_8hpp.html" title="A simple, write&#45;only driver for the RS232 serial device standard. Code mostly ported from Panix&#45;Archi..." alt="" coords="534,80,689,107"/>
-<area shape="rect" id="node17" href="$da/d1a/spkr_8hpp.html" title=" " alt="" coords="962,229,1099,256"/>
-<area shape="rect" id="node18" href="$d3/dee/primes_8hpp.html" title="Prime computation tasks." alt="" coords="1298,80,1429,107"/>
-<area shape="rect" id="node19" href="$da/d14/spinner_8hpp.html" title="Kernel spinner task." alt="" coords="1454,80,1586,107"/>
-<area shape="rect" id="node20" href="$db/df8/defines_8hpp.html" title="Compiler pre&#45;processor definitions." alt="" coords="1610,80,1744,107"/>
-<area shape="rect" id="node3" title=" " alt="" coords="640,155,714,181"/>
-<area shape="rect" id="node8" title=" " alt="" coords="41,304,116,331"/>
-<area shape="rect" id="node9" href="$d2/d3d/compiler_8hpp.html" title="Compiler meta directives." alt="" coords="217,304,361,331"/>
-<area shape="rect" id="node12" href="$d7/d1a/framebuffer_8hpp.html" title=" " alt="" coords="260,229,473,256"/>
+<area shape="rect" id="node1" title="The entry point into the Xyris kernel." alt="" coords="1014,5,1095,32"/>
+<area shape="rect" id="node2" href="$d2/daf/stdio_8hpp.html" title=" " alt="" coords="914,80,1016,107"/>
+<area shape="rect" id="node4" href="$de/d99/time_8hpp.html" title="Time lib code." alt="" coords="1247,229,1347,256"/>
+<area shape="rect" id="node5" title=" " alt="" coords="790,379,860,405"/>
+<area shape="rect" id="node6" href="$d2/dbd/tasks_8hpp.html" title=" " alt="" coords="406,80,516,107"/>
+<area shape="rect" id="node7" href="$d7/d9c/_arch_8hpp.html" title="Computer architecture initialization definitions." alt="" coords="287,304,398,331"/>
+<area shape="rect" id="node10" href="$d1/d75/paging_8hpp.html" title=" " alt="" coords="164,155,296,181"/>
+<area shape="rect" id="node13" href="$d2/d1f/_handoff_8hpp.html" title=" " alt="" coords="524,155,659,181"/>
+<area shape="rect" id="node15" href="$d9/d31/graphics_8hpp.html" title=" " alt="" coords="646,229,838,256"/>
+<area shape="rect" id="node16" href="$d5/ddc/console_8hpp.html" title="Framebuffer console." alt="" coords="884,155,1070,181"/>
+<area shape="rect" id="node17" href="$d9/d89/rtc_8hpp.html" title=" " alt="" coords="994,229,1110,256"/>
+<area shape="rect" id="node18" href="$db/d90/rs232_8hpp.html" title="A simple, write&#45;only driver for the RS232 serial device standard. Code mostly ported from Panix&#45;Archi..." alt="" coords="734,80,889,107"/>
+<area shape="rect" id="node19" href="$da/d1a/spkr_8hpp.html" title=" " alt="" coords="1031,304,1168,331"/>
+<area shape="rect" id="node20" href="$d3/dee/primes_8hpp.html" title="Prime computation tasks." alt="" coords="1297,80,1428,107"/>
+<area shape="rect" id="node21" href="$da/d14/spinner_8hpp.html" title="Kernel spinner task." alt="" coords="1452,80,1584,107"/>
+<area shape="rect" id="node22" href="$db/df8/defines_8hpp.html" title="Compiler pre&#45;processor definitions." alt="" coords="1608,80,1743,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="785,155,860,181"/>
+<area shape="rect" id="node8" href="$d2/d3d/compiler_8hpp.html" title="Compiler meta directives." alt="" coords="270,379,414,405"/>
+<area shape="rect" id="node9" title=" " alt="" coords="64,379,138,405"/>
+<area shape="rect" id="node11" href="$d6/dc1/_memory_map_8hpp.html" title="Memory map containing a number of Memory sections that describe the physical memory layout." alt="" coords="126,229,297,256"/>
+<area shape="rect" id="node12" href="$d0/d91/_memory_section_8hpp.html" title=" " alt="" coords="72,304,263,331"/>
+<area shape="rect" id="node14" href="$d7/d1a/framebuffer_8hpp.html" title=" " alt="" coords="524,304,737,331"/>
 </map>

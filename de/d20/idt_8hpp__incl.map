@@ -1,13 +1,10 @@
 <map id="idt.hpp" name="idt.hpp">
-<area shape="rect" id="node1" title="Interrupt Descriptor Table header." alt="" coords="438,5,504,32"/>
-<area shape="rect" id="node2" href="$dd/de9/_arch_8i386_8hpp.html" title="i386 architecture implementation of Arch.hpp" alt="" coords="384,80,558,107"/>
-<area shape="rect" id="node4" title=" " alt="" coords="280,229,350,256"/>
-<area shape="rect" id="node3" href="$df/d77/gdt_8hpp.html" title="The Global Descriptor Table (GDT) is specific to the IA32 architecture. It contains entries telling t..." alt="" coords="248,155,382,181"/>
-<area shape="rect" id="node5" href="$d4/ddc/isr_8hpp.html" title="Interrupt Service Routine header." alt="" coords="406,155,536,181"/>
-<area shape="rect" id="node6" href="$da/d6a/panic_8hpp.html" title=" " alt="" coords="923,155,1072,181"/>
-<area shape="rect" id="node8" href="$d8/d9f/ports_8hpp.html" title="Ports header file. Provides inline functions for getting and setting values at different ports...." alt="" coords="752,155,899,181"/>
-<area shape="rect" id="node9" href="$df/d05/timer_8hpp.html" title=" " alt="" coords="24,155,172,181"/>
-<area shape="rect" id="node10" title=" " alt="" coords="560,155,630,181"/>
-<area shape="rect" id="node11" title=" " alt="" coords="654,155,728,181"/>
-<area shape="rect" id="node7" href="$d2/d3d/compiler_8hpp.html" title="Compiler meta directives." alt="" coords="926,229,1070,256"/>
+<area shape="rect" id="node1" title="Interrupt Descriptor Table header." alt="" coords="94,5,161,32"/>
+<area shape="rect" id="node2" href="$dd/de9/_arch_8i386_8hpp.html" title="i386 architecture implementation of Arch.hpp" alt="" coords="177,80,352,107"/>
+<area shape="rect" id="node4" title=" " alt="" coords="229,229,300,256"/>
+<area shape="rect" id="node3" href="$d9/d4f/_memory_8hpp.html" title="Architecture memory management API." alt="" coords="520,155,655,181"/>
+<area shape="rect" id="node6" href="$d8/dfb/regs_8hpp.html" title=" " alt="" coords="353,155,496,181"/>
+<area shape="rect" id="node7" href="$d8/d9f/ports_8hpp.html" title="Ports header file. Provides inline functions for getting and setting values at different ports...." alt="" coords="29,155,175,181"/>
+<area shape="rect" id="node8" href="$d4/ddc/isr_8hpp.html" title="Interrupt Service Routine header." alt="" coords="200,155,329,181"/>
+<area shape="rect" id="node5" title=" " alt="" coords="469,229,543,256"/>
 </map>

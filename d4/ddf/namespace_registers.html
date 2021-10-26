@@ -95,6 +95,8 @@ $(document).ready(function(){initNavTree('d4/ddf/namespace_registers.html','../.
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dde/struct_registers_1_1_c_r0.html">CR0</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dec/struct_registers_1_1_c_r2.html">CR2</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dcd/struct_registers_1_1_c_r3.html">CR3</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -104,6 +106,8 @@ Functions</h2></td></tr>
 <tr class="separator:aea57042ad4cd3d217fe32bdc95adeec1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a113bb16f2d30345fb54c5875ddd739ee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/ddf/namespace_registers.html#a113bb16f2d30345fb54c5875ddd739ee">writeCR0</a> (struct <a class="el" href="../../d3/dde/struct_registers_1_1_c_r0.html">CR0</a> x)</td></tr>
 <tr class="separator:a113bb16f2d30345fb54c5875ddd739ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad96447b2ed04c03a9376ceb6ba831c86"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="../../db/dec/struct_registers_1_1_c_r2.html">CR2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/ddf/namespace_registers.html#ad96447b2ed04c03a9376ceb6ba831c86">readCR2</a> ()</td></tr>
+<tr class="separator:ad96447b2ed04c03a9376ceb6ba831c86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae6c18455ddbbcc5b7bb417fbc78d3ed"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="../../d0/dcd/struct_registers_1_1_c_r3.html">CR3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/ddf/namespace_registers.html#aae6c18455ddbbcc5b7bb417fbc78d3ed">readCR3</a> ()</td></tr>
 <tr class="separator:aae6c18455ddbbcc5b7bb417fbc78d3ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a1056d5d641c0cbd1e3b74d6a429660"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/ddf/namespace_registers.html#a9a1056d5d641c0cbd1e3b74d6a429660">writeCR3</a> (struct <a class="el" href="../../d0/dcd/struct_registers_1_1_c_r3.html">CR3</a> x)</td></tr>
@@ -133,12 +137,12 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d8/dfb/regs_8hpp_source.html#l00044">44</a> of file <a class="el" href="../../d8/dfb/regs_8hpp_source.html">regs.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;{</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keyword">struct </span>CR0 x;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">asm</span> <span class="keyword">volatile</span>(<span class="stringliteral">&quot;mov %%cr0, %0&quot;</span>: <span class="stringliteral">&quot;=r&quot;</span>(x));</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordflow">return</span> x;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../d8/dfb/regs_8hpp_source.html#l00060">60</a> of file <a class="el" href="../../d8/dfb/regs_8hpp_source.html">regs.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;{</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keyword">struct </span>CR0 x;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keyword">asm</span> <span class="keyword">volatile</span>(<span class="stringliteral">&quot;mov %%cr0, %0&quot;</span>: <span class="stringliteral">&quot;=r&quot;</span>(x));</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordflow">return</span> x;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;}</div>
 </div><!-- fragment --><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -146,9 +150,52 @@ Functions</h2></td></tr>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="../../d4/ddf/namespace_registers_aea57042ad4cd3d217fe32bdc95adeec1_icgraph.png" border="0" usemap="#d4/ddf/namespace_registers_aea57042ad4cd3d217fe32bdc95adeec1_icgraph" alt=""/></div>
 <map name="d4/ddf/namespace_registers_aea57042ad4cd3d217fe32bdc95adeec1_icgraph" id="d4/ddf/namespace_registers_aea57042ad4cd3d217fe32bdc95adeec1_icgraph">
-<area shape="rect" title=" " alt="" coords="205,31,352,57"/>
-<area shape="rect" href="../../d9/dc3/namespace_arch.html#a287e1a6078785463ae3b2548b7816463" title=" " alt="" coords="5,5,157,32"/>
-<area shape="rect" href="../../d9/dc3/namespace_arch.html#a7de730d1ad36442850e24c8f70a71025" title=" " alt="" coords="8,56,155,83"/>
+<area shape="rect" title=" " alt="" coords="267,31,413,57"/>
+<area shape="rect" href="../../dd/d0e/namespace_arch_1_1_memory.html#ad4d3a669c172e1442fe3e2afe8d16172" title="Disable hardware paging." alt="" coords="5,5,219,32"/>
+<area shape="rect" href="../../dd/d0e/namespace_arch_1_1_memory.html#a3ba8a1ea0a34ad98b2f304fbbda48b0a" title="Enable hardware paging." alt="" coords="8,56,216,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad96447b2ed04c03a9376ceb6ba831c86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad96447b2ed04c03a9376ceb6ba831c86">&#9670;&nbsp;</a></span>readCR2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="../../db/dec/struct_registers_1_1_c_r2.html">CR2</a> Registers::readCR2 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d8/dfb/regs_8hpp_source.html#l00072">72</a> of file <a class="el" href="../../d8/dfb/regs_8hpp_source.html">regs.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;{</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keyword">struct </span>CR2 x;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keyword">asm</span> <span class="keyword">volatile</span>(<span class="stringliteral">&quot;mov %%cr2, %0&quot;</span> : <span class="stringliteral">&quot;=r&quot;</span>(x));</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordflow">return</span> x;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;}</div>
+</div><!-- fragment --><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="../../closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="../../d4/ddf/namespace_registers_ad96447b2ed04c03a9376ceb6ba831c86_icgraph.png" border="0" usemap="#d4/ddf/namespace_registers_ad96447b2ed04c03a9376ceb6ba831c86_icgraph" alt=""/></div>
+<map name="d4/ddf/namespace_registers_ad96447b2ed04c03a9376ceb6ba831c86_icgraph" id="d4/ddf/namespace_registers_ad96447b2ed04c03a9376ceb6ba831c86_icgraph">
+<area shape="rect" title=" " alt="" coords="148,5,295,32"/>
+<area shape="rect" href="../../d9/dc3/namespace_arch.html#a2e714444c028502b8ca4e2bc7e535817" title=" " alt="" coords="5,5,100,32"/>
 </map>
 </div>
 
@@ -177,12 +224,12 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d8/dfb/regs_8hpp_source.html#l00056">56</a> of file <a class="el" href="../../d8/dfb/regs_8hpp_source.html">regs.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;{</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keyword">struct </span>CR3 x;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keyword">asm</span> <span class="keyword">volatile</span>(<span class="stringliteral">&quot;mov %%cr3, %0&quot;</span>: <span class="stringliteral">&quot;=r&quot;</span>(x));</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordflow">return</span> x;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../d8/dfb/regs_8hpp_source.html#l00079">79</a> of file <a class="el" href="../../d8/dfb/regs_8hpp_source.html">regs.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;{</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keyword">struct </span>CR3 x;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keyword">asm</span> <span class="keyword">volatile</span>(<span class="stringliteral">&quot;mov %%cr3, %0&quot;</span>: <span class="stringliteral">&quot;=r&quot;</span>(x));</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordflow">return</span> x;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -210,20 +257,20 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d8/dfb/regs_8hpp_source.html#l00051">51</a> of file <a class="el" href="../../d8/dfb/regs_8hpp_source.html">regs.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;{</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keyword">asm</span> <span class="keyword">volatile</span>(<span class="stringliteral">&quot;mov %0, %%cr0&quot;</span>:: <span class="stringliteral">&quot;r&quot;</span>(x));</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;}</div>
-</div><!-- fragment --><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="../../closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="../../d8/dfb/regs_8hpp_source.html#l00067">67</a> of file <a class="el" href="../../d8/dfb/regs_8hpp_source.html">regs.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;{</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keyword">asm</span> <span class="keyword">volatile</span>(<span class="stringliteral">&quot;mov %0, %%cr0&quot;</span>:: <span class="stringliteral">&quot;r&quot;</span>(x));</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;}</div>
+</div><!-- fragment --><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="../../closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="../../d4/ddf/namespace_registers_a113bb16f2d30345fb54c5875ddd739ee_icgraph.png" border="0" usemap="#d4/ddf/namespace_registers_a113bb16f2d30345fb54c5875ddd739ee_icgraph" alt=""/></div>
 <map name="d4/ddf/namespace_registers_a113bb16f2d30345fb54c5875ddd739ee_icgraph" id="d4/ddf/namespace_registers_a113bb16f2d30345fb54c5875ddd739ee_icgraph">
-<area shape="rect" title=" " alt="" coords="205,31,356,57"/>
-<area shape="rect" href="../../d9/dc3/namespace_arch.html#a287e1a6078785463ae3b2548b7816463" title=" " alt="" coords="5,5,157,32"/>
-<area shape="rect" href="../../d9/dc3/namespace_arch.html#a7de730d1ad36442850e24c8f70a71025" title=" " alt="" coords="8,56,155,83"/>
+<area shape="rect" title=" " alt="" coords="267,31,417,57"/>
+<area shape="rect" href="../../dd/d0e/namespace_arch_1_1_memory.html#ad4d3a669c172e1442fe3e2afe8d16172" title="Disable hardware paging." alt="" coords="5,5,219,32"/>
+<area shape="rect" href="../../dd/d0e/namespace_arch_1_1_memory.html#a3ba8a1ea0a34ad98b2f304fbbda48b0a" title="Enable hardware paging." alt="" coords="8,56,216,83"/>
 </map>
 </div>
 
@@ -253,10 +300,10 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d8/dfb/regs_8hpp_source.html#l00063">63</a> of file <a class="el" href="../../d8/dfb/regs_8hpp_source.html">regs.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;{</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keyword">asm</span> <span class="keyword">volatile</span>(<span class="stringliteral">&quot;mov %0, %%cr3&quot;</span>:: <span class="stringliteral">&quot;r&quot;</span>(x));</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../d8/dfb/regs_8hpp_source.html#l00086">86</a> of file <a class="el" href="../../d8/dfb/regs_8hpp_source.html">regs.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;{</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keyword">asm</span> <span class="keyword">volatile</span>(<span class="stringliteral">&quot;mov %0, %%cr3&quot;</span>:: <span class="stringliteral">&quot;r&quot;</span>(x));</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>

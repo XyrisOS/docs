@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['stivale2_1574',['Stivale2',['../da/d80/namespace_boot.html#a43a46383cc6356be2c30e027f54ef211a85e9e19873eb8f3dbcff80682b807d3b',1,'Boot']]]
+  ['normal_1557',['Normal',['../d8/db5/namespace_console.html#ad696fde192397acdac453250261b267caab0e3e75783ccf0126f88421a1c0ae9c',1,'Console']]],
+  ['nvs_1558',['NVS',['../db/d2f/namespace_memory.html#a9193c3e610b1728964440284db90c812ae77b832da0bee52ff6208351049a708d',1,'Memory']]]
 ];

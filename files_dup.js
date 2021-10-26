@@ -22,7 +22,7 @@ var files_dup =
     [ "defines.hpp", "db/df8/defines_8hpp.html", "db/df8/defines_8hpp" ],
     [ "entry.cpp", "d2/dd2/entry_8cpp.html", "d2/dd2/entry_8cpp" ],
     [ "errno.cpp", "d1/db0/errno_8cpp.html", "d1/db0/errno_8cpp" ],
-    [ "errno.h", "d8/dc2/errno_8h.html", "d8/dc2/errno_8h" ],
+    [ "errno.hpp", "d7/dae/errno_8hpp.html", "d7/dae/errno_8hpp" ],
     [ "flush.S", "de/d82/flush_8_s.html", null ],
     [ "font.cpp", "dd/d53/font_8cpp.html", "dd/d53/font_8cpp" ],
     [ "font.hpp", "df/d50/font_8hpp.html", "df/d50/font_8hpp" ],
@@ -49,6 +49,11 @@ var files_dup =
       [ "LinkedList", "d9/d3d/class_linked_list_1_1_linked_list.html", "d9/d3d/class_linked_list_1_1_linked_list" ]
     ] ],
     [ "linker.ld", "dd/d85/linker_8ld.html", null ],
+    [ "Memory.hpp", "d9/d4f/_memory_8hpp.html", "d9/d4f/_memory_8hpp" ],
+    [ "MemoryMap.hpp", "d6/dc1/_memory_map_8hpp.html", [
+      [ "MemoryMap", "d0/dea/class_memory_1_1_memory_map.html", "d0/dea/class_memory_1_1_memory_map" ]
+    ] ],
+    [ "MemorySection.hpp", "d0/d91/_memory_section_8hpp.html", "d0/d91/_memory_section_8hpp" ],
     [ "multiboot2.S", "d3/d22/multiboot2_8_s.html", null ],
     [ "mutex.cpp", "d0/dbb/mutex_8cpp.html", null ],
     [ "mutex.hpp", "d8/da6/mutex_8hpp.html", [
@@ -58,7 +63,6 @@ var files_dup =
     [ "paging.hpp", "d1/d75/paging_8hpp.html", "d1/d75/paging_8hpp" ],
     [ "boot/panic.cpp", "d3/d22/boot_2panic_8cpp.html", "d3/d22/boot_2panic_8cpp" ],
     [ "panic.cpp", "d6/d1e/panic_8cpp.html", "d6/d1e/panic_8cpp" ],
-    [ "panic.hpp", "da/d6a/panic_8hpp.html", null ],
     [ "ports.cpp", "d7/d27/ports_8cpp.html", "d7/d27/ports_8cpp" ],
     [ "ports.hpp", "d8/d9f/ports_8hpp.html", "d8/d9f/ports_8hpp" ],
     [ "primes.cpp", "d0/dde/primes_8cpp.html", "d0/dde/primes_8cpp" ],

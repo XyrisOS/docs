@@ -1,0 +1,4 @@
+<map id="Paging::mapKernelRangePhysical" name="Paging::mapKernelRangePhysical">
+<area shape="rect" id="node1" title="Map a kernel address range into physical memory." alt="" coords="5,5,244,32"/>
+<area shape="rect" id="node2" href="$d2/d46/namespace_paging.html#a0f248342ae645da1817c3bd94f984bd2" title="Map a page into the kernel address space." alt="" coords="292,5,467,32"/>
+</map>

@@ -1,5 +1,7 @@
 var boot_2panic_8cpp =
 [
+    [ "TTY_HEIGHT", "d3/d22/boot_2panic_8cpp.html#a316aa9eb7f8ac1ee5b9131ed887fb4a2", null ],
+    [ "TTY_WIDTH", "d3/d22/boot_2panic_8cpp.html#af42ee541fd72035283e0e1ffbbe0cdbd", null ],
     [ "VGA_CHAR", "d3/d22/boot_2panic_8cpp.html#a80093d4b017b787b0d841e3e3b25a961", null ],
     [ "VGA_COLOR", "d3/d22/boot_2panic_8cpp.html#a0718d7e7bd332cb560596006be94b9a1", null ],
     [ "bios_color", "d3/d22/boot_2panic_8cpp.html#a4e312ac7be6e5be8358547d6b52ae402", [
@@ -20,5 +22,6 @@ var boot_2panic_8cpp =
       [ "BIOS_Yellow", "d3/d22/boot_2panic_8cpp.html#a4e312ac7be6e5be8358547d6b52ae402ab9c411140fe45c6e7ce4a9be0c9747a5", null ],
       [ "BIOS_White", "d3/d22/boot_2panic_8cpp.html#a4e312ac7be6e5be8358547d6b52ae402ada037471fba3899bcedaf928d0c9ca80", null ]
     ] ],
-    [ "early_panic", "d3/d22/boot_2panic_8cpp.html#af0e8e99d063b283c9748fc23b69fca94", null ]
+    [ "early_panic", "d3/d22/boot_2panic_8cpp.html#af0e8e99d063b283c9748fc23b69fca94", null ],
+    [ "biosVGABuffer", "d3/d22/boot_2panic_8cpp.html#a8dae456cfe3ee854dd92492d1808f638", null ]
 ];

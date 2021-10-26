@@ -102,58 +102,60 @@ $(document).ready(function(){initNavTree('d9/d31/graphics_8hpp_source.html','../
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../d6/d9b/namespace_graphics.html">Graphics</a> {</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">/**</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> * @brief Initializes the framebuffer (if available)</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d6/d9b/namespace_graphics.html#a07a66de579f4136325cb15218dd71110">init</a>();</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">/**</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment"> * @brief Draws a pixel at a given coordinate.</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment"> * @param x X-axis coordinate</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment"> * @param y Y-axis coordinate</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment"> * @param color Hex color</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d6/d9b/namespace_graphics.html#a9a087c9e0e221a9939cbe6b958171886">pixel</a>(uint32_t x, uint32_t y, uint32_t color);</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">/**</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment"> * @brief Draws and fills a rectangle of a given width and height, and color</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment"> * at the provided coordinates.</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment"> * @param x X-axis coordinate</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment"> * @param y Y-axis coordinate</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment"> * @param w Width</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment"> * @param h Height</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment"> * @param color Hex color</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d6/d9b/namespace_graphics.html#a0c60e5c671ea347d63839d16c3712268">putrect</a>(uint32_t x, uint32_t y, uint32_t w, uint32_t h, uint32_t color);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment">/**</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment"> * @brief Fill the backbuffer with &#39;0&#39;.</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d6/d9b/namespace_graphics.html#afe8dba407d795b07063393aaf6b297c5">resetDoubleBuffer</a>();</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment">/**</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment"> * @brief Swap the data on backbuffer to memory video buffer</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment"> * and show in the screen.</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d6/d9b/namespace_graphics.html#afb7733fe050948fc3a09cd9a87071ffc">swap</a>();</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;}; <span class="comment">// !namespace graphics</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="../../d7/d1a/framebuffer_8hpp.html">dev/graphics/framebuffer.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../d6/d9b/namespace_graphics.html">Graphics</a> {</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment"> * @brief Initializes the framebuffer (if available)</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d6/d9b/namespace_graphics.html#afc86122297c8c117c8793ddaf246e4ed">init</a>(Framebuffer* fb);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment"> * @brief Draws a pixel at a given coordinate.</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment"> * @param x X-axis coordinate</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment"> * @param y Y-axis coordinate</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment"> * @param color Hex color</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d6/d9b/namespace_graphics.html#a9a087c9e0e221a9939cbe6b958171886">pixel</a>(uint32_t x, uint32_t y, uint32_t color);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment"> * @brief Draws and fills a rectangle of a given width and height, and color</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment"> * at the provided coordinates.</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment"> * @param x X-axis coordinate</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment"> * @param y Y-axis coordinate</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment"> * @param w Width</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment"> * @param h Height</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment"> * @param color Hex color</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d6/d9b/namespace_graphics.html#a0c60e5c671ea347d63839d16c3712268">putrect</a>(uint32_t x, uint32_t y, uint32_t w, uint32_t h, uint32_t color);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment"> * @brief Fill the backbuffer with &#39;0&#39;.</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d6/d9b/namespace_graphics.html#afe8dba407d795b07063393aaf6b297c5">resetDoubleBuffer</a>();</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment"> * @brief Swap the data on backbuffer to memory video buffer</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="comment"> * and show in the screen.</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d6/d9b/namespace_graphics.html#afb7733fe050948fc3a09cd9a87071ffc">swap</a>();</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;}; <span class="comment">// !namespace graphics</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="anamespace_graphics_html_a9a087c9e0e221a9939cbe6b958171886"><div class="ttname"><a href="../../d6/d9b/namespace_graphics.html#a9a087c9e0e221a9939cbe6b958171886">Graphics::pixel</a></div><div class="ttdeci">void pixel(uint32_t x, uint32_t y, uint32_t color)</div><div class="ttdoc">Draws a pixel at a given coordinate.</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d99/graphics_8cpp_source.html#l00050">graphics.cpp:50</a></div></div>
-<div class="ttc" id="anamespace_graphics_html_afb7733fe050948fc3a09cd9a87071ffc"><div class="ttname"><a href="../../d6/d9b/namespace_graphics.html#afb7733fe050948fc3a09cd9a87071ffc">Graphics::swap</a></div><div class="ttdeci">void swap()</div><div class="ttdoc">Swap the data on backbuffer to memory video buffer and show in the screen.</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d99/graphics_8cpp_source.html#l00090">graphics.cpp:90</a></div></div>
-<div class="ttc" id="anamespace_graphics_html_afe8dba407d795b07063393aaf6b297c5"><div class="ttname"><a href="../../d6/d9b/namespace_graphics.html#afe8dba407d795b07063393aaf6b297c5">Graphics::resetDoubleBuffer</a></div><div class="ttdeci">void resetDoubleBuffer()</div><div class="ttdoc">Fill the backbuffer with '0'.</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d99/graphics_8cpp_source.html#l00083">graphics.cpp:83</a></div></div>
-<div class="ttc" id="anamespace_graphics_html_a07a66de579f4136325cb15218dd71110"><div class="ttname"><a href="../../d6/d9b/namespace_graphics.html#a07a66de579f4136325cb15218dd71110">Graphics::init</a></div><div class="ttdeci">void init()</div><div class="ttdoc">Initializes the framebuffer (if available)</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d99/graphics_8cpp_source.html#l00032">graphics.cpp:32</a></div></div>
+<div class="ttc" id="anamespace_graphics_html_a9a087c9e0e221a9939cbe6b958171886"><div class="ttname"><a href="../../d6/d9b/namespace_graphics.html#a9a087c9e0e221a9939cbe6b958171886">Graphics::pixel</a></div><div class="ttdeci">void pixel(uint32_t x, uint32_t y, uint32_t color)</div><div class="ttdoc">Draws a pixel at a given coordinate.</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d99/graphics_8cpp_source.html#l00049">graphics.cpp:49</a></div></div>
+<div class="ttc" id="aframebuffer_8hpp_html"><div class="ttname"><a href="../../d7/d1a/framebuffer_8hpp.html">framebuffer.hpp</a></div></div>
+<div class="ttc" id="anamespace_graphics_html_afb7733fe050948fc3a09cd9a87071ffc"><div class="ttname"><a href="../../d6/d9b/namespace_graphics.html#afb7733fe050948fc3a09cd9a87071ffc">Graphics::swap</a></div><div class="ttdeci">void swap()</div><div class="ttdoc">Swap the data on backbuffer to memory video buffer and show in the screen.</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d99/graphics_8cpp_source.html#l00089">graphics.cpp:89</a></div></div>
+<div class="ttc" id="anamespace_graphics_html_afe8dba407d795b07063393aaf6b297c5"><div class="ttname"><a href="../../d6/d9b/namespace_graphics.html#afe8dba407d795b07063393aaf6b297c5">Graphics::resetDoubleBuffer</a></div><div class="ttdeci">void resetDoubleBuffer()</div><div class="ttdoc">Fill the backbuffer with '0'.</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d99/graphics_8cpp_source.html#l00082">graphics.cpp:82</a></div></div>
 <div class="ttc" id="anamespace_graphics_html"><div class="ttname"><a href="../../d6/d9b/namespace_graphics.html">Graphics</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d53/font_8cpp_source.html#l00017">font.cpp:17</a></div></div>
-<div class="ttc" id="anamespace_graphics_html_a0c60e5c671ea347d63839d16c3712268"><div class="ttname"><a href="../../d6/d9b/namespace_graphics.html#a0c60e5c671ea347d63839d16c3712268">Graphics::putrect</a></div><div class="ttdeci">void putrect(uint32_t x, uint32_t y, uint32_t w, uint32_t h, uint32_t color)</div><div class="ttdoc">Draws and fills a rectangle of a given width and height, and color at the provided coordinates.</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d99/graphics_8cpp_source.html#l00068">graphics.cpp:68</a></div></div>
+<div class="ttc" id="anamespace_graphics_html_a0c60e5c671ea347d63839d16c3712268"><div class="ttname"><a href="../../d6/d9b/namespace_graphics.html#a0c60e5c671ea347d63839d16c3712268">Graphics::putrect</a></div><div class="ttdeci">void putrect(uint32_t x, uint32_t y, uint32_t w, uint32_t h, uint32_t color)</div><div class="ttdoc">Draws and fills a rectangle of a given width and height, and color at the provided coordinates.</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d99/graphics_8cpp_source.html#l00067">graphics.cpp:67</a></div></div>
+<div class="ttc" id="anamespace_graphics_html_afc86122297c8c117c8793ddaf246e4ed"><div class="ttname"><a href="../../d6/d9b/namespace_graphics.html#afc86122297c8c117c8793ddaf246e4ed">Graphics::init</a></div><div class="ttdeci">void init(Framebuffer *fb)</div><div class="ttdoc">Initializes the framebuffer (if available)</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d99/graphics_8cpp_source.html#l00031">graphics.cpp:31</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

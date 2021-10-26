@@ -1,6 +1,0 @@
-<map id="map_kernel_page" name="map_kernel_page">
-<area shape="rect" id="node1" title="Map a page into the kernel address space." alt="" coords="412,31,549,57"/>
-<area shape="rect" id="node2" href="$d1/d75/paging_8hpp.html#ab64b3df22bd592d73a444ceb480a37a2" title="Map a kernel address range into physical memory." alt="" coords="161,5,364,32"/>
-<area shape="rect" id="node3" href="$d1/d75/paging_8hpp.html#ae6dc706edc5364ad7bcc5fda243623c6" title="Map an address range into the kernel virtual address space." alt="" coords="167,56,358,83"/>
-<area shape="rect" id="node4" href="$d6/d9b/namespace_graphics.html#a07a66de579f4136325cb15218dd71110" title="Initializes the framebuffer (if available)" alt="" coords="5,56,113,83"/>
-</map>

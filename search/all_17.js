@@ -1,5 +1,11 @@
 var searchData=
 [
-  ['year_878',['year',['../db/de6/namespace_r_t_c.html#a7ee6eabe29915e433b56db84aab68339',1,'RTC']]],
-  ['yellow_879',['Yellow',['../d8/db5/namespace_console.html#a135ef081521e01318dac5033197c6509aa6b22ea45b47897b6095e8c60de6cfb0',1,'Console']]]
+  ['_7ehandoff_830',['~Handoff',['../df/d70/class_boot_1_1_handoff.html#a2e5b5f0a973dea939681f0ea6c90ac4d',1,'Boot::Handoff']]],
+  ['_7ehandoffcpudescriptor_831',['~HandoffCPUDescriptor',['../db/d82/class_boot_1_1_handoff_c_p_u_descriptor.html#abda19fe605ac41131a9dcdbdbdb182e6',1,'Boot::HandoffCPUDescriptor']]],
+  ['_7ehandoffrsdpdescriptor_832',['~HandoffRSDPDescriptor',['../d5/d80/class_boot_1_1_handoff_r_s_d_p_descriptor.html#a529abf4d007b3b646e1163146e1a6d64',1,'Boot::HandoffRSDPDescriptor']]],
+  ['_7ehandoffsmpdescriptor_833',['~HandoffSMPDescriptor',['../df/dd0/class_boot_1_1_handoff_s_m_p_descriptor.html#a975ab4b0afe7c75bcfaece24ad1994e2',1,'Boot::HandoffSMPDescriptor']]],
+  ['_7elinkedlist_834',['~LinkedList',['../d9/d3d/class_linked_list_1_1_linked_list.html#af9661740c2e1f2382f3bc6c3c9649372',1,'LinkedList::LinkedList']]],
+  ['_7emutex_835',['~Mutex',['../d4/de8/class_mutex.html#ac9e9182407f5f74892318607888e9be4',1,'Mutex']]],
+  ['_7esemaphore_836',['~Semaphore',['../d4/dbd/class_semaphore.html#a633658a6fde276bffc912028725c6ade',1,'Semaphore']]],
+  ['_7etimedescriptor_837',['~TimeDescriptor',['../d9/dfc/class_time_1_1_time_descriptor.html#aa1a0078ce7d0d4453592492549067d5b',1,'Time::TimeDescriptor']]]
 ];

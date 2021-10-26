@@ -1,9 +1,0 @@
-<map id="errno.h" name="errno.h">
-<area shape="rect" id="node1" title="POSIX error number header." alt="" coords="251,5,319,32"/>
-<area shape="rect" id="node2" href="$d1/db0/errno_8cpp.html" title=" " alt="" coords="5,80,88,107"/>
-<area shape="rect" id="node3" href="$d0/dbb/mutex_8cpp.html" title=" " alt="" coords="112,80,203,107"/>
-<area shape="rect" id="node4" href="$d6/d15/_ring_buffer_8hpp.html" title="A ring buffer is a buffer method where the same memory used to contain data is reused...." alt="" coords="227,80,344,107"/>
-<area shape="rect" id="node6" href="$da/d20/semaphore_8cpp.html" title=" " alt="" coords="368,80,491,107"/>
-<area shape="rect" id="node7" href="$de/d90/heap_8cpp.html" title="Liballoc heap implementation." alt="" coords="515,80,597,107"/>
-<area shape="rect" id="node5" href="$d4/dc7/rs232_8cpp.html" title=" " alt="" coords="243,155,328,181"/>
-</map>

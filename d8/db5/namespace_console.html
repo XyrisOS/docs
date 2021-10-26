@@ -323,19 +323,19 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/dda/console_8cpp_source.html#l00271">271</a> of file <a class="el" href="../../d9/dda/console_8cpp_source.html">console.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;{</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;    va_list args;</div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    <span class="keywordtype">int</span> ret_val;</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160; </div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;    va_start(args, fmt);</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;    ret_val = vprintf(fmt, args);</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    va_end(args);</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;    <span class="comment">// Swap out the buffer in draw</span></div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;    <a class="code" href="../../d6/d9b/namespace_graphics.html#afb7733fe050948fc3a09cd9a87071ffc">Graphics::swap</a>();</div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160; </div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;    <span class="keywordflow">return</span> ret_val;</div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../d9/dda/console_8cpp_source.html#l00273">273</a> of file <a class="el" href="../../d9/dda/console_8cpp_source.html">console.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;{</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;    va_list args;</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;    <span class="keywordtype">int</span> ret_val;</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160; </div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    va_start(args, fmt);</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;    ret_val = vprintf(fmt, args);</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;    va_end(args);</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;    <span class="comment">// Swap out the buffer in draw</span></div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;    <a class="code" href="../../d6/d9b/namespace_graphics.html#afb7733fe050948fc3a09cd9a87071ffc">Graphics::swap</a>();</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160; </div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;    <span class="keywordflow">return</span> ret_val;</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;}</div>
 </div><!-- fragment --><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -358,10 +358,11 @@ Functions</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="../../d8/db5/namespace_console_aa92244db771ad2578967dd9f8fcac912_icgraph.png" border="0" usemap="#d8/db5/namespace_console_aa92244db771ad2578967dd9f8fcac912_icgraph" alt=""/></div>
 <map name="d8/db5/namespace_console_aa92244db771ad2578967dd9f8fcac912_icgraph" id="d8/db5/namespace_console_aa92244db771ad2578967dd9f8fcac912_icgraph">
-<area shape="rect" title=" " alt="" coords="201,56,319,83"/>
-<area shape="rect" href="../../dc/da3/namespace_apps.html#aebbc688ed6a7097af1dd858ca0559d4b" title="Starts a task to display number of primes found by find_primes." alt="" coords="5,5,153,32"/>
-<area shape="rect" href="../../dc/da3/namespace_apps.html#aaa2be84c7a45c27af1e3bddb75e87a48" title="Starts a spinner in an infinite loop." alt="" coords="24,56,135,83"/>
-<area shape="rect" href="../../d4/db9/trace_8hpp.html#a9f452d4e0d092c1052a36cd56e9f77b6" title=" " alt="" coords="31,107,128,133"/>
+<area shape="rect" title=" " alt="" coords="344,54,461,81"/>
+<area shape="rect" href="../../d9/dc3/namespace_arch.html#a67cf64868d67072561c129172d85c269" title=" " alt="" coords="5,54,100,81"/>
+<area shape="rect" href="../../dc/da3/namespace_apps.html#aebbc688ed6a7097af1dd858ca0559d4b" title="Starts a task to display number of primes found by find_primes." alt="" coords="148,29,296,56"/>
+<area shape="rect" href="../../dc/da3/namespace_apps.html#aaa2be84c7a45c27af1e3bddb75e87a48" title="Starts a spinner in an infinite loop." alt="" coords="167,80,277,106"/>
+<area shape="rect" href="../../d4/db9/trace_8hpp.html#a9f452d4e0d092c1052a36cd56e9f77b6" title=" " alt="" coords="173,130,271,157"/>
 </map>
 </div>
 
@@ -382,12 +383,12 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/dda/console_8cpp_source.html#l00292">292</a> of file <a class="el" href="../../d9/dda/console_8cpp_source.html">console.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;{</div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    cursorX = cursorY = 0;</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    colorBack = resetBack;</div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;    colorFore = resetFore;</div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../d9/dda/console_8cpp_source.html#l00294">294</a> of file <a class="el" href="../../d9/dda/console_8cpp_source.html">console.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;{</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;    cursorX = cursorY = 0;</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;    colorBack = resetBack;</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    colorFore = resetFore;</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -417,12 +418,12 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/dda/console_8cpp_source.html#l00285">285</a> of file <a class="el" href="../../d9/dda/console_8cpp_source.html">console.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;{</div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;    cursorX = cursorY = 0;</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    colorBack = resetBack = back;</div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    colorFore = resetFore = fore;</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../d9/dda/console_8cpp_source.html#l00287">287</a> of file <a class="el" href="../../d9/dda/console_8cpp_source.html">console.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;{</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    cursorX = cursorY = 0;</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    colorBack = resetBack = back;</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;    colorFore = resetFore = fore;</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -442,14 +443,14 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/dda/console_8cpp_source.html#l00262">262</a> of file <a class="el" href="../../d9/dda/console_8cpp_source.html">console.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;{</div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    <span class="keywordtype">size_t</span> i = 0;</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    Lock();</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    <span class="keywordflow">while</span> (str[i])</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;        putchar(str[i++], NULL);</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    Unlock();</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../d9/dda/console_8cpp_source.html#l00264">264</a> of file <a class="el" href="../../d9/dda/console_8cpp_source.html">console.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;{</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    <span class="keywordtype">size_t</span> i = 0;</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    Lock();</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    <span class="keywordflow">while</span> (str[i])</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;        putchar(str[i++], NULL);</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    Unlock();</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -469,12 +470,12 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/dda/console_8cpp_source.html#l00255">255</a> of file <a class="el" href="../../d9/dda/console_8cpp_source.html">console.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;{</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    Lock();</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    putchar(c, NULL);</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    Unlock();</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../d9/dda/console_8cpp_source.html#l00257">257</a> of file <a class="el" href="../../d9/dda/console_8cpp_source.html">console.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;{</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    Lock();</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    putchar(c, NULL);</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    Unlock();</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -491,7 +492,7 @@ Functions</h2></td></tr>
 <div class="ttc" id="anamespace_console_html_a5a9f6ce125109cf2227962509ec62222ac29aceaa10140cde639cefc288c243e3"><div class="ttname"><a href="../../d8/db5/namespace_console.html#a5a9f6ce125109cf2227962509ec62222ac29aceaa10140cde639cefc288c243e3">Console::VGA_Magenta</a></div><div class="ttdeci">@ VGA_Magenta</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dda/console_8cpp_source.html#l00034">console.cpp:34</a></div></div>
 <div class="ttc" id="anamespace_console_html_a135ef081521e01318dac5033197c6509af6c483f92f3d96e26f2d31d384faa438"><div class="ttname"><a href="../../d8/db5/namespace_console.html#a135ef081521e01318dac5033197c6509af6c483f92f3d96e26f2d31d384faa438">Console::Blue</a></div><div class="ttdeci">@ Blue</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dda/console_8cpp_source.html#l00053">console.cpp:53</a></div></div>
 <div class="ttc" id="anamespace_console_html_a5a9f6ce125109cf2227962509ec62222aff4eaef67a91c58ce028eb9f014c079c"><div class="ttname"><a href="../../d8/db5/namespace_console.html#a5a9f6ce125109cf2227962509ec62222aff4eaef67a91c58ce028eb9f014c079c">Console::VGA_White</a></div><div class="ttdeci">@ VGA_White</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dda/console_8cpp_source.html#l00044">console.cpp:44</a></div></div>
-<div class="ttc" id="anamespace_graphics_html_afb7733fe050948fc3a09cd9a87071ffc"><div class="ttname"><a href="../../d6/d9b/namespace_graphics.html#afb7733fe050948fc3a09cd9a87071ffc">Graphics::swap</a></div><div class="ttdeci">void swap()</div><div class="ttdoc">Swap the data on backbuffer to memory video buffer and show in the screen.</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d99/graphics_8cpp_source.html#l00090">graphics.cpp:90</a></div></div>
+<div class="ttc" id="anamespace_graphics_html_afb7733fe050948fc3a09cd9a87071ffc"><div class="ttname"><a href="../../d6/d9b/namespace_graphics.html#afb7733fe050948fc3a09cd9a87071ffc">Graphics::swap</a></div><div class="ttdeci">void swap()</div><div class="ttdoc">Swap the data on backbuffer to memory video buffer and show in the screen.</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d99/graphics_8cpp_source.html#l00089">graphics.cpp:89</a></div></div>
 <div class="ttc" id="anamespace_console_html_a135ef081521e01318dac5033197c6509a761bd7e91cfdc897b6a04d2d97353a94"><div class="ttname"><a href="../../d8/db5/namespace_console.html#a135ef081521e01318dac5033197c6509a761bd7e91cfdc897b6a04d2d97353a94">Console::BrightMagenta</a></div><div class="ttdeci">@ BrightMagenta</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dda/console_8cpp_source.html#l00062">console.cpp:62</a></div></div>
 <div class="ttc" id="anamespace_console_html_a135ef081521e01318dac5033197c6509aebbf8dc0cb5c49a160498961528ca533"><div class="ttname"><a href="../../d8/db5/namespace_console.html#a135ef081521e01318dac5033197c6509aebbf8dc0cb5c49a160498961528ca533">Console::Green</a></div><div class="ttdeci">@ Green</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dda/console_8cpp_source.html#l00051">console.cpp:51</a></div></div>
 <div class="ttc" id="anamespace_console_html_a5a9f6ce125109cf2227962509ec62222a8eb53134c5355b8be746cae63737e640"><div class="ttname"><a href="../../d8/db5/namespace_console.html#a5a9f6ce125109cf2227962509ec62222a8eb53134c5355b8be746cae63737e640">Console::VGA_Blue</a></div><div class="ttdeci">@ VGA_Blue</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dda/console_8cpp_source.html#l00030">console.cpp:30</a></div></div>

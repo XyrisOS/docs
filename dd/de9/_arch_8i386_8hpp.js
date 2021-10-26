@@ -1,11 +1,9 @@
 var _arch_8i386_8hpp =
 [
-    [ "registers", "df/d94/structregisters.html", "df/d94/structregisters" ],
-    [ "stackframe", "db/dcb/structstackframe.html", "db/dcb/structstackframe" ],
-    [ "X86_IND_X", "dd/de9/_arch_8i386_8hpp.html#aab88ae90b473a17bf072c349507db6cc", null ],
-    [ "X86_IND_Y", "dd/de9/_arch_8i386_8hpp.html#a260317699944ebb5e796f3146d723d56", null ],
-    [ "X86_TTY_HEIGHT", "dd/de9/_arch_8i386_8hpp.html#a6b06bfd495b0364d6c725512207ae9b9", null ],
-    [ "X86_TTY_WIDTH", "dd/de9/_arch_8i386_8hpp.html#abf3ad282cc8aa291d352c0e4377b8f78", null ],
-    [ "exception_descriptions", "dd/de9/_arch_8i386_8hpp.html#a2914beed3662fd1a1074e550d3753aef", null ],
-    [ "x86_bios_vga_mem", "dd/de9/_arch_8i386_8hpp.html#affdb780039d15ea39b54321f9850e1cf", null ]
+    [ "stackframe", "d5/d3e/struct_arch_1_1stackframe.html", "d5/d3e/struct_arch_1_1stackframe" ],
+    [ "ARCH_PAGE_ALIGN", "dd/de9/_arch_8i386_8hpp.html#a000988a56f64747e74e8d52424e7223c", null ],
+    [ "ARCH_PAGE_SIZE", "dd/de9/_arch_8i386_8hpp.html#acd327ff534c65e3c5772a67d62d74ca0", null ],
+    [ "pageAlign", "dd/de9/_arch_8i386_8hpp.html#a9118c8fdcb2627cdbd72b751d02e6bfc", null ],
+    [ "pageInvalidate", "dd/de9/_arch_8i386_8hpp.html#a206380258fe28756d0c70f4f700e65d8", null ],
+    [ "pageIsAligned", "dd/de9/_arch_8i386_8hpp.html#a1aa7a1c391d4d95b26303c5efa687dfb", null ]
 ];

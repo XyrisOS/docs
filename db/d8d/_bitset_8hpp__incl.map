@@ -1,8 +1,8 @@
 <map id="Bitset.hpp" name="Bitset.hpp">
-<area shape="rect" id="node1" title="A basic bitmap implementation." alt="" coords="139,5,227,32"/>
-<area shape="rect" id="node2" href="$d7/d9c/_arch_8hpp.html" title="Computer architecture initialization definitions." alt="" coords="127,80,238,107"/>
-<area shape="rect" id="node3" title=" " alt="" coords="5,155,80,181"/>
-<area shape="rect" id="node4" title=" " alt="" coords="106,155,177,181"/>
-<area shape="rect" id="node5" href="$d2/d3d/compiler_8hpp.html" title="Compiler meta directives." alt="" coords="203,155,347,181"/>
-<area shape="rect" id="node6" title=" " alt="" coords="314,80,385,107"/>
+<area shape="rect" id="node1" title="A basic bitmap implementation." alt="" coords="175,5,263,32"/>
+<area shape="rect" id="node2" href="$d7/d9c/_arch_8hpp.html" title="Computer architecture initialization definitions." alt="" coords="163,80,274,107"/>
+<area shape="rect" id="node3" href="$d2/d3d/compiler_8hpp.html" title="Compiler meta directives." alt="" coords="5,155,149,181"/>
+<area shape="rect" id="node4" title=" " alt="" coords="175,155,249,181"/>
+<area shape="rect" id="node5" title=" " alt="" coords="275,155,346,181"/>
+<area shape="rect" id="node6" title=" " alt="" coords="350,80,421,107"/>
 </map>

@@ -114,8 +114,8 @@ Enumerations</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:af129f7076fdd0d3a4f109a652a0ba8ec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/dcb/class_graphics_1_1_framebuffer.html">Framebuffer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d9b/namespace_graphics.html#af129f7076fdd0d3a4f109a652a0ba8ec">getFramebuffer</a> ()</td></tr>
 <tr class="separator:af129f7076fdd0d3a4f109a652a0ba8ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07a66de579f4136325cb15218dd71110"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d9b/namespace_graphics.html#a07a66de579f4136325cb15218dd71110">init</a> ()</td></tr>
-<tr class="separator:a07a66de579f4136325cb15218dd71110"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc86122297c8c117c8793ddaf246e4ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d9b/namespace_graphics.html#afc86122297c8c117c8793ddaf246e4ed">init</a> (<a class="el" href="../../d0/dcb/class_graphics_1_1_framebuffer.html">Framebuffer</a> *fb)</td></tr>
+<tr class="separator:afc86122297c8c117c8793ddaf246e4ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a087c9e0e221a9939cbe6b958171886"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d9b/namespace_graphics.html#a9a087c9e0e221a9939cbe6b958171886">pixel</a> (uint32_t x, uint32_t y, uint32_t color)</td></tr>
 <tr class="separator:a9a087c9e0e221a9939cbe6b958171886"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c60e5c671ea347d63839d16c3712268"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d9b/namespace_graphics.html#a0c60e5c671ea347d63839d16c3712268">putrect</a> (uint32_t x, uint32_t y, uint32_t w, uint32_t h, uint32_t color)</td></tr>
@@ -173,22 +173,11 @@ Functions</h2></td></tr>
 <div class="fragment"><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;{</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordflow">return</span> framebuffer;</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;}</div>
-</div><!-- fragment --><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="../../d6/d9b/namespace_graphics_af129f7076fdd0d3a4f109a652a0ba8ec_icgraph.png" border="0" usemap="#d6/d9b/namespace_graphics_af129f7076fdd0d3a4f109a652a0ba8ec_icgraph" alt=""/></div>
-<map name="d6/d9b/namespace_graphics_af129f7076fdd0d3a4f109a652a0ba8ec_icgraph" id="d6/d9b/namespace_graphics_af129f7076fdd0d3a4f109a652a0ba8ec_icgraph">
-<area shape="rect" title="Get a pointer to the active framebuffer." alt="" coords="161,5,348,32"/>
-<area shape="rect" href="../../d6/d9b/namespace_graphics.html#a07a66de579f4136325cb15218dd71110" title="Initializes the framebuffer (if available)" alt="" coords="5,5,113,32"/>
-</map>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
-<a id="a07a66de579f4136325cb15218dd71110"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a07a66de579f4136325cb15218dd71110">&#9670;&nbsp;</a></span>init()</h2>
+<a id="afc86122297c8c117c8793ddaf246e4ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc86122297c8c117c8793ddaf246e4ed">&#9670;&nbsp;</a></span>init()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -196,7 +185,8 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void Graphics::init </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="../../d0/dcb/class_graphics_1_1_framebuffer.html">Framebuffer</a> *&#160;</td>
+          <td class="paramname"><em>fb</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -204,39 +194,38 @@ Functions</h2></td></tr>
 
 <p>Initializes the framebuffer (if available) </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d99/graphics_8cpp_source.html#l00032">32</a> of file <a class="el" href="../../d6/d99/graphics_8cpp_source.html">graphics.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;{</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="comment">// Get the framebuffer info</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordflow">if</span> (!(info = <a class="code" href="../../d6/d9b/namespace_graphics.html#af129f7076fdd0d3a4f109a652a0ba8ec">getFramebuffer</a>()))</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="comment">// Ensure valid info is provided</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordflow">if</span> (!info-&gt;<a class="code" href="../../d0/dcb/class_graphics_1_1_framebuffer.html#af62e5c11c830410a3213e2b17075b158">getAddress</a>())</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="comment">// Map in the framebuffer</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="../../d2/daf/stdio_8hpp.html#aa1a1b09aada329c9352f1337d36ce184">debugf</a>(<span class="stringliteral">&quot;Mapping framebuffer...\n&quot;</span>);</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="../../d1/d5e/paging_8cpp.html#ae6dc706edc5364ad7bcc5fda243623c6">map_kernel_range_virtual</a>((uintptr_t)info-&gt;<a class="code" href="../../d0/dcb/class_graphics_1_1_framebuffer.html#af62e5c11c830410a3213e2b17075b158">getAddress</a>(), (uintptr_t)info-&gt;<a class="code" href="../../d0/dcb/class_graphics_1_1_framebuffer.html#af62e5c11c830410a3213e2b17075b158">getAddress</a>() + (info-&gt;<a class="code" href="../../d0/dcb/class_graphics_1_1_framebuffer.html#a4b6694a0728b42872a51eb15a631cd51">getPitch</a>() * info-&gt;<a class="code" href="../../d0/dcb/class_graphics_1_1_framebuffer.html#a1056e91da94b6937b0a6deeb3a859368">getHeight</a>()));</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="comment">// Alloc the backbuffer</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    backbuffer = <a class="code" href="../../da/d45/heap_8hpp.html#a1c8580582aae58105f16108d4ec89e9a">malloc</a>(info-&gt;<a class="code" href="../../d0/dcb/class_graphics_1_1_framebuffer.html#a4b6694a0728b42872a51eb15a631cd51">getPitch</a>() * info-&gt;<a class="code" href="../../d0/dcb/class_graphics_1_1_framebuffer.html#a1056e91da94b6937b0a6deeb3a859368">getHeight</a>());</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="../../d5/d24/string_8cpp.html#a370712322c794e949c996946f2283ea8">memcpy</a>(backbuffer, info-&gt;<a class="code" href="../../d0/dcb/class_graphics_1_1_framebuffer.html#af62e5c11c830410a3213e2b17075b158">getAddress</a>(), info-&gt;<a class="code" href="../../d0/dcb/class_graphics_1_1_framebuffer.html#a4b6694a0728b42872a51eb15a631cd51">getPitch</a>() * info-&gt;<a class="code" href="../../d0/dcb/class_graphics_1_1_framebuffer.html#a1056e91da94b6937b0a6deeb3a859368">getHeight</a>());</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    initialized = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;}</div>
-</div><!-- fragment --><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="../../d6/d99/graphics_8cpp_source.html#l00031">31</a> of file <a class="el" href="../../d6/d99/graphics_8cpp_source.html">graphics.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;{</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="comment">// Get the framebuffer info</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordflow">if</span> (!(info = fb))</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="comment">// Ensure valid info is provided</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordflow">if</span> (!info-&gt;<a class="code" href="../../d0/dcb/class_graphics_1_1_framebuffer.html#af62e5c11c830410a3213e2b17075b158">getAddress</a>())</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="comment">// Map in the framebuffer</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="../../d2/daf/stdio_8hpp.html#aa1a1b09aada329c9352f1337d36ce184">debugf</a>(<span class="stringliteral">&quot;Mapping framebuffer...\n&quot;</span>);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="../../d2/d46/namespace_paging.html#affcd08d96e918de6b8535681c232e485">Paging::mapKernelRangeVirtual</a>((uintptr_t)info-&gt;<a class="code" href="../../d0/dcb/class_graphics_1_1_framebuffer.html#af62e5c11c830410a3213e2b17075b158">getAddress</a>(), (uintptr_t)info-&gt;<a class="code" href="../../d0/dcb/class_graphics_1_1_framebuffer.html#af62e5c11c830410a3213e2b17075b158">getAddress</a>() + (info-&gt;<a class="code" href="../../d0/dcb/class_graphics_1_1_framebuffer.html#a4b6694a0728b42872a51eb15a631cd51">getPitch</a>() * info-&gt;<a class="code" href="../../d0/dcb/class_graphics_1_1_framebuffer.html#a1056e91da94b6937b0a6deeb3a859368">getHeight</a>()));</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="comment">// Alloc the backbuffer</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    backbuffer = <a class="code" href="../../da/d45/heap_8hpp.html#a1c8580582aae58105f16108d4ec89e9a">malloc</a>(info-&gt;<a class="code" href="../../d0/dcb/class_graphics_1_1_framebuffer.html#a4b6694a0728b42872a51eb15a631cd51">getPitch</a>() * info-&gt;<a class="code" href="../../d0/dcb/class_graphics_1_1_framebuffer.html#a1056e91da94b6937b0a6deeb3a859368">getHeight</a>());</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="../../d5/d24/string_8cpp.html#a370712322c794e949c996946f2283ea8">memcpy</a>(backbuffer, info-&gt;<a class="code" href="../../d0/dcb/class_graphics_1_1_framebuffer.html#af62e5c11c830410a3213e2b17075b158">getAddress</a>(), info-&gt;<a class="code" href="../../d0/dcb/class_graphics_1_1_framebuffer.html#a4b6694a0728b42872a51eb15a631cd51">getPitch</a>() * info-&gt;<a class="code" href="../../d0/dcb/class_graphics_1_1_framebuffer.html#a1056e91da94b6937b0a6deeb3a859368">getHeight</a>());</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    initialized = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}</div>
+</div><!-- fragment --><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="../../d6/d9b/namespace_graphics_a07a66de579f4136325cb15218dd71110_cgraph.png" border="0" usemap="#d6/d9b/namespace_graphics_a07a66de579f4136325cb15218dd71110_cgraph" alt=""/></div>
-<map name="d6/d9b/namespace_graphics_a07a66de579f4136325cb15218dd71110_cgraph" id="d6/d9b/namespace_graphics_a07a66de579f4136325cb15218dd71110_cgraph">
-<area shape="rect" title="Initializes the framebuffer (if available)" alt="" coords="5,195,113,222"/>
-<area shape="rect" href="../../d0/dcb/class_graphics_1_1_framebuffer.html#af62e5c11c830410a3213e2b17075b158" title=" " alt="" coords="173,5,340,47"/>
-<area shape="rect" href="../../d6/d9b/namespace_graphics.html#af129f7076fdd0d3a4f109a652a0ba8ec" title="Get a pointer to the active framebuffer." alt="" coords="163,71,350,98"/>
-<area shape="rect" href="../../d0/dcb/class_graphics_1_1_framebuffer.html#a1056e91da94b6937b0a6deeb3a859368" title=" " alt="" coords="173,123,340,164"/>
-<area shape="rect" href="../../d0/dcb/class_graphics_1_1_framebuffer.html#a4b6694a0728b42872a51eb15a631cd51" title=" " alt="" coords="173,188,340,229"/>
-<area shape="rect" href="../../da/d45/heap_8hpp.html#a1c8580582aae58105f16108d4ec89e9a" title=" " alt="" coords="223,254,290,281"/>
-<area shape="rect" href="../../d1/d5e/paging_8cpp.html#ae6dc706edc5364ad7bcc5fda243623c6" title="Map an address range into the kernel virtual address space." alt="" coords="161,305,352,331"/>
-<area shape="rect" href="../../d5/d24/string_8cpp.html#a370712322c794e949c996946f2283ea8" title=" " alt="" coords="217,355,296,382"/>
-<area shape="rect" href="../../d1/d5e/paging_8cpp.html#abdb9a2f0a828ec365b6bde6f4c3eb3f7" title="Map a page into the kernel address space." alt="" coords="400,305,537,331"/>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="../../d6/d9b/namespace_graphics_afc86122297c8c117c8793ddaf246e4ed_cgraph.png" border="0" usemap="#d6/d9b/namespace_graphics_afc86122297c8c117c8793ddaf246e4ed_cgraph" alt=""/></div>
+<map name="d6/d9b/namespace_graphics_afc86122297c8c117c8793ddaf246e4ed_cgraph" id="d6/d9b/namespace_graphics_afc86122297c8c117c8793ddaf246e4ed_cgraph">
+<area shape="rect" title="Initializes the framebuffer (if available)" alt="" coords="5,173,113,199"/>
+<area shape="rect" href="../../d0/dcb/class_graphics_1_1_framebuffer.html#af62e5c11c830410a3213e2b17075b158" title=" " alt="" coords="191,5,358,47"/>
+<area shape="rect" href="../../d0/dcb/class_graphics_1_1_framebuffer.html#a1056e91da94b6937b0a6deeb3a859368" title=" " alt="" coords="191,71,358,112"/>
+<area shape="rect" href="../../d0/dcb/class_graphics_1_1_framebuffer.html#a4b6694a0728b42872a51eb15a631cd51" title=" " alt="" coords="191,136,358,177"/>
+<area shape="rect" href="../../da/d45/heap_8hpp.html#a1c8580582aae58105f16108d4ec89e9a" title=" " alt="" coords="241,202,308,229"/>
+<area shape="rect" href="../../d2/d46/namespace_paging.html#affcd08d96e918de6b8535681c232e485" title="Map an address range into the kernel virtual address space." alt="" coords="161,253,388,279"/>
+<area shape="rect" href="../../d5/d24/string_8cpp.html#a370712322c794e949c996946f2283ea8" title=" " alt="" coords="235,303,314,330"/>
+<area shape="rect" href="../../d2/d46/namespace_paging.html#a0f248342ae645da1817c3bd94f984bd2" title="Map a page into the kernel address space." alt="" coords="436,253,611,279"/>
 </map>
 </div>
 
@@ -284,28 +273,28 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d99/graphics_8cpp_source.html#l00050">50</a> of file <a class="el" href="../../d6/d99/graphics_8cpp_source.html">graphics.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;{</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="comment">// Ensure framebuffer information exists</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordflow">if</span> (!initialized)</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordflow">if</span> ((x &lt;= info-&gt;getWidth()) &amp;&amp; (y &lt;= info-&gt;getHeight())) {</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="comment">// Special thanks to the SkiftOS contributors.</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        uint8_t* <a class="code" href="../../d6/d9b/namespace_graphics.html#a9a087c9e0e221a9939cbe6b958171886">pixel</a> = (uint8_t*)backbuffer + (y * info-&gt;<a class="code" href="../../d0/dcb/class_graphics_1_1_framebuffer.html#a4b6694a0728b42872a51eb15a631cd51">getPitch</a>()) + (x * info-&gt;<a class="code" href="../../d0/dcb/class_graphics_1_1_framebuffer.html#af6383d53d6a69242b6eb8e56067f4d19">getPixelWidth</a>());</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="comment">// Pixel information</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <a class="code" href="../../d6/d9b/namespace_graphics.html#a9a087c9e0e221a9939cbe6b958171886">pixel</a>[0] = (color &gt;&gt; info-&gt;<a class="code" href="../../d0/dcb/class_graphics_1_1_framebuffer.html#a5e05c50e2f80ac599bf8a3f44c1ec076">getBlueMaskShift</a>()) &amp; 0xff;  <span class="comment">// B</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <a class="code" href="../../d6/d9b/namespace_graphics.html#a9a087c9e0e221a9939cbe6b958171886">pixel</a>[1] = (color &gt;&gt; info-&gt;<a class="code" href="../../d0/dcb/class_graphics_1_1_framebuffer.html#a73d1c153ef281443e94ae0ad3a4fdf3e">getGreenMaskShift</a>()) &amp; 0xff; <span class="comment">// G</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <a class="code" href="../../d6/d9b/namespace_graphics.html#a9a087c9e0e221a9939cbe6b958171886">pixel</a>[2] = (color &gt;&gt; info-&gt;<a class="code" href="../../d0/dcb/class_graphics_1_1_framebuffer.html#af04917a01257164d99f15d84a1f67e9f">getRedMaskShift</a>()) &amp; 0xff;   <span class="comment">// R</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="comment">// Additional pixel information</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keywordflow">if</span> (info-&gt;<a class="code" href="../../d0/dcb/class_graphics_1_1_framebuffer.html#af6383d53d6a69242b6eb8e56067f4d19">getPixelWidth</a>() == 4)</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            <a class="code" href="../../d6/d9b/namespace_graphics.html#a9a087c9e0e221a9939cbe6b958171886">pixel</a>[3] = 0x00;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    }</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;}</div>
-</div><!-- fragment --><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="../../d6/d99/graphics_8cpp_source.html#l00049">49</a> of file <a class="el" href="../../d6/d99/graphics_8cpp_source.html">graphics.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;{</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="comment">// Ensure framebuffer information exists</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordflow">if</span> (!initialized)</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordflow">if</span> ((x &lt;= info-&gt;getWidth()) &amp;&amp; (y &lt;= info-&gt;getHeight())) {</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="comment">// Special thanks to the SkiftOS contributors.</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        uint8_t* <a class="code" href="../../d6/d9b/namespace_graphics.html#a9a087c9e0e221a9939cbe6b958171886">pixel</a> = (uint8_t*)backbuffer + (y * info-&gt;<a class="code" href="../../d0/dcb/class_graphics_1_1_framebuffer.html#a4b6694a0728b42872a51eb15a631cd51">getPitch</a>()) + (x * info-&gt;<a class="code" href="../../d0/dcb/class_graphics_1_1_framebuffer.html#af6383d53d6a69242b6eb8e56067f4d19">getPixelWidth</a>());</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="comment">// Pixel information</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <a class="code" href="../../d6/d9b/namespace_graphics.html#a9a087c9e0e221a9939cbe6b958171886">pixel</a>[0] = (color &gt;&gt; info-&gt;<a class="code" href="../../d0/dcb/class_graphics_1_1_framebuffer.html#a5e05c50e2f80ac599bf8a3f44c1ec076">getBlueMaskShift</a>()) &amp; 0xff;  <span class="comment">// B</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <a class="code" href="../../d6/d9b/namespace_graphics.html#a9a087c9e0e221a9939cbe6b958171886">pixel</a>[1] = (color &gt;&gt; info-&gt;<a class="code" href="../../d0/dcb/class_graphics_1_1_framebuffer.html#a73d1c153ef281443e94ae0ad3a4fdf3e">getGreenMaskShift</a>()) &amp; 0xff; <span class="comment">// G</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <a class="code" href="../../d6/d9b/namespace_graphics.html#a9a087c9e0e221a9939cbe6b958171886">pixel</a>[2] = (color &gt;&gt; info-&gt;<a class="code" href="../../d0/dcb/class_graphics_1_1_framebuffer.html#af04917a01257164d99f15d84a1f67e9f">getRedMaskShift</a>()) &amp; 0xff;   <span class="comment">// R</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="comment">// Additional pixel information</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keywordflow">if</span> (info-&gt;<a class="code" href="../../d0/dcb/class_graphics_1_1_framebuffer.html#af6383d53d6a69242b6eb8e56067f4d19">getPixelWidth</a>() == 4)</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            <a class="code" href="../../d6/d9b/namespace_graphics.html#a9a087c9e0e221a9939cbe6b958171886">pixel</a>[3] = 0x00;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    }</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;}</div>
+</div><!-- fragment --><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="../../d6/d9b/namespace_graphics_a9a087c9e0e221a9939cbe6b958171886_cgraph.png" border="0" usemap="#d6/d9b/namespace_graphics_a9a087c9e0e221a9939cbe6b958171886_cgraph" alt=""/></div>
 <map name="d6/d9b/namespace_graphics_a9a087c9e0e221a9939cbe6b958171886_cgraph" id="d6/d9b/namespace_graphics_a9a087c9e0e221a9939cbe6b958171886_cgraph">
 <area shape="rect" title="Draws a pixel at a given coordinate." alt="" coords="5,143,124,170"/>
@@ -316,11 +305,11 @@ Functions</h2></td></tr>
 <area shape="rect" href="../../d0/dcb/class_graphics_1_1_framebuffer.html#af04917a01257164d99f15d84a1f67e9f" title=" " alt="" coords="172,267,339,308"/>
 </map>
 </div>
-<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="../../closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="../../closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="../../d6/d9b/namespace_graphics_a9a087c9e0e221a9939cbe6b958171886_icgraph.png" border="0" usemap="#d6/d9b/namespace_graphics_a9a087c9e0e221a9939cbe6b958171886_icgraph" alt=""/></div>
 <map name="d6/d9b/namespace_graphics_a9a087c9e0e221a9939cbe6b958171886_icgraph" id="d6/d9b/namespace_graphics_a9a087c9e0e221a9939cbe6b958171886_icgraph">
 <area shape="rect" title="Draws a pixel at a given coordinate." alt="" coords="413,31,532,57"/>
@@ -388,25 +377,25 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d99/graphics_8cpp_source.html#l00068">68</a> of file <a class="el" href="../../d6/d99/graphics_8cpp_source.html">graphics.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;{</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="comment">// Ensure framebuffer information exists</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordflow">if</span> (!initialized)</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordflow">for</span> (uint32_t curr_x = x; curr_x &lt;= x + w; curr_x++) {</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="keywordflow">for</span> (uint32_t curr_y = y; curr_y &lt;= y + h; curr_y++) {</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            <span class="comment">// Extremely slow but good for debugging</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            <a class="code" href="../../d6/d9b/namespace_graphics.html#a9a087c9e0e221a9939cbe6b958171886">pixel</a>(curr_x, curr_y, color);</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        }</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    }</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="comment">// Swap after doing a large operation</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <a class="code" href="../../d6/d9b/namespace_graphics.html#afb7733fe050948fc3a09cd9a87071ffc">swap</a>();</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;}</div>
-</div><!-- fragment --><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="../../d6/d99/graphics_8cpp_source.html#l00067">67</a> of file <a class="el" href="../../d6/d99/graphics_8cpp_source.html">graphics.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;{</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="comment">// Ensure framebuffer information exists</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordflow">if</span> (!initialized)</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordflow">for</span> (uint32_t curr_x = x; curr_x &lt;= x + w; curr_x++) {</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keywordflow">for</span> (uint32_t curr_y = y; curr_y &lt;= y + h; curr_y++) {</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            <span class="comment">// Extremely slow but good for debugging</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            <a class="code" href="../../d6/d9b/namespace_graphics.html#a9a087c9e0e221a9939cbe6b958171886">pixel</a>(curr_x, curr_y, color);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        }</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    }</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="comment">// Swap after doing a large operation</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <a class="code" href="../../d6/d9b/namespace_graphics.html#afb7733fe050948fc3a09cd9a87071ffc">swap</a>();</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;}</div>
+</div><!-- fragment --><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="../../d6/d9b/namespace_graphics_a0c60e5c671ea347d63839d16c3712268_cgraph.png" border="0" usemap="#d6/d9b/namespace_graphics_a0c60e5c671ea347d63839d16c3712268_cgraph" alt=""/></div>
 <map name="d6/d9b/namespace_graphics_a0c60e5c671ea347d63839d16c3712268_cgraph" id="d6/d9b/namespace_graphics_a0c60e5c671ea347d63839d16c3712268_cgraph">
 <area shape="rect" title="Draws and fills a rectangle of a given width and height, and color at the provided coordinates." alt="" coords="5,274,139,301"/>
@@ -422,11 +411,11 @@ Functions</h2></td></tr>
 <area shape="rect" href="../../d5/d24/string_8cpp.html#a370712322c794e949c996946f2283ea8" title=" " alt="" coords="400,463,479,490"/>
 </map>
 </div>
-<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="../../closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="../../closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="../../d6/d9b/namespace_graphics_a0c60e5c671ea347d63839d16c3712268_icgraph.png" border="0" usemap="#d6/d9b/namespace_graphics_a0c60e5c671ea347d63839d16c3712268_icgraph" alt=""/></div>
 <map name="d6/d9b/namespace_graphics_a0c60e5c671ea347d63839d16c3712268_icgraph" id="d6/d9b/namespace_graphics_a0c60e5c671ea347d63839d16c3712268_icgraph">
 <area shape="rect" title="Draws and fills a rectangle of a given width and height, and color at the provided coordinates." alt="" coords="208,5,341,32"/>
@@ -453,17 +442,17 @@ Functions</h2></td></tr>
 
 <p>Fill the backbuffer with '0'. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d99/graphics_8cpp_source.html#l00083">83</a> of file <a class="el" href="../../d6/d99/graphics_8cpp_source.html">graphics.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;{</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordflow">if</span> (!initialized)</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <a class="code" href="../../d5/d24/string_8cpp.html#adc296efabb90c20113d5420e4d162d14">memset</a>(backbuffer, 0, (info-&gt;<a class="code" href="../../d0/dcb/class_graphics_1_1_framebuffer.html#a4b6694a0728b42872a51eb15a631cd51">getPitch</a>() * info-&gt;<a class="code" href="../../d0/dcb/class_graphics_1_1_framebuffer.html#a1056e91da94b6937b0a6deeb3a859368">getHeight</a>()));</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;}</div>
-</div><!-- fragment --><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="../../d6/d99/graphics_8cpp_source.html#l00082">82</a> of file <a class="el" href="../../d6/d99/graphics_8cpp_source.html">graphics.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;{</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordflow">if</span> (!initialized)</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <a class="code" href="../../d5/d24/string_8cpp.html#adc296efabb90c20113d5420e4d162d14">memset</a>(backbuffer, 0, (info-&gt;<a class="code" href="../../d0/dcb/class_graphics_1_1_framebuffer.html#a4b6694a0728b42872a51eb15a631cd51">getPitch</a>() * info-&gt;<a class="code" href="../../d0/dcb/class_graphics_1_1_framebuffer.html#a1056e91da94b6937b0a6deeb3a859368">getHeight</a>()));</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;}</div>
+</div><!-- fragment --><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="../../d6/d9b/namespace_graphics_afe8dba407d795b07063393aaf6b297c5_cgraph.png" border="0" usemap="#d6/d9b/namespace_graphics_afe8dba407d795b07063393aaf6b297c5_cgraph" alt=""/></div>
 <map name="d6/d9b/namespace_graphics_afe8dba407d795b07063393aaf6b297c5_cgraph" id="d6/d9b/namespace_graphics_afe8dba407d795b07063393aaf6b297c5_cgraph">
 <area shape="rect" title="Fill the backbuffer with &#39;0&#39;." alt="" coords="5,78,211,105"/>
@@ -472,11 +461,11 @@ Functions</h2></td></tr>
 <area shape="rect" href="../../d5/d24/string_8cpp.html#adc296efabb90c20113d5420e4d162d14" title="Sets the number of bytes in memory at ptr to the value." alt="" coords="304,137,380,163"/>
 </map>
 </div>
-<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-7-trigger" src="../../closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="../../closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="../../d6/d9b/namespace_graphics_afe8dba407d795b07063393aaf6b297c5_icgraph.png" border="0" usemap="#d6/d9b/namespace_graphics_afe8dba407d795b07063393aaf6b297c5_icgraph" alt=""/></div>
 <map name="d6/d9b/namespace_graphics_afe8dba407d795b07063393aaf6b297c5_icgraph" id="d6/d9b/namespace_graphics_afe8dba407d795b07063393aaf6b297c5_icgraph">
 <area shape="rect" title="Fill the backbuffer with &#39;0&#39;." alt="" coords="208,5,413,32"/>
@@ -503,17 +492,17 @@ Functions</h2></td></tr>
 
 <p>Swap the data on backbuffer to memory video buffer and show in the screen. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d99/graphics_8cpp_source.html#l00090">90</a> of file <a class="el" href="../../d6/d99/graphics_8cpp_source.html">graphics.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;{</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordflow">if</span> (!initialized)</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <a class="code" href="../../d5/d24/string_8cpp.html#a370712322c794e949c996946f2283ea8">memcpy</a>(info-&gt;<a class="code" href="../../d0/dcb/class_graphics_1_1_framebuffer.html#af62e5c11c830410a3213e2b17075b158">getAddress</a>(), backbuffer, (info-&gt;<a class="code" href="../../d0/dcb/class_graphics_1_1_framebuffer.html#a4b6694a0728b42872a51eb15a631cd51">getPitch</a>() * info-&gt;<a class="code" href="../../d0/dcb/class_graphics_1_1_framebuffer.html#a1056e91da94b6937b0a6deeb3a859368">getHeight</a>()));</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;}</div>
-</div><!-- fragment --><div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-8-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="../../d6/d99/graphics_8cpp_source.html#l00089">89</a> of file <a class="el" href="../../d6/d99/graphics_8cpp_source.html">graphics.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;{</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordflow">if</span> (!initialized)</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <a class="code" href="../../d5/d24/string_8cpp.html#a370712322c794e949c996946f2283ea8">memcpy</a>(info-&gt;<a class="code" href="../../d0/dcb/class_graphics_1_1_framebuffer.html#af62e5c11c830410a3213e2b17075b158">getAddress</a>(), backbuffer, (info-&gt;<a class="code" href="../../d0/dcb/class_graphics_1_1_framebuffer.html#a4b6694a0728b42872a51eb15a631cd51">getPitch</a>() * info-&gt;<a class="code" href="../../d0/dcb/class_graphics_1_1_framebuffer.html#a1056e91da94b6937b0a6deeb3a859368">getHeight</a>()));</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;}</div>
+</div><!-- fragment --><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="../../d6/d9b/namespace_graphics_afb7733fe050948fc3a09cd9a87071ffc_cgraph.png" border="0" usemap="#d6/d9b/namespace_graphics_afb7733fe050948fc3a09cd9a87071ffc_cgraph" alt=""/></div>
 <map name="d6/d9b/namespace_graphics_afb7733fe050948fc3a09cd9a87071ffc_cgraph" id="d6/d9b/namespace_graphics_afb7733fe050948fc3a09cd9a87071ffc_cgraph">
 <area shape="rect" title="Swap the data on backbuffer to memory video buffer and show in the screen." alt="" coords="5,111,127,138"/>
@@ -523,20 +512,21 @@ Functions</h2></td></tr>
 <area shape="rect" href="../../d5/d24/string_8cpp.html#a370712322c794e949c996946f2283ea8" title=" " alt="" coords="219,202,297,229"/>
 </map>
 </div>
-<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-9-trigger" src="../../closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-8-trigger" src="../../closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="../../d6/d9b/namespace_graphics_afb7733fe050948fc3a09cd9a87071ffc_icgraph.png" border="0" usemap="#d6/d9b/namespace_graphics_afb7733fe050948fc3a09cd9a87071ffc_icgraph" alt=""/></div>
 <map name="d6/d9b/namespace_graphics_afb7733fe050948fc3a09cd9a87071ffc_icgraph" id="d6/d9b/namespace_graphics_afb7733fe050948fc3a09cd9a87071ffc_icgraph">
-<area shape="rect" title="Swap the data on backbuffer to memory video buffer and show in the screen." alt="" coords="389,107,511,133"/>
-<area shape="rect" href="../../d8/db5/namespace_console.html#aa92244db771ad2578967dd9f8fcac912" title=" " alt="" coords="216,56,333,83"/>
-<area shape="rect" href="../../d6/d9b/namespace_graphics.html#a0c60e5c671ea347d63839d16c3712268" title="Draws and fills a rectangle of a given width and height, and color at the provided coordinates." alt="" coords="208,107,341,133"/>
-<area shape="rect" href="../../dc/da3/namespace_apps.html#a01ace99cc76e0adcf1428dadf9134e3e" title="Run a simple animation." alt="" coords="5,157,160,184"/>
-<area shape="rect" href="../../dc/da3/namespace_apps.html#aebbc688ed6a7097af1dd858ca0559d4b" title="Starts a task to display number of primes found by find_primes." alt="" coords="9,5,157,32"/>
-<area shape="rect" href="../../dc/da3/namespace_apps.html#aaa2be84c7a45c27af1e3bddb75e87a48" title="Starts a spinner in an infinite loop." alt="" coords="27,56,138,83"/>
-<area shape="rect" href="../../d4/db9/trace_8hpp.html#a9f452d4e0d092c1052a36cd56e9f77b6" title=" " alt="" coords="34,107,131,133"/>
+<area shape="rect" title="Swap the data on backbuffer to memory video buffer and show in the screen." alt="" coords="532,133,653,159"/>
+<area shape="rect" href="../../d8/db5/namespace_console.html#aa92244db771ad2578967dd9f8fcac912" title=" " alt="" coords="359,82,476,109"/>
+<area shape="rect" href="../../d6/d9b/namespace_graphics.html#a0c60e5c671ea347d63839d16c3712268" title="Draws and fills a rectangle of a given width and height, and color at the provided coordinates." alt="" coords="351,133,484,159"/>
+<area shape="rect" href="../../dc/da3/namespace_apps.html#a01ace99cc76e0adcf1428dadf9134e3e" title="Run a simple animation." alt="" coords="148,183,303,210"/>
+<area shape="rect" href="../../d9/dc3/namespace_arch.html#a67cf64868d67072561c129172d85c269" title=" " alt="" coords="5,57,100,83"/>
+<area shape="rect" href="../../dc/da3/namespace_apps.html#aebbc688ed6a7097af1dd858ca0559d4b" title="Starts a task to display number of primes found by find_primes." alt="" coords="151,31,299,58"/>
+<area shape="rect" href="../../dc/da3/namespace_apps.html#aaa2be84c7a45c27af1e3bddb75e87a48" title="Starts a spinner in an infinite loop." alt="" coords="170,82,281,109"/>
+<area shape="rect" href="../../d4/db9/trace_8hpp.html#a9f452d4e0d092c1052a36cd56e9f77b6" title=" " alt="" coords="177,133,274,159"/>
 </map>
 </div>
 
@@ -544,21 +534,20 @@ Functions</h2></td></tr>
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="apaging_8cpp_html_ae6dc706edc5364ad7bcc5fda243623c6"><div class="ttname"><a href="../../d1/d5e/paging_8cpp.html#ae6dc706edc5364ad7bcc5fda243623c6">map_kernel_range_virtual</a></div><div class="ttdeci">void map_kernel_range_virtual(uintptr_t begin, uintptr_t end)</div><div class="ttdoc">Map an address range into the kernel virtual address space.</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d5e/paging_8cpp_source.html#l00165">paging.cpp:165</a></div></div>
 <div class="ttc" id="anamespace_graphics_html_a504dfc028c1d2f4ec0c4bf4ec2cbe7f8abdf7b031f75c8ccb3bc0b6e2e192088c"><div class="ttname"><a href="../../d6/d9b/namespace_graphics.html#a504dfc028c1d2f4ec0c4bf4ec2cbe7f8abdf7b031f75c8ccb3bc0b6e2e192088c">Graphics::Undefined_FBMM</a></div><div class="ttdeci">@ Undefined_FBMM</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d1a/framebuffer_8hpp_source.html#l00018">framebuffer.hpp:18</a></div></div>
-<div class="ttc" id="anamespace_graphics_html_a9a087c9e0e221a9939cbe6b958171886"><div class="ttname"><a href="../../d6/d9b/namespace_graphics.html#a9a087c9e0e221a9939cbe6b958171886">Graphics::pixel</a></div><div class="ttdeci">void pixel(uint32_t x, uint32_t y, uint32_t color)</div><div class="ttdoc">Draws a pixel at a given coordinate.</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d99/graphics_8cpp_source.html#l00050">graphics.cpp:50</a></div></div>
+<div class="ttc" id="anamespace_graphics_html_a9a087c9e0e221a9939cbe6b958171886"><div class="ttname"><a href="../../d6/d9b/namespace_graphics.html#a9a087c9e0e221a9939cbe6b958171886">Graphics::pixel</a></div><div class="ttdeci">void pixel(uint32_t x, uint32_t y, uint32_t color)</div><div class="ttdoc">Draws a pixel at a given coordinate.</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d99/graphics_8cpp_source.html#l00049">graphics.cpp:49</a></div></div>
 <div class="ttc" id="aclass_graphics_1_1_framebuffer_html_a1056e91da94b6937b0a6deeb3a859368"><div class="ttname"><a href="../../d0/dcb/class_graphics_1_1_framebuffer.html#a1056e91da94b6937b0a6deeb3a859368">Graphics::Framebuffer::getHeight</a></div><div class="ttdeci">ALWAYS_INLINE uint32_t getHeight()</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d1a/framebuffer_8hpp_source.html#l00036">framebuffer.hpp:36</a></div></div>
 <div class="ttc" id="astdio_8hpp_html_aa1a1b09aada329c9352f1337d36ce184"><div class="ttname"><a href="../../d2/daf/stdio_8hpp.html#aa1a1b09aada329c9352f1337d36ce184">debugf</a></div><div class="ttdeci">#define debugf(fmt,...)</div><div class="ttdoc">Prints a statement to serial debugger if the kernel is built with the debug flag defined....</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/daf/stdio_8hpp_source.html#l00065">stdio.hpp:65</a></div></div>
-<div class="ttc" id="anamespace_graphics_html_afb7733fe050948fc3a09cd9a87071ffc"><div class="ttname"><a href="../../d6/d9b/namespace_graphics.html#afb7733fe050948fc3a09cd9a87071ffc">Graphics::swap</a></div><div class="ttdeci">void swap()</div><div class="ttdoc">Swap the data on backbuffer to memory video buffer and show in the screen.</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d99/graphics_8cpp_source.html#l00090">graphics.cpp:90</a></div></div>
+<div class="ttc" id="anamespace_graphics_html_afb7733fe050948fc3a09cd9a87071ffc"><div class="ttname"><a href="../../d6/d9b/namespace_graphics.html#afb7733fe050948fc3a09cd9a87071ffc">Graphics::swap</a></div><div class="ttdeci">void swap()</div><div class="ttdoc">Swap the data on backbuffer to memory video buffer and show in the screen.</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d99/graphics_8cpp_source.html#l00089">graphics.cpp:89</a></div></div>
 <div class="ttc" id="anamespace_graphics_html_a504dfc028c1d2f4ec0c4bf4ec2cbe7f8ab2b7a537b21da70d873ba42ebfac0de5"><div class="ttname"><a href="../../d6/d9b/namespace_graphics.html#a504dfc028c1d2f4ec0c4bf4ec2cbe7f8ab2b7a537b21da70d873ba42ebfac0de5">Graphics::RGB_FBMM</a></div><div class="ttdeci">@ RGB_FBMM</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d1a/framebuffer_8hpp_source.html#l00019">framebuffer.hpp:19</a></div></div>
 <div class="ttc" id="aclass_graphics_1_1_framebuffer_html_a4b6694a0728b42872a51eb15a631cd51"><div class="ttname"><a href="../../d0/dcb/class_graphics_1_1_framebuffer.html#a4b6694a0728b42872a51eb15a631cd51">Graphics::Framebuffer::getPitch</a></div><div class="ttdeci">ALWAYS_INLINE uint32_t getPitch()</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d1a/framebuffer_8hpp_source.html#l00038">framebuffer.hpp:38</a></div></div>
 <div class="ttc" id="aclass_graphics_1_1_framebuffer_html_a73d1c153ef281443e94ae0ad3a4fdf3e"><div class="ttname"><a href="../../d0/dcb/class_graphics_1_1_framebuffer.html#a73d1c153ef281443e94ae0ad3a4fdf3e">Graphics::Framebuffer::getGreenMaskShift</a></div><div class="ttdeci">ALWAYS_INLINE uint8_t getGreenMaskShift()</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d1a/framebuffer_8hpp_source.html#l00042">framebuffer.hpp:42</a></div></div>
+<div class="ttc" id="anamespace_paging_html_affcd08d96e918de6b8535681c232e485"><div class="ttname"><a href="../../d2/d46/namespace_paging.html#affcd08d96e918de6b8535681c232e485">Paging::mapKernelRangeVirtual</a></div><div class="ttdeci">void mapKernelRangeVirtual(uintptr_t begin, uintptr_t end)</div><div class="ttdoc">Map an address range into the kernel virtual address space.</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d5e/paging_8cpp_source.html#l00169">paging.cpp:169</a></div></div>
 <div class="ttc" id="astring_8cpp_html_a370712322c794e949c996946f2283ea8"><div class="ttname"><a href="../../d5/d24/string_8cpp.html#a370712322c794e949c996946f2283ea8">memcpy</a></div><div class="ttdeci">void * memcpy(void *dstptr, const void *srcptr, size_t size)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d24/string_8cpp_source.html#l00141">string.cpp:141</a></div></div>
 <div class="ttc" id="aheap_8hpp_html_a1c8580582aae58105f16108d4ec89e9a"><div class="ttname"><a href="../../da/d45/heap_8hpp.html#a1c8580582aae58105f16108d4ec89e9a">malloc</a></div><div class="ttdeci">void * malloc(size_t)</div></div>
 <div class="ttc" id="aclass_graphics_1_1_framebuffer_html_a5e05c50e2f80ac599bf8a3f44c1ec076"><div class="ttname"><a href="../../d0/dcb/class_graphics_1_1_framebuffer.html#a5e05c50e2f80ac599bf8a3f44c1ec076">Graphics::Framebuffer::getBlueMaskShift</a></div><div class="ttdeci">ALWAYS_INLINE uint8_t getBlueMaskShift()</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d1a/framebuffer_8hpp_source.html#l00044">framebuffer.hpp:44</a></div></div>
 <div class="ttc" id="aclass_graphics_1_1_framebuffer_html_af62e5c11c830410a3213e2b17075b158"><div class="ttname"><a href="../../d0/dcb/class_graphics_1_1_framebuffer.html#af62e5c11c830410a3213e2b17075b158">Graphics::Framebuffer::getAddress</a></div><div class="ttdeci">ALWAYS_INLINE void * getAddress()</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d1a/framebuffer_8hpp_source.html#l00034">framebuffer.hpp:34</a></div></div>
 <div class="ttc" id="aclass_graphics_1_1_framebuffer_html_af04917a01257164d99f15d84a1f67e9f"><div class="ttname"><a href="../../d0/dcb/class_graphics_1_1_framebuffer.html#af04917a01257164d99f15d84a1f67e9f">Graphics::Framebuffer::getRedMaskShift</a></div><div class="ttdeci">ALWAYS_INLINE uint8_t getRedMaskShift()</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d1a/framebuffer_8hpp_source.html#l00040">framebuffer.hpp:40</a></div></div>
-<div class="ttc" id="anamespace_graphics_html_af129f7076fdd0d3a4f109a652a0ba8ec"><div class="ttname"><a href="../../d6/d9b/namespace_graphics.html#af129f7076fdd0d3a4f109a652a0ba8ec">Graphics::getFramebuffer</a></div><div class="ttdeci">Framebuffer * getFramebuffer()</div><div class="ttdoc">Get a pointer to the active framebuffer.</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dd6/framebuffer_8cpp_source.html#l00081">framebuffer.cpp:81</a></div></div>
 <div class="ttc" id="astring_8cpp_html_adc296efabb90c20113d5420e4d162d14"><div class="ttname"><a href="../../d5/d24/string_8cpp.html#adc296efabb90c20113d5420e4d162d14">memset</a></div><div class="ttdeci">void * memset(void *bufptr, int value, size_t size)</div><div class="ttdoc">Sets the number of bytes in memory at ptr to the value.</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d24/string_8cpp_source.html#l00106">string.cpp:106</a></div></div>
 <div class="ttc" id="aclass_graphics_1_1_framebuffer_html_af6383d53d6a69242b6eb8e56067f4d19"><div class="ttname"><a href="../../d0/dcb/class_graphics_1_1_framebuffer.html#af6383d53d6a69242b6eb8e56067f4d19">Graphics::Framebuffer::getPixelWidth</a></div><div class="ttdeci">ALWAYS_INLINE uint8_t getPixelWidth()</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d1a/framebuffer_8hpp_source.html#l00045">framebuffer.hpp:45</a></div></div>
 <!-- start footer part -->

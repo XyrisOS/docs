@@ -103,12 +103,14 @@ $(document).ready(function(){initNavTree('d2/dbd/tasks_8hpp.html','../../'); ini
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="../../d5/dbd/tasks_8hpp__incl.png" border="0" usemap="#tasks_8hpp" alt=""/></div>
 <map name="tasks_8hpp" id="tasks_8hpp">
-<area shape="rect" title=" " alt="" coords="191,5,276,32"/>
-<area shape="rect" title=" " alt="" coords="273,229,343,256"/>
-<area shape="rect" href="../../d7/d9c/_arch_8hpp.html" title="Computer architecture initialization definitions." alt="" coords="85,155,195,181"/>
-<area shape="rect" href="../../d1/d75/paging_8hpp.html" title=" " alt="" coords="167,80,299,107"/>
-<area shape="rect" title=" " alt="" coords="173,229,248,256"/>
-<area shape="rect" href="../../d2/d3d/compiler_8hpp.html" title="Compiler meta directives." alt="" coords="5,229,149,256"/>
+<area shape="rect" title=" " alt="" coords="110,5,195,32"/>
+<area shape="rect" title=" " alt="" coords="5,304,76,331"/>
+<area shape="rect" href="../../d7/d9c/_arch_8hpp.html" title="Computer architecture initialization definitions." alt="" coords="272,229,383,256"/>
+<area shape="rect" href="../../d1/d75/paging_8hpp.html" title=" " alt="" coords="87,80,219,107"/>
+<area shape="rect" href="../../d2/d3d/compiler_8hpp.html" title="Compiler meta directives." alt="" coords="101,304,245,331"/>
+<area shape="rect" title=" " alt="" coords="290,304,365,331"/>
+<area shape="rect" href="../../d6/dc1/_memory_map_8hpp.html" title="Memory map containing a number of Memory sections that describe the physical memory layout." alt="" coords="67,155,238,181"/>
+<area shape="rect" href="../../d0/d91/_memory_section_8hpp.html" title=" " alt="" coords="57,229,248,256"/>
 </map>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -341,14 +343,14 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d9d/tasks_8cpp_source.html#l00419">419</a> of file <a class="el" href="../../d5/d9d/tasks_8cpp_source.html">tasks.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;{</div>
-<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;    _aquire_scheduler_lock();</div>
-<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;    <a class="code" href="../../d5/d9d/tasks_8cpp.html#a9f6cf565fea5037efb7f971337abaf12">current_task</a>-&gt;<a class="code" href="../../db/da2/structtask.html#a665dc156ee4493d4541bc117bd657d67">state</a> = reason;</div>
-<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;    <a class="code" href="../../d5/d9d/tasks_8cpp.html#a525bc038ba8fbd7178e3b3d20f866af0">TASK_ACTION</a>(<span class="stringliteral">&quot;block&quot;</span>, <a class="code" href="../../d5/d9d/tasks_8cpp.html#a9f6cf565fea5037efb7f971337abaf12">current_task</a>);</div>
-<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;    _schedule();</div>
-<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;    _release_scheduler_lock();</div>
-<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../d5/d9d/tasks_8cpp_source.html#l00418">418</a> of file <a class="el" href="../../d5/d9d/tasks_8cpp_source.html">tasks.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;{</div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;    _aquire_scheduler_lock();</div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;    <a class="code" href="../../d5/d9d/tasks_8cpp.html#a9f6cf565fea5037efb7f971337abaf12">current_task</a>-&gt;<a class="code" href="../../db/da2/structtask.html#a665dc156ee4493d4541bc117bd657d67">state</a> = reason;</div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;    <a class="code" href="../../d5/d9d/tasks_8cpp.html#a525bc038ba8fbd7178e3b3d20f866af0">TASK_ACTION</a>(<span class="stringliteral">&quot;block&quot;</span>, <a class="code" href="../../d5/d9d/tasks_8cpp.html#a9f6cf565fea5037efb7f971337abaf12">current_task</a>);</div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;    _schedule();</div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;    _release_scheduler_lock();</div>
+<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -370,23 +372,23 @@ Variables</h2></td></tr>
 
 <p>Exits the current task. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d9d/tasks_8cpp_source.html#l00508">508</a> of file <a class="el" href="../../d5/d9d/tasks_8cpp_source.html">tasks.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;{</div>
-<div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;    <span class="comment">// userspace cleanup can happen here</span></div>
-<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;    <a class="code" href="../../d7/d75/namespace_r_s232.html#a394b7ac1c601a47c2881a460eb41171a">RS232::printf</a>(<span class="stringliteral">&quot;task \&quot;%s\&quot; (0x%08x) exiting\n&quot;</span>, <a class="code" href="../../d5/d9d/tasks_8cpp.html#a9f6cf565fea5037efb7f971337abaf12">current_task</a>-&gt;<a class="code" href="../../db/da2/structtask.html#a83a6cca985649416b9cbb05a39b8d3f2">name</a>, (uint32_t)<a class="code" href="../../d5/d9d/tasks_8cpp.html#a9f6cf565fea5037efb7f971337abaf12">current_task</a>);</div>
-<div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160; </div>
-<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;    _aquire_scheduler_lock();</div>
-<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;    <span class="comment">// all scheduling-specific operations must happen here</span></div>
-<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;    _enqueue_stopped(<a class="code" href="../../d5/d9d/tasks_8cpp.html#a9f6cf565fea5037efb7f971337abaf12">current_task</a>);</div>
-<div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160; </div>
-<div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;    <span class="comment">// the ordering of these two should really be reversed</span></div>
-<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;    <span class="comment">// but the scheduler currently isn&#39;t very smart</span></div>
-<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;    <a class="code" href="../../d5/d9d/tasks_8cpp.html#ae954d27107c4990313982108234cae5d">tasks_block_current</a>(<a class="code" href="../../d2/dbd/tasks_8hpp.html#a46c7ab5dd73831ee98458db0a68fc4a2a52340c1844b9c87b6c965569f21d72f1">TASK_STOPPED</a>);</div>
-<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160; </div>
-<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;    <a class="code" href="../../d5/d9d/tasks_8cpp.html#ac8fc9f801e5cc9d86d6801f003fd4a24">tasks_unblock</a>(&amp;_cleaner_task);</div>
-<div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160; </div>
-<div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;    _release_scheduler_lock();</div>
-<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../d5/d9d/tasks_8cpp_source.html#l00507">507</a> of file <a class="el" href="../../d5/d9d/tasks_8cpp_source.html">tasks.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;{</div>
+<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;    <span class="comment">// userspace cleanup can happen here</span></div>
+<div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;    <a class="code" href="../../d7/d75/namespace_r_s232.html#a394b7ac1c601a47c2881a460eb41171a">RS232::printf</a>(<span class="stringliteral">&quot;task \&quot;%s\&quot; (0x%08x) exiting\n&quot;</span>, <a class="code" href="../../d5/d9d/tasks_8cpp.html#a9f6cf565fea5037efb7f971337abaf12">current_task</a>-&gt;<a class="code" href="../../db/da2/structtask.html#a83a6cca985649416b9cbb05a39b8d3f2">name</a>, (uint32_t)<a class="code" href="../../d5/d9d/tasks_8cpp.html#a9f6cf565fea5037efb7f971337abaf12">current_task</a>);</div>
+<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160; </div>
+<div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;    _aquire_scheduler_lock();</div>
+<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;    <span class="comment">// all scheduling-specific operations must happen here</span></div>
+<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;    _enqueue_stopped(<a class="code" href="../../d5/d9d/tasks_8cpp.html#a9f6cf565fea5037efb7f971337abaf12">current_task</a>);</div>
+<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160; </div>
+<div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;    <span class="comment">// the ordering of these two should really be reversed</span></div>
+<div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;    <span class="comment">// but the scheduler currently isn&#39;t very smart</span></div>
+<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;    <a class="code" href="../../d5/d9d/tasks_8cpp.html#ae954d27107c4990313982108234cae5d">tasks_block_current</a>(<a class="code" href="../../d2/dbd/tasks_8hpp.html#a46c7ab5dd73831ee98458db0a68fc4a2a52340c1844b9c87b6c965569f21d72f1">TASK_STOPPED</a>);</div>
+<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160; </div>
+<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;    <a class="code" href="../../d5/d9d/tasks_8cpp.html#ac8fc9f801e5cc9d86d6801f003fd4a24">tasks_unblock</a>(&amp;_cleaner_task);</div>
+<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160; </div>
+<div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;    _release_scheduler_lock();</div>
+<div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;}</div>
 </div><!-- fragment --><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -422,11 +424,11 @@ Variables</h2></td></tr>
 <p>Returns the lifetime of the current task (in nanoseconds). </p>
 <dl class="section return"><dt>Returns</dt><dd>uint64_t Task lifetime (in nanoseconds) </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d9d/tasks_8cpp_source.html#l00413">413</a> of file <a class="el" href="../../d5/d9d/tasks_8cpp_source.html">tasks.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;{</div>
-<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;    <a class="code" href="../../d5/d9d/tasks_8cpp.html#a253cc97fa008fce21eeb67d012a9fced">tasks_update_time</a>();</div>
-<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../d5/d9d/tasks_8cpp.html#a9f6cf565fea5037efb7f971337abaf12">current_task</a>-&gt;<a class="code" href="../../db/da2/structtask.html#a186feb125b22218d54494eef4d86a3b8">time_used</a>;</div>
-<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../d5/d9d/tasks_8cpp_source.html#l00412">412</a> of file <a class="el" href="../../d5/d9d/tasks_8cpp_source.html">tasks.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;{</div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;    <a class="code" href="../../d5/d9d/tasks_8cpp.html#a253cc97fa008fce21eeb67d012a9fced">tasks_update_time</a>();</div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../d5/d9d/tasks_8cpp.html#a9f6cf565fea5037efb7f971337abaf12">current_task</a>-&gt;<a class="code" href="../../db/da2/structtask.html#a186feb125b22218d54494eef4d86a3b8">time_used</a>;</div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;}</div>
 </div><!-- fragment --><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -458,43 +460,43 @@ Variables</h2></td></tr>
 
 <p>Initializes the kernel task manager. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d9d/tasks_8cpp_source.html#l00147">147</a> of file <a class="el" href="../../d5/d9d/tasks_8cpp_source.html">tasks.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;{</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    <span class="comment">// get a pointer to the first task&#39;s tcb</span></div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    <span class="keyword">struct </span><a class="code" href="../../db/da2/structtask.html">task</a> *this_task = &amp;_first_task;</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    <span class="comment">// discover the CPU speed for accurate scheduling</span></div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    _discover_cpu_speed();</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    *this_task = {</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        <span class="comment">// this will be filled in when we switch to another task for the first time</span></div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;        .<a class="code" href="../../db/da2/structtask.html#ac52da3250648a75f90719ffd5d3f3535">stack_top</a> = 0,</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        <span class="comment">// this will be the same for kernel tasks</span></div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        .page_dir = <a class="code" href="../../d1/d5e/paging_8cpp.html#a61a4e38f3579e83e42f5a534f87093ad">get_phys_page_dir</a>(),</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        <span class="comment">// this is a linked list with only this task</span></div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        .next = NULL,</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        <span class="comment">// this task is currently running</span></div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        .state = <a class="code" href="../../d2/dbd/tasks_8hpp.html#a46c7ab5dd73831ee98458db0a68fc4a2a9bd2895158d9e7c8cf80b57659fcba50">TASK_RUNNING</a>,</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        <span class="comment">// just say that this task hasn&#39;t spent any time running yet</span></div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        .time_used = 0,</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        <span class="comment">// Set wakeup time to 0 to make compiler happy</span></div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        .wakeup_time = 0,</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        <span class="comment">// name</span></div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        .name = <span class="stringliteral">&quot;[main]&quot;</span>,</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        <span class="comment">// this is not backed by dynamic memory</span></div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        .alloc = <a class="code" href="../../d2/dbd/tasks_8hpp.html#ac7aaa4c0605984fc6b92a727881b8707a8d8e53f91997090c4b163b7579f366dd">ALLOC_STATIC</a>,</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    };</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    <a class="code" href="../../d5/d9d/tasks_8cpp.html#a525bc038ba8fbd7178e3b3d20f866af0">TASK_ACTION</a>(<span class="stringliteral">&quot;create task&quot;</span>, this_task);</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    <span class="comment">// create a task for the cleaner and set it&#39;s state to &quot;paused&quot;</span></div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    (void) <a class="code" href="../../d5/d9d/tasks_8cpp.html#a65c4921579a6bad97c037bc8db69fb26">tasks_new</a>(_cleaner_task_impl, &amp;_cleaner_task, <a class="code" href="../../d2/dbd/tasks_8hpp.html#a46c7ab5dd73831ee98458db0a68fc4a2a70c1246153ef112b1baa60e2f6e36cd3">TASK_PAUSED</a>, <span class="stringliteral">&quot;[cleaner]&quot;</span>);</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    _cleaner_task.<a class="code" href="../../db/da2/structtask.html#a665dc156ee4493d4541bc117bd657d67">state</a> = <a class="code" href="../../d2/dbd/tasks_8hpp.html#a46c7ab5dd73831ee98458db0a68fc4a2a70c1246153ef112b1baa60e2f6e36cd3">TASK_PAUSED</a>;</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    <span class="comment">// update the timer variables</span></div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    _last_time = _get_cpu_time_ns();</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    _last_timer_time = _last_time;</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    <span class="comment">// enable time slices</span></div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    _time_slice_remaining = <a class="code" href="../../d2/dbd/tasks_8hpp.html#ab3c4cf018b280f12e3726184a945728c">TIME_SLICE_SIZE</a>;</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    <span class="comment">// this is the current task</span></div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    <a class="code" href="../../d5/d9d/tasks_8cpp.html#a9f6cf565fea5037efb7f971337abaf12">current_task</a> = this_task;</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    <a class="code" href="../../dc/de5/timer_8cpp.html#aa5729176ed3fb89f2e5c91b28361f643">timer_register_callback</a>(_on_timer);</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../d5/d9d/tasks_8cpp_source.html#l00149">149</a> of file <a class="el" href="../../d5/d9d/tasks_8cpp_source.html">tasks.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;{</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    <span class="comment">// get a pointer to the first task&#39;s tcb</span></div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <span class="keyword">struct </span><a class="code" href="../../db/da2/structtask.html">task</a> *this_task = &amp;_first_task;</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <span class="comment">// discover the CPU speed for accurate scheduling</span></div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    _discover_cpu_speed();</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    *this_task = {</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        <span class="comment">// this will be filled in when we switch to another task for the first time</span></div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        .<a class="code" href="../../db/da2/structtask.html#ac52da3250648a75f90719ffd5d3f3535">stack_top</a> = 0,</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        <span class="comment">// this will be the same for kernel tasks</span></div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        .page_dir = <a class="code" href="../../d2/d46/namespace_paging.html#a19aea121a6e5462b78eba2176a43f1bd">Paging::getPageDirPhysAddr</a>(),</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        <span class="comment">// this is a linked list with only this task</span></div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        .next = NULL,</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        <span class="comment">// this task is currently running</span></div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        .state = <a class="code" href="../../d2/dbd/tasks_8hpp.html#a46c7ab5dd73831ee98458db0a68fc4a2a9bd2895158d9e7c8cf80b57659fcba50">TASK_RUNNING</a>,</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        <span class="comment">// just say that this task hasn&#39;t spent any time running yet</span></div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        .time_used = 0,</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        <span class="comment">// Set wakeup time to 0 to make compiler happy</span></div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        .wakeup_time = 0,</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        <span class="comment">// name</span></div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        .name = <span class="stringliteral">&quot;[main]&quot;</span>,</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        <span class="comment">// this is not backed by dynamic memory</span></div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        .alloc = <a class="code" href="../../d2/dbd/tasks_8hpp.html#ac7aaa4c0605984fc6b92a727881b8707a8d8e53f91997090c4b163b7579f366dd">ALLOC_STATIC</a>,</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    };</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    <a class="code" href="../../d5/d9d/tasks_8cpp.html#a525bc038ba8fbd7178e3b3d20f866af0">TASK_ACTION</a>(<span class="stringliteral">&quot;create task&quot;</span>, this_task);</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    <span class="comment">// create a task for the cleaner and set it&#39;s state to &quot;paused&quot;</span></div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    (void) <a class="code" href="../../d5/d9d/tasks_8cpp.html#a65c4921579a6bad97c037bc8db69fb26">tasks_new</a>(_cleaner_task_impl, &amp;_cleaner_task, <a class="code" href="../../d2/dbd/tasks_8hpp.html#a46c7ab5dd73831ee98458db0a68fc4a2a70c1246153ef112b1baa60e2f6e36cd3">TASK_PAUSED</a>, <span class="stringliteral">&quot;[cleaner]&quot;</span>);</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    _cleaner_task.<a class="code" href="../../db/da2/structtask.html#a665dc156ee4493d4541bc117bd657d67">state</a> = <a class="code" href="../../d2/dbd/tasks_8hpp.html#a46c7ab5dd73831ee98458db0a68fc4a2a70c1246153ef112b1baa60e2f6e36cd3">TASK_PAUSED</a>;</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    <span class="comment">// update the timer variables</span></div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    _last_time = _get_cpu_time_ns();</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    _last_timer_time = _last_time;</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    <span class="comment">// enable time slices</span></div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    _time_slice_remaining = <a class="code" href="../../d2/dbd/tasks_8hpp.html#ab3c4cf018b280f12e3726184a945728c">TIME_SLICE_SIZE</a>;</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    <span class="comment">// this is the current task</span></div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    <a class="code" href="../../d5/d9d/tasks_8cpp.html#a9f6cf565fea5037efb7f971337abaf12">current_task</a> = this_task;</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    <a class="code" href="../../dc/de5/timer_8cpp.html#aa5729176ed3fb89f2e5c91b28361f643">timer_register_callback</a>(_on_timer);</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -522,10 +524,10 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d9d/tasks_8cpp_source.html#l00503">503</a> of file <a class="el" href="../../d5/d9d/tasks_8cpp_source.html">tasks.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;{</div>
-<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;    <a class="code" href="../../d5/d9d/tasks_8cpp.html#a1280b6050df9305a3afc0b8f609e581c">tasks_nano_sleep_until</a>(_get_cpu_time_ns() + time);</div>
-<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../d5/d9d/tasks_8cpp_source.html#l00502">502</a> of file <a class="el" href="../../d5/d9d/tasks_8cpp_source.html">tasks.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;{</div>
+<div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;    <a class="code" href="../../d5/d9d/tasks_8cpp.html#a1280b6050df9305a3afc0b8f609e581c">tasks_nano_sleep_until</a>(_get_cpu_time_ns() + time);</div>
+<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;}</div>
 </div><!-- fragment --><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -575,17 +577,17 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d9d/tasks_8cpp_source.html#l00491">491</a> of file <a class="el" href="../../d5/d9d/tasks_8cpp_source.html">tasks.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;{</div>
-<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;    <span class="comment">// TODO: maybe validate that this time is in the future?</span></div>
-<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;    _aquire_scheduler_lock();</div>
-<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;    <a class="code" href="../../d5/d9d/tasks_8cpp.html#a9f6cf565fea5037efb7f971337abaf12">current_task</a>-&gt;<a class="code" href="../../db/da2/structtask.html#a665dc156ee4493d4541bc117bd657d67">state</a> = <a class="code" href="../../d2/dbd/tasks_8hpp.html#a46c7ab5dd73831ee98458db0a68fc4a2ac261e4c62bea6a313e386d777ae7ecbb">TASK_SLEEPING</a>;</div>
-<div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;    <a class="code" href="../../d5/d9d/tasks_8cpp.html#a9f6cf565fea5037efb7f971337abaf12">current_task</a>-&gt;<a class="code" href="../../db/da2/structtask.html#ac8757d0d71961fb132be5811ec283976">wakeup_time</a> = time;</div>
-<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;    _enqueue_sleeping(<a class="code" href="../../d5/d9d/tasks_8cpp.html#a9f6cf565fea5037efb7f971337abaf12">current_task</a>);</div>
-<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;    <a class="code" href="../../d5/d9d/tasks_8cpp.html#a525bc038ba8fbd7178e3b3d20f866af0">TASK_ACTION</a>(<span class="stringliteral">&quot;sleep&quot;</span>, <a class="code" href="../../d5/d9d/tasks_8cpp.html#a9f6cf565fea5037efb7f971337abaf12">current_task</a>);</div>
-<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;    _schedule();</div>
-<div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;    _release_scheduler_lock();</div>
-<div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../d5/d9d/tasks_8cpp_source.html#l00490">490</a> of file <a class="el" href="../../d5/d9d/tasks_8cpp_source.html">tasks.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;{</div>
+<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;    <span class="comment">// TODO: maybe validate that this time is in the future?</span></div>
+<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;    _aquire_scheduler_lock();</div>
+<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;    <a class="code" href="../../d5/d9d/tasks_8cpp.html#a9f6cf565fea5037efb7f971337abaf12">current_task</a>-&gt;<a class="code" href="../../db/da2/structtask.html#a665dc156ee4493d4541bc117bd657d67">state</a> = <a class="code" href="../../d2/dbd/tasks_8hpp.html#a46c7ab5dd73831ee98458db0a68fc4a2ac261e4c62bea6a313e386d777ae7ecbb">TASK_SLEEPING</a>;</div>
+<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;    <a class="code" href="../../d5/d9d/tasks_8cpp.html#a9f6cf565fea5037efb7f971337abaf12">current_task</a>-&gt;<a class="code" href="../../db/da2/structtask.html#ac8757d0d71961fb132be5811ec283976">wakeup_time</a> = time;</div>
+<div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;    _enqueue_sleeping(<a class="code" href="../../d5/d9d/tasks_8cpp.html#a9f6cf565fea5037efb7f971337abaf12">current_task</a>);</div>
+<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;    <a class="code" href="../../d5/d9d/tasks_8cpp.html#a525bc038ba8fbd7178e3b3d20f866af0">TASK_ACTION</a>(<span class="stringliteral">&quot;sleep&quot;</span>, <a class="code" href="../../d5/d9d/tasks_8cpp.html#a9f6cf565fea5037efb7f971337abaf12">current_task</a>);</div>
+<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;    _schedule();</div>
+<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;    _release_scheduler_lock();</div>
+<div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;}</div>
 </div><!-- fragment --><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-6-trigger" src="../../closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-6-summary" class="dynsummary" style="display:block;">
@@ -651,49 +653,50 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>struct task* Pointer to the created kernel task </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d9d/tasks_8cpp_source.html#l00285">285</a> of file <a class="el" href="../../d5/d9d/tasks_8cpp_source.html">tasks.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;{</div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;    <span class="keyword">struct </span><a class="code" href="../../db/da2/structtask.html">task</a> *new_task = storage;</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    <span class="keywordflow">if</span> (storage == NULL) {</div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;        <span class="comment">// allocate memory for our task structure</span></div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;        new_task = (<span class="keyword">struct </span><a class="code" href="../../db/da2/structtask.html">task</a>*)<a class="code" href="../../da/d45/heap_8hpp.html#a1c8580582aae58105f16108d4ec89e9a">malloc</a>(<span class="keyword">sizeof</span>(<span class="keyword">struct</span> <a class="code" href="../../db/da2/structtask.html">task</a>));</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;        <span class="comment">// panic if the alloc fails (we have no fallback)</span></div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;        <span class="keywordflow">if</span> (new_task == NULL) {</div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;            <a class="code" href="../../d7/d9c/_arch_8hpp.html#a989b3cb2d90490770f9c9c030acb1ba5">PANIC</a>(<span class="stringliteral">&quot;Unable to allocate memory for new task struct.\n&quot;</span>);</div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;        }</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    }</div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;    <span class="comment">// allocate a page for this stack (we might change this later)</span></div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;    uint8_t *stack = (uint8_t *)<a class="code" href="../../d1/d5e/paging_8cpp.html#a1f827ef8d99028d46133fb5ca4f9c89a">get_new_page</a>(<a class="code" href="../../d1/d75/paging_8hpp.html#a7d467c1d283fdfa1f2081ba1e0d01b6e">PAGE_SIZE</a> - 1);</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    <span class="keywordflow">if</span> (stack == NULL) <a class="code" href="../../d7/d9c/_arch_8hpp.html#a989b3cb2d90490770f9c9c030acb1ba5">PANIC</a>(<span class="stringliteral">&quot;Unable to allocate memory for new task stack.\n&quot;</span>);</div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    <span class="comment">// remember, the stack grows up</span></div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    <span class="keywordtype">void</span> *stack_pointer = stack + <a class="code" href="../../d1/d75/paging_8hpp.html#a7d467c1d283fdfa1f2081ba1e0d01b6e">PAGE_SIZE</a>;</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;    <span class="comment">// a null stack frame to make the panic screen happy</span></div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;    _stack_push_word(&amp;stack_pointer, 0);</div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;    <span class="comment">// the last thing to happen is the task stopping function</span></div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;    _stack_push_word(&amp;stack_pointer, (<span class="keywordtype">size_t</span>)_task_stopping);</div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;    <span class="comment">// next entry is the main function to call (the start of the task)</span></div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;    _stack_push_word(&amp;stack_pointer, (<span class="keywordtype">size_t</span>)entry);</div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;    <span class="comment">// when this task is started, the CPU will pop off this value which will become the new EIP</span></div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;    <span class="comment">// we push this function to allow some setup code to be run from within the context of the new task</span></div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;    _stack_push_word(&amp;stack_pointer, (<span class="keywordtype">size_t</span>)_task_starting);</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;    <span class="comment">// our task switching code is going to pop four values off of the stack before returning</span></div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    _stack_push_word(&amp;stack_pointer, 0);</div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;    _stack_push_word(&amp;stack_pointer, 0);</div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;    _stack_push_word(&amp;stack_pointer, 0);</div>
+<p class="definition">Definition at line <a class="el" href="../../d5/d9d/tasks_8cpp_source.html#l00287">287</a> of file <a class="el" href="../../d5/d9d/tasks_8cpp_source.html">tasks.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;{</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    <span class="keyword">struct </span><a class="code" href="../../db/da2/structtask.html">task</a> *new_task = storage;</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    <span class="keywordflow">if</span> (storage == NULL) {</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;        <span class="comment">// allocate memory for our task structure</span></div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;        new_task = (<span class="keyword">struct </span><a class="code" href="../../db/da2/structtask.html">task</a>*)<a class="code" href="../../da/d45/heap_8hpp.html#a1c8580582aae58105f16108d4ec89e9a">malloc</a>(<span class="keyword">sizeof</span>(<span class="keyword">struct</span> <a class="code" href="../../db/da2/structtask.html">task</a>));</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;        <span class="comment">// panic if the alloc fails (we have no fallback)</span></div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;        <span class="keywordflow">if</span> (new_task == NULL) {</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;            <a class="code" href="../../d7/d9c/_arch_8hpp.html#a989b3cb2d90490770f9c9c030acb1ba5">PANIC</a>(<span class="stringliteral">&quot;Unable to allocate memory for new task struct.\n&quot;</span>);</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;        }</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;    }</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    <span class="comment">// allocate a page for this stack (we might change this later)</span></div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    <span class="comment">// TODO: Should more than one page be allocated / freed?</span></div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    uint8_t *stack = (uint8_t *)<a class="code" href="../../d2/d46/namespace_paging.html#a7719e756c617d0bafd750620a306612c">Paging::newPage</a>(1);</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;    <span class="keywordflow">if</span> (stack == NULL) <a class="code" href="../../d7/d9c/_arch_8hpp.html#a989b3cb2d90490770f9c9c030acb1ba5">PANIC</a>(<span class="stringliteral">&quot;Unable to allocate memory for new task stack.\n&quot;</span>);</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;    <span class="comment">// remember, the stack grows up</span></div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;    <span class="keywordtype">void</span> *stack_pointer = stack + <a class="code" href="../../dd/de9/_arch_8i386_8hpp.html#acd327ff534c65e3c5772a67d62d74ca0">ARCH_PAGE_SIZE</a>;</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;    <span class="comment">// a null stack frame to make the panic screen happy</span></div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;    _stack_push_word(&amp;stack_pointer, 0);</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;    <span class="comment">// the last thing to happen is the task stopping function</span></div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;    _stack_push_word(&amp;stack_pointer, (<span class="keywordtype">size_t</span>)_task_stopping);</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;    <span class="comment">// next entry is the main function to call (the start of the task)</span></div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;    _stack_push_word(&amp;stack_pointer, (<span class="keywordtype">size_t</span>)entry);</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;    <span class="comment">// when this task is started, the CPU will pop off this value which will become the new EIP</span></div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    <span class="comment">// we push this function to allow some setup code to be run from within the context of the new task</span></div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;    _stack_push_word(&amp;stack_pointer, (<span class="keywordtype">size_t</span>)_task_starting);</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;    <span class="comment">// our task switching code is going to pop four values off of the stack before returning</span></div>
 <div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;    _stack_push_word(&amp;stack_pointer, 0);</div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;    new_task-&gt;<a class="code" href="../../db/da2/structtask.html#ac52da3250648a75f90719ffd5d3f3535">stack_top</a> = (uintptr_t)stack_pointer;</div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;    new_task-&gt;<a class="code" href="../../db/da2/structtask.html#a0b3d1736151c761dbbb49170ca13ad26">page_dir</a> = <a class="code" href="../../d1/d5e/paging_8cpp.html#a61a4e38f3579e83e42f5a534f87093ad">get_phys_page_dir</a>();</div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;    new_task-&gt;<a class="code" href="../../db/da2/structtask.html#a3f2c7149983c28824baf1aebdfa7af98">next</a> = NULL;</div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;    new_task-&gt;<a class="code" href="../../db/da2/structtask.html#a665dc156ee4493d4541bc117bd657d67">state</a> = <a class="code" href="../../db/da2/structtask.html#a665dc156ee4493d4541bc117bd657d67">state</a>;</div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;    new_task-&gt;<a class="code" href="../../db/da2/structtask.html#a186feb125b22218d54494eef4d86a3b8">time_used</a> = 0;</div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;    new_task-&gt;<a class="code" href="../../db/da2/structtask.html#a83a6cca985649416b9cbb05a39b8d3f2">name</a> = <a class="code" href="../../db/da2/structtask.html#a83a6cca985649416b9cbb05a39b8d3f2">name</a>;</div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;    new_task-&gt;<a class="code" href="../../db/da2/structtask.html#a96ad7d7eeed64c2bbcc9e6f95c1d8893">alloc</a> = storage == NULL ? <a class="code" href="../../d2/dbd/tasks_8hpp.html#ac7aaa4c0605984fc6b92a727881b8707a1ca002103407b5faf981791ccde80582">ALLOC_DYNAMIC</a> : <a class="code" href="../../d2/dbd/tasks_8hpp.html#ac7aaa4c0605984fc6b92a727881b8707a8d8e53f91997090c4b163b7579f366dd">ALLOC_STATIC</a>;</div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../db/da2/structtask.html#a665dc156ee4493d4541bc117bd657d67">state</a> == <a class="code" href="../../d2/dbd/tasks_8hpp.html#a46c7ab5dd73831ee98458db0a68fc4a2aebcd951a6127c3c50a4f197b2b637793">TASK_READY</a>) {</div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;        <a class="code" href="../../d5/d9d/tasks_8cpp.html#a28a181f075e53e9f4a57998ca5a2b399">_tasks_enqueue_ready</a>(new_task);</div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;    }</div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;    <a class="code" href="../../d5/d9d/tasks_8cpp.html#a525bc038ba8fbd7178e3b3d20f866af0">TASK_ACTION</a>(<span class="stringliteral">&quot;create task&quot;</span>, new_task);</div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;    <span class="keywordflow">return</span> new_task;</div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;}</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;    _stack_push_word(&amp;stack_pointer, 0);</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;    _stack_push_word(&amp;stack_pointer, 0);</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;    _stack_push_word(&amp;stack_pointer, 0);</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;    new_task-&gt;<a class="code" href="../../db/da2/structtask.html#ac52da3250648a75f90719ffd5d3f3535">stack_top</a> = (uintptr_t)stack_pointer;</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;    new_task-&gt;<a class="code" href="../../db/da2/structtask.html#a0b3d1736151c761dbbb49170ca13ad26">page_dir</a> = <a class="code" href="../../d2/d46/namespace_paging.html#a19aea121a6e5462b78eba2176a43f1bd">Paging::getPageDirPhysAddr</a>();</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;    new_task-&gt;<a class="code" href="../../db/da2/structtask.html#a3f2c7149983c28824baf1aebdfa7af98">next</a> = NULL;</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;    new_task-&gt;<a class="code" href="../../db/da2/structtask.html#a665dc156ee4493d4541bc117bd657d67">state</a> = <a class="code" href="../../db/da2/structtask.html#a665dc156ee4493d4541bc117bd657d67">state</a>;</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;    new_task-&gt;<a class="code" href="../../db/da2/structtask.html#a186feb125b22218d54494eef4d86a3b8">time_used</a> = 0;</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;    new_task-&gt;<a class="code" href="../../db/da2/structtask.html#a83a6cca985649416b9cbb05a39b8d3f2">name</a> = <a class="code" href="../../db/da2/structtask.html#a83a6cca985649416b9cbb05a39b8d3f2">name</a>;</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;    new_task-&gt;<a class="code" href="../../db/da2/structtask.html#a96ad7d7eeed64c2bbcc9e6f95c1d8893">alloc</a> = storage == NULL ? <a class="code" href="../../d2/dbd/tasks_8hpp.html#ac7aaa4c0605984fc6b92a727881b8707a1ca002103407b5faf981791ccde80582">ALLOC_DYNAMIC</a> : <a class="code" href="../../d2/dbd/tasks_8hpp.html#ac7aaa4c0605984fc6b92a727881b8707a8d8e53f91997090c4b163b7579f366dd">ALLOC_STATIC</a>;</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../db/da2/structtask.html#a665dc156ee4493d4541bc117bd657d67">state</a> == <a class="code" href="../../d2/dbd/tasks_8hpp.html#a46c7ab5dd73831ee98458db0a68fc4a2aebcd951a6127c3c50a4f197b2b637793">TASK_READY</a>) {</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;        <a class="code" href="../../d5/d9d/tasks_8cpp.html#a28a181f075e53e9f4a57998ca5a2b399">_tasks_enqueue_ready</a>(new_task);</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;    }</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;    <a class="code" href="../../d5/d9d/tasks_8cpp.html#a525bc038ba8fbd7178e3b3d20f866af0">TASK_ACTION</a>(<span class="stringliteral">&quot;create task&quot;</span>, new_task);</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;    <span class="keywordflow">return</span> new_task;</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;}</div>
 </div><!-- fragment --><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-7-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-7-summary" class="dynsummary" style="display:block;">
@@ -702,8 +705,11 @@ Variables</h2></td></tr>
 <div class="center"><img src="../../d2/dbd/tasks_8hpp_a65c4921579a6bad97c037bc8db69fb26_cgraph.png" border="0" usemap="#d2/dbd/tasks_8hpp_a65c4921579a6bad97c037bc8db69fb26_cgraph" alt=""/></div>
 <map name="d2/dbd/tasks_8hpp_a65c4921579a6bad97c037bc8db69fb26_cgraph" id="d2/dbd/tasks_8hpp_a65c4921579a6bad97c037bc8db69fb26_cgraph">
 <area shape="rect" title="Creates a new kernel task with a provided entry point, register storage struct, and task state struct..." alt="" coords="5,31,96,57"/>
-<area shape="rect" href="../../d1/d5e/paging_8cpp.html#a1f827ef8d99028d46133fb5ca4f9c89a" title="Returns a new page in memory for use." alt="" coords="144,5,260,32"/>
-<area shape="rect" href="../../da/d45/heap_8hpp.html#a1c8580582aae58105f16108d4ec89e9a" title=" " alt="" coords="169,56,235,83"/>
+<area shape="rect" href="../../da/d45/heap_8hpp.html#a1c8580582aae58105f16108d4ec89e9a" title=" " alt="" coords="176,5,243,32"/>
+<area shape="rect" href="../../d2/d46/namespace_paging.html#a7719e756c617d0bafd750620a306612c" title="Returns a new page in memory for use. If less than one page is requested, exactly one page will be al..." alt="" coords="144,56,275,83"/>
+<area shape="rect" href="../../d4/de8/class_mutex.html#aa732ae651974555965dcaf9ad9e87882" title="Locks a provided mutex. This call will block if the mutex is already locked." alt="" coords="359,31,461,57"/>
+<area shape="rect" href="../../d2/d46/namespace_paging.html#a0f248342ae645da1817c3bd94f984bd2" title="Map a page into the kernel address space." alt="" coords="323,81,497,108"/>
+<area shape="rect" href="../../d5/d9d/tasks_8cpp.html#a2432c50b4d4264b5d5295bdb4f19e0d2" title=" " alt="" coords="545,31,681,57"/>
 </map>
 </div>
 
@@ -726,15 +732,15 @@ Variables</h2></td></tr>
 
 <p>Tell the kernel task scheduler to schedule all of the added tasks. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d9d/tasks_8cpp_source.html#l00403">403</a> of file <a class="el" href="../../d5/d9d/tasks_8cpp_source.html">tasks.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;{</div>
-<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;    <span class="comment">// we must lock on all scheduling operations</span></div>
-<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;    _aquire_scheduler_lock();</div>
-<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;    <span class="comment">// run the scheduler</span></div>
-<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;    _schedule();</div>
-<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;    <span class="comment">// this will run when we switch back to the calling task</span></div>
-<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;    _release_scheduler_lock();</div>
-<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../d5/d9d/tasks_8cpp_source.html#l00402">402</a> of file <a class="el" href="../../d5/d9d/tasks_8cpp_source.html">tasks.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;{</div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;    <span class="comment">// we must lock on all scheduling operations</span></div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;    _aquire_scheduler_lock();</div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;    <span class="comment">// run the scheduler</span></div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;    _schedule();</div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;    <span class="comment">// this will run when we switch back to the calling task</span></div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;    _release_scheduler_lock();</div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -801,10 +807,13 @@ Variables</h2></td></tr>
 <div id="dynsection-8-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="../../d2/dbd/tasks_8hpp_af2ec535cf48522c768455393852e0e6c_icgraph.png" border="0" usemap="#d2/dbd/tasks_8hpp_af2ec535cf48522c768455393852e0e6c_icgraph" alt=""/></div>
 <map name="d2/dbd/tasks_8hpp_af2ec535cf48522c768455393852e0e6c_icgraph" id="d2/dbd/tasks_8hpp_af2ec535cf48522c768455393852e0e6c_icgraph">
-<area shape="rect" title=" " alt="" coords="335,31,471,57"/>
-<area shape="rect" href="../../d4/de8/class_mutex.html#aa732ae651974555965dcaf9ad9e87882" title="Locks a provided mutex. This call will block if the mutex is already locked." alt="" coords="169,5,271,32"/>
-<area shape="rect" href="../../d4/dbd/class_semaphore.html#ac3b3b6cd0044efda8fbd2dbd0fb6d995" title="Waiting on a semaphore decrements the count value. When a count value is 0, the semaphore is locked a..." alt="" coords="153,56,287,83"/>
-<area shape="rect" href="../../d7/d75/namespace_r_s232.html#aa77ae4139fa5feba01809614f595edb6" title="Reads bytes from the serial buffer." alt="" coords="5,5,105,32"/>
+<area shape="rect" title=" " alt="" coords="520,81,656,108"/>
+<area shape="rect" href="../../d4/de8/class_mutex.html#aa732ae651974555965dcaf9ad9e87882" title="Locks a provided mutex. This call will block if the mutex is already locked." alt="" coords="355,56,456,83"/>
+<area shape="rect" href="../../d4/dbd/class_semaphore.html#ac3b3b6cd0044efda8fbd2dbd0fb6d995" title="Waiting on a semaphore decrements the count value. When a count value is 0, the semaphore is locked a..." alt="" coords="339,107,472,133"/>
+<area shape="rect" href="../../d2/d46/namespace_paging.html#a7719e756c617d0bafd750620a306612c" title="Returns a new page in memory for use. If less than one page is requested, exactly one page will be al..." alt="" coords="160,31,291,57"/>
+<area shape="rect" href="../../d7/d75/namespace_r_s232.html#aa77ae4139fa5feba01809614f595edb6" title="Reads bytes from the serial buffer." alt="" coords="175,81,275,108"/>
+<area shape="rect" href="../../da/d45/heap_8hpp.html#ac17a7bc03af86f215d779f1798aed8e8" title="This is the hook into the local system which allocates pages. It accepts an integer parameter which i..." alt="" coords="5,5,112,32"/>
+<area shape="rect" href="../../d2/dbd/tasks_8hpp.html#a65c4921579a6bad97c037bc8db69fb26" title="Creates a new kernel task with a provided entry point, register storage struct, and task state struct..." alt="" coords="13,56,104,83"/>
 </map>
 </div>
 
@@ -894,14 +903,14 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d9d/tasks_8cpp_source.html#l00428">428</a> of file <a class="el" href="../../d5/d9d/tasks_8cpp_source.html">tasks.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;{</div>
-<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;    _aquire_scheduler_lock();</div>
-<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;    <a class="code" href="../../db/da2/structtask.html">task</a>-&gt;<a class="code" href="../../db/da2/structtask.html#a665dc156ee4493d4541bc117bd657d67">state</a> = <a class="code" href="../../d2/dbd/tasks_8hpp.html#a46c7ab5dd73831ee98458db0a68fc4a2aebcd951a6127c3c50a4f197b2b637793">TASK_READY</a>;</div>
-<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;    <a class="code" href="../../d5/d9d/tasks_8cpp.html#a525bc038ba8fbd7178e3b3d20f866af0">TASK_ACTION</a>(<span class="stringliteral">&quot;unblock&quot;</span>, <a class="code" href="../../db/da2/structtask.html">task</a>);</div>
-<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;    <a class="code" href="../../d5/d9d/tasks_8cpp.html#a28a181f075e53e9f4a57998ca5a2b399">_tasks_enqueue_ready</a>(<a class="code" href="../../db/da2/structtask.html">task</a>);</div>
-<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;    _release_scheduler_lock();</div>
-<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../d5/d9d/tasks_8cpp_source.html#l00427">427</a> of file <a class="el" href="../../d5/d9d/tasks_8cpp_source.html">tasks.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;{</div>
+<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;    _aquire_scheduler_lock();</div>
+<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;    <a class="code" href="../../db/da2/structtask.html">task</a>-&gt;<a class="code" href="../../db/da2/structtask.html#a665dc156ee4493d4541bc117bd657d67">state</a> = <a class="code" href="../../d2/dbd/tasks_8hpp.html#a46c7ab5dd73831ee98458db0a68fc4a2aebcd951a6127c3c50a4f197b2b637793">TASK_READY</a>;</div>
+<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;    <a class="code" href="../../d5/d9d/tasks_8cpp.html#a525bc038ba8fbd7178e3b3d20f866af0">TASK_ACTION</a>(<span class="stringliteral">&quot;unblock&quot;</span>, <a class="code" href="../../db/da2/structtask.html">task</a>);</div>
+<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;    <a class="code" href="../../d5/d9d/tasks_8cpp.html#a28a181f075e53e9f4a57998ca5a2b399">_tasks_enqueue_ready</a>(<a class="code" href="../../db/da2/structtask.html">task</a>);</div>
+<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;    _release_scheduler_lock();</div>
+<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -918,46 +927,46 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d9d/tasks_8cpp_source.html#l00036">36</a> of file <a class="el" href="../../d5/d9d/tasks_8cpp_source.html">tasks.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d9d/tasks_8cpp_source.html#l00038">38</a> of file <a class="el" href="../../d5/d9d/tasks_8cpp_source.html">tasks.cpp</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="apaging_8cpp_html_a61a4e38f3579e83e42f5a534f87093ad"><div class="ttname"><a href="../../d1/d5e/paging_8cpp.html#a61a4e38f3579e83e42f5a534f87093ad">get_phys_page_dir</a></div><div class="ttdeci">uint32_t get_phys_page_dir()</div><div class="ttdoc">Gets the physical address of the current page directory.</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d5e/paging_8cpp_source.html#l00271">paging.cpp:271</a></div></div>
 <div class="ttc" id="atasks_8hpp_html_ac7aaa4c0605984fc6b92a727881b8707a8d8e53f91997090c4b163b7579f366dd"><div class="ttname"><a href="../../d2/dbd/tasks_8hpp.html#ac7aaa4c0605984fc6b92a727881b8707a8d8e53f91997090c4b163b7579f366dd">ALLOC_STATIC</a></div><div class="ttdeci">@ ALLOC_STATIC</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dbd/tasks_8hpp_source.html#l00030">tasks.hpp:30</a></div></div>
-<div class="ttc" id="atasks_8cpp_html_a253cc97fa008fce21eeb67d012a9fced"><div class="ttname"><a href="../../d5/d9d/tasks_8cpp.html#a253cc97fa008fce21eeb67d012a9fced">tasks_update_time</a></div><div class="ttdeci">void tasks_update_time()</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d9d/tasks_8cpp_source.html#l00329">tasks.cpp:329</a></div></div>
-<div class="ttc" id="apaging_8hpp_html_a7d467c1d283fdfa1f2081ba1e0d01b6e"><div class="ttname"><a href="../../d1/d75/paging_8hpp.html#a7d467c1d283fdfa1f2081ba1e0d01b6e">PAGE_SIZE</a></div><div class="ttdeci">#define PAGE_SIZE</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d75/paging_8hpp_source.html#l00017">paging.hpp:17</a></div></div>
+<div class="ttc" id="atasks_8cpp_html_a253cc97fa008fce21eeb67d012a9fced"><div class="ttname"><a href="../../d5/d9d/tasks_8cpp.html#a253cc97fa008fce21eeb67d012a9fced">tasks_update_time</a></div><div class="ttdeci">void tasks_update_time()</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d9d/tasks_8cpp_source.html#l00332">tasks.cpp:332</a></div></div>
 <div class="ttc" id="astructtask_html"><div class="ttname"><a href="../../db/da2/structtask.html">task</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dbd/tasks_8hpp_source.html#l00032">tasks.hpp:32</a></div></div>
 <div class="ttc" id="atasks_8hpp_html_a46c7ab5dd73831ee98458db0a68fc4a2aebcd951a6127c3c50a4f197b2b637793"><div class="ttname"><a href="../../d2/dbd/tasks_8hpp.html#a46c7ab5dd73831ee98458db0a68fc4a2aebcd951a6127c3c50a4f197b2b637793">TASK_READY</a></div><div class="ttdeci">@ TASK_READY</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dbd/tasks_8hpp_source.html#l00022">tasks.hpp:22</a></div></div>
 <div class="ttc" id="atasks_8hpp_html_a46c7ab5dd73831ee98458db0a68fc4a2ac261e4c62bea6a313e386d777ae7ecbb"><div class="ttname"><a href="../../d2/dbd/tasks_8hpp.html#a46c7ab5dd73831ee98458db0a68fc4a2ac261e4c62bea6a313e386d777ae7ecbb">TASK_SLEEPING</a></div><div class="ttdeci">@ TASK_SLEEPING</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dbd/tasks_8hpp_source.html#l00023">tasks.hpp:23</a></div></div>
-<div class="ttc" id="atasks_8cpp_html_ac8fc9f801e5cc9d86d6801f003fd4a24"><div class="ttname"><a href="../../d5/d9d/tasks_8cpp.html#ac8fc9f801e5cc9d86d6801f003fd4a24">tasks_unblock</a></div><div class="ttdeci">void tasks_unblock(struct task *task)</div><div class="ttdoc">Unblocks the current task.</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d9d/tasks_8cpp_source.html#l00428">tasks.cpp:428</a></div></div>
+<div class="ttc" id="atasks_8cpp_html_ac8fc9f801e5cc9d86d6801f003fd4a24"><div class="ttname"><a href="../../d5/d9d/tasks_8cpp.html#ac8fc9f801e5cc9d86d6801f003fd4a24">tasks_unblock</a></div><div class="ttdeci">void tasks_unblock(struct task *task)</div><div class="ttdoc">Unblocks the current task.</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d9d/tasks_8cpp_source.html#l00427">tasks.cpp:427</a></div></div>
 <div class="ttc" id="astructtask_html_a186feb125b22218d54494eef4d86a3b8"><div class="ttname"><a href="../../db/da2/structtask.html#a186feb125b22218d54494eef4d86a3b8">task::time_used</a></div><div class="ttdeci">uint64_t time_used</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dbd/tasks_8hpp_source.html#l00038">tasks.hpp:38</a></div></div>
-<div class="ttc" id="atimer_8cpp_html_aa5729176ed3fb89f2e5c91b28361f643"><div class="ttname"><a href="../../dc/de5/timer_8cpp.html#aa5729176ed3fb89f2e5c91b28361f643">timer_register_callback</a></div><div class="ttdeci">void timer_register_callback(void(*func)())</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/de5/timer_8cpp_source.html#l00060">timer.cpp:60</a></div></div>
+<div class="ttc" id="atimer_8cpp_html_aa5729176ed3fb89f2e5c91b28361f643"><div class="ttname"><a href="../../dc/de5/timer_8cpp.html#aa5729176ed3fb89f2e5c91b28361f643">timer_register_callback</a></div><div class="ttdeci">void timer_register_callback(void(*func)())</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/de5/timer_8cpp_source.html#l00061">timer.cpp:61</a></div></div>
 <div class="ttc" id="astructtask_html_a96ad7d7eeed64c2bbcc9e6f95c1d8893"><div class="ttname"><a href="../../db/da2/structtask.html#a96ad7d7eeed64c2bbcc9e6f95c1d8893">task::alloc</a></div><div class="ttdeci">task_alloc alloc</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dbd/tasks_8hpp_source.html#l00041">tasks.hpp:41</a></div></div>
 <div class="ttc" id="atasks_8hpp_html_ac7aaa4c0605984fc6b92a727881b8707a1ca002103407b5faf981791ccde80582"><div class="ttname"><a href="../../d2/dbd/tasks_8hpp.html#ac7aaa4c0605984fc6b92a727881b8707a1ca002103407b5faf981791ccde80582">ALLOC_DYNAMIC</a></div><div class="ttdeci">@ ALLOC_DYNAMIC</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dbd/tasks_8hpp_source.html#l00030">tasks.hpp:30</a></div></div>
 <div class="ttc" id="atasks_8hpp_html_a46c7ab5dd73831ee98458db0a68fc4a2a055853bdd05de423baa139d4c658c06a"><div class="ttname"><a href="../../d2/dbd/tasks_8hpp.html#a46c7ab5dd73831ee98458db0a68fc4a2a055853bdd05de423baa139d4c658c06a">TASK_STATE_COUNT</a></div><div class="ttdeci">@ TASK_STATE_COUNT</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dbd/tasks_8hpp_source.html#l00027">tasks.hpp:27</a></div></div>
-<div class="ttc" id="atasks_8cpp_html_a28a181f075e53e9f4a57998ca5a2b399"><div class="ttname"><a href="../../d5/d9d/tasks_8cpp.html#a28a181f075e53e9f4a57998ca5a2b399">_tasks_enqueue_ready</a></div><div class="ttdeci">void _tasks_enqueue_ready(struct task *task)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d9d/tasks_8cpp_source.html#l00275">tasks.cpp:275</a></div></div>
-<div class="ttc" id="atasks_8cpp_html_a525bc038ba8fbd7178e3b3d20f866af0"><div class="ttname"><a href="../../d5/d9d/tasks_8cpp.html#a525bc038ba8fbd7178e3b3d20f866af0">TASK_ACTION</a></div><div class="ttdeci">#define TASK_ACTION(action, task)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d9d/tasks_8cpp_source.html#l00120">tasks.cpp:120</a></div></div>
+<div class="ttc" id="atasks_8cpp_html_a28a181f075e53e9f4a57998ca5a2b399"><div class="ttname"><a href="../../d5/d9d/tasks_8cpp.html#a28a181f075e53e9f4a57998ca5a2b399">_tasks_enqueue_ready</a></div><div class="ttdeci">void _tasks_enqueue_ready(struct task *task)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d9d/tasks_8cpp_source.html#l00277">tasks.cpp:277</a></div></div>
+<div class="ttc" id="atasks_8cpp_html_a525bc038ba8fbd7178e3b3d20f866af0"><div class="ttname"><a href="../../d5/d9d/tasks_8cpp.html#a525bc038ba8fbd7178e3b3d20f866af0">TASK_ACTION</a></div><div class="ttdeci">#define TASK_ACTION(action, task)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d9d/tasks_8cpp_source.html#l00122">tasks.cpp:122</a></div></div>
 <div class="ttc" id="atasks_8hpp_html_ab3c4cf018b280f12e3726184a945728c"><div class="ttname"><a href="../../d2/dbd/tasks_8hpp.html#ab3c4cf018b280f12e3726184a945728c">TIME_SLICE_SIZE</a></div><div class="ttdeci">#define TIME_SLICE_SIZE</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dbd/tasks_8hpp_source.html#l00017">tasks.hpp:17</a></div></div>
-<div class="ttc" id="atasks_8cpp_html_a65c4921579a6bad97c037bc8db69fb26"><div class="ttname"><a href="../../d5/d9d/tasks_8cpp.html#a65c4921579a6bad97c037bc8db69fb26">tasks_new</a></div><div class="ttdeci">struct task * tasks_new(void(*entry)(void), struct task *storage, task_state state, const char *name)</div><div class="ttdoc">Creates a new kernel task with a provided entry point, register storage struct, and task state struct...</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d9d/tasks_8cpp_source.html#l00285">tasks.cpp:285</a></div></div>
+<div class="ttc" id="atasks_8cpp_html_a65c4921579a6bad97c037bc8db69fb26"><div class="ttname"><a href="../../d5/d9d/tasks_8cpp.html#a65c4921579a6bad97c037bc8db69fb26">tasks_new</a></div><div class="ttdeci">struct task * tasks_new(void(*entry)(void), struct task *storage, task_state state, const char *name)</div><div class="ttdoc">Creates a new kernel task with a provided entry point, register storage struct, and task state struct...</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d9d/tasks_8cpp_source.html#l00287">tasks.cpp:287</a></div></div>
 <div class="ttc" id="atasks_8hpp_html_a46c7ab5dd73831ee98458db0a68fc4a2a9bd2895158d9e7c8cf80b57659fcba50"><div class="ttname"><a href="../../d2/dbd/tasks_8hpp.html#a46c7ab5dd73831ee98458db0a68fc4a2a9bd2895158d9e7c8cf80b57659fcba50">TASK_RUNNING</a></div><div class="ttdeci">@ TASK_RUNNING</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dbd/tasks_8hpp_source.html#l00021">tasks.hpp:21</a></div></div>
 <div class="ttc" id="atasks_8hpp_html_a46c7ab5dd73831ee98458db0a68fc4a2a52340c1844b9c87b6c965569f21d72f1"><div class="ttname"><a href="../../d2/dbd/tasks_8hpp.html#a46c7ab5dd73831ee98458db0a68fc4a2a52340c1844b9c87b6c965569f21d72f1">TASK_STOPPED</a></div><div class="ttdeci">@ TASK_STOPPED</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dbd/tasks_8hpp_source.html#l00025">tasks.hpp:25</a></div></div>
 <div class="ttc" id="astructtask_html_ac52da3250648a75f90719ffd5d3f3535"><div class="ttname"><a href="../../db/da2/structtask.html#ac52da3250648a75f90719ffd5d3f3535">task::stack_top</a></div><div class="ttdeci">uintptr_t stack_top</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dbd/tasks_8hpp_source.html#l00034">tasks.hpp:34</a></div></div>
 <div class="ttc" id="atasks_8hpp_html_a46c7ab5dd73831ee98458db0a68fc4a2a70c1246153ef112b1baa60e2f6e36cd3"><div class="ttname"><a href="../../d2/dbd/tasks_8hpp.html#a46c7ab5dd73831ee98458db0a68fc4a2a70c1246153ef112b1baa60e2f6e36cd3">TASK_PAUSED</a></div><div class="ttdeci">@ TASK_PAUSED</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dbd/tasks_8hpp_source.html#l00026">tasks.hpp:26</a></div></div>
-<div class="ttc" id="apaging_8cpp_html_a1f827ef8d99028d46133fb5ca4f9c89a"><div class="ttname"><a href="../../d1/d5e/paging_8cpp.html#a1f827ef8d99028d46133fb5ca4f9c89a">get_new_page</a></div><div class="ttdeci">void * get_new_page(uint32_t size)</div><div class="ttdoc">Returns a new page in memory for use.</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d5e/paging_8cpp_source.html#l00218">paging.cpp:218</a></div></div>
+<div class="ttc" id="anamespace_paging_html_a19aea121a6e5462b78eba2176a43f1bd"><div class="ttname"><a href="../../d2/d46/namespace_paging.html#a19aea121a6e5462b78eba2176a43f1bd">Paging::getPageDirPhysAddr</a></div><div class="ttdeci">uint32_t getPageDirPhysAddr()</div><div class="ttdoc">Gets the physical address of the current page directory.</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d5e/paging_8cpp_source.html#l00265">paging.cpp:265</a></div></div>
 <div class="ttc" id="astructtask_html_a665dc156ee4493d4541bc117bd657d67"><div class="ttname"><a href="../../db/da2/structtask.html#a665dc156ee4493d4541bc117bd657d67">task::state</a></div><div class="ttdeci">task_state state</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dbd/tasks_8hpp_source.html#l00037">tasks.hpp:37</a></div></div>
+<div class="ttc" id="anamespace_paging_html_a7719e756c617d0bafd750620a306612c"><div class="ttname"><a href="../../d2/d46/namespace_paging.html#a7719e756c617d0bafd750620a306612c">Paging::newPage</a></div><div class="ttdeci">void * newPage(uint32_t size)</div><div class="ttdoc">Returns a new page in memory for use. If less than one page is requested, exactly one page will be al...</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d5e/paging_8cpp_source.html#l00219">paging.cpp:219</a></div></div>
 <div class="ttc" id="astructtask_html_ac8757d0d71961fb132be5811ec283976"><div class="ttname"><a href="../../db/da2/structtask.html#ac8757d0d71961fb132be5811ec283976">task::wakeup_time</a></div><div class="ttdeci">uint64_t wakeup_time</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dbd/tasks_8hpp_source.html#l00039">tasks.hpp:39</a></div></div>
 <div class="ttc" id="astructtask_html_a83a6cca985649416b9cbb05a39b8d3f2"><div class="ttname"><a href="../../db/da2/structtask.html#a83a6cca985649416b9cbb05a39b8d3f2">task::name</a></div><div class="ttdeci">const char * name</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dbd/tasks_8hpp_source.html#l00040">tasks.hpp:40</a></div></div>
-<div class="ttc" id="a_arch_8hpp_html_a989b3cb2d90490770f9c9c030acb1ba5"><div class="ttname"><a href="../../d7/d9c/_arch_8hpp.html#a989b3cb2d90490770f9c9c030acb1ba5">PANIC</a></div><div class="ttdeci">#define PANIC(x)</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d9c/_arch_8hpp_source.html#l00034">Arch.hpp:34</a></div></div>
+<div class="ttc" id="a_arch_8hpp_html_a989b3cb2d90490770f9c9c030acb1ba5"><div class="ttname"><a href="../../d7/d9c/_arch_8hpp.html#a989b3cb2d90490770f9c9c030acb1ba5">PANIC</a></div><div class="ttdeci">#define PANIC(x)</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d9c/_arch_8hpp_source.html#l00041">Arch.hpp:41</a></div></div>
 <div class="ttc" id="astructtask_html_a0b3d1736151c761dbbb49170ca13ad26"><div class="ttname"><a href="../../db/da2/structtask.html#a0b3d1736151c761dbbb49170ca13ad26">task::page_dir</a></div><div class="ttdeci">uintptr_t page_dir</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dbd/tasks_8hpp_source.html#l00035">tasks.hpp:35</a></div></div>
 <div class="ttc" id="aheap_8hpp_html_a1c8580582aae58105f16108d4ec89e9a"><div class="ttname"><a href="../../da/d45/heap_8hpp.html#a1c8580582aae58105f16108d4ec89e9a">malloc</a></div><div class="ttdeci">void * malloc(size_t)</div></div>
-<div class="ttc" id="atasks_8cpp_html_a1280b6050df9305a3afc0b8f609e581c"><div class="ttname"><a href="../../d5/d9d/tasks_8cpp.html#a1280b6050df9305a3afc0b8f609e581c">tasks_nano_sleep_until</a></div><div class="ttdeci">void tasks_nano_sleep_until(uint64_t time)</div><div class="ttdoc">Sleeps until the provided absolute time (in nanoseconds).</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d9d/tasks_8cpp_source.html#l00491">tasks.cpp:491</a></div></div>
-<div class="ttc" id="atasks_8cpp_html_a2c709360390e2764996020567dd70dfd"><div class="ttname"><a href="../../d5/d9d/tasks_8cpp.html#a2c709360390e2764996020567dd70dfd">_wakeup</a></div><div class="ttdeci">void _wakeup(struct task *task)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d9d/tasks_8cpp_source.html#l00437">tasks.cpp:437</a></div></div>
-<div class="ttc" id="atasks_8cpp_html_a9f6cf565fea5037efb7f971337abaf12"><div class="ttname"><a href="../../d5/d9d/tasks_8cpp.html#a9f6cf565fea5037efb7f971337abaf12">current_task</a></div><div class="ttdeci">struct task * current_task</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d9d/tasks_8cpp_source.html#l00036">tasks.cpp:36</a></div></div>
+<div class="ttc" id="a_arch_8i386_8hpp_html_acd327ff534c65e3c5772a67d62d74ca0"><div class="ttname"><a href="../../dd/de9/_arch_8i386_8hpp.html#acd327ff534c65e3c5772a67d62d74ca0">ARCH_PAGE_SIZE</a></div><div class="ttdeci">#define ARCH_PAGE_SIZE</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/de9/_arch_8i386_8hpp_source.html#l00018">Arch.i386.hpp:18</a></div></div>
+<div class="ttc" id="atasks_8cpp_html_a1280b6050df9305a3afc0b8f609e581c"><div class="ttname"><a href="../../d5/d9d/tasks_8cpp.html#a1280b6050df9305a3afc0b8f609e581c">tasks_nano_sleep_until</a></div><div class="ttdeci">void tasks_nano_sleep_until(uint64_t time)</div><div class="ttdoc">Sleeps until the provided absolute time (in nanoseconds).</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d9d/tasks_8cpp_source.html#l00490">tasks.cpp:490</a></div></div>
+<div class="ttc" id="atasks_8cpp_html_a2c709360390e2764996020567dd70dfd"><div class="ttname"><a href="../../d5/d9d/tasks_8cpp.html#a2c709360390e2764996020567dd70dfd">_wakeup</a></div><div class="ttdeci">void _wakeup(struct task *task)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d9d/tasks_8cpp_source.html#l00436">tasks.cpp:436</a></div></div>
+<div class="ttc" id="atasks_8cpp_html_a9f6cf565fea5037efb7f971337abaf12"><div class="ttname"><a href="../../d5/d9d/tasks_8cpp.html#a9f6cf565fea5037efb7f971337abaf12">current_task</a></div><div class="ttdeci">struct task * current_task</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d9d/tasks_8cpp_source.html#l00038">tasks.cpp:38</a></div></div>
 <div class="ttc" id="astructtask_html_a3f2c7149983c28824baf1aebdfa7af98"><div class="ttname"><a href="../../db/da2/structtask.html#a3f2c7149983c28824baf1aebdfa7af98">task::next</a></div><div class="ttdeci">struct task * next</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dbd/tasks_8hpp_source.html#l00036">tasks.hpp:36</a></div></div>
 <div class="ttc" id="atasks_8hpp_html_a46c7ab5dd73831ee98458db0a68fc4a2a108284117a3f463352658a08930a3888"><div class="ttname"><a href="../../d2/dbd/tasks_8hpp.html#a46c7ab5dd73831ee98458db0a68fc4a2a108284117a3f463352658a08930a3888">TASK_BLOCKED</a></div><div class="ttdeci">@ TASK_BLOCKED</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dbd/tasks_8hpp_source.html#l00024">tasks.hpp:24</a></div></div>
-<div class="ttc" id="atasks_8cpp_html_ae954d27107c4990313982108234cae5d"><div class="ttname"><a href="../../d5/d9d/tasks_8cpp.html#ae954d27107c4990313982108234cae5d">tasks_block_current</a></div><div class="ttdeci">void tasks_block_current(task_state reason)</div><div class="ttdoc">Blocks the current task.</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d9d/tasks_8cpp_source.html#l00419">tasks.cpp:419</a></div></div>
+<div class="ttc" id="atasks_8cpp_html_ae954d27107c4990313982108234cae5d"><div class="ttname"><a href="../../d5/d9d/tasks_8cpp.html#ae954d27107c4990313982108234cae5d">tasks_block_current</a></div><div class="ttdeci">void tasks_block_current(task_state reason)</div><div class="ttdoc">Blocks the current task.</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d9d/tasks_8cpp_source.html#l00418">tasks.cpp:418</a></div></div>
 <div class="ttc" id="anamespace_r_s232_html_a394b7ac1c601a47c2881a460eb41171a"><div class="ttname"><a href="../../d7/d75/namespace_r_s232.html#a394b7ac1c601a47c2881a460eb41171a">RS232::printf</a></div><div class="ttdeci">int printf(const char *format,...)</div><div class="ttdoc">Prints a formatted string to serial output.</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dc7/rs232_8cpp_source.html#l00080">rs232.cpp:80</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

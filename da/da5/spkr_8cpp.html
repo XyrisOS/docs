@@ -91,6 +91,7 @@ $(document).ready(function(){initNavTree('da/da5/spkr_8cpp.html','../../'); init
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="../../d7/d9c/_arch_8hpp_source.html">arch/Arch.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../da/d1a/spkr_8hpp_source.html">dev/spkr/spkr.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="../../df/d05/timer_8hpp_source.html">arch/i386/timer.hpp</a>&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Include dependency graph for spkr.cpp:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -98,12 +99,18 @@ $(document).ready(function(){initNavTree('da/da5/spkr_8cpp.html','../../'); init
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="../../d4/d99/spkr_8cpp__incl.png" border="0" usemap="#spkr_8cpp" alt=""/></div>
 <map name="spkr_8cpp" id="spkr_8cpp">
-<area shape="rect" title=" " alt="" coords="207,5,283,32"/>
-<area shape="rect" href="../../d7/d9c/_arch_8hpp.html" title="Computer architecture initialization definitions." alt="" coords="117,80,227,107"/>
-<area shape="rect" href="../../da/d1a/spkr_8hpp.html" title=" " alt="" coords="251,80,389,107"/>
-<area shape="rect" title=" " alt="" coords="5,155,80,181"/>
-<area shape="rect" title=" " alt="" coords="281,155,351,181"/>
-<area shape="rect" href="../../d2/d3d/compiler_8hpp.html" title="Compiler meta directives." alt="" coords="104,155,248,181"/>
+<area shape="rect" title=" " alt="" coords="279,5,355,32"/>
+<area shape="rect" href="../../d7/d9c/_arch_8hpp.html" title="Computer architecture initialization definitions." alt="" coords="869,229,980,256"/>
+<area shape="rect" href="../../da/d1a/spkr_8hpp.html" title=" " alt="" coords="5,155,143,181"/>
+<area shape="rect" href="../../df/d05/timer_8hpp.html" title=" " alt="" coords="243,80,391,107"/>
+<area shape="rect" href="../../d2/d3d/compiler_8hpp.html" title="Compiler meta directives." alt="" coords="853,304,997,331"/>
+<area shape="rect" title=" " alt="" coords="737,304,811,331"/>
+<area shape="rect" title=" " alt="" coords="411,304,481,331"/>
+<area shape="rect" href="../../dd/de9/_arch_8i386_8hpp.html" title="i386 architecture implementation of Arch.hpp" alt="" coords="359,155,533,181"/>
+<area shape="rect" href="../../d9/d4f/_memory_8hpp.html" title="Architecture memory management API." alt="" coords="544,229,679,256"/>
+<area shape="rect" href="../../d8/dfb/regs_8hpp.html" title=" " alt="" coords="703,229,845,256"/>
+<area shape="rect" href="../../d8/d9f/ports_8hpp.html" title="Ports header file. Provides inline functions for getting and setting values at different ports...." alt="" coords="373,229,519,256"/>
+<area shape="rect" href="../../d4/ddc/isr_8hpp.html" title="Interrupt Service Routine header." alt="" coords="219,229,348,256"/>
 </map>
 </div>
 </div>
@@ -157,19 +164,20 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../da/da5/spkr_8cpp_source.html#l00035">35</a> of file <a class="el" href="../../da/da5/spkr_8cpp_source.html">spkr.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                                           {</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    spkr_tone(freq);</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <a class="code" href="../../dc/de5/timer_8cpp.html#aaa6c98e94749593031e039d184db09f4">sleep</a>(ms);</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    spkr_stop();</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="comment">// set_PIT_2(old_frequency);</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../da/da5/spkr_8cpp_source.html#l00036">36</a> of file <a class="el" href="../../da/da5/spkr_8cpp_source.html">spkr.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                                           {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    spkr_tone(freq);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="comment">// TODO: Change this to task sleep</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="../../dc/de5/timer_8cpp.html#aaa6c98e94749593031e039d184db09f4">sleep</a>(ms);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    spkr_stop();</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="comment">// set_PIT_2(old_frequency);</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="atimer_8cpp_html_aaa6c98e94749593031e039d184db09f4"><div class="ttname"><a href="../../dc/de5/timer_8cpp.html#aaa6c98e94749593031e039d184db09f4">sleep</a></div><div class="ttdeci">void sleep(uint32_t ms)</div><div class="ttdoc">Sleeps for a certain length of time.</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/de5/timer_8cpp_source.html#l00051">timer.cpp:51</a></div></div>
+<div class="ttc" id="atimer_8cpp_html_aaa6c98e94749593031e039d184db09f4"><div class="ttname"><a href="../../dc/de5/timer_8cpp.html#aaa6c98e94749593031e039d184db09f4">sleep</a></div><div class="ttdeci">void sleep(uint32_t ms)</div><div class="ttdoc">Sleeps for a certain length of time.</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/de5/timer_8cpp_source.html#l00052">timer.cpp:52</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['apps_921',['Apps',['../dc/da3/namespace_apps.html',1,'']]],
-  ['arch_922',['Arch',['../d9/dc3/namespace_arch.html',1,'']]]
+  ['apps_874',['Apps',['../dc/da3/namespace_apps.html',1,'']]],
+  ['arch_875',['Arch',['../d9/dc3/namespace_arch.html',1,'']]],
+  ['cpu_876',['CPU',['../d9/d7a/namespace_arch_1_1_c_p_u.html',1,'Arch']]],
+  ['memory_877',['Memory',['../dd/d0e/namespace_arch_1_1_memory.html',1,'Arch']]]
 ];

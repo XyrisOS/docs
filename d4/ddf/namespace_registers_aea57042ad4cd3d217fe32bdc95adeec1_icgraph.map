@@ -1,5 +1,5 @@
 <map id="Registers::readCR0" name="Registers::readCR0">
-<area shape="rect" id="node1" title=" " alt="" coords="205,31,352,57"/>
-<area shape="rect" id="node2" href="$d9/dc3/namespace_arch.html#a287e1a6078785463ae3b2548b7816463" title=" " alt="" coords="5,5,157,32"/>
-<area shape="rect" id="node3" href="$d9/dc3/namespace_arch.html#a7de730d1ad36442850e24c8f70a71025" title=" " alt="" coords="8,56,155,83"/>
+<area shape="rect" id="node1" title=" " alt="" coords="267,31,413,57"/>
+<area shape="rect" id="node2" href="$dd/d0e/namespace_arch_1_1_memory.html#ad4d3a669c172e1442fe3e2afe8d16172" title="Disable hardware paging." alt="" coords="5,5,219,32"/>
+<area shape="rect" id="node3" href="$dd/d0e/namespace_arch_1_1_memory.html#a3ba8a1ea0a34ad98b2f304fbbda48b0a" title="Enable hardware paging." alt="" coords="8,56,216,83"/>
 </map>

@@ -1,4 +1,4 @@
 <map id="liballoc_free" name="liballoc_free">
 <area shape="rect" id="node1" title="This frees previously allocated memory. The void* parameter passed to the function is the exact same ..." alt="" coords="5,5,108,32"/>
-<area shape="rect" id="node2" href="$d1/d5e/paging_8cpp.html#ac697ce3c1269d13f947a83e69c6c7e70" title="Frees pages starting at a given page address." alt="" coords="156,5,243,32"/>
+<area shape="rect" id="node2" href="$d2/d46/namespace_paging.html#af8fcfcce169914b57d2d7ba7b2b18310" title="Frees pages starting at a given page address." alt="" coords="156,5,287,32"/>
 </map>

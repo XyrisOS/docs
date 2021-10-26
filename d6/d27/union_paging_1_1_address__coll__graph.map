@@ -1,0 +1,5 @@
+<map id="Paging::Address" name="Paging::Address">
+<area shape="rect" id="node1" title="Address union. Represents a memory address that can be used to address a page in virtual memory,..." alt="" coords="61,95,187,121"/>
+<area shape="rect" id="node2" href="$da/de8/struct_paging_1_1_page.html" title="Virtual address structure. Represents an address in virtual memory that redirects to a physical page ..." alt="" coords="5,5,109,32"/>
+<area shape="rect" id="node3" href="$d8/dd2/struct_paging_1_1_frame.html" title="Page frame structure. This represents a the address to a single unit of memory in RAM...." alt="" coords="133,5,248,32"/>
+</map>

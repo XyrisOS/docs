@@ -1,4 +1,0 @@
-<map id="map_kernel_range_virtual" name="map_kernel_range_virtual">
-<area shape="rect" id="node1" title="Map an address range into the kernel virtual address space." alt="" coords="161,5,352,32"/>
-<area shape="rect" id="node2" href="$d6/d9b/namespace_graphics.html#a07a66de579f4136325cb15218dd71110" title="Initializes the framebuffer (if available)" alt="" coords="5,5,113,32"/>
-</map>

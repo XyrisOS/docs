@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['yellow_1601',['Yellow',['../d8/db5/namespace_console.html#a135ef081521e01318dac5033197c6509aa6b22ea45b47897b6095e8c60de6cfb0',1,'Console']]]
+  ['undefined_5ffbmm_1571',['Undefined_FBMM',['../d6/d9b/namespace_graphics.html#a504dfc028c1d2f4ec0c4bf4ec2cbe7f8abdf7b031f75c8ccb3bc0b6e2e192088c',1,'Graphics']]],
+  ['unknown_1572',['Unknown',['../db/d2f/namespace_memory.html#a9193c3e610b1728964440284db90c812ab15579bc806f8bccdcf34c1f77aec071',1,'Memory']]]
 ];

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['red_1572',['Red',['../d8/db5/namespace_console.html#a135ef081521e01318dac5033197c6509afa3a7b3bfe4bfc5b938876e7d5dfe29e',1,'Console']]],
-  ['rgb_5ffbmm_1573',['RGB_FBMM',['../d6/d9b/namespace_graphics.html#a504dfc028c1d2f4ec0c4bf4ec2cbe7f8ab2b7a537b21da70d873ba42ebfac0de5',1,'Graphics']]]
+  ['magenta_1555',['Magenta',['../d8/db5/namespace_console.html#a135ef081521e01318dac5033197c6509a55345fd27bd18ab82b8686d81f8ddaa1',1,'Console']]],
+  ['multiboot2_1556',['Multiboot2',['../da/d80/namespace_boot.html#a43a46383cc6356be2c30e027f54ef211a2237657c74fef504396e6f9bde8aac80',1,'Boot']]]
 ];

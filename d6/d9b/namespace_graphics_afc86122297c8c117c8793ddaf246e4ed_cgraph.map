@@ -1,0 +1,10 @@
+<map id="Graphics::init" name="Graphics::init">
+<area shape="rect" id="node1" title="Initializes the framebuffer (if available)" alt="" coords="5,173,113,199"/>
+<area shape="rect" id="node2" href="$d0/dcb/class_graphics_1_1_framebuffer.html#af62e5c11c830410a3213e2b17075b158" title=" " alt="" coords="191,5,358,47"/>
+<area shape="rect" id="node3" href="$d0/dcb/class_graphics_1_1_framebuffer.html#a1056e91da94b6937b0a6deeb3a859368" title=" " alt="" coords="191,71,358,112"/>
+<area shape="rect" id="node4" href="$d0/dcb/class_graphics_1_1_framebuffer.html#a4b6694a0728b42872a51eb15a631cd51" title=" " alt="" coords="191,136,358,177"/>
+<area shape="rect" id="node5" href="$da/d45/heap_8hpp.html#a1c8580582aae58105f16108d4ec89e9a" title=" " alt="" coords="241,202,308,229"/>
+<area shape="rect" id="node6" href="$d2/d46/namespace_paging.html#affcd08d96e918de6b8535681c232e485" title="Map an address range into the kernel virtual address space." alt="" coords="161,253,388,279"/>
+<area shape="rect" id="node8" href="$d5/d24/string_8cpp.html#a370712322c794e949c996946f2283ea8" title=" " alt="" coords="235,303,314,330"/>
+<area shape="rect" id="node7" href="$d2/d46/namespace_paging.html#a0f248342ae645da1817c3bd94f984bd2" title="Map a page into the kernel address space." alt="" coords="436,253,611,279"/>
+</map>

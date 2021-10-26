@@ -1,4 +1,6 @@
 <map id="Boot::Handoff" name="Boot::Handoff">
-<area shape="rect" id="node1" title=" " alt="" coords="33,95,144,121"/>
-<area shape="rect" id="node2" href="$d0/dcb/class_graphics_1_1_framebuffer.html" title=" " alt="" coords="5,5,172,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="129,184,239,211"/>
+<area shape="rect" id="node2" href="$d0/dea/class_memory_1_1_memory_map.html" title=" " alt="" coords="5,95,171,121"/>
+<area shape="rect" id="node3" href="$d8/d7f/class_memory_1_1_section.html" title=" " alt="" coords="23,5,153,32"/>
+<area shape="rect" id="node4" href="$d0/dcb/class_graphics_1_1_framebuffer.html" title=" " alt="" coords="195,95,362,121"/>
 </map>

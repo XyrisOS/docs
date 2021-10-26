@@ -1,0 +1,4 @@
+<map id="Paging::mapKernelRangeVirtual" name="Paging::mapKernelRangeVirtual">
+<area shape="rect" id="node1" title="Map an address range into the kernel virtual address space." alt="" coords="161,5,388,32"/>
+<area shape="rect" id="node2" href="$d6/d9b/namespace_graphics.html#afc86122297c8c117c8793ddaf246e4ed" title="Initializes the framebuffer (if available)" alt="" coords="5,5,113,32"/>
+</map>

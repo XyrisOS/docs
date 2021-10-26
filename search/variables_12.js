@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['unused_1476',['unused',['../d0/d0c/structpage__table__entry.html#a5702fa95b2a9c895af7793ec43676177',1,'page_table_entry']]],
-  ['usermode_1477',['usermode',['../d0/d0c/structpage__table__entry.html#a83704a0e0a60524e5bba17896b9c9207',1,'page_table_entry::usermode()'],['../dd/df9/structpage__directory__entry.html#ab5bece4c8b82a7d8065a3c9c3bb27a1f',1,'page_directory_entry::usermode()']]]
+  ['unused_1452',['unused',['../d0/db5/struct_paging_1_1_table_entry.html#a8d7c08b648a22e1591228931e6dc2ab2',1,'Paging::TableEntry']]],
+  ['usermode_1453',['usermode',['../d0/db5/struct_paging_1_1_table_entry.html#aefc7a570a10d76be4f2a18207a6b7f46',1,'Paging::TableEntry::usermode()'],['../d2/d3e/struct_paging_1_1_directory_entry.html#a76da285f44462557175749963ce17131',1,'Paging::DirectoryEntry::usermode()']]]
 ];

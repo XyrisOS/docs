@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['normal_1571',['Normal',['../d8/db5/namespace_console.html#ad696fde192397acdac453250261b267caab0e3e75783ccf0126f88421a1c0ae9c',1,'Console']]]
+  ['locktaken_1554',['LockTaken',['../d7/dae/errno_8hpp.html#a82793c1b9a6e2dcb6ebce9828aa9e89cab6209f787f748c204a156f7fc11095fd',1,'errno.hpp']]]
 ];

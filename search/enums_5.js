@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['task_5falloc_1496',['task_alloc',['../d2/dbd/tasks_8hpp.html#ac7aaa4c0605984fc6b92a727881b8707',1,'tasks.hpp']]],
-  ['task_5fstate_1497',['task_state',['../d2/dbd/tasks_8hpp.html#a46c7ab5dd73831ee98458db0a68fc4a2',1,'tasks.hpp']]]
+  ['kernelerror_1471',['KernelError',['../d7/dae/errno_8hpp.html#a82793c1b9a6e2dcb6ebce9828aa9e89c',1,'errno.hpp']]]
 ];

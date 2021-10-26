@@ -89,7 +89,7 @@ $(document).ready(function(){initNavTree('de/d90/heap_8cpp.html','../../'); init
 <div class="title">heap.cpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="../../d8/dc2/errno_8h_source.html">lib/errno.h</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="../../d7/dae/errno_8hpp_source.html">lib/errno.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../d8/da6/mutex_8hpp_source.html">lib/mutex.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../da/d45/heap_8hpp_source.html">mem/heap.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../d1/d75/paging_8hpp_source.html">mem/paging.hpp</a>&gt;</code><br />
@@ -101,16 +101,18 @@ $(document).ready(function(){initNavTree('de/d90/heap_8cpp.html','../../'); init
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="../../d5/d4c/heap_8cpp__incl.png" border="0" usemap="#heap_8cpp" alt=""/></div>
 <map name="heap_8cpp" id="heap_8cpp">
-<area shape="rect" title="Liballoc heap implementation." alt="" coords="231,5,313,32"/>
-<area shape="rect" href="../../d8/dc2/errno_8h.html" title="POSIX error number header." alt="" coords="5,80,93,107"/>
-<area shape="rect" href="../../d8/da6/mutex_8hpp.html" title=" " alt="" coords="117,80,229,107"/>
-<area shape="rect" title=" " alt="" coords="348,379,423,405"/>
-<area shape="rect" href="../../d1/d75/paging_8hpp.html" title=" " alt="" coords="206,229,338,256"/>
-<area shape="rect" href="../../da/d45/heap_8hpp.html" title="Liballoc heap implementation." alt="" coords="428,155,548,181"/>
-<area shape="rect" title=" " alt="" coords="74,379,145,405"/>
-<area shape="rect" href="../../d2/dbd/tasks_8hpp.html" title=" " alt="" coords="115,155,226,181"/>
-<area shape="rect" href="../../d7/d9c/_arch_8hpp.html" title="Computer architecture initialization definitions." alt="" coords="191,304,302,331"/>
-<area shape="rect" href="../../d2/d3d/compiler_8hpp.html" title="Compiler meta directives." alt="" coords="175,379,319,405"/>
+<area shape="rect" title="Liballoc heap implementation." alt="" coords="267,5,349,32"/>
+<area shape="rect" href="../../d7/dae/errno_8hpp.html" title="Kernel error definitions." alt="" coords="5,80,109,107"/>
+<area shape="rect" href="../../d8/da6/mutex_8hpp.html" title=" " alt="" coords="133,80,245,107"/>
+<area shape="rect" title=" " alt="" coords="527,453,601,480"/>
+<area shape="rect" href="../../d1/d75/paging_8hpp.html" title=" " alt="" coords="242,229,374,256"/>
+<area shape="rect" href="../../da/d45/heap_8hpp.html" title="Liballoc heap implementation." alt="" coords="488,155,608,181"/>
+<area shape="rect" title=" " alt="" coords="127,453,198,480"/>
+<area shape="rect" href="../../d2/dbd/tasks_8hpp.html" title=" " alt="" coords="121,155,231,181"/>
+<area shape="rect" href="../../d7/d9c/_arch_8hpp.html" title="Computer architecture initialization definitions." alt="" coords="201,379,311,405"/>
+<area shape="rect" href="../../d2/d3d/compiler_8hpp.html" title="Compiler meta directives." alt="" coords="291,453,435,480"/>
+<area shape="rect" href="../../d6/dc1/_memory_map_8hpp.html" title="Memory map containing a number of Memory sections that describe the physical memory layout." alt="" coords="304,304,475,331"/>
+<area shape="rect" href="../../d0/d91/_memory_section_8hpp.html" title=" " alt="" coords="335,379,526,405"/>
 </map>
 </div>
 </div>
@@ -124,7 +126,7 @@ Functions</h2></td></tr>
 <tr class="separator:aedc23f198b2882d41d0caa316453967b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad5ed909c41e77539d593dfada6fd5024"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d90/heap_8cpp.html#ad5ed909c41e77539d593dfada6fd5024">liballoc_alloc</a> (unsigned int count)</td></tr>
 <tr class="separator:ad5ed909c41e77539d593dfada6fd5024"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab960c2afdba023ada594c57e8fe9ed8b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d90/heap_8cpp.html#ab960c2afdba023ada594c57e8fe9ed8b">liballoc_free</a> (void *<a class="el" href="../../d7/d1a/structpage.html">page</a>, unsigned int count)</td></tr>
+<tr class="memitem:ab960c2afdba023ada594c57e8fe9ed8b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d90/heap_8cpp.html#ab960c2afdba023ada594c57e8fe9ed8b">liballoc_free</a> (void *page, unsigned int count)</td></tr>
 <tr class="separator:ab960c2afdba023ada594c57e8fe9ed8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -157,10 +159,10 @@ Functions</h2></td></tr>
 <dd>
 A pointer to the allocated memory. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d90/heap_8cpp_source.html#l00038">38</a> of file <a class="el" href="../../de/d90/heap_8cpp_source.html">heap.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;{</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../d1/d5e/paging_8cpp.html#a1f827ef8d99028d46133fb5ca4f9c89a">get_new_page</a>(count * <a class="code" href="../../d1/d75/paging_8hpp.html#a7d467c1d283fdfa1f2081ba1e0d01b6e">PAGE_SIZE</a> - 1);</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../de/d90/heap_8cpp_source.html#l00031">31</a> of file <a class="el" href="../../de/d90/heap_8cpp_source.html">heap.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;{</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../d2/d46/namespace_paging.html#a7719e756c617d0bafd750620a306612c">Paging::newPage</a>(count * <a class="code" href="../../dd/de9/_arch_8i386_8hpp.html#acd327ff534c65e3c5772a67d62d74ca0">ARCH_PAGE_SIZE</a> - 1);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;}</div>
 </div><!-- fragment --><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -168,8 +170,11 @@ A pointer to the allocated memory. </dd></dl>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="../../de/d90/heap_8cpp_ad5ed909c41e77539d593dfada6fd5024_cgraph.png" border="0" usemap="#de/d90/heap_8cpp_ad5ed909c41e77539d593dfada6fd5024_cgraph" alt=""/></div>
 <map name="de/d90/heap_8cpp_ad5ed909c41e77539d593dfada6fd5024_cgraph" id="de/d90/heap_8cpp_ad5ed909c41e77539d593dfada6fd5024_cgraph">
-<area shape="rect" title="This is the hook into the local system which allocates pages. It accepts an integer parameter which i..." alt="" coords="5,5,112,32"/>
-<area shape="rect" href="../../d1/d5e/paging_8cpp.html#a1f827ef8d99028d46133fb5ca4f9c89a" title="Returns a new page in memory for use." alt="" coords="160,5,276,32"/>
+<area shape="rect" title="This is the hook into the local system which allocates pages. It accepts an integer parameter which i..." alt="" coords="5,31,112,57"/>
+<area shape="rect" href="../../d2/d46/namespace_paging.html#a7719e756c617d0bafd750620a306612c" title="Returns a new page in memory for use. If less than one page is requested, exactly one page will be al..." alt="" coords="160,31,291,57"/>
+<area shape="rect" href="../../d4/de8/class_mutex.html#aa732ae651974555965dcaf9ad9e87882" title="Locks a provided mutex. This call will block if the mutex is already locked." alt="" coords="375,5,477,32"/>
+<area shape="rect" href="../../d2/d46/namespace_paging.html#a0f248342ae645da1817c3bd94f984bd2" title="Map a page into the kernel address space." alt="" coords="339,56,513,83"/>
+<area shape="rect" href="../../d5/d9d/tasks_8cpp.html#a2432c50b4d4264b5d5295bdb4f19e0d2" title=" " alt="" coords="561,5,697,32"/>
 </map>
 </div>
 
@@ -205,11 +210,11 @@ A pointer to the allocated memory. </dd></dl>
 <p>The integer value is the number of pages to free.</p>
 <dl class="section return"><dt>Returns</dt><dd>0 if the memory was successfully freed. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d90/heap_8cpp_source.html#l00043">43</a> of file <a class="el" href="../../de/d90/heap_8cpp_source.html">heap.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;{</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="../../d1/d5e/paging_8cpp.html#ac697ce3c1269d13f947a83e69c6c7e70">free_page</a>(<a class="code" href="../../d7/d1a/structpage.html">page</a>, count * <a class="code" href="../../d1/d75/paging_8hpp.html#a7d467c1d283fdfa1f2081ba1e0d01b6e">PAGE_SIZE</a> - 1);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../de/d90/heap_8cpp_source.html#l00036">36</a> of file <a class="el" href="../../de/d90/heap_8cpp_source.html">heap.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;{</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="../../d2/d46/namespace_paging.html#af8fcfcce169914b57d2d7ba7b2b18310">Paging::freePage</a>(page, count * <a class="code" href="../../dd/de9/_arch_8i386_8hpp.html#acd327ff534c65e3c5772a67d62d74ca0">ARCH_PAGE_SIZE</a> - 1);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;}</div>
 </div><!-- fragment --><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -218,7 +223,7 @@ A pointer to the allocated memory. </dd></dl>
 <div class="center"><img src="../../de/d90/heap_8cpp_ab960c2afdba023ada594c57e8fe9ed8b_cgraph.png" border="0" usemap="#de/d90/heap_8cpp_ab960c2afdba023ada594c57e8fe9ed8b_cgraph" alt=""/></div>
 <map name="de/d90/heap_8cpp_ab960c2afdba023ada594c57e8fe9ed8b_cgraph" id="de/d90/heap_8cpp_ab960c2afdba023ada594c57e8fe9ed8b_cgraph">
 <area shape="rect" title="This frees previously allocated memory. The void* parameter passed to the function is the exact same ..." alt="" coords="5,5,108,32"/>
-<area shape="rect" href="../../d1/d5e/paging_8cpp.html#ac697ce3c1269d13f947a83e69c6c7e70" title="Frees pages starting at a given page address." alt="" coords="156,5,243,32"/>
+<area shape="rect" href="../../d2/d46/namespace_paging.html#af8fcfcce169914b57d2d7ba7b2b18310" title="Frees pages starting at a given page address." alt="" coords="156,5,287,32"/>
 </map>
 </div>
 
@@ -244,11 +249,8 @@ A pointer to the allocated memory. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../de/d90/heap_8cpp_source.html#l00021">21</a> of file <a class="el" href="../../de/d90/heap_8cpp_source.html">heap.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;{</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">int</span> old_errno = <a class="code" href="../../d1/db0/errno_8cpp.html#ad65a8842cc674e3ddf69355898c0ecbf">errno</a>;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordtype">int</span> result = lock.<a class="code" href="../../d4/de8/class_mutex.html#aa732ae651974555965dcaf9ad9e87882">Lock</a>();</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="../../d1/db0/errno_8cpp.html#ad65a8842cc674e3ddf69355898c0ecbf">errno</a> = old_errno;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordflow">return</span> result;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;}</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordflow">return</span> lock.<a class="code" href="../../d4/de8/class_mutex.html#aa732ae651974555965dcaf9ad9e87882">Lock</a>();</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -270,25 +272,20 @@ A pointer to the allocated memory. </dd></dl>
 <p>This function unlocks what was previously locked by the liballoc_lock function. If it disabled interrupts, it enables interrupts. If it had acquiried a spinlock, it releases the spinlock. etc. </p>
 <dl class="section return"><dt>Returns</dt><dd>0 if the lock was successfully released. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../de/d90/heap_8cpp_source.html#l00029">29</a> of file <a class="el" href="../../de/d90/heap_8cpp_source.html">heap.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;{</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">int</span> old_errno = <a class="code" href="../../d1/db0/errno_8cpp.html#ad65a8842cc674e3ddf69355898c0ecbf">errno</a>;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">int</span> result = lock.<a class="code" href="../../d4/de8/class_mutex.html#a669f7a1dd7992948b397726e5d187a39">Unlock</a>();</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="../../d1/db0/errno_8cpp.html#ad65a8842cc674e3ddf69355898c0ecbf">errno</a> = old_errno;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordflow">return</span> result;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../de/d90/heap_8cpp_source.html#l00026">26</a> of file <a class="el" href="../../de/d90/heap_8cpp_source.html">heap.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;{</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordflow">return</span> lock.<a class="code" href="../../d4/de8/class_mutex.html#a669f7a1dd7992948b397726e5d187a39">Unlock</a>();</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="apaging_8hpp_html_a7d467c1d283fdfa1f2081ba1e0d01b6e"><div class="ttname"><a href="../../d1/d75/paging_8hpp.html#a7d467c1d283fdfa1f2081ba1e0d01b6e">PAGE_SIZE</a></div><div class="ttdeci">#define PAGE_SIZE</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d75/paging_8hpp_source.html#l00017">paging.hpp:17</a></div></div>
+<div class="ttc" id="anamespace_paging_html_af8fcfcce169914b57d2d7ba7b2b18310"><div class="ttname"><a href="../../d2/d46/namespace_paging.html#af8fcfcce169914b57d2d7ba7b2b18310">Paging::freePage</a></div><div class="ttdeci">void freePage(void *page, uint32_t size)</div><div class="ttdoc">Frees pages starting at a given page address.</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d5e/paging_8cpp_source.html#l00239">paging.cpp:239</a></div></div>
 <div class="ttc" id="aclass_mutex_html_a669f7a1dd7992948b397726e5d187a39"><div class="ttname"><a href="../../d4/de8/class_mutex.html#a669f7a1dd7992948b397726e5d187a39">Mutex::Unlock</a></div><div class="ttdeci">int Unlock()</div><div class="ttdoc">Unlocks a mutex for others to use.</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dbb/mutex_8cpp_source.html#l00058">mutex.cpp:58</a></div></div>
-<div class="ttc" id="apaging_8cpp_html_a1f827ef8d99028d46133fb5ca4f9c89a"><div class="ttname"><a href="../../d1/d5e/paging_8cpp.html#a1f827ef8d99028d46133fb5ca4f9c89a">get_new_page</a></div><div class="ttdeci">void * get_new_page(uint32_t size)</div><div class="ttdoc">Returns a new page in memory for use.</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d5e/paging_8cpp_source.html#l00218">paging.cpp:218</a></div></div>
 <div class="ttc" id="aclass_mutex_html_aa732ae651974555965dcaf9ad9e87882"><div class="ttname"><a href="../../d4/de8/class_mutex.html#aa732ae651974555965dcaf9ad9e87882">Mutex::Lock</a></div><div class="ttdeci">int Lock()</div><div class="ttdoc">Locks a provided mutex. This call will block if the mutex is already locked.</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dbb/mutex_8cpp_source.html#l00036">mutex.cpp:36</a></div></div>
-<div class="ttc" id="astructpage_html"><div class="ttname"><a href="../../d7/d1a/structpage.html">page</a></div><div class="ttdoc">Virtual address structure. Represents an address in virtual memory that redirects to a physical page ...</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d75/paging_8hpp_source.html#l00036">paging.hpp:36</a></div></div>
-<div class="ttc" id="apaging_8cpp_html_ac697ce3c1269d13f947a83e69c6c7e70"><div class="ttname"><a href="../../d1/d5e/paging_8cpp.html#ac697ce3c1269d13f947a83e69c6c7e70">free_page</a></div><div class="ttdeci">void free_page(void *page, uint32_t size)</div><div class="ttdoc">Frees pages starting at a given page address.</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d5e/paging_8cpp_source.html#l00238">paging.cpp:238</a></div></div>
-<div class="ttc" id="aerrno_8cpp_html_ad65a8842cc674e3ddf69355898c0ecbf"><div class="ttname"><a href="../../d1/db0/errno_8cpp.html#ad65a8842cc674e3ddf69355898c0ecbf">errno</a></div><div class="ttdeci">int errno</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/db0/errno_8cpp_source.html#l00015">errno.cpp:15</a></div></div>
+<div class="ttc" id="anamespace_paging_html_a7719e756c617d0bafd750620a306612c"><div class="ttname"><a href="../../d2/d46/namespace_paging.html#a7719e756c617d0bafd750620a306612c">Paging::newPage</a></div><div class="ttdeci">void * newPage(uint32_t size)</div><div class="ttdoc">Returns a new page in memory for use. If less than one page is requested, exactly one page will be al...</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d5e/paging_8cpp_source.html#l00219">paging.cpp:219</a></div></div>
+<div class="ttc" id="a_arch_8i386_8hpp_html_acd327ff534c65e3c5772a67d62d74ca0"><div class="ttname"><a href="../../dd/de9/_arch_8i386_8hpp.html#acd327ff534c65e3c5772a67d62d74ca0">ARCH_PAGE_SIZE</a></div><div class="ttdeci">#define ARCH_PAGE_SIZE</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/de9/_arch_8i386_8hpp_source.html#l00018">Arch.i386.hpp:18</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

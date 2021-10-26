@@ -9,6 +9,7 @@ var class_linked_list_1_1_linked_list =
     [ "InsertBack", "d9/d3d/class_linked_list_1_1_linked_list.html#a0207b1191944e81fef4403e5168bd2e7", null ],
     [ "InsertBefore", "d9/d3d/class_linked_list_1_1_linked_list.html#ad6f051958ade263b0b53b83e53806ebd", null ],
     [ "InsertFront", "d9/d3d/class_linked_list_1_1_linked_list.html#ad76353a53bafc906a870fd25362df6b1", null ],
+    [ "IsEmpty", "d9/d3d/class_linked_list_1_1_linked_list.html#a1d3b66ec6027125052fa84c5b9e826b5", null ],
     [ "Remove", "d9/d3d/class_linked_list_1_1_linked_list.html#aece1b84c2f9bac294c6ff87a80378bf5", null ],
     [ "RemoveAfter", "d9/d3d/class_linked_list_1_1_linked_list.html#a426821322f1f0d7f277c6c38d17e2ca9", null ],
     [ "RemoveBack", "d9/d3d/class_linked_list_1_1_linked_list.html#a8953517e8d15fbde220b4cc4afd1c1ae", null ],

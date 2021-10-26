@@ -7,9 +7,9 @@ var class_boot_1_1_handoff_r_s_d_p_descriptor =
     [ "getRevision", "d5/d80/class_boot_1_1_handoff_r_s_d_p_descriptor.html#afb4f764635b80010189fa467aa927b75", null ],
     [ "getRSDTAddress", "d5/d80/class_boot_1_1_handoff_r_s_d_p_descriptor.html#a24fd6d407e200fa6f779009a195cb924", null ],
     [ "getSignature", "d5/d80/class_boot_1_1_handoff_r_s_d_p_descriptor.html#af18bb4ef846645f1ff5c294b2d46491e", null ],
-    [ "_checksum", "d5/d80/class_boot_1_1_handoff_r_s_d_p_descriptor.html#a55eccf16cd4ac28b979d0254480f19e5", null ],
-    [ "_OEMID", "d5/d80/class_boot_1_1_handoff_r_s_d_p_descriptor.html#ac8f9b3f44c47edc3ab3aef4c558ee4e8", null ],
-    [ "_revision", "d5/d80/class_boot_1_1_handoff_r_s_d_p_descriptor.html#a9ff19dd12f30ad3ef65c068bf5ac14eb", null ],
-    [ "_rsdtAddress", "d5/d80/class_boot_1_1_handoff_r_s_d_p_descriptor.html#a007903274d0bcf867e51906029af938c", null ],
-    [ "_signature", "d5/d80/class_boot_1_1_handoff_r_s_d_p_descriptor.html#a890d1e5106cc75c1008f5b4ae07731ec", null ]
+    [ "m_checksum", "d5/d80/class_boot_1_1_handoff_r_s_d_p_descriptor.html#a65c921451524b79cdd5ba5c7a6601f19", null ],
+    [ "m_OEMID", "d5/d80/class_boot_1_1_handoff_r_s_d_p_descriptor.html#a3ea69767b8e05fab1ecc5f576b18b4c0", null ],
+    [ "m_revision", "d5/d80/class_boot_1_1_handoff_r_s_d_p_descriptor.html#a095cef36cdb20f7998f77a93ce3f4a5e", null ],
+    [ "m_rsdtAddress", "d5/d80/class_boot_1_1_handoff_r_s_d_p_descriptor.html#a41466d7d45d66a79552e856fcd8a1369", null ],
+    [ "m_signature", "d5/d80/class_boot_1_1_handoff_r_s_d_p_descriptor.html#aed6399ab2543a8e0eaac1b094a7b61c6", null ]
 ];

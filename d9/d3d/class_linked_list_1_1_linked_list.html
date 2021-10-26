@@ -125,6 +125,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a1264de8d49d2db4eebd0a34dcdb45fc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0bedbe5aed10d8cf9ccded17eea32cf4"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d3d/class_linked_list_1_1_linked_list.html#a0bedbe5aed10d8cf9ccded17eea32cf4">Count</a> ()</td></tr>
 <tr class="separator:a0bedbe5aed10d8cf9ccded17eea32cf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d3b66ec6027125052fa84c5b9e826b5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d3d/class_linked_list_1_1_linked_list.html#a1d3b66ec6027125052fa84c5b9e826b5">IsEmpty</a> ()</td></tr>
+<tr class="separator:a1d3b66ec6027125052fa84c5b9e826b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -529,6 +531,43 @@ template&lt;typename T &gt; </div>
 </div><!-- fragment -->
 </div>
 </div>
+<a id="a1d3b66ec6027125052fa84c5b9e826b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d3b66ec6027125052fa84c5b9e826b5">&#9670;&nbsp;</a></span>IsEmpty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../d9/d3d/class_linked_list_1_1_linked_list.html">LinkedList::LinkedList</a>&lt; T &gt;::IsEmpty </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Check if the linked list is empty. </p>
+<dl class="section return"><dt>Returns</dt><dd>true The list is empty </dd>
+<dd>
+false The list is not empty </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d72/_linked_list_8hpp_source.html#l00266">266</a> of file <a class="el" href="../../d5/d72/_linked_list_8hpp_source.html">LinkedList.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    {</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d9/d3d/class_linked_list_1_1_linked_list.html#a0bedbe5aed10d8cf9ccded17eea32cf4">Count</a>() == 0;</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    }</div>
+</div><!-- fragment -->
+</div>
+</div>
 <a id="aece1b84c2f9bac294c6ff87a80378bf5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aece1b84c2f9bac294c6ff87a80378bf5">&#9670;&nbsp;</a></span>Remove()</h2>
 
@@ -810,7 +849,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d72/_linked_list_8hpp_source.html#l00264">264</a> of file <a class="el" href="../../d5/d72/_linked_list_8hpp_source.html">LinkedList.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d72/_linked_list_8hpp_source.html#l00274">274</a> of file <a class="el" href="../../d5/d72/_linked_list_8hpp_source.html">LinkedList.hpp</a>.</p>
 
 </div>
 </div>
@@ -836,7 +875,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d72/_linked_list_8hpp_source.html#l00262">262</a> of file <a class="el" href="../../d5/d72/_linked_list_8hpp_source.html">LinkedList.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d72/_linked_list_8hpp_source.html#l00272">272</a> of file <a class="el" href="../../d5/d72/_linked_list_8hpp_source.html">LinkedList.hpp</a>.</p>
 
 </div>
 </div>
@@ -862,7 +901,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d72/_linked_list_8hpp_source.html#l00263">263</a> of file <a class="el" href="../../d5/d72/_linked_list_8hpp_source.html">LinkedList.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d72/_linked_list_8hpp_source.html#l00273">273</a> of file <a class="el" href="../../d5/d72/_linked_list_8hpp_source.html">LinkedList.hpp</a>.</p>
 
 </div>
 </div>
@@ -873,10 +912,11 @@ template&lt;typename T &gt; </div>
 </div><!-- doc-content -->
 <div class="ttc" id="aclass_linked_list_1_1_linked_list_html_ad76353a53bafc906a870fd25362df6b1"><div class="ttname"><a href="../../d9/d3d/class_linked_list_1_1_linked_list.html#ad76353a53bafc906a870fd25362df6b1">LinkedList::LinkedList::InsertFront</a></div><div class="ttdeci">void InsertFront(T val)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d72/_linked_list_8hpp_source.html#l00139">LinkedList.hpp:139</a></div></div>
 <div class="ttc" id="aclass_linked_list_1_1_linked_list_html_ad6f051958ade263b0b53b83e53806ebd"><div class="ttname"><a href="../../d9/d3d/class_linked_list_1_1_linked_list.html#ad6f051958ade263b0b53b83e53806ebd">LinkedList::LinkedList::InsertBefore</a></div><div class="ttdeci">void InsertBefore(LinkedListNode&lt; T &gt; *next, T val)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d72/_linked_list_8hpp_source.html#l00159">LinkedList.hpp:159</a></div></div>
-<div class="ttc" id="aclass_linked_list_1_1_linked_list_html_a153f5510fae63c14ad8e9d1312233ced"><div class="ttname"><a href="../../d9/d3d/class_linked_list_1_1_linked_list.html#a153f5510fae63c14ad8e9d1312233ced">LinkedList::LinkedList::head</a></div><div class="ttdeci">LinkedListNode&lt; T &gt; * head</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d72/_linked_list_8hpp_source.html#l00262">LinkedList.hpp:262</a></div></div>
+<div class="ttc" id="aclass_linked_list_1_1_linked_list_html_a153f5510fae63c14ad8e9d1312233ced"><div class="ttname"><a href="../../d9/d3d/class_linked_list_1_1_linked_list.html#a153f5510fae63c14ad8e9d1312233ced">LinkedList::LinkedList::head</a></div><div class="ttdeci">LinkedListNode&lt; T &gt; * head</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d72/_linked_list_8hpp_source.html#l00272">LinkedList.hpp:272</a></div></div>
 <div class="ttc" id="aclass_linked_list_1_1_linked_list_html_a8953517e8d15fbde220b4cc4afd1c1ae"><div class="ttname"><a href="../../d9/d3d/class_linked_list_1_1_linked_list.html#a8953517e8d15fbde220b4cc4afd1c1ae">LinkedList::LinkedList::RemoveBack</a></div><div class="ttdeci">LinkedListNode&lt; T &gt; * RemoveBack()</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d72/_linked_list_8hpp_source.html#l00209">LinkedList.hpp:209</a></div></div>
-<div class="ttc" id="aclass_linked_list_1_1_linked_list_html_ae0b8bd22e612123511b14d44d005a0f0"><div class="ttname"><a href="../../d9/d3d/class_linked_list_1_1_linked_list.html#ae0b8bd22e612123511b14d44d005a0f0">LinkedList::LinkedList::count</a></div><div class="ttdeci">size_t count</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d72/_linked_list_8hpp_source.html#l00264">LinkedList.hpp:264</a></div></div>
-<div class="ttc" id="aclass_linked_list_1_1_linked_list_html_a4fa07b2b666605903f371534dc1ef636"><div class="ttname"><a href="../../d9/d3d/class_linked_list_1_1_linked_list.html#a4fa07b2b666605903f371534dc1ef636">LinkedList::LinkedList::tail</a></div><div class="ttdeci">LinkedListNode&lt; T &gt; * tail</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d72/_linked_list_8hpp_source.html#l00263">LinkedList.hpp:263</a></div></div>
+<div class="ttc" id="aclass_linked_list_1_1_linked_list_html_ae0b8bd22e612123511b14d44d005a0f0"><div class="ttname"><a href="../../d9/d3d/class_linked_list_1_1_linked_list.html#ae0b8bd22e612123511b14d44d005a0f0">LinkedList::LinkedList::count</a></div><div class="ttdeci">size_t count</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d72/_linked_list_8hpp_source.html#l00274">LinkedList.hpp:274</a></div></div>
+<div class="ttc" id="aclass_linked_list_1_1_linked_list_html_a0bedbe5aed10d8cf9ccded17eea32cf4"><div class="ttname"><a href="../../d9/d3d/class_linked_list_1_1_linked_list.html#a0bedbe5aed10d8cf9ccded17eea32cf4">LinkedList::LinkedList::Count</a></div><div class="ttdeci">size_t Count()</div><div class="ttdoc">Get the number of items in the linked list.</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d72/_linked_list_8hpp_source.html#l00256">LinkedList.hpp:256</a></div></div>
+<div class="ttc" id="aclass_linked_list_1_1_linked_list_html_a4fa07b2b666605903f371534dc1ef636"><div class="ttname"><a href="../../d9/d3d/class_linked_list_1_1_linked_list.html#a4fa07b2b666605903f371534dc1ef636">LinkedList::LinkedList::tail</a></div><div class="ttdeci">LinkedListNode&lt; T &gt; * tail</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d72/_linked_list_8hpp_source.html#l00273">LinkedList.hpp:273</a></div></div>
 <div class="ttc" id="aclass_linked_list_1_1_linked_list_html_a88fa1dd71a4da3ec0083e8403dc3b05d"><div class="ttname"><a href="../../d9/d3d/class_linked_list_1_1_linked_list.html#a88fa1dd71a4da3ec0083e8403dc3b05d">LinkedList::LinkedList::LinkedList</a></div><div class="ttdeci">LinkedList()</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d72/_linked_list_8hpp_source.html#l00120">LinkedList.hpp:120</a></div></div>
 <div class="ttc" id="aclass_linked_list_1_1_linked_list_html_a19863c77e3246503710afd84bf159f4e"><div class="ttname"><a href="../../d9/d3d/class_linked_list_1_1_linked_list.html#a19863c77e3246503710afd84bf159f4e">LinkedList::LinkedList::InsertAfter</a></div><div class="ttdeci">void InsertAfter(LinkedListNode&lt; T &gt; *prev, T val)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d72/_linked_list_8hpp_source.html#l00174">LinkedList.hpp:174</a></div></div>
 <div class="ttc" id="aclass_linked_list_1_1_linked_list_html_aece1b84c2f9bac294c6ff87a80378bf5"><div class="ttname"><a href="../../d9/d3d/class_linked_list_1_1_linked_list.html#aece1b84c2f9bac294c6ff87a80378bf5">LinkedList::LinkedList::Remove</a></div><div class="ttdeci">void Remove(LinkedListNode&lt; T &gt; *del)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d72/_linked_list_8hpp_source.html#l00189">LinkedList.hpp:189</a></div></div>
