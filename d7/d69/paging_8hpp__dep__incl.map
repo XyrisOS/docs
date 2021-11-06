@@ -1,18 +1,19 @@
 <map id="paging.hpp" name="paging.hpp">
 <area shape="rect" id="node1" title=" " alt="" coords="275,5,369,32"/>
-<area shape="rect" id="node2" href="$d4/d88/_handoff_8cpp.html" title=" " alt="" coords="5,80,105,107"/>
+<area shape="rect" id="node2" href="$d4/d88/_handoff_8cpp.html" title="Bootloader information parsing and kernel handoff container." alt="" coords="5,80,105,107"/>
 <area shape="rect" id="node3" href="$d6/d99/graphics_8cpp.html" title="Graphics management and control." alt="" coords="130,80,234,107"/>
 <area shape="rect" id="node4" href="$d2/dd2/entry_8cpp.html" title="The entry point into the Xyris kernel." alt="" coords="360,155,441,181"/>
-<area shape="rect" id="node5" href="$de/d90/heap_8cpp.html" title="Liballoc heap implementation." alt="" coords="200,229,281,256"/>
-<area shape="rect" id="node6" href="$d1/d5e/paging_8cpp.html" title=" " alt="" coords="306,229,399,256"/>
-<area shape="rect" id="node7" href="$d2/dbd/tasks_8hpp.html" title=" " alt="" coords="469,80,554,107"/>
-<area shape="rect" id="node16" href="$d9/d55/trace_8cpp.html" title="Kernel stack tracing." alt="" coords="578,80,661,107"/>
-<area shape="rect" id="node8" href="$d0/dde/primes_8cpp.html" title="Prime computation tasks." alt="" coords="837,155,932,181"/>
-<area shape="rect" id="node9" href="$d8/da6/mutex_8hpp.html" title=" " alt="" coords="465,155,557,181"/>
-<area shape="rect" id="node13" href="$d1/d5a/semaphore_8hpp.html" title=" " alt="" coords="582,155,705,181"/>
-<area shape="rect" id="node15" href="$d5/d9d/tasks_8cpp.html" title=" " alt="" coords="729,155,813,181"/>
-<area shape="rect" id="node10" href="$d9/dda/console_8cpp.html" title="Framebuffer console." alt="" coords="538,229,637,256"/>
-<area shape="rect" id="node11" href="$d4/dc7/rs232_8cpp.html" title=" " alt="" coords="661,229,746,256"/>
-<area shape="rect" id="node12" href="$d0/dbb/mutex_8cpp.html" title=" " alt="" coords="423,229,514,256"/>
-<area shape="rect" id="node14" href="$da/d20/semaphore_8cpp.html" title=" " alt="" coords="770,229,893,256"/>
+<area shape="rect" id="node5" href="$de/d90/heap_8cpp.html" title="Liballoc heap implementation." alt="" coords="288,229,369,256"/>
+<area shape="rect" id="node6" href="$d1/d5e/paging_8cpp.html" title=" " alt="" coords="398,229,491,256"/>
+<area shape="rect" id="node7" href="$d2/dbd/tasks_8hpp.html" title=" " alt="" coords="521,80,606,107"/>
+<area shape="rect" id="node17" href="$d9/d55/trace_8cpp.html" title="Kernel stack tracing." alt="" coords="630,80,713,107"/>
+<area shape="rect" id="node8" href="$d0/dde/primes_8cpp.html" title="Prime computation tasks." alt="" coords="573,155,668,181"/>
+<area shape="rect" id="node9" href="$d8/da6/mutex_8hpp.html" title=" " alt="" coords="692,155,784,181"/>
+<area shape="rect" id="node13" href="$d1/d5a/semaphore_8hpp.html" title=" " alt="" coords="809,155,931,181"/>
+<area shape="rect" id="node15" href="$d5/df3/sys_2panic_8cpp.html" title=" " alt="" coords="955,155,1038,181"/>
+<area shape="rect" id="node16" href="$d5/d9d/tasks_8cpp.html" title=" " alt="" coords="465,155,549,181"/>
+<area shape="rect" id="node10" href="$d9/dda/console_8cpp.html" title="Framebuffer console." alt="" coords="517,229,615,256"/>
+<area shape="rect" id="node11" href="$d4/dc7/rs232_8cpp.html" title=" " alt="" coords="639,229,725,256"/>
+<area shape="rect" id="node12" href="$d0/dbb/mutex_8cpp.html" title=" " alt="" coords="749,229,839,256"/>
+<area shape="rect" id="node14" href="$da/d20/semaphore_8cpp.html" title=" " alt="" coords="863,229,986,256"/>
 </map>

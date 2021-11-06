@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['address_838',['Address',['../d0/d47/union_paging_1_1_address.html',1,'Paging']]],
-  ['argument_839',['argument',['../df/d0d/struct_boot_1_1argument.html',1,'Boot']]]
+  ['address_878',['Address',['../dd/dd2/class_arch_1_1_memory_1_1_address.html',1,'Arch::Memory']]],
+  ['argument_879',['argument',['../df/d0d/struct_boot_1_1argument.html',1,'Boot']]]
 ];

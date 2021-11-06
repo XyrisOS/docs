@@ -51,6 +51,7 @@ var console_8cpp =
     [ "printf", "d9/dda/console_8cpp.html#aa92244db771ad2578967dd9f8fcac912", null ],
     [ "reset", "d9/dda/console_8cpp.html#a13d5fa4b1300fe0820103f5f3a3a6b23", null ],
     [ "reset", "d9/dda/console_8cpp.html#abee0f1f230d0c425b030731b79fdc6e1", null ],
+    [ "vprintf", "d9/dda/console_8cpp.html#ad86a1c0ed06d68a9f4ede8f6e56db406", null ],
     [ "write", "d9/dda/console_8cpp.html#afd4ee2d6ab18c9d14f28391505f0acf6", null ],
     [ "write", "d9/dda/console_8cpp.html#a4c2d2de6b43a7c900831f4ee73716515", null ]
 ];

@@ -1,10 +1,9 @@
 <map id="ports.cpp" name="ports.cpp">
-<area shape="rect" id="node1" title="CPU port access functions." alt="" coords="82,5,165,32"/>
-<area shape="rect" id="node2" href="$d8/d9f/ports_8hpp.html" title="Ports header file. Provides inline functions for getting and setting values at different ports...." alt="" coords="50,80,197,107"/>
-<area shape="rect" id="node3" title=" " alt="" coords="158,304,228,331"/>
-<area shape="rect" id="node4" href="$dd/de9/_arch_8i386_8hpp.html" title="i386 architecture implementation of Arch.hpp" alt="" coords="36,155,211,181"/>
-<area shape="rect" id="node5" href="$d9/d4f/_memory_8hpp.html" title="Architecture memory management API." alt="" coords="190,229,324,256"/>
-<area shape="rect" id="node7" href="$d8/dfb/regs_8hpp.html" title=" " alt="" coords="348,229,491,256"/>
-<area shape="rect" id="node8" href="$d4/ddc/isr_8hpp.html" title="Interrupt Service Routine header." alt="" coords="36,229,166,256"/>
-<area shape="rect" id="node6" title=" " alt="" coords="282,304,357,331"/>
+<area shape="rect" id="node1" title="CPU port access functions." alt="" coords="70,5,153,32"/>
+<area shape="rect" id="node2" href="$d8/d9f/ports_8hpp.html" title="Ports header file. Provides inline functions for getting and setting values at different ports...." alt="" coords="38,80,185,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="64,304,135,331"/>
+<area shape="rect" id="node4" href="$dd/de9/_arch_8i386_8hpp.html" title="i386 architecture implementation of Arch.hpp" alt="" coords="24,155,199,181"/>
+<area shape="rect" id="node5" href="$d8/dfb/regs_8hpp.html" title=" " alt="" coords="188,229,331,256"/>
+<area shape="rect" id="node7" href="$d4/ddc/isr_8hpp.html" title="Interrupt Service Routine header." alt="" coords="35,229,164,256"/>
+<area shape="rect" id="node6" title=" " alt="" coords="222,304,297,331"/>
 </map>

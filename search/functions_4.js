@@ -1,8 +1,6 @@
 var searchData=
 [
-  ['early_5fpanic_998',['early_panic',['../d3/d22/boot_2panic_8cpp.html#af0e8e99d063b283c9748fc23b69fca94',1,'panic.cpp']]],
-  ['empty_999',['Empty',['../d8/d7f/class_memory_1_1_section.html#ab7573136ee682b98247cb5df283d3c1f',1,'Memory::Section']]],
-  ['end_1000',['End',['../d8/d7f/class_memory_1_1_section.html#aedd9895727b8d87e288a87f787375b4a',1,'Memory::Section']]],
-  ['enqueue_1001',['Enqueue',['../d4/d8f/class_ring_buffer.html#a2a644c2dcc95dce638c02419af31ba35',1,'RingBuffer']]],
-  ['error_1002',['Error',['../d4/d8f/class_ring_buffer.html#a739bf41d872cb72cdfd10b239165d012',1,'RingBuffer']]]
+  ['data_1040',['Data',['../d1/ddb/class_linked_list_1_1_linked_list_node.html#a1abb33b32e623992be117714c75a5ded',1,'LinkedList::LinkedListNode']]],
+  ['dequeue_1041',['Dequeue',['../d4/d8f/class_ring_buffer.html#a39af34442e82d4cd5694f8a460e4a045',1,'RingBuffer::Dequeue(T *buf)'],['../d4/d8f/class_ring_buffer.html#a4adfbf6d8a20877dadd01bef18e674cf',1,'RingBuffer::Dequeue()']]],
+  ['draw_1042',['Draw',['../dc/d65/namespace_graphics_1_1_font.html#ae8d46d81e70d6c7edb55424a5f465f8b',1,'Graphics::Font::Draw(char c, uint32_t x, uint32_t y, uint32_t fore)'],['../dc/d65/namespace_graphics_1_1_font.html#ad410fe938a43b235cace00679ba8c481',1,'Graphics::Font::Draw(char c, uint32_t x, uint32_t y, uint32_t fore, uint32_t back)']]]
 ];

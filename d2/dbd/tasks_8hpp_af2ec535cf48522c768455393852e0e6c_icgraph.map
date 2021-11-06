@@ -1,9 +1,6 @@
 <map id="tasks_sync_block" name="tasks_sync_block">
-<area shape="rect" id="node1" title=" " alt="" coords="520,81,656,108"/>
-<area shape="rect" id="node2" href="$d4/de8/class_mutex.html#aa732ae651974555965dcaf9ad9e87882" title="Locks a provided mutex. This call will block if the mutex is already locked." alt="" coords="355,56,456,83"/>
-<area shape="rect" id="node7" href="$d4/dbd/class_semaphore.html#ac3b3b6cd0044efda8fbd2dbd0fb6d995" title="Waiting on a semaphore decrements the count value. When a count value is 0, the semaphore is locked a..." alt="" coords="339,107,472,133"/>
-<area shape="rect" id="node3" href="$d2/d46/namespace_paging.html#a7719e756c617d0bafd750620a306612c" title="Returns a new page in memory for use. If less than one page is requested, exactly one page will be al..." alt="" coords="160,31,291,57"/>
-<area shape="rect" id="node6" href="$d7/d75/namespace_r_s232.html#aa77ae4139fa5feba01809614f595edb6" title="Reads bytes from the serial buffer." alt="" coords="175,81,275,108"/>
-<area shape="rect" id="node4" href="$da/d45/heap_8hpp.html#ac17a7bc03af86f215d779f1798aed8e8" title="This is the hook into the local system which allocates pages. It accepts an integer parameter which i..." alt="" coords="5,5,112,32"/>
-<area shape="rect" id="node5" href="$d2/dbd/tasks_8hpp.html#a65c4921579a6bad97c037bc8db69fb26" title="Creates a new kernel task with a provided entry point, register storage struct, and task state struct..." alt="" coords="13,56,104,83"/>
+<area shape="rect" id="node1" title=" " alt="" coords="335,31,471,57"/>
+<area shape="rect" id="node2" href="$d4/de8/class_mutex.html#aa732ae651974555965dcaf9ad9e87882" title="Locks a provided mutex. This call will block if the mutex is already locked." alt="" coords="169,5,271,32"/>
+<area shape="rect" id="node4" href="$d4/dbd/class_semaphore.html#ac3b3b6cd0044efda8fbd2dbd0fb6d995" title="Waiting on a semaphore decrements the count value. When a count value is 0, the semaphore is locked a..." alt="" coords="153,56,287,83"/>
+<area shape="rect" id="node3" href="$d7/d75/namespace_r_s232.html#aa77ae4139fa5feba01809614f595edb6" title="Reads bytes from the serial buffer." alt="" coords="5,5,105,32"/>
 </map>

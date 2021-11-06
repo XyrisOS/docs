@@ -85,6 +85,7 @@ $(document).ready(function(){initNavTree('d9/d4f/_memory_8hpp.html','../../'); i
 <div class="header">
   <div class="summary">
 <a href="#namespaces">Namespaces</a> &#124;
+<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">Memory.hpp File Reference</div>  </div>
@@ -99,7 +100,7 @@ $(document).ready(function(){initNavTree('d9/d4f/_memory_8hpp.html','../../'); i
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="../../da/de7/_memory_8hpp__incl.png" border="0" usemap="#_memory_8hpp" alt=""/></div>
 <map name="_memory_8hpp" id="_memory_8hpp">
-<area shape="rect" title="Architecture memory management API." alt="" coords="37,5,140,32"/>
+<area shape="rect" title="Architecture memory management &amp; paging API." alt="" coords="37,5,140,32"/>
 <area shape="rect" title=" " alt="" coords="5,80,76,107"/>
 <area shape="rect" title=" " alt="" coords="101,80,175,107"/>
 </map>
@@ -111,24 +112,29 @@ $(document).ready(function(){initNavTree('d9/d4f/_memory_8hpp.html','../../'); i
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="../../df/d99/_memory_8hpp__dep__incl.png" border="0" usemap="#_memory_8hppdep" alt=""/></div>
 <map name="_memory_8hppdep" id="_memory_8hppdep">
-<area shape="rect" title="Architecture memory management API." alt="" coords="555,5,658,32"/>
-<area shape="rect" href="../../d3/d50/_arch_8i386_8cpp.html" title="i386 architecture implementation of Arch.hpp" alt="" coords="203,229,314,256"/>
-<area shape="rect" href="../../dd/de9/_arch_8i386_8hpp.html" title="i386 architecture implementation of Arch.hpp" alt="" coords="390,80,501,107"/>
-<area shape="rect" href="../../d5/d9d/tasks_8cpp.html" title=" " alt="" coords="838,229,922,256"/>
-<area shape="rect" href="../../d1/d5e/paging_8cpp.html" title=" " alt="" coords="805,80,899,107"/>
-<area shape="rect" href="../../df/d77/gdt_8hpp.html" title="The Global Descriptor Table (GDT) is specific to the IA32 architecture. It contains entries telling t..." alt="" coords="410,155,481,181"/>
-<area shape="rect" href="../../dd/d12/idt_8hpp.html" title="Interrupt Descriptor Table header." alt="" coords="225,155,292,181"/>
-<area shape="rect" href="../../d4/ddc/isr_8hpp.html" title="Interrupt Service Routine header." alt="" coords="505,155,570,181"/>
-<area shape="rect" href="../../d6/d1e/panic_8cpp.html" title="A set of panic functions that are called when the kernel encounters an error from which it cannot rec..." alt="" coords="522,229,606,256"/>
-<area shape="rect" href="../../d8/d9f/ports_8hpp.html" title="Ports header file. Provides inline functions for getting and setting values at different ports...." alt="" coords="68,155,151,181"/>
-<area shape="rect" href="../../df/d05/timer_8hpp.html" title=" " alt="" coords="646,155,730,181"/>
-<area shape="rect" href="../../d2/d59/tss_8hpp.html" title=" " alt="" coords="316,155,385,181"/>
-<area shape="rect" href="../../d7/de6/gdt_8cpp.html" title="The Global Descriptor Table (GDT) is specific to the IA32 architecture. It contains entries telling t..." alt="" coords="338,229,409,256"/>
-<area shape="rect" href="../../d9/d87/idt_8cpp.html" title=" " alt="" coords="112,229,179,256"/>
-<area shape="rect" href="../../d3/d68/isr_8cpp.html" title=" " alt="" coords="433,229,497,256"/>
-<area shape="rect" href="../../dc/de5/timer_8cpp.html" title="Programmable Interrupt Timer driver functions." alt="" coords="631,229,713,256"/>
-<area shape="rect" href="../../d7/d27/ports_8cpp.html" title="CPU port access functions." alt="" coords="5,229,88,256"/>
-<area shape="rect" href="../../da/da5/spkr_8cpp.html" title=" " alt="" coords="738,229,814,256"/>
+<area shape="rect" title="Architecture memory management &amp; paging API." alt="" coords="248,5,351,32"/>
+<area shape="rect" href="../../d3/d50/_arch_8i386_8cpp.html" title="i386 architecture implementation of Arch.hpp" alt="" coords="5,80,116,107"/>
+<area shape="rect" href="../../d0/d91/_memory_section_8hpp.html" title=" " alt="" coords="281,80,433,107"/>
+<area shape="rect" href="../../d1/d75/paging_8hpp.html" title=" " alt="" coords="512,229,607,256"/>
+<area shape="rect" href="../../d1/d5e/paging_8cpp.html" title=" " alt="" coords="335,453,429,480"/>
+<area shape="rect" href="../../d5/d9d/tasks_8cpp.html" title=" " alt="" coords="1269,379,1353,405"/>
+<area shape="rect" href="../../d0/d81/_physical_8hpp.html" title="Physical memory mapping." alt="" coords="191,155,295,181"/>
+<area shape="rect" href="../../d6/dc1/_memory_map_8hpp.html" title="Memory map containing a number of Memory sections that describe the physical memory layout." alt="" coords="320,155,452,181"/>
+<area shape="rect" href="../../d2/d1f/_handoff_8hpp.html" title=" " alt="" coords="314,229,415,256"/>
+<area shape="rect" href="../../d4/d88/_handoff_8cpp.html" title="Bootloader information parsing and kernel handoff container." alt="" coords="421,304,521,331"/>
+<area shape="rect" href="../../d6/d99/graphics_8cpp.html" title="Graphics management and control." alt="" coords="293,304,397,331"/>
+<area shape="rect" href="../../d2/dd2/entry_8cpp.html" title="The entry point into the Xyris kernel." alt="" coords="597,379,679,405"/>
+<area shape="rect" href="../../de/d90/heap_8cpp.html" title="Liballoc heap implementation." alt="" coords="687,453,768,480"/>
+<area shape="rect" href="../../d2/dbd/tasks_8hpp.html" title=" " alt="" coords="902,304,987,331"/>
+<area shape="rect" href="../../d9/d55/trace_8cpp.html" title="Kernel stack tracing." alt="" coords="647,304,730,331"/>
+<area shape="rect" href="../../d0/dde/primes_8cpp.html" title="Prime computation tasks." alt="" coords="780,379,875,405"/>
+<area shape="rect" href="../../d8/da6/mutex_8hpp.html" title=" " alt="" coords="899,379,991,405"/>
+<area shape="rect" href="../../d1/d5a/semaphore_8hpp.html" title=" " alt="" coords="1122,379,1245,405"/>
+<area shape="rect" href="../../d5/df3/sys_2panic_8cpp.html" title=" " alt="" coords="1015,379,1098,405"/>
+<area shape="rect" href="../../d9/dda/console_8cpp.html" title="Framebuffer console." alt="" coords="793,453,891,480"/>
+<area shape="rect" href="../../d4/dc7/rs232_8cpp.html" title=" " alt="" coords="915,453,1001,480"/>
+<area shape="rect" href="../../d0/dbb/mutex_8cpp.html" title=" " alt="" coords="1025,453,1115,480"/>
+<area shape="rect" href="../../da/d20/semaphore_8cpp.html" title=" " alt="" coords="1139,453,1262,480"/>
 </map>
 </div>
 </div>
@@ -141,28 +147,194 @@ Namespaces</h2></td></tr>
 <tr class="memitem:dd/d0e/namespace_arch_1_1_memory"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d0e/namespace_arch_1_1_memory.html">Arch::Memory</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a58aa9789669ab63074a01bb7d55c0123"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d4f/_memory_8hpp.html#a58aa9789669ab63074a01bb7d55c0123">B_TO_KB</a>(b)&#160;&#160;&#160;((b) / 1024)</td></tr>
+<tr class="separator:a58aa9789669ab63074a01bb7d55c0123"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba0fd28f8c31be5719093301f8afd22e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d4f/_memory_8hpp.html#aba0fd28f8c31be5719093301f8afd22e">KB_TO_MB</a>(kb)&#160;&#160;&#160;((kb) / 1024)</td></tr>
+<tr class="separator:aba0fd28f8c31be5719093301f8afd22e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22f10ff537d5875c3622ec4363b6d710"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d4f/_memory_8hpp.html#a22f10ff537d5875c3622ec4363b6d710">MB_TO_GB</a>(mb)&#160;&#160;&#160;((mb) / 1024)</td></tr>
+<tr class="separator:a22f10ff537d5875c3622ec4363b6d710"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab336267a862a0ae573a1745dd7ce11fb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d4f/_memory_8hpp.html#ab336267a862a0ae573a1745dd7ce11fb">B_TO_MB</a>(b)&#160;&#160;&#160;<a class="el" href="../../d9/d4f/_memory_8hpp.html#aba0fd28f8c31be5719093301f8afd22e">KB_TO_MB</a>(<a class="el" href="../../d9/d4f/_memory_8hpp.html#a58aa9789669ab63074a01bb7d55c0123">B_TO_KB</a>(b))</td></tr>
+<tr class="separator:ab336267a862a0ae573a1745dd7ce11fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa792b7a470cd9c08cd84c26006d08f46"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d4f/_memory_8hpp.html#aa792b7a470cd9c08cd84c26006d08f46">B_TO_GB</a>(b)&#160;&#160;&#160;<a class="el" href="../../d9/d4f/_memory_8hpp.html#a22f10ff537d5875c3622ec4363b6d710">MB_TO_GB</a>(<a class="el" href="../../d9/d4f/_memory_8hpp.html#ab336267a862a0ae573a1745dd7ce11fb">B_TO_MB</a>(b))</td></tr>
+<tr class="separator:aa792b7a470cd9c08cd84c26006d08f46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc53c6c36bf2281f32d1767db5a8ecbb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d4f/_memory_8hpp.html#acc53c6c36bf2281f32d1767db5a8ecbb">ADDRESS_SPACE_SIZE</a>&#160;&#160;&#160;0x100000000</td></tr>
+<tr class="separator:acc53c6c36bf2281f32d1767db5a8ecbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a921385efd03dc5d230ca793d43e4e463"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d4f/_memory_8hpp.html#a921385efd03dc5d230ca793d43e4e463">ADDRESS_TO_PAGE_IDX</a>(addr)&#160;&#160;&#160;((addr) / <a class="el" href="../../df/d48/_memory_8i386_8hpp.html#acd327ff534c65e3c5772a67d62d74ca0">ARCH_PAGE_SIZE</a>)</td></tr>
+<tr class="separator:a921385efd03dc5d230ca793d43e4e463"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5cbdda09f176da275a8154cdf7b5d52"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d4f/_memory_8hpp.html#ae5cbdda09f176da275a8154cdf7b5d52">MEM_BITMAP_SIZE</a>&#160;&#160;&#160;((<a class="el" href="../../d9/d4f/_memory_8hpp.html#acc53c6c36bf2281f32d1767db5a8ecbb">ADDRESS_SPACE_SIZE</a> / <a class="el" href="../../df/d48/_memory_8i386_8hpp.html#acd327ff534c65e3c5772a67d62d74ca0">ARCH_PAGE_SIZE</a>) / (sizeof(size_t) * CHAR_BIT))</td></tr>
+<tr class="separator:ae5cbdda09f176da275a8154cdf7b5d52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a3ba8a1ea0a34ad98b2f304fbbda48b0a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d0e/namespace_arch_1_1_memory.html#a3ba8a1ea0a34ad98b2f304fbbda48b0a">Arch::Memory::pagingEnable</a> ()</td></tr>
 <tr class="separator:a3ba8a1ea0a34ad98b2f304fbbda48b0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad4d3a669c172e1442fe3e2afe8d16172"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d0e/namespace_arch_1_1_memory.html#ad4d3a669c172e1442fe3e2afe8d16172">Arch::Memory::pagingDisable</a> ()</td></tr>
 <tr class="separator:ad4d3a669c172e1442fe3e2afe8d16172"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a206380258fe28756d0c70f4f700e65d8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d0e/namespace_arch_1_1_memory.html#a206380258fe28756d0c70f4f700e65d8">Arch::Memory::pageInvalidate</a> (void *addr)</td></tr>
-<tr class="separator:a206380258fe28756d0c70f4f700e65d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9118c8fdcb2627cdbd72b751d02e6bfc"><td class="memItemLeft" align="right" valign="top">uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d0e/namespace_arch_1_1_memory.html#a9118c8fdcb2627cdbd72b751d02e6bfc">Arch::Memory::pageAlign</a> (size_t addr)</td></tr>
-<tr class="separator:a9118c8fdcb2627cdbd72b751d02e6bfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1aa7a1c391d4d95b26303c5efa687dfb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d0e/namespace_arch_1_1_memory.html#a1aa7a1c391d4d95b26303c5efa687dfb">Arch::Memory::pageIsAligned</a> (size_t addr)</td></tr>
-<tr class="separator:a1aa7a1c391d4d95b26303c5efa687dfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Architecture memory management API. </p>
+<div class="textblock"><p>Architecture memory management &amp; paging API. </p>
 <dl class="section author"><dt>Author</dt><dd>Keeton Feavel (<a href="#" onclick="location.href='mai'+'lto:'+'kee'+'to'+'n@x'+'yr'+'.is'; return false;">keeto<span style="display: none;">.nosp@m.</span>n@xy<span style="display: none;">.nosp@m.</span>r.is</a>) </dd></dl>
 <dl class="section version"><dt>Version</dt><dd>0.1 </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>2021-09-18</dd></dl>
 <dl class="section copyright"><dt>Copyright</dt><dd>Copyright the Xyris Contributors (c) 2021 </dd></dl>
 
 <p class="definition">Definition in file <a class="el" href="../../d9/d4f/_memory_8hpp_source.html">Memory.hpp</a>.</p>
-</div></div><!-- contents -->
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="acc53c6c36bf2281f32d1767db5a8ecbb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc53c6c36bf2281f32d1767db5a8ecbb">&#9670;&nbsp;</a></span>ADDRESS_SPACE_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ADDRESS_SPACE_SIZE&#160;&#160;&#160;0x100000000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d4f/_memory_8hpp_source.html#l00026">26</a> of file <a class="el" href="../../d9/d4f/_memory_8hpp_source.html">Memory.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a921385efd03dc5d230ca793d43e4e463"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a921385efd03dc5d230ca793d43e4e463">&#9670;&nbsp;</a></span>ADDRESS_TO_PAGE_IDX</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ADDRESS_TO_PAGE_IDX</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">addr</td><td>)</td>
+          <td>&#160;&#160;&#160;((addr) / <a class="el" href="../../df/d48/_memory_8i386_8hpp.html#acd327ff534c65e3c5772a67d62d74ca0">ARCH_PAGE_SIZE</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d4f/_memory_8hpp_source.html#l00028">28</a> of file <a class="el" href="../../d9/d4f/_memory_8hpp_source.html">Memory.hpp</a>.</p>
+
+</div>
+</div>
+<a id="aa792b7a470cd9c08cd84c26006d08f46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa792b7a470cd9c08cd84c26006d08f46">&#9670;&nbsp;</a></span>B_TO_GB</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define B_TO_GB</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">b</td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="../../d9/d4f/_memory_8hpp.html#a22f10ff537d5875c3622ec4363b6d710">MB_TO_GB</a>(<a class="el" href="../../d9/d4f/_memory_8hpp.html#ab336267a862a0ae573a1745dd7ce11fb">B_TO_MB</a>(b))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d4f/_memory_8hpp_source.html#l00024">24</a> of file <a class="el" href="../../d9/d4f/_memory_8hpp_source.html">Memory.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a58aa9789669ab63074a01bb7d55c0123"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58aa9789669ab63074a01bb7d55c0123">&#9670;&nbsp;</a></span>B_TO_KB</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define B_TO_KB</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">b</td><td>)</td>
+          <td>&#160;&#160;&#160;((b) / 1024)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d4f/_memory_8hpp_source.html#l00019">19</a> of file <a class="el" href="../../d9/d4f/_memory_8hpp_source.html">Memory.hpp</a>.</p>
+
+</div>
+</div>
+<a id="ab336267a862a0ae573a1745dd7ce11fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab336267a862a0ae573a1745dd7ce11fb">&#9670;&nbsp;</a></span>B_TO_MB</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define B_TO_MB</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">b</td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="../../d9/d4f/_memory_8hpp.html#aba0fd28f8c31be5719093301f8afd22e">KB_TO_MB</a>(<a class="el" href="../../d9/d4f/_memory_8hpp.html#a58aa9789669ab63074a01bb7d55c0123">B_TO_KB</a>(b))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d4f/_memory_8hpp_source.html#l00023">23</a> of file <a class="el" href="../../d9/d4f/_memory_8hpp_source.html">Memory.hpp</a>.</p>
+
+</div>
+</div>
+<a id="aba0fd28f8c31be5719093301f8afd22e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba0fd28f8c31be5719093301f8afd22e">&#9670;&nbsp;</a></span>KB_TO_MB</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KB_TO_MB</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">kb</td><td>)</td>
+          <td>&#160;&#160;&#160;((kb) / 1024)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d4f/_memory_8hpp_source.html#l00020">20</a> of file <a class="el" href="../../d9/d4f/_memory_8hpp_source.html">Memory.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a22f10ff537d5875c3622ec4363b6d710"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22f10ff537d5875c3622ec4363b6d710">&#9670;&nbsp;</a></span>MB_TO_GB</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MB_TO_GB</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">mb</td><td>)</td>
+          <td>&#160;&#160;&#160;((mb) / 1024)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d4f/_memory_8hpp_source.html#l00021">21</a> of file <a class="el" href="../../d9/d4f/_memory_8hpp_source.html">Memory.hpp</a>.</p>
+
+</div>
+</div>
+<a id="ae5cbdda09f176da275a8154cdf7b5d52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5cbdda09f176da275a8154cdf7b5d52">&#9670;&nbsp;</a></span>MEM_BITMAP_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MEM_BITMAP_SIZE&#160;&#160;&#160;((<a class="el" href="../../d9/d4f/_memory_8hpp.html#acc53c6c36bf2281f32d1767db5a8ecbb">ADDRESS_SPACE_SIZE</a> / <a class="el" href="../../df/d48/_memory_8i386_8hpp.html#acd327ff534c65e3c5772a67d62d74ca0">ARCH_PAGE_SIZE</a>) / (sizeof(size_t) * CHAR_BIT))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d4f/_memory_8hpp_source.html#l00029">29</a> of file <a class="el" href="../../d9/d4f/_memory_8hpp_source.html">Memory.hpp</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

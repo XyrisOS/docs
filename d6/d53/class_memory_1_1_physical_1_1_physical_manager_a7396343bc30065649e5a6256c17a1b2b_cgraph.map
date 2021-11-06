@@ -1,0 +1,6 @@
+<map id="Memory::Physical::PhysicalManager::setUsed" name="Memory::Physical::PhysicalManager::setUsed">
+<area shape="rect" id="node1" title=" " alt="" coords="5,35,204,76"/>
+<area shape="rect" id="node2" href="$d6/d53/class_memory_1_1_physical_1_1_physical_manager.html#a5203dd61fed3aa1ffb0204f560c518f4" title=" " alt="" coords="252,5,451,47"/>
+<area shape="rect" id="node4" href="$d6/d09/class_bitset.html#a3b2dadde268c58db461f1aca1246ee8e" title="Set the bit for a given position." alt="" coords="307,71,396,98"/>
+<area shape="rect" id="node3" href="$d6/d09/class_bitset.html#a597417f1827251afc0b6bfa8001663ce" title="Return the value of the bit at the given position." alt="" coords="499,13,593,39"/>
+</map>

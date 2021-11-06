@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['task_5falloc_1472',['task_alloc',['../d2/dbd/tasks_8hpp.html#ac7aaa4c0605984fc6b92a727881b8707',1,'tasks.hpp']]],
-  ['task_5fstate_1473',['task_state',['../d2/dbd/tasks_8hpp.html#a46c7ab5dd73831ee98458db0a68fc4a2',1,'tasks.hpp']]],
-  ['type_1474',['Type',['../db/d2f/namespace_memory.html#a9193c3e610b1728964440284db90c812',1,'Memory']]]
+  ['printf_5fstate_1541',['printf_state',['../d4/d64/printf_8cpp.html#a4bf54934de52cb7eeeaa6fa19468f64d',1,'printf.cpp']]]
 ];

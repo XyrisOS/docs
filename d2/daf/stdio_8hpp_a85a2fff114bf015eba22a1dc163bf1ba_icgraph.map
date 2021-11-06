@@ -1,15 +1,16 @@
 <map id="printf_helper" name="printf_helper">
-<area shape="rect" id="node1" title="Perform all printf operations on the format string using the provided argument list and uses the call..." alt="" coords="815,157,920,184"/>
-<area shape="rect" id="node2" href="$d2/daf/stdio_8hpp.html#a626c6babba88d2b34beacfb116a71fb8" title="Sends formatted output to a string using an argument list." alt="" coords="669,81,749,108"/>
-<area shape="rect" id="node7" href="$d7/d75/namespace_r_s232.html#a04a4582da3c891beaa849f3ce2189975" title="Prints a formatted string to serial output using a va_list of arguments." alt="" coords="652,183,767,209"/>
-<area shape="rect" id="node3" href="$d2/daf/stdio_8hpp.html#a4a8483991af81c2a4ae0025f4d2fb5e7" title="Sends formatted output to a string." alt="" coords="515,56,587,83"/>
-<area shape="rect" id="node4" href="$d9/dc3/namespace_arch.html#a2e714444c028502b8ca4e2bc7e535817" title=" " alt="" coords="289,5,384,32"/>
-<area shape="rect" id="node5" href="$d4/db9/trace_8hpp.html#a9f452d4e0d092c1052a36cd56e9f77b6" title=" " alt="" coords="288,56,385,83"/>
-<area shape="rect" id="node6" href="$d9/dc3/namespace_arch.html#a67cf64868d67072561c129172d85c269" title=" " alt="" coords="43,81,138,108"/>
-<area shape="rect" id="node8" href="$d7/d75/namespace_r_s232.html#a394b7ac1c601a47c2881a460eb41171a" title="Prints a formatted string to serial output." alt="" coords="497,196,604,223"/>
-<area shape="rect" id="node9" href="$df/d70/class_boot_1_1_handoff.html#a63449bd33cc1e30ec2b8ae2bf9ef155d" title=" " alt="" coords="5,259,176,285"/>
-<area shape="rect" id="node10" href="$d7/d75/namespace_r_s232.html#acbd0855fa0862424053ed439eb77e6b3" title="Activates the RS232 serial driver." alt="" coords="291,208,383,235"/>
-<area shape="rect" id="node11" href="$df/d70/class_boot_1_1_handoff.html#a660bc107223f5e3bf5b8c4604fed265c" title=" " alt="" coords="224,259,449,285"/>
-<area shape="rect" id="node12" href="$df/d70/class_boot_1_1_handoff.html#aa2d1c752220db05f3602f99d07d0dca3" title=" " alt="" coords="233,309,441,336"/>
-<area shape="rect" id="node13" href="$d2/dbd/tasks_8hpp.html#ac7a1f4f04e6d7bdbc47de59c05a61262" title="Exits the current task." alt="" coords="292,360,381,387"/>
+<area shape="rect" id="node1" title="Perform all printf operations on the format string using the provided argument list and uses the call..." alt="" coords="560,132,665,159"/>
+<area shape="rect" id="node2" href="$d2/daf/stdio_8hpp.html#a626c6babba88d2b34beacfb116a71fb8" title="Sends formatted output to a string using an argument list." alt="" coords="409,81,489,108"/>
+<area shape="rect" id="node7" href="$d7/d75/namespace_r_s232.html#a04a4582da3c891beaa849f3ce2189975" title=" " alt="" coords="392,132,507,159"/>
+<area shape="rect" id="node11" href="$d8/db5/namespace_console.html#ad86a1c0ed06d68a9f4ede8f6e56db406" title=" " alt="" coords="387,183,512,209"/>
+<area shape="rect" id="node3" href="$d2/daf/stdio_8hpp.html#a4a8483991af81c2a4ae0025f4d2fb5e7" title="Sends formatted output to a string." alt="" coords="244,31,316,57"/>
+<area shape="rect" id="node6" href="$d5/df3/sys_2panic_8cpp.html#a0d09d76c7f1c89528c69de542c318923" title=" " alt="" coords="249,81,311,108"/>
+<area shape="rect" id="node4" href="$de/d66/namespace_stack.html#ab836051c392dd045b3bdfe4124ce04a8" title=" " alt="" coords="24,56,155,83"/>
+<area shape="rect" id="node5" href="$d9/dc3/namespace_arch.html#a6cc0ef4abcb7c48c9e7d7cea419649b8" title=" " alt="" coords="5,5,173,32"/>
+<area shape="rect" id="node8" href="$d7/d75/namespace_r_s232.html#a394b7ac1c601a47c2881a460eb41171a" title=" " alt="" coords="227,132,333,159"/>
+<area shape="rect" id="node9" href="$d7/d75/namespace_r_s232.html#acbd0855fa0862424053ed439eb77e6b3" title="Activates the RS232 serial driver." alt="" coords="43,107,135,133"/>
+<area shape="rect" id="node10" href="$d2/dbd/tasks_8hpp.html#ac7a1f4f04e6d7bdbc47de59c05a61262" title="Exits the current task." alt="" coords="45,157,134,184"/>
+<area shape="rect" id="node12" href="$d8/db5/namespace_console.html#aa92244db771ad2578967dd9f8fcac912" title=" " alt="" coords="221,208,339,235"/>
+<area shape="rect" id="node13" href="$dc/da3/namespace_apps.html#aebbc688ed6a7097af1dd858ca0559d4b" title="Starts a task to display number of primes found by find_primes." alt="" coords="15,208,163,235"/>
+<area shape="rect" id="node14" href="$dc/da3/namespace_apps.html#aaa2be84c7a45c27af1e3bddb75e87a48" title="Starts a spinner in an infinite loop." alt="" coords="34,259,145,285"/>
 </map>

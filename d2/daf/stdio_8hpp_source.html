@@ -105,61 +105,82 @@ $(document).ready(function(){initNavTree('d2/daf/stdio_8hpp_source.html','../../
 <div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="../../d2/daf/stdio_8hpp.html#a59adc4c82490d23754cd39c2fb99b0da">   16</a></span>&#160;<span class="preprocessor">#define EOF (-1)</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="../../d2/daf/stdio_8hpp.html#a18adc43d71a61a1556a8dfd7ad2a918e">   19</a></span>&#160;<span class="keyword">typedef</span> int (*<a class="code" href="../../d2/daf/stdio_8hpp.html#a18adc43d71a61a1556a8dfd7ad2a918e">printf_cb_fnptr_t</a>)(<span class="keywordtype">unsigned</span> c, <span class="keywordtype">void</span>** helper);<span class="comment"></span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">/**</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment"> * @brief Perform all printf operations on the format string using the provided</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment"> * argument list and uses the callback function to perform the character printing</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment"> * operation. This allows for adding printf capabilities to a wide range of</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment"> * text output applications, such as an RS232 debug driver, or a framebuffer</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment"> * console.</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment"> * @param fmt Format string</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment"> * @param args Arguments list</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment"> * @param fn Character printing callback function pointer</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment"> * @param ptr User-provided data / handle pointer</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment"> * @return int Returns number of characters written</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keywordtype">int</span> <a class="code" href="../../d2/daf/stdio_8hpp.html#a85a2fff114bf015eba22a1dc163bf1ba">printf_helper</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* fmt, va_list args, <a class="code" href="../../d2/daf/stdio_8hpp.html#a18adc43d71a61a1556a8dfd7ad2a918e">printf_cb_fnptr_t</a> fn, <span class="keywordtype">void</span>* ptr);<span class="comment"></span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">/**</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment"> * @brief Sends formatted output to a string using an argument list.</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment"> * @param buf Pointer to a buffer where the result is stored</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment"> * @param fmt C string that contains a format string</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment"> * @param args A value identifying a variable arguments list</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment"> * @return int The total number of characters written.</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment"> * The number of characters not written if negative.</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keywordtype">int</span> <a class="code" href="../../d2/daf/stdio_8hpp.html#a626c6babba88d2b34beacfb116a71fb8">kvsprintf</a>(<span class="keywordtype">char</span>* buf, <span class="keyword">const</span> <span class="keywordtype">char</span>* fmt, va_list args);<span class="comment"></span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment">/**</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment"> * @brief Sends formatted output to a string.</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment"> * @param buf Pointer to a buffer where the result is stored</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment"> * @param fmt C string that contains a format string</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment"> * @param ... Sequence of additional arguments</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment"> * @return int The total number of characters written.</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment"> * The number of characters not written if negative.</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keywordtype">int</span> <a class="code" href="../../d2/daf/stdio_8hpp.html#a4a8483991af81c2a4ae0025f4d2fb5e7">ksprintf</a>(<span class="keywordtype">char</span>* buf, <span class="keyword">const</span> <span class="keywordtype">char</span>* fmt, ...);<span class="comment"></span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment">/**</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="comment"> * @brief Prints a statement to serial debugger if the kernel</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment"> * is built with the debug flag defined. Max message size is</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment"> * 1024 (including null terminator).</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment"> * @param fmt Formatted C string</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment"> * @param ... Sequence of additional arguments</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="../../d2/daf/stdio_8hpp.html#a9615e001b781d55752b3d44f9bfd5162">   19</a></span>&#160;<span class="preprocessor">#define DBG_INFO &quot;[ \033[37mINFO \033[0m] &quot;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="../../d2/daf/stdio_8hpp.html#ae56fe95de97ed67336ce13b6ea31755f">   20</a></span>&#160;<span class="preprocessor">#define DBG_WARN &quot;[ \033[93mWARN \033[0m] &quot;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="../../d2/daf/stdio_8hpp.html#ab4ef54c30d07d4bd546315a34d0a331b">   21</a></span>&#160;<span class="preprocessor">#define DBG_FAIL &quot;[ \033[91mFAIL \033[0m] &quot;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="../../d2/daf/stdio_8hpp.html#a152ce02748caf291a3a8f253c4b7324e">   22</a></span>&#160;<span class="preprocessor">#define DBG_OKAY &quot;[ \033[92m OK  \033[0m] &quot;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="../../d2/daf/stdio_8hpp.html#a18adc43d71a61a1556a8dfd7ad2a918e">   24</a></span>&#160;<span class="keyword">typedef</span> int (*<a class="code" href="../../d2/daf/stdio_8hpp.html#a18adc43d71a61a1556a8dfd7ad2a918e">printf_cb_fnptr_t</a>)(<span class="keywordtype">unsigned</span> c, <span class="keywordtype">void</span>** helper);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment"> * @brief Perform all printf operations on the format string using the provided</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment"> * argument list and uses the callback function to perform the character printing</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment"> * operation. This allows for adding printf capabilities to a wide range of</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment"> * text output applications, such as an RS232 debug driver, or a framebuffer</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment"> * console.</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment"> * @param fmt Format string</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment"> * @param args Arguments list</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment"> * @param fn Character printing callback function pointer</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment"> * @param ptr User-provided data / handle pointer</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment"> * @return int Returns number of characters written</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keywordtype">int</span> <a class="code" href="../../d2/daf/stdio_8hpp.html#a85a2fff114bf015eba22a1dc163bf1ba">printf_helper</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* fmt, va_list <a class="code" href="../../d8/db5/namespace_console.html#a07dd1357daf4c78de61710fa43e215df">args</a>, <a class="code" href="../../d2/daf/stdio_8hpp.html#a18adc43d71a61a1556a8dfd7ad2a918e">printf_cb_fnptr_t</a> fn, <span class="keywordtype">void</span>* ptr);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment"> * @brief Sends formatted output to a string using an argument list.</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment"> * @param buf Pointer to a buffer where the result is stored</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment"> * @param fmt C string that contains a format string</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment"> * @param args A value identifying a variable arguments list</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment"> * @return int The total number of characters written.</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment"> * The number of characters not written if negative.</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keywordtype">int</span> <a class="code" href="../../d2/daf/stdio_8hpp.html#a626c6babba88d2b34beacfb116a71fb8">kvsprintf</a>(<span class="keywordtype">char</span>* buf, <span class="keyword">const</span> <span class="keywordtype">char</span>* fmt, va_list <a class="code" href="../../d8/db5/namespace_console.html#a07dd1357daf4c78de61710fa43e215df">args</a>);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment"> * @brief Sends formatted output to a string.</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="comment"> * @param buf Pointer to a buffer where the result is stored</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment"> * @param fmt C string that contains a format string</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment"> * @param ... Sequence of additional arguments</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment"> * @return int The total number of characters written.</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment"> * The number of characters not written if negative.</span></div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">#ifdef DEBUG</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="../../db/d90/rs232_8hpp.html">dev/serial/rs232.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#define debugf(fmt, ...) RS232::printf(fmt, ##__VA_ARGS__)</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="../../d2/daf/stdio_8hpp.html#aa1a1b09aada329c9352f1337d36ce184">   65</a></span>&#160;<span class="preprocessor">#define debugf(fmt, ...)</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keywordtype">int</span> <a class="code" href="../../d2/daf/stdio_8hpp.html#a4a8483991af81c2a4ae0025f4d2fb5e7">ksprintf</a>(<span class="keywordtype">char</span>* buf, <span class="keyword">const</span> <span class="keywordtype">char</span>* fmt, ...);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment"> * @brief Prints a statement to serial debugger if the kernel</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment"> * is built with the debug flag defined. Max message size is</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment"> * 1024 (including null terminator).</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment"> * @param fmt Formatted C string</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment"> * @param ... Sequence of additional arguments</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor">#ifdef DEBUG</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="../../db/d90/rs232_8hpp.html">dev/serial/rs232.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">#define debugf(fmt, ...) RS232::printf(fmt, ##__VA_ARGS__)</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="../../d2/daf/stdio_8hpp.html#aa1a1b09aada329c9352f1337d36ce184">   74</a></span>&#160;<span class="preprocessor">#define debugf(fmt, ...)</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="comment"> * @brief Prints a statement to serial debugger and the kernel framebuffer.</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="comment"> * Max message size is 1024 (including null terminator).</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="comment"> * @param fmt Formatted C string</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="comment"> * @param ... Sequence of additional arguments</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="../../d2/daf/stdio_8hpp.html#a2f152e9062e9955e45fbcd8c914adf4d">   83</a></span>&#160;<span class="preprocessor">#define log_all(fmt, ...) do { \</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor">    RS232::printf(fmt, ##__VA_ARGS__); \</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor">    Console::printf(fmt, ##__VA_ARGS__); \</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="preprocessor">} while (0)</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="astdio_8hpp_html_a18adc43d71a61a1556a8dfd7ad2a918e"><div class="ttname"><a href="../../d2/daf/stdio_8hpp.html#a18adc43d71a61a1556a8dfd7ad2a918e">printf_cb_fnptr_t</a></div><div class="ttdeci">int(* printf_cb_fnptr_t)(unsigned c, void **helper)</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/daf/stdio_8hpp_source.html#l00019">stdio.hpp:19</a></div></div>
+<div class="ttc" id="astdio_8hpp_html_a18adc43d71a61a1556a8dfd7ad2a918e"><div class="ttname"><a href="../../d2/daf/stdio_8hpp.html#a18adc43d71a61a1556a8dfd7ad2a918e">printf_cb_fnptr_t</a></div><div class="ttdeci">int(* printf_cb_fnptr_t)(unsigned c, void **helper)</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/daf/stdio_8hpp_source.html#l00024">stdio.hpp:24</a></div></div>
+<div class="ttc" id="anamespace_console_html_a07dd1357daf4c78de61710fa43e215df"><div class="ttname"><a href="../../d8/db5/namespace_console.html#a07dd1357daf4c78de61710fa43e215df">Console::args</a></div><div class="ttdeci">va_list args</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/ddc/console_8hpp_source.html#l00026">console.hpp:26</a></div></div>
 <div class="ttc" id="ars232_8hpp_html"><div class="ttname"><a href="../../db/d90/rs232_8hpp.html">rs232.hpp</a></div><div class="ttdoc">A simple, write-only driver for the RS232 serial device standard. Code mostly ported from Panix-Archi...</div></div>
-<div class="ttc" id="astdio_8hpp_html_a626c6babba88d2b34beacfb116a71fb8"><div class="ttname"><a href="../../d2/daf/stdio_8hpp.html#a626c6babba88d2b34beacfb116a71fb8">kvsprintf</a></div><div class="ttdeci">int kvsprintf(char *buf, const char *fmt, va_list args)</div><div class="ttdoc">Sends formatted output to a string using an argument list.</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d64/printf_8cpp_source.html#l00315">printf.cpp:315</a></div></div>
-<div class="ttc" id="astdio_8hpp_html_a85a2fff114bf015eba22a1dc163bf1ba"><div class="ttname"><a href="../../d2/daf/stdio_8hpp.html#a85a2fff114bf015eba22a1dc163bf1ba">printf_helper</a></div><div class="ttdeci">int printf_helper(const char *fmt, va_list args, printf_cb_fnptr_t fn, void *ptr)</div><div class="ttdoc">Perform all printf operations on the format string using the provided argument list and uses the call...</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d64/printf_8cpp_source.html#l00099">printf.cpp:99</a></div></div>
-<div class="ttc" id="astdio_8hpp_html_a4a8483991af81c2a4ae0025f4d2fb5e7"><div class="ttname"><a href="../../d2/daf/stdio_8hpp.html#a4a8483991af81c2a4ae0025f4d2fb5e7">ksprintf</a></div><div class="ttdeci">int ksprintf(char *buf, const char *fmt,...)</div><div class="ttdoc">Sends formatted output to a string.</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d64/printf_8cpp_source.html#l00325">printf.cpp:325</a></div></div>
+<div class="ttc" id="astdio_8hpp_html_a626c6babba88d2b34beacfb116a71fb8"><div class="ttname"><a href="../../d2/daf/stdio_8hpp.html#a626c6babba88d2b34beacfb116a71fb8">kvsprintf</a></div><div class="ttdeci">int kvsprintf(char *buf, const char *fmt, va_list args)</div><div class="ttdoc">Sends formatted output to a string using an argument list.</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d64/printf_8cpp_source.html#l00333">printf.cpp:333</a></div></div>
+<div class="ttc" id="astdio_8hpp_html_a85a2fff114bf015eba22a1dc163bf1ba"><div class="ttname"><a href="../../d2/daf/stdio_8hpp.html#a85a2fff114bf015eba22a1dc163bf1ba">printf_helper</a></div><div class="ttdeci">int printf_helper(const char *fmt, va_list args, printf_cb_fnptr_t fn, void *ptr)</div><div class="ttdoc">Perform all printf operations on the format string using the provided argument list and uses the call...</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d64/printf_8cpp_source.html#l00105">printf.cpp:105</a></div></div>
+<div class="ttc" id="astdio_8hpp_html_a4a8483991af81c2a4ae0025f4d2fb5e7"><div class="ttname"><a href="../../d2/daf/stdio_8hpp.html#a4a8483991af81c2a4ae0025f4d2fb5e7">ksprintf</a></div><div class="ttdeci">int ksprintf(char *buf, const char *fmt,...)</div><div class="ttdoc">Sends formatted output to a string.</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d64/printf_8cpp_source.html#l00342">printf.cpp:342</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

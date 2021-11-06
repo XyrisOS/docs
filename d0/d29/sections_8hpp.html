@@ -111,7 +111,7 @@ $(document).ready(function(){initNavTree('d0/d29/sections_8hpp.html','../../'); 
 <map name="sections_8hppdep" id="sections_8hppdep">
 <area shape="rect" title="Kernel ELF section definitions." alt="" coords="183,5,287,32"/>
 <area shape="rect" href="../../d5/d6c/boothelp_8cpp.html" title="Maps bootloader information into memory." alt="" coords="5,80,112,107"/>
-<area shape="rect" href="../../d3/d22/boot_2panic_8cpp.html" title="Early CGA&#45;mode panic (no framebuffer)" alt="" coords="137,80,221,107"/>
+<area shape="rect" href="../../dd/de7/arch_2i386_2boot_2panic_8cpp.html" title="Early CGA&#45;mode panic (no framebuffer)" alt="" coords="137,80,221,107"/>
 <area shape="rect" href="../../da/de5/stivale_8cpp.html" title="Stivale2 bootloader header." alt="" coords="245,80,339,107"/>
 <area shape="rect" href="../../d1/d5e/paging_8cpp.html" title=" " alt="" coords="363,80,456,107"/>
 </map>
@@ -121,8 +121,10 @@ $(document).ready(function(){initNavTree('d0/d29/sections_8hpp.html','../../'); 
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a9982c2dc93e94348913cd6b7b0618973"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d29/sections_8hpp.html#a9982c2dc93e94348913cd6b7b0618973">SECTION</a>(x)&#160;&#160;&#160;<a class="el" href="../../d2/d59/tss_8hpp.html#af0d620c64f9a9b033b5fd51a63edf45f">__attribute__</a>((section(x)))</td></tr>
+<tr class="memitem:a9982c2dc93e94348913cd6b7b0618973"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d29/sections_8hpp.html#a9982c2dc93e94348913cd6b7b0618973">SECTION</a>(x)&#160;&#160;&#160;<a class="el" href="../../d6/d64/_panic_8hpp.html#a5b070431e38a1e2a0ed4ddf8b7ce5fa0">__attribute__</a>((section(x)))</td></tr>
 <tr class="separator:a9982c2dc93e94348913cd6b7b0618973"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42b9761aec8fc5e74eb549770d47b6d8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d29/sections_8hpp.html#a42b9761aec8fc5e74eb549770d47b6d8">EARLY_MEM_START</a>&#160;&#160;&#160;((uintptr_t)&amp;<a class="el" href="../../d0/d29/sections_8hpp.html#ac06eac0a9b8a5b44645eefb3dd7686af">_EARLY_MEM_START</a>)</td></tr>
+<tr class="separator:a42b9761aec8fc5e74eb549770d47b6d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a52c700cb4dd8a7a00e78964136efb8c0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d29/sections_8hpp.html#a52c700cb4dd8a7a00e78964136efb8c0">EARLY_KERNEL_START</a>&#160;&#160;&#160;((uintptr_t)&amp;<a class="el" href="../../d0/d29/sections_8hpp.html#aac8212e0e9c2f82016582e98713c528b">_EARLY_KERNEL_START</a>)</td></tr>
 <tr class="separator:a52c700cb4dd8a7a00e78964136efb8c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49c4fdd3bb7e14d17ffbe3a5ce69cac1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d29/sections_8hpp.html#a49c4fdd3bb7e14d17ffbe3a5ce69cac1">EARLY_KERNEL_END</a>&#160;&#160;&#160;((uintptr_t)&amp;<a class="el" href="../../d0/d29/sections_8hpp.html#aba87d88761e72491c80dea42eda60130">_EARLY_KERNEL_END</a>)</td></tr>
@@ -152,6 +154,8 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
+<tr class="memitem:ac06eac0a9b8a5b44645eefb3dd7686af"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d29/sections_8hpp.html#ac06eac0a9b8a5b44645eefb3dd7686af">_EARLY_MEM_START</a></td></tr>
+<tr class="separator:ac06eac0a9b8a5b44645eefb3dd7686af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aac8212e0e9c2f82016582e98713c528b"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d29/sections_8hpp.html#aac8212e0e9c2f82016582e98713c528b">_EARLY_KERNEL_START</a></td></tr>
 <tr class="separator:aac8212e0e9c2f82016582e98713c528b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aba87d88761e72491c80dea42eda60130"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d29/sections_8hpp.html#aba87d88761e72491c80dea42eda60130">_EARLY_KERNEL_END</a></td></tr>
@@ -200,7 +204,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d29/sections_8hpp_source.html#l00047">47</a> of file <a class="el" href="../../d0/d29/sections_8hpp_source.html">sections.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d29/sections_8hpp_source.html#l00050">50</a> of file <a class="el" href="../../d0/d29/sections_8hpp_source.html">sections.hpp</a>.</p>
 
 </div>
 </div>
@@ -216,7 +220,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d29/sections_8hpp_source.html#l00045">45</a> of file <a class="el" href="../../d0/d29/sections_8hpp_source.html">sections.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d29/sections_8hpp_source.html#l00048">48</a> of file <a class="el" href="../../d0/d29/sections_8hpp_source.html">sections.hpp</a>.</p>
 
 </div>
 </div>
@@ -232,7 +236,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d29/sections_8hpp_source.html#l00042">42</a> of file <a class="el" href="../../d0/d29/sections_8hpp_source.html">sections.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d29/sections_8hpp_source.html#l00045">45</a> of file <a class="el" href="../../d0/d29/sections_8hpp_source.html">sections.hpp</a>.</p>
 
 </div>
 </div>
@@ -248,7 +252,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d29/sections_8hpp_source.html#l00040">40</a> of file <a class="el" href="../../d0/d29/sections_8hpp_source.html">sections.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d29/sections_8hpp_source.html#l00043">43</a> of file <a class="el" href="../../d0/d29/sections_8hpp_source.html">sections.hpp</a>.</p>
 
 </div>
 </div>
@@ -264,7 +268,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d29/sections_8hpp_source.html#l00037">37</a> of file <a class="el" href="../../d0/d29/sections_8hpp_source.html">sections.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d29/sections_8hpp_source.html#l00040">40</a> of file <a class="el" href="../../d0/d29/sections_8hpp_source.html">sections.hpp</a>.</p>
 
 </div>
 </div>
@@ -280,7 +284,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d29/sections_8hpp_source.html#l00035">35</a> of file <a class="el" href="../../d0/d29/sections_8hpp_source.html">sections.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d29/sections_8hpp_source.html#l00038">38</a> of file <a class="el" href="../../d0/d29/sections_8hpp_source.html">sections.hpp</a>.</p>
 
 </div>
 </div>
@@ -296,7 +300,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d29/sections_8hpp_source.html#l00024">24</a> of file <a class="el" href="../../d0/d29/sections_8hpp_source.html">sections.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d29/sections_8hpp_source.html#l00027">27</a> of file <a class="el" href="../../d0/d29/sections_8hpp_source.html">sections.hpp</a>.</p>
 
 </div>
 </div>
@@ -308,6 +312,22 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define EARLY_KERNEL_START&#160;&#160;&#160;((uintptr_t)&amp;<a class="el" href="../../d0/d29/sections_8hpp.html#aac8212e0e9c2f82016582e98713c528b">_EARLY_KERNEL_START</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d0/d29/sections_8hpp_source.html#l00025">25</a> of file <a class="el" href="../../d0/d29/sections_8hpp_source.html">sections.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a42b9761aec8fc5e74eb549770d47b6d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42b9761aec8fc5e74eb549770d47b6d8">&#9670;&nbsp;</a></span>EARLY_MEM_START</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EARLY_MEM_START&#160;&#160;&#160;((uintptr_t)&amp;<a class="el" href="../../d0/d29/sections_8hpp.html#ac06eac0a9b8a5b44645eefb3dd7686af">_EARLY_MEM_START</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -328,7 +348,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d29/sections_8hpp_source.html#l00027">27</a> of file <a class="el" href="../../d0/d29/sections_8hpp_source.html">sections.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d29/sections_8hpp_source.html#l00030">30</a> of file <a class="el" href="../../d0/d29/sections_8hpp_source.html">sections.hpp</a>.</p>
 
 </div>
 </div>
@@ -344,7 +364,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d29/sections_8hpp_source.html#l00032">32</a> of file <a class="el" href="../../d0/d29/sections_8hpp_source.html">sections.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d29/sections_8hpp_source.html#l00035">35</a> of file <a class="el" href="../../d0/d29/sections_8hpp_source.html">sections.hpp</a>.</p>
 
 </div>
 </div>
@@ -360,7 +380,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d29/sections_8hpp_source.html#l00030">30</a> of file <a class="el" href="../../d0/d29/sections_8hpp_source.html">sections.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d29/sections_8hpp_source.html#l00033">33</a> of file <a class="el" href="../../d0/d29/sections_8hpp_source.html">sections.hpp</a>.</p>
 
 </div>
 </div>
@@ -376,7 +396,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d29/sections_8hpp_source.html#l00052">52</a> of file <a class="el" href="../../d0/d29/sections_8hpp_source.html">sections.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d29/sections_8hpp_source.html#l00055">55</a> of file <a class="el" href="../../d0/d29/sections_8hpp_source.html">sections.hpp</a>.</p>
 
 </div>
 </div>
@@ -392,7 +412,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d29/sections_8hpp_source.html#l00050">50</a> of file <a class="el" href="../../d0/d29/sections_8hpp_source.html">sections.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d29/sections_8hpp_source.html#l00053">53</a> of file <a class="el" href="../../d0/d29/sections_8hpp_source.html">sections.hpp</a>.</p>
 
 </div>
 </div>
@@ -407,7 +427,7 @@ Variables</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">x</td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="../../d2/d59/tss_8hpp.html#af0d620c64f9a9b033b5fd51a63edf45f">__attribute__</a>((section(x)))</td>
+          <td>&#160;&#160;&#160;<a class="el" href="../../d6/d64/_panic_8hpp.html#a5b070431e38a1e2a0ed4ddf8b7ce5fa0">__attribute__</a>((section(x)))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -523,6 +543,20 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">size_t _EARLY_KERNEL_START</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac06eac0a9b8a5b44645eefb3dd7686af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac06eac0a9b8a5b44645eefb3dd7686af">&#9670;&nbsp;</a></span>_EARLY_MEM_START</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t _EARLY_MEM_START</td>
         </tr>
       </table>
 </div><div class="memdoc">

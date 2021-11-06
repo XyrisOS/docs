@@ -142,37 +142,41 @@ $(document).ready(function(){initNavTree('db/d90/rs232_8hpp_source.html','../../
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment"> * @param ... Arguments</span></div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment"> * @return int Number of characters printed</span></div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keywordtype">int</span> <a class="code" href="../../d7/d75/namespace_r_s232.html#a394b7ac1c601a47c2881a460eb41171a">printf</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *format, ...);</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment">/**</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment"> * @brief Prints a formatted string to serial output using</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment"> * a va_list of arguments</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment"> * @param fmt Format string</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment"> * @param args Arguments list</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment"> * @return int Number of characters printed</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keywordtype">int</span> <a class="code" href="../../d7/d75/namespace_r_s232.html#a04a4582da3c891beaa849f3ce2189975">vprintf</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* fmt, va_list args);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment">/**</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment"> * @brief Closes the serial input buffer and frees all of</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment"> * the data contained within.</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment"> * @return int Returns 0 on success and -1 on error. Errno</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment"> * is set appropriately.</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keywordtype">int</span> <a class="code" href="../../d7/d75/namespace_r_s232.html#a2e5776c1b56f1688717939fe69e5abc1">close</a>();</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;} <span class="comment">// !namespace RS232</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<a class="code" href="../../d7/d75/namespace_r_s232.html#a4040c686bfe77f0767799c234387a911">__attribute__</a> ((format (<a class="code" href="../../d7/d75/namespace_r_s232.html#a394b7ac1c601a47c2881a460eb41171a">printf</a>, 1, 2)))</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keywordtype">int</span> <a class="code" href="../../d7/d75/namespace_r_s232.html#a394b7ac1c601a47c2881a460eb41171a">printf</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *format, ...);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment"> * @brief Prints a formatted string to serial output using</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment"> * a va_list of arguments</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment"> * @param fmt Format string</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment"> * @param args Arguments list</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment"> * @return int Number of characters printed</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<a class="code" href="../../d7/d75/namespace_r_s232.html#a4040c686bfe77f0767799c234387a911">__attribute__</a> ((format (<a class="code" href="../../d7/d75/namespace_r_s232.html#a394b7ac1c601a47c2881a460eb41171a">printf</a>, 1, 0)))</div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="../../d7/d75/namespace_r_s232.html#a35ef860e891098f5c77ffb9986a67e9d">   68</a></span>&#160;int <a class="code" href="../../d7/d75/namespace_r_s232.html#a04a4582da3c891beaa849f3ce2189975">vprintf</a>(const <span class="keywordtype">char</span>* fmt, va_list <a class="code" href="../../d7/d75/namespace_r_s232.html#a35ef860e891098f5c77ffb9986a67e9d">args</a>);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment"> * @brief Closes the serial input buffer and frees all of</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment"> * the data contained within.</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment"> * @return int Returns 0 on success and -1 on error. Errno</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment"> * is set appropriately.</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keywordtype">int</span> <a class="code" href="../../d7/d75/namespace_r_s232.html#a2e5776c1b56f1688717939fe69e5abc1">close</a>();</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;} <span class="comment">// !namespace RS232</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="anamespace_r_s232_html_a4040c686bfe77f0767799c234387a911"><div class="ttname"><a href="../../d7/d75/namespace_r_s232.html#a4040c686bfe77f0767799c234387a911">RS232::__attribute__</a></div><div class="ttdeci">__attribute__((format(printf, 1, 2))) int printf(const char *format</div><div class="ttdoc">Prints a formatted string to serial output.</div></div>
 <div class="ttc" id="anamespace_r_s232_html_a4f82e14c1586b0fdcc0f71a0806e4e7e"><div class="ttname"><a href="../../d7/d75/namespace_r_s232.html#a4f82e14c1586b0fdcc0f71a0806e4e7e">RS232::write</a></div><div class="ttdeci">size_t write(const char *buf, size_t count)</div><div class="ttdoc">Write bytes to the serial device.</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dc7/rs232_8cpp_source.html#l00152">rs232.cpp:152</a></div></div>
+<div class="ttc" id="anamespace_r_s232_html_a35ef860e891098f5c77ffb9986a67e9d"><div class="ttname"><a href="../../d7/d75/namespace_r_s232.html#a35ef860e891098f5c77ffb9986a67e9d">RS232::args</a></div><div class="ttdeci">va_list args</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d90/rs232_8hpp_source.html#l00068">rs232.hpp:68</a></div></div>
 <div class="ttc" id="anamespace_r_s232_html_aa77ae4139fa5feba01809614f595edb6"><div class="ttname"><a href="../../d7/d75/namespace_r_s232.html#aa77ae4139fa5feba01809614f595edb6">RS232::read</a></div><div class="ttdeci">size_t read(char *buf, size_t count)</div><div class="ttdoc">Reads bytes from the serial buffer.</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dc7/rs232_8cpp_source.html#l00140">rs232.cpp:140</a></div></div>
-<div class="ttc" id="anamespace_r_s232_html_a04a4582da3c891beaa849f3ce2189975"><div class="ttname"><a href="../../d7/d75/namespace_r_s232.html#a04a4582da3c891beaa849f3ce2189975">RS232::vprintf</a></div><div class="ttdeci">int vprintf(const char *fmt, va_list args)</div><div class="ttdoc">Prints a formatted string to serial output using a va_list of arguments.</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dc7/rs232_8cpp_source.html#l00073">rs232.cpp:73</a></div></div>
+<div class="ttc" id="anamespace_r_s232_html_a04a4582da3c891beaa849f3ce2189975"><div class="ttname"><a href="../../d7/d75/namespace_r_s232.html#a04a4582da3c891beaa849f3ce2189975">RS232::vprintf</a></div><div class="ttdeci">int vprintf(const char *fmt, va_list args)</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dc7/rs232_8cpp_source.html#l00073">rs232.cpp:73</a></div></div>
 <div class="ttc" id="anamespace_r_s232_html_a2e5776c1b56f1688717939fe69e5abc1"><div class="ttname"><a href="../../d7/d75/namespace_r_s232.html#a2e5776c1b56f1688717939fe69e5abc1">RS232::close</a></div><div class="ttdeci">int close()</div><div class="ttdoc">Closes the serial input buffer and frees all of the data contained within.</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dc7/rs232_8cpp_source.html#l00163">rs232.cpp:163</a></div></div>
 <div class="ttc" id="anamespace_r_s232_html_acbd0855fa0862424053ed439eb77e6b3"><div class="ttname"><a href="../../d7/d75/namespace_r_s232.html#acbd0855fa0862424053ed439eb77e6b3">RS232::init</a></div><div class="ttdeci">void init(uint16_t com_id)</div><div class="ttdoc">Activates the RS232 serial driver.</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dc7/rs232_8cpp_source.html#l00108">rs232.cpp:108</a></div></div>
 <div class="ttc" id="anamespace_r_s232_html"><div class="ttname"><a href="../../d7/d75/namespace_r_s232.html">RS232</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dc7/rs232_8cpp_source.html#l00038">rs232.cpp:38</a></div></div>
-<div class="ttc" id="anamespace_r_s232_html_a394b7ac1c601a47c2881a460eb41171a"><div class="ttname"><a href="../../d7/d75/namespace_r_s232.html#a394b7ac1c601a47c2881a460eb41171a">RS232::printf</a></div><div class="ttdeci">int printf(const char *format,...)</div><div class="ttdoc">Prints a formatted string to serial output.</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dc7/rs232_8cpp_source.html#l00080">rs232.cpp:80</a></div></div>
+<div class="ttc" id="anamespace_r_s232_html_a394b7ac1c601a47c2881a460eb41171a"><div class="ttname"><a href="../../d7/d75/namespace_r_s232.html#a394b7ac1c601a47c2881a460eb41171a">RS232::printf</a></div><div class="ttdeci">int printf(const char *format,...)</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dc7/rs232_8cpp_source.html#l00080">rs232.cpp:80</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

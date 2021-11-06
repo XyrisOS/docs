@@ -1,5 +1,5 @@
 <map id="RS232::vprintf" name="RS232::vprintf">
-<area shape="rect" id="node1" title="Prints a formatted string to serial output using a va_list of arguments." alt="" coords="5,5,120,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,120,32"/>
 <area shape="rect" id="node2" href="$d4/d64/printf_8cpp.html#a85a2fff114bf015eba22a1dc163bf1ba" title="Perform all printf operations on the format string using the provided argument list and uses the call..." alt="" coords="168,5,273,32"/>
 <area shape="rect" id="node3" href="$d5/d24/string_8cpp.html#a2dee044e4e667b5b789b493abd21cfa4" title="Returns the length of a string." alt="" coords="321,5,380,32"/>
 </map>

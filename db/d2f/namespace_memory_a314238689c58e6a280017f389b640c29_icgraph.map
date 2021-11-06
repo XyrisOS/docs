@@ -1,0 +1,6 @@
+<map id="Memory::mapKernelPage" name="Memory::mapKernelPage">
+<area shape="rect" id="node1" title="Map a page into the kernel address space." alt="" coords="457,31,641,57"/>
+<area shape="rect" id="node2" href="$db/d2f/namespace_memory.html#ac18baaf631829c2290bcb0971e8b6fad" title="Map a kernel address range into physical memory." alt="" coords="161,5,409,32"/>
+<area shape="rect" id="node3" href="$db/d2f/namespace_memory.html#a5035c7465eb342a95802a5ec772bebc1" title="Map an address range into the kernel virtual address space." alt="" coords="167,56,404,83"/>
+<area shape="rect" id="node4" href="$d6/d9b/namespace_graphics.html#afc86122297c8c117c8793ddaf246e4ed" title="Initializes the framebuffer (if available)" alt="" coords="5,56,113,83"/>
+</map>

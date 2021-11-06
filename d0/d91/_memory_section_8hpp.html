@@ -91,7 +91,8 @@ $(document).ready(function(){initNavTree('d0/d91/_memory_section_8hpp.html','../
 <div class="title">MemorySection.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="../../d2/d3d/compiler_8hpp_source.html">meta/compiler.hpp</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="../../d9/d4f/_memory_8hpp_source.html">arch/Memory.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="../../d2/d3d/compiler_8hpp_source.html">meta/compiler.hpp</a>&gt;</code><br />
 <code>#include &lt;stddef.h&gt;</code><br />
 <code>#include &lt;stdint.h&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -101,10 +102,11 @@ $(document).ready(function(){initNavTree('d0/d91/_memory_section_8hpp.html','../
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="../../df/d72/_memory_section_8hpp__incl.png" border="0" usemap="#_memory_section_8hpp" alt=""/></div>
 <map name="_memory_section_8hpp" id="_memory_section_8hpp">
-<area shape="rect" title=" " alt="" coords="135,5,287,32"/>
-<area shape="rect" href="../../d2/d3d/compiler_8hpp.html" title="Compiler meta directives." alt="" coords="5,80,149,107"/>
-<area shape="rect" title=" " alt="" coords="173,80,248,107"/>
-<area shape="rect" title=" " alt="" coords="273,80,343,107"/>
+<area shape="rect" title=" " alt="" coords="67,5,219,32"/>
+<area shape="rect" href="../../d9/d4f/_memory_8hpp.html" title="Architecture memory management &amp; paging API." alt="" coords="24,80,159,107"/>
+<area shape="rect" title=" " alt="" coords="5,155,76,181"/>
+<area shape="rect" title=" " alt="" coords="105,155,179,181"/>
+<area shape="rect" href="../../d2/d3d/compiler_8hpp.html" title="Compiler meta directives." alt="" coords="234,80,378,107"/>
 </map>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -114,25 +116,27 @@ $(document).ready(function(){initNavTree('d0/d91/_memory_section_8hpp.html','../
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="../../d5/d35/_memory_section_8hpp__dep__incl.png" border="0" usemap="#_memory_section_8hppdep" alt=""/></div>
 <map name="_memory_section_8hppdep" id="_memory_section_8hppdep">
-<area shape="rect" title=" " alt="" coords="153,5,305,32"/>
-<area shape="rect" href="../../d6/dc1/_memory_map_8hpp.html" title="Memory map containing a number of Memory sections that describe the physical memory layout." alt="" coords="163,80,295,107"/>
-<area shape="rect" href="../../d2/d1f/_handoff_8hpp.html" title=" " alt="" coords="117,155,219,181"/>
-<area shape="rect" href="../../d1/d75/paging_8hpp.html" title=" " alt="" coords="302,155,397,181"/>
-<area shape="rect" href="../../d4/d88/_handoff_8cpp.html" title=" " alt="" coords="151,229,251,256"/>
-<area shape="rect" href="../../d6/d99/graphics_8cpp.html" title="Graphics management and control." alt="" coords="23,229,127,256"/>
-<area shape="rect" href="../../d2/dd2/entry_8cpp.html" title="The entry point into the Xyris kernel." alt="" coords="57,304,138,331"/>
-<area shape="rect" href="../../de/d90/heap_8cpp.html" title="Liballoc heap implementation." alt="" coords="611,379,693,405"/>
-<area shape="rect" href="../../d1/d5e/paging_8cpp.html" title=" " alt="" coords="717,379,811,405"/>
-<area shape="rect" href="../../d2/dbd/tasks_8hpp.html" title=" " alt="" coords="432,229,517,256"/>
-<area shape="rect" href="../../d9/d55/trace_8cpp.html" title="Kernel stack tracing." alt="" coords="275,229,357,256"/>
-<area shape="rect" href="../../d0/dde/primes_8cpp.html" title="Prime computation tasks." alt="" coords="310,304,405,331"/>
-<area shape="rect" href="../../d8/da6/mutex_8hpp.html" title=" " alt="" coords="429,304,521,331"/>
-<area shape="rect" href="../../d1/d5a/semaphore_8hpp.html" title=" " alt="" coords="163,304,285,331"/>
-<area shape="rect" href="../../d5/d9d/tasks_8cpp.html" title=" " alt="" coords="545,304,629,331"/>
-<area shape="rect" href="../../d9/dda/console_8cpp.html" title="Framebuffer console." alt="" coords="379,379,477,405"/>
-<area shape="rect" href="../../d4/dc7/rs232_8cpp.html" title=" " alt="" coords="501,379,587,405"/>
-<area shape="rect" href="../../d0/dbb/mutex_8cpp.html" title=" " alt="" coords="264,379,355,405"/>
-<area shape="rect" href="../../da/d20/semaphore_8cpp.html" title=" " alt="" coords="117,379,240,405"/>
+<area shape="rect" title=" " alt="" coords="906,5,1058,32"/>
+<area shape="rect" href="../../d6/dc1/_memory_map_8hpp.html" title="Memory map containing a number of Memory sections that describe the physical memory layout." alt="" coords="845,80,977,107"/>
+<area shape="rect" href="../../d0/d81/_physical_8hpp.html" title="Physical memory mapping." alt="" coords="1002,80,1106,107"/>
+<area shape="rect" href="../../d2/d1f/_handoff_8hpp.html" title=" " alt="" coords="862,155,963,181"/>
+<area shape="rect" href="../../d1/d75/paging_8hpp.html" title=" " alt="" coords="627,155,721,181"/>
+<area shape="rect" href="../../d4/d88/_handoff_8cpp.html" title="Bootloader information parsing and kernel handoff container." alt="" coords="737,229,837,256"/>
+<area shape="rect" href="../../d6/d99/graphics_8cpp.html" title="Graphics management and control." alt="" coords="862,229,966,256"/>
+<area shape="rect" href="../../d2/dd2/entry_8cpp.html" title="The entry point into the Xyris kernel." alt="" coords="687,304,768,331"/>
+<area shape="rect" href="../../de/d90/heap_8cpp.html" title="Liballoc heap implementation." alt="" coords="5,379,87,405"/>
+<area shape="rect" href="../../d1/d5e/paging_8cpp.html" title=" " alt="" coords="650,379,743,405"/>
+<area shape="rect" href="../../d2/dbd/tasks_8hpp.html" title=" " alt="" coords="415,229,501,256"/>
+<area shape="rect" href="../../d9/d55/trace_8cpp.html" title="Kernel stack tracing." alt="" coords="529,229,611,256"/>
+<area shape="rect" href="../../d0/dde/primes_8cpp.html" title="Prime computation tasks." alt="" coords="145,304,240,331"/>
+<area shape="rect" href="../../d8/da6/mutex_8hpp.html" title=" " alt="" coords="412,304,504,331"/>
+<area shape="rect" href="../../d1/d5a/semaphore_8hpp.html" title=" " alt="" coords="265,304,387,331"/>
+<area shape="rect" href="../../d5/df3/sys_2panic_8cpp.html" title=" " alt="" coords="529,304,611,331"/>
+<area shape="rect" href="../../d5/d9d/tasks_8cpp.html" title=" " alt="" coords="37,304,121,331"/>
+<area shape="rect" href="../../d9/dda/console_8cpp.html" title="Framebuffer console." alt="" coords="527,379,626,405"/>
+<area shape="rect" href="../../d4/dc7/rs232_8cpp.html" title=" " alt="" coords="303,379,389,405"/>
+<area shape="rect" href="../../d0/dbb/mutex_8cpp.html" title=" " alt="" coords="413,379,503,405"/>
+<area shape="rect" href="../../da/d20/semaphore_8cpp.html" title=" " alt="" coords="157,379,279,405"/>
 </map>
 </div>
 </div>

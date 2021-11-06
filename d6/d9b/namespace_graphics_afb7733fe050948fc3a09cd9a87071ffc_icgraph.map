@@ -1,10 +1,9 @@
 <map id="Graphics::swap" name="Graphics::swap">
-<area shape="rect" id="node1" title="Swap the data on backbuffer to memory video buffer and show in the screen." alt="" coords="532,133,653,159"/>
-<area shape="rect" id="node2" href="$d8/db5/namespace_console.html#aa92244db771ad2578967dd9f8fcac912" title=" " alt="" coords="359,82,476,109"/>
-<area shape="rect" id="node7" href="$d6/d9b/namespace_graphics.html#a0c60e5c671ea347d63839d16c3712268" title="Draws and fills a rectangle of a given width and height, and color at the provided coordinates." alt="" coords="351,133,484,159"/>
-<area shape="rect" id="node8" href="$dc/da3/namespace_apps.html#a01ace99cc76e0adcf1428dadf9134e3e" title="Run a simple animation." alt="" coords="148,183,303,210"/>
-<area shape="rect" id="node3" href="$d9/dc3/namespace_arch.html#a67cf64868d67072561c129172d85c269" title=" " alt="" coords="5,57,100,83"/>
-<area shape="rect" id="node4" href="$dc/da3/namespace_apps.html#aebbc688ed6a7097af1dd858ca0559d4b" title="Starts a task to display number of primes found by find_primes." alt="" coords="151,31,299,58"/>
-<area shape="rect" id="node5" href="$dc/da3/namespace_apps.html#aaa2be84c7a45c27af1e3bddb75e87a48" title="Starts a spinner in an infinite loop." alt="" coords="170,82,281,109"/>
-<area shape="rect" id="node6" href="$d4/db9/trace_8hpp.html#a9f452d4e0d092c1052a36cd56e9f77b6" title=" " alt="" coords="177,133,274,159"/>
+<area shape="rect" id="node1" title="Swap the data on backbuffer to memory video buffer and show in the screen." alt="" coords="389,107,511,133"/>
+<area shape="rect" id="node2" href="$d8/db5/namespace_console.html#aa92244db771ad2578967dd9f8fcac912" title=" " alt="" coords="216,56,333,83"/>
+<area shape="rect" id="node6" href="$d6/d9b/namespace_graphics.html#a0c60e5c671ea347d63839d16c3712268" title="Draws and fills a rectangle of a given width and height, and color at the provided coordinates." alt="" coords="208,107,341,133"/>
+<area shape="rect" id="node7" href="$dc/da3/namespace_apps.html#a01ace99cc76e0adcf1428dadf9134e3e" title="Run a simple animation." alt="" coords="5,157,160,184"/>
+<area shape="rect" id="node3" href="$de/d66/namespace_stack.html#ab836051c392dd045b3bdfe4124ce04a8" title=" " alt="" coords="17,5,148,32"/>
+<area shape="rect" id="node4" href="$dc/da3/namespace_apps.html#aebbc688ed6a7097af1dd858ca0559d4b" title="Starts a task to display number of primes found by find_primes." alt="" coords="9,56,157,83"/>
+<area shape="rect" id="node5" href="$dc/da3/namespace_apps.html#aaa2be84c7a45c27af1e3bddb75e87a48" title="Starts a spinner in an infinite loop." alt="" coords="27,107,138,133"/>
 </map>

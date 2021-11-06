@@ -345,21 +345,22 @@ $(document).ready(function(){initNavTree('d8/d6a/boot_8_s_source.html','../../')
 <div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;kernel_pt: resd 1024         ; our kernel page table mappings</div>
 <div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;pages_pt: resd 1024          ; a page table that maps pages that contain page tables</div>
 <div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;bootld_pt: resd 1024         ; a page table to hold bootloader structures</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160; </div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;section .early_data alloc write</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;align 4</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;multiboot_magic: dd 0</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;multiboot_info: dd 0</div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;no_sse_msg: db &quot;Error: No SSE support available!&quot;, 0</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;bad_info_msg: db &quot;Error: Cannot detect bootloader info length!&quot;, 0</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;bad_boot_msg: db &quot;Error: Cannot detect bootloader!&quot;, 0</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160; </div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;section .bss alloc write nobits</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;align 4</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;stack:</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    resb STACK_SIZE</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160; </div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;; vim: ft=nasm :</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;stack_pt: resd 1024          ; a stack for C/C++ runtime</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160; </div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;section .early_data alloc write</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;align 4</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;multiboot_magic: dd 0</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;multiboot_info: dd 0</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;no_sse_msg: db &quot;Error: No SSE support available!&quot;, 0</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;bad_info_msg: db &quot;Error: Cannot detect bootloader info length!&quot;, 0</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;bad_boot_msg: db &quot;Error: Cannot detect bootloader!&quot;, 0</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160; </div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;section .bss alloc write nobits</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;align 4</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;stack:</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    resb STACK_SIZE</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160; </div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;; vim: ft=nasm :</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

@@ -2,7 +2,6 @@ var class_boot_1_1_handoff =
 [
     [ "Handoff", "df/d70/class_boot_1_1_handoff.html#af8925236332be680ac1908715c6ae7ac", null ],
     [ "Handoff", "df/d70/class_boot_1_1_handoff.html#a63449bd33cc1e30ec2b8ae2bf9ef155d", null ],
-    [ "~Handoff", "df/d70/class_boot_1_1_handoff.html#a2e5b5f0a973dea939681f0ea6c90ac4d", null ],
     [ "BootType", "df/d70/class_boot_1_1_handoff.html#aa25cb451a589997db2d910a5f1697c98", null ],
     [ "CmdLine", "df/d70/class_boot_1_1_handoff.html#a8f3a880e777d85e24fcb18179cbb722e", null ],
     [ "FramebufferInfo", "df/d70/class_boot_1_1_handoff.html#a5498fc3e0fc6f5dedd96d0512f970d45", null ],

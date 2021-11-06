@@ -1,7 +1,7 @@
 <map id="kvsprintf" name="kvsprintf">
-<area shape="rect" id="node1" title="Sends formatted output to a string using an argument list." alt="" coords="413,31,493,57"/>
-<area shape="rect" id="node2" href="$d2/daf/stdio_8hpp.html#a4a8483991af81c2a4ae0025f4d2fb5e7" title="Sends formatted output to a string." alt="" coords="293,31,365,57"/>
-<area shape="rect" id="node3" href="$d9/dc3/namespace_arch.html#a2e714444c028502b8ca4e2bc7e535817" title=" " alt="" coords="149,5,244,32"/>
-<area shape="rect" id="node4" href="$d4/db9/trace_8hpp.html#a9f452d4e0d092c1052a36cd56e9f77b6" title=" " alt="" coords="148,56,245,83"/>
-<area shape="rect" id="node5" href="$d9/dc3/namespace_arch.html#a67cf64868d67072561c129172d85c269" title=" " alt="" coords="5,56,100,83"/>
+<area shape="rect" id="node1" title="Sends formatted output to a string using an argument list." alt="" coords="341,56,421,83"/>
+<area shape="rect" id="node2" href="$d2/daf/stdio_8hpp.html#a4a8483991af81c2a4ae0025f4d2fb5e7" title="Sends formatted output to a string." alt="" coords="221,31,293,57"/>
+<area shape="rect" id="node5" href="$d5/df3/sys_2panic_8cpp.html#a0d09d76c7f1c89528c69de542c318923" title=" " alt="" coords="226,81,289,108"/>
+<area shape="rect" id="node3" href="$de/d66/namespace_stack.html#ab836051c392dd045b3bdfe4124ce04a8" title=" " alt="" coords="24,5,155,32"/>
+<area shape="rect" id="node4" href="$d9/dc3/namespace_arch.html#a6cc0ef4abcb7c48c9e7d7cea419649b8" title=" " alt="" coords="5,56,173,83"/>
 </map>

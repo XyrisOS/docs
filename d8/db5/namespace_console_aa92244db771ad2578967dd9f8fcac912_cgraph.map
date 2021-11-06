@@ -1,8 +1,11 @@
 <map id="Console::printf" name="Console::printf">
-<area shape="rect" id="node1" title=" " alt="" coords="5,111,123,138"/>
-<area shape="rect" id="node2" href="$d6/d9b/namespace_graphics.html#afb7733fe050948fc3a09cd9a87071ffc" title="Swap the data on backbuffer to memory video buffer and show in the screen." alt="" coords="171,111,292,138"/>
-<area shape="rect" id="node3" href="$d0/dcb/class_graphics_1_1_framebuffer.html#af62e5c11c830410a3213e2b17075b158" title=" " alt="" coords="340,5,507,47"/>
-<area shape="rect" id="node4" href="$d0/dcb/class_graphics_1_1_framebuffer.html#a1056e91da94b6937b0a6deeb3a859368" title=" " alt="" coords="340,71,507,112"/>
-<area shape="rect" id="node5" href="$d0/dcb/class_graphics_1_1_framebuffer.html#a4b6694a0728b42872a51eb15a631cd51" title=" " alt="" coords="340,136,507,177"/>
-<area shape="rect" id="node6" href="$d5/d24/string_8cpp.html#a370712322c794e949c996946f2283ea8" title=" " alt="" coords="384,202,463,229"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,198,123,225"/>
+<area shape="rect" id="node2" href="$d6/d9b/namespace_graphics.html#afb7733fe050948fc3a09cd9a87071ffc" title="Swap the data on backbuffer to memory video buffer and show in the screen." alt="" coords="173,143,294,170"/>
+<area shape="rect" id="node7" href="$d8/db5/namespace_console.html#ad86a1c0ed06d68a9f4ede8f6e56db406" title=" " alt="" coords="171,223,296,250"/>
+<area shape="rect" id="node3" href="$d0/dcb/class_graphics_1_1_framebuffer.html#af62e5c11c830410a3213e2b17075b158" title=" " alt="" coords="344,5,511,47"/>
+<area shape="rect" id="node4" href="$d0/dcb/class_graphics_1_1_framebuffer.html#a1056e91da94b6937b0a6deeb3a859368" title=" " alt="" coords="344,71,511,112"/>
+<area shape="rect" id="node5" href="$d0/dcb/class_graphics_1_1_framebuffer.html#a4b6694a0728b42872a51eb15a631cd51" title=" " alt="" coords="344,136,511,177"/>
+<area shape="rect" id="node6" href="$d5/d24/string_8cpp.html#a370712322c794e949c996946f2283ea8" title=" " alt="" coords="388,202,467,229"/>
+<area shape="rect" id="node8" href="$d4/d64/printf_8cpp.html#a85a2fff114bf015eba22a1dc163bf1ba" title="Perform all printf operations on the format string using the provided argument list and uses the call..." alt="" coords="375,253,480,279"/>
+<area shape="rect" id="node9" href="$d5/d24/string_8cpp.html#a2dee044e4e667b5b789b493abd21cfa4" title="Returns the length of a string." alt="" coords="559,253,617,279"/>
 </map>

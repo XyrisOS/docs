@@ -1,13 +1,13 @@
 <map id="isr.cpp" name="isr.cpp">
-<area shape="rect" id="node1" title=" " alt="" coords="380,5,444,32"/>
-<area shape="rect" id="node2" href="$d7/d9c/_arch_8hpp.html" title="Computer architecture initialization definitions." alt="" coords="22,229,133,256"/>
-<area shape="rect" id="node6" href="$dd/d12/idt_8hpp.html" title="Interrupt Descriptor Table header." alt="" coords="347,80,477,107"/>
-<area shape="rect" id="node11" href="$d4/ddc/isr_8hpp.html" title="Interrupt Service Routine header." alt="" coords="706,229,835,256"/>
-<area shape="rect" id="node3" href="$d2/d3d/compiler_8hpp.html" title="Compiler meta directives." alt="" coords="5,304,149,331"/>
-<area shape="rect" id="node4" title=" " alt="" coords="187,304,261,331"/>
-<area shape="rect" id="node5" title=" " alt="" coords="349,304,419,331"/>
-<area shape="rect" id="node7" href="$dd/de9/_arch_8i386_8hpp.html" title="i386 architecture implementation of Arch.hpp" alt="" coords="521,155,695,181"/>
-<area shape="rect" id="node8" href="$d9/d4f/_memory_8hpp.html" title="Architecture memory management API." alt="" coords="157,229,291,256"/>
-<area shape="rect" id="node9" href="$d8/dfb/regs_8hpp.html" title=" " alt="" coords="367,229,510,256"/>
-<area shape="rect" id="node10" href="$d8/d9f/ports_8hpp.html" title="Ports header file. Provides inline functions for getting and setting values at different ports...." alt="" coords="535,229,681,256"/>
+<area shape="rect" id="node1" title=" " alt="" coords="252,5,316,32"/>
+<area shape="rect" id="node2" href="$d7/d9c/_arch_8hpp.html" title="Architecture control and initialization." alt="" coords="131,155,242,181"/>
+<area shape="rect" id="node6" href="$dd/d12/idt_8hpp.html" title="Interrupt Descriptor Table header." alt="" coords="271,80,401,107"/>
+<area shape="rect" id="node10" href="$d4/ddc/isr_8hpp.html" title="Interrupt Service Routine header." alt="" coords="665,229,794,256"/>
+<area shape="rect" id="node11" href="$d6/d64/_panic_8hpp.html" title="Kernel panic management." alt="" coords="85,80,195,107"/>
+<area shape="rect" id="node3" href="$d2/d3d/compiler_8hpp.html" title="Compiler meta directives." alt="" coords="5,229,149,256"/>
+<area shape="rect" id="node4" title=" " alt="" coords="207,304,281,331"/>
+<area shape="rect" id="node5" title=" " alt="" coords="362,304,433,331"/>
+<area shape="rect" id="node7" href="$dd/de9/_arch_8i386_8hpp.html" title="i386 architecture implementation of Arch.hpp" alt="" coords="479,155,654,181"/>
+<area shape="rect" id="node8" href="$d8/dfb/regs_8hpp.html" title=" " alt="" coords="326,229,469,256"/>
+<area shape="rect" id="node9" href="$d8/d9f/ports_8hpp.html" title="Ports header file. Provides inline functions for getting and setting values at different ports...." alt="" coords="493,229,640,256"/>
 </map>

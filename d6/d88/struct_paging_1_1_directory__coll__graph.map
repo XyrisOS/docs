@@ -1,4 +1,0 @@
-<map id="Paging::Directory" name="Paging::Directory">
-<area shape="rect" id="node1" title="Page directory contains pointers to all of the virtual memory addresses for the page tables along wit..." alt="" coords="22,95,155,121"/>
-<area shape="rect" id="node2" href="$d2/d3e/struct_paging_1_1_directory_entry.html" title="Page directory entry structure as defined in accordance to the Intel Developer Manual Vol...." alt="" coords="5,5,172,32"/>
-</map>

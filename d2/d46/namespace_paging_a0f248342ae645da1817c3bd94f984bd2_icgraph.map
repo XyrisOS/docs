@@ -1,9 +1,0 @@
-<map id="Paging::mapKernelPage" name="Paging::mapKernelPage">
-<area shape="rect" id="node1" title="Map a page into the kernel address space." alt="" coords="448,56,623,83"/>
-<area shape="rect" id="node2" href="$d2/d46/namespace_paging.html#a608d1503255974e581e6f87806229deb" title="Map a kernel address range into physical memory." alt="" coords="161,5,400,32"/>
-<area shape="rect" id="node3" href="$d2/d46/namespace_paging.html#affcd08d96e918de6b8535681c232e485" title="Map an address range into the kernel virtual address space." alt="" coords="167,56,394,83"/>
-<area shape="rect" id="node5" href="$d2/d46/namespace_paging.html#a7719e756c617d0bafd750620a306612c" title="Returns a new page in memory for use. If less than one page is requested, exactly one page will be al..." alt="" coords="215,107,346,133"/>
-<area shape="rect" id="node4" href="$d6/d9b/namespace_graphics.html#afc86122297c8c117c8793ddaf246e4ed" title="Initializes the framebuffer (if available)" alt="" coords="5,56,113,83"/>
-<area shape="rect" id="node6" href="$da/d45/heap_8hpp.html#ac17a7bc03af86f215d779f1798aed8e8" title="This is the hook into the local system which allocates pages. It accepts an integer parameter which i..." alt="" coords="6,107,113,133"/>
-<area shape="rect" id="node7" href="$d2/dbd/tasks_8hpp.html#a65c4921579a6bad97c037bc8db69fb26" title="Creates a new kernel task with a provided entry point, register storage struct, and task state struct..." alt="" coords="14,157,105,184"/>
-</map>

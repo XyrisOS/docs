@@ -157,7 +157,7 @@ Private Attributes</h2></td></tr>
 <p class="definition">Definition at line <a class="el" href="../../d0/dbb/mutex_8cpp_source.html#l00024">24</a> of file <a class="el" href="../../d0/dbb/mutex_8cpp_source.html">mutex.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    : <a class="code" href="../../d4/de8/class_mutex.html#aa705395a113c774187d4824b85dc9280">locked</a>(<span class="keyword">false</span>)</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="../../dd/dc4/structtask__sync.html">task_sync</a>.<a class="code" href="../../dd/dc4/structtask__sync.html#a89cc556553145f650472b59f883e6ebd">dbg_name</a> = name;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="../../dd/dc4/structtask__sync.html">task_sync</a>.<a class="code" href="../../dd/dc4/structtask__sync.html#a89cc556553145f650472b59f883e6ebd">dbg_name</a> = <a class="code" href="../../db/da2/structtask.html#a83a6cca985649416b9cbb05a39b8d3f2">name</a>;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    tasks_sync_init(&amp;<a class="code" href="../../dd/dc4/structtask__sync.html">task_sync</a>);</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;};</div>
 </div><!-- fragment -->
@@ -234,11 +234,8 @@ Private Attributes</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="../../d4/de8/class_mutex_aa732ae651974555965dcaf9ad9e87882_icgraph.png" border="0" usemap="#d4/de8/class_mutex_aa732ae651974555965dcaf9ad9e87882_icgraph" alt=""/></div>
 <map name="d4/de8/class_mutex_aa732ae651974555965dcaf9ad9e87882_icgraph" id="d4/de8/class_mutex_aa732ae651974555965dcaf9ad9e87882_icgraph">
-<area shape="rect" title="Locks a provided mutex. This call will block if the mutex is already locked." alt="" coords="339,56,440,83"/>
-<area shape="rect" href="../../d2/d46/namespace_paging.html#a7719e756c617d0bafd750620a306612c" title="Returns a new page in memory for use. If less than one page is requested, exactly one page will be al..." alt="" coords="160,31,291,57"/>
-<area shape="rect" href="../../d7/d75/namespace_r_s232.html#aa77ae4139fa5feba01809614f595edb6" title="Reads bytes from the serial buffer." alt="" coords="175,81,275,108"/>
-<area shape="rect" href="../../da/d45/heap_8hpp.html#ac17a7bc03af86f215d779f1798aed8e8" title="This is the hook into the local system which allocates pages. It accepts an integer parameter which i..." alt="" coords="5,5,112,32"/>
-<area shape="rect" href="../../d2/dbd/tasks_8hpp.html#a65c4921579a6bad97c037bc8db69fb26" title="Creates a new kernel task with a provided entry point, register storage struct, and task state struct..." alt="" coords="13,56,104,83"/>
+<area shape="rect" title="Locks a provided mutex. This call will block if the mutex is already locked." alt="" coords="153,5,255,32"/>
+<area shape="rect" href="../../d7/d75/namespace_r_s232.html#aa77ae4139fa5feba01809614f595edb6" title="Reads bytes from the serial buffer." alt="" coords="5,5,105,32"/>
 </map>
 </div>
 
@@ -347,7 +344,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d8/da6/mutex_8hpp_source.html#l00052">52</a> of file <a class="el" href="../../d8/da6/mutex_8hpp_source.html">mutex.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/da6/mutex_8hpp_source.html#l00056">56</a> of file <a class="el" href="../../d8/da6/mutex_8hpp_source.html">mutex.hpp</a>.</p>
 
 </div>
 </div>
@@ -371,7 +368,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d8/da6/mutex_8hpp_source.html#l00053">53</a> of file <a class="el" href="../../d8/da6/mutex_8hpp_source.html">mutex.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/da6/mutex_8hpp_source.html#l00057">57</a> of file <a class="el" href="../../d8/da6/mutex_8hpp_source.html">mutex.hpp</a>.</p>
 
 </div>
 </div>
@@ -384,10 +381,11 @@ Private Attributes</h2></td></tr>
 <div class="ttc" id="aerrno_8cpp_html_a12fb8fb93daa6bae8152a8ec8314cbaa"><div class="ttname"><a href="../../d1/db0/errno_8cpp.html#a12fb8fb93daa6bae8152a8ec8314cbaa">errno</a></div><div class="ttdeci">enum KernelError errno</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/db0/errno_8cpp_source.html#l00015">errno.cpp:15</a></div></div>
 <div class="ttc" id="astructtask__sync_html_a89cc556553145f650472b59f883e6ebd"><div class="ttname"><a href="../../dd/dc4/structtask__sync.html#a89cc556553145f650472b59f883e6ebd">task_sync::dbg_name</a></div><div class="ttdeci">const char * dbg_name</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dbd/tasks_8hpp_source.html#l00058">tasks.hpp:58</a></div></div>
 <div class="ttc" id="astructtask__sync_html"><div class="ttname"><a href="../../dd/dc4/structtask__sync.html">task_sync</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dbd/tasks_8hpp_source.html#l00055">tasks.hpp:55</a></div></div>
-<div class="ttc" id="atasks_8cpp_html_a95269b08443b913d1ca443794e4aa3ad"><div class="ttname"><a href="../../d5/d9d/tasks_8cpp.html#a95269b08443b913d1ca443794e4aa3ad">tasks_sync_unblock</a></div><div class="ttdeci">void tasks_sync_unblock(struct task_sync *ts)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d9d/tasks_8cpp_source.html#l00571">tasks.cpp:571</a></div></div>
+<div class="ttc" id="atasks_8cpp_html_a95269b08443b913d1ca443794e4aa3ad"><div class="ttname"><a href="../../d5/d9d/tasks_8cpp.html#a95269b08443b913d1ca443794e4aa3ad">tasks_sync_unblock</a></div><div class="ttdeci">void tasks_sync_unblock(struct task_sync *ts)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d9d/tasks_8cpp_source.html#l00574">tasks.cpp:574</a></div></div>
 <div class="ttc" id="atasks_8hpp_html_a5dc14e36eb87557e7c264d8596f37b55"><div class="ttname"><a href="../../d2/dbd/tasks_8hpp.html#a5dc14e36eb87557e7c264d8596f37b55">TASK_ONLY</a></div><div class="ttdeci">#define TASK_ONLY</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dbd/tasks_8hpp_source.html#l00046">tasks.hpp:46</a></div></div>
-<div class="ttc" id="atasks_8cpp_html_a2432c50b4d4264b5d5295bdb4f19e0d2"><div class="ttname"><a href="../../d5/d9d/tasks_8cpp.html#a2432c50b4d4264b5d5295bdb4f19e0d2">tasks_sync_block</a></div><div class="ttdeci">void tasks_sync_block(struct task_sync *ts)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d9d/tasks_8cpp_source.html#l00556">tasks.cpp:556</a></div></div>
-<div class="ttc" id="aclass_mutex_html_aa705395a113c774187d4824b85dc9280"><div class="ttname"><a href="../../d4/de8/class_mutex.html#aa705395a113c774187d4824b85dc9280">Mutex::locked</a></div><div class="ttdeci">bool locked</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/da6/mutex_8hpp_source.html#l00052">mutex.hpp:52</a></div></div>
+<div class="ttc" id="astructtask_html_a83a6cca985649416b9cbb05a39b8d3f2"><div class="ttname"><a href="../../db/da2/structtask.html#a83a6cca985649416b9cbb05a39b8d3f2">task::name</a></div><div class="ttdeci">const char * name</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dbd/tasks_8hpp_source.html#l00040">tasks.hpp:40</a></div></div>
+<div class="ttc" id="atasks_8cpp_html_a2432c50b4d4264b5d5295bdb4f19e0d2"><div class="ttname"><a href="../../d5/d9d/tasks_8cpp.html#a2432c50b4d4264b5d5295bdb4f19e0d2">tasks_sync_block</a></div><div class="ttdeci">void tasks_sync_block(struct task_sync *ts)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d9d/tasks_8cpp_source.html#l00559">tasks.cpp:559</a></div></div>
+<div class="ttc" id="aclass_mutex_html_aa705395a113c774187d4824b85dc9280"><div class="ttname"><a href="../../d4/de8/class_mutex.html#aa705395a113c774187d4824b85dc9280">Mutex::locked</a></div><div class="ttdeci">bool locked</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/da6/mutex_8hpp_source.html#l00056">mutex.hpp:56</a></div></div>
 <div class="ttc" id="aerrno_8hpp_html_a82793c1b9a6e2dcb6ebce9828aa9e89caa7d5dbb80731c0bd189f7d106c768631"><div class="ttname"><a href="../../d7/dae/errno_8hpp.html#a82793c1b9a6e2dcb6ebce9828aa9e89caa7d5dbb80731c0bd189f7d106c768631">InvalidValue</a></div><div class="ttdeci">@ InvalidValue</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/dae/errno_8hpp_source.html#l00020">errno.hpp:20</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

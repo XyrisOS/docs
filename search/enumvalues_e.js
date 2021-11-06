@@ -1,5 +1,10 @@
 var searchData=
 [
-  ['undefined_5ffbmm_1571',['Undefined_FBMM',['../d6/d9b/namespace_graphics.html#a504dfc028c1d2f4ec0c4bf4ec2cbe7f8abdf7b031f75c8ccb3bc0b6e2e192088c',1,'Graphics']]],
-  ['unknown_1572',['Unknown',['../db/d2f/namespace_memory.html#a9193c3e610b1728964440284db90c812ab15579bc806f8bccdcf34c1f77aec071',1,'Memory']]]
+  ['task_5fblocked_1643',['TASK_BLOCKED',['../d2/dbd/tasks_8hpp.html#a46c7ab5dd73831ee98458db0a68fc4a2a108284117a3f463352658a08930a3888',1,'tasks.hpp']]],
+  ['task_5fpaused_1644',['TASK_PAUSED',['../d2/dbd/tasks_8hpp.html#a46c7ab5dd73831ee98458db0a68fc4a2a70c1246153ef112b1baa60e2f6e36cd3',1,'tasks.hpp']]],
+  ['task_5fready_1645',['TASK_READY',['../d2/dbd/tasks_8hpp.html#a46c7ab5dd73831ee98458db0a68fc4a2aebcd951a6127c3c50a4f197b2b637793',1,'tasks.hpp']]],
+  ['task_5frunning_1646',['TASK_RUNNING',['../d2/dbd/tasks_8hpp.html#a46c7ab5dd73831ee98458db0a68fc4a2a9bd2895158d9e7c8cf80b57659fcba50',1,'tasks.hpp']]],
+  ['task_5fsleeping_1647',['TASK_SLEEPING',['../d2/dbd/tasks_8hpp.html#a46c7ab5dd73831ee98458db0a68fc4a2ac261e4c62bea6a313e386d777ae7ecbb',1,'tasks.hpp']]],
+  ['task_5fstate_5fcount_1648',['TASK_STATE_COUNT',['../d2/dbd/tasks_8hpp.html#a46c7ab5dd73831ee98458db0a68fc4a2a055853bdd05de423baa139d4c658c06a',1,'tasks.hpp']]],
+  ['task_5fstopped_1649',['TASK_STOPPED',['../d2/dbd/tasks_8hpp.html#a46c7ab5dd73831ee98458db0a68fc4a2a52340c1844b9c87b6c965569f21d72f1',1,'tasks.hpp']]]
 ];

@@ -85,7 +85,8 @@ $(document).ready(function(){initNavTree('d8/db5/namespace_console.html','../../
 <div class="header">
   <div class="summary">
 <a href="#enum-members">Enumerations</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">Console Namespace Reference</div>  </div>
 </div><!--header-->
@@ -150,6 +151,8 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:ad86a1c0ed06d68a9f4ede8f6e56db406"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/db5/namespace_console.html#ad86a1c0ed06d68a9f4ede8f6e56db406">vprintf</a> (const char *fmt, va_list <a class="el" href="../../d8/db5/namespace_console.html#a07dd1357daf4c78de61710fa43e215df">args</a>)</td></tr>
+<tr class="separator:ad86a1c0ed06d68a9f4ede8f6e56db406"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c2d2de6b43a7c900831f4ee73716515"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/db5/namespace_console.html#a4c2d2de6b43a7c900831f4ee73716515">write</a> (const char c)</td></tr>
 <tr class="separator:a4c2d2de6b43a7c900831f4ee73716515"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd4ee2d6ab18c9d14f28391505f0acf6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/db5/namespace_console.html#afd4ee2d6ab18c9d14f28391505f0acf6">write</a> (const char *str)</td></tr>
@@ -160,6 +163,15 @@ Functions</h2></td></tr>
 <tr class="separator:abee0f1f230d0c425b030731b79fdc6e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a13d5fa4b1300fe0820103f5f3a3a6b23"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/db5/namespace_console.html#a13d5fa4b1300fe0820103f5f3a3a6b23">reset</a> ()</td></tr>
 <tr class="separator:a13d5fa4b1300fe0820103f5f3a3a6b23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d9a53178befdb8bf7fe8dbdd0016b61"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/db5/namespace_console.html#a9d9a53178befdb8bf7fe8dbdd0016b61">__attribute__</a> ((format(<a class="el" href="../../d8/db5/namespace_console.html#aa92244db771ad2578967dd9f8fcac912">printf</a>, 1, 0))) int <a class="el" href="../../d8/db5/namespace_console.html#ad86a1c0ed06d68a9f4ede8f6e56db406">vprintf</a>(const char *fmt</td></tr>
+<tr class="separator:a9d9a53178befdb8bf7fe8dbdd0016b61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4335d326f9c6df0a3264ea1624eb978e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/db5/namespace_console.html#a4335d326f9c6df0a3264ea1624eb978e">__attribute__</a> ((format(<a class="el" href="../../d8/db5/namespace_console.html#aa92244db771ad2578967dd9f8fcac912">printf</a>, 1, 2))) int <a class="el" href="../../d8/db5/namespace_console.html#aa92244db771ad2578967dd9f8fcac912">printf</a>(const char *fmt</td></tr>
+<tr class="separator:a4335d326f9c6df0a3264ea1624eb978e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a07dd1357daf4c78de61710fa43e215df"><td class="memItemLeft" align="right" valign="top">va_list&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/db5/namespace_console.html#a07dd1357daf4c78de61710fa43e215df">args</a></td></tr>
+<tr class="separator:a07dd1357daf4c78de61710fa43e215df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
 <a id="a135ef081521e01318dac5033197c6509"></a>
@@ -193,26 +205,26 @@ Functions</h2></td></tr>
 <tr><td class="fieldname"><a id="a135ef081521e01318dac5033197c6509a742359bdc55d29056ca8fe558878afe5"></a>BrightWhite&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/dda/console_8cpp_source.html#l00047">47</a> of file <a class="el" href="../../d9/dda/console_8cpp_source.html">console.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;               : uint16_t {</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="code" href="../../d8/db5/namespace_console.html#a135ef081521e01318dac5033197c6509ac339bf8cb2e80de494fb478ec3027aea">Background</a> = 10,</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="../../d8/db5/namespace_console.html#a135ef081521e01318dac5033197c6509a74a17ea3fbf0c882e4bc985c22a3199b">Black</a> = 30,</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="../../d8/db5/namespace_console.html#a135ef081521e01318dac5033197c6509afa3a7b3bfe4bfc5b938876e7d5dfe29e">Red</a> = 31,</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="code" href="../../d8/db5/namespace_console.html#a135ef081521e01318dac5033197c6509aebbf8dc0cb5c49a160498961528ca533">Green</a> = 32,</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="code" href="../../d8/db5/namespace_console.html#a135ef081521e01318dac5033197c6509aa6b22ea45b47897b6095e8c60de6cfb0">Yellow</a> = 33,</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="code" href="../../d8/db5/namespace_console.html#a135ef081521e01318dac5033197c6509af6c483f92f3d96e26f2d31d384faa438">Blue</a> = 34,</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <a class="code" href="../../d8/db5/namespace_console.html#a135ef081521e01318dac5033197c6509a55345fd27bd18ab82b8686d81f8ddaa1">Magenta</a> = 35,</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="../../d8/db5/namespace_console.html#a135ef081521e01318dac5033197c6509a3d956a8db5fda87bb81fbd08b1672390">Cyan</a> = 36,</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <a class="code" href="../../d8/db5/namespace_console.html#a135ef081521e01318dac5033197c6509a374ecaa8eff1345d91ffe549f492a354">White</a> = 37,</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <a class="code" href="../../d8/db5/namespace_console.html#a135ef081521e01318dac5033197c6509a3af967d3bc696c78918923d80b639c70">BrightBlack</a> = 90,</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <a class="code" href="../../d8/db5/namespace_console.html#a135ef081521e01318dac5033197c6509a779c91bfa26cef7b228b232b092665e3">BrightRed</a> = 91,</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <a class="code" href="../../d8/db5/namespace_console.html#a135ef081521e01318dac5033197c6509a0acd37c9a7cc526059de0f55fbb3a81a">BrightGreen</a> = 92,</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <a class="code" href="../../d8/db5/namespace_console.html#a135ef081521e01318dac5033197c6509a565d822d3ab982ae566de29e75cecc49">BrightYellow</a> = 93,</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <a class="code" href="../../d8/db5/namespace_console.html#a135ef081521e01318dac5033197c6509a916be47875236fa56a7f32e746d618b1">BrightBlue</a> = 94,</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <a class="code" href="../../d8/db5/namespace_console.html#a135ef081521e01318dac5033197c6509a761bd7e91cfdc897b6a04d2d97353a94">BrightMagenta</a> = 95,</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <a class="code" href="../../d8/db5/namespace_console.html#a135ef081521e01318dac5033197c6509a396f9a8195526a87135e0f429f66b932">BrightCyan</a> = 96,</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <a class="code" href="../../d8/db5/namespace_console.html#a135ef081521e01318dac5033197c6509a742359bdc55d29056ca8fe558878afe5">BrightWhite</a> = 97,</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;};</div>
+<p class="definition">Definition at line <a class="el" href="../../d9/dda/console_8cpp_source.html#l00046">46</a> of file <a class="el" href="../../d9/dda/console_8cpp_source.html">console.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;               : uint16_t {</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="../../d8/db5/namespace_console.html#a135ef081521e01318dac5033197c6509ac339bf8cb2e80de494fb478ec3027aea">Background</a> = 10,</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="code" href="../../d8/db5/namespace_console.html#a135ef081521e01318dac5033197c6509a74a17ea3fbf0c882e4bc985c22a3199b">Black</a> = 30,</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="../../d8/db5/namespace_console.html#a135ef081521e01318dac5033197c6509afa3a7b3bfe4bfc5b938876e7d5dfe29e">Red</a> = 31,</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="../../d8/db5/namespace_console.html#a135ef081521e01318dac5033197c6509aebbf8dc0cb5c49a160498961528ca533">Green</a> = 32,</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="code" href="../../d8/db5/namespace_console.html#a135ef081521e01318dac5033197c6509aa6b22ea45b47897b6095e8c60de6cfb0">Yellow</a> = 33,</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="code" href="../../d8/db5/namespace_console.html#a135ef081521e01318dac5033197c6509af6c483f92f3d96e26f2d31d384faa438">Blue</a> = 34,</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="code" href="../../d8/db5/namespace_console.html#a135ef081521e01318dac5033197c6509a55345fd27bd18ab82b8686d81f8ddaa1">Magenta</a> = 35,</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <a class="code" href="../../d8/db5/namespace_console.html#a135ef081521e01318dac5033197c6509a3d956a8db5fda87bb81fbd08b1672390">Cyan</a> = 36,</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="../../d8/db5/namespace_console.html#a135ef081521e01318dac5033197c6509a374ecaa8eff1345d91ffe549f492a354">White</a> = 37,</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <a class="code" href="../../d8/db5/namespace_console.html#a135ef081521e01318dac5033197c6509a3af967d3bc696c78918923d80b639c70">BrightBlack</a> = 90,</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <a class="code" href="../../d8/db5/namespace_console.html#a135ef081521e01318dac5033197c6509a779c91bfa26cef7b228b232b092665e3">BrightRed</a> = 91,</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <a class="code" href="../../d8/db5/namespace_console.html#a135ef081521e01318dac5033197c6509a0acd37c9a7cc526059de0f55fbb3a81a">BrightGreen</a> = 92,</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <a class="code" href="../../d8/db5/namespace_console.html#a135ef081521e01318dac5033197c6509a565d822d3ab982ae566de29e75cecc49">BrightYellow</a> = 93,</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <a class="code" href="../../d8/db5/namespace_console.html#a135ef081521e01318dac5033197c6509a916be47875236fa56a7f32e746d618b1">BrightBlue</a> = 94,</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <a class="code" href="../../d8/db5/namespace_console.html#a135ef081521e01318dac5033197c6509a761bd7e91cfdc897b6a04d2d97353a94">BrightMagenta</a> = 95,</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <a class="code" href="../../d8/db5/namespace_console.html#a135ef081521e01318dac5033197c6509a396f9a8195526a87135e0f429f66b932">BrightCyan</a> = 96,</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <a class="code" href="../../d8/db5/namespace_console.html#a135ef081521e01318dac5033197c6509a742359bdc55d29056ca8fe558878afe5">BrightWhite</a> = 97,</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;};</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -234,13 +246,13 @@ Functions</h2></td></tr>
 <tr><td class="fieldname"><a id="ad696fde192397acdac453250261b267cac3b3b4583b0456dbb9cf10e5ed404de5"></a>Value&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/dda/console_8cpp_source.html#l00076">76</a> of file <a class="el" href="../../d9/dda/console_8cpp_source.html">console.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                   {</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <a class="code" href="../../d8/db5/namespace_console.html#ad696fde192397acdac453250261b267caab0e3e75783ccf0126f88421a1c0ae9c">Normal</a>,</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <a class="code" href="../../d8/db5/namespace_console.html#ad696fde192397acdac453250261b267ca98525271ea33d0d95561838cac1b7665">Esc</a>,</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <a class="code" href="../../d8/db5/namespace_console.html#ad696fde192397acdac453250261b267cafb6ea2c0f03555ed9d9d025523221ab0">Bracket</a>,</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <a class="code" href="../../d8/db5/namespace_console.html#ad696fde192397acdac453250261b267cac3b3b4583b0456dbb9cf10e5ed404de5">Value</a></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;};</div>
+<p class="definition">Definition at line <a class="el" href="../../d9/dda/console_8cpp_source.html#l00075">75</a> of file <a class="el" href="../../d9/dda/console_8cpp_source.html">console.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                   {</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <a class="code" href="../../d8/db5/namespace_console.html#ad696fde192397acdac453250261b267caab0e3e75783ccf0126f88421a1c0ae9c">Normal</a>,</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <a class="code" href="../../d8/db5/namespace_console.html#ad696fde192397acdac453250261b267ca98525271ea33d0d95561838cac1b7665">Esc</a>,</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <a class="code" href="../../d8/db5/namespace_console.html#ad696fde192397acdac453250261b267cafb6ea2c0f03555ed9d9d025523221ab0">Bracket</a>,</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <a class="code" href="../../d8/db5/namespace_console.html#ad696fde192397acdac453250261b267cac3b3b4583b0456dbb9cf10e5ed404de5">Value</a></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;};</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -274,29 +286,65 @@ Functions</h2></td></tr>
 <tr><td class="fieldname"><a id="a5a9f6ce125109cf2227962509ec62222aff4eaef67a91c58ce028eb9f014c079c"></a>VGA_White&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/dda/console_8cpp_source.html#l00028">28</a> of file <a class="el" href="../../d9/dda/console_8cpp_source.html">console.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;              : uint32_t {</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="../../d8/db5/namespace_console.html#a5a9f6ce125109cf2227962509ec62222a78ab04c02a88819f9c662c9bb46beb1f">VGA_Black</a> = 0x000000,</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="../../d8/db5/namespace_console.html#a5a9f6ce125109cf2227962509ec62222a8eb53134c5355b8be746cae63737e640">VGA_Blue</a> = 0x0000AA,</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="../../d8/db5/namespace_console.html#a5a9f6ce125109cf2227962509ec62222aed5aca74751185a80c59a797b7dee6ec">VGA_Green</a> = 0x00AA00,</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="code" href="../../d8/db5/namespace_console.html#a5a9f6ce125109cf2227962509ec62222a5e3f7e8ce8fe68c3bab17e00f363e498">VGA_Cyan</a> = 0x00AAAA,</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="../../d8/db5/namespace_console.html#a5a9f6ce125109cf2227962509ec62222a56439f092571f1f54d6c6e9b45e1c293">VGA_Red</a> = 0xAA0000,</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="../../d8/db5/namespace_console.html#a5a9f6ce125109cf2227962509ec62222ac29aceaa10140cde639cefc288c243e3">VGA_Magenta</a> = 0xAA00AA,</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="code" href="../../d8/db5/namespace_console.html#a5a9f6ce125109cf2227962509ec62222a2794654a85e9a95dfb0bd349c36e6987">VGA_Brown</a> = 0xAA5500,</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="../../d8/db5/namespace_console.html#a5a9f6ce125109cf2227962509ec62222aba798045a1c6c99634cfbed210949e27">VGA_LightGrey</a> = 0xAAAAAA,</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <a class="code" href="../../d8/db5/namespace_console.html#a5a9f6ce125109cf2227962509ec62222a4c3d2708458ba060549ffac31a409af0">VGA_DarkGrey</a> = 0x555555,</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="../../d8/db5/namespace_console.html#a5a9f6ce125109cf2227962509ec62222aac8b6b64706bab5a5d4a1249624c7b9b">VGA_LightBlue</a> = 0x5555FF,</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="../../d8/db5/namespace_console.html#a5a9f6ce125109cf2227962509ec62222a44487d3c15e253c3a6fd1cdeca43211b">VGA_LightGreen</a> = 0x55FF55,</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="../../d8/db5/namespace_console.html#a5a9f6ce125109cf2227962509ec62222aadebc789f59c387f0e909e303a423d47">VGA_LightCyan</a> = 0x55FFFF,</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="../../d8/db5/namespace_console.html#a5a9f6ce125109cf2227962509ec62222aa54a1931d6c0bcf5ac83e5ce10319b5f">VGA_LightRed</a> = 0xFF5555,</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="../../d8/db5/namespace_console.html#a5a9f6ce125109cf2227962509ec62222af2d8574f0605b284da94371299f21679">VGA_LightMagenta</a> = 0xFF55FF,</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="code" href="../../d8/db5/namespace_console.html#a5a9f6ce125109cf2227962509ec62222ae241ad4f936bdbcefe9950558eb5c605">VGA_Yellow</a> = 0xFFFF55,</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="../../d8/db5/namespace_console.html#a5a9f6ce125109cf2227962509ec62222aff4eaef67a91c58ce028eb9f014c079c">VGA_White</a> = 0xFFFFFF,</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;};</div>
+<p class="definition">Definition at line <a class="el" href="../../d9/dda/console_8cpp_source.html#l00027">27</a> of file <a class="el" href="../../d9/dda/console_8cpp_source.html">console.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;              : uint32_t {</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="../../d8/db5/namespace_console.html#a5a9f6ce125109cf2227962509ec62222a78ab04c02a88819f9c662c9bb46beb1f">VGA_Black</a> = 0x000000,</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="../../d8/db5/namespace_console.html#a5a9f6ce125109cf2227962509ec62222a8eb53134c5355b8be746cae63737e640">VGA_Blue</a> = 0x0000AA,</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="../../d8/db5/namespace_console.html#a5a9f6ce125109cf2227962509ec62222aed5aca74751185a80c59a797b7dee6ec">VGA_Green</a> = 0x00AA00,</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="../../d8/db5/namespace_console.html#a5a9f6ce125109cf2227962509ec62222a5e3f7e8ce8fe68c3bab17e00f363e498">VGA_Cyan</a> = 0x00AAAA,</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="code" href="../../d8/db5/namespace_console.html#a5a9f6ce125109cf2227962509ec62222a56439f092571f1f54d6c6e9b45e1c293">VGA_Red</a> = 0xAA0000,</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="../../d8/db5/namespace_console.html#a5a9f6ce125109cf2227962509ec62222ac29aceaa10140cde639cefc288c243e3">VGA_Magenta</a> = 0xAA00AA,</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="../../d8/db5/namespace_console.html#a5a9f6ce125109cf2227962509ec62222a2794654a85e9a95dfb0bd349c36e6987">VGA_Brown</a> = 0xAA5500,</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="code" href="../../d8/db5/namespace_console.html#a5a9f6ce125109cf2227962509ec62222aba798045a1c6c99634cfbed210949e27">VGA_LightGrey</a> = 0xAAAAAA,</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="../../d8/db5/namespace_console.html#a5a9f6ce125109cf2227962509ec62222a4c3d2708458ba060549ffac31a409af0">VGA_DarkGrey</a> = 0x555555,</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <a class="code" href="../../d8/db5/namespace_console.html#a5a9f6ce125109cf2227962509ec62222aac8b6b64706bab5a5d4a1249624c7b9b">VGA_LightBlue</a> = 0x5555FF,</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="../../d8/db5/namespace_console.html#a5a9f6ce125109cf2227962509ec62222a44487d3c15e253c3a6fd1cdeca43211b">VGA_LightGreen</a> = 0x55FF55,</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="../../d8/db5/namespace_console.html#a5a9f6ce125109cf2227962509ec62222aadebc789f59c387f0e909e303a423d47">VGA_LightCyan</a> = 0x55FFFF,</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="../../d8/db5/namespace_console.html#a5a9f6ce125109cf2227962509ec62222aa54a1931d6c0bcf5ac83e5ce10319b5f">VGA_LightRed</a> = 0xFF5555,</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="../../d8/db5/namespace_console.html#a5a9f6ce125109cf2227962509ec62222af2d8574f0605b284da94371299f21679">VGA_LightMagenta</a> = 0xFF55FF,</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="../../d8/db5/namespace_console.html#a5a9f6ce125109cf2227962509ec62222ae241ad4f936bdbcefe9950558eb5c605">VGA_Yellow</a> = 0xFFFF55,</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="code" href="../../d8/db5/namespace_console.html#a5a9f6ce125109cf2227962509ec62222aff4eaef67a91c58ce028eb9f014c079c">VGA_White</a> = 0xFFFFFF,</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;};</div>
 </div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a9d9a53178befdb8bf7fe8dbdd0016b61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d9a53178befdb8bf7fe8dbdd0016b61">&#9670;&nbsp;</a></span>__attribute__() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Console::__attribute__ </td>
+          <td>(</td>
+          <td class="paramtype">(format(<a class="el" href="../../d8/db5/namespace_console.html#aa92244db771ad2578967dd9f8fcac912">printf</a>, 1, 0))&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4335d326f9c6df0a3264ea1624eb978e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4335d326f9c6df0a3264ea1624eb978e">&#9670;&nbsp;</a></span>__attribute__() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Console::__attribute__ </td>
+          <td>(</td>
+          <td class="paramtype">(format(<a class="el" href="../../d8/db5/namespace_console.html#aa92244db771ad2578967dd9f8fcac912">printf</a>, 1, 2))&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="aa92244db771ad2578967dd9f8fcac912"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa92244db771ad2578967dd9f8fcac912">&#9670;&nbsp;</a></span>printf()</h2>
 
@@ -323,19 +371,19 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/dda/console_8cpp_source.html#l00273">273</a> of file <a class="el" href="../../d9/dda/console_8cpp_source.html">console.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;{</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;    va_list args;</div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;    <span class="keywordtype">int</span> ret_val;</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160; </div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    va_start(args, fmt);</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;    ret_val = vprintf(fmt, args);</div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;    va_end(args);</div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;    <span class="comment">// Swap out the buffer in draw</span></div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;    <a class="code" href="../../d6/d9b/namespace_graphics.html#afb7733fe050948fc3a09cd9a87071ffc">Graphics::swap</a>();</div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160; </div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;    <span class="keywordflow">return</span> ret_val;</div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../d9/dda/console_8cpp_source.html#l00272">272</a> of file <a class="el" href="../../d9/dda/console_8cpp_source.html">console.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;{</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    va_list <a class="code" href="../../d8/db5/namespace_console.html#a07dd1357daf4c78de61710fa43e215df">args</a>;</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;    <span class="keywordtype">int</span> ret_val;</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160; </div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;    va_start(<a class="code" href="../../d8/db5/namespace_console.html#a07dd1357daf4c78de61710fa43e215df">args</a>, fmt);</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    ret_val = <a class="code" href="../../d8/db5/namespace_console.html#ad86a1c0ed06d68a9f4ede8f6e56db406">vprintf</a>(fmt, <a class="code" href="../../d8/db5/namespace_console.html#a07dd1357daf4c78de61710fa43e215df">args</a>);</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;    va_end(<a class="code" href="../../d8/db5/namespace_console.html#a07dd1357daf4c78de61710fa43e215df">args</a>);</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;    <span class="comment">// Swap out the buffer in draw</span></div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;    <a class="code" href="../../d6/d9b/namespace_graphics.html#afb7733fe050948fc3a09cd9a87071ffc">Graphics::swap</a>();</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160; </div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;    <span class="keywordflow">return</span> ret_val;</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;}</div>
 </div><!-- fragment --><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -343,12 +391,15 @@ Functions</h2></td></tr>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="../../d8/db5/namespace_console_aa92244db771ad2578967dd9f8fcac912_cgraph.png" border="0" usemap="#d8/db5/namespace_console_aa92244db771ad2578967dd9f8fcac912_cgraph" alt=""/></div>
 <map name="d8/db5/namespace_console_aa92244db771ad2578967dd9f8fcac912_cgraph" id="d8/db5/namespace_console_aa92244db771ad2578967dd9f8fcac912_cgraph">
-<area shape="rect" title=" " alt="" coords="5,111,123,138"/>
-<area shape="rect" href="../../d6/d9b/namespace_graphics.html#afb7733fe050948fc3a09cd9a87071ffc" title="Swap the data on backbuffer to memory video buffer and show in the screen." alt="" coords="171,111,292,138"/>
-<area shape="rect" href="../../d0/dcb/class_graphics_1_1_framebuffer.html#af62e5c11c830410a3213e2b17075b158" title=" " alt="" coords="340,5,507,47"/>
-<area shape="rect" href="../../d0/dcb/class_graphics_1_1_framebuffer.html#a1056e91da94b6937b0a6deeb3a859368" title=" " alt="" coords="340,71,507,112"/>
-<area shape="rect" href="../../d0/dcb/class_graphics_1_1_framebuffer.html#a4b6694a0728b42872a51eb15a631cd51" title=" " alt="" coords="340,136,507,177"/>
-<area shape="rect" href="../../d5/d24/string_8cpp.html#a370712322c794e949c996946f2283ea8" title=" " alt="" coords="384,202,463,229"/>
+<area shape="rect" title=" " alt="" coords="5,198,123,225"/>
+<area shape="rect" href="../../d6/d9b/namespace_graphics.html#afb7733fe050948fc3a09cd9a87071ffc" title="Swap the data on backbuffer to memory video buffer and show in the screen." alt="" coords="173,143,294,170"/>
+<area shape="rect" href="../../d8/db5/namespace_console.html#ad86a1c0ed06d68a9f4ede8f6e56db406" title=" " alt="" coords="171,223,296,250"/>
+<area shape="rect" href="../../d0/dcb/class_graphics_1_1_framebuffer.html#af62e5c11c830410a3213e2b17075b158" title=" " alt="" coords="344,5,511,47"/>
+<area shape="rect" href="../../d0/dcb/class_graphics_1_1_framebuffer.html#a1056e91da94b6937b0a6deeb3a859368" title=" " alt="" coords="344,71,511,112"/>
+<area shape="rect" href="../../d0/dcb/class_graphics_1_1_framebuffer.html#a4b6694a0728b42872a51eb15a631cd51" title=" " alt="" coords="344,136,511,177"/>
+<area shape="rect" href="../../d5/d24/string_8cpp.html#a370712322c794e949c996946f2283ea8" title=" " alt="" coords="388,202,467,229"/>
+<area shape="rect" href="../../d4/d64/printf_8cpp.html#a85a2fff114bf015eba22a1dc163bf1ba" title="Perform all printf operations on the format string using the provided argument list and uses the call..." alt="" coords="375,253,480,279"/>
+<area shape="rect" href="../../d5/d24/string_8cpp.html#a2dee044e4e667b5b789b493abd21cfa4" title="Returns the length of a string." alt="" coords="559,253,617,279"/>
 </map>
 </div>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -358,11 +409,10 @@ Functions</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="../../d8/db5/namespace_console_aa92244db771ad2578967dd9f8fcac912_icgraph.png" border="0" usemap="#d8/db5/namespace_console_aa92244db771ad2578967dd9f8fcac912_icgraph" alt=""/></div>
 <map name="d8/db5/namespace_console_aa92244db771ad2578967dd9f8fcac912_icgraph" id="d8/db5/namespace_console_aa92244db771ad2578967dd9f8fcac912_icgraph">
-<area shape="rect" title=" " alt="" coords="344,54,461,81"/>
-<area shape="rect" href="../../d9/dc3/namespace_arch.html#a67cf64868d67072561c129172d85c269" title=" " alt="" coords="5,54,100,81"/>
-<area shape="rect" href="../../dc/da3/namespace_apps.html#aebbc688ed6a7097af1dd858ca0559d4b" title="Starts a task to display number of primes found by find_primes." alt="" coords="148,29,296,56"/>
-<area shape="rect" href="../../dc/da3/namespace_apps.html#aaa2be84c7a45c27af1e3bddb75e87a48" title="Starts a spinner in an infinite loop." alt="" coords="167,80,277,106"/>
-<area shape="rect" href="../../d4/db9/trace_8hpp.html#a9f452d4e0d092c1052a36cd56e9f77b6" title=" " alt="" coords="173,130,271,157"/>
+<area shape="rect" title=" " alt="" coords="201,56,319,83"/>
+<area shape="rect" href="../../de/d66/namespace_stack.html#ab836051c392dd045b3bdfe4124ce04a8" title=" " alt="" coords="14,5,145,32"/>
+<area shape="rect" href="../../dc/da3/namespace_apps.html#aebbc688ed6a7097af1dd858ca0559d4b" title="Starts a task to display number of primes found by find_primes." alt="" coords="5,56,153,83"/>
+<area shape="rect" href="../../dc/da3/namespace_apps.html#aaa2be84c7a45c27af1e3bddb75e87a48" title="Starts a spinner in an infinite loop." alt="" coords="24,107,135,133"/>
 </map>
 </div>
 
@@ -383,12 +433,12 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/dda/console_8cpp_source.html#l00294">294</a> of file <a class="el" href="../../d9/dda/console_8cpp_source.html">console.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;{</div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;    cursorX = cursorY = 0;</div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;    colorBack = resetBack;</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    colorFore = resetFore;</div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../d9/dda/console_8cpp_source.html#l00293">293</a> of file <a class="el" href="../../d9/dda/console_8cpp_source.html">console.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;{</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    cursorX = cursorY = 0;</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;    colorBack = resetBack;</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;    colorFore = resetFore;</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -418,13 +468,76 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/dda/console_8cpp_source.html#l00287">287</a> of file <a class="el" href="../../d9/dda/console_8cpp_source.html">console.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;{</div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    cursorX = cursorY = 0;</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    colorBack = resetBack = back;</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;    colorFore = resetFore = fore;</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../d9/dda/console_8cpp_source.html#l00286">286</a> of file <a class="el" href="../../d9/dda/console_8cpp_source.html">console.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;{</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    cursorX = cursorY = 0;</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    colorBack = resetBack = back;</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    colorFore = resetFore = fore;</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;}</div>
 </div><!-- fragment -->
+</div>
+</div>
+<a id="ad86a1c0ed06d68a9f4ede8f6e56db406"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad86a1c0ed06d68a9f4ede8f6e56db406">&#9670;&nbsp;</a></span>vprintf()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Console::vprintf </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>fmt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">va_list&#160;</td>
+          <td class="paramname"><em>args</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d9/dda/console_8cpp_source.html#l00247">247</a> of file <a class="el" href="../../d9/dda/console_8cpp_source.html">console.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;{</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    <span class="keywordtype">int</span> retval;</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    Lock();</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    retval = <a class="code" href="../../d4/d64/printf_8cpp.html#a85a2fff114bf015eba22a1dc163bf1ba">printf_helper</a>(fmt, <a class="code" href="../../d8/db5/namespace_console.html#a07dd1357daf4c78de61710fa43e215df">args</a>, putchar, NULL);</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    Unlock();</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    <span class="keywordflow">return</span> retval;</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;}</div>
+</div><!-- fragment --><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="../../d8/db5/namespace_console_ad86a1c0ed06d68a9f4ede8f6e56db406_cgraph.png" border="0" usemap="#d8/db5/namespace_console_ad86a1c0ed06d68a9f4ede8f6e56db406_cgraph" alt=""/></div>
+<map name="d8/db5/namespace_console_ad86a1c0ed06d68a9f4ede8f6e56db406_cgraph" id="d8/db5/namespace_console_ad86a1c0ed06d68a9f4ede8f6e56db406_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,131,32"/>
+<area shape="rect" href="../../d4/d64/printf_8cpp.html#a85a2fff114bf015eba22a1dc163bf1ba" title="Perform all printf operations on the format string using the provided argument list and uses the call..." alt="" coords="179,5,284,32"/>
+<area shape="rect" href="../../d5/d24/string_8cpp.html#a2dee044e4e667b5b789b493abd21cfa4" title="Returns the length of a string." alt="" coords="332,5,391,32"/>
+</map>
+</div>
+<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="../../closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="../../d8/db5/namespace_console_ad86a1c0ed06d68a9f4ede8f6e56db406_icgraph.png" border="0" usemap="#d8/db5/namespace_console_ad86a1c0ed06d68a9f4ede8f6e56db406_icgraph" alt=""/></div>
+<map name="d8/db5/namespace_console_ad86a1c0ed06d68a9f4ede8f6e56db406_icgraph" id="d8/db5/namespace_console_ad86a1c0ed06d68a9f4ede8f6e56db406_icgraph">
+<area shape="rect" title=" " alt="" coords="367,56,492,83"/>
+<area shape="rect" href="../../d8/db5/namespace_console.html#aa92244db771ad2578967dd9f8fcac912" title=" " alt="" coords="201,56,319,83"/>
+<area shape="rect" href="../../de/d66/namespace_stack.html#ab836051c392dd045b3bdfe4124ce04a8" title=" " alt="" coords="14,5,145,32"/>
+<area shape="rect" href="../../dc/da3/namespace_apps.html#aebbc688ed6a7097af1dd858ca0559d4b" title="Starts a task to display number of primes found by find_primes." alt="" coords="5,56,153,83"/>
+<area shape="rect" href="../../dc/da3/namespace_apps.html#aaa2be84c7a45c27af1e3bddb75e87a48" title="Starts a spinner in an infinite loop." alt="" coords="24,107,135,133"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="afd4ee2d6ab18c9d14f28391505f0acf6"></a>
@@ -443,14 +556,14 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/dda/console_8cpp_source.html#l00264">264</a> of file <a class="el" href="../../d9/dda/console_8cpp_source.html">console.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;{</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    <span class="keywordtype">size_t</span> i = 0;</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    Lock();</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    <span class="keywordflow">while</span> (str[i])</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;        putchar(str[i++], NULL);</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    Unlock();</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../d9/dda/console_8cpp_source.html#l00263">263</a> of file <a class="el" href="../../d9/dda/console_8cpp_source.html">console.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;{</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    <span class="keywordtype">size_t</span> i = 0;</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    Lock();</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    <span class="keywordflow">while</span> (str[i])</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;        putchar(str[i++], NULL);</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    Unlock();</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -470,55 +583,75 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/dda/console_8cpp_source.html#l00257">257</a> of file <a class="el" href="../../d9/dda/console_8cpp_source.html">console.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;{</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    Lock();</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    putchar(c, NULL);</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    Unlock();</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../d9/dda/console_8cpp_source.html#l00256">256</a> of file <a class="el" href="../../d9/dda/console_8cpp_source.html">console.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;{</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    Lock();</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    putchar(c, NULL);</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    Unlock();</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;}</div>
 </div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a07dd1357daf4c78de61710fa43e215df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07dd1357daf4c78de61710fa43e215df">&#9670;&nbsp;</a></span>args</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">va_list Console::args</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d5/ddc/console_8hpp_source.html#l00026">26</a> of file <a class="el" href="../../d5/ddc/console_8hpp_source.html">console.hpp</a>.</p>
+
 </div>
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="anamespace_console_html_a5a9f6ce125109cf2227962509ec62222aac8b6b64706bab5a5d4a1249624c7b9b"><div class="ttname"><a href="../../d8/db5/namespace_console.html#a5a9f6ce125109cf2227962509ec62222aac8b6b64706bab5a5d4a1249624c7b9b">Console::VGA_LightBlue</a></div><div class="ttdeci">@ VGA_LightBlue</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dda/console_8cpp_source.html#l00038">console.cpp:38</a></div></div>
-<div class="ttc" id="anamespace_console_html_a135ef081521e01318dac5033197c6509aa6b22ea45b47897b6095e8c60de6cfb0"><div class="ttname"><a href="../../d8/db5/namespace_console.html#a135ef081521e01318dac5033197c6509aa6b22ea45b47897b6095e8c60de6cfb0">Console::Yellow</a></div><div class="ttdeci">@ Yellow</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dda/console_8cpp_source.html#l00052">console.cpp:52</a></div></div>
-<div class="ttc" id="anamespace_console_html_a5a9f6ce125109cf2227962509ec62222a5e3f7e8ce8fe68c3bab17e00f363e498"><div class="ttname"><a href="../../d8/db5/namespace_console.html#a5a9f6ce125109cf2227962509ec62222a5e3f7e8ce8fe68c3bab17e00f363e498">Console::VGA_Cyan</a></div><div class="ttdeci">@ VGA_Cyan</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dda/console_8cpp_source.html#l00032">console.cpp:32</a></div></div>
-<div class="ttc" id="anamespace_console_html_a135ef081521e01318dac5033197c6509a374ecaa8eff1345d91ffe549f492a354"><div class="ttname"><a href="../../d8/db5/namespace_console.html#a135ef081521e01318dac5033197c6509a374ecaa8eff1345d91ffe549f492a354">Console::White</a></div><div class="ttdeci">@ White</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dda/console_8cpp_source.html#l00056">console.cpp:56</a></div></div>
-<div class="ttc" id="anamespace_console_html_a5a9f6ce125109cf2227962509ec62222af2d8574f0605b284da94371299f21679"><div class="ttname"><a href="../../d8/db5/namespace_console.html#a5a9f6ce125109cf2227962509ec62222af2d8574f0605b284da94371299f21679">Console::VGA_LightMagenta</a></div><div class="ttdeci">@ VGA_LightMagenta</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dda/console_8cpp_source.html#l00042">console.cpp:42</a></div></div>
-<div class="ttc" id="anamespace_console_html_a135ef081521e01318dac5033197c6509a916be47875236fa56a7f32e746d618b1"><div class="ttname"><a href="../../d8/db5/namespace_console.html#a135ef081521e01318dac5033197c6509a916be47875236fa56a7f32e746d618b1">Console::BrightBlue</a></div><div class="ttdeci">@ BrightBlue</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dda/console_8cpp_source.html#l00061">console.cpp:61</a></div></div>
-<div class="ttc" id="anamespace_console_html_a5a9f6ce125109cf2227962509ec62222a44487d3c15e253c3a6fd1cdeca43211b"><div class="ttname"><a href="../../d8/db5/namespace_console.html#a5a9f6ce125109cf2227962509ec62222a44487d3c15e253c3a6fd1cdeca43211b">Console::VGA_LightGreen</a></div><div class="ttdeci">@ VGA_LightGreen</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dda/console_8cpp_source.html#l00039">console.cpp:39</a></div></div>
-<div class="ttc" id="anamespace_console_html_a5a9f6ce125109cf2227962509ec62222aa54a1931d6c0bcf5ac83e5ce10319b5f"><div class="ttname"><a href="../../d8/db5/namespace_console.html#a5a9f6ce125109cf2227962509ec62222aa54a1931d6c0bcf5ac83e5ce10319b5f">Console::VGA_LightRed</a></div><div class="ttdeci">@ VGA_LightRed</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dda/console_8cpp_source.html#l00041">console.cpp:41</a></div></div>
-<div class="ttc" id="anamespace_console_html_a5a9f6ce125109cf2227962509ec62222ac29aceaa10140cde639cefc288c243e3"><div class="ttname"><a href="../../d8/db5/namespace_console.html#a5a9f6ce125109cf2227962509ec62222ac29aceaa10140cde639cefc288c243e3">Console::VGA_Magenta</a></div><div class="ttdeci">@ VGA_Magenta</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dda/console_8cpp_source.html#l00034">console.cpp:34</a></div></div>
-<div class="ttc" id="anamespace_console_html_a135ef081521e01318dac5033197c6509af6c483f92f3d96e26f2d31d384faa438"><div class="ttname"><a href="../../d8/db5/namespace_console.html#a135ef081521e01318dac5033197c6509af6c483f92f3d96e26f2d31d384faa438">Console::Blue</a></div><div class="ttdeci">@ Blue</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dda/console_8cpp_source.html#l00053">console.cpp:53</a></div></div>
-<div class="ttc" id="anamespace_console_html_a5a9f6ce125109cf2227962509ec62222aff4eaef67a91c58ce028eb9f014c079c"><div class="ttname"><a href="../../d8/db5/namespace_console.html#a5a9f6ce125109cf2227962509ec62222aff4eaef67a91c58ce028eb9f014c079c">Console::VGA_White</a></div><div class="ttdeci">@ VGA_White</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dda/console_8cpp_source.html#l00044">console.cpp:44</a></div></div>
-<div class="ttc" id="anamespace_graphics_html_afb7733fe050948fc3a09cd9a87071ffc"><div class="ttname"><a href="../../d6/d9b/namespace_graphics.html#afb7733fe050948fc3a09cd9a87071ffc">Graphics::swap</a></div><div class="ttdeci">void swap()</div><div class="ttdoc">Swap the data on backbuffer to memory video buffer and show in the screen.</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d99/graphics_8cpp_source.html#l00089">graphics.cpp:89</a></div></div>
-<div class="ttc" id="anamespace_console_html_a135ef081521e01318dac5033197c6509a761bd7e91cfdc897b6a04d2d97353a94"><div class="ttname"><a href="../../d8/db5/namespace_console.html#a135ef081521e01318dac5033197c6509a761bd7e91cfdc897b6a04d2d97353a94">Console::BrightMagenta</a></div><div class="ttdeci">@ BrightMagenta</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dda/console_8cpp_source.html#l00062">console.cpp:62</a></div></div>
-<div class="ttc" id="anamespace_console_html_a135ef081521e01318dac5033197c6509aebbf8dc0cb5c49a160498961528ca533"><div class="ttname"><a href="../../d8/db5/namespace_console.html#a135ef081521e01318dac5033197c6509aebbf8dc0cb5c49a160498961528ca533">Console::Green</a></div><div class="ttdeci">@ Green</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dda/console_8cpp_source.html#l00051">console.cpp:51</a></div></div>
-<div class="ttc" id="anamespace_console_html_a5a9f6ce125109cf2227962509ec62222a8eb53134c5355b8be746cae63737e640"><div class="ttname"><a href="../../d8/db5/namespace_console.html#a5a9f6ce125109cf2227962509ec62222a8eb53134c5355b8be746cae63737e640">Console::VGA_Blue</a></div><div class="ttdeci">@ VGA_Blue</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dda/console_8cpp_source.html#l00030">console.cpp:30</a></div></div>
-<div class="ttc" id="anamespace_console_html_a5a9f6ce125109cf2227962509ec62222ae241ad4f936bdbcefe9950558eb5c605"><div class="ttname"><a href="../../d8/db5/namespace_console.html#a5a9f6ce125109cf2227962509ec62222ae241ad4f936bdbcefe9950558eb5c605">Console::VGA_Yellow</a></div><div class="ttdeci">@ VGA_Yellow</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dda/console_8cpp_source.html#l00043">console.cpp:43</a></div></div>
-<div class="ttc" id="anamespace_console_html_a135ef081521e01318dac5033197c6509a742359bdc55d29056ca8fe558878afe5"><div class="ttname"><a href="../../d8/db5/namespace_console.html#a135ef081521e01318dac5033197c6509a742359bdc55d29056ca8fe558878afe5">Console::BrightWhite</a></div><div class="ttdeci">@ BrightWhite</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dda/console_8cpp_source.html#l00064">console.cpp:64</a></div></div>
-<div class="ttc" id="anamespace_console_html_ad696fde192397acdac453250261b267cafb6ea2c0f03555ed9d9d025523221ab0"><div class="ttname"><a href="../../d8/db5/namespace_console.html#ad696fde192397acdac453250261b267cafb6ea2c0f03555ed9d9d025523221ab0">Console::Bracket</a></div><div class="ttdeci">@ Bracket</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dda/console_8cpp_source.html#l00079">console.cpp:79</a></div></div>
-<div class="ttc" id="anamespace_console_html_a135ef081521e01318dac5033197c6509a565d822d3ab982ae566de29e75cecc49"><div class="ttname"><a href="../../d8/db5/namespace_console.html#a135ef081521e01318dac5033197c6509a565d822d3ab982ae566de29e75cecc49">Console::BrightYellow</a></div><div class="ttdeci">@ BrightYellow</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dda/console_8cpp_source.html#l00060">console.cpp:60</a></div></div>
-<div class="ttc" id="anamespace_console_html_a135ef081521e01318dac5033197c6509a55345fd27bd18ab82b8686d81f8ddaa1"><div class="ttname"><a href="../../d8/db5/namespace_console.html#a135ef081521e01318dac5033197c6509a55345fd27bd18ab82b8686d81f8ddaa1">Console::Magenta</a></div><div class="ttdeci">@ Magenta</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dda/console_8cpp_source.html#l00054">console.cpp:54</a></div></div>
-<div class="ttc" id="anamespace_console_html_a5a9f6ce125109cf2227962509ec62222a56439f092571f1f54d6c6e9b45e1c293"><div class="ttname"><a href="../../d8/db5/namespace_console.html#a5a9f6ce125109cf2227962509ec62222a56439f092571f1f54d6c6e9b45e1c293">Console::VGA_Red</a></div><div class="ttdeci">@ VGA_Red</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dda/console_8cpp_source.html#l00033">console.cpp:33</a></div></div>
-<div class="ttc" id="anamespace_console_html_a5a9f6ce125109cf2227962509ec62222aba798045a1c6c99634cfbed210949e27"><div class="ttname"><a href="../../d8/db5/namespace_console.html#a5a9f6ce125109cf2227962509ec62222aba798045a1c6c99634cfbed210949e27">Console::VGA_LightGrey</a></div><div class="ttdeci">@ VGA_LightGrey</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dda/console_8cpp_source.html#l00036">console.cpp:36</a></div></div>
-<div class="ttc" id="anamespace_console_html_a5a9f6ce125109cf2227962509ec62222a4c3d2708458ba060549ffac31a409af0"><div class="ttname"><a href="../../d8/db5/namespace_console.html#a5a9f6ce125109cf2227962509ec62222a4c3d2708458ba060549ffac31a409af0">Console::VGA_DarkGrey</a></div><div class="ttdeci">@ VGA_DarkGrey</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dda/console_8cpp_source.html#l00037">console.cpp:37</a></div></div>
-<div class="ttc" id="anamespace_console_html_ad696fde192397acdac453250261b267ca98525271ea33d0d95561838cac1b7665"><div class="ttname"><a href="../../d8/db5/namespace_console.html#ad696fde192397acdac453250261b267ca98525271ea33d0d95561838cac1b7665">Console::Esc</a></div><div class="ttdeci">@ Esc</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dda/console_8cpp_source.html#l00078">console.cpp:78</a></div></div>
-<div class="ttc" id="anamespace_console_html_a5a9f6ce125109cf2227962509ec62222a2794654a85e9a95dfb0bd349c36e6987"><div class="ttname"><a href="../../d8/db5/namespace_console.html#a5a9f6ce125109cf2227962509ec62222a2794654a85e9a95dfb0bd349c36e6987">Console::VGA_Brown</a></div><div class="ttdeci">@ VGA_Brown</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dda/console_8cpp_source.html#l00035">console.cpp:35</a></div></div>
-<div class="ttc" id="anamespace_console_html_a5a9f6ce125109cf2227962509ec62222a78ab04c02a88819f9c662c9bb46beb1f"><div class="ttname"><a href="../../d8/db5/namespace_console.html#a5a9f6ce125109cf2227962509ec62222a78ab04c02a88819f9c662c9bb46beb1f">Console::VGA_Black</a></div><div class="ttdeci">@ VGA_Black</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dda/console_8cpp_source.html#l00029">console.cpp:29</a></div></div>
-<div class="ttc" id="anamespace_console_html_ad696fde192397acdac453250261b267caab0e3e75783ccf0126f88421a1c0ae9c"><div class="ttname"><a href="../../d8/db5/namespace_console.html#ad696fde192397acdac453250261b267caab0e3e75783ccf0126f88421a1c0ae9c">Console::Normal</a></div><div class="ttdeci">@ Normal</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dda/console_8cpp_source.html#l00077">console.cpp:77</a></div></div>
-<div class="ttc" id="anamespace_console_html_a5a9f6ce125109cf2227962509ec62222aadebc789f59c387f0e909e303a423d47"><div class="ttname"><a href="../../d8/db5/namespace_console.html#a5a9f6ce125109cf2227962509ec62222aadebc789f59c387f0e909e303a423d47">Console::VGA_LightCyan</a></div><div class="ttdeci">@ VGA_LightCyan</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dda/console_8cpp_source.html#l00040">console.cpp:40</a></div></div>
-<div class="ttc" id="anamespace_console_html_a135ef081521e01318dac5033197c6509ac339bf8cb2e80de494fb478ec3027aea"><div class="ttname"><a href="../../d8/db5/namespace_console.html#a135ef081521e01318dac5033197c6509ac339bf8cb2e80de494fb478ec3027aea">Console::Background</a></div><div class="ttdeci">@ Background</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dda/console_8cpp_source.html#l00048">console.cpp:48</a></div></div>
-<div class="ttc" id="anamespace_console_html_a135ef081521e01318dac5033197c6509a0acd37c9a7cc526059de0f55fbb3a81a"><div class="ttname"><a href="../../d8/db5/namespace_console.html#a135ef081521e01318dac5033197c6509a0acd37c9a7cc526059de0f55fbb3a81a">Console::BrightGreen</a></div><div class="ttdeci">@ BrightGreen</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dda/console_8cpp_source.html#l00059">console.cpp:59</a></div></div>
-<div class="ttc" id="anamespace_console_html_a5a9f6ce125109cf2227962509ec62222aed5aca74751185a80c59a797b7dee6ec"><div class="ttname"><a href="../../d8/db5/namespace_console.html#a5a9f6ce125109cf2227962509ec62222aed5aca74751185a80c59a797b7dee6ec">Console::VGA_Green</a></div><div class="ttdeci">@ VGA_Green</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dda/console_8cpp_source.html#l00031">console.cpp:31</a></div></div>
-<div class="ttc" id="anamespace_console_html_a135ef081521e01318dac5033197c6509a396f9a8195526a87135e0f429f66b932"><div class="ttname"><a href="../../d8/db5/namespace_console.html#a135ef081521e01318dac5033197c6509a396f9a8195526a87135e0f429f66b932">Console::BrightCyan</a></div><div class="ttdeci">@ BrightCyan</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dda/console_8cpp_source.html#l00063">console.cpp:63</a></div></div>
-<div class="ttc" id="anamespace_console_html_a135ef081521e01318dac5033197c6509a3d956a8db5fda87bb81fbd08b1672390"><div class="ttname"><a href="../../d8/db5/namespace_console.html#a135ef081521e01318dac5033197c6509a3d956a8db5fda87bb81fbd08b1672390">Console::Cyan</a></div><div class="ttdeci">@ Cyan</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dda/console_8cpp_source.html#l00055">console.cpp:55</a></div></div>
-<div class="ttc" id="anamespace_console_html_a135ef081521e01318dac5033197c6509afa3a7b3bfe4bfc5b938876e7d5dfe29e"><div class="ttname"><a href="../../d8/db5/namespace_console.html#a135ef081521e01318dac5033197c6509afa3a7b3bfe4bfc5b938876e7d5dfe29e">Console::Red</a></div><div class="ttdeci">@ Red</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dda/console_8cpp_source.html#l00050">console.cpp:50</a></div></div>
-<div class="ttc" id="anamespace_console_html_ad696fde192397acdac453250261b267cac3b3b4583b0456dbb9cf10e5ed404de5"><div class="ttname"><a href="../../d8/db5/namespace_console.html#ad696fde192397acdac453250261b267cac3b3b4583b0456dbb9cf10e5ed404de5">Console::Value</a></div><div class="ttdeci">@ Value</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dda/console_8cpp_source.html#l00080">console.cpp:80</a></div></div>
-<div class="ttc" id="anamespace_console_html_a135ef081521e01318dac5033197c6509a779c91bfa26cef7b228b232b092665e3"><div class="ttname"><a href="../../d8/db5/namespace_console.html#a135ef081521e01318dac5033197c6509a779c91bfa26cef7b228b232b092665e3">Console::BrightRed</a></div><div class="ttdeci">@ BrightRed</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dda/console_8cpp_source.html#l00058">console.cpp:58</a></div></div>
-<div class="ttc" id="anamespace_console_html_a135ef081521e01318dac5033197c6509a3af967d3bc696c78918923d80b639c70"><div class="ttname"><a href="../../d8/db5/namespace_console.html#a135ef081521e01318dac5033197c6509a3af967d3bc696c78918923d80b639c70">Console::BrightBlack</a></div><div class="ttdeci">@ BrightBlack</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dda/console_8cpp_source.html#l00057">console.cpp:57</a></div></div>
-<div class="ttc" id="anamespace_console_html_a135ef081521e01318dac5033197c6509a74a17ea3fbf0c882e4bc985c22a3199b"><div class="ttname"><a href="../../d8/db5/namespace_console.html#a135ef081521e01318dac5033197c6509a74a17ea3fbf0c882e4bc985c22a3199b">Console::Black</a></div><div class="ttdeci">@ Black</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dda/console_8cpp_source.html#l00049">console.cpp:49</a></div></div>
+<div class="ttc" id="anamespace_console_html_a5a9f6ce125109cf2227962509ec62222aac8b6b64706bab5a5d4a1249624c7b9b"><div class="ttname"><a href="../../d8/db5/namespace_console.html#a5a9f6ce125109cf2227962509ec62222aac8b6b64706bab5a5d4a1249624c7b9b">Console::VGA_LightBlue</a></div><div class="ttdeci">@ VGA_LightBlue</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dda/console_8cpp_source.html#l00037">console.cpp:37</a></div></div>
+<div class="ttc" id="anamespace_console_html_a135ef081521e01318dac5033197c6509aa6b22ea45b47897b6095e8c60de6cfb0"><div class="ttname"><a href="../../d8/db5/namespace_console.html#a135ef081521e01318dac5033197c6509aa6b22ea45b47897b6095e8c60de6cfb0">Console::Yellow</a></div><div class="ttdeci">@ Yellow</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dda/console_8cpp_source.html#l00051">console.cpp:51</a></div></div>
+<div class="ttc" id="anamespace_console_html_a5a9f6ce125109cf2227962509ec62222a5e3f7e8ce8fe68c3bab17e00f363e498"><div class="ttname"><a href="../../d8/db5/namespace_console.html#a5a9f6ce125109cf2227962509ec62222a5e3f7e8ce8fe68c3bab17e00f363e498">Console::VGA_Cyan</a></div><div class="ttdeci">@ VGA_Cyan</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dda/console_8cpp_source.html#l00031">console.cpp:31</a></div></div>
+<div class="ttc" id="anamespace_console_html_a135ef081521e01318dac5033197c6509a374ecaa8eff1345d91ffe549f492a354"><div class="ttname"><a href="../../d8/db5/namespace_console.html#a135ef081521e01318dac5033197c6509a374ecaa8eff1345d91ffe549f492a354">Console::White</a></div><div class="ttdeci">@ White</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dda/console_8cpp_source.html#l00055">console.cpp:55</a></div></div>
+<div class="ttc" id="anamespace_console_html_a5a9f6ce125109cf2227962509ec62222af2d8574f0605b284da94371299f21679"><div class="ttname"><a href="../../d8/db5/namespace_console.html#a5a9f6ce125109cf2227962509ec62222af2d8574f0605b284da94371299f21679">Console::VGA_LightMagenta</a></div><div class="ttdeci">@ VGA_LightMagenta</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dda/console_8cpp_source.html#l00041">console.cpp:41</a></div></div>
+<div class="ttc" id="anamespace_console_html_a135ef081521e01318dac5033197c6509a916be47875236fa56a7f32e746d618b1"><div class="ttname"><a href="../../d8/db5/namespace_console.html#a135ef081521e01318dac5033197c6509a916be47875236fa56a7f32e746d618b1">Console::BrightBlue</a></div><div class="ttdeci">@ BrightBlue</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dda/console_8cpp_source.html#l00060">console.cpp:60</a></div></div>
+<div class="ttc" id="anamespace_console_html_a5a9f6ce125109cf2227962509ec62222a44487d3c15e253c3a6fd1cdeca43211b"><div class="ttname"><a href="../../d8/db5/namespace_console.html#a5a9f6ce125109cf2227962509ec62222a44487d3c15e253c3a6fd1cdeca43211b">Console::VGA_LightGreen</a></div><div class="ttdeci">@ VGA_LightGreen</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dda/console_8cpp_source.html#l00038">console.cpp:38</a></div></div>
+<div class="ttc" id="anamespace_console_html_a5a9f6ce125109cf2227962509ec62222aa54a1931d6c0bcf5ac83e5ce10319b5f"><div class="ttname"><a href="../../d8/db5/namespace_console.html#a5a9f6ce125109cf2227962509ec62222aa54a1931d6c0bcf5ac83e5ce10319b5f">Console::VGA_LightRed</a></div><div class="ttdeci">@ VGA_LightRed</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dda/console_8cpp_source.html#l00040">console.cpp:40</a></div></div>
+<div class="ttc" id="anamespace_console_html_a5a9f6ce125109cf2227962509ec62222ac29aceaa10140cde639cefc288c243e3"><div class="ttname"><a href="../../d8/db5/namespace_console.html#a5a9f6ce125109cf2227962509ec62222ac29aceaa10140cde639cefc288c243e3">Console::VGA_Magenta</a></div><div class="ttdeci">@ VGA_Magenta</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dda/console_8cpp_source.html#l00033">console.cpp:33</a></div></div>
+<div class="ttc" id="anamespace_console_html_a135ef081521e01318dac5033197c6509af6c483f92f3d96e26f2d31d384faa438"><div class="ttname"><a href="../../d8/db5/namespace_console.html#a135ef081521e01318dac5033197c6509af6c483f92f3d96e26f2d31d384faa438">Console::Blue</a></div><div class="ttdeci">@ Blue</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dda/console_8cpp_source.html#l00052">console.cpp:52</a></div></div>
+<div class="ttc" id="anamespace_console_html_a5a9f6ce125109cf2227962509ec62222aff4eaef67a91c58ce028eb9f014c079c"><div class="ttname"><a href="../../d8/db5/namespace_console.html#a5a9f6ce125109cf2227962509ec62222aff4eaef67a91c58ce028eb9f014c079c">Console::VGA_White</a></div><div class="ttdeci">@ VGA_White</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dda/console_8cpp_source.html#l00043">console.cpp:43</a></div></div>
+<div class="ttc" id="anamespace_graphics_html_afb7733fe050948fc3a09cd9a87071ffc"><div class="ttname"><a href="../../d6/d9b/namespace_graphics.html#afb7733fe050948fc3a09cd9a87071ffc">Graphics::swap</a></div><div class="ttdeci">void swap()</div><div class="ttdoc">Swap the data on backbuffer to memory video buffer and show in the screen.</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d99/graphics_8cpp_source.html#l00092">graphics.cpp:92</a></div></div>
+<div class="ttc" id="anamespace_console_html_a135ef081521e01318dac5033197c6509a761bd7e91cfdc897b6a04d2d97353a94"><div class="ttname"><a href="../../d8/db5/namespace_console.html#a135ef081521e01318dac5033197c6509a761bd7e91cfdc897b6a04d2d97353a94">Console::BrightMagenta</a></div><div class="ttdeci">@ BrightMagenta</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dda/console_8cpp_source.html#l00061">console.cpp:61</a></div></div>
+<div class="ttc" id="anamespace_console_html_a135ef081521e01318dac5033197c6509aebbf8dc0cb5c49a160498961528ca533"><div class="ttname"><a href="../../d8/db5/namespace_console.html#a135ef081521e01318dac5033197c6509aebbf8dc0cb5c49a160498961528ca533">Console::Green</a></div><div class="ttdeci">@ Green</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dda/console_8cpp_source.html#l00050">console.cpp:50</a></div></div>
+<div class="ttc" id="anamespace_console_html_a5a9f6ce125109cf2227962509ec62222a8eb53134c5355b8be746cae63737e640"><div class="ttname"><a href="../../d8/db5/namespace_console.html#a5a9f6ce125109cf2227962509ec62222a8eb53134c5355b8be746cae63737e640">Console::VGA_Blue</a></div><div class="ttdeci">@ VGA_Blue</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dda/console_8cpp_source.html#l00029">console.cpp:29</a></div></div>
+<div class="ttc" id="anamespace_console_html_a07dd1357daf4c78de61710fa43e215df"><div class="ttname"><a href="../../d8/db5/namespace_console.html#a07dd1357daf4c78de61710fa43e215df">Console::args</a></div><div class="ttdeci">va_list args</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/ddc/console_8hpp_source.html#l00026">console.hpp:26</a></div></div>
+<div class="ttc" id="anamespace_console_html_a5a9f6ce125109cf2227962509ec62222ae241ad4f936bdbcefe9950558eb5c605"><div class="ttname"><a href="../../d8/db5/namespace_console.html#a5a9f6ce125109cf2227962509ec62222ae241ad4f936bdbcefe9950558eb5c605">Console::VGA_Yellow</a></div><div class="ttdeci">@ VGA_Yellow</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dda/console_8cpp_source.html#l00042">console.cpp:42</a></div></div>
+<div class="ttc" id="anamespace_console_html_a135ef081521e01318dac5033197c6509a742359bdc55d29056ca8fe558878afe5"><div class="ttname"><a href="../../d8/db5/namespace_console.html#a135ef081521e01318dac5033197c6509a742359bdc55d29056ca8fe558878afe5">Console::BrightWhite</a></div><div class="ttdeci">@ BrightWhite</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dda/console_8cpp_source.html#l00063">console.cpp:63</a></div></div>
+<div class="ttc" id="anamespace_console_html_ad696fde192397acdac453250261b267cafb6ea2c0f03555ed9d9d025523221ab0"><div class="ttname"><a href="../../d8/db5/namespace_console.html#ad696fde192397acdac453250261b267cafb6ea2c0f03555ed9d9d025523221ab0">Console::Bracket</a></div><div class="ttdeci">@ Bracket</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dda/console_8cpp_source.html#l00078">console.cpp:78</a></div></div>
+<div class="ttc" id="anamespace_console_html_ad86a1c0ed06d68a9f4ede8f6e56db406"><div class="ttname"><a href="../../d8/db5/namespace_console.html#ad86a1c0ed06d68a9f4ede8f6e56db406">Console::vprintf</a></div><div class="ttdeci">int vprintf(const char *fmt, va_list args)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dda/console_8cpp_source.html#l00247">console.cpp:247</a></div></div>
+<div class="ttc" id="anamespace_console_html_a135ef081521e01318dac5033197c6509a565d822d3ab982ae566de29e75cecc49"><div class="ttname"><a href="../../d8/db5/namespace_console.html#a135ef081521e01318dac5033197c6509a565d822d3ab982ae566de29e75cecc49">Console::BrightYellow</a></div><div class="ttdeci">@ BrightYellow</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dda/console_8cpp_source.html#l00059">console.cpp:59</a></div></div>
+<div class="ttc" id="anamespace_console_html_a135ef081521e01318dac5033197c6509a55345fd27bd18ab82b8686d81f8ddaa1"><div class="ttname"><a href="../../d8/db5/namespace_console.html#a135ef081521e01318dac5033197c6509a55345fd27bd18ab82b8686d81f8ddaa1">Console::Magenta</a></div><div class="ttdeci">@ Magenta</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dda/console_8cpp_source.html#l00053">console.cpp:53</a></div></div>
+<div class="ttc" id="anamespace_console_html_a5a9f6ce125109cf2227962509ec62222a56439f092571f1f54d6c6e9b45e1c293"><div class="ttname"><a href="../../d8/db5/namespace_console.html#a5a9f6ce125109cf2227962509ec62222a56439f092571f1f54d6c6e9b45e1c293">Console::VGA_Red</a></div><div class="ttdeci">@ VGA_Red</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dda/console_8cpp_source.html#l00032">console.cpp:32</a></div></div>
+<div class="ttc" id="anamespace_console_html_a5a9f6ce125109cf2227962509ec62222aba798045a1c6c99634cfbed210949e27"><div class="ttname"><a href="../../d8/db5/namespace_console.html#a5a9f6ce125109cf2227962509ec62222aba798045a1c6c99634cfbed210949e27">Console::VGA_LightGrey</a></div><div class="ttdeci">@ VGA_LightGrey</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dda/console_8cpp_source.html#l00035">console.cpp:35</a></div></div>
+<div class="ttc" id="anamespace_console_html_a5a9f6ce125109cf2227962509ec62222a4c3d2708458ba060549ffac31a409af0"><div class="ttname"><a href="../../d8/db5/namespace_console.html#a5a9f6ce125109cf2227962509ec62222a4c3d2708458ba060549ffac31a409af0">Console::VGA_DarkGrey</a></div><div class="ttdeci">@ VGA_DarkGrey</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dda/console_8cpp_source.html#l00036">console.cpp:36</a></div></div>
+<div class="ttc" id="anamespace_console_html_ad696fde192397acdac453250261b267ca98525271ea33d0d95561838cac1b7665"><div class="ttname"><a href="../../d8/db5/namespace_console.html#ad696fde192397acdac453250261b267ca98525271ea33d0d95561838cac1b7665">Console::Esc</a></div><div class="ttdeci">@ Esc</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dda/console_8cpp_source.html#l00077">console.cpp:77</a></div></div>
+<div class="ttc" id="anamespace_console_html_a5a9f6ce125109cf2227962509ec62222a2794654a85e9a95dfb0bd349c36e6987"><div class="ttname"><a href="../../d8/db5/namespace_console.html#a5a9f6ce125109cf2227962509ec62222a2794654a85e9a95dfb0bd349c36e6987">Console::VGA_Brown</a></div><div class="ttdeci">@ VGA_Brown</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dda/console_8cpp_source.html#l00034">console.cpp:34</a></div></div>
+<div class="ttc" id="anamespace_console_html_a5a9f6ce125109cf2227962509ec62222a78ab04c02a88819f9c662c9bb46beb1f"><div class="ttname"><a href="../../d8/db5/namespace_console.html#a5a9f6ce125109cf2227962509ec62222a78ab04c02a88819f9c662c9bb46beb1f">Console::VGA_Black</a></div><div class="ttdeci">@ VGA_Black</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dda/console_8cpp_source.html#l00028">console.cpp:28</a></div></div>
+<div class="ttc" id="anamespace_console_html_ad696fde192397acdac453250261b267caab0e3e75783ccf0126f88421a1c0ae9c"><div class="ttname"><a href="../../d8/db5/namespace_console.html#ad696fde192397acdac453250261b267caab0e3e75783ccf0126f88421a1c0ae9c">Console::Normal</a></div><div class="ttdeci">@ Normal</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dda/console_8cpp_source.html#l00076">console.cpp:76</a></div></div>
+<div class="ttc" id="anamespace_console_html_a5a9f6ce125109cf2227962509ec62222aadebc789f59c387f0e909e303a423d47"><div class="ttname"><a href="../../d8/db5/namespace_console.html#a5a9f6ce125109cf2227962509ec62222aadebc789f59c387f0e909e303a423d47">Console::VGA_LightCyan</a></div><div class="ttdeci">@ VGA_LightCyan</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dda/console_8cpp_source.html#l00039">console.cpp:39</a></div></div>
+<div class="ttc" id="anamespace_console_html_a135ef081521e01318dac5033197c6509ac339bf8cb2e80de494fb478ec3027aea"><div class="ttname"><a href="../../d8/db5/namespace_console.html#a135ef081521e01318dac5033197c6509ac339bf8cb2e80de494fb478ec3027aea">Console::Background</a></div><div class="ttdeci">@ Background</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dda/console_8cpp_source.html#l00047">console.cpp:47</a></div></div>
+<div class="ttc" id="anamespace_console_html_a135ef081521e01318dac5033197c6509a0acd37c9a7cc526059de0f55fbb3a81a"><div class="ttname"><a href="../../d8/db5/namespace_console.html#a135ef081521e01318dac5033197c6509a0acd37c9a7cc526059de0f55fbb3a81a">Console::BrightGreen</a></div><div class="ttdeci">@ BrightGreen</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dda/console_8cpp_source.html#l00058">console.cpp:58</a></div></div>
+<div class="ttc" id="anamespace_console_html_a5a9f6ce125109cf2227962509ec62222aed5aca74751185a80c59a797b7dee6ec"><div class="ttname"><a href="../../d8/db5/namespace_console.html#a5a9f6ce125109cf2227962509ec62222aed5aca74751185a80c59a797b7dee6ec">Console::VGA_Green</a></div><div class="ttdeci">@ VGA_Green</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dda/console_8cpp_source.html#l00030">console.cpp:30</a></div></div>
+<div class="ttc" id="anamespace_console_html_a135ef081521e01318dac5033197c6509a396f9a8195526a87135e0f429f66b932"><div class="ttname"><a href="../../d8/db5/namespace_console.html#a135ef081521e01318dac5033197c6509a396f9a8195526a87135e0f429f66b932">Console::BrightCyan</a></div><div class="ttdeci">@ BrightCyan</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dda/console_8cpp_source.html#l00062">console.cpp:62</a></div></div>
+<div class="ttc" id="anamespace_console_html_a135ef081521e01318dac5033197c6509a3d956a8db5fda87bb81fbd08b1672390"><div class="ttname"><a href="../../d8/db5/namespace_console.html#a135ef081521e01318dac5033197c6509a3d956a8db5fda87bb81fbd08b1672390">Console::Cyan</a></div><div class="ttdeci">@ Cyan</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dda/console_8cpp_source.html#l00054">console.cpp:54</a></div></div>
+<div class="ttc" id="anamespace_console_html_a135ef081521e01318dac5033197c6509afa3a7b3bfe4bfc5b938876e7d5dfe29e"><div class="ttname"><a href="../../d8/db5/namespace_console.html#a135ef081521e01318dac5033197c6509afa3a7b3bfe4bfc5b938876e7d5dfe29e">Console::Red</a></div><div class="ttdeci">@ Red</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dda/console_8cpp_source.html#l00049">console.cpp:49</a></div></div>
+<div class="ttc" id="aprintf_8cpp_html_a85a2fff114bf015eba22a1dc163bf1ba"><div class="ttname"><a href="../../d4/d64/printf_8cpp.html#a85a2fff114bf015eba22a1dc163bf1ba">printf_helper</a></div><div class="ttdeci">int printf_helper(const char *fmt, va_list args, printf_cb_fnptr_t fn, void *ptr)</div><div class="ttdoc">Perform all printf operations on the format string using the provided argument list and uses the call...</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d64/printf_8cpp_source.html#l00105">printf.cpp:105</a></div></div>
+<div class="ttc" id="anamespace_console_html_ad696fde192397acdac453250261b267cac3b3b4583b0456dbb9cf10e5ed404de5"><div class="ttname"><a href="../../d8/db5/namespace_console.html#ad696fde192397acdac453250261b267cac3b3b4583b0456dbb9cf10e5ed404de5">Console::Value</a></div><div class="ttdeci">@ Value</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dda/console_8cpp_source.html#l00079">console.cpp:79</a></div></div>
+<div class="ttc" id="anamespace_console_html_a135ef081521e01318dac5033197c6509a779c91bfa26cef7b228b232b092665e3"><div class="ttname"><a href="../../d8/db5/namespace_console.html#a135ef081521e01318dac5033197c6509a779c91bfa26cef7b228b232b092665e3">Console::BrightRed</a></div><div class="ttdeci">@ BrightRed</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dda/console_8cpp_source.html#l00057">console.cpp:57</a></div></div>
+<div class="ttc" id="anamespace_console_html_a135ef081521e01318dac5033197c6509a3af967d3bc696c78918923d80b639c70"><div class="ttname"><a href="../../d8/db5/namespace_console.html#a135ef081521e01318dac5033197c6509a3af967d3bc696c78918923d80b639c70">Console::BrightBlack</a></div><div class="ttdeci">@ BrightBlack</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dda/console_8cpp_source.html#l00056">console.cpp:56</a></div></div>
+<div class="ttc" id="anamespace_console_html_a135ef081521e01318dac5033197c6509a74a17ea3fbf0c882e4bc985c22a3199b"><div class="ttname"><a href="../../d8/db5/namespace_console.html#a135ef081521e01318dac5033197c6509a74a17ea3fbf0c882e4bc985c22a3199b">Console::Black</a></div><div class="ttdeci">@ Black</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dda/console_8cpp_source.html#l00048">console.cpp:48</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

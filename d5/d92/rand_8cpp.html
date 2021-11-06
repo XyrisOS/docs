@@ -119,10 +119,14 @@ Variables</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Portable implementation of rand and srand as according to the C standard implementation by K&amp;R. </p>
-<dl class="section author"><dt>Author</dt><dd>Brian Kernighan, Dennis Ritchie (C Standard Authors) Michel (JMallone) Gomes (<a href="#" onclick="location.href='mai'+'lto:'+'mic'+'he'+'ls@'+'ut'+'fpr'+'.e'+'du.'+'br'; return false;">miche<span style="display: none;">.nosp@m.</span>ls@u<span style="display: none;">.nosp@m.</span>tfpr.<span style="display: none;">.nosp@m.</span>edu.<span style="display: none;">.nosp@m.</span>br</a>) </dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Brian Kernighan, Dennis Ritchie (C Standard Authors) </dd>
+<dd>
+Michel (JMallone) Gomes (<a href="#" onclick="location.href='mai'+'lto:'+'mic'+'he'+'ls@'+'ut'+'fpr'+'.e'+'du.'+'br'; return false;">miche<span style="display: none;">.nosp@m.</span>ls@u<span style="display: none;">.nosp@m.</span>tfpr.<span style="display: none;">.nosp@m.</span>edu.<span style="display: none;">.nosp@m.</span>br</a>) </dd></dl>
 <dl class="section version"><dt>Version</dt><dd>0.1 </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>2021-07-20</dd></dl>
-<dl class="section copyright"><dt>Copyright</dt><dd>C Programming Language copyright Brian Kernighan, Dennis Ritchie Implementation Copyright the Xyris Contributors (c) 2021.</dd></dl>
+<dl class="section copyright"><dt>Copyright</dt><dd>C Programming Language copyright Brian Kernighan, Dennis Ritchie </dd>
+<dd>
+Implementation Copyright the Xyris Contributors (c) 2021.</dd></dl>
 <p>References: <a href="https://wiki.osdev.org/Random_Number_Generator#The_Standard.27s_Example">https://wiki.osdev.org/Random_Number_Generator#The_Standard.27s_Example</a> <a href="https://pubs.opengroup.org/onlinepubs/9699919799/functions/rand.html">https://pubs.opengroup.org/onlinepubs/9699919799/functions/rand.html</a> </p>
 
 <p class="definition">Definition in file <a class="el" href="../../d5/d92/rand_8cpp_source.html">rand.cpp</a>.</p>
@@ -146,11 +150,11 @@ Variables</h2></td></tr>
 <p>Return a random value. </p>
 <dl class="section return"><dt>Returns</dt><dd>int Value from random number generator </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d92/rand_8cpp_source.html#l00023">23</a> of file <a class="el" href="../../d5/d92/rand_8cpp_source.html">rand.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;{</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="../../d5/d92/rand_8cpp.html#a5bb10f209e71a1f02a87f1f0ebcad489">_seedrand</a> = <a class="code" href="../../d5/d92/rand_8cpp.html#a5bb10f209e71a1f02a87f1f0ebcad489">_seedrand</a> * 214013L + 2531011L;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordflow">return</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>)(<a class="code" href="../../d5/d92/rand_8cpp.html#a5bb10f209e71a1f02a87f1f0ebcad489">_seedrand</a> &gt;&gt; 16) &amp; <a class="code" href="../../d4/d0b/rand_8hpp.html#ab3aae19d7f5ef86b69b55a19bcd62e06">MAX_RAND</a>;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../d5/d92/rand_8cpp_source.html#l00022">22</a> of file <a class="el" href="../../d5/d92/rand_8cpp_source.html">rand.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="../../d5/d92/rand_8cpp.html#a5bb10f209e71a1f02a87f1f0ebcad489">_seedrand</a> = <a class="code" href="../../d5/d92/rand_8cpp.html#a5bb10f209e71a1f02a87f1f0ebcad489">_seedrand</a> * 214013L + 2531011L;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordflow">return</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>)(<a class="code" href="../../d5/d92/rand_8cpp.html#a5bb10f209e71a1f02a87f1f0ebcad489">_seedrand</a> &gt;&gt; 16) &amp; <a class="code" href="../../d4/d0b/rand_8hpp.html#ab3aae19d7f5ef86b69b55a19bcd62e06">MAX_RAND</a>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -178,10 +182,10 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d92/rand_8cpp_source.html#l00029">29</a> of file <a class="el" href="../../d5/d92/rand_8cpp_source.html">rand.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;{</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="../../d5/d92/rand_8cpp.html#a5bb10f209e71a1f02a87f1f0ebcad489">_seedrand</a> = seed;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../d5/d92/rand_8cpp_source.html#l00028">28</a> of file <a class="el" href="../../d5/d92/rand_8cpp_source.html">rand.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;{</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="../../d5/d92/rand_8cpp.html#a5bb10f209e71a1f02a87f1f0ebcad489">_seedrand</a> = seed;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -198,14 +202,14 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d92/rand_8cpp_source.html#l00021">21</a> of file <a class="el" href="../../d5/d92/rand_8cpp_source.html">rand.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d92/rand_8cpp_source.html#l00020">20</a> of file <a class="el" href="../../d5/d92/rand_8cpp_source.html">rand.cpp</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="arand_8cpp_html_a5bb10f209e71a1f02a87f1f0ebcad489"><div class="ttname"><a href="../../d5/d92/rand_8cpp.html#a5bb10f209e71a1f02a87f1f0ebcad489">_seedrand</a></div><div class="ttdeci">unsigned long _seedrand</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d92/rand_8cpp_source.html#l00021">rand.cpp:21</a></div></div>
-<div class="ttc" id="arand_8hpp_html_ab3aae19d7f5ef86b69b55a19bcd62e06"><div class="ttname"><a href="../../d4/d0b/rand_8hpp.html#ab3aae19d7f5ef86b69b55a19bcd62e06">MAX_RAND</a></div><div class="ttdeci">#define MAX_RAND</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d0b/rand_8hpp_source.html#l00019">rand.hpp:19</a></div></div>
+<div class="ttc" id="arand_8cpp_html_a5bb10f209e71a1f02a87f1f0ebcad489"><div class="ttname"><a href="../../d5/d92/rand_8cpp.html#a5bb10f209e71a1f02a87f1f0ebcad489">_seedrand</a></div><div class="ttdeci">unsigned long _seedrand</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d92/rand_8cpp_source.html#l00020">rand.cpp:20</a></div></div>
+<div class="ttc" id="arand_8hpp_html_ab3aae19d7f5ef86b69b55a19bcd62e06"><div class="ttname"><a href="../../d4/d0b/rand_8hpp.html#ab3aae19d7f5ef86b69b55a19bcd62e06">MAX_RAND</a></div><div class="ttdeci">#define MAX_RAND</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d0b/rand_8hpp_source.html#l00018">rand.hpp:18</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

@@ -4,7 +4,9 @@ var files_dup =
     [ "animation.hpp", "d6/d5a/animation_8hpp.html", "d6/d5a/animation_8hpp" ],
     [ "Arch.hpp", "d7/d9c/_arch_8hpp.html", "d7/d9c/_arch_8hpp" ],
     [ "Arch.i386.cpp", "d3/d50/_arch_8i386_8cpp.html", "d3/d50/_arch_8i386_8cpp" ],
-    [ "Arch.i386.hpp", "dd/de9/_arch_8i386_8hpp.html", "dd/de9/_arch_8i386_8hpp" ],
+    [ "Arch.i386.hpp", "dd/de9/_arch_8i386_8hpp.html", [
+      [ "stackframe", "d5/d3e/struct_arch_1_1stackframe.html", "d5/d3e/struct_arch_1_1stackframe" ]
+    ] ],
     [ "Arguments.cpp", "d4/d85/_arguments_8cpp.html", "d4/d85/_arguments_8cpp" ],
     [ "Arguments.hpp", "d5/d87/_arguments_8hpp.html", "d5/d87/_arguments_8hpp" ],
     [ "assert.hpp", "d2/d54/assert_8hpp.html", "d2/d54/assert_8hpp" ],
@@ -50,6 +52,7 @@ var files_dup =
     ] ],
     [ "linker.ld", "dd/d85/linker_8ld.html", null ],
     [ "Memory.hpp", "d9/d4f/_memory_8hpp.html", "d9/d4f/_memory_8hpp" ],
+    [ "Memory.i386.hpp", "df/d48/_memory_8i386_8hpp.html", "df/d48/_memory_8i386_8hpp" ],
     [ "MemoryMap.hpp", "d6/dc1/_memory_map_8hpp.html", [
       [ "MemoryMap", "d0/dea/class_memory_1_1_memory_map.html", "d0/dea/class_memory_1_1_memory_map" ]
     ] ],
@@ -61,8 +64,10 @@ var files_dup =
     ] ],
     [ "paging.cpp", "d1/d5e/paging_8cpp.html", "d1/d5e/paging_8cpp" ],
     [ "paging.hpp", "d1/d75/paging_8hpp.html", "d1/d75/paging_8hpp" ],
-    [ "boot/panic.cpp", "d3/d22/boot_2panic_8cpp.html", "d3/d22/boot_2panic_8cpp" ],
-    [ "panic.cpp", "d6/d1e/panic_8cpp.html", "d6/d1e/panic_8cpp" ],
+    [ "arch/i386/boot/panic.cpp", "dd/de7/arch_2i386_2boot_2panic_8cpp.html", "dd/de7/arch_2i386_2boot_2panic_8cpp" ],
+    [ "sys/panic.cpp", "d5/df3/sys_2panic_8cpp.html", "d5/df3/sys_2panic_8cpp" ],
+    [ "Panic.hpp", "d6/d64/_panic_8hpp.html", "d6/d64/_panic_8hpp" ],
+    [ "Physical.hpp", "d0/d81/_physical_8hpp.html", "d0/d81/_physical_8hpp" ],
     [ "ports.cpp", "d7/d27/ports_8cpp.html", "d7/d27/ports_8cpp" ],
     [ "ports.hpp", "d8/d9f/ports_8hpp.html", "d8/d9f/ports_8hpp" ],
     [ "primes.cpp", "d0/dde/primes_8cpp.html", "d0/dde/primes_8cpp" ],
@@ -87,8 +92,6 @@ var files_dup =
     [ "spinner.hpp", "da/d14/spinner_8hpp.html", "da/d14/spinner_8hpp" ],
     [ "spkr.cpp", "da/da5/spkr_8cpp.html", "da/da5/spkr_8cpp" ],
     [ "spkr.hpp", "da/d1a/spkr_8hpp.html", "da/d1a/spkr_8hpp" ],
-    [ "stack.cpp", "d8/d87/stack_8cpp.html", "d8/d87/stack_8cpp" ],
-    [ "stack.hpp", "df/d47/stack_8hpp.html", "df/d47/stack_8hpp" ],
     [ "stdio.hpp", "d2/daf/stdio_8hpp.html", "d2/daf/stdio_8hpp" ],
     [ "stivale.cpp", "da/de5/stivale_8cpp.html", null ],
     [ "stivale2.S", "d8/da4/stivale2_8_s.html", null ],

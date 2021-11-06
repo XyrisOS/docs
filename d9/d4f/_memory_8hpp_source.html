@@ -90,7 +90,7 @@ $(document).ready(function(){initNavTree('d9/d4f/_memory_8hpp_source.html','../.
 <a href="../../d9/d4f/_memory_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/**</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * @file Memory.hpp</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * @author Keeton Feavel (keeton@xyr.is)</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * @brief Architecture memory management API</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * @brief Architecture memory management &amp; paging API</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * @version 0.1</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * @date 2021-09-18</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> * </span></div>
@@ -101,55 +101,43 @@ $(document).ready(function(){initNavTree('d9/d4f/_memory_8hpp_source.html','../.
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;stddef.h&gt;</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../dd/d0e/namespace_arch_1_1_memory.html">Arch::Memory</a> {</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">/**</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> * @brief Enable hardware paging</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../dd/d0e/namespace_arch_1_1_memory.html#a3ba8a1ea0a34ad98b2f304fbbda48b0a">pagingEnable</a>();</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">/**</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment"> * @brief Disable hardware paging</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../dd/d0e/namespace_arch_1_1_memory.html#ad4d3a669c172e1442fe3e2afe8d16172">pagingDisable</a>();</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">/**</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment"> * @brief Invalidate the page at the given address. Implementations are architecture</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment"> * specific.</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment"> * @param addr Address of page to be invalidated</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="../../dd/d0e/namespace_arch_1_1_memory.html#a206380258fe28756d0c70f4f700e65d8">pageInvalidate</a>(<span class="keywordtype">void</span>* addr);</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">/**</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment"> * @brief Aligns the provided address to the start of its corresponding page address.</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment"> * @param addr Address to be aligned</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment"> * @return uintptr_t Page aligned address value</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">inline</span> uintptr_t <a class="code" href="../../dd/d0e/namespace_arch_1_1_memory.html#a9118c8fdcb2627cdbd72b751d02e6bfc">pageAlign</a>(<span class="keywordtype">size_t</span> addr);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment">/**</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment"> * @brief Check if an address is aligned to a page boundary.</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment"> * @param addr Address to be checked</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment"> * @return true Address is aligned to page boundary</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment"> * @return false Address is not aligned to a page boundary</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="../../dd/d0e/namespace_arch_1_1_memory.html#a1aa7a1c391d4d95b26303c5efa687dfb">pageIsAligned</a>(<span class="keywordtype">size_t</span> addr);</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;} <span class="comment">// !namespace Arch::Memory</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#if defined(__i386__)</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#    include &lt;<a class="code" href="../../df/d48/_memory_8i386_8hpp.html">arch/i386/Memory.i386.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="../../d9/d4f/_memory_8hpp.html#a58aa9789669ab63074a01bb7d55c0123">   19</a></span>&#160;<span class="preprocessor">#define B_TO_KB(b) ((b) / 1024)</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="../../d9/d4f/_memory_8hpp.html#aba0fd28f8c31be5719093301f8afd22e">   20</a></span>&#160;<span class="preprocessor">#define KB_TO_MB(kb) ((kb) / 1024)</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="../../d9/d4f/_memory_8hpp.html#a22f10ff537d5875c3622ec4363b6d710">   21</a></span>&#160;<span class="preprocessor">#define MB_TO_GB(mb) ((mb) / 1024)</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="../../d9/d4f/_memory_8hpp.html#ab336267a862a0ae573a1745dd7ce11fb">   23</a></span>&#160;<span class="preprocessor">#define B_TO_MB(b) KB_TO_MB(B_TO_KB(b))</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="../../d9/d4f/_memory_8hpp.html#aa792b7a470cd9c08cd84c26006d08f46">   24</a></span>&#160;<span class="preprocessor">#define B_TO_GB(b) MB_TO_GB(B_TO_MB(b))</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="../../d9/d4f/_memory_8hpp.html#acc53c6c36bf2281f32d1767db5a8ecbb">   26</a></span>&#160;<span class="preprocessor">#define ADDRESS_SPACE_SIZE  0x100000000</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">// TODO: Add this to memory class (#326)</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="../../d9/d4f/_memory_8hpp.html#a921385efd03dc5d230ca793d43e4e463">   28</a></span>&#160;<span class="preprocessor">#define ADDRESS_TO_PAGE_IDX(addr) ((addr) / ARCH_PAGE_SIZE)</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="../../d9/d4f/_memory_8hpp.html#ae5cbdda09f176da275a8154cdf7b5d52">   29</a></span>&#160;<span class="preprocessor">#define MEM_BITMAP_SIZE ((ADDRESS_SPACE_SIZE / ARCH_PAGE_SIZE) / (sizeof(size_t) * CHAR_BIT))</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../dd/d0e/namespace_arch_1_1_memory.html">Arch::Memory</a> {</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment"> * @brief Enable hardware paging</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../dd/d0e/namespace_arch_1_1_memory.html#a3ba8a1ea0a34ad98b2f304fbbda48b0a">pagingEnable</a>();</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment"> * @brief Disable hardware paging</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../dd/d0e/namespace_arch_1_1_memory.html#ad4d3a669c172e1442fe3e2afe8d16172">pagingDisable</a>();</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;} <span class="comment">// !namespace Arch::Memory</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="anamespace_arch_1_1_memory_html_a3ba8a1ea0a34ad98b2f304fbbda48b0a"><div class="ttname"><a href="../../dd/d0e/namespace_arch_1_1_memory.html#a3ba8a1ea0a34ad98b2f304fbbda48b0a">Arch::Memory::pagingEnable</a></div><div class="ttdeci">void pagingEnable()</div><div class="ttdoc">Enable hardware paging.</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d50/_arch_8i386_8cpp_source.html#l00036">Arch.i386.cpp:36</a></div></div>
-<div class="ttc" id="anamespace_arch_1_1_memory_html"><div class="ttname"><a href="../../dd/d0e/namespace_arch_1_1_memory.html">Arch::Memory</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d50/_arch_8i386_8cpp_source.html#l00034">Arch.i386.cpp:34</a></div></div>
-<div class="ttc" id="anamespace_arch_1_1_memory_html_ad4d3a669c172e1442fe3e2afe8d16172"><div class="ttname"><a href="../../dd/d0e/namespace_arch_1_1_memory.html#ad4d3a669c172e1442fe3e2afe8d16172">Arch::Memory::pagingDisable</a></div><div class="ttdeci">void pagingDisable()</div><div class="ttdoc">Disable hardware paging.</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d50/_arch_8i386_8cpp_source.html#l00042">Arch.i386.cpp:42</a></div></div>
-<div class="ttc" id="anamespace_arch_1_1_memory_html_a9118c8fdcb2627cdbd72b751d02e6bfc"><div class="ttname"><a href="../../dd/d0e/namespace_arch_1_1_memory.html#a9118c8fdcb2627cdbd72b751d02e6bfc">Arch::Memory::pageAlign</a></div><div class="ttdeci">uintptr_t pageAlign(size_t addr)</div><div class="ttdoc">Aligns the provided address to the start of its corresponding page address.</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/de9/_arch_8i386_8hpp_source.html#l00029">Arch.i386.hpp:29</a></div></div>
-<div class="ttc" id="anamespace_arch_1_1_memory_html_a1aa7a1c391d4d95b26303c5efa687dfb"><div class="ttname"><a href="../../dd/d0e/namespace_arch_1_1_memory.html#a1aa7a1c391d4d95b26303c5efa687dfb">Arch::Memory::pageIsAligned</a></div><div class="ttdeci">bool pageIsAligned(size_t addr)</div><div class="ttdoc">Check if an address is aligned to a page boundary.</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/de9/_arch_8i386_8hpp_source.html#l00034">Arch.i386.hpp:34</a></div></div>
-<div class="ttc" id="anamespace_arch_1_1_memory_html_a206380258fe28756d0c70f4f700e65d8"><div class="ttname"><a href="../../dd/d0e/namespace_arch_1_1_memory.html#a206380258fe28756d0c70f4f700e65d8">Arch::Memory::pageInvalidate</a></div><div class="ttdeci">void pageInvalidate(void *addr)</div><div class="ttdoc">Invalidate the page at the given address. Implementations are architecture specific.</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/de9/_arch_8i386_8hpp_source.html#l00024">Arch.i386.hpp:24</a></div></div>
+<div class="ttc" id="anamespace_arch_1_1_memory_html_a3ba8a1ea0a34ad98b2f304fbbda48b0a"><div class="ttname"><a href="../../dd/d0e/namespace_arch_1_1_memory.html#a3ba8a1ea0a34ad98b2f304fbbda48b0a">Arch::Memory::pagingEnable</a></div><div class="ttdeci">void pagingEnable()</div><div class="ttdoc">Enable hardware paging.</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d50/_arch_8i386_8cpp_source.html#l00102">Arch.i386.cpp:102</a></div></div>
+<div class="ttc" id="anamespace_arch_1_1_memory_html"><div class="ttname"><a href="../../dd/d0e/namespace_arch_1_1_memory.html">Arch::Memory</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d50/_arch_8i386_8cpp_source.html#l00100">Arch.i386.cpp:100</a></div></div>
+<div class="ttc" id="anamespace_arch_1_1_memory_html_ad4d3a669c172e1442fe3e2afe8d16172"><div class="ttname"><a href="../../dd/d0e/namespace_arch_1_1_memory.html#ad4d3a669c172e1442fe3e2afe8d16172">Arch::Memory::pagingDisable</a></div><div class="ttdeci">void pagingDisable()</div><div class="ttdoc">Disable hardware paging.</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d50/_arch_8i386_8cpp_source.html#l00108">Arch.i386.cpp:108</a></div></div>
+<div class="ttc" id="a_memory_8i386_8hpp_html"><div class="ttname"><a href="../../df/d48/_memory_8i386_8hpp.html">Memory.i386.hpp</a></div><div class="ttdoc">i386 memory structures and definitions</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

@@ -1,11 +1,8 @@
 <map id="Boot::Handoff::parseMultiboot2" name="Boot::Handoff::parseMultiboot2">
 <area shape="rect" id="node1" title=" " alt="" coords="5,71,231,98"/>
-<area shape="rect" id="node2" href="$d0/dea/class_memory_1_1_memory_map.html#aec59c14e6071767b7436058e91f45f43" title=" " alt="" coords="287,5,461,47"/>
-<area shape="rect" id="node3" href="$da/d80/namespace_boot.html#a06e63f208a6743c77e14c9428a7446c9" title="Parse a command line for registered arguments." alt="" coords="279,71,469,98"/>
-<area shape="rect" id="node6" href="$d7/d75/namespace_r_s232.html#a394b7ac1c601a47c2881a460eb41171a" title="Prints a formatted string to serial output." alt="" coords="321,122,427,149"/>
-<area shape="rect" id="node4" href="$d5/d24/string_8cpp.html#ae1e87cf0776db5e2c3f9350b61e56000" title="Locates a substring (needle) within a containing string (haystack)" alt="" coords="547,71,603,98"/>
-<area shape="rect" id="node5" href="$d5/d24/string_8cpp.html#a11bd144d7d44914099a3aeddf1c8567d" title="Compares two strings." alt="" coords="699,71,766,98"/>
-<area shape="rect" id="node7" href="$d7/d75/namespace_r_s232.html#a04a4582da3c891beaa849f3ce2189975" title="Prints a formatted string to serial output using a va_list of arguments." alt="" coords="517,122,632,149"/>
-<area shape="rect" id="node8" href="$d4/d64/printf_8cpp.html#a85a2fff114bf015eba22a1dc163bf1ba" title="Perform all printf operations on the format string using the provided argument list and uses the call..." alt="" coords="680,122,785,149"/>
-<area shape="rect" id="node9" href="$d5/d24/string_8cpp.html#a2dee044e4e667b5b789b493abd21cfa4" title="Returns the length of a string." alt="" coords="833,122,892,149"/>
+<area shape="rect" id="node2" href="$d0/dea/class_memory_1_1_memory_map.html#aec59c14e6071767b7436058e91f45f43" title="Returns the max number of memory sections allowed in a MemoryMap." alt="" coords="287,5,461,47"/>
+<area shape="rect" id="node3" href="$d5/df3/sys_2panic_8cpp.html#a51ef3f9bd6cd14d744e31d392b445b33" title="Halt the system and print the provided message on the panic screen." alt="" coords="345,71,403,98"/>
+<area shape="rect" id="node4" href="$da/d80/namespace_boot.html#a06e63f208a6743c77e14c9428a7446c9" title="Parse a command line for registered arguments." alt="" coords="279,122,469,149"/>
+<area shape="rect" id="node5" href="$d5/d24/string_8cpp.html#ae1e87cf0776db5e2c3f9350b61e56000" title="Locates a substring (needle) within a containing string (haystack)" alt="" coords="517,122,573,149"/>
+<area shape="rect" id="node6" href="$d5/d24/string_8cpp.html#a11bd144d7d44914099a3aeddf1c8567d" title="Compares two strings." alt="" coords="621,122,688,149"/>
 </map>

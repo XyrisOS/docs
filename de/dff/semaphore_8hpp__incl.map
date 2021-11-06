@@ -1,11 +1,12 @@
 <map id="semaphore.hpp" name="semaphore.hpp">
-<area shape="rect" id="node1" title=" " alt="" coords="314,5,437,32"/>
-<area shape="rect" id="node2" title=" " alt="" coords="351,379,422,405"/>
-<area shape="rect" id="node3" href="$d2/dbd/tasks_8hpp.html" title=" " alt="" coords="274,80,384,107"/>
-<area shape="rect" id="node4" href="$d7/d9c/_arch_8hpp.html" title="Computer architecture initialization definitions." alt="" coords="23,304,134,331"/>
-<area shape="rect" id="node7" href="$d1/d75/paging_8hpp.html" title=" " alt="" coords="227,155,359,181"/>
-<area shape="rect" id="node5" href="$d2/d3d/compiler_8hpp.html" title="Compiler meta directives." alt="" coords="161,379,305,405"/>
-<area shape="rect" id="node6" title=" " alt="" coords="41,379,116,405"/>
-<area shape="rect" id="node8" href="$d6/dc1/_memory_map_8hpp.html" title="Memory map containing a number of Memory sections that describe the physical memory layout." alt="" coords="173,229,344,256"/>
-<area shape="rect" id="node9" href="$d0/d91/_memory_section_8hpp.html" title=" " alt="" coords="158,304,348,331"/>
+<area shape="rect" id="node1" title=" " alt="" coords="493,5,616,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="507,453,578,480"/>
+<area shape="rect" id="node3" href="$d2/dbd/tasks_8hpp.html" title=" " alt="" coords="453,80,563,107"/>
+<area shape="rect" id="node4" href="$d7/d9c/_arch_8hpp.html" title="Architecture control and initialization." alt="" coords="29,304,139,331"/>
+<area shape="rect" id="node7" href="$d1/d75/paging_8hpp.html" title=" " alt="" coords="407,155,539,181"/>
+<area shape="rect" id="node5" href="$d2/d3d/compiler_8hpp.html" title="Compiler meta directives." alt="" coords="125,379,269,405"/>
+<area shape="rect" id="node6" title=" " alt="" coords="135,453,209,480"/>
+<area shape="rect" id="node8" href="$d9/d4f/_memory_8hpp.html" title="Architecture memory management &amp; paging API." alt="" coords="345,379,479,405"/>
+<area shape="rect" id="node9" href="$d6/dc1/_memory_map_8hpp.html" title="Memory map containing a number of Memory sections that describe the physical memory layout." alt="" coords="260,229,431,256"/>
+<area shape="rect" id="node10" href="$d0/d91/_memory_section_8hpp.html" title=" " alt="" coords="245,304,435,331"/>
 </map>

@@ -5,7 +5,6 @@ var annotated_dup =
     [ "Graphics", "d6/d9b/namespace_graphics.html", "d6/d9b/namespace_graphics" ],
     [ "LinkedList", "d0/d34/namespace_linked_list.html", "d0/d34/namespace_linked_list" ],
     [ "Memory", "db/d2f/namespace_memory.html", "db/d2f/namespace_memory" ],
-    [ "Paging", "d2/d46/namespace_paging.html", "d2/d46/namespace_paging" ],
     [ "Registers", "d4/ddf/namespace_registers.html", "d4/ddf/namespace_registers" ],
     [ "Time", "d6/da1/namespace_time.html", "d6/da1/namespace_time" ],
     [ "Bitset", "d6/d09/class_bitset.html", "d6/d09/class_bitset" ],

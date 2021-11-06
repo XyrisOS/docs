@@ -1,0 +1,4 @@
+<map id="isr_handler" name="isr_handler">
+<area shape="rect" id="node1" title="Handler for the Interrupt Service Request." alt="" coords="5,5,100,32"/>
+<area shape="rect" id="node2" href="$d5/df3/sys_2panic_8cpp.html#a51ef3f9bd6cd14d744e31d392b445b33" title="Halt the system and print the provided message on the panic screen." alt="" coords="148,5,205,32"/>
+</map>

@@ -203,10 +203,10 @@ template&lt;typename T , size_t S&gt; </div>
 <p>Returns the buffer capacity (in number of bytes). </p>
 <dl class="section return"><dt>Returns</dt><dd>int Buffer capacity in bytes </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d15/_ring_buffer_8hpp_source.html#l00153">153</a> of file <a class="el" href="../../d6/d15/_ring_buffer_8hpp_source.html">RingBuffer.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    {</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;        <span class="keywordflow">return</span> S;</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    }</div>
+<p class="definition">Definition at line <a class="el" href="../../d6/d15/_ring_buffer_8hpp_source.html#l00162">162</a> of file <a class="el" href="../../d6/d15/_ring_buffer_8hpp_source.html">RingBuffer.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    {</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        <span class="keywordflow">return</span> S;</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -238,21 +238,21 @@ template&lt;typename T , size_t S&gt; </div>
 <p>Dequeues from the circular buffer and returns the data. </p>
 <dl class="section return"><dt>Returns</dt><dd>T Returns dequeued data. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d15/_ring_buffer_8hpp_source.html#l00083">83</a> of file <a class="el" href="../../d6/d15/_ring_buffer_8hpp_source.html">RingBuffer.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    {</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        T val = 0;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <span class="comment">// Check if the buffer is empty. If so, we can&#39;t dequeue</span></div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="../../d4/d8f/class_ring_buffer.html#a336d91f1498d76bdc46e58ab4048361c">IsEmpty</a>()) {</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            <a class="code" href="../../d4/d8f/class_ring_buffer.html#ad66536b9d64adedaf7f1f6ec3dd551d7">error</a> = <a class="code" href="../../d7/dae/errno_8hpp.html#a82793c1b9a6e2dcb6ebce9828aa9e89caa7d5dbb80731c0bd189f7d106c768631">InvalidValue</a>;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            <span class="comment">// Read out the data and decrement the position</span></div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            val = this-&gt;<a class="code" href="../../d4/d8f/class_ring_buffer.html#a1c773bb943e9c8dfcd01cc09125e5a61">data</a>[this-&gt;<a class="code" href="../../d4/d8f/class_ring_buffer.html#a6128b156ef6b57fd7f875948432e67ba">tail</a>];</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;            this-&gt;<a class="code" href="../../d4/d8f/class_ring_buffer.html#a6128b156ef6b57fd7f875948432e67ba">tail</a> = ((this-&gt;<a class="code" href="../../d4/d8f/class_ring_buffer.html#a6128b156ef6b57fd7f875948432e67ba">tail</a> + 1) % S);</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            --this-&gt;<a class="code" href="../../d4/d8f/class_ring_buffer.html#a39c19cd95a56494ff92202fe20f8429a">length</a>;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        }</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <span class="comment">// Return the status code</span></div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="keywordflow">return</span> val;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    }</div>
+<p class="definition">Definition at line <a class="el" href="../../d6/d15/_ring_buffer_8hpp_source.html#l00086">86</a> of file <a class="el" href="../../d6/d15/_ring_buffer_8hpp_source.html">RingBuffer.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    {</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        T val = 0;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="comment">// Check if the buffer is empty. If so, we can&#39;t dequeue</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="../../d4/d8f/class_ring_buffer.html#a336d91f1498d76bdc46e58ab4048361c">IsEmpty</a>()) {</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            <a class="code" href="../../d4/d8f/class_ring_buffer.html#ad66536b9d64adedaf7f1f6ec3dd551d7">error</a> = <a class="code" href="../../d7/dae/errno_8hpp.html#a82793c1b9a6e2dcb6ebce9828aa9e89caa7d5dbb80731c0bd189f7d106c768631">InvalidValue</a>;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            <span class="comment">// Read out the data and decrement the position</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            val = this-&gt;<a class="code" href="../../d4/d8f/class_ring_buffer.html#a1c773bb943e9c8dfcd01cc09125e5a61">data</a>[this-&gt;<a class="code" href="../../d4/d8f/class_ring_buffer.html#a6128b156ef6b57fd7f875948432e67ba">tail</a>];</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            this-&gt;<a class="code" href="../../d4/d8f/class_ring_buffer.html#a6128b156ef6b57fd7f875948432e67ba">tail</a> = ((this-&gt;<a class="code" href="../../d4/d8f/class_ring_buffer.html#a6128b156ef6b57fd7f875948432e67ba">tail</a> + 1) % S);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            --this-&gt;<a class="code" href="../../d4/d8f/class_ring_buffer.html#a39c19cd95a56494ff92202fe20f8429a">length</a>;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        }</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <span class="comment">// Return the status code</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        <span class="keywordflow">return</span> val;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    }</div>
 </div><!-- fragment --><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -302,22 +302,22 @@ template&lt;typename T , size_t S&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>int Returns 0 on success and -1 on error. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d15/_ring_buffer_8hpp_source.html#l00061">61</a> of file <a class="el" href="../../d6/d15/_ring_buffer_8hpp_source.html">RingBuffer.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    {</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keywordtype">int</span> status = 0;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="comment">// Check if the buffer is empty. If so, we can&#39;t dequeue</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="../../d4/d8f/class_ring_buffer.html#a336d91f1498d76bdc46e58ab4048361c">IsEmpty</a>()) {</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            status = -1;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            <a class="code" href="../../d4/d8f/class_ring_buffer.html#ad66536b9d64adedaf7f1f6ec3dd551d7">error</a> = <a class="code" href="../../d7/dae/errno_8hpp.html#a82793c1b9a6e2dcb6ebce9828aa9e89caa7d5dbb80731c0bd189f7d106c768631">InvalidValue</a>;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            <span class="comment">// Read out the data and decrement the position</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            *buf = this-&gt;<a class="code" href="../../d4/d8f/class_ring_buffer.html#a1c773bb943e9c8dfcd01cc09125e5a61">data</a>[this-&gt;<a class="code" href="../../d4/d8f/class_ring_buffer.html#a6128b156ef6b57fd7f875948432e67ba">tail</a>];</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            this-&gt;<a class="code" href="../../d4/d8f/class_ring_buffer.html#a6128b156ef6b57fd7f875948432e67ba">tail</a> = ((this-&gt;<a class="code" href="../../d4/d8f/class_ring_buffer.html#a6128b156ef6b57fd7f875948432e67ba">tail</a> + 1) % S);</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            --this-&gt;<a class="code" href="../../d4/d8f/class_ring_buffer.html#a39c19cd95a56494ff92202fe20f8429a">length</a>;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        }</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="comment">// Return the status code</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="keywordflow">return</span> status;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    }</div>
+<p class="definition">Definition at line <a class="el" href="../../d6/d15/_ring_buffer_8hpp_source.html#l00063">63</a> of file <a class="el" href="../../d6/d15/_ring_buffer_8hpp_source.html">RingBuffer.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    {</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="keywordtype">int</span> status = 0;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="comment">// Check if the buffer is empty. If so, we can&#39;t dequeue</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="../../d4/d8f/class_ring_buffer.html#a336d91f1498d76bdc46e58ab4048361c">IsEmpty</a>()) {</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            status = -1;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            <a class="code" href="../../d4/d8f/class_ring_buffer.html#ad66536b9d64adedaf7f1f6ec3dd551d7">error</a> = <a class="code" href="../../d7/dae/errno_8hpp.html#a82793c1b9a6e2dcb6ebce9828aa9e89caa7d5dbb80731c0bd189f7d106c768631">InvalidValue</a>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            <span class="comment">// Read out the data and decrement the position</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            *buf = this-&gt;<a class="code" href="../../d4/d8f/class_ring_buffer.html#a1c773bb943e9c8dfcd01cc09125e5a61">data</a>[this-&gt;<a class="code" href="../../d4/d8f/class_ring_buffer.html#a6128b156ef6b57fd7f875948432e67ba">tail</a>];</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            this-&gt;<a class="code" href="../../d4/d8f/class_ring_buffer.html#a6128b156ef6b57fd7f875948432e67ba">tail</a> = ((this-&gt;<a class="code" href="../../d4/d8f/class_ring_buffer.html#a6128b156ef6b57fd7f875948432e67ba">tail</a> + 1) % S);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            --this-&gt;<a class="code" href="../../d4/d8f/class_ring_buffer.html#a39c19cd95a56494ff92202fe20f8429a">length</a>;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        }</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="comment">// Return the status code</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="keywordflow">return</span> status;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    }</div>
 </div><!-- fragment --><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -366,22 +366,22 @@ template&lt;typename T , size_t S&gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d15/_ring_buffer_8hpp_source.html#l00038">38</a> of file <a class="el" href="../../d6/d15/_ring_buffer_8hpp_source.html">RingBuffer.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    {</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keywordtype">int</span> status = 0;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="comment">// Check if the buffer is full. If so, we can&#39;t enqueue.</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="../../d4/d8f/class_ring_buffer.html#a294163c22eddea6b000692189291700f">IsFull</a>()) {</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            status = -1;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            <a class="code" href="../../d4/d8f/class_ring_buffer.html#ad66536b9d64adedaf7f1f6ec3dd551d7">error</a> = <a class="code" href="../../d7/dae/errno_8hpp.html#a82793c1b9a6e2dcb6ebce9828aa9e89ca36da9e40d8863a0149134f0ab34899de">BufferFull</a>;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            <span class="comment">// Write the data at the write index</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            this-&gt;<a class="code" href="../../d4/d8f/class_ring_buffer.html#a1c773bb943e9c8dfcd01cc09125e5a61">data</a>[this-&gt;<a class="code" href="../../d4/d8f/class_ring_buffer.html#a772617818983cedcd61e69177ffc0067">head</a>] = val;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            this-&gt;<a class="code" href="../../d4/d8f/class_ring_buffer.html#a772617818983cedcd61e69177ffc0067">head</a> = ((this-&gt;<a class="code" href="../../d4/d8f/class_ring_buffer.html#a772617818983cedcd61e69177ffc0067">head</a> + 1) % S);</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            ++this-&gt;<a class="code" href="../../d4/d8f/class_ring_buffer.html#a39c19cd95a56494ff92202fe20f8429a">length</a>;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        }</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="comment">// Return the status code</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keywordflow">return</span> status;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    }</div>
+<p class="definition">Definition at line <a class="el" href="../../d6/d15/_ring_buffer_8hpp_source.html#l00039">39</a> of file <a class="el" href="../../d6/d15/_ring_buffer_8hpp_source.html">RingBuffer.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    {</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keywordtype">int</span> status = 0;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="comment">// Check if the buffer is full. If so, we can&#39;t enqueue.</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="../../d4/d8f/class_ring_buffer.html#a294163c22eddea6b000692189291700f">IsFull</a>()) {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            status = -1;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            <a class="code" href="../../d4/d8f/class_ring_buffer.html#ad66536b9d64adedaf7f1f6ec3dd551d7">error</a> = <a class="code" href="../../d7/dae/errno_8hpp.html#a82793c1b9a6e2dcb6ebce9828aa9e89ca36da9e40d8863a0149134f0ab34899de">BufferFull</a>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            <span class="comment">// Write the data at the write index</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            this-&gt;<a class="code" href="../../d4/d8f/class_ring_buffer.html#a1c773bb943e9c8dfcd01cc09125e5a61">data</a>[this-&gt;<a class="code" href="../../d4/d8f/class_ring_buffer.html#a772617818983cedcd61e69177ffc0067">head</a>] = val;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            this-&gt;<a class="code" href="../../d4/d8f/class_ring_buffer.html#a772617818983cedcd61e69177ffc0067">head</a> = ((this-&gt;<a class="code" href="../../d4/d8f/class_ring_buffer.html#a772617818983cedcd61e69177ffc0067">head</a> + 1) % S);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            ++this-&gt;<a class="code" href="../../d4/d8f/class_ring_buffer.html#a39c19cd95a56494ff92202fe20f8429a">length</a>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        }</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="comment">// Return the status code</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keywordflow">return</span> status;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    }</div>
 </div><!-- fragment --><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -424,10 +424,10 @@ template&lt;typename T , size_t S&gt; </div>
 <p>Returns the ring buffer error code. </p>
 <dl class="section return"><dt>Returns</dt><dd>int Error code </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d15/_ring_buffer_8hpp_source.html#l00162">162</a> of file <a class="el" href="../../d6/d15/_ring_buffer_8hpp_source.html">RingBuffer.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    {</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d4/d8f/class_ring_buffer.html#ad66536b9d64adedaf7f1f6ec3dd551d7">error</a>;</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    }</div>
+<p class="definition">Definition at line <a class="el" href="../../d6/d15/_ring_buffer_8hpp_source.html#l00172">172</a> of file <a class="el" href="../../d6/d15/_ring_buffer_8hpp_source.html">RingBuffer.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    {</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d4/d8f/class_ring_buffer.html#ad66536b9d64adedaf7f1f6ec3dd551d7">error</a>;</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -461,10 +461,10 @@ template&lt;typename T , size_t S&gt; </div>
 <dd>
 false The buffer is not empty </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d15/_ring_buffer_8hpp_source.html#l00125">125</a> of file <a class="el" href="../../d6/d15/_ring_buffer_8hpp_source.html">RingBuffer.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    {</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        <span class="keywordflow">return</span> this-&gt;<a class="code" href="../../d4/d8f/class_ring_buffer.html#a39c19cd95a56494ff92202fe20f8429a">length</a> == 0;</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    }</div>
+<p class="definition">Definition at line <a class="el" href="../../d6/d15/_ring_buffer_8hpp_source.html#l00131">131</a> of file <a class="el" href="../../d6/d15/_ring_buffer_8hpp_source.html">RingBuffer.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    {</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        <span class="keywordflow">return</span> this-&gt;<a class="code" href="../../d4/d8f/class_ring_buffer.html#a39c19cd95a56494ff92202fe20f8429a">length</a> == 0;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    }</div>
 </div><!-- fragment --><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="../../closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -510,10 +510,10 @@ template&lt;typename T , size_t S&gt; </div>
 <dd>
 false The buffer is not full </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d15/_ring_buffer_8hpp_source.html#l00135">135</a> of file <a class="el" href="../../d6/d15/_ring_buffer_8hpp_source.html">RingBuffer.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    {</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        <span class="keywordflow">return</span> this-&gt;<a class="code" href="../../d4/d8f/class_ring_buffer.html#a39c19cd95a56494ff92202fe20f8429a">length</a> == S;</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    }</div>
+<p class="definition">Definition at line <a class="el" href="../../d6/d15/_ring_buffer_8hpp_source.html#l00142">142</a> of file <a class="el" href="../../d6/d15/_ring_buffer_8hpp_source.html">RingBuffer.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    {</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;        <span class="keywordflow">return</span> this-&gt;<a class="code" href="../../d4/d8f/class_ring_buffer.html#a39c19cd95a56494ff92202fe20f8429a">length</a> == S;</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    }</div>
 </div><!-- fragment --><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="../../closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -556,10 +556,10 @@ template&lt;typename T , size_t S&gt; </div>
 <p>Returns the number of items (bytes) in the buffer. </p>
 <dl class="section return"><dt>Returns</dt><dd>int Number of bytes available for reading. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d15/_ring_buffer_8hpp_source.html#l00144">144</a> of file <a class="el" href="../../d6/d15/_ring_buffer_8hpp_source.html">RingBuffer.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    {</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        <span class="keywordflow">return</span> this-&gt;<a class="code" href="../../d4/d8f/class_ring_buffer.html#a39c19cd95a56494ff92202fe20f8429a">length</a>;</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    }</div>
+<p class="definition">Definition at line <a class="el" href="../../d6/d15/_ring_buffer_8hpp_source.html#l00152">152</a> of file <a class="el" href="../../d6/d15/_ring_buffer_8hpp_source.html">RingBuffer.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    {</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        <span class="keywordflow">return</span> this-&gt;<a class="code" href="../../d4/d8f/class_ring_buffer.html#a39c19cd95a56494ff92202fe20f8429a">length</a>;</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -598,20 +598,20 @@ template&lt;typename T , size_t S&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>int Returns 0 on success and -1 on error. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d15/_ring_buffer_8hpp_source.html#l00105">105</a> of file <a class="el" href="../../d6/d15/_ring_buffer_8hpp_source.html">RingBuffer.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    {</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        <span class="keywordtype">int</span> status = 0;</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        <span class="comment">// Check if the buffer is empty. If so, we can&#39;t dequeue</span></div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="../../d4/d8f/class_ring_buffer.html#a336d91f1498d76bdc46e58ab4048361c">IsEmpty</a>()) {</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;            status = -1;</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;            <a class="code" href="../../d4/d8f/class_ring_buffer.html#ad66536b9d64adedaf7f1f6ec3dd551d7">error</a> = <a class="code" href="../../d7/dae/errno_8hpp.html#a82793c1b9a6e2dcb6ebce9828aa9e89caa7d5dbb80731c0bd189f7d106c768631">InvalidValue</a>;</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;            <span class="comment">// Read out the data and don&#39;t decrement the position</span></div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;            *buf = this-&gt;<a class="code" href="../../d4/d8f/class_ring_buffer.html#a1c773bb943e9c8dfcd01cc09125e5a61">data</a>[this-&gt;<a class="code" href="../../d4/d8f/class_ring_buffer.html#a6128b156ef6b57fd7f875948432e67ba">tail</a>];</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        }</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        <span class="comment">// Return the status code</span></div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        <span class="keywordflow">return</span> status;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    }</div>
+<p class="definition">Definition at line <a class="el" href="../../d6/d15/_ring_buffer_8hpp_source.html#l00109">109</a> of file <a class="el" href="../../d6/d15/_ring_buffer_8hpp_source.html">RingBuffer.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    {</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        <span class="keywordtype">int</span> status = 0;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        <span class="comment">// Check if the buffer is empty. If so, we can&#39;t dequeue</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="../../d4/d8f/class_ring_buffer.html#a336d91f1498d76bdc46e58ab4048361c">IsEmpty</a>()) {</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;            status = -1;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;            <a class="code" href="../../d4/d8f/class_ring_buffer.html#ad66536b9d64adedaf7f1f6ec3dd551d7">error</a> = <a class="code" href="../../d7/dae/errno_8hpp.html#a82793c1b9a6e2dcb6ebce9828aa9e89caa7d5dbb80731c0bd189f7d106c768631">InvalidValue</a>;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;            <span class="comment">// Read out the data and don&#39;t decrement the position</span></div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;            *buf = this-&gt;<a class="code" href="../../d4/d8f/class_ring_buffer.html#a1c773bb943e9c8dfcd01cc09125e5a61">data</a>[this-&gt;<a class="code" href="../../d4/d8f/class_ring_buffer.html#a6128b156ef6b57fd7f875948432e67ba">tail</a>];</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        }</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        <span class="comment">// Return the status code</span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        <span class="keywordflow">return</span> status;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    }</div>
 </div><!-- fragment --><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
@@ -649,7 +649,7 @@ template&lt;typename T , size_t S&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d15/_ring_buffer_8hpp_source.html#l00168">168</a> of file <a class="el" href="../../d6/d15/_ring_buffer_8hpp_source.html">RingBuffer.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d15/_ring_buffer_8hpp_source.html#l00178">178</a> of file <a class="el" href="../../d6/d15/_ring_buffer_8hpp_source.html">RingBuffer.hpp</a>.</p>
 
 </div>
 </div>
@@ -675,7 +675,7 @@ template&lt;typename T , size_t S&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d15/_ring_buffer_8hpp_source.html#l00172">172</a> of file <a class="el" href="../../d6/d15/_ring_buffer_8hpp_source.html">RingBuffer.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d15/_ring_buffer_8hpp_source.html#l00182">182</a> of file <a class="el" href="../../d6/d15/_ring_buffer_8hpp_source.html">RingBuffer.hpp</a>.</p>
 
 </div>
 </div>
@@ -701,7 +701,7 @@ template&lt;typename T , size_t S&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d15/_ring_buffer_8hpp_source.html#l00169">169</a> of file <a class="el" href="../../d6/d15/_ring_buffer_8hpp_source.html">RingBuffer.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d15/_ring_buffer_8hpp_source.html#l00179">179</a> of file <a class="el" href="../../d6/d15/_ring_buffer_8hpp_source.html">RingBuffer.hpp</a>.</p>
 
 </div>
 </div>
@@ -727,7 +727,7 @@ template&lt;typename T , size_t S&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d15/_ring_buffer_8hpp_source.html#l00171">171</a> of file <a class="el" href="../../d6/d15/_ring_buffer_8hpp_source.html">RingBuffer.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d15/_ring_buffer_8hpp_source.html#l00181">181</a> of file <a class="el" href="../../d6/d15/_ring_buffer_8hpp_source.html">RingBuffer.hpp</a>.</p>
 
 </div>
 </div>
@@ -753,7 +753,7 @@ template&lt;typename T , size_t S&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d15/_ring_buffer_8hpp_source.html#l00170">170</a> of file <a class="el" href="../../d6/d15/_ring_buffer_8hpp_source.html">RingBuffer.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d15/_ring_buffer_8hpp_source.html#l00180">180</a> of file <a class="el" href="../../d6/d15/_ring_buffer_8hpp_source.html">RingBuffer.hpp</a>.</p>
 
 </div>
 </div>
@@ -763,14 +763,14 @@ template&lt;typename T , size_t S&gt; </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aerrno_8hpp_html_a82793c1b9a6e2dcb6ebce9828aa9e89ca36da9e40d8863a0149134f0ab34899de"><div class="ttname"><a href="../../d7/dae/errno_8hpp.html#a82793c1b9a6e2dcb6ebce9828aa9e89ca36da9e40d8863a0149134f0ab34899de">BufferFull</a></div><div class="ttdeci">@ BufferFull</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/dae/errno_8hpp_source.html#l00019">errno.hpp:19</a></div></div>
-<div class="ttc" id="aclass_ring_buffer_html_a1c773bb943e9c8dfcd01cc09125e5a61"><div class="ttname"><a href="../../d4/d8f/class_ring_buffer.html#a1c773bb943e9c8dfcd01cc09125e5a61">RingBuffer::data</a></div><div class="ttdeci">T data[S]</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d15/_ring_buffer_8hpp_source.html#l00168">RingBuffer.hpp:168</a></div></div>
-<div class="ttc" id="aclass_ring_buffer_html_a772617818983cedcd61e69177ffc0067"><div class="ttname"><a href="../../d4/d8f/class_ring_buffer.html#a772617818983cedcd61e69177ffc0067">RingBuffer::head</a></div><div class="ttdeci">size_t head</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d15/_ring_buffer_8hpp_source.html#l00169">RingBuffer.hpp:169</a></div></div>
-<div class="ttc" id="aclass_ring_buffer_html_ad66536b9d64adedaf7f1f6ec3dd551d7"><div class="ttname"><a href="../../d4/d8f/class_ring_buffer.html#ad66536b9d64adedaf7f1f6ec3dd551d7">RingBuffer::error</a></div><div class="ttdeci">int error</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d15/_ring_buffer_8hpp_source.html#l00172">RingBuffer.hpp:172</a></div></div>
-<div class="ttc" id="aclass_ring_buffer_html_a6128b156ef6b57fd7f875948432e67ba"><div class="ttname"><a href="../../d4/d8f/class_ring_buffer.html#a6128b156ef6b57fd7f875948432e67ba">RingBuffer::tail</a></div><div class="ttdeci">size_t tail</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d15/_ring_buffer_8hpp_source.html#l00170">RingBuffer.hpp:170</a></div></div>
-<div class="ttc" id="aclass_ring_buffer_html_a336d91f1498d76bdc46e58ab4048361c"><div class="ttname"><a href="../../d4/d8f/class_ring_buffer.html#a336d91f1498d76bdc46e58ab4048361c">RingBuffer::IsEmpty</a></div><div class="ttdeci">bool IsEmpty()</div><div class="ttdoc">Query whether the circular buffer is empty.</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d15/_ring_buffer_8hpp_source.html#l00125">RingBuffer.hpp:125</a></div></div>
-<div class="ttc" id="aclass_ring_buffer_html_a39c19cd95a56494ff92202fe20f8429a"><div class="ttname"><a href="../../d4/d8f/class_ring_buffer.html#a39c19cd95a56494ff92202fe20f8429a">RingBuffer::length</a></div><div class="ttdeci">size_t length</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d15/_ring_buffer_8hpp_source.html#l00171">RingBuffer.hpp:171</a></div></div>
+<div class="ttc" id="aclass_ring_buffer_html_a1c773bb943e9c8dfcd01cc09125e5a61"><div class="ttname"><a href="../../d4/d8f/class_ring_buffer.html#a1c773bb943e9c8dfcd01cc09125e5a61">RingBuffer::data</a></div><div class="ttdeci">T data[S]</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d15/_ring_buffer_8hpp_source.html#l00178">RingBuffer.hpp:178</a></div></div>
+<div class="ttc" id="aclass_ring_buffer_html_a772617818983cedcd61e69177ffc0067"><div class="ttname"><a href="../../d4/d8f/class_ring_buffer.html#a772617818983cedcd61e69177ffc0067">RingBuffer::head</a></div><div class="ttdeci">size_t head</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d15/_ring_buffer_8hpp_source.html#l00179">RingBuffer.hpp:179</a></div></div>
+<div class="ttc" id="aclass_ring_buffer_html_ad66536b9d64adedaf7f1f6ec3dd551d7"><div class="ttname"><a href="../../d4/d8f/class_ring_buffer.html#ad66536b9d64adedaf7f1f6ec3dd551d7">RingBuffer::error</a></div><div class="ttdeci">int error</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d15/_ring_buffer_8hpp_source.html#l00182">RingBuffer.hpp:182</a></div></div>
+<div class="ttc" id="aclass_ring_buffer_html_a6128b156ef6b57fd7f875948432e67ba"><div class="ttname"><a href="../../d4/d8f/class_ring_buffer.html#a6128b156ef6b57fd7f875948432e67ba">RingBuffer::tail</a></div><div class="ttdeci">size_t tail</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d15/_ring_buffer_8hpp_source.html#l00180">RingBuffer.hpp:180</a></div></div>
+<div class="ttc" id="aclass_ring_buffer_html_a336d91f1498d76bdc46e58ab4048361c"><div class="ttname"><a href="../../d4/d8f/class_ring_buffer.html#a336d91f1498d76bdc46e58ab4048361c">RingBuffer::IsEmpty</a></div><div class="ttdeci">bool IsEmpty()</div><div class="ttdoc">Query whether the circular buffer is empty.</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d15/_ring_buffer_8hpp_source.html#l00131">RingBuffer.hpp:131</a></div></div>
+<div class="ttc" id="aclass_ring_buffer_html_a39c19cd95a56494ff92202fe20f8429a"><div class="ttname"><a href="../../d4/d8f/class_ring_buffer.html#a39c19cd95a56494ff92202fe20f8429a">RingBuffer::length</a></div><div class="ttdeci">size_t length</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d15/_ring_buffer_8hpp_source.html#l00181">RingBuffer.hpp:181</a></div></div>
 <div class="ttc" id="aerrno_8hpp_html_a82793c1b9a6e2dcb6ebce9828aa9e89caa7d5dbb80731c0bd189f7d106c768631"><div class="ttname"><a href="../../d7/dae/errno_8hpp.html#a82793c1b9a6e2dcb6ebce9828aa9e89caa7d5dbb80731c0bd189f7d106c768631">InvalidValue</a></div><div class="ttdeci">@ InvalidValue</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/dae/errno_8hpp_source.html#l00020">errno.hpp:20</a></div></div>
-<div class="ttc" id="aclass_ring_buffer_html_a294163c22eddea6b000692189291700f"><div class="ttname"><a href="../../d4/d8f/class_ring_buffer.html#a294163c22eddea6b000692189291700f">RingBuffer::IsFull</a></div><div class="ttdeci">bool IsFull()</div><div class="ttdoc">Query whether the circular buffer is full.</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d15/_ring_buffer_8hpp_source.html#l00135">RingBuffer.hpp:135</a></div></div>
+<div class="ttc" id="aclass_ring_buffer_html_a294163c22eddea6b000692189291700f"><div class="ttname"><a href="../../d4/d8f/class_ring_buffer.html#a294163c22eddea6b000692189291700f">RingBuffer::IsFull</a></div><div class="ttdeci">bool IsFull()</div><div class="ttdoc">Query whether the circular buffer is full.</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d15/_ring_buffer_8hpp_source.html#l00142">RingBuffer.hpp:142</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

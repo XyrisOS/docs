@@ -1,7 +1,8 @@
 <map id="MemoryMap.hpp" name="MemoryMap.hpp">
-<area shape="rect" id="node1" title="Memory map containing a number of Memory sections that describe the physical memory layout." alt="" coords="145,5,277,32"/>
-<area shape="rect" id="node2" href="$d0/d91/_memory_section_8hpp.html" title=" " alt="" coords="115,80,306,107"/>
-<area shape="rect" id="node3" href="$d2/d3d/compiler_8hpp.html" title="Compiler meta directives." alt="" coords="5,155,149,181"/>
-<area shape="rect" id="node4" title=" " alt="" coords="173,155,248,181"/>
-<area shape="rect" id="node5" title=" " alt="" coords="273,155,343,181"/>
+<area shape="rect" id="node1" title="Memory map containing a number of Memory sections that describe the physical memory layout." alt="" coords="77,5,209,32"/>
+<area shape="rect" id="node2" href="$d0/d91/_memory_section_8hpp.html" title=" " alt="" coords="48,80,239,107"/>
+<area shape="rect" id="node3" href="$d9/d4f/_memory_8hpp.html" title="Architecture memory management &amp; paging API." alt="" coords="24,155,159,181"/>
+<area shape="rect" id="node4" title=" " alt="" coords="5,229,76,256"/>
+<area shape="rect" id="node5" title=" " alt="" coords="105,229,179,256"/>
+<area shape="rect" id="node6" href="$d2/d3d/compiler_8hpp.html" title="Compiler meta directives." alt="" coords="234,155,378,181"/>
 </map>

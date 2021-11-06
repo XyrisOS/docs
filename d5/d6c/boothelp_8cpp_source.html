@@ -97,10 +97,10 @@ $(document).ready(function(){initNavTree('d5/d6c/boothelp_8cpp_source.html','../
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> * @copyright Copyright the Xyris Contributors (c) 2021</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="../../d2/d3d/compiler_8hpp.html">meta/compiler.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="../../d0/d29/sections_8hpp.html">meta/sections.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="../../d2/d3d/compiler_8hpp.html">meta/compiler.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;multiboot/multiboot2.h&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;multiboot/multiboot2.h&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;stivale/stivale2.h&gt;</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> uint32_t <a class="code" href="../../d5/d6c/boothelp_8cpp.html#a57a1896409edf2efbb2442444cc249d4">stivale2_mmap_helper</a>(<span class="keywordtype">void</span>* baseaddr);</div>
@@ -127,23 +127,23 @@ $(document).ready(function(){initNavTree('d5/d6c/boothelp_8cpp_source.html','../
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordflow">while</span> (tag) {</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keywordflow">switch</span> (tag-&gt;identifier) {</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keywordflow">case</span> STIVALE2_STRUCT_TAG_MEMMAP_ID: {</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            <span class="keyword">auto</span> memmap = (<span class="keyword">struct </span>stivale2_struct_tag_memmap*)tag;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            <span class="keywordflow">for</span> (uint32_t i = 0; i &lt; (uint32_t)memmap-&gt;entries; i++) {</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                <span class="keywordflow">switch</span> ((uint32_t)memmap-&gt;memmap[i].type) {</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                <span class="keywordflow">case</span> STIVALE2_MMAP_BOOTLOADER_RECLAIMABLE:</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                    <span class="keywordflow">if</span> (((uint32_t)memmap-&gt;memmap[i].base) == (uint32_t)baseaddr) {</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                        <span class="keywordflow">return</span> (uint32_t)memmap-&gt;memmap[i].length;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                    }</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            <span class="keywordflow">case</span> STIVALE2_STRUCT_TAG_MEMMAP_ID: {</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                <span class="keyword">auto</span> memmap = (<span class="keyword">struct </span>stivale2_struct_tag_memmap*)tag;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; memmap-&gt;entries; i++) {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                    <span class="keywordflow">switch</span> (memmap-&gt;memmap[i].type) {</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                        <span class="keywordflow">case</span> STIVALE2_MMAP_BOOTLOADER_RECLAIMABLE:</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                            <span class="keywordflow">if</span> (((uintptr_t)memmap-&gt;memmap[i].base) == (uintptr_t)baseaddr) {</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                                <span class="keywordflow">return</span> (uintptr_t)memmap-&gt;memmap[i].length;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                            }</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                            <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                <span class="keywordflow">default</span>:</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                    <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                }</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            }</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        }</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keywordflow">default</span>:</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                        <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                            <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                    }</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                }</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            }</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        }</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        tag = (<span class="keyword">struct </span>stivale2_tag*)tag-&gt;next;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    }</div>

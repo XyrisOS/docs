@@ -1,5 +1,6 @@
 <map id="memset" name="memset">
-<area shape="rect" id="node1" title="Sets the number of bytes in memory at ptr to the value." alt="" coords="461,5,537,32"/>
-<area shape="rect" id="node2" href="$d6/d9b/namespace_graphics.html#afe8dba407d795b07063393aaf6b297c5" title="Fill the backbuffer with &#39;0&#39;." alt="" coords="208,5,413,32"/>
-<area shape="rect" id="node3" href="$dc/da3/namespace_apps.html#a01ace99cc76e0adcf1428dadf9134e3e" title="Run a simple animation." alt="" coords="5,5,160,32"/>
+<area shape="rect" id="node1" title="Sets the number of bytes in memory at ptr to the value." alt="" coords="461,42,537,69"/>
+<area shape="rect" id="node2" href="$d6/d09/class_bitset.html#a3fc1542fe4a8a95e36e1e4161f7caa67" title="Construct a new Bitset object and initalize the bitmap to zero." alt="" coords="229,5,393,47"/>
+<area shape="rect" id="node3" href="$d6/d9b/namespace_graphics.html#afe8dba407d795b07063393aaf6b297c5" title="Fill the backbuffer with &#39;0&#39;." alt="" coords="208,71,413,98"/>
+<area shape="rect" id="node4" href="$dc/da3/namespace_apps.html#a01ace99cc76e0adcf1428dadf9134e3e" title="Run a simple animation." alt="" coords="5,71,160,98"/>
 </map>

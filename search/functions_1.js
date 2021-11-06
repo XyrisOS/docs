@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['base_984',['Base',['../d8/d7f/class_memory_1_1_section.html#afa46445a6fb9e004dc3b99798460acd4',1,'Memory::Section']]],
-  ['bitset_985',['Bitset',['../d6/d09/class_bitset.html#ac1c89063e9073fcd77286a028a17a3ee',1,'Bitset::Bitset()=default'],['../d6/d09/class_bitset.html#ae10354932ed83ef8ea8e19fe83add08a',1,'Bitset::Bitset(T val)']]],
-  ['boottype_986',['BootType',['../df/d70/class_boot_1_1_handoff.html#aa25cb451a589997db2d910a5f1697c98',1,'Boot::Handoff']]]
+  ['address_1028',['Address',['../dd/dd2/class_arch_1_1_memory_1_1_address.html#ae2f3233cf33da608a132518d8e29a7de',1,'Arch::Memory::Address::Address(uintptr_t addr)'],['../dd/dd2/class_arch_1_1_memory_1_1_address.html#a90c4554a227a415cd454d18011840389',1,'Arch::Memory::Address::Address(struct Frame frame)'],['../dd/dd2/class_arch_1_1_memory_1_1_address.html#a192ebe76ed0f6f2879ca1b1dd5b111b5',1,'Arch::Memory::Address::Address(struct Page page)']]]
 ];

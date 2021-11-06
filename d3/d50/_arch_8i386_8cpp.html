@@ -85,7 +85,8 @@ $(document).ready(function(){initNavTree('d3/d50/_arch_8i386_8cpp.html','../../'
 <div class="header">
   <div class="summary">
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">Arch.i386.cpp File Reference</div>  </div>
 </div><!--header-->
@@ -102,6 +103,9 @@ $(document).ready(function(){initNavTree('d3/d50/_arch_8i386_8cpp.html','../../'
 <code>#include &lt;stdint.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../d7/d9c/_arch_8hpp_source.html">arch/Arch.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../d9/d4f/_memory_8hpp_source.html">arch/Memory.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="../../d2/daf/stdio_8hpp_source.html">lib/stdio.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="../../d5/ddc/console_8hpp_source.html">dev/graphics/console.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="../../db/d90/rs232_8hpp_source.html">dev/serial/rs232.hpp</a>&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Include dependency graph for Arch.i386.cpp:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -109,20 +113,24 @@ $(document).ready(function(){initNavTree('d3/d50/_arch_8i386_8cpp.html','../../'
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="../../d4/d04/_arch_8i386_8cpp__incl.png" border="0" usemap="#_arch_8i386_8cpp" alt=""/></div>
 <map name="_arch_8i386_8cpp" id="_arch_8i386_8cpp">
-<area shape="rect" title="i386 architecture implementation of Arch.hpp" alt="" coords="481,5,591,32"/>
-<area shape="rect" href="../../dd/de9/_arch_8i386_8hpp.html" title="i386 architecture implementation of Arch.hpp" alt="" coords="273,155,447,181"/>
-<area shape="rect" href="../../d9/d4f/_memory_8hpp.html" title="Architecture memory management API." alt="" coords="517,229,651,256"/>
-<area shape="rect" title=" " alt="" coords="341,304,411,331"/>
-<area shape="rect" title=" " alt="" coords="717,304,792,331"/>
-<area shape="rect" href="../../d8/dfb/regs_8hpp.html" title=" " alt="" coords="675,229,818,256"/>
-<area shape="rect" href="../../d8/d9f/ports_8hpp.html" title="Ports header file. Provides inline functions for getting and setting values at different ports...." alt="" coords="140,229,287,256"/>
-<area shape="rect" href="../../d4/ddc/isr_8hpp.html" title="Interrupt Service Routine header." alt="" coords="311,229,441,256"/>
-<area shape="rect" href="../../df/d77/gdt_8hpp.html" title="The Global Descriptor Table (GDT) is specific to the IA32 architecture. It contains entries telling t..." alt="" coords="262,80,397,107"/>
-<area shape="rect" href="../../dd/d12/idt_8hpp.html" title="Interrupt Descriptor Table header." alt="" coords="523,80,653,107"/>
-<area shape="rect" href="../../df/d05/timer_8hpp.html" title=" " alt="" coords="90,80,238,107"/>
-<area shape="rect" title=" " alt="" coords="1028,80,1097,107"/>
-<area shape="rect" href="../../d7/d9c/_arch_8hpp.html" title="Computer architecture initialization definitions." alt="" coords="842,229,953,256"/>
-<area shape="rect" href="../../d2/d3d/compiler_8hpp.html" title="Compiler meta directives." alt="" coords="825,304,969,331"/>
+<area shape="rect" title="i386 architecture implementation of Arch.hpp" alt="" coords="603,5,714,32"/>
+<area shape="rect" href="../../dd/de9/_arch_8i386_8hpp.html" title="i386 architecture implementation of Arch.hpp" alt="" coords="240,155,415,181"/>
+<area shape="rect" href="../../d8/dfb/regs_8hpp.html" title=" " alt="" coords="599,229,742,256"/>
+<area shape="rect" title=" " alt="" coords="526,304,596,331"/>
+<area shape="rect" title=" " alt="" coords="1098,304,1173,331"/>
+<area shape="rect" href="../../d8/d9f/ports_8hpp.html" title="Ports header file. Provides inline functions for getting and setting values at different ports...." alt="" coords="377,229,524,256"/>
+<area shape="rect" href="../../d4/ddc/isr_8hpp.html" title="Interrupt Service Routine header." alt="" coords="223,229,352,256"/>
+<area shape="rect" href="../../df/d77/gdt_8hpp.html" title="The Global Descriptor Table (GDT) is specific to the IA32 architecture. It contains entries telling t..." alt="" coords="230,80,364,107"/>
+<area shape="rect" href="../../dd/d12/idt_8hpp.html" title="Interrupt Descriptor Table header." alt="" coords="490,80,621,107"/>
+<area shape="rect" href="../../df/d05/timer_8hpp.html" title=" " alt="" coords="58,80,206,107"/>
+<area shape="rect" title=" " alt="" coords="1365,80,1434,107"/>
+<area shape="rect" href="../../d7/d9c/_arch_8hpp.html" title="Architecture control and initialization." alt="" coords="967,229,1078,256"/>
+<area shape="rect" href="../../d9/d4f/_memory_8hpp.html" title="Architecture memory management &amp; paging API." alt="" coords="1155,229,1290,256"/>
+<area shape="rect" href="../../d2/daf/stdio_8hpp.html" title=" " alt="" coords="958,80,1060,107"/>
+<area shape="rect" href="../../d5/ddc/console_8hpp.html" title="Framebuffer console." alt="" coords="746,80,933,107"/>
+<area shape="rect" href="../../db/d90/rs232_8hpp.html" title="A simple, write&#45;only driver for the RS232 serial device standard. Code mostly ported from Panix&#45;Archi..." alt="" coords="1085,80,1240,107"/>
+<area shape="rect" href="../../d2/d3d/compiler_8hpp.html" title="Compiler meta directives." alt="" coords="930,304,1074,331"/>
+<area shape="rect" title=" " alt="" coords="817,155,892,181"/>
 </map>
 </div>
 </div>
@@ -139,6 +147,12 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a046623e350cc453bc514c5f00453747b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/d3d/compiler_8hpp.html#abd12ab1ab8e45e8e4fec7e036d040815">NORET</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dc3/namespace_arch.html#a046623e350cc453bc514c5f00453747b">Arch::haltAndCatchFire</a> ()</td></tr>
+<tr class="separator:a046623e350cc453bc514c5f00453747b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cc0ef4abcb7c48c9e7d7cea419649b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dc3/namespace_arch.html#a6cc0ef4abcb7c48c9e7d7cea419649b8">Arch::registersToString</a> (char *buf, struct <a class="el" href="../../df/d94/structregisters.html">registers</a> *regs)</td></tr>
+<tr class="separator:a6cc0ef4abcb7c48c9e7d7cea419649b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92a5b423617ad7e5f935fe94915dc29b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dc3/namespace_arch.html#a92a5b423617ad7e5f935fe94915dc29b">Arch::registersPrintInformation</a> (struct <a class="el" href="../../df/d94/structregisters.html">registers</a> *regs)</td></tr>
+<tr class="separator:a92a5b423617ad7e5f935fe94915dc29b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ba8a1ea0a34ad98b2f304fbbda48b0a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d0e/namespace_arch_1_1_memory.html#a3ba8a1ea0a34ad98b2f304fbbda48b0a">Arch::Memory::pagingEnable</a> ()</td></tr>
 <tr class="separator:a3ba8a1ea0a34ad98b2f304fbbda48b0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad4d3a669c172e1442fe3e2afe8d16172"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d0e/namespace_arch_1_1_memory.html#ad4d3a669c172e1442fe3e2afe8d16172">Arch::Memory::pagingDisable</a> ()</td></tr>
@@ -153,16 +167,48 @@ Functions</h2></td></tr>
 <tr class="separator:affa86e64ef5d7b52dffad4ffd6448962"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a85dcde91876c9d4f28baf43399cda7f4"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d7a/namespace_arch_1_1_c_p_u.html#a85dcde91876c9d4f28baf43399cda7f4">Arch::CPU::model</a> ()</td></tr>
 <tr class="separator:a85dcde91876c9d4f28baf43399cda7f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:aa9db01d3bad32e3abeb71ded065bcd0a"><td class="memItemLeft" align="right" valign="top">const char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d50/_arch_8i386_8cpp.html#aa9db01d3bad32e3abeb71ded065bcd0a">exceptionStrings</a> [33][32]</td></tr>
+<tr class="separator:aa9db01d3bad32e3abeb71ded065bcd0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>i386 architecture implementation of <a class="el" href="../../d7/d9c/_arch_8hpp.html" title="Computer architecture initialization definitions.">Arch.hpp</a> </p>
+<div class="textblock"><p>i386 architecture implementation of <a class="el" href="../../d7/d9c/_arch_8hpp.html" title="Architecture control and initialization.">Arch.hpp</a> </p>
 <dl class="section author"><dt>Author</dt><dd>Keeton Feavel (<a href="#" onclick="location.href='mai'+'lto:'+'kee'+'to'+'nfe'+'av'+'el@'+'ce'+'dar'+'vi'+'lle'+'.e'+'du'; return false;">keeto<span style="display: none;">.nosp@m.</span>nfea<span style="display: none;">.nosp@m.</span>vel@c<span style="display: none;">.nosp@m.</span>edar<span style="display: none;">.nosp@m.</span>ville<span style="display: none;">.nosp@m.</span>.edu</a>) </dd></dl>
 <dl class="section version"><dt>Version</dt><dd>0.1 </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>2021-08-24</dd></dl>
 <dl class="section copyright"><dt>Copyright</dt><dd>Copyright the Xyris Contributors (c) 2021 </dd></dl>
 
 <p class="definition">Definition in file <a class="el" href="../../d3/d50/_arch_8i386_8cpp_source.html">Arch.i386.cpp</a>.</p>
-</div></div><!-- contents -->
+</div><h2 class="groupheader">Variable Documentation</h2>
+<a id="aa9db01d3bad32e3abeb71ded065bcd0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9db01d3bad32e3abeb71ded065bcd0a">&#9670;&nbsp;</a></span>exceptionStrings</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char exceptionStrings[33][32]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
+<div class="line">    <span class="stringliteral">&quot;Divide-By-Zero&quot;</span>, <span class="stringliteral">&quot;Debugging&quot;</span>, <span class="stringliteral">&quot;Non-Maskable Interrupt&quot;</span>, <span class="stringliteral">&quot;Breakpoint&quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;Overflow&quot;</span>, <span class="stringliteral">&quot;Bound Range Exceeded&quot;</span>, <span class="stringliteral">&quot;Invalid Opcode&quot;</span>, <span class="stringliteral">&quot;Device Not Available&quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;Double Fault&quot;</span>, <span class="stringliteral">&quot;Coprocessor Overrun&quot;</span>, <span class="stringliteral">&quot;Invalid TSS&quot;</span>, <span class="stringliteral">&quot;Segment Not Present&quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;Segmentation Fault&quot;</span>, <span class="stringliteral">&quot;Protection Fault&quot;</span>, <span class="stringliteral">&quot;Page Fault&quot;</span>, <span class="stringliteral">&quot;RESERVED&quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;Floating Point Exception&quot;</span>, <span class="stringliteral">&quot;Alignment Check&quot;</span>, <span class="stringliteral">&quot;Machine Check&quot;</span>, <span class="stringliteral">&quot;SIMD Floating Point Exception&quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;Virtualization Exception&quot;</span>, <span class="stringliteral">&quot;RESERVED&quot;</span>, <span class="stringliteral">&quot;RESERVED&quot;</span>, <span class="stringliteral">&quot;RESERVED&quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;RESERVED&quot;</span>, <span class="stringliteral">&quot;RESERVED&quot;</span>, <span class="stringliteral">&quot;RESERVED&quot;</span>, <span class="stringliteral">&quot;RESERVED&quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;RESERVED&quot;</span>, <span class="stringliteral">&quot;Security Exception&quot;</span>, <span class="stringliteral">&quot;RESERVED&quot;</span>, <span class="stringliteral">&quot;Triple Fault&quot;</span>, <span class="stringliteral">&quot;FPU Error&quot;</span>,</div>
+<div class="line">}</div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../d3/d50/_arch_8i386_8cpp_source.html#l00031">31</a> of file <a class="el" href="../../d3/d50/_arch_8i386_8cpp_source.html">Arch.i386.cpp</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

@@ -1,6 +1,7 @@
 <map id="MemorySection.hpp" name="MemorySection.hpp">
-<area shape="rect" id="node1" title=" " alt="" coords="135,5,287,32"/>
-<area shape="rect" id="node2" href="$d2/d3d/compiler_8hpp.html" title="Compiler meta directives." alt="" coords="5,80,149,107"/>
-<area shape="rect" id="node3" title=" " alt="" coords="173,80,248,107"/>
-<area shape="rect" id="node4" title=" " alt="" coords="273,80,343,107"/>
+<area shape="rect" id="node1" title=" " alt="" coords="67,5,219,32"/>
+<area shape="rect" id="node2" href="$d9/d4f/_memory_8hpp.html" title="Architecture memory management &amp; paging API." alt="" coords="24,80,159,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,155,76,181"/>
+<area shape="rect" id="node4" title=" " alt="" coords="105,155,179,181"/>
+<area shape="rect" id="node5" href="$d2/d3d/compiler_8hpp.html" title="Compiler meta directives." alt="" coords="234,80,378,107"/>
 </map>

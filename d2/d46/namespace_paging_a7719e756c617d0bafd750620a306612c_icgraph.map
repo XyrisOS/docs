@@ -1,5 +1,0 @@
-<map id="Paging::newPage" name="Paging::newPage">
-<area shape="rect" id="node1" title="Returns a new page in memory for use. If less than one page is requested, exactly one page will be al..." alt="" coords="160,31,291,57"/>
-<area shape="rect" id="node2" href="$da/d45/heap_8hpp.html#ac17a7bc03af86f215d779f1798aed8e8" title="This is the hook into the local system which allocates pages. It accepts an integer parameter which i..." alt="" coords="5,5,112,32"/>
-<area shape="rect" id="node3" href="$d2/dbd/tasks_8hpp.html#a65c4921579a6bad97c037bc8db69fb26" title="Creates a new kernel task with a provided entry point, register storage struct, and task state struct..." alt="" coords="13,56,104,83"/>
-</map>

@@ -1,18 +1,17 @@
 <map id="Arch.i386.hpp" name="Arch.i386.hpp">
-<area shape="rect" id="node1" title="i386 architecture implementation of Arch.hpp" alt="" coords="391,5,501,32"/>
-<area shape="rect" id="node2" href="$d3/d50/_arch_8i386_8cpp.html" title="i386 architecture implementation of Arch.hpp" alt="" coords="192,155,303,181"/>
-<area shape="rect" id="node3" href="$df/d77/gdt_8hpp.html" title="The Global Descriptor Table (GDT) is specific to the IA32 architecture. It contains entries telling t..." alt="" coords="119,80,189,107"/>
-<area shape="rect" id="node5" href="$dd/d12/idt_8hpp.html" title="Interrupt Descriptor Table header." alt="" coords="214,80,281,107"/>
-<area shape="rect" id="node8" href="$d4/ddc/isr_8hpp.html" title="Interrupt Service Routine header." alt="" coords="463,80,528,107"/>
-<area shape="rect" id="node9" href="$d6/d1e/panic_8cpp.html" title="A set of panic functions that are called when the kernel encounters an error from which it cannot rec..." alt="" coords="523,155,607,181"/>
-<area shape="rect" id="node11" href="$d8/d9f/ports_8hpp.html" title="Ports header file. Provides inline functions for getting and setting values at different ports...." alt="" coords="355,80,438,107"/>
-<area shape="rect" id="node13" href="$df/d05/timer_8hpp.html" title=" " alt="" coords="617,80,701,107"/>
-<area shape="rect" id="node16" href="$d2/d59/tss_8hpp.html" title=" " alt="" coords="726,80,795,107"/>
+<area shape="rect" id="node1" title="i386 architecture implementation of Arch.hpp" alt="" coords="309,5,420,32"/>
+<area shape="rect" id="node2" href="$d3/d50/_arch_8i386_8cpp.html" title="i386 architecture implementation of Arch.hpp" alt="" coords="280,155,391,181"/>
+<area shape="rect" id="node3" href="$df/d77/gdt_8hpp.html" title="The Global Descriptor Table (GDT) is specific to the IA32 architecture. It contains entries telling t..." alt="" coords="95,80,165,107"/>
+<area shape="rect" id="node5" href="$dd/d12/idt_8hpp.html" title="Interrupt Descriptor Table header." alt="" coords="190,80,257,107"/>
+<area shape="rect" id="node8" href="$d4/ddc/isr_8hpp.html" title="Interrupt Service Routine header." alt="" coords="332,80,397,107"/>
+<area shape="rect" id="node10" href="$d8/d9f/ports_8hpp.html" title="Ports header file. Provides inline functions for getting and setting values at different ports...." alt="" coords="422,80,505,107"/>
+<area shape="rect" id="node12" href="$df/d05/timer_8hpp.html" title=" " alt="" coords="529,80,613,107"/>
+<area shape="rect" id="node15" href="$d2/d59/tss_8hpp.html" title=" " alt="" coords="638,80,707,107"/>
 <area shape="rect" id="node4" href="$d7/de6/gdt_8cpp.html" title="The Global Descriptor Table (GDT) is specific to the IA32 architecture. It contains entries telling t..." alt="" coords="5,155,76,181"/>
 <area shape="rect" id="node6" href="$d9/d87/idt_8cpp.html" title=" " alt="" coords="101,155,167,181"/>
-<area shape="rect" id="node7" href="$d3/d68/isr_8cpp.html" title=" " alt="" coords="327,155,391,181"/>
-<area shape="rect" id="node10" href="$dc/de5/timer_8cpp.html" title="Programmable Interrupt Timer driver functions." alt="" coords="631,155,714,181"/>
-<area shape="rect" id="node12" href="$d7/d27/ports_8cpp.html" title="CPU port access functions." alt="" coords="415,155,498,181"/>
-<area shape="rect" id="node14" href="$da/da5/spkr_8cpp.html" title=" " alt="" coords="739,155,815,181"/>
-<area shape="rect" id="node15" href="$d5/d9d/tasks_8cpp.html" title=" " alt="" coords="839,155,923,181"/>
+<area shape="rect" id="node7" href="$d3/d68/isr_8cpp.html" title=" " alt="" coords="191,155,255,181"/>
+<area shape="rect" id="node9" href="$dc/de5/timer_8cpp.html" title="Programmable Interrupt Timer driver functions." alt="" coords="415,155,498,181"/>
+<area shape="rect" id="node11" href="$d7/d27/ports_8cpp.html" title="CPU port access functions." alt="" coords="522,155,605,181"/>
+<area shape="rect" id="node13" href="$da/da5/spkr_8cpp.html" title=" " alt="" coords="629,155,705,181"/>
+<area shape="rect" id="node14" href="$d5/d9d/tasks_8cpp.html" title=" " alt="" coords="729,155,813,181"/>
 </map>

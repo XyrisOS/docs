@@ -1,0 +1,12 @@
+<map id="Physical.hpp" name="Physical.hpp">
+<area shape="rect" id="node1" title="Physical memory mapping." alt="" coords="205,5,309,32"/>
+<area shape="rect" id="node2" href="$d9/d4f/_memory_8hpp.html" title="Architecture memory management &amp; paging API." alt="" coords="31,155,166,181"/>
+<area shape="rect" id="node3" title=" " alt="" coords="242,229,312,256"/>
+<area shape="rect" id="node4" title=" " alt="" coords="338,229,413,256"/>
+<area shape="rect" id="node5" href="$d9/d35/_bitset_8hpp.html" title="A basic bitmap implementation." alt="" coords="526,80,634,107"/>
+<area shape="rect" id="node7" href="$d2/d3d/compiler_8hpp.html" title="Compiler meta directives." alt="" coords="677,229,821,256"/>
+<area shape="rect" id="node10" href="$d0/d91/_memory_section_8hpp.html" title=" " alt="" coords="95,80,286,107"/>
+<area shape="rect" id="node6" href="$d7/d9c/_arch_8hpp.html" title="Architecture control and initialization." alt="" coords="524,155,635,181"/>
+<area shape="rect" id="node8" href="$d4/da0/string_8hpp.html" title="Standard string and memory utility library." alt="" coords="393,155,500,181"/>
+<area shape="rect" id="node9" title=" " alt="" coords="812,155,883,181"/>
+</map>

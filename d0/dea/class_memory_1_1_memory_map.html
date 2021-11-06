@@ -107,8 +107,6 @@ $(document).ready(function(){initNavTree('d0/dea/class_memory_1_1_memory_map.htm
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a8dd49bb5941e59dad2bab44b264ad41a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dea/class_memory_1_1_memory_map.html#a8dd49bb5941e59dad2bab44b264ad41a">MemoryMap</a> ()=default</td></tr>
-<tr class="separator:a8dd49bb5941e59dad2bab44b264ad41a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec59c14e6071767b7436058e91f45f43"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dea/class_memory_1_1_memory_map.html#aec59c14e6071767b7436058e91f45f43">Count</a> ()</td></tr>
 <tr class="separator:aec59c14e6071767b7436058e91f45f43"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac363edec77dac5d6042bd76ca8f93ae1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d7f/class_memory_1_1_section.html">Section</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dea/class_memory_1_1_memory_map.html#ac363edec77dac5d6042bd76ca8f93ae1">Get</a> (size_t idx)</td></tr>
@@ -131,33 +129,7 @@ Static Private Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
 <p class="definition">Definition at line <a class="el" href="../../d6/dc1/_memory_map_8hpp_source.html#l00017">17</a> of file <a class="el" href="../../d6/dc1/_memory_map_8hpp_source.html">MemoryMap.hpp</a>.</p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a8dd49bb5941e59dad2bab44b264ad41a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8dd49bb5941e59dad2bab44b264ad41a">&#9670;&nbsp;</a></span>MemoryMap()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Memory::MemoryMap::MemoryMap </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">default</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="aec59c14e6071767b7436058e91f45f43"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aec59c14e6071767b7436058e91f45f43">&#9670;&nbsp;</a></span>Count()</h2>
 
@@ -181,10 +153,13 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/dc1/_memory_map_8hpp_source.html#l00020">20</a> of file <a class="el" href="../../d6/dc1/_memory_map_8hpp_source.html">MemoryMap.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    {</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d0/dea/class_memory_1_1_memory_map.html#ab800996c4f4db445f589df30440c85db">m_max_sections</a>;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    }</div>
+<p>Returns the max number of memory sections allowed in a <a class="el" href="../../d0/dea/class_memory_1_1_memory_map.html">MemoryMap</a>. </p>
+<dl class="section return"><dt>Returns</dt><dd>size_t Max number of entries </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d6/dc1/_memory_map_8hpp_source.html#l00025">25</a> of file <a class="el" href="../../d6/dc1/_memory_map_8hpp_source.html">MemoryMap.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    {</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d0/dea/class_memory_1_1_memory_map.html#ab800996c4f4db445f589df30440c85db">m_max_sections</a>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    }</div>
 </div><!-- fragment --><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="../../closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -192,7 +167,7 @@ Static Private Attributes</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="../../d0/dea/class_memory_1_1_memory_map_aec59c14e6071767b7436058e91f45f43_icgraph.png" border="0" usemap="#d0/dea/class_memory_1_1_memory_map_aec59c14e6071767b7436058e91f45f43_icgraph" alt=""/></div>
 <map name="d0/dea/class_memory_1_1_memory_map_aec59c14e6071767b7436058e91f45f43_icgraph" id="d0/dea/class_memory_1_1_memory_map_aec59c14e6071767b7436058e91f45f43_icgraph">
-<area shape="rect" title=" " alt="" coords="497,23,671,65"/>
+<area shape="rect" title="Returns the max number of memory sections allowed in a MemoryMap." alt="" coords="497,23,671,65"/>
 <area shape="rect" href="../../df/d70/class_boot_1_1_handoff.html#a660bc107223f5e3bf5b8c4604fed265c" title=" " alt="" coords="224,5,449,32"/>
 <area shape="rect" href="../../df/d70/class_boot_1_1_handoff.html#aa2d1c752220db05f3602f99d07d0dca3" title=" " alt="" coords="233,56,441,83"/>
 <area shape="rect" href="../../df/d70/class_boot_1_1_handoff.html#a63449bd33cc1e30ec2b8ae2bf9ef155d" title=" " alt="" coords="5,31,176,57"/>
@@ -225,10 +200,19 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/dc1/_memory_map_8hpp_source.html#l00024">24</a> of file <a class="el" href="../../d6/dc1/_memory_map_8hpp_source.html">MemoryMap.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    {</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d0/dea/class_memory_1_1_memory_map.html#ae7026a7ef63a8c4c42c909ce03b4b13a">m_sections</a>[idx];</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    }</div>
+<p>Returns a reference to the memory section at the given index. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">idx</td><td><a class="el" href="../../db/d2f/namespace_memory.html">Memory</a> section index </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="../../d8/d7f/class_memory_1_1_section.html">Section</a>&amp; <a class="el" href="../../d8/d7f/class_memory_1_1_section.html">Section</a> at index available for updating </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d6/dc1/_memory_map_8hpp_source.html#l00036">36</a> of file <a class="el" href="../../d6/dc1/_memory_map_8hpp_source.html">MemoryMap.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d0/dea/class_memory_1_1_memory_map.html#ae7026a7ef63a8c4c42c909ce03b4b13a">m_sections</a>[idx];</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -256,10 +240,19 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/dc1/_memory_map_8hpp_source.html#l00032">32</a> of file <a class="el" href="../../d6/dc1/_memory_map_8hpp_source.html">MemoryMap.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    {</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d0/dea/class_memory_1_1_memory_map.html#ae7026a7ef63a8c4c42c909ce03b4b13a">m_sections</a>[idx];</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    }</div>
+<p>Getter bracket operator. Returns a reference to the <a class="el" href="../../d8/d7f/class_memory_1_1_section.html">Memory::Section</a> at the provided index. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">idx</td><td><a class="el" href="../../db/d2f/namespace_memory.html">Memory</a> section index </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="../../d8/d7f/class_memory_1_1_section.html">Section</a>&amp; Reference to the <a class="el" href="../../d8/d7f/class_memory_1_1_section.html">Memory::Section</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d6/dc1/_memory_map_8hpp_source.html#l00060">60</a> of file <a class="el" href="../../d6/dc1/_memory_map_8hpp_source.html">MemoryMap.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    {</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d0/dea/class_memory_1_1_memory_map.html#ae7026a7ef63a8c4c42c909ce03b4b13a">m_sections</a>[idx];</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -287,10 +280,19 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/dc1/_memory_map_8hpp_source.html#l00028">28</a> of file <a class="el" href="../../d6/dc1/_memory_map_8hpp_source.html">MemoryMap.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    {</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d0/dea/class_memory_1_1_memory_map.html#ae7026a7ef63a8c4c42c909ce03b4b13a">m_sections</a>[idx];</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    }</div>
+<p>Getter bracket operator. Returns a copy of the <a class="el" href="../../d8/d7f/class_memory_1_1_section.html">Memory::Section</a> at the provided index. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">idx</td><td><a class="el" href="../../db/d2f/namespace_memory.html">Memory</a> section index </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="../../d8/d7f/class_memory_1_1_section.html">Section</a> Copy of the <a class="el" href="../../d8/d7f/class_memory_1_1_section.html">Memory::Section</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d6/dc1/_memory_map_8hpp_source.html#l00048">48</a> of file <a class="el" href="../../d6/dc1/_memory_map_8hpp_source.html">MemoryMap.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    {</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d0/dea/class_memory_1_1_memory_map.html#ae7026a7ef63a8c4c42c909ce03b4b13a">m_sections</a>[idx];</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -315,7 +317,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/dc1/_memory_map_8hpp_source.html#l00038">38</a> of file <a class="el" href="../../d6/dc1/_memory_map_8hpp_source.html">MemoryMap.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/dc1/_memory_map_8hpp_source.html#l00067">67</a> of file <a class="el" href="../../d6/dc1/_memory_map_8hpp_source.html">MemoryMap.hpp</a>.</p>
 
 </div>
 </div>
@@ -339,7 +341,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/dc1/_memory_map_8hpp_source.html#l00039">39</a> of file <a class="el" href="../../d6/dc1/_memory_map_8hpp_source.html">MemoryMap.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/dc1/_memory_map_8hpp_source.html#l00068">68</a> of file <a class="el" href="../../d6/dc1/_memory_map_8hpp_source.html">MemoryMap.hpp</a>.</p>
 
 </div>
 </div>
@@ -348,8 +350,8 @@ Static Private Attributes</h2></td></tr>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclass_memory_1_1_memory_map_html_ab800996c4f4db445f589df30440c85db"><div class="ttname"><a href="../../d0/dea/class_memory_1_1_memory_map.html#ab800996c4f4db445f589df30440c85db">Memory::MemoryMap::m_max_sections</a></div><div class="ttdeci">static const size_t m_max_sections</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dc1/_memory_map_8hpp_source.html#l00038">MemoryMap.hpp:38</a></div></div>
-<div class="ttc" id="aclass_memory_1_1_memory_map_html_ae7026a7ef63a8c4c42c909ce03b4b13a"><div class="ttname"><a href="../../d0/dea/class_memory_1_1_memory_map.html#ae7026a7ef63a8c4c42c909ce03b4b13a">Memory::MemoryMap::m_sections</a></div><div class="ttdeci">Section m_sections[m_max_sections]</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dc1/_memory_map_8hpp_source.html#l00039">MemoryMap.hpp:39</a></div></div>
+<div class="ttc" id="aclass_memory_1_1_memory_map_html_ab800996c4f4db445f589df30440c85db"><div class="ttname"><a href="../../d0/dea/class_memory_1_1_memory_map.html#ab800996c4f4db445f589df30440c85db">Memory::MemoryMap::m_max_sections</a></div><div class="ttdeci">static const size_t m_max_sections</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dc1/_memory_map_8hpp_source.html#l00067">MemoryMap.hpp:67</a></div></div>
+<div class="ttc" id="aclass_memory_1_1_memory_map_html_ae7026a7ef63a8c4c42c909ce03b4b13a"><div class="ttname"><a href="../../d0/dea/class_memory_1_1_memory_map.html#ae7026a7ef63a8c4c42c909ce03b4b13a">Memory::MemoryMap::m_sections</a></div><div class="ttdeci">Section m_sections[m_max_sections]</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dc1/_memory_map_8hpp_source.html#l00068">MemoryMap.hpp:68</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
