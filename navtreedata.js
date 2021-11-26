@@ -70,8 +70,8 @@ var NAVTREEINDEX =
 "annotated.html",
 "d2/dbd/tasks_8hpp.html#ac7aaa4c0605984fc6b92a727881b8707a8d8e53f91997090c4b163b7579f366dd",
 "d4/ddc/isr_8hpp.html#af4ae10cea59f9bb2f79c13b8036d81f1",
-"d7/de6/gdt_8cpp.html",
-"db/d82/class_boot_1_1_handoff_c_p_u_descriptor.html#abda19fe605ac41131a9dcdbdbdb182e6",
+"d7/d9c/_arch_8hpp_source.html",
+"da/de0/struct_arch_1_1_memory_1_1_table_entry.html#aeb9a7a86f9cbf4c8f01bff30d9307895",
 "df/d94/structregisters.html#a9cc3091e4c0f25d142ac74443dc8d384"
 ];
 

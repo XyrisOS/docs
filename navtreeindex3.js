@@ -1,5 +1,17 @@
 var NAVTREEINDEX3 =
 {
+"d7/d9c/_arch_8hpp_source.html":[2,0,2],
+"d7/dae/errno_8hpp.html":[2,0,20],
+"d7/dae/errno_8hpp.html#a134854218ba9bb56e95dfd879ee2a7e8":[2,0,20,1],
+"d7/dae/errno_8hpp.html#a82793c1b9a6e2dcb6ebce9828aa9e89c":[2,0,20,0],
+"d7/dae/errno_8hpp.html#a82793c1b9a6e2dcb6ebce9828aa9e89ca2bc49ec37d6a5715dd23e85f1ff5bb59":[2,0,20,0,4],
+"d7/dae/errno_8hpp.html#a82793c1b9a6e2dcb6ebce9828aa9e89ca36da9e40d8863a0149134f0ab34899de":[2,0,20,0,1],
+"d7/dae/errno_8hpp.html#a82793c1b9a6e2dcb6ebce9828aa9e89caa7d5dbb80731c0bd189f7d106c768631":[2,0,20,0,2],
+"d7/dae/errno_8hpp.html#a82793c1b9a6e2dcb6ebce9828aa9e89cab6209f787f748c204a156f7fc11095fd":[2,0,20,0,0],
+"d7/dae/errno_8hpp.html#a82793c1b9a6e2dcb6ebce9828aa9e89caf074201ae92ec7b1f3f9a87b6e59ee3b":[2,0,20,0,3],
+"d7/dae/errno_8hpp_source.html":[2,0,20],
+"d7/dcf/_arch_8i686_8hpp.html":[2,0,4],
+"d7/dcf/_arch_8i686_8hpp_source.html":[2,0,4],
 "d7/de6/gdt_8cpp.html":[2,0,27],
 "d7/de6/gdt_8cpp.html#a09b421029766d2401708465b3d21b468":[2,0,27,4],
 "d7/de6/gdt_8cpp.html#a8b44d6c39bbbdfec25a2fd1c2f1b768a":[2,0,27,0],
@@ -237,17 +249,5 @@ var NAVTREEINDEX3 =
 "da/de0/struct_arch_1_1_memory_1_1_table_entry.html#a9757c0cc67268efcbc27f5cd96e3f57d":[1,0,0,0,6,4],
 "da/de0/struct_arch_1_1_memory_1_1_table_entry.html#ad32e36d502349a876cd12a2735ef08ce":[1,0,0,0,6,8],
 "da/de0/struct_arch_1_1_memory_1_1_table_entry.html#ad946cee5e971677f2bf8e23c25284c76":[1,0,0,0,6,1],
-"da/de0/struct_arch_1_1_memory_1_1_table_entry.html#adcf2f5aed8e28dc5ad32c67c8abb5b5d":[1,0,0,0,6,0],
-"da/de0/struct_arch_1_1_memory_1_1_table_entry.html#aeb9a7a86f9cbf4c8f01bff30d9307895":[1,0,0,0,6,6],
-"da/de5/stivale_8cpp.html":[2,0,76],
-"da/de5/stivale_8cpp_source.html":[2,0,76],
-"db/d2f/namespace_memory.html":[0,3,6],
-"db/d2f/namespace_memory.html":[1,0,4],
-"db/d82/class_boot_1_1_handoff_c_p_u_descriptor.html":[1,0,1,2],
-"db/d82/class_boot_1_1_handoff_c_p_u_descriptor.html#a190a6628a6ce9bfa45a140531e48ea5a":[1,0,1,2,11],
-"db/d82/class_boot_1_1_handoff_c_p_u_descriptor.html#a3ff59a86e9510182604def406631f80c":[1,0,1,2,2],
-"db/d82/class_boot_1_1_handoff_c_p_u_descriptor.html#a400c33248d7bfb2ac8d540f0294817f2":[1,0,1,2,3],
-"db/d82/class_boot_1_1_handoff_c_p_u_descriptor.html#a522d01e3621ebff043b07e1c9787543f":[1,0,1,2,7],
-"db/d82/class_boot_1_1_handoff_c_p_u_descriptor.html#a5edc034c38569cf4f87e8ae8ffabd651":[1,0,1,2,4],
-"db/d82/class_boot_1_1_handoff_c_p_u_descriptor.html#abc685634593f6aaab51237a2e7d830b7":[1,0,1,2,9]
+"da/de0/struct_arch_1_1_memory_1_1_table_entry.html#adcf2f5aed8e28dc5ad32c67c8abb5b5d":[1,0,0,0,6,0]
 };

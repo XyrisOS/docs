@@ -1,6 +1,6 @@
 <map id="idt.hpp" name="idt.hpp">
 <area shape="rect" id="node1" title="Interrupt Descriptor Table header." alt="" coords="141,5,207,32"/>
-<area shape="rect" id="node2" href="$d3/d50/_arch_8i386_8cpp.html" title="i386 architecture implementation of Arch.hpp" alt="" coords="5,80,116,107"/>
+<area shape="rect" id="node2" href="$d4/dc9/_arch_8i686_8cpp.html" title="i686 architecture implementation of Arch.hpp" alt="" coords="5,80,116,107"/>
 <area shape="rect" id="node3" href="$d9/d87/idt_8cpp.html" title=" " alt="" coords="141,80,207,107"/>
 <area shape="rect" id="node4" href="$d3/d68/isr_8cpp.html" title=" " alt="" coords="231,80,295,107"/>
 </map>

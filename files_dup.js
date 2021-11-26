@@ -3,8 +3,8 @@ var files_dup =
     [ "animation.cpp", "d8/ddb/animation_8cpp.html", "d8/ddb/animation_8cpp" ],
     [ "animation.hpp", "d6/d5a/animation_8hpp.html", "d6/d5a/animation_8hpp" ],
     [ "Arch.hpp", "d7/d9c/_arch_8hpp.html", "d7/d9c/_arch_8hpp" ],
-    [ "Arch.i386.cpp", "d3/d50/_arch_8i386_8cpp.html", "d3/d50/_arch_8i386_8cpp" ],
-    [ "Arch.i386.hpp", "dd/de9/_arch_8i386_8hpp.html", [
+    [ "Arch.i686.cpp", "d4/dc9/_arch_8i686_8cpp.html", "d4/dc9/_arch_8i686_8cpp" ],
+    [ "Arch.i686.hpp", "d7/dcf/_arch_8i686_8hpp.html", [
       [ "stackframe", "d5/d3e/struct_arch_1_1stackframe.html", "d5/d3e/struct_arch_1_1stackframe" ]
     ] ],
     [ "Arguments.cpp", "d4/d85/_arguments_8cpp.html", "d4/d85/_arguments_8cpp" ],
@@ -52,7 +52,7 @@ var files_dup =
     ] ],
     [ "linker.ld", "dd/d85/linker_8ld.html", null ],
     [ "Memory.hpp", "d9/d4f/_memory_8hpp.html", "d9/d4f/_memory_8hpp" ],
-    [ "Memory.i386.hpp", "df/d48/_memory_8i386_8hpp.html", "df/d48/_memory_8i386_8hpp" ],
+    [ "Memory.i686.hpp", "d7/d42/_memory_8i686_8hpp.html", "d7/d42/_memory_8i686_8hpp" ],
     [ "MemoryMap.hpp", "d6/dc1/_memory_map_8hpp.html", [
       [ "MemoryMap", "d0/dea/class_memory_1_1_memory_map.html", "d0/dea/class_memory_1_1_memory_map" ]
     ] ],
@@ -64,7 +64,7 @@ var files_dup =
     ] ],
     [ "paging.cpp", "d1/d5e/paging_8cpp.html", "d1/d5e/paging_8cpp" ],
     [ "paging.hpp", "d1/d75/paging_8hpp.html", "d1/d75/paging_8hpp" ],
-    [ "arch/i386/boot/panic.cpp", "dd/de7/arch_2i386_2boot_2panic_8cpp.html", "dd/de7/arch_2i386_2boot_2panic_8cpp" ],
+    [ "arch/i686/boot/panic.cpp", "de/db3/arch_2i686_2boot_2panic_8cpp.html", "de/db3/arch_2i686_2boot_2panic_8cpp" ],
     [ "sys/panic.cpp", "d5/df3/sys_2panic_8cpp.html", "d5/df3/sys_2panic_8cpp" ],
     [ "Panic.hpp", "d6/d64/_panic_8hpp.html", "d6/d64/_panic_8hpp" ],
     [ "Physical.hpp", "d0/d81/_physical_8hpp.html", "d0/d81/_physical_8hpp" ],

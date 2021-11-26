@@ -5,7 +5,7 @@ var searchData=
   ['early_5fkernel_5fend_181',['EARLY_KERNEL_END',['../d0/d29/sections_8hpp.html#a49c4fdd3bb7e14d17ffbe3a5ce69cac1',1,'sections.hpp']]],
   ['early_5fkernel_5fstart_182',['EARLY_KERNEL_START',['../d0/d29/sections_8hpp.html#a52c700cb4dd8a7a00e78964136efb8c0',1,'sections.hpp']]],
   ['early_5fmem_5fstart_183',['EARLY_MEM_START',['../d0/d29/sections_8hpp.html#a42b9761aec8fc5e74eb549770d47b6d8',1,'sections.hpp']]],
-  ['early_5fpanic_184',['early_panic',['../dd/de7/arch_2i386_2boot_2panic_8cpp.html#af0e8e99d063b283c9748fc23b69fca94',1,'panic.cpp']]],
+  ['early_5fpanic_184',['early_panic',['../de/db3/arch_2i686_2boot_2panic_8cpp.html#af0e8e99d063b283c9748fc23b69fca94',1,'panic.cpp']]],
   ['eax_185',['eax',['../df/d94/structregisters.html#a1e01e806248cd98e55e0b053db6a6a51',1,'registers::eax()'],['../d5/d29/structtss__entry.html#ab98f968cfa9a6a99dd14dafc6ee4f45d',1,'tss_entry::eax()'],['../d2/d59/tss_8hpp.html#a93d929ad1fc57af9d4f1793c361fb4f2',1,'eax():&#160;tss.hpp']]],
   ['ebp_186',['ebp',['../d5/d3e/struct_arch_1_1stackframe.html#a60edb399add855e2ee23e01103237b92',1,'Arch::stackframe::ebp()'],['../df/d94/structregisters.html#a8d156d1d27fcb1c2f2bbcce1a784431f',1,'registers::ebp()'],['../d5/d29/structtss__entry.html#a56b56d90c6b974d6baa724bfa7b38f55',1,'tss_entry::ebp()'],['../d2/d59/tss_8hpp.html#aaba2ad0ff8ba480934feabfdab02b1e7',1,'ebp():&#160;tss.hpp']]],
   ['ebx_187',['ebx',['../df/d94/structregisters.html#aa8989b2fef42dca1d656f724eb324f51',1,'registers::ebx()'],['../d5/d29/structtss__entry.html#aede979bb90225f583647044187054a06',1,'tss_entry::ebx()'],['../d2/d59/tss_8hpp.html#ae7c1e3339e4dead200cab41010e9127c',1,'ebx():&#160;tss.hpp']]],
@@ -33,6 +33,6 @@ var searchData=
   ['esp0_209',['esp0',['../d5/d29/structtss__entry.html#a69bf522e3a865427a6325fe57ab70cb3',1,'tss_entry::esp0()'],['../d2/d59/tss_8hpp.html#ab8a56bd35e5f4765a5f6736fdd829a2f',1,'esp0():&#160;tss.hpp']]],
   ['esp1_210',['esp1',['../d5/d29/structtss__entry.html#a7794e8d77e1ef862d7d784ce488907c6',1,'tss_entry::esp1()'],['../d2/d59/tss_8hpp.html#a92a8ac30e06c41b14fe2eb5f69f9ade6',1,'esp1():&#160;tss.hpp']]],
   ['esp2_211',['esp2',['../d5/d29/structtss__entry.html#a1a9ce6c811e2ca37b49f4306e9ad009c',1,'tss_entry::esp2()'],['../d2/d59/tss_8hpp.html#a17c64abe1958f7f481d0fbef826ad21f',1,'esp2():&#160;tss.hpp']]],
-  ['exceptionstrings_212',['exceptionStrings',['../d3/d50/_arch_8i386_8cpp.html#aa9db01d3bad32e3abeb71ded065bcd0a',1,'Arch.i386.cpp']]],
+  ['exceptionstrings_212',['exceptionStrings',['../d4/dc9/_arch_8i686_8cpp.html#aa9db01d3bad32e3abeb71ded065bcd0a',1,'Arch.i686.cpp']]],
   ['extensiontype_213',['extensionType',['../d3/dde/struct_registers_1_1_c_r0.html#a87bbbcb19ddfe26aeaeb14fdf8f4ffad',1,'Registers::CR0']]]
 ];

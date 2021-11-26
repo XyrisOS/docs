@@ -2,7 +2,7 @@
 <area shape="rect" id="node1" title="Framebuffer console." alt="" coords="441,5,541,32"/>
 <area shape="rect" id="node2" href="$d0/dde/primes_8cpp.html" title="Prime computation tasks." alt="" coords="5,80,100,107"/>
 <area shape="rect" id="node3" href="$df/d57/spinner_8cpp.html" title="Kernel spinner task." alt="" coords="125,80,221,107"/>
-<area shape="rect" id="node4" href="$d3/d50/_arch_8i386_8cpp.html" title="i386 architecture implementation of Arch.hpp" alt="" coords="245,80,356,107"/>
+<area shape="rect" id="node4" href="$d4/dc9/_arch_8i686_8cpp.html" title="i686 architecture implementation of Arch.hpp" alt="" coords="245,80,356,107"/>
 <area shape="rect" id="node5" href="$d4/d88/_handoff_8cpp.html" title="Bootloader information parsing and kernel handoff container." alt="" coords="380,80,480,107"/>
 <area shape="rect" id="node6" href="$d9/dda/console_8cpp.html" title="Framebuffer console." alt="" coords="505,80,603,107"/>
 <area shape="rect" id="node7" href="$d2/dd2/entry_8cpp.html" title="The entry point into the Xyris kernel." alt="" coords="628,80,709,107"/>

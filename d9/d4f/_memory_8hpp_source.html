@@ -93,16 +93,16 @@ $(document).ready(function(){initNavTree('d9/d4f/_memory_8hpp_source.html','../.
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * @brief Architecture memory management &amp; paging API</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * @version 0.1</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * @date 2021-09-18</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> * </span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> * @copyright Copyright the Xyris Contributors (c) 2021</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> * </span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;stddef.h&gt;</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#if defined(__i386__)</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#    include &lt;<a class="code" href="../../df/d48/_memory_8i386_8hpp.html">arch/i386/Memory.i386.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#if defined(__i686__)</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#    include &lt;<a class="code" href="../../d7/d42/_memory_8i686_8hpp.html">arch/i686/Memory.i686.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
 <div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="../../d9/d4f/_memory_8hpp.html#a58aa9789669ab63074a01bb7d55c0123">   19</a></span>&#160;<span class="preprocessor">#define B_TO_KB(b) ((b) / 1024)</span></div>
@@ -134,10 +134,10 @@ $(document).ready(function(){initNavTree('d9/d4f/_memory_8hpp_source.html','../.
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;} <span class="comment">// !namespace Arch::Memory</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="anamespace_arch_1_1_memory_html_a3ba8a1ea0a34ad98b2f304fbbda48b0a"><div class="ttname"><a href="../../dd/d0e/namespace_arch_1_1_memory.html#a3ba8a1ea0a34ad98b2f304fbbda48b0a">Arch::Memory::pagingEnable</a></div><div class="ttdeci">void pagingEnable()</div><div class="ttdoc">Enable hardware paging.</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d50/_arch_8i386_8cpp_source.html#l00102">Arch.i386.cpp:102</a></div></div>
-<div class="ttc" id="anamespace_arch_1_1_memory_html"><div class="ttname"><a href="../../dd/d0e/namespace_arch_1_1_memory.html">Arch::Memory</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d50/_arch_8i386_8cpp_source.html#l00100">Arch.i386.cpp:100</a></div></div>
-<div class="ttc" id="anamespace_arch_1_1_memory_html_ad4d3a669c172e1442fe3e2afe8d16172"><div class="ttname"><a href="../../dd/d0e/namespace_arch_1_1_memory.html#ad4d3a669c172e1442fe3e2afe8d16172">Arch::Memory::pagingDisable</a></div><div class="ttdeci">void pagingDisable()</div><div class="ttdoc">Disable hardware paging.</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d50/_arch_8i386_8cpp_source.html#l00108">Arch.i386.cpp:108</a></div></div>
-<div class="ttc" id="a_memory_8i386_8hpp_html"><div class="ttname"><a href="../../df/d48/_memory_8i386_8hpp.html">Memory.i386.hpp</a></div><div class="ttdoc">i386 memory structures and definitions</div></div>
+<div class="ttc" id="anamespace_arch_1_1_memory_html_a3ba8a1ea0a34ad98b2f304fbbda48b0a"><div class="ttname"><a href="../../dd/d0e/namespace_arch_1_1_memory.html#a3ba8a1ea0a34ad98b2f304fbbda48b0a">Arch::Memory::pagingEnable</a></div><div class="ttdeci">void pagingEnable()</div><div class="ttdoc">Enable hardware paging.</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dc9/_arch_8i686_8cpp_source.html#l00102">Arch.i686.cpp:102</a></div></div>
+<div class="ttc" id="anamespace_arch_1_1_memory_html"><div class="ttname"><a href="../../dd/d0e/namespace_arch_1_1_memory.html">Arch::Memory</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dc9/_arch_8i686_8cpp_source.html#l00100">Arch.i686.cpp:100</a></div></div>
+<div class="ttc" id="anamespace_arch_1_1_memory_html_ad4d3a669c172e1442fe3e2afe8d16172"><div class="ttname"><a href="../../dd/d0e/namespace_arch_1_1_memory.html#ad4d3a669c172e1442fe3e2afe8d16172">Arch::Memory::pagingDisable</a></div><div class="ttdeci">void pagingDisable()</div><div class="ttdoc">Disable hardware paging.</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dc9/_arch_8i686_8cpp_source.html#l00108">Arch.i686.cpp:108</a></div></div>
+<div class="ttc" id="a_memory_8i686_8hpp_html"><div class="ttname"><a href="../../d7/d42/_memory_8i686_8hpp.html">Memory.i686.hpp</a></div><div class="ttdoc">i686 memory structures and definitions</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

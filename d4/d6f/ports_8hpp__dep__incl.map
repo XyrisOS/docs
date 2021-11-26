@@ -1,7 +1,7 @@
 <map id="ports.hpp" name="ports.hpp">
 <area shape="rect" id="node1" title="Ports header file. Provides inline functions for getting and setting values at different ports...." alt="" coords="271,5,354,32"/>
-<area shape="rect" id="node2" href="$d3/d50/_arch_8i386_8cpp.html" title="i386 architecture implementation of Arch.hpp" alt="" coords="100,229,211,256"/>
-<area shape="rect" id="node3" href="$dd/de9/_arch_8i386_8hpp.html" title="i386 architecture implementation of Arch.hpp" alt="" coords="257,80,368,107"/>
+<area shape="rect" id="node2" href="$d4/dc9/_arch_8i686_8cpp.html" title="i686 architecture implementation of Arch.hpp" alt="" coords="100,229,211,256"/>
+<area shape="rect" id="node3" href="$d7/dcf/_arch_8i686_8hpp.html" title="i686 architecture implementation of Arch.hpp" alt="" coords="257,80,368,107"/>
 <area shape="rect" id="node15" href="$d7/d27/ports_8cpp.html" title="CPU port access functions." alt="" coords="393,80,475,107"/>
 <area shape="rect" id="node4" href="$df/d77/gdt_8hpp.html" title="The Global Descriptor Table (GDT) is specific to the IA32 architecture. It contains entries telling t..." alt="" coords="88,155,159,181"/>
 <area shape="rect" id="node6" href="$dd/d12/idt_8hpp.html" title="Interrupt Descriptor Table header." alt="" coords="234,155,301,181"/>

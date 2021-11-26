@@ -157,9 +157,9 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>uintptr_t <a class="el" href="../../da/db3/struct_arch_1_1_memory_1_1_page.html" title="Virtual address structure. Represents an address in virtual memory that redirects to a physical page ...">Page</a> aligned address value </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d48/_memory_8i386_8hpp_source.html#l00193">193</a> of file <a class="el" href="../../df/d48/_memory_8i386_8hpp_source.html">Memory.i386.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/d42/_memory_8i686_8hpp_source.html#l00193">193</a> of file <a class="el" href="../../d7/d42/_memory_8i686_8hpp_source.html">Memory.i686.hpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;{</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    <span class="keywordflow">return</span> addr &amp; <a class="code" href="../../df/d48/_memory_8i386_8hpp.html#a000988a56f64747e74e8d52424e7223c">ARCH_PAGE_ALIGN</a>;</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    <span class="keywordflow">return</span> addr &amp; <a class="code" href="../../d7/d42/_memory_8i686_8hpp.html#a000988a56f64747e74e8d52424e7223c">ARCH_PAGE_ALIGN</a>;</div>
 <div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
@@ -196,7 +196,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d48/_memory_8i386_8hpp_source.html#l00177">177</a> of file <a class="el" href="../../df/d48/_memory_8i386_8hpp_source.html">Memory.i386.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/d42/_memory_8i686_8hpp_source.html#l00177">177</a> of file <a class="el" href="../../d7/d42/_memory_8i686_8hpp_source.html">Memory.i686.hpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;{</div>
 <div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;   <span class="keyword">asm</span> <span class="keyword">volatile</span>(<span class="stringliteral">&quot;invlpg (%0)&quot;</span> ::<span class="stringliteral">&quot;r&quot;</span> (addr) : <span class="stringliteral">&quot;memory&quot;</span>);</div>
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;}</div>
@@ -238,9 +238,9 @@ Functions</h2></td></tr>
 <dd>
 false <a class="el" href="../../dd/dd2/class_arch_1_1_memory_1_1_address.html" title="Address class. Represents a memory address that can be used to address a page in virtual memory,...">Address</a> is not aligned to a page boundary </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d48/_memory_8i386_8hpp_source.html#l00205">205</a> of file <a class="el" href="../../df/d48/_memory_8i386_8hpp_source.html">Memory.i386.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/d42/_memory_8i686_8hpp_source.html#l00205">205</a> of file <a class="el" href="../../d7/d42/_memory_8i686_8hpp_source.html">Memory.i686.hpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;{</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    <span class="keywordflow">return</span> ((addr % <a class="code" href="../../df/d48/_memory_8i386_8hpp.html#acd327ff534c65e3c5772a67d62d74ca0">ARCH_PAGE_SIZE</a>) == 0);</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    <span class="keywordflow">return</span> ((addr % <a class="code" href="../../d7/d42/_memory_8i686_8hpp.html#acd327ff534c65e3c5772a67d62d74ca0">ARCH_PAGE_SIZE</a>) == 0);</div>
 <div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
@@ -262,7 +262,7 @@ false <a class="el" href="../../dd/dd2/class_arch_1_1_memory_1_1_address.html" t
 
 <p>Disable hardware paging. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d50/_arch_8i386_8cpp_source.html#l00108">108</a> of file <a class="el" href="../../d3/d50/_arch_8i386_8cpp_source.html">Arch.i386.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dc9/_arch_8i686_8cpp_source.html#l00108">108</a> of file <a class="el" href="../../d4/dc9/_arch_8i686_8cpp_source.html">Arch.i686.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                     {</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keyword">struct </span><a class="code" href="../../d3/dde/struct_registers_1_1_c_r0.html">Registers::CR0</a> cr0 = <a class="code" href="../../d4/ddf/namespace_registers.html#aea57042ad4cd3d217fe32bdc95adeec1">Registers::readCR0</a>();</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    cr0.<a class="code" href="../../d3/dde/struct_registers_1_1_c_r0.html#a13ecee255ef6ba13bfd618b56fb6a051">pagingEnable</a> = 0;</div>
@@ -300,7 +300,7 @@ false <a class="el" href="../../dd/dd2/class_arch_1_1_memory_1_1_address.html" t
 
 <p>Enable hardware paging. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d50/_arch_8i386_8cpp_source.html#l00102">102</a> of file <a class="el" href="../../d3/d50/_arch_8i386_8cpp_source.html">Arch.i386.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/dc9/_arch_8i686_8cpp_source.html#l00102">102</a> of file <a class="el" href="../../d4/dc9/_arch_8i686_8cpp_source.html">Arch.i686.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                    {</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keyword">struct </span><a class="code" href="../../d3/dde/struct_registers_1_1_c_r0.html">Registers::CR0</a> cr0 = <a class="code" href="../../d4/ddf/namespace_registers.html#aea57042ad4cd3d217fe32bdc95adeec1">Registers::readCR0</a>();</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    cr0.<a class="code" href="../../d3/dde/struct_registers_1_1_c_r0.html#a13ecee255ef6ba13bfd618b56fb6a051">pagingEnable</a> = 1;</div>
@@ -345,7 +345,7 @@ false <a class="el" href="../../dd/dd2/class_arch_1_1_memory_1_1_address.html" t
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d48/_memory_8i386_8hpp_source.html#l00182">182</a> of file <a class="el" href="../../df/d48/_memory_8i386_8hpp_source.html">Memory.i386.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/d42/_memory_8i686_8hpp_source.html#l00182">182</a> of file <a class="el" href="../../d7/d42/_memory_8i686_8hpp_source.html">Memory.i686.hpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;{</div>
 <div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    <span class="keyword">asm</span> <span class="keyword">volatile</span>(<span class="stringliteral">&quot;mov %0, %%cr3&quot;</span> ::<span class="stringliteral">&quot;b&quot;</span>(page_dir));</div>
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;}</div>
@@ -354,11 +354,11 @@ false <a class="el" href="../../dd/dd2/class_arch_1_1_memory_1_1_address.html" t
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="a_memory_8i686_8hpp_html_a000988a56f64747e74e8d52424e7223c"><div class="ttname"><a href="../../d7/d42/_memory_8i686_8hpp.html#a000988a56f64747e74e8d52424e7223c">ARCH_PAGE_ALIGN</a></div><div class="ttdeci">#define ARCH_PAGE_ALIGN</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d42/_memory_8i686_8hpp_source.html#l00015">Memory.i686.hpp:15</a></div></div>
 <div class="ttc" id="anamespace_registers_html_aea57042ad4cd3d217fe32bdc95adeec1"><div class="ttname"><a href="../../d4/ddf/namespace_registers.html#aea57042ad4cd3d217fe32bdc95adeec1">Registers::readCR0</a></div><div class="ttdeci">struct CR0 readCR0()</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dfb/regs_8hpp_source.html#l00060">regs.hpp:60</a></div></div>
 <div class="ttc" id="astruct_registers_1_1_c_r0_html_a13ecee255ef6ba13bfd618b56fb6a051"><div class="ttname"><a href="../../d3/dde/struct_registers_1_1_c_r0.html#a13ecee255ef6ba13bfd618b56fb6a051">Registers::CR0::pagingEnable</a></div><div class="ttdeci">uint32_t pagingEnable</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dfb/regs_8hpp_source.html#l00043">regs.hpp:43</a></div></div>
-<div class="ttc" id="a_memory_8i386_8hpp_html_a000988a56f64747e74e8d52424e7223c"><div class="ttname"><a href="../../df/d48/_memory_8i386_8hpp.html#a000988a56f64747e74e8d52424e7223c">ARCH_PAGE_ALIGN</a></div><div class="ttdeci">#define ARCH_PAGE_ALIGN</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d48/_memory_8i386_8hpp_source.html#l00015">Memory.i386.hpp:15</a></div></div>
-<div class="ttc" id="a_memory_8i386_8hpp_html_acd327ff534c65e3c5772a67d62d74ca0"><div class="ttname"><a href="../../df/d48/_memory_8i386_8hpp.html#acd327ff534c65e3c5772a67d62d74ca0">ARCH_PAGE_SIZE</a></div><div class="ttdeci">#define ARCH_PAGE_SIZE</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d48/_memory_8i386_8hpp_source.html#l00016">Memory.i386.hpp:16</a></div></div>
 <div class="ttc" id="astruct_registers_1_1_c_r0_html"><div class="ttname"><a href="../../d3/dde/struct_registers_1_1_c_r0.html">Registers::CR0</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dfb/regs_8hpp_source.html#l00028">regs.hpp:28</a></div></div>
+<div class="ttc" id="a_memory_8i686_8hpp_html_acd327ff534c65e3c5772a67d62d74ca0"><div class="ttname"><a href="../../d7/d42/_memory_8i686_8hpp.html#acd327ff534c65e3c5772a67d62d74ca0">ARCH_PAGE_SIZE</a></div><div class="ttdeci">#define ARCH_PAGE_SIZE</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d42/_memory_8i686_8hpp_source.html#l00016">Memory.i686.hpp:16</a></div></div>
 <div class="ttc" id="anamespace_registers_html_a113bb16f2d30345fb54c5875ddd739ee"><div class="ttname"><a href="../../d4/ddf/namespace_registers.html#a113bb16f2d30345fb54c5875ddd739ee">Registers::writeCR0</a></div><div class="ttdeci">void writeCR0(struct CR0 x)</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dfb/regs_8hpp_source.html#l00067">regs.hpp:67</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

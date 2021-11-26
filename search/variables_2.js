@@ -4,5 +4,5 @@ var searchData=
   ['base_5fhigh_1383',['base_high',['../d8/dc9/structgdt__entry.html#a96abeddea82dd23ff9e84d09230e31a2',1,'gdt_entry::base_high()'],['../df/d77/gdt_8hpp.html#a1a173457c7aa39c59c008fcc3332d2b3',1,'base_high():&#160;gdt.hpp']]],
   ['base_5flow_1384',['base_low',['../d8/dc9/structgdt__entry.html#ade3b4a3948e6e475221de4e226f8579c',1,'gdt_entry::base_low()'],['../df/d77/gdt_8hpp.html#a71e21ea67de59991e9a27666a1752a8f',1,'base_low():&#160;gdt.hpp']]],
   ['base_5fmiddle_1385',['base_middle',['../d8/dc9/structgdt__entry.html#ab5c8ccda9d0651184c31089ce7bbdbae',1,'gdt_entry::base_middle()'],['../df/d77/gdt_8hpp.html#a6b67e86f6de9204d76adab79069aec29',1,'base_middle():&#160;gdt.hpp']]],
-  ['biosvgabuffer_1386',['biosVGABuffer',['../dd/de7/arch_2i386_2boot_2panic_8cpp.html#a8dae456cfe3ee854dd92492d1808f638',1,'panic.cpp']]]
+  ['biosvgabuffer_1386',['biosVGABuffer',['../de/db3/arch_2i686_2boot_2panic_8cpp.html#a8dae456cfe3ee854dd92492d1808f638',1,'panic.cpp']]]
 ];

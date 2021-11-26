@@ -2,7 +2,7 @@
 <area shape="rect" id="node1" title="CPU port access functions." alt="" coords="70,5,153,32"/>
 <area shape="rect" id="node2" href="$d8/d9f/ports_8hpp.html" title="Ports header file. Provides inline functions for getting and setting values at different ports...." alt="" coords="38,80,185,107"/>
 <area shape="rect" id="node3" title=" " alt="" coords="64,304,135,331"/>
-<area shape="rect" id="node4" href="$dd/de9/_arch_8i386_8hpp.html" title="i386 architecture implementation of Arch.hpp" alt="" coords="24,155,199,181"/>
+<area shape="rect" id="node4" href="$d7/dcf/_arch_8i686_8hpp.html" title="i686 architecture implementation of Arch.hpp" alt="" coords="24,155,199,181"/>
 <area shape="rect" id="node5" href="$d8/dfb/regs_8hpp.html" title=" " alt="" coords="188,229,331,256"/>
 <area shape="rect" id="node7" href="$d4/ddc/isr_8hpp.html" title="Interrupt Service Routine header." alt="" coords="35,229,164,256"/>
 <area shape="rect" id="node6" title=" " alt="" coords="222,304,297,331"/>

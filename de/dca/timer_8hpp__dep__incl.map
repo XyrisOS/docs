@@ -1,6 +1,6 @@
 <map id="timer.hpp" name="timer.hpp">
 <area shape="rect" id="node1" title=" " alt="" coords="192,5,276,32"/>
-<area shape="rect" id="node2" href="$d3/d50/_arch_8i386_8cpp.html" title="i386 architecture implementation of Arch.hpp" alt="" coords="5,80,116,107"/>
+<area shape="rect" id="node2" href="$d4/dc9/_arch_8i686_8cpp.html" title="i686 architecture implementation of Arch.hpp" alt="" coords="5,80,116,107"/>
 <area shape="rect" id="node3" href="$dc/de5/timer_8cpp.html" title="Programmable Interrupt Timer driver functions." alt="" coords="141,80,223,107"/>
 <area shape="rect" id="node4" href="$da/da5/spkr_8cpp.html" title=" " alt="" coords="248,80,324,107"/>
 <area shape="rect" id="node5" href="$d5/d9d/tasks_8cpp.html" title=" " alt="" coords="348,80,432,107"/>
