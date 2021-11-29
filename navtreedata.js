@@ -24,6 +24,11 @@ var NAVTREE =
 [
   [ "Xyris", "index.html", [
     [ "Namespaces", "namespaces.html", [
+      [ "Xyris", "index.html#autotoc_md0", [
+        [ "Design Philosophy", "index.html#autotoc_md1", null ],
+        [ "How to Help", "index.html#autotoc_md2", null ],
+        [ "License", "index.html#autotoc_md3", null ]
+      ] ],
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [
         [ "All", "namespacemembers.html", null ],
