@@ -1,0 +1,7 @@
+<map id="panicf" name="panicf">
+<area shape="rect" id="node1" title=" " alt="" coords="5,31,68,57"/>
+<area shape="rect" id="node2" href="$d4/d64/printf_8cpp.html#a626c6babba88d2b34beacfb116a71fb8" title="Sends formatted output to a string using an argument list." alt="" coords="116,5,196,32"/>
+<area shape="rect" id="node5" href="$d6/d1e/panic_8cpp.html#a51ef3f9bd6cd14d744e31d392b445b33" title="Halt the system and print the provided message on the panic screen." alt="" coords="127,56,185,83"/>
+<area shape="rect" id="node3" href="$d4/d64/printf_8cpp.html#a85a2fff114bf015eba22a1dc163bf1ba" title="Perform all printf operations on the format string using the provided argument list and uses the call..." alt="" coords="244,5,349,32"/>
+<area shape="rect" id="node4" href="$d5/d24/string_8cpp.html#a2dee044e4e667b5b789b493abd21cfa4" title="Returns the length of a string." alt="" coords="397,5,456,32"/>
+</map>

@@ -1,9 +1,9 @@
 <map id="Bitset.hpp" name="Bitset.hpp">
-<area shape="rect" id="node1" title="A basic bitmap implementation." alt="" coords="239,5,327,32"/>
-<area shape="rect" id="node2" href="$d7/d9c/_arch_8hpp.html" title="Architecture control and initialization." alt="" coords="89,80,199,107"/>
-<area shape="rect" id="node3" href="$d2/d3d/compiler_8hpp.html" title="Compiler meta directives." alt="" coords="5,155,149,181"/>
-<area shape="rect" id="node4" title=" " alt="" coords="196,155,271,181"/>
-<area shape="rect" id="node5" title=" " alt="" coords="295,155,366,181"/>
-<area shape="rect" id="node6" href="$d4/da0/string_8hpp.html" title="Standard string and memory utility library." alt="" coords="275,80,381,107"/>
-<area shape="rect" id="node7" title=" " alt="" coords="457,80,527,107"/>
+<area shape="rect" id="node1" title="A basic bitmap implementation." alt="" coords="257,5,345,32"/>
+<area shape="rect" id="node2" href="$d7/d9c/_arch_8hpp.html" title="Architecture control and initialization." alt="" coords="100,80,212,107"/>
+<area shape="rect" id="node3" href="$d2/d3d/compiler_8hpp.html" title="Compiler meta directives." alt="" coords="5,155,165,181"/>
+<area shape="rect" id="node4" title=" " alt="" coords="212,155,287,181"/>
+<area shape="rect" id="node5" title=" " alt="" coords="319,155,390,181"/>
+<area shape="rect" id="node6" href="$d4/da0/string_8hpp.html" title="Standard string and memory utility library." alt="" coords="287,80,423,107"/>
+<area shape="rect" id="node7" title=" " alt="" coords="498,80,569,107"/>
 </map>

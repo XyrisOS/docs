@@ -3,8 +3,8 @@
 <area shape="rect" id="node2" href="$d4/dc9/_arch_8i686_8cpp.html" title="i686 architecture implementation of Arch.hpp" alt="" coords="5,80,116,107"/>
 <area shape="rect" id="node3" href="$d4/d88/_handoff_8cpp.html" title="Bootloader information parsing and kernel handoff container." alt="" coords="140,80,240,107"/>
 <area shape="rect" id="node4" href="$d4/dc7/rs232_8cpp.html" title=" " alt="" coords="265,80,350,107"/>
-<area shape="rect" id="node5" href="$d2/dd2/entry_8cpp.html" title="The entry point into the Xyris kernel." alt="" coords="375,80,456,107"/>
-<area shape="rect" id="node6" href="$d5/df3/sys_2panic_8cpp.html" title=" " alt="" coords="481,80,563,107"/>
+<area shape="rect" id="node5" href="$d4/d01/_entry_8cpp.html" title="The entry point into the Xyris kernel." alt="" coords="375,80,456,107"/>
+<area shape="rect" id="node6" href="$d6/d1e/panic_8cpp.html" title=" " alt="" coords="481,80,563,107"/>
 <area shape="rect" id="node7" href="$d5/d9d/tasks_8cpp.html" title=" " alt="" coords="588,80,672,107"/>
-<area shape="rect" id="node8" href="$d9/d55/trace_8cpp.html" title="Kernel stack tracing." alt="" coords="697,80,779,107"/>
+<area shape="rect" id="node8" href="$d3/ddc/_stacktrace_8cpp.html" title=" " alt="" coords="696,80,815,107"/>
 </map>

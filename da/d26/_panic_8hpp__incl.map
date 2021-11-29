@@ -1,7 +1,7 @@
 <map id="Panic.hpp" name="Panic.hpp">
-<area shape="rect" id="node1" title="Kernel panic management." alt="" coords="102,5,186,32"/>
-<area shape="rect" id="node2" href="$d2/d3d/compiler_8hpp.html" title="Compiler meta directives." alt="" coords="5,155,149,181"/>
-<area shape="rect" id="node3" href="$d7/d9c/_arch_8hpp.html" title="Architecture control and initialization." alt="" coords="145,80,255,107"/>
-<area shape="rect" id="node4" title=" " alt="" coords="173,155,248,181"/>
-<area shape="rect" id="node5" title=" " alt="" coords="273,155,343,181"/>
+<area shape="rect" id="node1" title="Kernel panic management." alt="" coords="114,5,198,32"/>
+<area shape="rect" id="node2" href="$d2/d3d/compiler_8hpp.html" title="Compiler meta directives." alt="" coords="5,155,165,181"/>
+<area shape="rect" id="node3" href="$d7/d9c/_arch_8hpp.html" title="Architecture control and initialization." alt="" coords="159,80,271,107"/>
+<area shape="rect" id="node4" title=" " alt="" coords="189,155,264,181"/>
+<area shape="rect" id="node5" title=" " alt="" coords="289,155,359,181"/>
 </map>

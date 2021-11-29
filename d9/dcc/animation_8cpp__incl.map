@@ -1,8 +1,8 @@
 <map id="animation.cpp" name="animation.cpp">
-<area shape="rect" id="node1" title="A simple animation for testing duble FrameBuffer." alt="" coords="121,5,235,32"/>
-<area shape="rect" id="node2" href="$d6/d5a/animation_8hpp.html" title=" " alt="" coords="5,80,156,107"/>
-<area shape="rect" id="node3" href="$d9/d31/graphics_8hpp.html" title=" " alt="" coords="181,80,373,107"/>
-<area shape="rect" id="node4" title=" " alt="" coords="176,229,247,256"/>
-<area shape="rect" id="node5" href="$d7/d1a/framebuffer_8hpp.html" title=" " alt="" coords="242,155,455,181"/>
-<area shape="rect" id="node6" href="$d2/d3d/compiler_8hpp.html" title="Compiler meta directives." alt="" coords="277,229,421,256"/>
+<area shape="rect" id="node1" title="A simple animation for testing duble FrameBuffer." alt="" coords="165,5,280,32"/>
+<area shape="rect" id="node2" href="$d6/d5a/animation_8hpp.html" title=" " alt="" coords="5,80,205,107"/>
+<area shape="rect" id="node3" href="$d9/d31/graphics_8hpp.html" title=" " alt="" coords="229,80,451,107"/>
+<area shape="rect" id="node4" title=" " alt="" coords="234,229,305,256"/>
+<area shape="rect" id="node5" href="$d7/d1a/framebuffer_8hpp.html" title=" " alt="" coords="297,155,540,181"/>
+<area shape="rect" id="node6" href="$d2/d3d/compiler_8hpp.html" title="Compiler meta directives." alt="" coords="339,229,499,256"/>
 </map>

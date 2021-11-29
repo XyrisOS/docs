@@ -38,5 +38,5 @@ var searchData=
   ['available_77',['Available',['../db/d2f/namespace_memory.html#a9193c3e610b1728964440284db90c812abb186cca95fe2a43b713cc8e488fc04f',1,'Memory']]],
   ['cpu_78',['CPU',['../d9/d7a/namespace_arch_1_1_c_p_u.html',1,'Arch']]],
   ['memory_79',['Memory',['../dd/d0e/namespace_arch_1_1_memory.html',1,'Arch']]],
-  ['panic_2ecpp_80',['panic.cpp',['../de/db3/arch_2i686_2boot_2panic_8cpp.html',1,'']]]
+  ['panic_2ecpp_80',['panic.cpp',['../df/d62/_arch_2i686_2_bootloader_2panic_8cpp.html',1,'']]]
 ];

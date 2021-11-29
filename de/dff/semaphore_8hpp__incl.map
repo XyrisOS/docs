@@ -1,12 +1,12 @@
 <map id="semaphore.hpp" name="semaphore.hpp">
-<area shape="rect" id="node1" title=" " alt="" coords="493,5,616,32"/>
-<area shape="rect" id="node2" title=" " alt="" coords="507,453,578,480"/>
-<area shape="rect" id="node3" href="$d2/dbd/tasks_8hpp.html" title=" " alt="" coords="453,80,563,107"/>
-<area shape="rect" id="node4" href="$d7/d9c/_arch_8hpp.html" title="Architecture control and initialization." alt="" coords="29,304,139,331"/>
-<area shape="rect" id="node7" href="$d1/d75/paging_8hpp.html" title=" " alt="" coords="407,155,539,181"/>
-<area shape="rect" id="node5" href="$d2/d3d/compiler_8hpp.html" title="Compiler meta directives." alt="" coords="125,379,269,405"/>
-<area shape="rect" id="node6" title=" " alt="" coords="135,453,209,480"/>
-<area shape="rect" id="node8" href="$d9/d4f/_memory_8hpp.html" title="Architecture memory management &amp; paging API." alt="" coords="345,379,479,405"/>
-<area shape="rect" id="node9" href="$d6/dc1/_memory_map_8hpp.html" title="Memory map containing a number of Memory sections that describe the physical memory layout." alt="" coords="260,229,431,256"/>
-<area shape="rect" id="node10" href="$d0/d91/_memory_section_8hpp.html" title=" " alt="" coords="245,304,435,331"/>
+<area shape="rect" id="node1" title=" " alt="" coords="511,5,634,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="520,453,591,480"/>
+<area shape="rect" id="node3" href="$d2/dbd/tasks_8hpp.html" title=" " alt="" coords="439,80,592,107"/>
+<area shape="rect" id="node4" href="$d7/d9c/_arch_8hpp.html" title="Architecture control and initialization." alt="" coords="25,304,137,331"/>
+<area shape="rect" id="node7" href="$d1/d75/paging_8hpp.html" title=" " alt="" coords="413,155,565,181"/>
+<area shape="rect" id="node5" href="$d2/d3d/compiler_8hpp.html" title="Compiler meta directives." alt="" coords="122,379,282,405"/>
+<area shape="rect" id="node6" title=" " alt="" coords="139,453,214,480"/>
+<area shape="rect" id="node8" href="$d9/d4f/_memory_8hpp.html" title="Architecture memory management &amp; paging API." alt="" coords="357,379,492,405"/>
+<area shape="rect" id="node9" href="$d6/dc1/_memory_map_8hpp.html" title="Memory map containing a number of Memory sections that describe the physical memory layout." alt="" coords="256,229,447,256"/>
+<area shape="rect" id="node10" href="$d0/d91/_memory_section_8hpp.html" title=" " alt="" coords="241,304,451,331"/>
 </map>

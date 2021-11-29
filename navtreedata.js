@@ -24,13 +24,6 @@ var NAVTREE =
 [
   [ "Xyris", "index.html", [
     [ "Namespaces", "namespaces.html", [
-      [ "Xyris", "index.html#autotoc_md0", [
-        [ "Design Philosophy", "index.html#autotoc_md1", null ],
-        [ "How to Help", "index.html#autotoc_md2", null ],
-        [ "License", "index.html#autotoc_md3", null ]
-      ] ],
-      [ "Contributors", "index.html#autotoc_md4", null ],
-      [ "Third Party Projects", "index.html#autotoc_md5", null ],
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [
         [ "All", "namespacemembers.html", null ],
@@ -69,9 +62,9 @@ var NAVTREEINDEX =
 [
 "annotated.html",
 "d2/dbd/tasks_8hpp.html#ac7aaa4c0605984fc6b92a727881b8707a8d8e53f91997090c4b163b7579f366dd",
-"d4/ddc/isr_8hpp.html#af4ae10cea59f9bb2f79c13b8036d81f1",
-"d7/d9c/_arch_8hpp_source.html",
-"da/de0/struct_arch_1_1_memory_1_1_table_entry.html#aeb9a7a86f9cbf4c8f01bff30d9307895",
+"d4/ddc/isr_8hpp.html#af106b9a26e06abf17eebb6f7ae54f905",
+"d7/d9c/_arch_8hpp.html#affa86e64ef5d7b52dffad4ffd6448962",
+"db/d2f/namespace_memory.html",
 "df/d94/structregisters.html#a9cc3091e4c0f25d142ac74443dc8d384"
 ];
 

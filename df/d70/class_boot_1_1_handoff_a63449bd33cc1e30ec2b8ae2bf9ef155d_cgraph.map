@@ -1,6 +1,6 @@
 <map id="Boot::Handoff::Handoff" name="Boot::Handoff::Handoff">
 <area shape="rect" id="node1" title=" " alt="" coords="5,56,176,83"/>
-<area shape="rect" id="node2" href="$d5/df3/sys_2panic_8cpp.html#a51ef3f9bd6cd14d744e31d392b445b33" title="Halt the system and print the provided message on the panic screen." alt="" coords="564,5,621,32"/>
+<area shape="rect" id="node2" href="$d6/d1e/panic_8cpp.html#a51ef3f9bd6cd14d744e31d392b445b33" title="Halt the system and print the provided message on the panic screen." alt="" coords="564,5,621,32"/>
 <area shape="rect" id="node3" href="$df/d70/class_boot_1_1_handoff.html#a660bc107223f5e3bf5b8c4604fed265c" title=" " alt="" coords="224,107,449,133"/>
 <area shape="rect" id="node8" href="$df/d70/class_boot_1_1_handoff.html#aa2d1c752220db05f3602f99d07d0dca3" title=" " alt="" coords="233,56,441,83"/>
 <area shape="rect" id="node4" href="$d0/dea/class_memory_1_1_memory_map.html#aec59c14e6071767b7436058e91f45f43" title="Returns the max number of memory sections allowed in a MemoryMap." alt="" coords="506,107,679,149"/>

@@ -1,9 +1,9 @@
 <map id="gdt.hpp" name="gdt.hpp">
 <area shape="rect" id="node1" title="The Global Descriptor Table (GDT) is specific to the IA32 architecture. It contains entries telling t..." alt="" coords="20,5,91,32"/>
-<area shape="rect" id="node2" title=" " alt="" coords="149,229,220,256"/>
-<area shape="rect" id="node3" href="$d7/dcf/_arch_8i686_8hpp.html" title="i686 architecture implementation of Arch.hpp" alt="" coords="104,80,279,107"/>
-<area shape="rect" id="node4" href="$d8/dfb/regs_8hpp.html" title=" " alt="" coords="355,155,497,181"/>
-<area shape="rect" id="node6" href="$d8/d9f/ports_8hpp.html" title="Ports header file. Provides inline functions for getting and setting values at different ports...." alt="" coords="30,155,177,181"/>
-<area shape="rect" id="node7" href="$d4/ddc/isr_8hpp.html" title="Interrupt Service Routine header." alt="" coords="201,155,331,181"/>
-<area shape="rect" id="node5" title=" " alt="" coords="389,229,463,256"/>
+<area shape="rect" id="node2" title=" " alt="" coords="152,229,223,256"/>
+<area shape="rect" id="node3" href="$d7/dcf/_arch_8i686_8hpp.html" title="i686 architecture implementation of Arch.hpp" alt="" coords="105,80,281,107"/>
+<area shape="rect" id="node4" href="$d8/dfb/regs_8hpp.html" title=" " alt="" coords="359,155,501,181"/>
+<area shape="rect" id="node6" href="$d8/d9f/ports_8hpp.html" title="Ports header file. Provides inline functions for getting and setting values at different ports...." alt="" coords="31,155,179,181"/>
+<area shape="rect" id="node7" href="$d4/ddc/isr_8hpp.html" title="Interrupt Service Routine header." alt="" coords="203,155,334,181"/>
+<area shape="rect" id="node5" title=" " alt="" coords="393,229,467,256"/>
 </map>

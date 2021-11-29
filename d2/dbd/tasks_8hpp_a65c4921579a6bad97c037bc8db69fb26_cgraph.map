@@ -2,5 +2,5 @@
 <area shape="rect" id="node1" title="Creates a new kernel task with a provided entry point, register storage struct, and task state struct..." alt="" coords="5,56,96,83"/>
 <area shape="rect" id="node2" href="$da/d45/heap_8hpp.html#a1c8580582aae58105f16108d4ec89e9a" title=" " alt="" coords="181,5,248,32"/>
 <area shape="rect" id="node3" href="$db/d2f/namespace_memory.html#ab679821559b51954042eb0715edd518f" title="Returns a new page in memory for use. If less than one page is requested, exactly one page will be al..." alt="" coords="144,56,285,83"/>
-<area shape="rect" id="node4" href="$d5/df3/sys_2panic_8cpp.html#a51ef3f9bd6cd14d744e31d392b445b33" title="Halt the system and print the provided message on the panic screen." alt="" coords="186,107,243,133"/>
+<area shape="rect" id="node4" href="$d6/d1e/panic_8cpp.html#a51ef3f9bd6cd14d744e31d392b445b33" title="Halt the system and print the provided message on the panic screen." alt="" coords="186,107,243,133"/>
 </map>

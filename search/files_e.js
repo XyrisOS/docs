@@ -7,7 +7,5 @@ var searchData=
   ['time_2ehpp_1017',['time.hpp',['../de/d99/time_8hpp.html',1,'']]],
   ['timer_2ecpp_1018',['timer.cpp',['../dc/de5/timer_8cpp.html',1,'']]],
   ['timer_2ehpp_1019',['timer.hpp',['../df/d05/timer_8hpp.html',1,'']]],
-  ['trace_2ecpp_1020',['trace.cpp',['../d9/d55/trace_8cpp.html',1,'']]],
-  ['trace_2ehpp_1021',['trace.hpp',['../d4/db9/trace_8hpp.html',1,'']]],
-  ['tss_2ehpp_1022',['tss.hpp',['../d2/d59/tss_8hpp.html',1,'']]]
+  ['tss_2ehpp_1020',['tss.hpp',['../d2/d59/tss_8hpp.html',1,'']]]
 ];
