@@ -1,7 +1,5 @@
 var NAVTREEINDEX4 =
 {
-"db/d2f/namespace_memory.html":[0,1,6],
-"db/d2f/namespace_memory.html":[1,0,4],
 "db/d82/class_boot_1_1_handoff_c_p_u_descriptor.html":[1,0,1,2],
 "db/d82/class_boot_1_1_handoff_c_p_u_descriptor.html#a190a6628a6ce9bfa45a140531e48ea5a":[1,0,1,2,11],
 "db/d82/class_boot_1_1_handoff_c_p_u_descriptor.html#a3ff59a86e9510182604def406631f80c":[1,0,1,2,2],
@@ -120,9 +118,9 @@ var NAVTREEINDEX4 =
 "dd/dd2/class_arch_1_1_memory_1_1_address.html#ae0bd9e19e7988e11939597c139ebdca4":[1,0,0,0,0,3],
 "dd/dd2/class_arch_1_1_memory_1_1_address.html#ae2f3233cf33da608a132518d8e29a7de":[1,0,0,0,0,0],
 "dd/dd2/class_arch_1_1_memory_1_1_address.html#af2022438914c43840e887b11459c6ceb":[1,0,0,0,0,8],
+"de/d60/stivale2_8s.html":[2,0,79],
+"de/d60/stivale2_8s_source.html":[2,0,79],
 "de/d66/namespace_stack.html":[0,1,10],
-"de/d82/flush_8_s.html":[2,0,21],
-"de/d82/flush_8_s_source.html":[2,0,21],
 "de/d90/heap_8cpp.html":[2,0,33],
 "de/d90/heap_8cpp.html#a8b5670e4594b0b6f8be78fe17f0c3b53":[2,0,33,2],
 "de/d90/heap_8cpp.html#ab960c2afdba023ada594c57e8fe9ed8b":[2,0,33,1],
@@ -249,5 +247,7 @@ var NAVTREEINDEX4 =
 "df/d94/structregisters.html#a7d73555c87de229a90292640f544ab27":[1,0,13,0],
 "df/d94/structregisters.html#a806ec3ba0cf965d456601aea4c039ec3":[1,0,13,1],
 "df/d94/structregisters.html#a8d156d1d27fcb1c2f2bbcce1a784431f":[1,0,13,3],
-"df/d94/structregisters.html#a8da011d75d93d36da6c4cf28e1fa3179":[1,0,13,11]
+"df/d94/structregisters.html#a8da011d75d93d36da6c4cf28e1fa3179":[1,0,13,11],
+"df/d94/structregisters.html#a9cc3091e4c0f25d142ac74443dc8d384":[1,0,13,12],
+"df/d94/structregisters.html#aa8989b2fef42dca1d656f724eb324f51":[1,0,13,4]
 };

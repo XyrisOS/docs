@@ -81,7 +81,7 @@ var searchData=
   ['stdio_2ehpp_737',['stdio.hpp',['../d2/daf/stdio_8hpp.html',1,'']]],
   ['stivale_2ecpp_738',['stivale.cpp',['../da/de5/stivale_8cpp.html',1,'']]],
   ['stivale2_739',['Stivale2',['../da/d80/namespace_boot.html#a43a46383cc6356be2c30e027f54ef211a85e9e19873eb8f3dbcff80682b807d3b',1,'Boot']]],
-  ['stivale2_2es_740',['stivale2.S',['../d8/da4/stivale2_8_s.html',1,'']]],
+  ['stivale2_2es_740',['stivale2.s',['../de/d60/stivale2_8s.html',1,'']]],
   ['stivale2_5fmmap_5fhelper_741',['stivale2_mmap_helper',['../d5/d6c/boothelp_8cpp.html#a57a1896409edf2efbb2442444cc249d4',1,'boothelp.cpp']]],
   ['strcat_742',['strcat',['../d5/d24/string_8cpp.html#adb8723e585ed29f2370cddf90f6891bc',1,'strcat(char *dest, const char *src):&#160;string.cpp'],['../d4/da0/string_8hpp.html#adb8723e585ed29f2370cddf90f6891bc',1,'strcat(char *dest, const char *src):&#160;string.cpp']]],
   ['strcmp_743',['strcmp',['../d5/d24/string_8cpp.html#a11bd144d7d44914099a3aeddf1c8567d',1,'strcmp(const char *s1, const char *s2):&#160;string.cpp'],['../d4/da0/string_8hpp.html#a11bd144d7d44914099a3aeddf1c8567d',1,'strcmp(const char *s1, const char *s2):&#160;string.cpp']]],

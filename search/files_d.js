@@ -11,7 +11,7 @@ var searchData=
   ['stacktrace_2ehpp_1009',['Stacktrace.hpp',['../de/df5/_stacktrace_8hpp.html',1,'']]],
   ['stdio_2ehpp_1010',['stdio.hpp',['../d2/daf/stdio_8hpp.html',1,'']]],
   ['stivale_2ecpp_1011',['stivale.cpp',['../da/de5/stivale_8cpp.html',1,'']]],
-  ['stivale2_2es_1012',['stivale2.S',['../d8/da4/stivale2_8_s.html',1,'']]],
+  ['stivale2_2es_1012',['stivale2.s',['../de/d60/stivale2_8s.html',1,'']]],
   ['string_2ecpp_1013',['string.cpp',['../d5/d24/string_8cpp.html',1,'']]],
   ['string_2ehpp_1014',['string.hpp',['../d4/da0/string_8hpp.html',1,'']]]
 ];

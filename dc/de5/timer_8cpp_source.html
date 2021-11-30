@@ -132,7 +132,7 @@ $(document).ready(function(){initNavTree('dc/de5/timer_8cpp_source.html','../../
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> timer_callback(<span class="keyword">struct</span> <a class="code" href="../../df/d94/structregisters.html">registers</a> *regs) {</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    (void)regs;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="../../dc/de5/timer_8cpp.html#a8c702713be164664bf7d3c5f9cc9002d">timer_tick</a>++;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="../../dc/de5/timer_8cpp.html#a8c702713be164664bf7d3c5f9cc9002d">timer_tick</a> = <a class="code" href="../../dc/de5/timer_8cpp.html#a8c702713be164664bf7d3c5f9cc9002d">timer_tick</a> + 1;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; _callback_count; i++) {</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        _callbacks[i]();</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    }</div>

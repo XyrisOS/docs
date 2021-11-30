@@ -33,7 +33,7 @@ var searchData=
   ['black_111',['Black',['../d8/db5/namespace_console.html#a135ef081521e01318dac5033197c6509a74a17ea3fbf0c882e4bc985c22a3199b',1,'Console']]],
   ['blue_112',['Blue',['../d8/db5/namespace_console.html#a135ef081521e01318dac5033197c6509af6c483f92f3d96e26f2d31d384faa438',1,'Console']]],
   ['boot_113',['Boot',['../da/d80/namespace_boot.html',1,'']]],
-  ['boot_2es_114',['boot.S',['../d8/d6a/boot_8_s.html',1,'']]],
+  ['boot_2es_114',['boot.s',['../d3/daf/boot_8s.html',1,'']]],
   ['boothelp_2ecpp_115',['boothelp.cpp',['../d5/d6c/boothelp_8cpp.html',1,'']]],
   ['bootloader_116',['Bootloader',['../db/d2f/namespace_memory.html#a9193c3e610b1728964440284db90c812a63044bd4932913253f39b10932d47c36',1,'Memory']]],
   ['boottype_117',['BootType',['../df/d70/class_boot_1_1_handoff.html#aa25cb451a589997db2d910a5f1697c98',1,'Boot::Handoff']]],

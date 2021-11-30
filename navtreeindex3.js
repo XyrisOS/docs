@@ -1,5 +1,9 @@
 var NAVTREEINDEX3 =
 {
+"d7/d9c/_arch_8hpp.html#a85dcde91876c9d4f28baf43399cda7f4":[2,0,2,6],
+"d7/d9c/_arch_8hpp.html#a8941628074d88629830ffd379a107588":[2,0,2,3],
+"d7/d9c/_arch_8hpp.html#a92a5b423617ad7e5f935fe94915dc29b":[2,0,2,7],
+"d7/d9c/_arch_8hpp.html#adadc066eb66ab14bf5a31d5b31eeaee2":[2,0,2,4],
 "d7/d9c/_arch_8hpp.html#affa86e64ef5d7b52dffad4ffd6448962":[2,0,2,9],
 "d7/d9c/_arch_8hpp_source.html":[2,0,2],
 "d7/dae/errno_8hpp.html":[2,0,20],
@@ -22,8 +26,6 @@ var NAVTREEINDEX3 =
 "d7/de6/gdt_8cpp_source.html":[2,0,27],
 "d8/d3a/struct_arch_1_1_memory_1_1_directory.html":[1,0,0,0,1],
 "d8/d3a/struct_arch_1_1_memory_1_1_directory.html#af03389824e1454d1c45bf81d5c1fdeab":[1,0,0,0,1,0],
-"d8/d6a/boot_8_s.html":[2,0,9],
-"d8/d6a/boot_8_s_source.html":[2,0,9],
 "d8/d7f/class_memory_1_1_section.html":[1,0,4,2],
 "d8/d7f/class_memory_1_1_section.html#a0173706432c596ad1867b3520bfad83f":[1,0,4,2,10],
 "d8/d7f/class_memory_1_1_section.html#a030e25fe6a03b5f0bb1d8415fe81c1c8":[1,0,4,2,13],
@@ -50,8 +52,6 @@ var NAVTREEINDEX3 =
 "d8/d9f/ports_8hpp.html#abe6bbb9f5323b32d7158c08c0920d0a1":[2,0,56,2],
 "d8/d9f/ports_8hpp.html#aecbddae5080adf82c5938a97695cdc3e":[2,0,56,0],
 "d8/d9f/ports_8hpp_source.html":[2,0,56],
-"d8/da4/stivale2_8_s.html":[2,0,79],
-"d8/da4/stivale2_8_s_source.html":[2,0,79],
 "d8/da6/mutex_8hpp.html":[2,0,48],
 "d8/da6/mutex_8hpp_source.html":[2,0,48],
 "d8/db5/namespace_console.html":[0,1,3],
@@ -227,8 +227,6 @@ var NAVTREEINDEX3 =
 "da/d45/heap_8hpp_source.html":[2,0,34],
 "da/d80/namespace_boot.html":[1,0,1],
 "da/d80/namespace_boot.html":[0,1,2],
-"da/da2/crtn_8_s.html":[2,0,15],
-"da/da2/crtn_8_s_source.html":[2,0,15],
 "da/da5/spkr_8cpp.html":[2,0,73],
 "da/da5/spkr_8cpp.html#a5ec9ba996adeac895598eb8eb8e2b19b":[2,0,73,0],
 "da/da5/spkr_8cpp_source.html":[2,0,73],
@@ -249,5 +247,7 @@ var NAVTREEINDEX3 =
 "da/de0/struct_arch_1_1_memory_1_1_table_entry.html#adcf2f5aed8e28dc5ad32c67c8abb5b5d":[1,0,0,0,6,0],
 "da/de0/struct_arch_1_1_memory_1_1_table_entry.html#aeb9a7a86f9cbf4c8f01bff30d9307895":[1,0,0,0,6,6],
 "da/de5/stivale_8cpp.html":[2,0,78],
-"da/de5/stivale_8cpp_source.html":[2,0,78]
+"da/de5/stivale_8cpp_source.html":[2,0,78],
+"db/d2f/namespace_memory.html":[0,1,6],
+"db/d2f/namespace_memory.html":[1,0,4]
 };

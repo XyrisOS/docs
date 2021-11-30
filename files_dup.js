@@ -13,19 +13,19 @@ var files_dup =
     [ "Bitset.hpp", "d9/d35/_bitset_8hpp.html", [
       [ "Bitset", "d6/d09/class_bitset.html", "d6/d09/class_bitset" ]
     ] ],
-    [ "boot.S", "d8/d6a/boot_8_s.html", null ],
+    [ "boot.s", "d3/daf/boot_8s.html", null ],
     [ "boothelp.cpp", "d5/d6c/boothelp_8cpp.html", "d5/d6c/boothelp_8cpp" ],
     [ "compiler.hpp", "d2/d3d/compiler_8hpp.html", "d2/d3d/compiler_8hpp" ],
     [ "console.cpp", "d9/dda/console_8cpp.html", "d9/dda/console_8cpp" ],
     [ "console.hpp", "d5/ddc/console_8hpp.html", "d5/ddc/console_8hpp" ],
-    [ "crti.S", "d0/d15/crti_8_s.html", null ],
-    [ "crtn.S", "da/da2/crtn_8_s.html", null ],
+    [ "crti.s", "d1/d76/crti_8s.html", null ],
+    [ "crtn.s", "d4/da6/crtn_8s.html", null ],
     [ "cxx.cpp", "d1/dd1/cxx_8cpp.html", "d1/dd1/cxx_8cpp" ],
     [ "defines.hpp", "db/df8/defines_8hpp.html", "db/df8/defines_8hpp" ],
     [ "Entry.cpp", "d4/d01/_entry_8cpp.html", "d4/d01/_entry_8cpp" ],
     [ "errno.cpp", "d1/db0/errno_8cpp.html", "d1/db0/errno_8cpp" ],
     [ "errno.hpp", "d7/dae/errno_8hpp.html", "d7/dae/errno_8hpp" ],
-    [ "flush.S", "de/d82/flush_8_s.html", null ],
+    [ "flush.s", "d7/d00/flush_8s.html", null ],
     [ "font.cpp", "dd/d53/font_8cpp.html", "dd/d53/font_8cpp" ],
     [ "font.hpp", "df/d50/font_8hpp.html", "df/d50/font_8hpp" ],
     [ "framebuffer.cpp", "d3/dd6/framebuffer_8cpp.html", "d3/dd6/framebuffer_8cpp" ],
@@ -43,7 +43,7 @@ var files_dup =
     [ "heap.hpp", "da/d45/heap_8hpp.html", "da/d45/heap_8hpp" ],
     [ "idt.cpp", "d9/d87/idt_8cpp.html", "d9/d87/idt_8cpp" ],
     [ "idt.hpp", "dd/d12/idt_8hpp.html", "dd/d12/idt_8hpp" ],
-    [ "interrupt.S", "d6/d3b/interrupt_8_s.html", null ],
+    [ "interrupt.s", "d6/dcb/interrupt_8s.html", null ],
     [ "isr.cpp", "d3/d68/isr_8cpp.html", "d3/d68/isr_8cpp" ],
     [ "isr.hpp", "d4/ddc/isr_8hpp.html", "d4/ddc/isr_8hpp" ],
     [ "LinkedList.hpp", "d5/d72/_linked_list_8hpp.html", [
@@ -57,7 +57,7 @@ var files_dup =
       [ "MemoryMap", "d0/dea/class_memory_1_1_memory_map.html", "d0/dea/class_memory_1_1_memory_map" ]
     ] ],
     [ "MemorySection.hpp", "d0/d91/_memory_section_8hpp.html", "d0/d91/_memory_section_8hpp" ],
-    [ "multiboot2.S", "d3/d22/multiboot2_8_s.html", null ],
+    [ "multiboot2.s", "df/d9b/multiboot2_8s.html", null ],
     [ "mutex.cpp", "d0/dbb/mutex_8cpp.html", null ],
     [ "mutex.hpp", "d8/da6/mutex_8hpp.html", [
       [ "Mutex", "d4/de8/class_mutex.html", "d4/de8/class_mutex" ]
@@ -96,12 +96,12 @@ var files_dup =
     [ "Stacktrace.hpp", "de/df5/_stacktrace_8hpp.html", "de/df5/_stacktrace_8hpp" ],
     [ "stdio.hpp", "d2/daf/stdio_8hpp.html", "d2/daf/stdio_8hpp" ],
     [ "stivale.cpp", "da/de5/stivale_8cpp.html", null ],
-    [ "stivale2.S", "d8/da4/stivale2_8_s.html", null ],
+    [ "stivale2.s", "de/d60/stivale2_8s.html", null ],
     [ "string.cpp", "d5/d24/string_8cpp.html", "d5/d24/string_8cpp" ],
     [ "string.hpp", "d4/da0/string_8hpp.html", "d4/da0/string_8hpp" ],
     [ "tasks.cpp", "d5/d9d/tasks_8cpp.html", "d5/d9d/tasks_8cpp" ],
     [ "tasks.hpp", "d2/dbd/tasks_8hpp.html", "d2/dbd/tasks_8hpp" ],
-    [ "tasks.S", "d5/d2b/tasks_8_s.html", null ],
+    [ "tasks.s", "d0/d29/tasks_8s.html", null ],
     [ "time.cpp", "de/daf/time_8cpp.html", null ],
     [ "time.hpp", "de/d99/time_8hpp.html", [
       [ "TimeDescriptor", "d9/dfc/class_time_1_1_time_descriptor.html", "d9/dfc/class_time_1_1_time_descriptor" ]

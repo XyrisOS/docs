@@ -1,5 +1,7 @@
 var NAVTREEINDEX1 =
 {
+"d2/dbd/tasks_8hpp.html#ac7aaa4c0605984fc6b92a727881b8707":[2,0,83,6],
+"d2/dbd/tasks_8hpp.html#ac7aaa4c0605984fc6b92a727881b8707a1ca002103407b5faf981791ccde80582":[2,0,83,6,1],
 "d2/dbd/tasks_8hpp.html#ac7aaa4c0605984fc6b92a727881b8707a8d8e53f91997090c4b163b7579f366dd":[2,0,83,6,0],
 "d2/dbd/tasks_8hpp.html#ac8fc9f801e5cc9d86d6801f003fd4a24":[2,0,83,19],
 "d2/dbd/tasks_8hpp.html#ae954d27107c4990313982108234cae5d":[2,0,83,8],
@@ -9,8 +11,6 @@ var NAVTREEINDEX1 =
 "d3/d1c/structidt__register.html":[1,0,11],
 "d3/d1c/structidt__register.html#a9bf562fd7cf1a23e33c626b7126350c8":[1,0,11,0],
 "d3/d1c/structidt__register.html#addcddefbaf3d52c48d45ffac5178b4a0":[1,0,11,1],
-"d3/d22/multiboot2_8_s.html":[2,0,46],
-"d3/d22/multiboot2_8_s_source.html":[2,0,46],
 "d3/d68/isr_8cpp.html":[2,0,38],
 "d3/d68/isr_8cpp.html#a06022cf75d142df7848a7bb47a09a7d5":[2,0,38,6],
 "d3/d68/isr_8cpp.html#a1f4d04756199c67f69acd61e22904a70":[2,0,38,4],
@@ -20,6 +20,8 @@ var NAVTREEINDEX1 =
 "d3/d68/isr_8cpp.html#acc90c1ac3bbcb4fc45ccda7cde4882c7":[2,0,38,3],
 "d3/d68/isr_8cpp.html#aed0ecf87a0ed3270ce0e9c68cd01a946":[2,0,38,2],
 "d3/d68/isr_8cpp_source.html":[2,0,38],
+"d3/daf/boot_8s.html":[2,0,9],
+"d3/daf/boot_8s_source.html":[2,0,9],
 "d3/dd6/framebuffer_8cpp.html":[2,0,24],
 "d3/dd6/framebuffer_8cpp.html#af129f7076fdd0d3a4f109a652a0ba8ec":[2,0,24,0],
 "d3/dd6/framebuffer_8cpp_source.html":[2,0,24],
@@ -113,6 +115,8 @@ var NAVTREEINDEX1 =
 "d4/da0/string_8hpp.html#adb8723e585ed29f2370cddf90f6891bc":[2,0,81,6],
 "d4/da0/string_8hpp.html#ae1e87cf0776db5e2c3f9350b61e56000":[2,0,81,11],
 "d4/da0/string_8hpp_source.html":[2,0,81],
+"d4/da6/crtn_8s.html":[2,0,15],
+"d4/da6/crtn_8s_source.html":[2,0,15],
 "d4/db1/gcc_8cpp.html":[2,0,26],
 "d4/db1/gcc_8cpp.html#a051883e0ce55ef4ec9e2ac77874d4e5c":[2,0,26,1],
 "d4/db1/gcc_8cpp.html#a17b0c1b06985967e1477112366945404":[2,0,26,2],
@@ -245,9 +249,5 @@ var NAVTREEINDEX1 =
 "d4/ddc/isr_8hpp.html#acc90c1ac3bbcb4fc45ccda7cde4882c7":[2,0,39,54],
 "d4/ddc/isr_8hpp.html#ad16b5f77287df551e63d3f0c67f8f75d":[2,0,39,31],
 "d4/ddc/isr_8hpp.html#ad97e98084cbcdc21bf03ba314dc243e0":[2,0,39,40],
-"d4/ddc/isr_8hpp.html#adbe0f253d11eeb032b3612c8732fb76e":[2,0,39,3],
-"d4/ddc/isr_8hpp.html#add0980c10028b377643da169e52e5be7":[2,0,39,28],
-"d4/ddc/isr_8hpp.html#ae685c5ca5ed9c9c5e7d297ad8d14de49":[2,0,39,30],
-"d4/ddc/isr_8hpp.html#aeab0ed9ae661801c25f7dc9089c19f72":[2,0,39,21],
-"d4/ddc/isr_8hpp.html#aed0ecf87a0ed3270ce0e9c68cd01a946":[2,0,39,53]
+"d4/ddc/isr_8hpp.html#adbe0f253d11eeb032b3612c8732fb76e":[2,0,39,3]
 };
