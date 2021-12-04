@@ -1,0 +1,8 @@
+<map id="Memory::Physical::PhysicalManager::isFree" name="Memory::Physical::PhysicalManager::isFree">
+<area shape="rect" id="node1" title=" " alt="" coords="5,57,204,98"/>
+<area shape="rect" id="node2" href="$d8/d7f/class_memory_1_1_section.html#aeacf47ee881cc66130ddcac9a2e51ac2" title=" " alt="" coords="266,5,437,32"/>
+<area shape="rect" id="node3" href="$d6/d53/class_memory_1_1_physical_1_1_physical_manager.html#a830f3274f07d5a97c3240dbf20c682f6" title=" " alt="" coords="252,57,451,98"/>
+<area shape="rect" id="node5" href="$d8/d7f/class_memory_1_1_section.html#ad6b2480c725438f4946dfef5cbf172f4" title=" " alt="" coords="262,123,441,149"/>
+<area shape="rect" id="node4" href="$d6/d09/class_bitset.html#a64c214a1b53eecdfcc713fc1e2462c6d" title="Return the value of the bit at the given position." alt="" coords="534,64,629,91"/>
+<area shape="rect" id="node6" href="$d8/d7f/class_memory_1_1_section.html#ab0ffe318d1627a1613688fc3e622fd21" title=" " alt="" coords="499,123,664,149"/>
+</map>

@@ -15,7 +15,6 @@ var files_dup =
     ] ],
     [ "boot.s", "d3/daf/boot_8s.html", null ],
     [ "boothelp.cpp", "d5/d6c/boothelp_8cpp.html", "d5/d6c/boothelp_8cpp" ],
-    [ "compiler.hpp", "d2/d3d/compiler_8hpp.html", "d2/d3d/compiler_8hpp" ],
     [ "console.cpp", "d9/dda/console_8cpp.html", "d9/dda/console_8cpp" ],
     [ "console.hpp", "d5/ddc/console_8hpp.html", "d5/ddc/console_8hpp" ],
     [ "crti.s", "d1/d76/crti_8s.html", null ],

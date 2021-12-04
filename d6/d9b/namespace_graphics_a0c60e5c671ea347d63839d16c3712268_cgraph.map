@@ -2,12 +2,12 @@
 <area shape="rect" id="node1" title="Draws and fills a rectangle of a given width and height, and color at the provided coordinates." alt="" coords="5,274,139,301"/>
 <area shape="rect" id="node2" href="$d6/d9b/namespace_graphics.html#a9a087c9e0e221a9939cbe6b958171886" title="Draws a pixel at a given coordinate." alt="" coords="188,177,307,203"/>
 <area shape="rect" id="node8" href="$d6/d9b/namespace_graphics.html#afb7733fe050948fc3a09cd9a87071ffc" title="Swap the data on backbuffer to memory video buffer and show in the screen." alt="" coords="187,339,308,366"/>
-<area shape="rect" id="node3" href="$d0/dcb/class_graphics_1_1_framebuffer.html#a5e05c50e2f80ac599bf8a3f44c1ec076" title=" " alt="" coords="356,5,523,47"/>
-<area shape="rect" id="node4" href="$d0/dcb/class_graphics_1_1_framebuffer.html#a73d1c153ef281443e94ae0ad3a4fdf3e" title=" " alt="" coords="356,71,523,112"/>
-<area shape="rect" id="node5" href="$d0/dcb/class_graphics_1_1_framebuffer.html#a4b6694a0728b42872a51eb15a631cd51" title=" " alt="" coords="356,267,523,308"/>
-<area shape="rect" id="node6" href="$d0/dcb/class_graphics_1_1_framebuffer.html#af6383d53d6a69242b6eb8e56067f4d19" title=" " alt="" coords="356,136,523,177"/>
-<area shape="rect" id="node7" href="$d0/dcb/class_graphics_1_1_framebuffer.html#af04917a01257164d99f15d84a1f67e9f" title=" " alt="" coords="356,201,523,243"/>
-<area shape="rect" id="node9" href="$d0/dcb/class_graphics_1_1_framebuffer.html#af62e5c11c830410a3213e2b17075b158" title=" " alt="" coords="356,332,523,373"/>
-<area shape="rect" id="node10" href="$d0/dcb/class_graphics_1_1_framebuffer.html#a1056e91da94b6937b0a6deeb3a859368" title=" " alt="" coords="356,397,523,439"/>
+<area shape="rect" id="node3" href="$d0/dcb/class_graphics_1_1_framebuffer.html#a724257bdae8cdae7f6ef734923428fa3" title=" " alt="" coords="356,5,523,47"/>
+<area shape="rect" id="node4" href="$d0/dcb/class_graphics_1_1_framebuffer.html#a31b013707953364629fa4582d6359d34" title=" " alt="" coords="356,71,523,112"/>
+<area shape="rect" id="node5" href="$d0/dcb/class_graphics_1_1_framebuffer.html#aeedf42e466d9ecd793a424cf63430f83" title=" " alt="" coords="356,267,523,308"/>
+<area shape="rect" id="node6" href="$d0/dcb/class_graphics_1_1_framebuffer.html#a33af89567e49cda027dc4d3a585cd6cf" title=" " alt="" coords="356,136,523,177"/>
+<area shape="rect" id="node7" href="$d0/dcb/class_graphics_1_1_framebuffer.html#ac338b5201b3dead60ea4d9358da09cca" title=" " alt="" coords="356,201,523,243"/>
+<area shape="rect" id="node9" href="$d0/dcb/class_graphics_1_1_framebuffer.html#a3e4ac4d4ddcf0d27cc22f6494aba3ae7" title=" " alt="" coords="356,332,523,373"/>
+<area shape="rect" id="node10" href="$d0/dcb/class_graphics_1_1_framebuffer.html#a1606867ad41e312ab6ca584da8de85ea" title=" " alt="" coords="356,397,523,439"/>
 <area shape="rect" id="node11" href="$d5/d24/string_8cpp.html#a370712322c794e949c996946f2283ea8" title=" " alt="" coords="400,463,479,490"/>
 </map>

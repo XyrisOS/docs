@@ -1,6 +1,5 @@
 <map id="graphics.hpp" name="graphics.hpp">
-<area shape="rect" id="node1" title=" " alt="" coords="57,5,163,32"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,155,76,181"/>
-<area shape="rect" id="node3" href="$d7/d1a/framebuffer_8hpp.html" title=" " alt="" coords="69,80,311,107"/>
-<area shape="rect" id="node4" href="$d2/d3d/compiler_8hpp.html" title="Compiler meta directives." alt="" coords="110,155,270,181"/>
+<area shape="rect" id="node1" title=" " alt="" coords="9,5,114,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="26,155,97,181"/>
+<area shape="rect" id="node3" href="$d7/d1a/framebuffer_8hpp.html" title=" " alt="" coords="20,80,263,107"/>
 </map>

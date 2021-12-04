@@ -1,0 +1,10 @@
+<map id="Memory::Section::base" name="Memory::Section::base">
+<area shape="rect" id="node1" title=" " alt="" coords="457,148,628,175"/>
+<area shape="rect" id="node2" href="$d8/d7f/class_memory_1_1_section.html#a03b0c93b7c0a5a53d7838d19ab9fe0d2" title=" " alt="" coords="188,5,383,32"/>
+<area shape="rect" id="node3" href="$d6/d53/class_memory_1_1_physical_1_1_physical_manager.html#a94d37dc83d31fe6cbcd7d49875afd7e4" title=" " alt="" coords="186,57,385,98"/>
+<area shape="rect" id="node4" href="$db/d2f/namespace_memory.html#ac18baaf631829c2290bcb0971e8b6fad" title="Map a kernel address range into physical memory." alt="" coords="161,123,409,149"/>
+<area shape="rect" id="node5" href="$db/d2f/namespace_memory.html#a5035c7465eb342a95802a5ec772bebc1" title="Map an address range into the kernel virtual address space." alt="" coords="167,173,404,200"/>
+<area shape="rect" id="node7" href="$d6/d53/class_memory_1_1_physical_1_1_physical_manager.html#ad4702b2c633e077d59a544974e30839c" title=" " alt="" coords="186,225,385,266"/>
+<area shape="rect" id="node8" href="$d6/d53/class_memory_1_1_physical_1_1_physical_manager.html#a2a1aba3973b12be8410b3e15c93ea5a0" title=" " alt="" coords="186,290,385,331"/>
+<area shape="rect" id="node6" href="$d6/d9b/namespace_graphics.html#afc86122297c8c117c8793ddaf246e4ed" title="Initializes the framebuffer (if available)" alt="" coords="5,173,113,200"/>
+</map>

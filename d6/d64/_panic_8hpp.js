@@ -1,6 +1,6 @@
 var _panic_8hpp =
 [
-    [ "__attribute__", "d6/d64/_panic_8hpp.html#a5b070431e38a1e2a0ed4ddf8b7ce5fa0", null ],
-    [ "panic", "d6/d64/_panic_8hpp.html#a51ef3f9bd6cd14d744e31d392b445b33", null ],
-    [ "panic", "d6/d64/_panic_8hpp.html#a74c6eebea2535fcf8bc67f1f88ac8b89", null ]
+    [ "panic", "d6/d64/_panic_8hpp.html#ae22655ba6f328217f1ebd6248ed82727", null ],
+    [ "panic", "d6/d64/_panic_8hpp.html#a034707ef0aa682b901aa0d5961c30c94", null ],
+    [ "panicf", "d6/d64/_panic_8hpp.html#a1f0f35d4cff831364cdc213f096e83e5", null ]
 ];

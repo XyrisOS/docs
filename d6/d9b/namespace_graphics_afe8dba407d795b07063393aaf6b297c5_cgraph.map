@@ -1,6 +1,6 @@
 <map id="Graphics::resetDoubleBuffer" name="Graphics::resetDoubleBuffer">
 <area shape="rect" id="node1" title="Fill the backbuffer with &#39;0&#39;." alt="" coords="5,78,211,105"/>
-<area shape="rect" id="node2" href="$d0/dcb/class_graphics_1_1_framebuffer.html#a1056e91da94b6937b0a6deeb3a859368" title=" " alt="" coords="259,5,425,47"/>
-<area shape="rect" id="node3" href="$d0/dcb/class_graphics_1_1_framebuffer.html#a4b6694a0728b42872a51eb15a631cd51" title=" " alt="" coords="259,71,425,112"/>
+<area shape="rect" id="node2" href="$d0/dcb/class_graphics_1_1_framebuffer.html#a1606867ad41e312ab6ca584da8de85ea" title=" " alt="" coords="259,5,425,47"/>
+<area shape="rect" id="node3" href="$d0/dcb/class_graphics_1_1_framebuffer.html#aeedf42e466d9ecd793a424cf63430f83" title=" " alt="" coords="259,71,425,112"/>
 <area shape="rect" id="node4" href="$d5/d24/string_8cpp.html#adc296efabb90c20113d5420e4d162d14" title="Sets the number of bytes in memory at ptr to the value." alt="" coords="304,137,380,163"/>
 </map>

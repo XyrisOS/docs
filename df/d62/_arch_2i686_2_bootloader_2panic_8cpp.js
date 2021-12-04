@@ -22,6 +22,7 @@ var _arch_2i686_2_bootloader_2panic_8cpp =
       [ "BIOS_Yellow", "df/d62/_arch_2i686_2_bootloader_2panic_8cpp.html#a4e312ac7be6e5be8358547d6b52ae402ab9c411140fe45c6e7ce4a9be0c9747a5", null ],
       [ "BIOS_White", "df/d62/_arch_2i686_2_bootloader_2panic_8cpp.html#a4e312ac7be6e5be8358547d6b52ae402ada037471fba3899bcedaf928d0c9ca80", null ]
     ] ],
+    [ "__attribute__", "df/d62/_arch_2i686_2_bootloader_2panic_8cpp.html#af92e620bb82343870076b8a436ff7240", null ],
     [ "early_panic", "df/d62/_arch_2i686_2_bootloader_2panic_8cpp.html#af0e8e99d063b283c9748fc23b69fca94", null ],
     [ "biosVGABuffer", "df/d62/_arch_2i686_2_bootloader_2panic_8cpp.html#a8dae456cfe3ee854dd92492d1808f638", null ]
 ];

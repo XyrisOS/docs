@@ -1,13 +1,12 @@
 <map id="isr.cpp" name="isr.cpp">
-<area shape="rect" id="node1" title=" " alt="" coords="263,5,327,32"/>
-<area shape="rect" id="node2" href="$d7/d9c/_arch_8hpp.html" title="Architecture control and initialization." alt="" coords="147,155,259,181"/>
-<area shape="rect" id="node6" href="$dd/d12/idt_8hpp.html" title="Interrupt Descriptor Table header." alt="" coords="281,80,413,107"/>
-<area shape="rect" id="node10" href="$d4/ddc/isr_8hpp.html" title="Interrupt Service Routine header." alt="" coords="681,229,812,256"/>
-<area shape="rect" id="node11" href="$d6/d64/_panic_8hpp.html" title="Kernel panic management." alt="" coords="121,80,205,107"/>
-<area shape="rect" id="node3" href="$d2/d3d/compiler_8hpp.html" title="Compiler meta directives." alt="" coords="5,229,165,256"/>
-<area shape="rect" id="node4" title=" " alt="" coords="223,304,297,331"/>
-<area shape="rect" id="node5" title=" " alt="" coords="378,304,449,331"/>
-<area shape="rect" id="node7" href="$d7/dcf/_arch_8i686_8hpp.html" title="i686 architecture implementation of Arch.hpp" alt="" coords="495,155,671,181"/>
-<area shape="rect" id="node8" href="$d8/dfb/regs_8hpp.html" title=" " alt="" coords="342,229,485,256"/>
-<area shape="rect" id="node9" href="$d8/d9f/ports_8hpp.html" title="Ports header file. Provides inline functions for getting and setting values at different ports...." alt="" coords="509,229,657,256"/>
+<area shape="rect" id="node1" title=" " alt="" coords="326,5,390,32"/>
+<area shape="rect" id="node2" href="$d7/d9c/_arch_8hpp.html" title="Architecture control and initialization." alt="" coords="28,155,140,181"/>
+<area shape="rect" id="node5" href="$dd/d12/idt_8hpp.html" title="Interrupt Descriptor Table header." alt="" coords="470,80,602,107"/>
+<area shape="rect" id="node9" href="$d4/ddc/isr_8hpp.html" title="Interrupt Service Routine header." alt="" coords="405,229,536,256"/>
+<area shape="rect" id="node10" href="$d6/d64/_panic_8hpp.html" title="Kernel panic management." alt="" coords="276,80,360,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="20,304,94,331"/>
+<area shape="rect" id="node4" title=" " alt="" coords="271,304,342,331"/>
+<area shape="rect" id="node6" href="$d7/dcf/_arch_8i686_8hpp.html" title="i686 architecture implementation of Arch.hpp" alt="" coords="218,155,394,181"/>
+<area shape="rect" id="node7" href="$d8/dfb/regs_8hpp.html" title=" " alt="" coords="66,229,208,256"/>
+<area shape="rect" id="node8" href="$d8/d9f/ports_8hpp.html" title="Ports header file. Provides inline functions for getting and setting values at different ports...." alt="" coords="232,229,380,256"/>
 </map>

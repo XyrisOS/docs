@@ -88,9 +88,9 @@ $(document).ready(function(){initNavTree('dd/d12/idt_8hpp_source.html','../../')
 </div><!--header-->
 <div class="contents">
 <a href="../../dd/d12/idt_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/**</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno"><a class="line" href="../../dd/d12/idt_8hpp.html#ab32c3c62d8962e2f11bdc8bd167b2933">    2</a></span>&#160;<span class="comment"> * @file idt.hpp</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno"><a class="line" href="../../dd/d12/idt_8hpp.html#a1c44289c163c1460544d6ee0900d02ba">    3</a></span>&#160;<span class="comment"> * @author Keeton Feavel (keetonfeavel@cedarville.edu)</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno"><a class="line" href="../../dd/d12/idt_8hpp.html#a4a66c700ff7fdb6daca8d968d8d95acf">    4</a></span>&#160;<span class="comment"> * @brief Interrupt Descriptor Table header.</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * @file idt.hpp</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * @author Keeton Feavel (keetonfeavel@cedarville.edu)</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * @brief Interrupt Descriptor Table header.</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * @version 0.3</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * @date 2019-11-15</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> *</span></div>
@@ -102,7 +102,7 @@ $(document).ready(function(){initNavTree('dd/d12/idt_8hpp_source.html','../../')
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="../../d7/dcf/_arch_8i686_8hpp.html">Arch/i686/Arch.i686.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="../../dd/d12/idt_8hpp.html#aa2585d779da0ab21273a8d92de9a0ebe">   16</a></span>&#160;<span class="comment">/* Segment selectors */</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">/* Segment selectors */</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="../../dd/d12/idt_8hpp.html#ab0b69b822e9207a5960bc07fc3d36ee4">   17</a></span>&#160;<span class="preprocessor">#define KERNEL_CS 0x08</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="../../dd/d12/idt_8hpp.html#a2a59a505aa55f15c152f30f811fbd310">   18</a></span>&#160;<span class="preprocessor">#define IDT_ENTRIES 256</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
@@ -110,7 +110,7 @@ $(document).ready(function(){initNavTree('dd/d12/idt_8hpp_source.html','../../')
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">/* Reference: See mmu.h in XV6 for an alternative to this system where</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment"> * bitfields are used for the uint8_t flag parameter instead of a magic</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment"> * number like we use. */</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="../../d4/d96/structidt__gate.html">   24</a></span>&#160;<span class="keyword">struct </span><a class="code" href="../../d4/d96/structidt__gate.html">idt_gate</a> {</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="../../d4/d96/structidt__gate.html">   24</a></span>&#160;<span class="keyword">struct </span>[[gnu::packed]] <a class="code" href="../../d4/d96/structidt__gate.html">idt_gate</a> {</div>
 <div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="../../d4/d96/structidt__gate.html#adc68f1dda5536cd60231c1104f0a7f25">   25</a></span>&#160;    uint16_t <a class="code" href="../../d4/d96/structidt__gate.html#adc68f1dda5536cd60231c1104f0a7f25">low_offset</a>;    <span class="comment">/* Lower 16 bits of handler function address */</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="../../d4/d96/structidt__gate.html#a839f4d5be34a2cf1c58190f8e7fe2b82">   26</a></span>&#160;    uint16_t <a class="code" href="../../d4/d96/structidt__gate.html#a839f4d5be34a2cf1c58190f8e7fe2b82">selector</a>;      <span class="comment">/* Kernel segment selector */</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="../../d4/d96/structidt__gate.html#aeea412c102b122e54eb1ffdd0aed45e1">   27</a></span>&#160;    uint8_t <a class="code" href="../../d4/d96/structidt__gate.html#aeea412c102b122e54eb1ffdd0aed45e1">always0</a>;</div>
@@ -127,14 +127,14 @@ $(document).ready(function(){initNavTree('dd/d12/idt_8hpp_source.html','../../')
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">     */</span></div>
 <div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="../../d4/d96/structidt__gate.html#a3879edc772ef50bdef9af92eb1ccb970">   39</a></span>&#160;    uint8_t <a class="code" href="../../d4/d96/structidt__gate.html#a3879edc772ef50bdef9af92eb1ccb970">flags</a>;</div>
 <div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="../../d4/d96/structidt__gate.html#a0c61b4d6c08713706583ed45844850be">   40</a></span>&#160;    uint16_t <a class="code" href="../../d4/d96/structidt__gate.html#a0c61b4d6c08713706583ed45844850be">high_offset</a>; <span class="comment">/* Higher 16 bits of handler function address */</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;} <a class="code" href="../../dd/d12/idt_8hpp.html#afeaf6a4fb7238267d61d836363252370">__attribute__</a>((packed));</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;};</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment">/* A pointer to the array of interrupt handlers.</span></div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment"> * Assembly instruction &#39;lidt&#39; will read it */</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="../../d3/d1c/structidt__register.html">   45</a></span>&#160;<span class="keyword">struct </span><a class="code" href="../../d3/d1c/structidt__register.html">idt_register</a> {</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="../../d3/d1c/structidt__register.html">   45</a></span>&#160;<span class="keyword">struct </span>[[gnu::packed]] <a class="code" href="../../d3/d1c/structidt__register.html">idt_register</a> {</div>
 <div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="../../d3/d1c/structidt__register.html#addcddefbaf3d52c48d45ffac5178b4a0">   46</a></span>&#160;    uint16_t <a class="code" href="../../d3/d1c/structidt__register.html#addcddefbaf3d52c48d45ffac5178b4a0">limit</a>;</div>
 <div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="../../d3/d1c/structidt__register.html#a9bf562fd7cf1a23e33c626b7126350c8">   47</a></span>&#160;    uint32_t <a class="code" href="../../d3/d1c/structidt__register.html#a9bf562fd7cf1a23e33c626b7126350c8">base</a>;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;} <a class="code" href="../../dd/d12/idt_8hpp.html#afeaf6a4fb7238267d61d836363252370">__attribute__</a>((packed));</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;};</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">extern</span> <span class="keyword">struct </span><a class="code" href="../../d4/d96/structidt__gate.html">idt_gate</a> <a class="code" href="../../dd/d12/idt_8hpp.html#ad133438f7cd1f36a17e9d0a2524c4b23">idt</a>[<a class="code" href="../../dd/d12/idt_8hpp.html#a2a59a505aa55f15c152f30f811fbd310">IDT_ENTRIES</a>];</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">extern</span> <span class="keyword">struct </span><a class="code" href="../../d3/d1c/structidt__register.html">idt_register</a> <a class="code" href="../../dd/d12/idt_8hpp.html#aa80371998c7f7d27c1846fe165908823">idt_reg</a>;</div>
@@ -167,7 +167,6 @@ $(document).ready(function(){initNavTree('dd/d12/idt_8hpp_source.html','../../')
 <div class="ttc" id="astructidt__gate_html_a3879edc772ef50bdef9af92eb1ccb970"><div class="ttname"><a href="../../d4/d96/structidt__gate.html#a3879edc772ef50bdef9af92eb1ccb970">idt_gate::flags</a></div><div class="ttdeci">uint8_t flags</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d12/idt_8hpp_source.html#l00039">idt.hpp:39</a></div></div>
 <div class="ttc" id="aidt_8hpp_html_aa80371998c7f7d27c1846fe165908823"><div class="ttname"><a href="../../dd/d12/idt_8hpp.html#aa80371998c7f7d27c1846fe165908823">idt_reg</a></div><div class="ttdeci">struct idt_register idt_reg</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d87/idt_8cpp_source.html#l00014">idt.cpp:14</a></div></div>
 <div class="ttc" id="astructidt__gate_html_adc68f1dda5536cd60231c1104f0a7f25"><div class="ttname"><a href="../../d4/d96/structidt__gate.html#adc68f1dda5536cd60231c1104f0a7f25">idt_gate::low_offset</a></div><div class="ttdeci">uint16_t low_offset</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d12/idt_8hpp_source.html#l00025">idt.hpp:25</a></div></div>
-<div class="ttc" id="aidt_8hpp_html_afeaf6a4fb7238267d61d836363252370"><div class="ttname"><a href="../../dd/d12/idt_8hpp.html#afeaf6a4fb7238267d61d836363252370">__attribute__</a></div><div class="ttdeci">struct idt_gate __attribute__((packed))</div></div>
 <div class="ttc" id="astructidt__gate_html"><div class="ttname"><a href="../../d4/d96/structidt__gate.html">idt_gate</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d12/idt_8hpp_source.html#l00024">idt.hpp:24</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

@@ -7,9 +7,9 @@ var panic_8cpp =
     [ "PANIC_MSG_BUF_SZ", "d6/d1e/panic_8cpp.html#a6fd38ab22a679a30dbbe34a694835e43", null ],
     [ "PANIC_REG_BUG_SZ", "d6/d1e/panic_8cpp.html#aaeb595b7c6f6c66d83327d4c9467c609", null ],
     [ "PANIC_REG_DUMP_MSG", "d6/d1e/panic_8cpp.html#a9cde798f0820b304d7c2d6d41e295792", null ],
-    [ "panic", "d6/d1e/panic_8cpp.html#a51ef3f9bd6cd14d744e31d392b445b33", null ],
-    [ "panic", "d6/d1e/panic_8cpp.html#a74c6eebea2535fcf8bc67f1f88ac8b89", null ],
-    [ "panicf", "d6/d1e/panic_8cpp.html#a0d09d76c7f1c89528c69de542c318923", null ],
+    [ "panic", "d6/d1e/panic_8cpp.html#ae22655ba6f328217f1ebd6248ed82727", null ],
+    [ "panic", "d6/d1e/panic_8cpp.html#a034707ef0aa682b901aa0d5961c30c94", null ],
+    [ "panicf", "d6/d1e/panic_8cpp.html#a1f0f35d4cff831364cdc213f096e83e5", null ],
     [ "funnyMessagesForMoo", "d6/d1e/panic_8cpp.html#a134517a70ece73378dbc23472a1df528", null ],
     [ "funnyMessagesForMooSize", "d6/d1e/panic_8cpp.html#a2cc063eb86a43d78812408d08d5797bc", null ]
 ];

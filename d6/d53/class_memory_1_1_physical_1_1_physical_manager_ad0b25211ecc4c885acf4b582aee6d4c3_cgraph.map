@@ -1,6 +1,0 @@
-<map id="Memory::Physical::PhysicalManager::setFree" name="Memory::Physical::PhysicalManager::setFree">
-<area shape="rect" id="node1" title=" " alt="" coords="5,35,204,76"/>
-<area shape="rect" id="node2" href="$d6/d53/class_memory_1_1_physical_1_1_physical_manager.html#a5203dd61fed3aa1ffb0204f560c518f4" title=" " alt="" coords="252,5,451,47"/>
-<area shape="rect" id="node4" href="$d6/d09/class_bitset.html#a332c83d2decb81f8a116f4f0b27c88f2" title="Reset (clear) the bit at the given position." alt="" coords="299,71,404,98"/>
-<area shape="rect" id="node3" href="$d6/d09/class_bitset.html#a597417f1827251afc0b6bfa8001663ce" title="Return the value of the bit at the given position." alt="" coords="499,13,593,39"/>
-</map>

@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['_5f_5fattribute_5f_5f_1023',['__attribute__',['../df/d77/gdt_8hpp.html#ae21df847b32e33e64ba0912dd628e610',1,'__attribute__((packed)):&#160;gdt.hpp'],['../dd/d12/idt_8hpp.html#afeaf6a4fb7238267d61d836363252370',1,'__attribute__((packed)):&#160;idt.hpp'],['../d2/d59/tss_8hpp.html#af0d620c64f9a9b033b5fd51a63edf45f',1,'__attribute__((packed)) tss_entry_t:&#160;tss.hpp'],['../d8/db5/namespace_console.html#a9d9a53178befdb8bf7fe8dbdd0016b61',1,'Console::__attribute__((format(printf, 1, 0))) int vprintf(const char *fmt'],['../d8/db5/namespace_console.html#a4335d326f9c6df0a3264ea1624eb978e',1,'Console::__attribute__((format(printf, 1, 2))) int printf(const char *fmt'],['../d7/d75/namespace_r_s232.html#a4040c686bfe77f0767799c234387a911',1,'RS232::__attribute__((format(printf, 1, 2))) int printf(const char *format'],['../d7/d75/namespace_r_s232.html#ab401a3900477927fd33971424c365f53',1,'RS232::__attribute__((format(printf, 1, 0))) int vprintf(const char *fmt'],['../d6/d64/_panic_8hpp.html#a5b070431e38a1e2a0ed4ddf8b7ce5fa0',1,'__attribute__():&#160;Panic.hpp']]],
-  ['_5f_5fcxa_5fpure_5fvirtual_1024',['__cxa_pure_virtual',['../d4/db1/gcc_8cpp.html#a6be7d9ce80c86f5178635fa86c2dd5e7',1,'gcc.cpp']]],
-  ['_5f_5fstack_5fchk_5ffail_1025',['__stack_chk_fail',['../d4/db1/gcc_8cpp.html#a051883e0ce55ef4ec9e2ac77874d4e5c',1,'gcc.cpp']]],
-  ['_5ftasks_5fenqueue_5fready_1026',['_tasks_enqueue_ready',['../d5/d9d/tasks_8cpp.html#a28a181f075e53e9f4a57998ca5a2b399',1,'tasks.cpp']]],
-  ['_5fwakeup_1027',['_wakeup',['../d5/d9d/tasks_8cpp.html#a2c709360390e2764996020567dd70dfd',1,'tasks.cpp']]]
+  ['_5f_5fattribute_5f_5f_1011',['__attribute__',['../d5/d6c/boothelp_8cpp.html#ac3c8a7c4c2366fada31ce261dcf81963',1,'__attribute__((section(&quot;.early_text&quot;))) stivale2_mmap_helper(void *baseaddr):&#160;boothelp.cpp'],['../df/d62/_arch_2i686_2_bootloader_2panic_8cpp.html#af92e620bb82343870076b8a436ff7240',1,'__attribute__((section(&quot;.early_text&quot;))) early_panic(const char *str):&#160;panic.cpp']]],
+  ['_5f_5fcxa_5fpure_5fvirtual_1012',['__cxa_pure_virtual',['../d4/db1/gcc_8cpp.html#a6be7d9ce80c86f5178635fa86c2dd5e7',1,'gcc.cpp']]],
+  ['_5f_5fstack_5fchk_5ffail_1013',['__stack_chk_fail',['../d4/db1/gcc_8cpp.html#a051883e0ce55ef4ec9e2ac77874d4e5c',1,'gcc.cpp']]],
+  ['_5ftasks_5fenqueue_5fready_1014',['_tasks_enqueue_ready',['../d5/d9d/tasks_8cpp.html#a28a181f075e53e9f4a57998ca5a2b399',1,'tasks.cpp']]],
+  ['_5fwakeup_1015',['_wakeup',['../d5/d9d/tasks_8cpp.html#a2c709360390e2764996020567dd70dfd',1,'tasks.cpp']]]
 ];

@@ -104,14 +104,13 @@ $(document).ready(function(){initNavTree('d2/dbd/tasks_8hpp.html','../../'); ini
 <div class="center"><img src="../../d5/dbd/tasks_8hpp__incl.png" border="0" usemap="#tasks_8hpp" alt=""/></div>
 <map name="tasks_8hpp" id="tasks_8hpp">
 <area shape="rect" title=" " alt="" coords="13,5,99,32"/>
-<area shape="rect" title=" " alt="" coords="97,379,167,405"/>
-<area shape="rect" href="../../d7/d9c/_arch_8hpp.html" title="Architecture control and initialization." alt="" coords="123,229,235,256"/>
-<area shape="rect" href="../../d1/d75/paging_8hpp.html" title=" " alt="" coords="323,80,475,107"/>
-<area shape="rect" href="../../d2/d3d/compiler_8hpp.html" title="Compiler meta directives." alt="" coords="220,304,380,331"/>
-<area shape="rect" title=" " alt="" coords="537,379,612,405"/>
-<area shape="rect" href="../../d9/d4f/_memory_8hpp.html" title="Architecture memory management &amp; paging API." alt="" coords="455,304,590,331"/>
-<area shape="rect" href="../../d6/dc1/_memory_map_8hpp.html" title="Memory map containing a number of Memory sections that describe the physical memory layout." alt="" coords="303,155,494,181"/>
-<area shape="rect" href="../../d0/d91/_memory_section_8hpp.html" title=" " alt="" coords="293,229,504,256"/>
+<area shape="rect" title=" " alt="" coords="139,379,210,405"/>
+<area shape="rect" href="../../d7/d9c/_arch_8hpp.html" title="Architecture control and initialization." alt="" coords="119,304,231,331"/>
+<area shape="rect" href="../../d1/d75/paging_8hpp.html" title=" " alt="" coords="168,80,320,107"/>
+<area shape="rect" title=" " alt="" coords="363,379,437,405"/>
+<area shape="rect" href="../../d9/d4f/_memory_8hpp.html" title="Architecture memory management &amp; paging API." alt="" coords="255,304,390,331"/>
+<area shape="rect" href="../../d6/dc1/_memory_map_8hpp.html" title="Memory map containing a number of Memory sections that describe the physical memory layout." alt="" coords="287,155,478,181"/>
+<area shape="rect" href="../../d0/d91/_memory_section_8hpp.html" title=" " alt="" coords="281,229,492,256"/>
 </map>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -399,8 +398,8 @@ Variables</h2></td></tr>
 <div class="center"><img src="../../d2/dbd/tasks_8hpp_ac7a1f4f04e6d7bdbc47de59c05a61262_cgraph.png" border="0" usemap="#d2/dbd/tasks_8hpp_ac7a1f4f04e6d7bdbc47de59c05a61262_cgraph" alt=""/></div>
 <map name="d2/dbd/tasks_8hpp_ac7a1f4f04e6d7bdbc47de59c05a61262_cgraph" id="d2/dbd/tasks_8hpp_ac7a1f4f04e6d7bdbc47de59c05a61262_cgraph">
 <area shape="rect" title="Exits the current task." alt="" coords="5,5,95,32"/>
-<area shape="rect" href="../../d7/d75/namespace_r_s232.html#a394b7ac1c601a47c2881a460eb41171a" title=" " alt="" coords="143,5,249,32"/>
-<area shape="rect" href="../../d7/d75/namespace_r_s232.html#a04a4582da3c891beaa849f3ce2189975" title=" " alt="" coords="297,5,412,32"/>
+<area shape="rect" href="../../d7/d75/namespace_r_s232.html#a394b7ac1c601a47c2881a460eb41171a" title="Prints a formatted string to serial output." alt="" coords="143,5,249,32"/>
+<area shape="rect" href="../../d7/d75/namespace_r_s232.html#a04a4582da3c891beaa849f3ce2189975" title="Prints a formatted string to serial output using a va_list of arguments." alt="" coords="297,5,412,32"/>
 <area shape="rect" href="../../d4/d64/printf_8cpp.html#a85a2fff114bf015eba22a1dc163bf1ba" title="Perform all printf operations on the format string using the provided argument list and uses the call..." alt="" coords="460,5,565,32"/>
 <area shape="rect" href="../../d5/d24/string_8cpp.html#a2dee044e4e667b5b789b493abd21cfa4" title="Returns the length of a string." alt="" coords="613,5,672,32"/>
 </map>
@@ -663,14 +662,14 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;        new_task = (<span class="keyword">struct </span><a class="code" href="../../db/da2/structtask.html">task</a>*)<a class="code" href="../../da/d45/heap_8hpp.html#a1c8580582aae58105f16108d4ec89e9a">malloc</a>(<span class="keyword">sizeof</span>(<span class="keyword">struct</span> <a class="code" href="../../db/da2/structtask.html">task</a>));</div>
 <div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;        <span class="comment">// panic if the alloc fails (we have no fallback)</span></div>
 <div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;        <span class="keywordflow">if</span> (new_task == NULL) {</div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;            <a class="code" href="../../d6/d1e/panic_8cpp.html#a51ef3f9bd6cd14d744e31d392b445b33">panic</a>(<span class="stringliteral">&quot;Unable to allocate memory for new task struct.\n&quot;</span>);</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;            <a class="code" href="../../d6/d1e/panic_8cpp.html#ae22655ba6f328217f1ebd6248ed82727">panic</a>(<span class="stringliteral">&quot;Unable to allocate memory for new task struct.\n&quot;</span>);</div>
 <div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;        }</div>
 <div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    }</div>
 <div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    <span class="comment">// allocate a page for this stack (we might change this later)</span></div>
 <div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    <span class="comment">// TODO: Should more than one page be allocated / freed?</span></div>
 <div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;    uint8_t *stack = (uint8_t *)<a class="code" href="../../db/d2f/namespace_memory.html#ab679821559b51954042eb0715edd518f">Memory::newPage</a>(1);</div>
 <div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;    <span class="keywordflow">if</span> (stack == NULL) {</div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;        <a class="code" href="../../d6/d1e/panic_8cpp.html#a51ef3f9bd6cd14d744e31d392b445b33">panic</a>(<span class="stringliteral">&quot;Unable to allocate memory for new task stack.\n&quot;</span>);</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;        <a class="code" href="../../d6/d1e/panic_8cpp.html#ae22655ba6f328217f1ebd6248ed82727">panic</a>(<span class="stringliteral">&quot;Unable to allocate memory for new task stack.\n&quot;</span>);</div>
 <div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;    }</div>
 <div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;    <span class="comment">// remember, the stack grows up</span></div>
 <div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;    <span class="keywordtype">void</span> *stack_pointer = stack + <a class="code" href="../../d7/d42/_memory_8i686_8hpp.html#acd327ff534c65e3c5772a67d62d74ca0">ARCH_PAGE_SIZE</a>;</div>
@@ -711,7 +710,7 @@ Variables</h2></td></tr>
 <area shape="rect" title="Creates a new kernel task with a provided entry point, register storage struct, and task state struct..." alt="" coords="5,56,96,83"/>
 <area shape="rect" href="../../da/d45/heap_8hpp.html#a1c8580582aae58105f16108d4ec89e9a" title=" " alt="" coords="181,5,248,32"/>
 <area shape="rect" href="../../db/d2f/namespace_memory.html#ab679821559b51954042eb0715edd518f" title="Returns a new page in memory for use. If less than one page is requested, exactly one page will be al..." alt="" coords="144,56,285,83"/>
-<area shape="rect" href="../../d6/d1e/panic_8cpp.html#a51ef3f9bd6cd14d744e31d392b445b33" title="Halt the system and print the provided message on the panic screen." alt="" coords="186,107,243,133"/>
+<area shape="rect" href="../../d6/d1e/panic_8cpp.html#ae22655ba6f328217f1ebd6248ed82727" title="Halt the system and print the provided message on the panic screen." alt="" coords="186,107,243,133"/>
 </map>
 </div>
 
@@ -935,7 +934,6 @@ Variables</h2></td></tr>
 <div class="ttc" id="atasks_8hpp_html_ac7aaa4c0605984fc6b92a727881b8707a8d8e53f91997090c4b163b7579f366dd"><div class="ttname"><a href="../../d2/dbd/tasks_8hpp.html#ac7aaa4c0605984fc6b92a727881b8707a8d8e53f91997090c4b163b7579f366dd">ALLOC_STATIC</a></div><div class="ttdeci">@ ALLOC_STATIC</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dbd/tasks_8hpp_source.html#l00030">tasks.hpp:30</a></div></div>
 <div class="ttc" id="atasks_8cpp_html_a253cc97fa008fce21eeb67d012a9fced"><div class="ttname"><a href="../../d5/d9d/tasks_8cpp.html#a253cc97fa008fce21eeb67d012a9fced">tasks_update_time</a></div><div class="ttdeci">void tasks_update_time()</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d9d/tasks_8cpp_source.html#l00335">tasks.cpp:335</a></div></div>
 <div class="ttc" id="astructtask_html"><div class="ttname"><a href="../../db/da2/structtask.html">task</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dbd/tasks_8hpp_source.html#l00032">tasks.hpp:32</a></div></div>
-<div class="ttc" id="apanic_8cpp_html_a51ef3f9bd6cd14d744e31d392b445b33"><div class="ttname"><a href="../../d6/d1e/panic_8cpp.html#a51ef3f9bd6cd14d744e31d392b445b33">panic</a></div><div class="ttdeci">NORET void panic(const char *msg)</div><div class="ttdoc">Halt the system and print the provided message on the panic screen.</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d1e/panic_8cpp_source.html#l00082">panic.cpp:82</a></div></div>
 <div class="ttc" id="atasks_8hpp_html_a46c7ab5dd73831ee98458db0a68fc4a2aebcd951a6127c3c50a4f197b2b637793"><div class="ttname"><a href="../../d2/dbd/tasks_8hpp.html#a46c7ab5dd73831ee98458db0a68fc4a2aebcd951a6127c3c50a4f197b2b637793">TASK_READY</a></div><div class="ttdeci">@ TASK_READY</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dbd/tasks_8hpp_source.html#l00022">tasks.hpp:22</a></div></div>
 <div class="ttc" id="atasks_8hpp_html_a46c7ab5dd73831ee98458db0a68fc4a2ac261e4c62bea6a313e386d777ae7ecbb"><div class="ttname"><a href="../../d2/dbd/tasks_8hpp.html#a46c7ab5dd73831ee98458db0a68fc4a2ac261e4c62bea6a313e386d777ae7ecbb">TASK_SLEEPING</a></div><div class="ttdeci">@ TASK_SLEEPING</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dbd/tasks_8hpp_source.html#l00023">tasks.hpp:23</a></div></div>
 <div class="ttc" id="atasks_8cpp_html_ac8fc9f801e5cc9d86d6801f003fd4a24"><div class="ttname"><a href="../../d5/d9d/tasks_8cpp.html#ac8fc9f801e5cc9d86d6801f003fd4a24">tasks_unblock</a></div><div class="ttdeci">void tasks_unblock(struct task *task)</div><div class="ttdoc">Unblocks the current task.</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d9d/tasks_8cpp_source.html#l00430">tasks.cpp:430</a></div></div>
@@ -952,6 +950,7 @@ Variables</h2></td></tr>
 <div class="ttc" id="anamespace_memory_html_a5c89c1a5d8f8de115f48adac4772f579"><div class="ttname"><a href="../../db/d2f/namespace_memory.html#a5c89c1a5d8f8de115f48adac4772f579">Memory::getPageDirPhysAddr</a></div><div class="ttdeci">uintptr_t getPageDirPhysAddr()</div><div class="ttdoc">Gets the physical address of the current page directory.</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d5e/paging_8cpp_source.html#l00269">paging.cpp:269</a></div></div>
 <div class="ttc" id="atasks_8hpp_html_a46c7ab5dd73831ee98458db0a68fc4a2a52340c1844b9c87b6c965569f21d72f1"><div class="ttname"><a href="../../d2/dbd/tasks_8hpp.html#a46c7ab5dd73831ee98458db0a68fc4a2a52340c1844b9c87b6c965569f21d72f1">TASK_STOPPED</a></div><div class="ttdeci">@ TASK_STOPPED</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dbd/tasks_8hpp_source.html#l00025">tasks.hpp:25</a></div></div>
 <div class="ttc" id="astructtask_html_ac52da3250648a75f90719ffd5d3f3535"><div class="ttname"><a href="../../db/da2/structtask.html#ac52da3250648a75f90719ffd5d3f3535">task::stack_top</a></div><div class="ttdeci">uintptr_t stack_top</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dbd/tasks_8hpp_source.html#l00034">tasks.hpp:34</a></div></div>
+<div class="ttc" id="apanic_8cpp_html_ae22655ba6f328217f1ebd6248ed82727"><div class="ttname"><a href="../../d6/d1e/panic_8cpp.html#ae22655ba6f328217f1ebd6248ed82727">panic</a></div><div class="ttdeci">void panic(const char *msg)</div><div class="ttdoc">Halt the system and print the provided message on the panic screen.</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d1e/panic_8cpp_source.html#l00082">panic.cpp:82</a></div></div>
 <div class="ttc" id="anamespace_memory_html_ab679821559b51954042eb0715edd518f"><div class="ttname"><a href="../../db/d2f/namespace_memory.html#ab679821559b51954042eb0715edd518f">Memory::newPage</a></div><div class="ttdeci">void * newPage(size_t size)</div><div class="ttdoc">Returns a new page in memory for use. If less than one page is requested, exactly one page will be al...</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d5e/paging_8cpp_source.html#l00224">paging.cpp:224</a></div></div>
 <div class="ttc" id="atasks_8hpp_html_a46c7ab5dd73831ee98458db0a68fc4a2a70c1246153ef112b1baa60e2f6e36cd3"><div class="ttname"><a href="../../d2/dbd/tasks_8hpp.html#a46c7ab5dd73831ee98458db0a68fc4a2a70c1246153ef112b1baa60e2f6e36cd3">TASK_PAUSED</a></div><div class="ttdeci">@ TASK_PAUSED</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dbd/tasks_8hpp_source.html#l00026">tasks.hpp:26</a></div></div>
 <div class="ttc" id="astructtask_html_a665dc156ee4493d4541bc117bd657d67"><div class="ttname"><a href="../../db/da2/structtask.html#a665dc156ee4493d4541bc117bd657d67">task::state</a></div><div class="ttdeci">task_state state</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dbd/tasks_8hpp_source.html#l00037">tasks.hpp:37</a></div></div>
@@ -966,7 +965,7 @@ Variables</h2></td></tr>
 <div class="ttc" id="astructtask_html_a3f2c7149983c28824baf1aebdfa7af98"><div class="ttname"><a href="../../db/da2/structtask.html#a3f2c7149983c28824baf1aebdfa7af98">task::next</a></div><div class="ttdeci">struct task * next</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dbd/tasks_8hpp_source.html#l00036">tasks.hpp:36</a></div></div>
 <div class="ttc" id="atasks_8hpp_html_a46c7ab5dd73831ee98458db0a68fc4a2a108284117a3f463352658a08930a3888"><div class="ttname"><a href="../../d2/dbd/tasks_8hpp.html#a46c7ab5dd73831ee98458db0a68fc4a2a108284117a3f463352658a08930a3888">TASK_BLOCKED</a></div><div class="ttdeci">@ TASK_BLOCKED</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dbd/tasks_8hpp_source.html#l00024">tasks.hpp:24</a></div></div>
 <div class="ttc" id="atasks_8cpp_html_ae954d27107c4990313982108234cae5d"><div class="ttname"><a href="../../d5/d9d/tasks_8cpp.html#ae954d27107c4990313982108234cae5d">tasks_block_current</a></div><div class="ttdeci">void tasks_block_current(task_state reason)</div><div class="ttdoc">Blocks the current task.</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d9d/tasks_8cpp_source.html#l00421">tasks.cpp:421</a></div></div>
-<div class="ttc" id="anamespace_r_s232_html_a394b7ac1c601a47c2881a460eb41171a"><div class="ttname"><a href="../../d7/d75/namespace_r_s232.html#a394b7ac1c601a47c2881a460eb41171a">RS232::printf</a></div><div class="ttdeci">int printf(const char *format,...)</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dc7/rs232_8cpp_source.html#l00080">rs232.cpp:80</a></div></div>
+<div class="ttc" id="anamespace_r_s232_html_a394b7ac1c601a47c2881a460eb41171a"><div class="ttname"><a href="../../d7/d75/namespace_r_s232.html#a394b7ac1c601a47c2881a460eb41171a">RS232::printf</a></div><div class="ttdeci">int printf(const char *format,...)</div><div class="ttdoc">Prints a formatted string to serial output.</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dc7/rs232_8cpp_source.html#l00080">rs232.cpp:80</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

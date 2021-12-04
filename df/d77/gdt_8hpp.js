@@ -29,14 +29,5 @@ var gdt_8hpp =
     [ "SEG_SAVL", "df/d77/gdt_8hpp.html#aa03700ee1220244c42f48e6d28072c26", null ],
     [ "SEG_SIZE", "df/d77/gdt_8hpp.html#a80e207f4838577fd345b0337b1f0cc23", null ],
     [ "SEG_TYPE", "df/d77/gdt_8hpp.html#a4d19664b5e709fafa8019cb7ad6feee8", null ],
-    [ "__attribute__", "df/d77/gdt_8hpp.html#ae21df847b32e33e64ba0912dd628e610", null ],
-    [ "gdt_install", "df/d77/gdt_8hpp.html#aa2a6cef9d7f1d9430289dcbb74530bf3", null ],
-    [ "access", "df/d77/gdt_8hpp.html#a8b0d6200bc639dd37ff68847a0adde5f", null ],
-    [ "base", "df/d77/gdt_8hpp.html#a2e013c2c6e8010c8116c6f56813df57b", null ],
-    [ "base_high", "df/d77/gdt_8hpp.html#a1a173457c7aa39c59c008fcc3332d2b3", null ],
-    [ "base_low", "df/d77/gdt_8hpp.html#a71e21ea67de59991e9a27666a1752a8f", null ],
-    [ "base_middle", "df/d77/gdt_8hpp.html#a6b67e86f6de9204d76adab79069aec29", null ],
-    [ "granularity", "df/d77/gdt_8hpp.html#acfea365f69e71368a2db03333d4afd6f", null ],
-    [ "limit", "df/d77/gdt_8hpp.html#ab50c2dcb9d4a34ea1a5ac52272502379", null ],
-    [ "limit_low", "df/d77/gdt_8hpp.html#aa7ae5b5a918e00776ff07fb1c58a348d", null ]
+    [ "gdt_install", "df/d77/gdt_8hpp.html#aa2a6cef9d7f1d9430289dcbb74530bf3", null ]
 ];

@@ -88,14 +88,14 @@ $(document).ready(function(){initNavTree('df/d77/gdt_8hpp_source.html','../../')
 </div><!--header-->
 <div class="contents">
 <a href="../../df/d77/gdt_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/**</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno"><a class="line" href="../../df/d77/gdt_8hpp.html#ab50c2dcb9d4a34ea1a5ac52272502379">    2</a></span>&#160;<span class="comment"> * @file gdt.hpp</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno"><a class="line" href="../../df/d77/gdt_8hpp.html#a2e013c2c6e8010c8116c6f56813df57b">    3</a></span>&#160;<span class="comment"> * @author Keeton Feavel (keetonfeavel@cedarville.edu)</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno"><a class="line" href="../../df/d77/gdt_8hpp.html#aa7ae5b5a918e00776ff07fb1c58a348d">    4</a></span>&#160;<span class="comment"> * @brief The Global Descriptor Table (GDT) is specific to the IA32 architecture.</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="../../df/d77/gdt_8hpp.html#a71e21ea67de59991e9a27666a1752a8f">    5</a></span>&#160;<span class="comment"> * It contains entries telling the CPU about memory segments.</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="../../df/d77/gdt_8hpp.html#a6b67e86f6de9204d76adab79069aec29">    6</a></span>&#160;<span class="comment"> * @version 0.3</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="../../df/d77/gdt_8hpp.html#a8b0d6200bc639dd37ff68847a0adde5f">    7</a></span>&#160;<span class="comment"> * @date 2019-09-26</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="../../df/d77/gdt_8hpp.html#acfea365f69e71368a2db03333d4afd6f">    8</a></span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="../../df/d77/gdt_8hpp.html#a1a173457c7aa39c59c008fcc3332d2b3">    9</a></span>&#160;<span class="comment"> * @copyright Copyright Keeton Feavel (c) 2019</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * @file gdt.hpp</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * @author Keeton Feavel (keetonfeavel@cedarville.edu)</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * @brief The Global Descriptor Table (GDT) is specific to the IA32 architecture.</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * It contains entries telling the CPU about memory segments.</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * @version 0.3</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> * @date 2019-09-26</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> * @copyright Copyright Keeton Feavel (c) 2019</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#pragma once</span></div>
@@ -153,7 +153,7 @@ $(document).ready(function(){initNavTree('df/d77/gdt_8hpp_source.html','../../')
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment"> * @brief GDT Code &amp; Data Segment Selector Struct</span></div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="../../d8/dc9/structgdt__entry.html">   67</a></span>&#160;<span class="keyword">struct </span><a class="code" href="../../d8/dc9/structgdt__entry.html">gdt_entry</a> {</div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="../../d8/dc9/structgdt__entry.html">   67</a></span>&#160;<span class="keyword">struct </span>[[gnu::packed]] <a class="code" href="../../d8/dc9/structgdt__entry.html">gdt_entry</a> {</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="comment">// These are descriptors in the GDT that have S=1. Bit 3 of &quot;type&quot; indicates whether it&#39;s (0) Data or (1) Code.</span></div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="comment">// See https://wiki.osdev.org/Descriptors#Code.2FData_Segment_Descriptors for details on code &amp; data segments.</span></div>
 <div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="../../d8/dc9/structgdt__entry.html#ad1cb239b48c0bfb34a017d5deb87e3ff">   70</a></span>&#160;    uint16_t <a class="code" href="../../d8/dc9/structgdt__entry.html#ad1cb239b48c0bfb34a017d5deb87e3ff">limit_low</a>;     <span class="comment">// Limit</span></div>
@@ -162,16 +162,16 @@ $(document).ready(function(){initNavTree('df/d77/gdt_8hpp_source.html','../../')
 <div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="../../d8/dc9/structgdt__entry.html#af8f88469b3301c3e777e97b470a97413">   73</a></span>&#160;    uint8_t  <a class="code" href="../../d8/dc9/structgdt__entry.html#af8f88469b3301c3e777e97b470a97413">access</a>;        <span class="comment">// Type</span></div>
 <div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="../../d8/dc9/structgdt__entry.html#accb2a2ef318b0e4fbe2016eb8097947d">   74</a></span>&#160;    uint8_t  <a class="code" href="../../d8/dc9/structgdt__entry.html#accb2a2ef318b0e4fbe2016eb8097947d">granularity</a>;   <span class="comment">// Bits 0..3: limit, Bits 4..7: additional data/code attributes</span></div>
 <div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="../../d8/dc9/structgdt__entry.html#a96abeddea82dd23ff9e84d09230e31a2">   75</a></span>&#160;    uint8_t  <a class="code" href="../../d8/dc9/structgdt__entry.html#a96abeddea82dd23ff9e84d09230e31a2">base_high</a>;     <span class="comment">// Base</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;} <a class="code" href="../../df/d77/gdt_8hpp.html#ae21df847b32e33e64ba0912dd628e610">__attribute__</a>((packed));</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;};</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="comment">/**</span></div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="comment"> * @brief GDT Pointer Struct</span></div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="../../d7/d4a/structgdt__ptr.html">   82</a></span>&#160;<span class="keyword">struct </span><a class="code" href="../../d7/d4a/structgdt__ptr.html">gdt_ptr</a> {</div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="../../d7/d4a/structgdt__ptr.html">   82</a></span>&#160;<span class="keyword">struct </span>[[gnu::packed]] <a class="code" href="../../d7/d4a/structgdt__ptr.html">gdt_ptr</a> {</div>
 <div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="../../d7/d4a/structgdt__ptr.html#a7c3ab4c2422a1d95e8b0477eb92a06bc">   83</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> <a class="code" href="../../d7/d4a/structgdt__ptr.html#a7c3ab4c2422a1d95e8b0477eb92a06bc">limit</a>;   <span class="comment">// The upper 16 bits of all selector limits</span></div>
 <div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="../../d7/d4a/structgdt__ptr.html#a02f0bdaf71f196a073d817d333cc4959">   84</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="../../d7/d4a/structgdt__ptr.html#a02f0bdaf71f196a073d817d333cc4959">base</a>;      <span class="comment">// The address of the first gdt_segment</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;} <a class="code" href="../../df/d77/gdt_8hpp.html#ae21df847b32e33e64ba0912dd628e610">__attribute__</a>((packed));</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;};</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="comment">/**</span></div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="comment"> * @brief Setup and install the GDT onto the system.</span></div>
@@ -180,7 +180,6 @@ $(document).ready(function(){initNavTree('df/d77/gdt_8hpp_source.html','../../')
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="../../df/d77/gdt_8hpp.html#aa2a6cef9d7f1d9430289dcbb74530bf3">gdt_install</a>();</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="agdt_8hpp_html_ae21df847b32e33e64ba0912dd628e610"><div class="ttname"><a href="../../df/d77/gdt_8hpp.html#ae21df847b32e33e64ba0912dd628e610">__attribute__</a></div><div class="ttdeci">struct gdt_entry __attribute__((packed))</div></div>
 <div class="ttc" id="agdt_8hpp_html_aa2a6cef9d7f1d9430289dcbb74530bf3"><div class="ttname"><a href="../../df/d77/gdt_8hpp.html#aa2a6cef9d7f1d9430289dcbb74530bf3">gdt_install</a></div><div class="ttdeci">void gdt_install()</div><div class="ttdoc">Setup and install the GDT onto the system.</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/de6/gdt_8cpp_source.html#l00053">gdt.cpp:53</a></div></div>
 <div class="ttc" id="astructgdt__entry_html_af8f88469b3301c3e777e97b470a97413"><div class="ttname"><a href="../../d8/dc9/structgdt__entry.html#af8f88469b3301c3e777e97b470a97413">gdt_entry::access</a></div><div class="ttdeci">uint8_t access</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d77/gdt_8hpp_source.html#l00073">gdt.hpp:73</a></div></div>
 <div class="ttc" id="astructgdt__entry_html_ad1cb239b48c0bfb34a017d5deb87e3ff"><div class="ttname"><a href="../../d8/dc9/structgdt__entry.html#ad1cb239b48c0bfb34a017d5deb87e3ff">gdt_entry::limit_low</a></div><div class="ttdeci">uint16_t limit_low</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d77/gdt_8hpp_source.html#l00070">gdt.hpp:70</a></div></div>

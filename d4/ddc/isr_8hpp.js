@@ -93,6 +93,5 @@ var isr_8hpp =
     [ "isr9", "d4/ddc/isr_8hpp.html#aacb7c8490cbd623a3a2bf933ffedd131", null ],
     [ "isr_handler", "d4/ddc/isr_8hpp.html#a2c19bdf23d1129da2d1f5ffebeb4b72c", null ],
     [ "isr_install", "d4/ddc/isr_8hpp.html#aed0ecf87a0ed3270ce0e9c68cd01a946", null ],
-    [ "register_interrupt_handler", "d4/ddc/isr_8hpp.html#acc90c1ac3bbcb4fc45ccda7cde4882c7", null ],
-    [ "__attribute__", "d4/ddc/isr_8hpp.html#af675dbb947d41d34426261be7eb02fdb", null ]
+    [ "register_interrupt_handler", "d4/ddc/isr_8hpp.html#acc90c1ac3bbcb4fc45ccda7cde4882c7", null ]
 ];

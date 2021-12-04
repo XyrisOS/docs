@@ -157,8 +157,6 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:afdbc1ad6e6f7130f093ca7e8e47efdb3"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="../../df/d0d/struct_boot_1_1argument.html">Boot::argument</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d80/namespace_boot.html#afdbc1ad6e6f7130f093ca7e8e47efdb3">Boot::__attribute__</a></td></tr>
-<tr class="separator:afdbc1ad6e6f7130f093ca7e8e47efdb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8aad5af1209bbb4688b75ea2ce8ea6f"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="../../df/d0d/struct_boot_1_1argument.html">Boot::argument</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d87/_arguments_8hpp.html#aa8aad5af1209bbb4688b75ea2ce8ea6f">_ARGUMENTS_START</a> [0]</td></tr>
 <tr class="separator:aa8aad5af1209bbb4688b75ea2ce8ea6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a929e82d6c89c817ac193ae905aa4fc48"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="../../df/d0d/struct_boot_1_1argument.html">Boot::argument</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d87/_arguments_8hpp.html#a929e82d6c89c817ac193ae905aa4fc48">_ARGUMENTS_END</a> [0]</td></tr>
@@ -236,8 +234,8 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">    <a class="code" href="../../d0/d29/sections_8hpp.html#a9982c2dc93e94348913cd6b7b0618973">SECTION</a>(<span class="stringliteral">&quot;.arguments&quot;</span>) struct <a class="code" href="../../da/d80/namespace_boot.html">Boot</a>::argument __<span class="preprocessor">##name##_arg = \</span></div>
-<div class="line"><span class="preprocessor">    { arg, callback }</span></div>
+<b>Value:</b><div class="fragment"><div class="line">    [[gnu::section(<span class="stringliteral">&quot;.arguments&quot;</span>)]] <span class="keyword">struct </span><a class="code" href="../../df/d0d/struct_boot_1_1argument.html">Boot::argument</a> __##name##_arg = \</div>
+<div class="line">    { <a class="code" href="../../df/d0d/struct_boot_1_1argument.html#a09fcdda17dee503de641d3cdb88f344f">arg</a>, <a class="code" href="../../df/d0d/struct_boot_1_1argument.html#aeb4fb91a984744168b5c706f1809707d">callback</a> }</div>
 </div><!-- fragment -->
 <p class="definition">Definition at line <a class="el" href="../../d5/d87/_arguments_8hpp_source.html#l00015">15</a> of file <a class="el" href="../../d5/d87/_arguments_8hpp_source.html">Arguments.hpp</a>.</p>
 
@@ -290,8 +288,9 @@ Variables</h2></td></tr>
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="asections_8hpp_html_a9982c2dc93e94348913cd6b7b0618973"><div class="ttname"><a href="../../d0/d29/sections_8hpp.html#a9982c2dc93e94348913cd6b7b0618973">SECTION</a></div><div class="ttdeci">#define SECTION(x)</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d29/sections_8hpp_source.html#l00016">sections.hpp:16</a></div></div>
-<div class="ttc" id="anamespace_boot_html"><div class="ttname"><a href="../../da/d80/namespace_boot.html">Boot</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d85/_arguments_8cpp_source.html#l00015">Arguments.cpp:15</a></div></div>
+<div class="ttc" id="astruct_boot_1_1argument_html"><div class="ttname"><a href="../../df/d0d/struct_boot_1_1argument.html">Boot::argument</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d87/_arguments_8hpp_source.html#l00022">Arguments.hpp:22</a></div></div>
+<div class="ttc" id="astruct_boot_1_1argument_html_a09fcdda17dee503de641d3cdb88f344f"><div class="ttname"><a href="../../df/d0d/struct_boot_1_1argument.html#a09fcdda17dee503de641d3cdb88f344f">Boot::argument::arg</a></div><div class="ttdeci">char arg[MAX_ARGUMENT_LEN]</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d87/_arguments_8hpp_source.html#l00023">Arguments.hpp:23</a></div></div>
+<div class="ttc" id="astruct_boot_1_1argument_html_aeb4fb91a984744168b5c706f1809707d"><div class="ttname"><a href="../../df/d0d/struct_boot_1_1argument.html#aeb4fb91a984744168b5c706f1809707d">Boot::argument::callback</a></div><div class="ttdeci">cmdline_cb_t callback</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d87/_arguments_8hpp_source.html#l00024">Arguments.hpp:24</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

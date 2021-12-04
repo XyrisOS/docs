@@ -1,8 +1,8 @@
 <map id="Graphics::pixel" name="Graphics::pixel">
 <area shape="rect" id="node1" title="Draws a pixel at a given coordinate." alt="" coords="5,143,124,170"/>
-<area shape="rect" id="node2" href="$d0/dcb/class_graphics_1_1_framebuffer.html#a5e05c50e2f80ac599bf8a3f44c1ec076" title=" " alt="" coords="172,5,339,47"/>
-<area shape="rect" id="node3" href="$d0/dcb/class_graphics_1_1_framebuffer.html#a73d1c153ef281443e94ae0ad3a4fdf3e" title=" " alt="" coords="172,71,339,112"/>
-<area shape="rect" id="node4" href="$d0/dcb/class_graphics_1_1_framebuffer.html#a4b6694a0728b42872a51eb15a631cd51" title=" " alt="" coords="172,136,339,177"/>
-<area shape="rect" id="node5" href="$d0/dcb/class_graphics_1_1_framebuffer.html#af6383d53d6a69242b6eb8e56067f4d19" title=" " alt="" coords="172,201,339,243"/>
-<area shape="rect" id="node6" href="$d0/dcb/class_graphics_1_1_framebuffer.html#af04917a01257164d99f15d84a1f67e9f" title=" " alt="" coords="172,267,339,308"/>
+<area shape="rect" id="node2" href="$d0/dcb/class_graphics_1_1_framebuffer.html#a724257bdae8cdae7f6ef734923428fa3" title=" " alt="" coords="172,5,339,47"/>
+<area shape="rect" id="node3" href="$d0/dcb/class_graphics_1_1_framebuffer.html#a31b013707953364629fa4582d6359d34" title=" " alt="" coords="172,71,339,112"/>
+<area shape="rect" id="node4" href="$d0/dcb/class_graphics_1_1_framebuffer.html#aeedf42e466d9ecd793a424cf63430f83" title=" " alt="" coords="172,136,339,177"/>
+<area shape="rect" id="node5" href="$d0/dcb/class_graphics_1_1_framebuffer.html#a33af89567e49cda027dc4d3a585cd6cf" title=" " alt="" coords="172,201,339,243"/>
+<area shape="rect" id="node6" href="$d0/dcb/class_graphics_1_1_framebuffer.html#ac338b5201b3dead60ea4d9358da09cca" title=" " alt="" coords="172,267,339,308"/>
 </map>

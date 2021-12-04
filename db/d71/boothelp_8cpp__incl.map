@@ -1,9 +1,8 @@
 <map id="boothelp.cpp" name="boothelp.cpp">
-<area shape="rect" id="node1" title="Maps bootloader information into memory." alt="" coords="405,5,512,32"/>
-<area shape="rect" id="node2" href="$d2/d3d/compiler_8hpp.html" title="Compiler meta directives." alt="" coords="5,80,165,107"/>
-<area shape="rect" id="node3" href="$d0/d29/sections_8hpp.html" title="Kernel ELF section definitions." alt="" coords="190,80,349,107"/>
-<area shape="rect" id="node5" title=" " alt="" coords="373,80,545,107"/>
-<area shape="rect" id="node6" title=" " alt="" coords="569,80,639,107"/>
-<area shape="rect" id="node7" title=" " alt="" coords="663,80,798,107"/>
-<area shape="rect" id="node4" title=" " alt="" coords="232,155,307,181"/>
+<area shape="rect" id="node1" title="Maps bootloader information into memory." alt="" coords="293,5,399,32"/>
+<area shape="rect" id="node2" href="$d0/d29/sections_8hpp.html" title="Kernel ELF section definitions." alt="" coords="5,80,164,107"/>
+<area shape="rect" id="node4" title=" " alt="" coords="188,80,360,107"/>
+<area shape="rect" id="node5" title=" " alt="" coords="384,80,455,107"/>
+<area shape="rect" id="node6" title=" " alt="" coords="479,80,613,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="47,155,122,181"/>
 </map>

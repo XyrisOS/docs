@@ -89,8 +89,7 @@ $(document).ready(function(){initNavTree('d5/d6c/boothelp_8cpp.html','../../'); 
 <div class="title">boothelp.cpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="../../d2/d3d/compiler_8hpp_source.html">Support/compiler.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="../../d0/d29/sections_8hpp_source.html">Support/sections.hpp</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="../../d0/d29/sections_8hpp_source.html">Support/sections.hpp</a>&gt;</code><br />
 <code>#include &lt;multiboot/multiboot2.h&gt;</code><br />
 <code>#include &lt;stdint.h&gt;</code><br />
 <code>#include &lt;stivale/stivale2.h&gt;</code><br />
@@ -101,13 +100,12 @@ $(document).ready(function(){initNavTree('d5/d6c/boothelp_8cpp.html','../../'); 
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="../../db/d71/boothelp_8cpp__incl.png" border="0" usemap="#boothelp_8cpp" alt=""/></div>
 <map name="boothelp_8cpp" id="boothelp_8cpp">
-<area shape="rect" title="Maps bootloader information into memory." alt="" coords="405,5,512,32"/>
-<area shape="rect" href="../../d2/d3d/compiler_8hpp.html" title="Compiler meta directives." alt="" coords="5,80,165,107"/>
-<area shape="rect" href="../../d0/d29/sections_8hpp.html" title="Kernel ELF section definitions." alt="" coords="190,80,349,107"/>
-<area shape="rect" title=" " alt="" coords="373,80,545,107"/>
-<area shape="rect" title=" " alt="" coords="569,80,639,107"/>
-<area shape="rect" title=" " alt="" coords="663,80,798,107"/>
-<area shape="rect" title=" " alt="" coords="232,155,307,181"/>
+<area shape="rect" title="Maps bootloader information into memory." alt="" coords="293,5,399,32"/>
+<area shape="rect" href="../../d0/d29/sections_8hpp.html" title="Kernel ELF section definitions." alt="" coords="5,80,164,107"/>
+<area shape="rect" title=" " alt="" coords="188,80,360,107"/>
+<area shape="rect" title=" " alt="" coords="384,80,455,107"/>
+<area shape="rect" title=" " alt="" coords="479,80,613,107"/>
+<area shape="rect" title=" " alt="" coords="47,155,122,181"/>
 </map>
 </div>
 </div>
@@ -119,6 +117,8 @@ Functions</h2></td></tr>
 <tr class="separator:a57a1896409edf2efbb2442444cc249d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a162cf1be3b687973d59b81c7f1977f8e"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d6c/boothelp_8cpp.html#a162cf1be3b687973d59b81c7f1977f8e">multiboot2_mmap_helper</a> (void *baseaddr)</td></tr>
 <tr class="separator:a162cf1be3b687973d59b81c7f1977f8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3c8a7c4c2366fada31ce261dcf81963"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d6c/boothelp_8cpp.html#ac3c8a7c4c2366fada31ce261dcf81963">__attribute__</a> ((section(&quot;.early_text&quot;))) stivale2_mmap_helper(void *baseaddr)</td></tr>
+<tr class="separator:ac3c8a7c4c2366fada31ce261dcf81963"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Maps bootloader information into memory. </p>
@@ -129,6 +129,58 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition in file <a class="el" href="../../d5/d6c/boothelp_8cpp_source.html">boothelp.cpp</a>.</p>
 </div><h2 class="groupheader">Function Documentation</h2>
+<a id="ac3c8a7c4c2366fada31ce261dcf81963"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3c8a7c4c2366fada31ce261dcf81963">&#9670;&nbsp;</a></span>__attribute__()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t __attribute__ </td>
+          <td>(</td>
+          <td class="paramtype">(section(&quot;.early_text&quot;))&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<hr  />
+<p> / __| |_(_)_ ____ _| |___|_ ) __ \ _| \ V / _` | / -_)/ / |___/__|_|_/__,_|____/___|</p>
+<p>Scan the stivale2 tags to find the reclaimable bootloader memory map tag that starts at the stivale2 tag base address. Return the length found. We'll memory map the entire area. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d6c/boothelp_8cpp_source.html#l00033">33</a> of file <a class="el" href="../../d5/d6c/boothelp_8cpp_source.html">boothelp.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">struct </span>stivale2_tag* tag = (<span class="keyword">struct </span>stivale2_tag*)baseaddr;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordflow">while</span> (tag) {</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keywordflow">switch</span> (tag-&gt;identifier) {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            <span class="keywordflow">case</span> STIVALE2_STRUCT_TAG_MEMMAP_ID: {</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                <span class="keyword">auto</span> memmap = (<span class="keyword">struct </span>stivale2_struct_tag_memmap*)tag;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; memmap-&gt;entries; i++) {</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                    <span class="keywordflow">switch</span> (memmap-&gt;memmap[i].type) {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                        <span class="keywordflow">case</span> STIVALE2_MMAP_BOOTLOADER_RECLAIMABLE:</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                            <span class="keywordflow">if</span> (((uintptr_t)memmap-&gt;memmap[i].base) == (uintptr_t)baseaddr) {</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                                <span class="keywordflow">return</span> (uintptr_t)memmap-&gt;memmap[i].length;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                            }</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                            <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                        <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                            <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                    }</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                }</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            }</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        }</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        tag = (<span class="keyword">struct </span>stivale2_tag*)tag-&gt;next;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    }</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="comment">// If we get here, there&#39;s a problem so we will just</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="comment">// return 0 and panic in boot.S</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
 <a id="a162cf1be3b687973d59b81c7f1977f8e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a162cf1be3b687973d59b81c7f1977f8e">&#9670;&nbsp;</a></span>multiboot2_mmap_helper()</h2>
 
@@ -145,17 +197,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d6c/boothelp_8cpp_source.html#l00081">81</a> of file <a class="el" href="../../d5/d6c/boothelp_8cpp_source.html">boothelp.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;{</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keyword">struct </span>multiboot_fixed {</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        uint32_t total_size;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        uint32_t reserved;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    };</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keyword">auto</span> fixed = (<span class="keyword">struct </span>multiboot_fixed*)baseaddr;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordflow">return</span> fixed-&gt;total_size;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;}</div>
-</div><!-- fragment -->
 </div>
 </div>
 <a id="a57a1896409edf2efbb2442444cc249d4"></a>
@@ -173,41 +214,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<hr  />
-<p> / __| |_(_)_ ____ _| |___|_ ) __ \ _| \ V / _` | / -_)/ / |___/__|_|_/__,_|____/___|</p>
-<p>Scan the stivale2 tags to find the reclaimable bootloader memory map tag that starts at the stivale2 tag base address. Return the length found. We'll memory map the entire area. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d6c/boothelp_8cpp_source.html#l00035">35</a> of file <a class="el" href="../../d5/d6c/boothelp_8cpp_source.html">boothelp.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;{</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">struct </span>stivale2_tag* tag = (<span class="keyword">struct </span>stivale2_tag*)baseaddr;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordflow">while</span> (tag) {</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keywordflow">switch</span> (tag-&gt;identifier) {</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            <span class="keywordflow">case</span> STIVALE2_STRUCT_TAG_MEMMAP_ID: {</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                <span class="keyword">auto</span> memmap = (<span class="keyword">struct </span>stivale2_struct_tag_memmap*)tag;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; memmap-&gt;entries; i++) {</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                    <span class="keywordflow">switch</span> (memmap-&gt;memmap[i].type) {</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                        <span class="keywordflow">case</span> STIVALE2_MMAP_BOOTLOADER_RECLAIMABLE:</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                            <span class="keywordflow">if</span> (((uintptr_t)memmap-&gt;memmap[i].base) == (uintptr_t)baseaddr) {</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                                <span class="keywordflow">return</span> (uintptr_t)memmap-&gt;memmap[i].length;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                            }</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                            <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                        <span class="keywordflow">default</span>:</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                            <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                    }</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                }</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            }</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            <span class="keywordflow">default</span>:</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        }</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        tag = (<span class="keyword">struct </span>stivale2_tag*)tag-&gt;next;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    }</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="comment">// If we get here, there&#39;s a problem so we will just</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="comment">// return 0 and panic in boot.S</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;}</div>
-</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->

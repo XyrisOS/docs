@@ -97,7 +97,7 @@ $(document).ready(function(){initNavTree('d5/d6c/boothelp_8cpp_source.html','../
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> * @copyright Copyright the Xyris Contributors (c) 2021</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="../../d2/d3d/compiler_8hpp.html">Support/compiler.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="../../d0/d29/sections_8hpp.html">Support/sections.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;multiboot/multiboot2.h&gt;</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
@@ -119,72 +119,68 @@ $(document).ready(function(){initNavTree('d5/d6c/boothelp_8cpp_source.html','../
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> uint32_t</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<a class="code" href="../../d2/d3d/compiler_8hpp.html#ad6171d02712b4d180426a0a81781e2a7">OPTIMIZE</a>(0)</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<a class="code" href="../../d0/d29/sections_8hpp.html#a9982c2dc93e94348913cd6b7b0618973">SECTION</a>(&quot;.early_text&quot;)</div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="../../d5/d6c/boothelp_8cpp.html#a57a1896409edf2efbb2442444cc249d4">   35</a></span>&#160;<a class="code" href="../../d5/d6c/boothelp_8cpp.html#a57a1896409edf2efbb2442444cc249d4">stivale2_mmap_helper</a>(<span class="keywordtype">void</span>* baseaddr)</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;{</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">struct </span>stivale2_tag* tag = (<span class="keyword">struct </span>stivale2_tag*)baseaddr;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordflow">while</span> (tag) {</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keywordflow">switch</span> (tag-&gt;identifier) {</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            <span class="keywordflow">case</span> STIVALE2_STRUCT_TAG_MEMMAP_ID: {</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                <span class="keyword">auto</span> memmap = (<span class="keyword">struct </span>stivale2_struct_tag_memmap*)tag;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; memmap-&gt;entries; i++) {</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                    <span class="keywordflow">switch</span> (memmap-&gt;memmap[i].type) {</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                        <span class="keywordflow">case</span> STIVALE2_MMAP_BOOTLOADER_RECLAIMABLE:</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                            <span class="keywordflow">if</span> (((uintptr_t)memmap-&gt;memmap[i].base) == (uintptr_t)baseaddr) {</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                                <span class="keywordflow">return</span> (uintptr_t)memmap-&gt;memmap[i].length;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                            }</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                            <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                        <span class="keywordflow">default</span>:</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                            <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                    }</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                }</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            }</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            <span class="keywordflow">default</span>:</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        }</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        tag = (<span class="keyword">struct </span>stivale2_tag*)tag-&gt;next;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    }</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="comment">// If we get here, there&#39;s a problem so we will just</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="comment">// return 0 and panic in boot.S</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;}</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment"> *  __  __      _ _   _ _              _   ___</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment"> * |  \/  |_  _| | |_(_) |__  ___  ___| |_|_  )</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment"> * | |\/| | || | |  _| | &#39;_ \/ _ \/ _ \  _|/ /</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment"> * |_|  |_|\_,_|_|\__|_|_.__/\___/\___/\__/___|</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment"> * Multiboot2 has the size of the bootloader info area</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment"> * right at the beginning, which makes things easier.</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment"> * Return the length found.  We&#39;ll memory map</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment"> * the entire area.</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> uint32_t</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<a class="code" href="../../d2/d3d/compiler_8hpp.html#ad6171d02712b4d180426a0a81781e2a7">OPTIMIZE</a>(0)</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<a class="code" href="../../d0/d29/sections_8hpp.html#a9982c2dc93e94348913cd6b7b0618973">SECTION</a>(&quot;.early_text&quot;)</div>
-<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="../../d5/d6c/boothelp_8cpp.html#a162cf1be3b687973d59b81c7f1977f8e">   81</a></span>&#160;<a class="code" href="../../d5/d6c/boothelp_8cpp.html#a162cf1be3b687973d59b81c7f1977f8e">multiboot2_mmap_helper</a>(<span class="keywordtype">void</span>* baseaddr)</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;{</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keyword">struct </span>multiboot_fixed {</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        uint32_t total_size;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        uint32_t reserved;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    };</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keyword">auto</span> fixed = (<span class="keyword">struct </span>multiboot_fixed*)baseaddr;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordflow">return</span> fixed-&gt;total_size;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;}</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="../../d5/d6c/boothelp_8cpp.html#ac3c8a7c4c2366fada31ce261dcf81963">   33</a></span>&#160;<a class="code" href="../../d5/d6c/boothelp_8cpp.html#ac3c8a7c4c2366fada31ce261dcf81963">__attribute__</a>((section(<span class="stringliteral">&quot;.early_text&quot;</span>)))</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<a class="code" href="../../d5/d6c/boothelp_8cpp.html#a57a1896409edf2efbb2442444cc249d4">stivale2_mmap_helper</a>(<span class="keywordtype">void</span>* baseaddr)</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">struct </span>stivale2_tag* tag = (<span class="keyword">struct </span>stivale2_tag*)baseaddr;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordflow">while</span> (tag) {</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keywordflow">switch</span> (tag-&gt;identifier) {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            <span class="keywordflow">case</span> STIVALE2_STRUCT_TAG_MEMMAP_ID: {</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                <span class="keyword">auto</span> memmap = (<span class="keyword">struct </span>stivale2_struct_tag_memmap*)tag;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; memmap-&gt;entries; i++) {</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                    <span class="keywordflow">switch</span> (memmap-&gt;memmap[i].type) {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                        <span class="keywordflow">case</span> STIVALE2_MMAP_BOOTLOADER_RECLAIMABLE:</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                            <span class="keywordflow">if</span> (((uintptr_t)memmap-&gt;memmap[i].base) == (uintptr_t)baseaddr) {</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                                <span class="keywordflow">return</span> (uintptr_t)memmap-&gt;memmap[i].length;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                            }</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                            <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                        <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                            <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                    }</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                }</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            }</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        }</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        tag = (<span class="keyword">struct </span>stivale2_tag*)tag-&gt;next;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    }</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="comment">// If we get here, there&#39;s a problem so we will just</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="comment">// return 0 and panic in boot.S</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;}</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment"> *  __  __      _ _   _ _              _   ___</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment"> * |  \/  |_  _| | |_(_) |__  ___  ___| |_|_  )</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment"> * | |\/| | || | |  _| | &#39;_ \/ _ \/ _ \  _|/ /</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment"> * |_|  |_|\_,_|_|\__|_|_.__/\___/\___/\__/___|</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment"> * Multiboot2 has the size of the bootloader info area</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment"> * right at the beginning, which makes things easier.</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment"> * Return the length found.  We&#39;ll memory map</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment"> * the entire area.</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> uint32_t</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<a class="code" href="../../d5/d6c/boothelp_8cpp.html#ac3c8a7c4c2366fada31ce261dcf81963">__attribute__</a>((section(<span class="stringliteral">&quot;.early_text&quot;</span>)))</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<a class="code" href="../../d5/d6c/boothelp_8cpp.html#a162cf1be3b687973d59b81c7f1977f8e">multiboot2_mmap_helper</a>(<span class="keywordtype">void</span>* baseaddr)</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;{</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keyword">struct </span>multiboot_fixed {</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        uint32_t total_size;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        uint32_t reserved;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    };</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keyword">auto</span> fixed = (<span class="keyword">struct </span>multiboot_fixed*)baseaddr;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordflow">return</span> fixed-&gt;total_size;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aboothelp_8cpp_html_a162cf1be3b687973d59b81c7f1977f8e"><div class="ttname"><a href="../../d5/d6c/boothelp_8cpp.html#a162cf1be3b687973d59b81c7f1977f8e">multiboot2_mmap_helper</a></div><div class="ttdeci">uint32_t multiboot2_mmap_helper(void *baseaddr)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d6c/boothelp_8cpp_source.html#l00081">boothelp.cpp:81</a></div></div>
-<div class="ttc" id="asections_8hpp_html_a9982c2dc93e94348913cd6b7b0618973"><div class="ttname"><a href="../../d0/d29/sections_8hpp.html#a9982c2dc93e94348913cd6b7b0618973">SECTION</a></div><div class="ttdeci">#define SECTION(x)</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d29/sections_8hpp_source.html#l00016">sections.hpp:16</a></div></div>
+<div class="ttc" id="aboothelp_8cpp_html_a162cf1be3b687973d59b81c7f1977f8e"><div class="ttname"><a href="../../d5/d6c/boothelp_8cpp.html#a162cf1be3b687973d59b81c7f1977f8e">multiboot2_mmap_helper</a></div><div class="ttdeci">uint32_t multiboot2_mmap_helper(void *baseaddr)</div></div>
+<div class="ttc" id="aboothelp_8cpp_html_ac3c8a7c4c2366fada31ce261dcf81963"><div class="ttname"><a href="../../d5/d6c/boothelp_8cpp.html#ac3c8a7c4c2366fada31ce261dcf81963">__attribute__</a></div><div class="ttdeci">uint32_t __attribute__((section(&quot;.early_text&quot;))) stivale2_mmap_helper(void *baseaddr)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d6c/boothelp_8cpp_source.html#l00033">boothelp.cpp:33</a></div></div>
 <div class="ttc" id="asections_8hpp_html"><div class="ttname"><a href="../../d0/d29/sections_8hpp.html">sections.hpp</a></div><div class="ttdoc">Kernel ELF section definitions.</div></div>
-<div class="ttc" id="aboothelp_8cpp_html_a57a1896409edf2efbb2442444cc249d4"><div class="ttname"><a href="../../d5/d6c/boothelp_8cpp.html#a57a1896409edf2efbb2442444cc249d4">stivale2_mmap_helper</a></div><div class="ttdeci">uint32_t stivale2_mmap_helper(void *baseaddr)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d6c/boothelp_8cpp_source.html#l00035">boothelp.cpp:35</a></div></div>
-<div class="ttc" id="acompiler_8hpp_html_ad6171d02712b4d180426a0a81781e2a7"><div class="ttname"><a href="../../d2/d3d/compiler_8hpp.html#ad6171d02712b4d180426a0a81781e2a7">OPTIMIZE</a></div><div class="ttdeci">#define OPTIMIZE(x)</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d3d/compiler_8hpp_source.html#l00015">compiler.hpp:15</a></div></div>
-<div class="ttc" id="acompiler_8hpp_html"><div class="ttname"><a href="../../d2/d3d/compiler_8hpp.html">compiler.hpp</a></div><div class="ttdoc">Compiler meta directives.</div></div>
+<div class="ttc" id="aboothelp_8cpp_html_a57a1896409edf2efbb2442444cc249d4"><div class="ttname"><a href="../../d5/d6c/boothelp_8cpp.html#a57a1896409edf2efbb2442444cc249d4">stivale2_mmap_helper</a></div><div class="ttdeci">uint32_t stivale2_mmap_helper(void *baseaddr)</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

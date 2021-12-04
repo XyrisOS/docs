@@ -14,7 +14,6 @@ var sections_8hpp =
     [ "KERNEL_START", "d0/d29/sections_8hpp.html#a0195e9a61160d8c05ab820dbb4854ac3", null ],
     [ "PAGE_TABLES_END", "d0/d29/sections_8hpp.html#a058cf06bbeed32ec8c8d084d29e4e823", null ],
     [ "PAGE_TABLES_START", "d0/d29/sections_8hpp.html#a823f9064f6a8b21bfa0d71de8e3b6aa4", null ],
-    [ "SECTION", "d0/d29/sections_8hpp.html#a9982c2dc93e94348913cd6b7b0618973", null ],
     [ "_BSS_END", "d0/d29/sections_8hpp.html#a0ca4382078059b8f7852a26385becf55", null ],
     [ "_BSS_START", "d0/d29/sections_8hpp.html#a672570938e1a6282f4860f753832b3e3", null ],
     [ "_CTORS_END", "d0/d29/sections_8hpp.html#a20f39770bc6cfb32f4811b29c5c7860f", null ],

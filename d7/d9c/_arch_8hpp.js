@@ -1,7 +1,7 @@
 var _arch_8hpp =
 [
     [ "criticalRegion", "d7/d9c/_arch_8hpp.html#a286a0e21f38c30f57fe5b655da8a3249", null ],
-    [ "haltAndCatchFire", "d7/d9c/_arch_8hpp.html#a046623e350cc453bc514c5f00453747b", null ],
+    [ "haltAndCatchFire", "d7/d9c/_arch_8hpp.html#ac10469c72457034a4866422d8c97d15d", null ],
     [ "init", "d7/d9c/_arch_8hpp.html#a56d04c0a3e1b9d49d69c5d8d33875731", null ],
     [ "interruptsDisable", "d7/d9c/_arch_8hpp.html#a8941628074d88629830ffd379a107588", null ],
     [ "interruptsEnable", "d7/d9c/_arch_8hpp.html#adadc066eb66ab14bf5a31d5b31eeaee2", null ],

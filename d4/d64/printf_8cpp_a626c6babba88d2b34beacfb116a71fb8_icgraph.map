@@ -1,7 +1,7 @@
 <map id="kvsprintf" name="kvsprintf">
 <area shape="rect" id="node1" title="Sends formatted output to a string using an argument list." alt="" coords="341,56,421,83"/>
 <area shape="rect" id="node2" href="$d2/daf/stdio_8hpp.html#a4a8483991af81c2a4ae0025f4d2fb5e7" title="Sends formatted output to a string." alt="" coords="221,31,293,57"/>
-<area shape="rect" id="node5" href="$d6/d1e/panic_8cpp.html#a0d09d76c7f1c89528c69de542c318923" title=" " alt="" coords="226,81,289,108"/>
+<area shape="rect" id="node5" href="$d6/d64/_panic_8hpp.html#a1f0f35d4cff831364cdc213f096e83e5" title="Halt the system and print the provided message and arguments on the panic screen." alt="" coords="226,81,289,108"/>
 <area shape="rect" id="node3" href="$de/d66/namespace_stack.html#ab836051c392dd045b3bdfe4124ce04a8" title=" " alt="" coords="24,5,155,32"/>
 <area shape="rect" id="node4" href="$d9/dc3/namespace_arch.html#a6cc0ef4abcb7c48c9e7d7cea419649b8" title=" " alt="" coords="5,56,173,83"/>
 </map>

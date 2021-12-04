@@ -1,12 +1,11 @@
 <map id="Physical.hpp" name="Physical.hpp">
-<area shape="rect" id="node1" title="Physical memory mapping." alt="" coords="211,5,315,32"/>
-<area shape="rect" id="node2" href="$d9/d4f/_memory_8hpp.html" title="Architecture memory management &amp; paging API." alt="" coords="29,155,164,181"/>
-<area shape="rect" id="node3" title=" " alt="" coords="244,229,315,256"/>
-<area shape="rect" id="node4" title=" " alt="" coords="341,229,415,256"/>
-<area shape="rect" id="node5" href="$d9/d35/_bitset_8hpp.html" title="A basic bitmap implementation." alt="" coords="539,80,676,107"/>
-<area shape="rect" id="node7" href="$d2/d3d/compiler_8hpp.html" title="Compiler meta directives." alt="" coords="697,229,857,256"/>
-<area shape="rect" id="node10" href="$d0/d91/_memory_section_8hpp.html" title=" " alt="" coords="87,80,298,107"/>
-<area shape="rect" id="node6" href="$d7/d9c/_arch_8hpp.html" title="Architecture control and initialization." alt="" coords="551,155,663,181"/>
-<area shape="rect" id="node8" href="$d4/da0/string_8hpp.html" title="Standard string and memory utility library." alt="" coords="391,155,527,181"/>
-<area shape="rect" id="node9" title=" " alt="" coords="840,155,911,181"/>
+<area shape="rect" id="node1" title="Physical memory mapping." alt="" coords="221,5,325,32"/>
+<area shape="rect" id="node2" href="$d9/d4f/_memory_8hpp.html" title="Architecture memory management &amp; paging API." alt="" coords="63,155,198,181"/>
+<area shape="rect" id="node3" title=" " alt="" coords="148,229,219,256"/>
+<area shape="rect" id="node4" title=" " alt="" coords="416,229,490,256"/>
+<area shape="rect" id="node5" href="$d9/d35/_bitset_8hpp.html" title="A basic bitmap implementation." alt="" coords="384,80,522,107"/>
+<area shape="rect" id="node9" href="$d0/d91/_memory_section_8hpp.html" title=" " alt="" coords="25,80,236,107"/>
+<area shape="rect" id="node6" href="$d7/d9c/_arch_8hpp.html" title="Architecture control and initialization." alt="" coords="324,155,436,181"/>
+<area shape="rect" id="node7" href="$d4/da0/string_8hpp.html" title="Standard string and memory utility library." alt="" coords="460,155,596,181"/>
+<area shape="rect" id="node8" title=" " alt="" coords="671,155,742,181"/>
 </map>

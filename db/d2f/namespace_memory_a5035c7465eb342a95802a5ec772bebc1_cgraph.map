@@ -1,7 +1,7 @@
 <map id="Memory::mapKernelRangeVirtual" name="Memory::mapKernelRangeVirtual">
 <area shape="rect" id="node1" title="Map an address range into the kernel virtual address space." alt="" coords="5,56,243,83"/>
-<area shape="rect" id="node2" href="$d8/d7f/class_memory_1_1_section.html#ae6022a0a319285df737907d12cdff81c" title=" " alt="" coords="297,5,468,32"/>
-<area shape="rect" id="node3" href="$d8/d7f/class_memory_1_1_section.html#a20a339e0079efcd8717135ae45277d6c" title=" " alt="" coords="301,56,464,83"/>
+<area shape="rect" id="node2" href="$d8/d7f/class_memory_1_1_section.html#aeacf47ee881cc66130ddcac9a2e51ac2" title=" " alt="" coords="297,5,468,32"/>
+<area shape="rect" id="node3" href="$d8/d7f/class_memory_1_1_section.html#a9145bcd59832a378ca6213bc1701b393" title=" " alt="" coords="301,56,464,83"/>
 <area shape="rect" id="node4" href="$db/d2f/namespace_memory.html#a314238689c58e6a280017f389b640c29" title="Map a page into the kernel address space." alt="" coords="291,107,475,133"/>
-<area shape="rect" id="node5" href="$d6/d1e/panic_8cpp.html#a51ef3f9bd6cd14d744e31d392b445b33" title="Halt the system and print the provided message on the panic screen." alt="" coords="523,107,580,133"/>
+<area shape="rect" id="node5" href="$d6/d1e/panic_8cpp.html#ae22655ba6f328217f1ebd6248ed82727" title="Halt the system and print the provided message on the panic screen." alt="" coords="523,107,580,133"/>
 </map>

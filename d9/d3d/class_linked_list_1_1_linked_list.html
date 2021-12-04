@@ -107,7 +107,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a0207b1191944e81fef4403e5168bd2e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad6f051958ade263b0b53b83e53806ebd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d3d/class_linked_list_1_1_linked_list.html#ad6f051958ade263b0b53b83e53806ebd">InsertBefore</a> (<a class="el" href="../../d1/ddb/class_linked_list_1_1_linked_list_node.html">LinkedListNode</a>&lt; T &gt; *next, T val)</td></tr>
 <tr class="separator:ad6f051958ade263b0b53b83e53806ebd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19863c77e3246503710afd84bf159f4e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d3d/class_linked_list_1_1_linked_list.html#a19863c77e3246503710afd84bf159f4e">InsertAfter</a> (<a class="el" href="../../d1/ddb/class_linked_list_1_1_linked_list_node.html">LinkedListNode</a>&lt; T &gt; *<a class="el" href="../../d2/d59/tss_8hpp.html#abdf8ad43fa71744277d8f91684a6f2ed">prev</a>, T val)</td></tr>
+<tr class="memitem:a19863c77e3246503710afd84bf159f4e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d3d/class_linked_list_1_1_linked_list.html#a19863c77e3246503710afd84bf159f4e">InsertAfter</a> (<a class="el" href="../../d1/ddb/class_linked_list_1_1_linked_list_node.html">LinkedListNode</a>&lt; T &gt; *prev, T val)</td></tr>
 <tr class="separator:a19863c77e3246503710afd84bf159f4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aece1b84c2f9bac294c6ff87a80378bf5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d3d/class_linked_list_1_1_linked_list.html#aece1b84c2f9bac294c6ff87a80378bf5">Remove</a> (<a class="el" href="../../d1/ddb/class_linked_list_1_1_linked_list_node.html">LinkedListNode</a>&lt; T &gt; *del)</td></tr>
 <tr class="separator:aece1b84c2f9bac294c6ff87a80378bf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -357,12 +357,12 @@ template&lt;typename T &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="../../d5/d72/_linked_list_8hpp_source.html#l00188">188</a> of file <a class="el" href="../../d5/d72/_linked_list_8hpp_source.html">LinkedList.hpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    {</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;        <span class="keywordflow">if</span> (!<a class="code" href="../../d2/d59/tss_8hpp.html#abdf8ad43fa71744277d8f91684a6f2ed">prev</a>)</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;        <span class="keywordflow">if</span> (!prev)</div>
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;            <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        LinkedListNode&lt;T&gt;* newNode = <span class="keyword">new</span> LinkedListNode&lt;T&gt;(val);</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        newNode-&gt;SetNext(<a class="code" href="../../d2/d59/tss_8hpp.html#abdf8ad43fa71744277d8f91684a6f2ed">prev</a>-&gt;Next());</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        <a class="code" href="../../d2/d59/tss_8hpp.html#abdf8ad43fa71744277d8f91684a6f2ed">prev</a>-&gt;SetNext(newNode);</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;        newNode-&gt;SetPrevious(<a class="code" href="../../d2/d59/tss_8hpp.html#abdf8ad43fa71744277d8f91684a6f2ed">prev</a>);</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        newNode-&gt;SetNext(prev-&gt;Next());</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        prev-&gt;SetNext(newNode);</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;        newNode-&gt;SetPrevious(prev);</div>
 <div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;        <span class="keywordflow">if</span> (newNode-&gt;Next()) {</div>
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;            newNode-&gt;Next()-&gt;SetPrevious(newNode);</div>
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        } <span class="keywordflow">else</span> {</div>
@@ -920,7 +920,6 @@ template&lt;typename T &gt; </div>
 <div class="ttc" id="aclass_linked_list_1_1_linked_list_html_a88fa1dd71a4da3ec0083e8403dc3b05d"><div class="ttname"><a href="../../d9/d3d/class_linked_list_1_1_linked_list.html#a88fa1dd71a4da3ec0083e8403dc3b05d">LinkedList::LinkedList::LinkedList</a></div><div class="ttdeci">LinkedList()</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d72/_linked_list_8hpp_source.html#l00128">LinkedList.hpp:128</a></div></div>
 <div class="ttc" id="aclass_linked_list_1_1_linked_list_html_a19863c77e3246503710afd84bf159f4e"><div class="ttname"><a href="../../d9/d3d/class_linked_list_1_1_linked_list.html#a19863c77e3246503710afd84bf159f4e">LinkedList::LinkedList::InsertAfter</a></div><div class="ttdeci">void InsertAfter(LinkedListNode&lt; T &gt; *prev, T val)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d72/_linked_list_8hpp_source.html#l00188">LinkedList.hpp:188</a></div></div>
 <div class="ttc" id="aclass_linked_list_1_1_linked_list_html_aece1b84c2f9bac294c6ff87a80378bf5"><div class="ttname"><a href="../../d9/d3d/class_linked_list_1_1_linked_list.html#aece1b84c2f9bac294c6ff87a80378bf5">LinkedList::LinkedList::Remove</a></div><div class="ttdeci">void Remove(LinkedListNode&lt; T &gt; *del)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d72/_linked_list_8hpp_source.html#l00204">LinkedList.hpp:204</a></div></div>
-<div class="ttc" id="atss_8hpp_html_abdf8ad43fa71744277d8f91684a6f2ed"><div class="ttname"><a href="../../d2/d59/tss_8hpp.html#abdf8ad43fa71744277d8f91684a6f2ed">prev</a></div><div class="ttdeci">uint32_t prev</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d59/tss_8hpp_source.html#l00025">tss.hpp:25</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

@@ -1,0 +1,8 @@
+<map id="Memory::Section::end" name="Memory::Section::end">
+<area shape="rect" id="node1" title=" " alt="" coords="457,81,620,108"/>
+<area shape="rect" id="node2" href="$d8/d7f/class_memory_1_1_section.html#a03b0c93b7c0a5a53d7838d19ab9fe0d2" title=" " alt="" coords="188,5,383,32"/>
+<area shape="rect" id="node3" href="$db/d2f/namespace_memory.html#ac18baaf631829c2290bcb0971e8b6fad" title="Map a kernel address range into physical memory." alt="" coords="161,56,409,83"/>
+<area shape="rect" id="node4" href="$db/d2f/namespace_memory.html#a5035c7465eb342a95802a5ec772bebc1" title="Map an address range into the kernel virtual address space." alt="" coords="167,107,404,133"/>
+<area shape="rect" id="node6" href="$d6/d53/class_memory_1_1_physical_1_1_physical_manager.html#a2a1aba3973b12be8410b3e15c93ea5a0" title=" " alt="" coords="186,158,385,199"/>
+<area shape="rect" id="node5" href="$d6/d9b/namespace_graphics.html#afc86122297c8c117c8793ddaf246e4ed" title="Initializes the framebuffer (if available)" alt="" coords="5,107,113,133"/>
+</map>

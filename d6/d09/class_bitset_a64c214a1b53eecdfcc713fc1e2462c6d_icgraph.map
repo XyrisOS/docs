@@ -1,0 +1,10 @@
+<map id="Bitset::Test" name="Bitset::Test">
+<area shape="rect" id="node1" title="Return the value of the bit at the given position." alt="" coords="499,111,593,138"/>
+<area shape="rect" id="node2" href="$d6/d09/class_bitset.html#a22260a1012d015dd5a3e69d95d2784b1" title="Finds and returns the position of the first clear bit." alt="" coords="269,5,433,47"/>
+<area shape="rect" id="node3" href="$d6/d09/class_bitset.html#ae7f0568507a5357dcdc8857585219005" title="Flip the bit at the given position." alt="" coords="269,71,433,112"/>
+<area shape="rect" id="node4" href="$d6/d53/class_memory_1_1_physical_1_1_physical_manager.html#a830f3274f07d5a97c3240dbf20c682f6" title=" " alt="" coords="252,136,451,177"/>
+<area shape="rect" id="node8" href="$d6/d09/class_bitset.html#a43a289922a03ef41166f0e0e2b3278fa" title="Return the value of the bit at the given position Same functionality as Test() as an operator This op..." alt="" coords="269,201,433,243"/>
+<area shape="rect" id="node5" href="$d6/d53/class_memory_1_1_physical_1_1_physical_manager.html#a94d37dc83d31fe6cbcd7d49875afd7e4" title=" " alt="" coords="5,71,204,112"/>
+<area shape="rect" id="node6" href="$d6/d53/class_memory_1_1_physical_1_1_physical_manager.html#a589a01b8b7b06743023be9666fe7ceb1" title=" " alt="" coords="5,136,204,177"/>
+<area shape="rect" id="node7" href="$d6/d53/class_memory_1_1_physical_1_1_physical_manager.html#a83de1cc747e3b1b11365bd9477f443d5" title=" " alt="" coords="5,201,204,243"/>
+</map>
