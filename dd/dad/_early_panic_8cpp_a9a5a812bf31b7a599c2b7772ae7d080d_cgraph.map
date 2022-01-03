@@ -1,0 +1,4 @@
+<map id="__attribute__" name="__attribute__">
+<area shape="rect" id="node1" title="Map bootloader information into the higher half of memory so that the kernel can access it and parse ..." alt="" coords="5,5,112,32"/>
+<area shape="rect" id="node2" href="$d9/dc3/namespace_arch.html#ac10469c72457034a4866422d8c97d15d" title="Disable interrupts and halts execution." alt="" coords="160,5,331,32"/>
+</map>

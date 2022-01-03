@@ -87,14 +87,29 @@ $(document).ready(function(){initNavTree('globals_func.html',''); initResizable(
 
 <h3><a id="index__5F"></a>- _ -</h3><ul>
 <li>__attribute__()
-: <a class="el" href="d5/d6c/boothelp_8cpp.html#ac3c8a7c4c2366fada31ce261dcf81963">boothelp.cpp</a>
-, <a class="el" href="df/d62/_arch_2i686_2_bootloader_2panic_8cpp.html#af92e620bb82343870076b8a436ff7240">Arch/i686/Bootloader/panic.cpp</a>
+: <a class="el" href="dd/dad/_early_panic_8cpp.html#a9a5a812bf31b7a599c2b7772ae7d080d">EarlyPanic.cpp</a>
+, <a class="el" href="d2/d76/_early_panic_8hpp.html#aa772254623da5cc9c22f0e2bd25e9bbe">EarlyPanic.hpp</a>
+, <a class="el" href="d0/d0c/_null_boot_8c.html#afa6eef0d68d65d72e18e3050671eb6bd">NullBoot.c</a>
+, <a class="el" href="dc/d20/stivale2_8c.html#ac9aa3d11e79c29565525c959c6e89e1a">stivale2.c</a>
+, <a class="el" href="d8/dfb/regs_8hpp.html#a66bb75d0222f92ec198058bfaee6e9a8">regs.hpp</a>
+, <a class="el" href="dc/d20/stivale2_8c.html#a3cf4abc608b15247b728e390125dd218">stivale2.c</a>
+, <a class="el" href="d7/d42/_memory_8i686_8hpp.html#a953cec40c26fcfffd7faa7924a66f9ce">Memory.i686.hpp</a>
+, <a class="el" href="dc/d20/stivale2_8c.html#a4bf186d5e63417fbffbca361e6c7a338">stivale2.c</a>
 </li>
 <li>__cxa_pure_virtual()
 : <a class="el" href="d4/db1/gcc_8cpp.html#a6be7d9ce80c86f5178635fa86c2dd5e7">gcc.cpp</a>
 </li>
 <li>__stack_chk_fail()
 : <a class="el" href="d4/db1/gcc_8cpp.html#a051883e0ce55ef4ec9e2ac77874d4e5c">gcc.cpp</a>
+</li>
+<li>_fini()
+: <a class="el" href="d1/d51/_loader_8cpp.html#a9ce78f31b61c8a3f4330e814839a0219">Loader.cpp</a>
+</li>
+<li>_init()
+: <a class="el" href="d1/d51/_loader_8cpp.html#a53578094a6e7647b6a9f9ea86975c4c2">Loader.cpp</a>
+</li>
+<li>_start()
+: <a class="el" href="d0/d0c/_null_boot_8c.html#a8b67a6ff3f33fae9b3f1b142005c0bc2">NullBoot.c</a>
 </li>
 <li>_tasks_enqueue_ready()
 : <a class="el" href="d5/d9d/tasks_8cpp.html#a28a181f075e53e9f4a57998ca5a2b399">tasks.cpp</a>
@@ -108,13 +123,6 @@ $(document).ready(function(){initNavTree('globals_func.html',''); initResizable(
 <h3><a id="index_c"></a>- c -</h3><ul>
 <li>calloc()
 : <a class="el" href="da/d45/heap_8hpp.html#a77e880b1033d5a912be4333fc5d31eef">heap.hpp</a>
-</li>
-</ul>
-
-
-<h3><a id="index_e"></a>- e -</h3><ul>
-<li>early_panic()
-: <a class="el" href="df/d62/_arch_2i686_2_bootloader_2panic_8cpp.html#af0e8e99d063b283c9748fc23b69fca94">Arch/i686/Bootloader/panic.cpp</a>
 </li>
 </ul>
 
@@ -298,12 +306,12 @@ $(document).ready(function(){initNavTree('globals_func.html',''); initResizable(
 , <a class="el" href="d4/ddc/isr_8hpp.html#a2c19bdf23d1129da2d1f5ffebeb4b72c">isr.hpp</a>
 </li>
 <li>isr_install()
-: <a class="el" href="d3/d68/isr_8cpp.html#aed0ecf87a0ed3270ce0e9c68cd01a946">isr.cpp</a>
-, <a class="el" href="d4/ddc/isr_8hpp.html#aed0ecf87a0ed3270ce0e9c68cd01a946">isr.hpp</a>
+: <a class="el" href="d4/ddc/isr_8hpp.html#aed0ecf87a0ed3270ce0e9c68cd01a946">isr.hpp</a>
+, <a class="el" href="d3/d68/isr_8cpp.html#aed0ecf87a0ed3270ce0e9c68cd01a946">isr.cpp</a>
 </li>
 <li>itoa()
-: <a class="el" href="d5/d24/string_8cpp.html#a44b3294305d8f0b6a4ec2e411755cda2">string.cpp</a>
-, <a class="el" href="d4/da0/string_8hpp.html#a44b3294305d8f0b6a4ec2e411755cda2">string.hpp</a>
+: <a class="el" href="d4/da0/string_8hpp.html#a44b3294305d8f0b6a4ec2e411755cda2">string.hpp</a>
+, <a class="el" href="d5/d24/string_8cpp.html#a44b3294305d8f0b6a4ec2e411755cda2">string.cpp</a>
 </li>
 </ul>
 
@@ -314,12 +322,12 @@ $(document).ready(function(){initNavTree('globals_func.html',''); initResizable(
 , <a class="el" href="d4/d01/_entry_8cpp.html#a6663272297ce06af1a3c55a0eb2e3286">Entry.cpp</a>
 </li>
 <li>ksprintf()
-: <a class="el" href="d4/d64/printf_8cpp.html#a4a8483991af81c2a4ae0025f4d2fb5e7">printf.cpp</a>
-, <a class="el" href="d2/daf/stdio_8hpp.html#a4a8483991af81c2a4ae0025f4d2fb5e7">stdio.hpp</a>
+: <a class="el" href="d2/daf/stdio_8hpp.html#a4a8483991af81c2a4ae0025f4d2fb5e7">stdio.hpp</a>
+, <a class="el" href="d4/d64/printf_8cpp.html#a4a8483991af81c2a4ae0025f4d2fb5e7">printf.cpp</a>
 </li>
 <li>kvsprintf()
-: <a class="el" href="d4/d64/printf_8cpp.html#a626c6babba88d2b34beacfb116a71fb8">printf.cpp</a>
-, <a class="el" href="d2/daf/stdio_8hpp.html#a626c6babba88d2b34beacfb116a71fb8">stdio.hpp</a>
+: <a class="el" href="d2/daf/stdio_8hpp.html#a626c6babba88d2b34beacfb116a71fb8">stdio.hpp</a>
+, <a class="el" href="d4/d64/printf_8cpp.html#a626c6babba88d2b34beacfb116a71fb8">printf.cpp</a>
 </li>
 </ul>
 
@@ -330,8 +338,8 @@ $(document).ready(function(){initNavTree('globals_func.html',''); initResizable(
 , <a class="el" href="da/d45/heap_8hpp.html#ac17a7bc03af86f215d779f1798aed8e8">heap.hpp</a>
 </li>
 <li>liballoc_free()
-: <a class="el" href="de/d90/heap_8cpp.html#ab960c2afdba023ada594c57e8fe9ed8b">heap.cpp</a>
-, <a class="el" href="da/d45/heap_8hpp.html#af18d86433f6454a9b2b4d7316c640525">heap.hpp</a>
+: <a class="el" href="da/d45/heap_8hpp.html#af18d86433f6454a9b2b4d7316c640525">heap.hpp</a>
+, <a class="el" href="de/d90/heap_8cpp.html#ab960c2afdba023ada594c57e8fe9ed8b">heap.cpp</a>
 </li>
 <li>liballoc_lock()
 : <a class="el" href="de/d90/heap_8cpp.html#a8b5670e4594b0b6f8be78fe17f0c3b53">heap.cpp</a>
@@ -342,8 +350,8 @@ $(document).ready(function(){initNavTree('globals_func.html',''); initResizable(
 , <a class="el" href="da/d45/heap_8hpp.html#aedc23f198b2882d41d0caa316453967b">heap.hpp</a>
 </li>
 <li>load_idt()
-: <a class="el" href="d9/d87/idt_8cpp.html#aacb15cc09678bbe5e09fb652c56e884e">idt.cpp</a>
-, <a class="el" href="dd/d12/idt_8hpp.html#aacb15cc09678bbe5e09fb652c56e884e">idt.hpp</a>
+: <a class="el" href="dd/d12/idt_8hpp.html#aacb15cc09678bbe5e09fb652c56e884e">idt.hpp</a>
+, <a class="el" href="d9/d87/idt_8cpp.html#aacb15cc09678bbe5e09fb652c56e884e">idt.cpp</a>
 </li>
 </ul>
 
@@ -361,15 +369,12 @@ $(document).ready(function(){initNavTree('globals_func.html',''); initResizable(
 , <a class="el" href="d4/da0/string_8hpp.html#a370712322c794e949c996946f2283ea8">string.hpp</a>
 </li>
 <li>memmove()
-: <a class="el" href="d5/d24/string_8cpp.html#a212726b095532a9f0543cdb9ae0fdca1">string.cpp</a>
-, <a class="el" href="d4/da0/string_8hpp.html#a77d54984ace393a42a1b8020b528b2be">string.hpp</a>
+: <a class="el" href="d4/da0/string_8hpp.html#a77d54984ace393a42a1b8020b528b2be">string.hpp</a>
+, <a class="el" href="d5/d24/string_8cpp.html#a212726b095532a9f0543cdb9ae0fdca1">string.cpp</a>
 </li>
 <li>memset()
-: <a class="el" href="d5/d24/string_8cpp.html#adc296efabb90c20113d5420e4d162d14">string.cpp</a>
-, <a class="el" href="d4/da0/string_8hpp.html#ac8a6af2104a3533b0819f01e1c0c1066">string.hpp</a>
-</li>
-<li>multiboot2_mmap_helper()
-: <a class="el" href="d5/d6c/boothelp_8cpp.html#a162cf1be3b687973d59b81c7f1977f8e">boothelp.cpp</a>
+: <a class="el" href="d4/da0/string_8hpp.html#ac8a6af2104a3533b0819f01e1c0c1066">string.hpp</a>
+, <a class="el" href="d5/d24/string_8cpp.html#adc296efabb90c20113d5420e4d162d14">string.cpp</a>
 </li>
 </ul>
 
@@ -386,7 +391,7 @@ $(document).ready(function(){initNavTree('globals_func.html',''); initResizable(
 : <a class="el" href="d1/dd1/cxx_8cpp.html#a86107594327f3a001230df9802cd4422">cxx.cpp</a>
 </li>
 <li>operator delete[]()
-: <a class="el" href="d1/dd1/cxx_8cpp.html#aaa8d8403dca7d813a59dd1f07728349d">cxx.cpp</a>
+: <a class="el" href="d1/dd1/cxx_8cpp.html#a3d8a4b7bf03d809e20d760c505909e2b">cxx.cpp</a>
 </li>
 <li>operator new()
 : <a class="el" href="d1/dd1/cxx_8cpp.html#a205ed048fdf5259c2e8e0cb60ee8f719">cxx.cpp</a>
@@ -399,16 +404,16 @@ $(document).ready(function(){initNavTree('globals_func.html',''); initResizable(
 
 <h3><a id="index_p"></a>- p -</h3><ul>
 <li>panic()
-: <a class="el" href="d6/d1e/panic_8cpp.html#ae22655ba6f328217f1ebd6248ed82727">panic.cpp</a>
-, <a class="el" href="d6/d64/_panic_8hpp.html#ae22655ba6f328217f1ebd6248ed82727">Panic.hpp</a>
+: <a class="el" href="d9/d5d/_panic_8cpp.html#ae22655ba6f328217f1ebd6248ed82727">Panic.cpp</a>
+, <a class="el" href="d6/d64/_panic_8hpp.html#a034707ef0aa682b901aa0d5961c30c94">Panic.hpp</a>
 </li>
 <li>panicf()
-: <a class="el" href="d6/d1e/panic_8cpp.html#a1f0f35d4cff831364cdc213f096e83e5">panic.cpp</a>
+: <a class="el" href="d9/d5d/_panic_8cpp.html#a1f0f35d4cff831364cdc213f096e83e5">Panic.cpp</a>
 , <a class="el" href="d6/d64/_panic_8hpp.html#a1f0f35d4cff831364cdc213f096e83e5">Panic.hpp</a>
 </li>
 <li>printf_helper()
-: <a class="el" href="d4/d64/printf_8cpp.html#a85a2fff114bf015eba22a1dc163bf1ba">printf.cpp</a>
-, <a class="el" href="d2/daf/stdio_8hpp.html#a85a2fff114bf015eba22a1dc163bf1ba">stdio.hpp</a>
+: <a class="el" href="d2/daf/stdio_8hpp.html#a85a2fff114bf015eba22a1dc163bf1ba">stdio.hpp</a>
+, <a class="el" href="d4/d64/printf_8cpp.html#a85a2fff114bf015eba22a1dc163bf1ba">printf.cpp</a>
 </li>
 </ul>
 
@@ -419,16 +424,16 @@ $(document).ready(function(){initNavTree('globals_func.html',''); initResizable(
 , <a class="el" href="d4/d0b/rand_8hpp.html#ae23144bcbb8e3742b00eb687c36654d1">rand.hpp</a>
 </li>
 <li>readByte()
-: <a class="el" href="d7/d27/ports_8cpp.html#aecbddae5080adf82c5938a97695cdc3e">ports.cpp</a>
-, <a class="el" href="d8/d9f/ports_8hpp.html#aecbddae5080adf82c5938a97695cdc3e">ports.hpp</a>
+: <a class="el" href="d8/d9f/ports_8hpp.html#aecbddae5080adf82c5938a97695cdc3e">ports.hpp</a>
+, <a class="el" href="d7/d27/ports_8cpp.html#aecbddae5080adf82c5938a97695cdc3e">ports.cpp</a>
 </li>
 <li>readLong()
 : <a class="el" href="d7/d27/ports_8cpp.html#aa45035ad0ab7e70e604f5c538f7941f7">ports.cpp</a>
 , <a class="el" href="d8/d9f/ports_8hpp.html#aa45035ad0ab7e70e604f5c538f7941f7">ports.hpp</a>
 </li>
 <li>readWord()
-: <a class="el" href="d7/d27/ports_8cpp.html#abe6bbb9f5323b32d7158c08c0920d0a1">ports.cpp</a>
-, <a class="el" href="d8/d9f/ports_8hpp.html#abe6bbb9f5323b32d7158c08c0920d0a1">ports.hpp</a>
+: <a class="el" href="d8/d9f/ports_8hpp.html#abe6bbb9f5323b32d7158c08c0920d0a1">ports.hpp</a>
+, <a class="el" href="d7/d27/ports_8cpp.html#abe6bbb9f5323b32d7158c08c0920d0a1">ports.cpp</a>
 </li>
 <li>realloc()
 : <a class="el" href="da/d45/heap_8hpp.html#afa148085b6fa9594b4c35e100d94a183">heap.hpp</a>
@@ -438,8 +443,8 @@ $(document).ready(function(){initNavTree('globals_func.html',''); initResizable(
 , <a class="el" href="d4/ddc/isr_8hpp.html#acc90c1ac3bbcb4fc45ccda7cde4882c7">isr.hpp</a>
 </li>
 <li>reverse()
-: <a class="el" href="d5/d24/string_8cpp.html#a4807334c4e90264cee03c6c529ff3846">string.cpp</a>
-, <a class="el" href="d4/da0/string_8hpp.html#a4807334c4e90264cee03c6c529ff3846">string.hpp</a>
+: <a class="el" href="d4/da0/string_8hpp.html#a4807334c4e90264cee03c6c529ff3846">string.hpp</a>
+, <a class="el" href="d5/d24/string_8cpp.html#a4807334c4e90264cee03c6c529ff3846">string.cpp</a>
 </li>
 </ul>
 
@@ -450,15 +455,16 @@ $(document).ready(function(){initNavTree('globals_func.html',''); initResizable(
 , <a class="el" href="df/d05/timer_8hpp.html#aaa6c98e94749593031e039d184db09f4">timer.hpp</a>
 </li>
 <li>spkr_beep()
-: <a class="el" href="da/da5/spkr_8cpp.html#a5ec9ba996adeac895598eb8eb8e2b19b">spkr.cpp</a>
-, <a class="el" href="da/d1a/spkr_8hpp.html#a5ec9ba996adeac895598eb8eb8e2b19b">spkr.hpp</a>
+: <a class="el" href="da/d1a/spkr_8hpp.html#a5ec9ba996adeac895598eb8eb8e2b19b">spkr.hpp</a>
+, <a class="el" href="da/da5/spkr_8cpp.html#a5ec9ba996adeac895598eb8eb8e2b19b">spkr.cpp</a>
 </li>
 <li>srand()
 : <a class="el" href="d5/d92/rand_8cpp.html#a83a727cc697aea22e24cad5f39198dd2">rand.cpp</a>
 , <a class="el" href="d4/d0b/rand_8hpp.html#a83a727cc697aea22e24cad5f39198dd2">rand.hpp</a>
 </li>
-<li>stivale2_mmap_helper()
-: <a class="el" href="d5/d6c/boothelp_8cpp.html#a57a1896409edf2efbb2442444cc249d4">boothelp.cpp</a>
+<li>stage2Entry()
+: <a class="el" href="dc/dc7/_loader_8hpp.html#a89f3a8359da74ac68d51abc540390d86">Loader.hpp</a>
+, <a class="el" href="d1/d51/_loader_8cpp.html#a89f3a8359da74ac68d51abc540390d86">Loader.cpp</a>
 </li>
 <li>strcat()
 : <a class="el" href="d5/d24/string_8cpp.html#adb8723e585ed29f2370cddf90f6891bc">string.cpp</a>
@@ -477,12 +483,12 @@ $(document).ready(function(){initNavTree('globals_func.html',''); initResizable(
 , <a class="el" href="d4/da0/string_8hpp.html#a2dee044e4e667b5b789b493abd21cfa4">string.hpp</a>
 </li>
 <li>strncpy()
-: <a class="el" href="d5/d24/string_8cpp.html#abc366b478e428fea6485c570c03b1ea5">string.cpp</a>
-, <a class="el" href="d4/da0/string_8hpp.html#ac0d6951f22221ced6d850ec38cd1bc4c">string.hpp</a>
+: <a class="el" href="d4/da0/string_8hpp.html#ac0d6951f22221ced6d850ec38cd1bc4c">string.hpp</a>
+, <a class="el" href="d5/d24/string_8cpp.html#abc366b478e428fea6485c570c03b1ea5">string.cpp</a>
 </li>
 <li>strstr()
-: <a class="el" href="d5/d24/string_8cpp.html#ae1e87cf0776db5e2c3f9350b61e56000">string.cpp</a>
-, <a class="el" href="d4/da0/string_8hpp.html#ae1e87cf0776db5e2c3f9350b61e56000">string.hpp</a>
+: <a class="el" href="d4/da0/string_8hpp.html#ae1e87cf0776db5e2c3f9350b61e56000">string.hpp</a>
+, <a class="el" href="d5/d24/string_8cpp.html#ae1e87cf0776db5e2c3f9350b61e56000">string.cpp</a>
 </li>
 </ul>
 
@@ -493,16 +499,16 @@ $(document).ready(function(){initNavTree('globals_func.html',''); initResizable(
 , <a class="el" href="d2/dbd/tasks_8hpp.html#ae954d27107c4990313982108234cae5d">tasks.hpp</a>
 </li>
 <li>tasks_exit()
-: <a class="el" href="d5/d9d/tasks_8cpp.html#aaf4064f154e53a624a5347df60c19dfa">tasks.cpp</a>
-, <a class="el" href="d2/dbd/tasks_8hpp.html#ac7a1f4f04e6d7bdbc47de59c05a61262">tasks.hpp</a>
+: <a class="el" href="d2/dbd/tasks_8hpp.html#ac7a1f4f04e6d7bdbc47de59c05a61262">tasks.hpp</a>
+, <a class="el" href="d5/d9d/tasks_8cpp.html#aaf4064f154e53a624a5347df60c19dfa">tasks.cpp</a>
 </li>
 <li>tasks_get_self_time()
 : <a class="el" href="d5/d9d/tasks_8cpp.html#abb605ae845f610f55e83c3ce80750355">tasks.cpp</a>
 , <a class="el" href="d2/dbd/tasks_8hpp.html#abb605ae845f610f55e83c3ce80750355">tasks.hpp</a>
 </li>
 <li>tasks_init()
-: <a class="el" href="d5/d9d/tasks_8cpp.html#a77bbf88fbecf73800c39fa4a887a506a">tasks.cpp</a>
-, <a class="el" href="d2/dbd/tasks_8hpp.html#a77bbf88fbecf73800c39fa4a887a506a">tasks.hpp</a>
+: <a class="el" href="d2/dbd/tasks_8hpp.html#a77bbf88fbecf73800c39fa4a887a506a">tasks.hpp</a>
+, <a class="el" href="d5/d9d/tasks_8cpp.html#a77bbf88fbecf73800c39fa4a887a506a">tasks.cpp</a>
 </li>
 <li>tasks_nano_sleep()
 : <a class="el" href="d5/d9d/tasks_8cpp.html#afe0837dfadb366ea8717fd97e04b3374">tasks.cpp</a>
@@ -517,8 +523,8 @@ $(document).ready(function(){initNavTree('globals_func.html',''); initResizable(
 , <a class="el" href="d2/dbd/tasks_8hpp.html#a65c4921579a6bad97c037bc8db69fb26">tasks.hpp</a>
 </li>
 <li>tasks_schedule()
-: <a class="el" href="d5/d9d/tasks_8cpp.html#a5e9769e0e26d471f914a8e33bc6494f8">tasks.cpp</a>
-, <a class="el" href="d2/dbd/tasks_8hpp.html#a5e9769e0e26d471f914a8e33bc6494f8">tasks.hpp</a>
+: <a class="el" href="d2/dbd/tasks_8hpp.html#a5e9769e0e26d471f914a8e33bc6494f8">tasks.hpp</a>
+, <a class="el" href="d5/d9d/tasks_8cpp.html#a5e9769e0e26d471f914a8e33bc6494f8">tasks.cpp</a>
 </li>
 <li>tasks_switch_to()
 : <a class="el" href="d2/dbd/tasks_8hpp.html#a4a1c325fb4550babd5637c4de1c6ae2a">tasks.hpp</a>
@@ -528,8 +534,8 @@ $(document).ready(function(){initNavTree('globals_func.html',''); initResizable(
 , <a class="el" href="d2/dbd/tasks_8hpp.html#af2ec535cf48522c768455393852e0e6c">tasks.hpp</a>
 </li>
 <li>tasks_sync_unblock()
-: <a class="el" href="d5/d9d/tasks_8cpp.html#a95269b08443b913d1ca443794e4aa3ad">tasks.cpp</a>
-, <a class="el" href="d2/dbd/tasks_8hpp.html#a7df2b9cceb319c6176a69d86291b9001">tasks.hpp</a>
+: <a class="el" href="d2/dbd/tasks_8hpp.html#a7df2b9cceb319c6176a69d86291b9001">tasks.hpp</a>
+, <a class="el" href="d5/d9d/tasks_8cpp.html#a95269b08443b913d1ca443794e4aa3ad">tasks.cpp</a>
 </li>
 <li>tasks_unblock()
 : <a class="el" href="d5/d9d/tasks_8cpp.html#ac8fc9f801e5cc9d86d6801f003fd4a24">tasks.cpp</a>
@@ -539,8 +545,8 @@ $(document).ready(function(){initNavTree('globals_func.html',''); initResizable(
 : <a class="el" href="d5/d9d/tasks_8cpp.html#a253cc97fa008fce21eeb67d012a9fced">tasks.cpp</a>
 </li>
 <li>timer_init()
-: <a class="el" href="dc/de5/timer_8cpp.html#afe097e48aba5e0fc040df42695ab6b5b">timer.cpp</a>
-, <a class="el" href="df/d05/timer_8hpp.html#afe097e48aba5e0fc040df42695ab6b5b">timer.hpp</a>
+: <a class="el" href="df/d05/timer_8hpp.html#afe097e48aba5e0fc040df42695ab6b5b">timer.hpp</a>
+, <a class="el" href="dc/de5/timer_8cpp.html#afe097e48aba5e0fc040df42695ab6b5b">timer.cpp</a>
 </li>
 <li>timer_register_callback()
 : <a class="el" href="dc/de5/timer_8cpp.html#aa5729176ed3fb89f2e5c91b28361f643">timer.cpp</a>
@@ -558,16 +564,16 @@ $(document).ready(function(){initNavTree('globals_func.html',''); initResizable(
 , <a class="el" href="d8/d9f/ports_8hpp.html#aa89191491445201430ae9a8feb3184d9">ports.hpp</a>
 </li>
 <li>writeByteSlow()
-: <a class="el" href="d7/d27/ports_8cpp.html#a2682086e913ea19360f5dbbe445e1e96">ports.cpp</a>
-, <a class="el" href="d8/d9f/ports_8hpp.html#a2682086e913ea19360f5dbbe445e1e96">ports.hpp</a>
+: <a class="el" href="d8/d9f/ports_8hpp.html#a2682086e913ea19360f5dbbe445e1e96">ports.hpp</a>
+, <a class="el" href="d7/d27/ports_8cpp.html#a2682086e913ea19360f5dbbe445e1e96">ports.cpp</a>
 </li>
 <li>writeLong()
 : <a class="el" href="d7/d27/ports_8cpp.html#a265b1802a8eeaa69afa141773de47366">ports.cpp</a>
 , <a class="el" href="d8/d9f/ports_8hpp.html#a265b1802a8eeaa69afa141773de47366">ports.hpp</a>
 </li>
 <li>writeWord()
-: <a class="el" href="d7/d27/ports_8cpp.html#a010bc0db93ee613a5973ecda3274cd12">ports.cpp</a>
-, <a class="el" href="d8/d9f/ports_8hpp.html#a010bc0db93ee613a5973ecda3274cd12">ports.hpp</a>
+: <a class="el" href="d8/d9f/ports_8hpp.html#a010bc0db93ee613a5973ecda3274cd12">ports.hpp</a>
+, <a class="el" href="d7/d27/ports_8cpp.html#a010bc0db93ee613a5973ecda3274cd12">ports.cpp</a>
 </li>
 </ul>
 </div><!-- contents -->

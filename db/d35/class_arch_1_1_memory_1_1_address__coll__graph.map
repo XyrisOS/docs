@@ -1,5 +1,0 @@
-<map id="Arch::Memory::Address" name="Arch::Memory::Address">
-<area shape="rect" id="node1" title="Address class. Represents a memory address that can be used to address a page in virtual memory,..." alt="" coords="89,95,261,121"/>
-<area shape="rect" id="node2" href="$d6/d88/struct_arch_1_1_memory_1_1_frame.html" title="Page frame structure. This represents a the address to a single unit of memory in RAM...." alt="" coords="5,5,167,32"/>
-<area shape="rect" id="node3" href="$da/db3/struct_arch_1_1_memory_1_1_page.html" title="Virtual address structure. Represents an address in virtual memory that redirects to a physical page ..." alt="" coords="191,5,341,32"/>
-</map>

@@ -1,6 +1,5 @@
 var _arch_8i686_8cpp =
 [
-    [ "haltAndCatchFire", "d4/dc9/_arch_8i686_8cpp.html#ac10469c72457034a4866422d8c97d15d", null ],
     [ "init", "d4/dc9/_arch_8i686_8cpp.html#a56d04c0a3e1b9d49d69c5d8d33875731", null ],
     [ "interruptsDisable", "d4/dc9/_arch_8i686_8cpp.html#a8941628074d88629830ffd379a107588", null ],
     [ "interruptsEnable", "d4/dc9/_arch_8i686_8cpp.html#adadc066eb66ab14bf5a31d5b31eeaee2", null ],

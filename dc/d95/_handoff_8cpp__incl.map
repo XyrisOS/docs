@@ -1,5 +1,5 @@
 <map id="Handoff.cpp" name="Handoff.cpp">
-<area shape="rect" id="node1" title="Bootloader information parsing and kernel handoff container." alt="" coords="635,5,735,32"/>
+<area shape="rect" id="node1" title="Bootloader information parsing and kernel handoff container." alt="" coords="541,5,641,32"/>
 <area shape="rect" id="node2" href="$d7/d9c/_arch_8hpp.html" title="Architecture control and initialization." alt="" coords="5,229,117,256"/>
 <area shape="rect" id="node5" href="$d5/d87/_arguments_8hpp.html" title="Kernel command argument parsing." alt="" coords="213,155,409,181"/>
 <area shape="rect" id="node7" href="$d2/d1f/_handoff_8hpp.html" title=" " alt="" coords="597,80,773,107"/>
@@ -9,8 +9,7 @@
 <area shape="rect" id="node16" href="$d6/d64/_panic_8hpp.html" title="Kernel panic management." alt="" coords="53,80,137,107"/>
 <area shape="rect" id="node17" href="$d5/ddc/console_8hpp.html" title="Framebuffer console." alt="" coords="1161,80,1378,107"/>
 <area shape="rect" id="node18" href="$db/d90/rs232_8hpp.html" title="A simple, write&#45;only driver for the RS232 serial device standard. Code mostly ported from Panix&#45;Archi..." alt="" coords="798,80,981,107"/>
-<area shape="rect" id="node19" title=" " alt="" coords="1402,80,1574,107"/>
-<area shape="rect" id="node20" title=" " alt="" coords="1598,80,1733,107"/>
+<area shape="rect" id="node19" title=" " alt="" coords="1402,80,1537,107"/>
 <area shape="rect" id="node3" title=" " alt="" coords="379,379,453,405"/>
 <area shape="rect" id="node4" title=" " alt="" coords="855,379,926,405"/>
 <area shape="rect" id="node6" href="$d5/d72/_linked_list_8hpp.html" title="Standard linked list library." alt="" coords="454,304,618,331"/>

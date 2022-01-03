@@ -1,11 +1,10 @@
 var searchData=
 [
-  ['wait_1310',['Wait',['../d4/dbd/class_semaphore.html#ac3b3b6cd0044efda8fbd2dbd0fb6d995',1,'Semaphore']]],
-  ['write_1311',['write',['../d8/db5/namespace_console.html#a4c2d2de6b43a7c900831f4ee73716515',1,'Console::write(const char c)'],['../d8/db5/namespace_console.html#afd4ee2d6ab18c9d14f28391505f0acf6',1,'Console::write(const char *str)'],['../d7/d75/namespace_r_s232.html#a4f82e14c1586b0fdcc0f71a0806e4e7e',1,'RS232::write()']]],
-  ['writebyte_1312',['writeByte',['../d7/d27/ports_8cpp.html#aa89191491445201430ae9a8feb3184d9',1,'writeByte(uint16_t port, uint8_t data):&#160;ports.cpp'],['../d8/d9f/ports_8hpp.html#aa89191491445201430ae9a8feb3184d9',1,'writeByte(uint16_t port, uint8_t data):&#160;ports.cpp']]],
-  ['writebyteslow_1313',['writeByteSlow',['../d7/d27/ports_8cpp.html#a2682086e913ea19360f5dbbe445e1e96',1,'writeByteSlow(uint16_t port, uint8_t data):&#160;ports.cpp'],['../d8/d9f/ports_8hpp.html#a2682086e913ea19360f5dbbe445e1e96',1,'writeByteSlow(uint16_t port, uint8_t data):&#160;ports.cpp']]],
-  ['writecr0_1314',['writeCR0',['../d4/ddf/namespace_registers.html#a113bb16f2d30345fb54c5875ddd739ee',1,'Registers']]],
-  ['writecr3_1315',['writeCR3',['../d4/ddf/namespace_registers.html#a9a1056d5d641c0cbd1e3b74d6a429660',1,'Registers']]],
-  ['writelong_1316',['writeLong',['../d7/d27/ports_8cpp.html#a265b1802a8eeaa69afa141773de47366',1,'writeLong(uint16_t port, uint32_t data):&#160;ports.cpp'],['../d8/d9f/ports_8hpp.html#a265b1802a8eeaa69afa141773de47366',1,'writeLong(uint16_t port, uint32_t data):&#160;ports.cpp']]],
-  ['writeword_1317',['writeWord',['../d7/d27/ports_8cpp.html#a010bc0db93ee613a5973ecda3274cd12',1,'writeWord(uint16_t port, uint16_t data):&#160;ports.cpp'],['../d8/d9f/ports_8hpp.html#a010bc0db93ee613a5973ecda3274cd12',1,'writeWord(uint16_t port, uint16_t data):&#160;ports.cpp']]]
+  ['_7ehandoffcpudescriptor_1282',['~HandoffCPUDescriptor',['../db/d82/class_boot_1_1_handoff_c_p_u_descriptor.html#abda19fe605ac41131a9dcdbdbdb182e6',1,'Boot::HandoffCPUDescriptor']]],
+  ['_7ehandoffrsdpdescriptor_1283',['~HandoffRSDPDescriptor',['../d5/d80/class_boot_1_1_handoff_r_s_d_p_descriptor.html#a529abf4d007b3b646e1163146e1a6d64',1,'Boot::HandoffRSDPDescriptor']]],
+  ['_7ehandoffsmpdescriptor_1284',['~HandoffSMPDescriptor',['../df/dd0/class_boot_1_1_handoff_s_m_p_descriptor.html#a975ab4b0afe7c75bcfaece24ad1994e2',1,'Boot::HandoffSMPDescriptor']]],
+  ['_7elinkedlist_1285',['~LinkedList',['../d9/d3d/class_linked_list_1_1_linked_list.html#af9661740c2e1f2382f3bc6c3c9649372',1,'LinkedList::LinkedList']]],
+  ['_7emutex_1286',['~Mutex',['../d4/de8/class_mutex.html#ac9e9182407f5f74892318607888e9be4',1,'Mutex']]],
+  ['_7esemaphore_1287',['~Semaphore',['../d4/dbd/class_semaphore.html#a633658a6fde276bffc912028725c6ade',1,'Semaphore']]],
+  ['_7etimedescriptor_1288',['~TimeDescriptor',['../d9/dfc/class_time_1_1_time_descriptor.html#aa1a0078ce7d0d4453592492549067d5b',1,'Time::TimeDescriptor']]]
 ];

@@ -127,7 +127,7 @@ Functions</h2></td></tr>
 <tr class="separator:aef975338efb2ee2afdfbb09da3d67d7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1662bc00ccf6e1987a9843dae05876af"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d2f/namespace_memory.html#a1662bc00ccf6e1987a9843dae05876af">init</a> (<a class="el" href="../../d0/dea/class_memory_1_1_memory_map.html">MemoryMap</a> *map)</td></tr>
 <tr class="separator:a1662bc00ccf6e1987a9843dae05876af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a314238689c58e6a280017f389b640c29"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d2f/namespace_memory.html#a314238689c58e6a280017f389b640c29">mapKernelPage</a> (<a class="el" href="../../dd/dd2/class_arch_1_1_memory_1_1_address.html">Arch::Memory::Address</a> vaddr, <a class="el" href="../../dd/dd2/class_arch_1_1_memory_1_1_address.html">Arch::Memory::Address</a> paddr)</td></tr>
+<tr class="memitem:a314238689c58e6a280017f389b640c29"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d2f/namespace_memory.html#a314238689c58e6a280017f389b640c29">mapKernelPage</a> (Arch::Memory::Address vaddr, Arch::Memory::Address paddr)</td></tr>
 <tr class="separator:a314238689c58e6a280017f389b640c29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5035c7465eb342a95802a5ec772bebc1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d2f/namespace_memory.html#a5035c7465eb342a95802a5ec772bebc1">mapKernelRangeVirtual</a> (<a class="el" href="../../d8/d7f/class_memory_1_1_section.html">Section</a> sect)</td></tr>
 <tr class="separator:a5035c7465eb342a95802a5ec772bebc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -215,24 +215,24 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d5e/paging_8cpp_source.html#l00243">243</a> of file <a class="el" href="../../d1/d5e/paging_8cpp_source.html">paging.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;{</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    pagingLock.<a class="code" href="../../d4/de8/class_mutex.html#aa732ae651974555965dcaf9ad9e87882">Lock</a>();</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    <span class="keywordtype">size_t</span> page_count = <a class="code" href="../../d1/d5e/paging_8cpp.html#ab137e16ea1cf905a1c93665b83a879d3">PAGE_COUNT</a>(size);</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    <a class="code" href="../../dd/dd2/class_arch_1_1_memory_1_1_address.html">Arch::Memory::Address</a> addr((uintptr_t)page);</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = addr.page().tableIndex; i &lt; addr.page().tableIndex + page_count; i++) {</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;        mappedPages.<a class="code" href="../../d6/d09/class_bitset.html#a7550479c8346b33636cc9b0d5cdb7e02">Reset</a>(i);</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;        <span class="comment">// this is the same as the line above</span></div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;        <span class="keyword">struct </span><a class="code" href="../../da/de0/struct_arch_1_1_memory_1_1_table_entry.html">Arch::Memory::TableEntry</a>* pte = &amp;(pageTables[i / <a class="code" href="../../d7/d42/_memory_8i686_8hpp.html#a4d1d75cc1e55b77dabd23586782ebe58">ARCH_PAGE_TABLE_ENTRIES</a>].<a class="code" href="../../da/d3b/struct_arch_1_1_memory_1_1_table.html#a1d21e975d55b1f49303413e76d184d73">pages</a>[i % <a class="code" href="../../d7/d42/_memory_8i686_8hpp.html#a4d1d75cc1e55b77dabd23586782ebe58">ARCH_PAGE_TABLE_ENTRIES</a>]);</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;        <span class="comment">// the frame field is actually the page frame&#39;s index basically it&#39;s frame 0, 1...(2^21-1)</span></div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;        physical.<a class="code" href="../../d6/d53/class_memory_1_1_physical_1_1_physical_manager.html#ad4702b2c633e077d59a544974e30839c">setFree</a>(pte-&gt;<a class="code" href="../../da/de0/struct_arch_1_1_memory_1_1_table_entry.html#a539043c1d110bdad552b57bd509a4849">frame</a>);</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;        <span class="comment">// zero it out to unmap it</span></div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;        <a class="code" href="../../d5/d24/string_8cpp.html#adc296efabb90c20113d5420e4d162d14">memset</a>(pte, 0, <span class="keyword">sizeof</span>(<span class="keyword">struct</span> <a class="code" href="../../da/de0/struct_arch_1_1_memory_1_1_table_entry.html">Arch::Memory::TableEntry</a>));</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;        <span class="comment">// clear that tlb</span></div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;        <a class="code" href="../../dd/d0e/namespace_arch_1_1_memory.html#a206380258fe28756d0c70f4f700e65d8">Arch::Memory::pageInvalidate</a>(page);</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    }</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    pagingLock.<a class="code" href="../../d4/de8/class_mutex.html#a669f7a1dd7992948b397726e5d187a39">Unlock</a>();</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../d1/d5e/paging_8cpp_source.html#l00246">246</a> of file <a class="el" href="../../d1/d5e/paging_8cpp_source.html">paging.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;{</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    pagingLock.<a class="code" href="../../d4/de8/class_mutex.html#aa732ae651974555965dcaf9ad9e87882">Lock</a>();</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    <span class="keywordtype">size_t</span> page_count = <a class="code" href="../../d1/d5e/paging_8cpp.html#ab137e16ea1cf905a1c93665b83a879d3">PAGE_COUNT</a>(size);</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    Arch::Memory::Address addr((uintptr_t)page);</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = addr.page().tableIndex; i &lt; addr.page().tableIndex + page_count; i++) {</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;        mappedPages.<a class="code" href="../../d6/d09/class_bitset.html#a7550479c8346b33636cc9b0d5cdb7e02">Reset</a>(i);</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;        <span class="comment">// this is the same as the line above</span></div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;        <span class="keyword">struct </span>Arch::Memory::TableEntry* pte = &amp;(pageTables[i / <a class="code" href="../../d7/d42/_memory_8i686_8hpp.html#a4d1d75cc1e55b77dabd23586782ebe58">ARCH_PAGE_TABLE_ENTRIES</a>].pages[i % <a class="code" href="../../d7/d42/_memory_8i686_8hpp.html#a4d1d75cc1e55b77dabd23586782ebe58">ARCH_PAGE_TABLE_ENTRIES</a>]);</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;        <span class="comment">// the frame field is actually the page frame&#39;s index basically it&#39;s frame 0, 1...(2^21-1)</span></div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;        physical.<a class="code" href="../../d6/d53/class_memory_1_1_physical_1_1_physical_manager.html#ad4702b2c633e077d59a544974e30839c">setFree</a>(pte-&gt;frame);</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;        <span class="comment">// zero it out to unmap it</span></div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;        <a class="code" href="../../d5/d24/string_8cpp.html#adc296efabb90c20113d5420e4d162d14">memset</a>(pte, 0, <span class="keyword">sizeof</span>(<span class="keyword">struct</span> Arch::Memory::TableEntry));</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;        <span class="comment">// clear that tlb</span></div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;        Arch::Memory::pageInvalidate(page);</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    }</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    pagingLock.<a class="code" href="../../d4/de8/class_mutex.html#a669f7a1dd7992948b397726e5d187a39">Unlock</a>();</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;}</div>
 </div><!-- fragment --><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -265,10 +265,10 @@ Functions</h2></td></tr>
 <p>Gets the physical address of the current page directory. </p>
 <dl class="section return"><dt>Returns</dt><dd>the physical address of the current page directory. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d5e/paging_8cpp_source.html#l00269">269</a> of file <a class="el" href="../../d1/d5e/paging_8cpp_source.html">paging.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;{</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    <span class="keywordflow">return</span> pageDirectoryAddress;</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../d1/d5e/paging_8cpp_source.html#l00273">273</a> of file <a class="el" href="../../d1/d5e/paging_8cpp_source.html">paging.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;{</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;    <span class="keywordflow">return</span> pageDirectoryAddress;</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -303,7 +303,7 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="comment">// map in our higher-half kernel</span></div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    mapKernel();</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="comment">// use our new set of page tables</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <a class="code" href="../../dd/d0e/namespace_arch_1_1_memory.html#a5e171778619551ad6c074ce126c30d04">Arch::Memory::setPageDirectory</a>(<a class="code" href="../../dd/d0e/namespace_arch_1_1_memory.html#a9118c8fdcb2627cdbd72b751d02e6bfc">Arch::Memory::pageAlign</a>(pageDirectoryAddress));</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    Arch::Memory::setPageDirectory(Arch::Memory::pageAlign(pageDirectoryAddress));</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="comment">// flush the tlb and we&#39;re off to the races!</span></div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <a class="code" href="../../dd/d0e/namespace_arch_1_1_memory.html#a3ba8a1ea0a34ad98b2f304fbbda48b0a">Arch::Memory::pagingEnable</a>();</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;}</div>
@@ -337,23 +337,13 @@ Functions</h2></td></tr>
 <dd>
 false The address is not mapped into memory. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d5e/paging_8cpp_source.html#l00262">262</a> of file <a class="el" href="../../d1/d5e/paging_8cpp_source.html">paging.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;{</div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    <span class="comment">// Convert the address into an index and check whether the page is in the bitmap</span></div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    <span class="keywordflow">return</span> mappedPages[addr &gt;&gt; 12];</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;}</div>
-</div><!-- fragment --><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="../../closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="../../db/d2f/namespace_memory_a40edc78665a6ce7a73b52502ae2f4f5c_icgraph.png" border="0" usemap="#db/d2f/namespace_memory_a40edc78665a6ce7a73b52502ae2f4f5c_icgraph" alt=""/></div>
-<map name="db/d2f/namespace_memory_a40edc78665a6ce7a73b52502ae2f4f5c_icgraph" id="db/d2f/namespace_memory_a40edc78665a6ce7a73b52502ae2f4f5c_icgraph">
-<area shape="rect" title="Checks whether an address is mapped into memory." alt="" coords="184,5,327,32"/>
-<area shape="rect" href="../../de/d66/namespace_stack.html#ab836051c392dd045b3bdfe4124ce04a8" title=" " alt="" coords="5,5,136,32"/>
-</map>
-</div>
-
+<p class="definition">Definition at line <a class="el" href="../../d1/d5e/paging_8cpp_source.html#l00265">265</a> of file <a class="el" href="../../d1/d5e/paging_8cpp_source.html">paging.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;{</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    <span class="comment">// Convert the address into an index and check whether the page is in the bitmap</span></div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    <span class="comment">// TODO: Fix this function. It&#39;s inaccurate and can result in triple faults.</span></div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    <span class="keywordflow">return</span> mappedPages[addr &gt;&gt; <a class="code" href="../../d7/d42/_memory_8i686_8hpp.html#adc5713f070e6e1e1c786a813d3c28064">ARCH_PAGE_TABLE_ENTRY_SHIFT</a>];</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aef975338efb2ee2afdfbb09da3d67d7c"></a>
@@ -399,13 +389,13 @@ false The address is not mapped into memory. </dd></dl>
         <tr>
           <td class="memname">void Memory::mapKernelPage </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dd/dd2/class_arch_1_1_memory_1_1_address.html">Arch::Memory::Address</a>&#160;</td>
+          <td class="paramtype">Arch::Memory::Address&#160;</td>
           <td class="paramname"><em>vaddr</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dd/dd2/class_arch_1_1_memory_1_1_address.html">Arch::Memory::Address</a>&#160;</td>
+          <td class="paramtype">Arch::Memory::Address&#160;</td>
           <td class="paramname"><em>paddr</em>&#160;</td>
         </tr>
         <tr>
@@ -428,60 +418,52 @@ false The address is not mapped into memory. </dd></dl>
 <p class="definition">Definition at line <a class="el" href="../../d1/d5e/paging_8cpp_source.html#l00146">146</a> of file <a class="el" href="../../d1/d5e/paging_8cpp_source.html">paging.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;{</div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    <span class="comment">// Set the page directory entry (pde) and page table entry (pte)</span></div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    <span class="keywordtype">size_t</span> pde = vaddr.<a class="code" href="../../dd/dd2/class_arch_1_1_memory_1_1_address.html#a3152143bd2e74fc178fcec2a3f59e735">page</a>().<a class="code" href="../../da/db3/struct_arch_1_1_memory_1_1_page.html#ac27275ca10a5de8ad1f714c8f9c468ef">dirIndex</a>;</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    <span class="keywordtype">size_t</span> pte = vaddr.<a class="code" href="../../dd/dd2/class_arch_1_1_memory_1_1_address.html#a3152143bd2e74fc178fcec2a3f59e735">page</a>().<a class="code" href="../../da/db3/struct_arch_1_1_memory_1_1_page.html#aec673e64bb1f33087d0b3a986e1eddb1">tableIndex</a>;</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    <span class="comment">// If the page&#39;s virtual address is not aligned</span></div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <span class="keywordflow">if</span> (vaddr.<a class="code" href="../../dd/dd2/class_arch_1_1_memory_1_1_address.html#a3152143bd2e74fc178fcec2a3f59e735">page</a>().<a class="code" href="../../da/db3/struct_arch_1_1_memory_1_1_page.html#ae46a9f3c5f5b4b1a26122cdee849a407">offset</a> != 0) {</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        <a class="code" href="../../d6/d1e/panic_8cpp.html#ae22655ba6f328217f1ebd6248ed82727">panic</a>(<span class="stringliteral">&quot;Attempted to map a non-page-aligned virtual address.\n&quot;</span>);</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    }</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    <a class="code" href="../../da/de0/struct_arch_1_1_memory_1_1_table_entry.html">Arch::Memory::TableEntry</a>* entry = &amp;(pageTables[pde].<a class="code" href="../../da/d3b/struct_arch_1_1_memory_1_1_table.html#a1d21e975d55b1f49303413e76d184d73">pages</a>[pte]);</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <span class="comment">// Print a debug message to serial</span></div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    <span class="keywordflow">if</span> (is_mapping_output_enabled) {</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        <a class="code" href="../../d2/daf/stdio_8hpp.html#aa1a1b09aada329c9352f1337d36ce184">debugf</a>(<span class="stringliteral">&quot;map 0x%08lx to 0x%08lx, pde = 0x%08lx, pte = 0x%08lx\n&quot;</span>, paddr.<a class="code" href="../../dd/dd2/class_arch_1_1_memory_1_1_address.html#a5f6ae39b2dd64f967cae2debd4a21452">val</a>(), vaddr.<a class="code" href="../../dd/dd2/class_arch_1_1_memory_1_1_address.html#a5f6ae39b2dd64f967cae2debd4a21452">val</a>(), pde, pte);</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    }</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    <span class="comment">// If the page is already mapped into memory</span></div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    <span class="keywordflow">if</span> (entry-&gt;<a class="code" href="../../da/de0/struct_arch_1_1_memory_1_1_table_entry.html#aeb9a7a86f9cbf4c8f01bff30d9307895">present</a>) {</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        <span class="keywordflow">if</span> (entry-&gt;<a class="code" href="../../da/de0/struct_arch_1_1_memory_1_1_table_entry.html#a539043c1d110bdad552b57bd509a4849">frame</a> == paddr.<a class="code" href="../../dd/dd2/class_arch_1_1_memory_1_1_address.html#ac2d5750107dddc6fe75826328a1cb99d">frame</a>().<a class="code" href="../../d6/d88/struct_arch_1_1_memory_1_1_frame.html#ad08a1455849d76a62a263a4363f41003">index</a>) {</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;            <span class="comment">// this page was already mapped the same way</span></div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;            <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        }</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160; </div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        <a class="code" href="../../d6/d1e/panic_8cpp.html#ae22655ba6f328217f1ebd6248ed82727">panic</a>(<span class="stringliteral">&quot;Attempted to map already mapped page.\n&quot;</span>);</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    }</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    <span class="comment">// Set the page information</span></div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    pageTables[pde].<a class="code" href="../../da/d3b/struct_arch_1_1_memory_1_1_table.html#a1d21e975d55b1f49303413e76d184d73">pages</a>[pte] = {</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        .<a class="code" href="../../da/de0/struct_arch_1_1_memory_1_1_table_entry.html#aeb9a7a86f9cbf4c8f01bff30d9307895">present</a> = 1,               <span class="comment">// The page is present</span></div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;        .readWrite = 1,             <span class="comment">// The page has r/w permissions</span></div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        .usermode = 0,              <span class="comment">// These are kernel pages</span></div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        .writeThrough = 0,          <span class="comment">// Disable write through</span></div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        .cacheDisable = 0,          <span class="comment">// The page is cached</span></div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        .accessed = 0,              <span class="comment">// The page is unaccessed</span></div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;        .dirty = 0,                 <span class="comment">// The page is clean</span></div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;        .pageAttrTable = 0,         <span class="comment">// The page has no attribute table</span></div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;        .global = 0,                <span class="comment">// The page is local</span></div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;        .unused = 0,                <span class="comment">// Ignored</span></div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        .frame = paddr.<a class="code" href="../../dd/dd2/class_arch_1_1_memory_1_1_address.html#ac2d5750107dddc6fe75826328a1cb99d">frame</a>().<a class="code" href="../../d6/d88/struct_arch_1_1_memory_1_1_frame.html#ad08a1455849d76a62a263a4363f41003">index</a>, <span class="comment">// The last 20 bits are the frame</span></div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    };</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    <span class="comment">// Set the associated bit in the bitmaps</span></div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    physical.<a class="code" href="../../d6/d53/class_memory_1_1_physical_1_1_physical_manager.html#a2a1aba3973b12be8410b3e15c93ea5a0">setUsed</a>(paddr);</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    mappedPages.<a class="code" href="../../d6/d09/class_bitset.html#a898b1c20c4d46232ba11e52292b54dcb">Set</a>(vaddr.<a class="code" href="../../dd/dd2/class_arch_1_1_memory_1_1_address.html#ac2d5750107dddc6fe75826328a1cb99d">frame</a>().<a class="code" href="../../d6/d88/struct_arch_1_1_memory_1_1_frame.html#ad08a1455849d76a62a263a4363f41003">index</a>);</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;}</div>
-</div><!-- fragment --><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    <span class="keywordtype">size_t</span> pde = vaddr.page().dirIndex;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    <span class="keywordtype">size_t</span> pte = vaddr.page().tableIndex;</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160; </div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <span class="comment">// Print a debug message to serial</span></div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <span class="keywordflow">if</span> (is_mapping_output_enabled) {</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        <a class="code" href="../../d2/daf/stdio_8hpp.html#aa1a1b09aada329c9352f1337d36ce184">debugf</a>(<span class="stringliteral">&quot;map 0x%08lx to 0x%08lx, pde = 0x%08lx, pte = 0x%08lx\n&quot;</span>, paddr.val(), vaddr.val(), pde, pte);</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    }</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160; </div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    <span class="comment">// If the page&#39;s virtual address is not aligned</span></div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    <span class="keywordflow">if</span> (vaddr.page().offset) {</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        <a class="code" href="../../d9/d5d/_panic_8cpp.html#a1f0f35d4cff831364cdc213f096e83e5">panicf</a>(<span class="stringliteral">&quot;Attempted to map a non-page-aligned virtual address.\n(Address: 0x%08lX)\n&quot;</span>, vaddr.val());</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    }</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160; </div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    <span class="comment">// If the page is already mapped into memory</span></div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    Arch::Memory::TableEntry* entry = &amp;(pageTables[pde].pages[pte]);</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    <span class="keywordflow">if</span> (entry-&gt;present) {</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        <span class="keywordflow">if</span> (entry-&gt;frame == paddr.frame().index) {</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;            <span class="comment">// this page was already mapped the same way</span></div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;            <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        }</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160; </div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        <a class="code" href="../../d9/d5d/_panic_8cpp.html#ae22655ba6f328217f1ebd6248ed82727">panic</a>(<span class="stringliteral">&quot;Attempted to map already mapped page.\n&quot;</span>);</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    }</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    <span class="comment">// Set the page information</span></div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    pageTables[pde].pages[pte] = {</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        .present = 1,                   <span class="comment">// The page is present</span></div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        .readWrite = 1,                 <span class="comment">// The page has r/w permissions</span></div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        .usermode = 0,                  <span class="comment">// These are kernel pages</span></div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;        .writeThrough = 0,              <span class="comment">// Disable write through</span></div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;        .cacheDisable = 0,              <span class="comment">// The page is cached</span></div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;        .accessed = 0,                  <span class="comment">// The page is unaccessed</span></div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;        .dirty = 0,                     <span class="comment">// The page is clean</span></div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        .pageAttrTable = 0,             <span class="comment">// The page has no attribute table</span></div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;        .global = 0,                    <span class="comment">// The page is local</span></div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        .unused = 0,                    <span class="comment">// Ignored</span></div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;        .frame = paddr.frame().index,   <span class="comment">// The last 20 bits are the frame</span></div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    };</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    <span class="comment">// Set the associated bit in the bitmaps</span></div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    physical.<a class="code" href="../../d6/d53/class_memory_1_1_physical_1_1_physical_manager.html#a2a1aba3973b12be8410b3e15c93ea5a0">setUsed</a>(paddr);</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    mappedPages.<a class="code" href="../../d6/d09/class_bitset.html#a898b1c20c4d46232ba11e52292b54dcb">Set</a>(vaddr.frame().index);</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;}</div>
+</div><!-- fragment --><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="../../closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="../../db/d2f/namespace_memory_a314238689c58e6a280017f389b640c29_cgraph.png" border="0" usemap="#db/d2f/namespace_memory_a314238689c58e6a280017f389b640c29_cgraph" alt=""/></div>
-<map name="db/d2f/namespace_memory_a314238689c58e6a280017f389b640c29_cgraph" id="db/d2f/namespace_memory_a314238689c58e6a280017f389b640c29_cgraph">
-<area shape="rect" title="Map a page into the kernel address space." alt="" coords="5,5,189,32"/>
-<area shape="rect" href="../../d6/d1e/panic_8cpp.html#ae22655ba6f328217f1ebd6248ed82727" title="Halt the system and print the provided message on the panic screen." alt="" coords="237,5,295,32"/>
-</map>
-</div>
-<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="../../closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="../../db/d2f/namespace_memory_a314238689c58e6a280017f389b640c29_icgraph.png" border="0" usemap="#db/d2f/namespace_memory_a314238689c58e6a280017f389b640c29_icgraph" alt=""/></div>
 <map name="db/d2f/namespace_memory_a314238689c58e6a280017f389b640c29_icgraph" id="db/d2f/namespace_memory_a314238689c58e6a280017f389b640c29_icgraph">
 <area shape="rect" title="Map a page into the kernel address space." alt="" coords="457,31,641,57"/>
@@ -517,25 +499,24 @@ false The address is not mapped into memory. </dd></dl>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d5e/paging_8cpp_source.html#l00195">195</a> of file <a class="el" href="../../d1/d5e/paging_8cpp_source.html">paging.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;{</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    <span class="keywordflow">for</span> (<a class="code" href="../../dd/dd2/class_arch_1_1_memory_1_1_address.html">Arch::Memory::Address</a> a(sect.base()); a &lt; sect.end(); a += <a class="code" href="../../d7/d42/_memory_8i686_8hpp.html#acd327ff534c65e3c5772a67d62d74ca0">ARCH_PAGE_SIZE</a>) {</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        <a class="code" href="../../dd/dd2/class_arch_1_1_memory_1_1_address.html">Arch::Memory::Address</a> phys(<a class="code" href="../../d0/d81/_physical_8hpp.html#a6279f4a63f0d92c8f1cd356637258032">KADDR_TO_PHYS</a>(a));</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;        <a class="code" href="../../db/d2f/namespace_memory.html#a314238689c58e6a280017f389b640c29">mapKernelPage</a>(a, phys);</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    }</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;}</div>
-</div><!-- fragment --><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="../../d1/d5e/paging_8cpp_source.html#l00198">198</a> of file <a class="el" href="../../d1/d5e/paging_8cpp_source.html">paging.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;{</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    <span class="keywordflow">for</span> (Arch::Memory::Address a(sect.base()); a &lt; sect.end(); a += <a class="code" href="../../d7/d42/_memory_8i686_8hpp.html#acd327ff534c65e3c5772a67d62d74ca0">ARCH_PAGE_SIZE</a>) {</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;        Arch::Memory::Address phys(<a class="code" href="../../d0/d81/_physical_8hpp.html#a6279f4a63f0d92c8f1cd356637258032">KADDR_TO_PHYS</a>(a));</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;        <a class="code" href="../../db/d2f/namespace_memory.html#a314238689c58e6a280017f389b640c29">mapKernelPage</a>(a, phys);</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    }</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;}</div>
+</div><!-- fragment --><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="../../db/d2f/namespace_memory_ac18baaf631829c2290bcb0971e8b6fad_cgraph.png" border="0" usemap="#db/d2f/namespace_memory_ac18baaf631829c2290bcb0971e8b6fad_cgraph" alt=""/></div>
 <map name="db/d2f/namespace_memory_ac18baaf631829c2290bcb0971e8b6fad_cgraph" id="db/d2f/namespace_memory_ac18baaf631829c2290bcb0971e8b6fad_cgraph">
 <area shape="rect" title="Map a kernel address range into physical memory." alt="" coords="5,56,253,83"/>
 <area shape="rect" href="../../d8/d7f/class_memory_1_1_section.html#aeacf47ee881cc66130ddcac9a2e51ac2" title=" " alt="" coords="308,5,479,32"/>
 <area shape="rect" href="../../d8/d7f/class_memory_1_1_section.html#a9145bcd59832a378ca6213bc1701b393" title=" " alt="" coords="312,56,475,83"/>
 <area shape="rect" href="../../db/d2f/namespace_memory.html#a314238689c58e6a280017f389b640c29" title="Map a page into the kernel address space." alt="" coords="301,107,485,133"/>
-<area shape="rect" href="../../d6/d1e/panic_8cpp.html#ae22655ba6f328217f1ebd6248ed82727" title="Halt the system and print the provided message on the panic screen." alt="" coords="533,107,591,133"/>
 </map>
 </div>
 
@@ -565,31 +546,30 @@ false The address is not mapped into memory. </dd></dl>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d5e/paging_8cpp_source.html#l00188">188</a> of file <a class="el" href="../../d1/d5e/paging_8cpp_source.html">paging.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;{</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    <span class="keywordflow">for</span> (<a class="code" href="../../dd/dd2/class_arch_1_1_memory_1_1_address.html">Arch::Memory::Address</a> a(sect.base()); a &lt; sect.end(); a += <a class="code" href="../../d7/d42/_memory_8i686_8hpp.html#acd327ff534c65e3c5772a67d62d74ca0">ARCH_PAGE_SIZE</a>) {</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;        <a class="code" href="../../db/d2f/namespace_memory.html#a314238689c58e6a280017f389b640c29">mapKernelPage</a>(a, a);</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    }</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;}</div>
-</div><!-- fragment --><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="../../d1/d5e/paging_8cpp_source.html#l00191">191</a> of file <a class="el" href="../../d1/d5e/paging_8cpp_source.html">paging.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;{</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    <span class="keywordflow">for</span> (Arch::Memory::Address a(sect.base()); a &lt; sect.end(); a += <a class="code" href="../../d7/d42/_memory_8i686_8hpp.html#acd327ff534c65e3c5772a67d62d74ca0">ARCH_PAGE_SIZE</a>) {</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        <a class="code" href="../../db/d2f/namespace_memory.html#a314238689c58e6a280017f389b640c29">mapKernelPage</a>(a, a);</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    }</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;}</div>
+</div><!-- fragment --><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="../../db/d2f/namespace_memory_a5035c7465eb342a95802a5ec772bebc1_cgraph.png" border="0" usemap="#db/d2f/namespace_memory_a5035c7465eb342a95802a5ec772bebc1_cgraph" alt=""/></div>
 <map name="db/d2f/namespace_memory_a5035c7465eb342a95802a5ec772bebc1_cgraph" id="db/d2f/namespace_memory_a5035c7465eb342a95802a5ec772bebc1_cgraph">
 <area shape="rect" title="Map an address range into the kernel virtual address space." alt="" coords="5,56,243,83"/>
 <area shape="rect" href="../../d8/d7f/class_memory_1_1_section.html#aeacf47ee881cc66130ddcac9a2e51ac2" title=" " alt="" coords="297,5,468,32"/>
 <area shape="rect" href="../../d8/d7f/class_memory_1_1_section.html#a9145bcd59832a378ca6213bc1701b393" title=" " alt="" coords="301,56,464,83"/>
 <area shape="rect" href="../../db/d2f/namespace_memory.html#a314238689c58e6a280017f389b640c29" title="Map a page into the kernel address space." alt="" coords="291,107,475,133"/>
-<area shape="rect" href="../../d6/d1e/panic_8cpp.html#ae22655ba6f328217f1ebd6248ed82727" title="Halt the system and print the provided message on the panic screen." alt="" coords="523,107,580,133"/>
 </map>
 </div>
-<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="../../closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="../../closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="../../db/d2f/namespace_memory_a5035c7465eb342a95802a5ec772bebc1_icgraph.png" border="0" usemap="#db/d2f/namespace_memory_a5035c7465eb342a95802a5ec772bebc1_icgraph" alt=""/></div>
 <map name="db/d2f/namespace_memory_a5035c7465eb342a95802a5ec772bebc1_icgraph" id="db/d2f/namespace_memory_a5035c7465eb342a95802a5ec772bebc1_icgraph">
 <area shape="rect" title="Map an address range into the kernel virtual address space." alt="" coords="161,5,399,32"/>
@@ -618,35 +598,35 @@ false The address is not mapped into memory. </dd></dl>
 <p>Returns a new page in memory for use. If less than one page is requested, exactly one page will be allocated and returned. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">size</td><td>Page size in bytes </td></tr>
+    <tr><td class="paramname">size</td><td><a class="el" href="../../df/d9b/struct_page.html" title="Virtual address structure. Represents an address in virtual memory that redirects to a physical page ...">Page</a> size in bytes </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>void* Page memory address </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>void* <a class="el" href="../../df/d9b/struct_page.html" title="Virtual address structure. Represents an address in virtual memory that redirects to a physical page ...">Page</a> memory address </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d5e/paging_8cpp_source.html#l00224">224</a> of file <a class="el" href="../../d1/d5e/paging_8cpp_source.html">paging.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;{</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    pagingLock.<a class="code" href="../../d4/de8/class_mutex.html#aa732ae651974555965dcaf9ad9e87882">Lock</a>();</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    <span class="keywordtype">size_t</span> page_count = <a class="code" href="../../d1/d5e/paging_8cpp.html#ab137e16ea1cf905a1c93665b83a879d3">PAGE_COUNT</a>(size);</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    <span class="keywordtype">size_t</span> free_idx = findNextFreeVirtualAddress(page_count);</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    <span class="keywordflow">if</span> (free_idx == SIZE_MAX)</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;        <span class="keywordflow">return</span> NULL;</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = free_idx; i &lt; free_idx + page_count; i++) {</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;        <span class="keywordtype">size_t</span> phys_page_idx = physical.<a class="code" href="../../d6/d53/class_memory_1_1_physical_1_1_physical_manager.html#a46ef47360e6208e8e6f403ef0940ae32">findNextFreePhysicalAddress</a>();</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;        <span class="keywordflow">if</span> (phys_page_idx == SIZE_MAX)</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;            <span class="keywordflow">return</span> NULL;</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        <a class="code" href="../../dd/dd2/class_arch_1_1_memory_1_1_address.html">Arch::Memory::Address</a> phys(phys_page_idx * <a class="code" href="../../d7/d42/_memory_8i686_8hpp.html#acd327ff534c65e3c5772a67d62d74ca0">ARCH_PAGE_SIZE</a>);</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        <a class="code" href="../../dd/dd2/class_arch_1_1_memory_1_1_address.html">Arch::Memory::Address</a> vaddr(i * <a class="code" href="../../d7/d42/_memory_8i686_8hpp.html#acd327ff534c65e3c5772a67d62d74ca0">ARCH_PAGE_SIZE</a>);</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;        <a class="code" href="../../db/d2f/namespace_memory.html#a314238689c58e6a280017f389b640c29">mapKernelPage</a>(vaddr, phys);</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    }</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    pagingLock.<a class="code" href="../../d4/de8/class_mutex.html#a669f7a1dd7992948b397726e5d187a39">Unlock</a>();</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    <span class="keywordflow">return</span> (<span class="keywordtype">void</span>*)(free_idx * <a class="code" href="../../d7/d42/_memory_8i686_8hpp.html#acd327ff534c65e3c5772a67d62d74ca0">ARCH_PAGE_SIZE</a>);</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;}</div>
-</div><!-- fragment --><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-7-trigger" src="../../closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="../../d1/d5e/paging_8cpp_source.html#l00227">227</a> of file <a class="el" href="../../d1/d5e/paging_8cpp_source.html">paging.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;{</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    pagingLock.<a class="code" href="../../d4/de8/class_mutex.html#aa732ae651974555965dcaf9ad9e87882">Lock</a>();</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    <span class="keywordtype">size_t</span> page_count = <a class="code" href="../../d1/d5e/paging_8cpp.html#ab137e16ea1cf905a1c93665b83a879d3">PAGE_COUNT</a>(size);</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    <span class="keywordtype">size_t</span> free_idx = findNextFreeVirtualAddress(page_count);</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    <span class="keywordflow">if</span> (free_idx == SIZE_MAX)</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;        <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = free_idx; i &lt; free_idx + page_count; i++) {</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        <span class="keywordtype">size_t</span> phys_page_idx = physical.<a class="code" href="../../d6/d53/class_memory_1_1_physical_1_1_physical_manager.html#a46ef47360e6208e8e6f403ef0940ae32">findNextFreePhysicalAddress</a>();</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        <span class="keywordflow">if</span> (phys_page_idx == SIZE_MAX)</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;            <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;        Arch::Memory::Address phys(phys_page_idx * <a class="code" href="../../d7/d42/_memory_8i686_8hpp.html#acd327ff534c65e3c5772a67d62d74ca0">ARCH_PAGE_SIZE</a>);</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;        Arch::Memory::Address vaddr(i * <a class="code" href="../../d7/d42/_memory_8i686_8hpp.html#acd327ff534c65e3c5772a67d62d74ca0">ARCH_PAGE_SIZE</a>);</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;        <a class="code" href="../../db/d2f/namespace_memory.html#a314238689c58e6a280017f389b640c29">mapKernelPage</a>(vaddr, phys);</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    }</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    pagingLock.<a class="code" href="../../d4/de8/class_mutex.html#a669f7a1dd7992948b397726e5d187a39">Unlock</a>();</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    <span class="keywordflow">return</span> (<span class="keywordtype">void</span>*)(free_idx * <a class="code" href="../../d7/d42/_memory_8i686_8hpp.html#acd327ff534c65e3c5772a67d62d74ca0">ARCH_PAGE_SIZE</a>);</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;}</div>
+</div><!-- fragment --><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="../../closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="../../db/d2f/namespace_memory_ab679821559b51954042eb0715edd518f_icgraph.png" border="0" usemap="#db/d2f/namespace_memory_ab679821559b51954042eb0715edd518f_icgraph" alt=""/></div>
 <map name="db/d2f/namespace_memory_ab679821559b51954042eb0715edd518f_icgraph" id="db/d2f/namespace_memory_ab679821559b51954042eb0715edd518f_icgraph">
 <area shape="rect" title="Returns a new page in memory for use. If less than one page is requested, exactly one page will be al..." alt="" coords="160,31,301,57"/>
@@ -659,45 +639,32 @@ false The address is not mapped into memory. </dd></dl>
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="anamespace_arch_1_1_memory_html_a3ba8a1ea0a34ad98b2f304fbbda48b0a"><div class="ttname"><a href="../../dd/d0e/namespace_arch_1_1_memory.html#a3ba8a1ea0a34ad98b2f304fbbda48b0a">Arch::Memory::pagingEnable</a></div><div class="ttdeci">void pagingEnable()</div><div class="ttdoc">Enable hardware paging.</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dc9/_arch_8i686_8cpp_source.html#l00102">Arch.i686.cpp:102</a></div></div>
-<div class="ttc" id="anamespace_arch_1_1_memory_html_a5e171778619551ad6c074ce126c30d04"><div class="ttname"><a href="../../dd/d0e/namespace_arch_1_1_memory.html#a5e171778619551ad6c074ce126c30d04">Arch::Memory::setPageDirectory</a></div><div class="ttdeci">void setPageDirectory(size_t page_dir)</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d42/_memory_8i686_8hpp_source.html#l00182">Memory.i686.hpp:182</a></div></div>
-<div class="ttc" id="aclass_arch_1_1_memory_1_1_address_html_a5f6ae39b2dd64f967cae2debd4a21452"><div class="ttname"><a href="../../dd/dd2/class_arch_1_1_memory_1_1_address.html#a5f6ae39b2dd64f967cae2debd4a21452">Arch::Memory::Address::val</a></div><div class="ttdeci">uintptr_t val</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d42/_memory_8i686_8hpp_source.html#l00167">Memory.i686.hpp:167</a></div></div>
+<div class="ttc" id="anamespace_arch_1_1_memory_html_a3ba8a1ea0a34ad98b2f304fbbda48b0a"><div class="ttname"><a href="../../dd/d0e/namespace_arch_1_1_memory.html#a3ba8a1ea0a34ad98b2f304fbbda48b0a">Arch::Memory::pagingEnable</a></div><div class="ttdeci">void pagingEnable()</div><div class="ttdoc">Enable hardware paging.</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dc9/_arch_8i686_8cpp_source.html#l00094">Arch.i686.cpp:94</a></div></div>
 <div class="ttc" id="anamespace_memory_html_a9193c3e610b1728964440284db90c812a47689095b6257b2d06a2134530b64daa"><div class="ttname"><a href="../../db/d2f/namespace_memory.html#a9193c3e610b1728964440284db90c812a47689095b6257b2d06a2134530b64daa">Memory::ACPI</a></div><div class="ttdeci">@ ACPI</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d91/_memory_section_8hpp_source.html#l00021">MemorySection.hpp:21</a></div></div>
-<div class="ttc" id="astruct_arch_1_1_memory_1_1_table_entry_html_aeb9a7a86f9cbf4c8f01bff30d9307895"><div class="ttname"><a href="../../da/de0/struct_arch_1_1_memory_1_1_table_entry.html#aeb9a7a86f9cbf4c8f01bff30d9307895">Arch::Memory::TableEntry::present</a></div><div class="ttdeci">uint32_t present</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d42/_memory_8i686_8hpp_source.html#l00049">Memory.i686.hpp:49</a></div></div>
 <div class="ttc" id="anamespace_memory_html_a314238689c58e6a280017f389b640c29"><div class="ttname"><a href="../../db/d2f/namespace_memory.html#a314238689c58e6a280017f389b640c29">Memory::mapKernelPage</a></div><div class="ttdeci">void mapKernelPage(Arch::Memory::Address vaddr, Arch::Memory::Address paddr)</div><div class="ttdoc">Map a page into the kernel address space.</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d5e/paging_8cpp_source.html#l00146">paging.cpp:146</a></div></div>
-<div class="ttc" id="aclass_arch_1_1_memory_1_1_address_html"><div class="ttname"><a href="../../dd/dd2/class_arch_1_1_memory_1_1_address.html">Arch::Memory::Address</a></div><div class="ttdoc">Address class. Represents a memory address that can be used to address a page in virtual memory,...</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d42/_memory_8i686_8hpp_source.html#l00109">Memory.i686.hpp:109</a></div></div>
 <div class="ttc" id="aclass_bitset_html_a898b1c20c4d46232ba11e52292b54dcb"><div class="ttname"><a href="../../d6/d09/class_bitset.html#a898b1c20c4d46232ba11e52292b54dcb">Bitset::Set</a></div><div class="ttdeci">void Set(size_t pos)</div><div class="ttdoc">Set the bit for a given position.</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d35/_bitset_8hpp_source.html#l00060">Bitset.hpp:60</a></div></div>
-<div class="ttc" id="astruct_arch_1_1_memory_1_1_page_html_aec673e64bb1f33087d0b3a986e1eddb1"><div class="ttname"><a href="../../da/db3/struct_arch_1_1_memory_1_1_page.html#aec673e64bb1f33087d0b3a986e1eddb1">Arch::Memory::Page::tableIndex</a></div><div class="ttdeci">uint32_t tableIndex</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d42/_memory_8i686_8hpp_source.html#l00038">Memory.i686.hpp:38</a></div></div>
-<div class="ttc" id="aclass_arch_1_1_memory_1_1_address_html_ac2d5750107dddc6fe75826328a1cb99d"><div class="ttname"><a href="../../dd/dd2/class_arch_1_1_memory_1_1_address.html#ac2d5750107dddc6fe75826328a1cb99d">Arch::Memory::Address::frame</a></div><div class="ttdeci">struct Frame frame</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d42/_memory_8i686_8hpp_source.html#l00166">Memory.i686.hpp:166</a></div></div>
+<div class="ttc" id="a_memory_8i686_8hpp_html_adc5713f070e6e1e1c786a813d3c28064"><div class="ttname"><a href="../../d7/d42/_memory_8i686_8hpp.html#adc5713f070e6e1e1c786a813d3c28064">ARCH_PAGE_TABLE_ENTRY_SHIFT</a></div><div class="ttdeci">#define ARCH_PAGE_TABLE_ENTRY_SHIFT</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d42/_memory_8i686_8hpp_source.html#l00024">Memory.i686.hpp:24</a></div></div>
 <div class="ttc" id="astdio_8hpp_html_aa1a1b09aada329c9352f1337d36ce184"><div class="ttname"><a href="../../d2/daf/stdio_8hpp.html#aa1a1b09aada329c9352f1337d36ce184">debugf</a></div><div class="ttdeci">#define debugf(fmt,...)</div><div class="ttdoc">Prints a statement to serial debugger if the kernel is built with the debug flag defined....</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/daf/stdio_8hpp_source.html#l00074">stdio.hpp:74</a></div></div>
-<div class="ttc" id="astruct_arch_1_1_memory_1_1_table_html_a1d21e975d55b1f49303413e76d184d73"><div class="ttname"><a href="../../da/d3b/struct_arch_1_1_memory_1_1_table.html#a1d21e975d55b1f49303413e76d184d73">Arch::Memory::Table::pages</a></div><div class="ttdeci">struct TableEntry pages[1024]</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d42/_memory_8i686_8hpp_source.html#l00069">Memory.i686.hpp:69</a></div></div>
-<div class="ttc" id="astruct_arch_1_1_memory_1_1_table_entry_html"><div class="ttname"><a href="../../da/de0/struct_arch_1_1_memory_1_1_table_entry.html">Arch::Memory::TableEntry</a></div><div class="ttdoc">Page table entry defined in accordance to the Intel Developer Manual Vol. 3a p. 4-12.</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d42/_memory_8i686_8hpp_source.html#l00047">Memory.i686.hpp:47</a></div></div>
-<div class="ttc" id="a_memory_8i686_8hpp_html_a4d1d75cc1e55b77dabd23586782ebe58"><div class="ttname"><a href="../../d7/d42/_memory_8i686_8hpp.html#a4d1d75cc1e55b77dabd23586782ebe58">ARCH_PAGE_TABLE_ENTRIES</a></div><div class="ttdeci">#define ARCH_PAGE_TABLE_ENTRIES</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d42/_memory_8i686_8hpp_source.html#l00014">Memory.i686.hpp:14</a></div></div>
+<div class="ttc" id="a_memory_8i686_8hpp_html_a4d1d75cc1e55b77dabd23586782ebe58"><div class="ttname"><a href="../../d7/d42/_memory_8i686_8hpp.html#a4d1d75cc1e55b77dabd23586782ebe58">ARCH_PAGE_TABLE_ENTRIES</a></div><div class="ttdeci">#define ARCH_PAGE_TABLE_ENTRIES</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d42/_memory_8i686_8hpp_source.html#l00020">Memory.i686.hpp:20</a></div></div>
 <div class="ttc" id="aclass_memory_1_1_physical_1_1_physical_manager_html_ad4702b2c633e077d59a544974e30839c"><div class="ttname"><a href="../../d6/d53/class_memory_1_1_physical_1_1_physical_manager.html#ad4702b2c633e077d59a544974e30839c">Memory::Physical::PhysicalManager::setFree</a></div><div class="ttdeci">void setFree(Section &amp;sect)</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d81/_physical_8hpp_source.html#l00032">Physical.hpp:32</a></div></div>
 <div class="ttc" id="anamespace_memory_html_a9193c3e610b1728964440284db90c812ae77b832da0bee52ff6208351049a708d"><div class="ttname"><a href="../../db/d2f/namespace_memory.html#a9193c3e610b1728964440284db90c812ae77b832da0bee52ff6208351049a708d">Memory::NVS</a></div><div class="ttdeci">@ NVS</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d91/_memory_section_8hpp_source.html#l00022">MemorySection.hpp:22</a></div></div>
 <div class="ttc" id="aclass_mutex_html_a669f7a1dd7992948b397726e5d187a39"><div class="ttname"><a href="../../d4/de8/class_mutex.html#a669f7a1dd7992948b397726e5d187a39">Mutex::Unlock</a></div><div class="ttdeci">int Unlock()</div><div class="ttdoc">Unlocks a mutex for others to use.</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dbb/mutex_8cpp_source.html#l00058">mutex.cpp:58</a></div></div>
 <div class="ttc" id="anamespace_memory_html_a9193c3e610b1728964440284db90c812a9d07501a70ac6e6e7f8bbeb121a3f12f"><div class="ttname"><a href="../../db/d2f/namespace_memory.html#a9193c3e610b1728964440284db90c812a9d07501a70ac6e6e7f8bbeb121a3f12f">Memory::Bad</a></div><div class="ttdeci">@ Bad</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d91/_memory_section_8hpp_source.html#l00023">MemorySection.hpp:23</a></div></div>
-<div class="ttc" id="apanic_8cpp_html_ae22655ba6f328217f1ebd6248ed82727"><div class="ttname"><a href="../../d6/d1e/panic_8cpp.html#ae22655ba6f328217f1ebd6248ed82727">panic</a></div><div class="ttdeci">void panic(const char *msg)</div><div class="ttdoc">Halt the system and print the provided message on the panic screen.</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d1e/panic_8cpp_source.html#l00082">panic.cpp:82</a></div></div>
-<div class="ttc" id="anamespace_arch_1_1_memory_html_a9118c8fdcb2627cdbd72b751d02e6bfc"><div class="ttname"><a href="../../dd/d0e/namespace_arch_1_1_memory.html#a9118c8fdcb2627cdbd72b751d02e6bfc">Arch::Memory::pageAlign</a></div><div class="ttdeci">uintptr_t pageAlign(size_t addr)</div><div class="ttdoc">Aligns the provided address to the start of its corresponding page address.</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d42/_memory_8i686_8hpp_source.html#l00193">Memory.i686.hpp:193</a></div></div>
-<div class="ttc" id="astruct_arch_1_1_memory_1_1_page_html_ae46a9f3c5f5b4b1a26122cdee849a407"><div class="ttname"><a href="../../da/db3/struct_arch_1_1_memory_1_1_page.html#ae46a9f3c5f5b4b1a26122cdee849a407">Arch::Memory::Page::offset</a></div><div class="ttdeci">uint32_t offset</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d42/_memory_8i686_8hpp_source.html#l00037">Memory.i686.hpp:37</a></div></div>
 <div class="ttc" id="apaging_8cpp_html_ab137e16ea1cf905a1c93665b83a879d3"><div class="ttname"><a href="../../d1/d5e/paging_8cpp.html#ab137e16ea1cf905a1c93665b83a879d3">PAGE_COUNT</a></div><div class="ttdeci">#define PAGE_COUNT(s)</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d5e/paging_8cpp_source.html#l00025">paging.cpp:25</a></div></div>
-<div class="ttc" id="astruct_arch_1_1_memory_1_1_page_html_ac27275ca10a5de8ad1f714c8f9c468ef"><div class="ttname"><a href="../../da/db3/struct_arch_1_1_memory_1_1_page.html#ac27275ca10a5de8ad1f714c8f9c468ef">Arch::Memory::Page::dirIndex</a></div><div class="ttdeci">uint32_t dirIndex</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d42/_memory_8i686_8hpp_source.html#l00039">Memory.i686.hpp:39</a></div></div>
+<div class="ttc" id="a_panic_8cpp_html_a1f0f35d4cff831364cdc213f096e83e5"><div class="ttname"><a href="../../d9/d5d/_panic_8cpp.html#a1f0f35d4cff831364cdc213f096e83e5">panicf</a></div><div class="ttdeci">void panicf(const char *fmt,...)</div><div class="ttdoc">Halt the system and print the provided message and arguments on the panic screen.</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d5d/_panic_8cpp_source.html#l00087">Panic.cpp:87</a></div></div>
 <div class="ttc" id="anamespace_memory_html_a9193c3e610b1728964440284db90c812ac9665260f6f9f8c8c28c4db2b0097c46"><div class="ttname"><a href="../../db/d2f/namespace_memory.html#a9193c3e610b1728964440284db90c812ac9665260f6f9f8c8c28c4db2b0097c46">Memory::Reserved</a></div><div class="ttdeci">@ Reserved</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d91/_memory_section_8hpp_source.html#l00020">MemorySection.hpp:20</a></div></div>
-<div class="ttc" id="aclass_arch_1_1_memory_1_1_address_html_a3152143bd2e74fc178fcec2a3f59e735"><div class="ttname"><a href="../../dd/dd2/class_arch_1_1_memory_1_1_address.html#a3152143bd2e74fc178fcec2a3f59e735">Arch::Memory::Address::page</a></div><div class="ttdeci">struct Page page</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d42/_memory_8i686_8hpp_source.html#l00165">Memory.i686.hpp:165</a></div></div>
 <div class="ttc" id="aclass_mutex_html_aa732ae651974555965dcaf9ad9e87882"><div class="ttname"><a href="../../d4/de8/class_mutex.html#aa732ae651974555965dcaf9ad9e87882">Mutex::Lock</a></div><div class="ttdeci">int Lock()</div><div class="ttdoc">Locks a provided mutex. This call will block if the mutex is already locked.</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dbb/mutex_8cpp_source.html#l00036">mutex.cpp:36</a></div></div>
-<div class="ttc" id="astruct_arch_1_1_memory_1_1_table_entry_html_a539043c1d110bdad552b57bd509a4849"><div class="ttname"><a href="../../da/de0/struct_arch_1_1_memory_1_1_table_entry.html#a539043c1d110bdad552b57bd509a4849">Arch::Memory::TableEntry::frame</a></div><div class="ttdeci">uint32_t frame</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d42/_memory_8i686_8hpp_source.html#l00059">Memory.i686.hpp:59</a></div></div>
-<div class="ttc" id="aisr_8cpp_html_acc90c1ac3bbcb4fc45ccda7cde4882c7"><div class="ttname"><a href="../../d3/d68/isr_8cpp.html#acc90c1ac3bbcb4fc45ccda7cde4882c7">register_interrupt_handler</a></div><div class="ttdeci">void register_interrupt_handler(uint8_t n, isr_cb_t handler)</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d68/isr_8cpp_source.html#l00051">isr.cpp:51</a></div></div>
-<div class="ttc" id="anamespace_arch_1_1_memory_html_a206380258fe28756d0c70f4f700e65d8"><div class="ttname"><a href="../../dd/d0e/namespace_arch_1_1_memory.html#a206380258fe28756d0c70f4f700e65d8">Arch::Memory::pageInvalidate</a></div><div class="ttdeci">void pageInvalidate(void *addr)</div><div class="ttdoc">Invalidate the page at the given address. Implementations are architecture specific.</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d42/_memory_8i686_8hpp_source.html#l00177">Memory.i686.hpp:177</a></div></div>
+<div class="ttc" id="aisr_8cpp_html_acc90c1ac3bbcb4fc45ccda7cde4882c7"><div class="ttname"><a href="../../d3/d68/isr_8cpp.html#acc90c1ac3bbcb4fc45ccda7cde4882c7">register_interrupt_handler</a></div><div class="ttdeci">void register_interrupt_handler(uint8_t n, isr_cb_t handler)</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d68/isr_8cpp_source.html#l00054">isr.cpp:54</a></div></div>
 <div class="ttc" id="aisr_8hpp_html_a0419334e5d2a04960bcb98c595e92928a81f3242916a5ab92ab86fadfec185795"><div class="ttname"><a href="../../d4/ddc/isr_8hpp.html#a0419334e5d2a04960bcb98c595e92928a81f3242916a5ab92ab86fadfec185795">ISR_PAGE_FAULT</a></div><div class="ttdeci">@ ISR_PAGE_FAULT</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/ddc/isr_8hpp_source.html#l00038">isr.hpp:38</a></div></div>
+<div class="ttc" id="a_panic_8cpp_html_ae22655ba6f328217f1ebd6248ed82727"><div class="ttname"><a href="../../d9/d5d/_panic_8cpp.html#ae22655ba6f328217f1ebd6248ed82727">panic</a></div><div class="ttdeci">void panic(const char *msg)</div><div class="ttdoc">Halt the system and print the provided message on the panic screen.</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d5d/_panic_8cpp_source.html#l00082">Panic.cpp:82</a></div></div>
 <div class="ttc" id="aclass_memory_1_1_physical_1_1_physical_manager_html_a2a1aba3973b12be8410b3e15c93ea5a0"><div class="ttname"><a href="../../d6/d53/class_memory_1_1_physical_1_1_physical_manager.html#a2a1aba3973b12be8410b3e15c93ea5a0">Memory::Physical::PhysicalManager::setUsed</a></div><div class="ttdeci">void setUsed(Section &amp;sect)</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d81/_physical_8hpp_source.html#l00039">Physical.hpp:39</a></div></div>
-<div class="ttc" id="a_memory_8i686_8hpp_html_acd327ff534c65e3c5772a67d62d74ca0"><div class="ttname"><a href="../../d7/d42/_memory_8i686_8hpp.html#acd327ff534c65e3c5772a67d62d74ca0">ARCH_PAGE_SIZE</a></div><div class="ttdeci">#define ARCH_PAGE_SIZE</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d42/_memory_8i686_8hpp_source.html#l00016">Memory.i686.hpp:16</a></div></div>
+<div class="ttc" id="a_memory_8i686_8hpp_html_acd327ff534c65e3c5772a67d62d74ca0"><div class="ttname"><a href="../../d7/d42/_memory_8i686_8hpp.html#acd327ff534c65e3c5772a67d62d74ca0">ARCH_PAGE_SIZE</a></div><div class="ttdeci">#define ARCH_PAGE_SIZE</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d42/_memory_8i686_8hpp_source.html#l00021">Memory.i686.hpp:21</a></div></div>
 <div class="ttc" id="astring_8cpp_html_adc296efabb90c20113d5420e4d162d14"><div class="ttname"><a href="../../d5/d24/string_8cpp.html#adc296efabb90c20113d5420e4d162d14">memset</a></div><div class="ttdeci">void * memset(void *bufptr, int value, size_t size)</div><div class="ttdoc">Sets the number of bytes in memory at ptr to the value.</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d24/string_8cpp_source.html#l00106">string.cpp:106</a></div></div>
 <div class="ttc" id="a_physical_8hpp_html_a6279f4a63f0d92c8f1cd356637258032"><div class="ttname"><a href="../../d0/d81/_physical_8hpp.html#a6279f4a63f0d92c8f1cd356637258032">KADDR_TO_PHYS</a></div><div class="ttdeci">#define KADDR_TO_PHYS(addr)</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d81/_physical_8hpp_source.html#l00019">Physical.hpp:19</a></div></div>
 <div class="ttc" id="anamespace_memory_html_a9193c3e610b1728964440284db90c812a93fa2d3e68adcffec5cbd883eee5f9af"><div class="ttname"><a href="../../db/d2f/namespace_memory.html#a9193c3e610b1728964440284db90c812a93fa2d3e68adcffec5cbd883eee5f9af">Memory::Kernel</a></div><div class="ttdeci">@ Kernel</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d91/_memory_section_8hpp_source.html#l00025">MemorySection.hpp:25</a></div></div>
 <div class="ttc" id="anamespace_memory_html_a9193c3e610b1728964440284db90c812abb186cca95fe2a43b713cc8e488fc04f"><div class="ttname"><a href="../../db/d2f/namespace_memory.html#a9193c3e610b1728964440284db90c812abb186cca95fe2a43b713cc8e488fc04f">Memory::Available</a></div><div class="ttdeci">@ Available</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d91/_memory_section_8hpp_source.html#l00019">MemorySection.hpp:19</a></div></div>
 <div class="ttc" id="anamespace_memory_html_a9193c3e610b1728964440284db90c812ab15579bc806f8bccdcf34c1f77aec071"><div class="ttname"><a href="../../db/d2f/namespace_memory.html#a9193c3e610b1728964440284db90c812ab15579bc806f8bccdcf34c1f77aec071">Memory::Unknown</a></div><div class="ttdeci">@ Unknown</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d91/_memory_section_8hpp_source.html#l00026">MemorySection.hpp:26</a></div></div>
 <div class="ttc" id="aclass_memory_1_1_physical_1_1_physical_manager_html_a46ef47360e6208e8e6f403ef0940ae32"><div class="ttname"><a href="../../d6/d53/class_memory_1_1_physical_1_1_physical_manager.html#a46ef47360e6208e8e6f403ef0940ae32">Memory::Physical::PhysicalManager::findNextFreePhysicalAddress</a></div><div class="ttdeci">uintptr_t findNextFreePhysicalAddress()</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d81/_physical_8hpp_source.html#l00098">Physical.hpp:98</a></div></div>
-<div class="ttc" id="astruct_arch_1_1_memory_1_1_frame_html_ad08a1455849d76a62a263a4363f41003"><div class="ttname"><a href="../../d6/d88/struct_arch_1_1_memory_1_1_frame.html#ad08a1455849d76a62a263a4363f41003">Arch::Memory::Frame::index</a></div><div class="ttdeci">uint32_t index</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d42/_memory_8i686_8hpp_source.html#l00028">Memory.i686.hpp:28</a></div></div>
 <div class="ttc" id="anamespace_memory_html_a9193c3e610b1728964440284db90c812a63044bd4932913253f39b10932d47c36"><div class="ttname"><a href="../../db/d2f/namespace_memory.html#a9193c3e610b1728964440284db90c812a63044bd4932913253f39b10932d47c36">Memory::Bootloader</a></div><div class="ttdeci">@ Bootloader</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d91/_memory_section_8hpp_source.html#l00024">MemorySection.hpp:24</a></div></div>
 <div class="ttc" id="aclass_bitset_html_a7550479c8346b33636cc9b0d5cdb7e02"><div class="ttname"><a href="../../d6/d09/class_bitset.html#a7550479c8346b33636cc9b0d5cdb7e02">Bitset::Reset</a></div><div class="ttdeci">void Reset(size_t pos)</div><div class="ttdoc">Reset (clear) the bit at the given position.</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d35/_bitset_8hpp_source.html#l00070">Bitset.hpp:70</a></div></div>
 <!-- start footer part -->

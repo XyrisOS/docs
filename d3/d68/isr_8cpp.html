@@ -109,7 +109,7 @@ $(document).ready(function(){initNavTree('d3/d68/isr_8cpp.html','../../'); initR
 <area shape="rect" title=" " alt="" coords="20,304,94,331"/>
 <area shape="rect" title=" " alt="" coords="271,304,342,331"/>
 <area shape="rect" href="../../d7/dcf/_arch_8i686_8hpp.html" title="i686 architecture implementation of Arch.hpp" alt="" coords="218,155,394,181"/>
-<area shape="rect" href="../../d8/dfb/regs_8hpp.html" title=" " alt="" coords="66,229,208,256"/>
+<area shape="rect" href="../../d8/dfb/regs_8hpp.html" title="i686 control register definitions. C &amp; C++ compatible header." alt="" coords="66,229,208,256"/>
 <area shape="rect" href="../../d8/d9f/ports_8hpp.html" title="Ports header file. Provides inline functions for getting and setting values at different ports...." alt="" coords="232,229,380,256"/>
 </map>
 </div>
@@ -160,21 +160,21 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d68/isr_8cpp_source.html#l00059">59</a> of file <a class="el" href="../../d3/d68/isr_8cpp_source.html">isr.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                                                    {</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="comment">/* After every interrupt we need to send an EOI to the PICs</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment">     * or they will not send another interrupt again */</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordflow">if</span> (regs-&gt;<a class="code" href="../../df/d94/structregisters.html#abee3a5b36ae0a28f77cbb6bca9839fe2">int_num</a> &gt;= 40) {</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <a class="code" href="../../d7/d27/ports_8cpp.html#aa89191491445201430ae9a8feb3184d9">writeByte</a>(0xA0, 0x20);                      <span class="comment">/* slave  */</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    }</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <a class="code" href="../../d7/d27/ports_8cpp.html#aa89191491445201430ae9a8feb3184d9">writeByte</a>(0x20, 0x20);                          <span class="comment">/* master */</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="comment">/* Handle the interrupt in a more modular way */</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../d3/d68/isr_8cpp.html#a1f4d04756199c67f69acd61e22904a70">interrupt_handlers</a>[regs-&gt;<a class="code" href="../../df/d94/structregisters.html#abee3a5b36ae0a28f77cbb6bca9839fe2">int_num</a>] != 0) {</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <a class="code" href="../../d4/ddc/isr_8hpp.html#a4a32dce80e00221946aeb30016f530d1">isr_cb_t</a> handler = <a class="code" href="../../d3/d68/isr_8cpp.html#a1f4d04756199c67f69acd61e22904a70">interrupt_handlers</a>[regs-&gt;<a class="code" href="../../df/d94/structregisters.html#abee3a5b36ae0a28f77cbb6bca9839fe2">int_num</a>];</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        handler(regs);</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    }</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../d3/d68/isr_8cpp_source.html#l00062">62</a> of file <a class="el" href="../../d3/d68/isr_8cpp_source.html">isr.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                                         {</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="comment">/* After every interrupt we need to send an EOI to the PICs</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment">     * or they will not send another interrupt again */</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordflow">if</span> (regs-&gt;<a class="code" href="../../df/d94/structregisters.html#abee3a5b36ae0a28f77cbb6bca9839fe2">int_num</a> &gt;= 40) {</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <a class="code" href="../../d7/d27/ports_8cpp.html#aa89191491445201430ae9a8feb3184d9">writeByte</a>(0xA0, 0x20);                      <span class="comment">/* slave  */</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    }</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <a class="code" href="../../d7/d27/ports_8cpp.html#aa89191491445201430ae9a8feb3184d9">writeByte</a>(0x20, 0x20);                          <span class="comment">/* master */</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="comment">/* Handle the interrupt in a more modular way */</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../d3/d68/isr_8cpp.html#a1f4d04756199c67f69acd61e22904a70">interrupt_handlers</a>[regs-&gt;<a class="code" href="../../df/d94/structregisters.html#abee3a5b36ae0a28f77cbb6bca9839fe2">int_num</a>] != 0) {</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <a class="code" href="../../d4/ddc/isr_8hpp.html#a4a32dce80e00221946aeb30016f530d1">isr_cb_t</a> handler = <a class="code" href="../../d3/d68/isr_8cpp.html#a1f4d04756199c67f69acd61e22904a70">interrupt_handlers</a>[regs-&gt;<a class="code" href="../../df/d94/structregisters.html#abee3a5b36ae0a28f77cbb6bca9839fe2">int_num</a>];</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        handler(regs);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    }</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;}</div>
 </div><!-- fragment --><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -213,10 +213,10 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d68/isr_8cpp_source.html#l00055">55</a> of file <a class="el" href="../../d3/d68/isr_8cpp_source.html">isr.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                                                 {</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <a class="code" href="../../d6/d1e/panic_8cpp.html#ae22655ba6f328217f1ebd6248ed82727">panic</a>(r);</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../d3/d68/isr_8cpp_source.html#l00058">58</a> of file <a class="el" href="../../d3/d68/isr_8cpp_source.html">isr.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                                      {</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <a class="code" href="../../d9/d5d/_panic_8cpp.html#ae22655ba6f328217f1ebd6248ed82727">panic</a>(r);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;}</div>
 </div><!-- fragment --><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -225,7 +225,7 @@ Variables</h2></td></tr>
 <div class="center"><img src="../../d3/d68/isr_8cpp_a2c19bdf23d1129da2d1f5ffebeb4b72c_cgraph.png" border="0" usemap="#d3/d68/isr_8cpp_a2c19bdf23d1129da2d1f5ffebeb4b72c_cgraph" alt=""/></div>
 <map name="d3/d68/isr_8cpp_a2c19bdf23d1129da2d1f5ffebeb4b72c_cgraph" id="d3/d68/isr_8cpp_a2c19bdf23d1129da2d1f5ffebeb4b72c_cgraph">
 <area shape="rect" title="Handler for the Interrupt Service Request." alt="" coords="5,5,100,32"/>
-<area shape="rect" href="../../d6/d1e/panic_8cpp.html#ae22655ba6f328217f1ebd6248ed82727" title="Halt the system and print the provided message on the panic screen." alt="" coords="148,5,205,32"/>
+<area shape="rect" href="../../d9/d5d/_panic_8cpp.html#ae22655ba6f328217f1ebd6248ed82727" title="Halt the system and print the provided message on the panic screen." alt="" coords="148,5,205,32"/>
 </map>
 </div>
 
@@ -330,10 +330,10 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d68/isr_8cpp_source.html#l00051">51</a> of file <a class="el" href="../../d3/d68/isr_8cpp_source.html">isr.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                                                                        {</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="code" href="../../d3/d68/isr_8cpp.html#a1f4d04756199c67f69acd61e22904a70">interrupt_handlers</a>[n] = handler;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../d3/d68/isr_8cpp_source.html#l00054">54</a> of file <a class="el" href="../../d3/d68/isr_8cpp_source.html">isr.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                                                             {</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="../../d3/d68/isr_8cpp.html#a1f4d04756199c67f69acd61e22904a70">interrupt_handlers</a>[n] = handler;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;}</div>
 </div><!-- fragment --><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="../../closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
@@ -427,7 +427,7 @@ Variables</h2></td></tr>
 <div class="ttc" id="aisr_8hpp_html_aacb7c8490cbd623a3a2bf933ffedd131"><div class="ttname"><a href="../../d4/ddc/isr_8hpp.html#aacb7c8490cbd623a3a2bf933ffedd131">isr9</a></div><div class="ttdeci">void isr9()</div></div>
 <div class="ttc" id="aisr_8hpp_html_aa63550aa0e55da846a219a2828007529"><div class="ttname"><a href="../../d4/ddc/isr_8hpp.html#aa63550aa0e55da846a219a2828007529">irq14</a></div><div class="ttdeci">void irq14()</div></div>
 <div class="ttc" id="aisr_8hpp_html_add0980c10028b377643da169e52e5be7"><div class="ttname"><a href="../../d4/ddc/isr_8hpp.html#add0980c10028b377643da169e52e5be7">isr16</a></div><div class="ttdeci">void isr16()</div></div>
-<div class="ttc" id="aisr_8hpp_html_a4a32dce80e00221946aeb30016f530d1"><div class="ttname"><a href="../../d4/ddc/isr_8hpp.html#a4a32dce80e00221946aeb30016f530d1">isr_cb_t</a></div><div class="ttdeci">void(* isr_cb_t)(struct registers *)</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/ddc/isr_8hpp_source.html#l00120">isr.hpp:120</a></div></div>
+<div class="ttc" id="aisr_8hpp_html_a4a32dce80e00221946aeb30016f530d1"><div class="ttname"><a href="../../d4/ddc/isr_8hpp.html#a4a32dce80e00221946aeb30016f530d1">isr_cb_t</a></div><div class="ttdeci">void(* isr_cb_t)(struct registers *)</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/ddc/isr_8hpp_source.html#l00070">isr.hpp:70</a></div></div>
 <div class="ttc" id="aisr_8hpp_html_ae685c5ca5ed9c9c5e7d297ad8d14de49"><div class="ttname"><a href="../../d4/ddc/isr_8hpp.html#ae685c5ca5ed9c9c5e7d297ad8d14de49">isr18</a></div><div class="ttdeci">void isr18()</div></div>
 <div class="ttc" id="aisr_8hpp_html_a277e9cc418a637ae584c1ff6525eb2e1"><div class="ttname"><a href="../../d4/ddc/isr_8hpp.html#a277e9cc418a637ae584c1ff6525eb2e1">isr23</a></div><div class="ttdeci">void isr23()</div></div>
 <div class="ttc" id="aisr_8hpp_html_ad97e98084cbcdc21bf03ba314dc243e0"><div class="ttname"><a href="../../d4/ddc/isr_8hpp.html#ad97e98084cbcdc21bf03ba314dc243e0">isr27</a></div><div class="ttdeci">void isr27()</div></div>
@@ -437,7 +437,6 @@ Variables</h2></td></tr>
 <div class="ttc" id="aidt_8cpp_html_ac026ee8412818db472b59fa2fad922fe"><div class="ttname"><a href="../../d9/d87/idt_8cpp.html#ac026ee8412818db472b59fa2fad922fe">idt_set_gate</a></div><div class="ttdeci">void idt_set_gate(int n, uint32_t handler_addr)</div><div class="ttdoc">Sets the handler function (via address) for a specific IDT.</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d87/idt_8cpp_source.html#l00016">idt.cpp:16</a></div></div>
 <div class="ttc" id="aisr_8hpp_html_a4dd0a509c8829cd9d3606da7ba7cde7a"><div class="ttname"><a href="../../d4/ddc/isr_8hpp.html#a4dd0a509c8829cd9d3606da7ba7cde7a">irq6</a></div><div class="ttdeci">void irq6()</div></div>
 <div class="ttc" id="aisr_8hpp_html_af4ae10cea59f9bb2f79c13b8036d81f1"><div class="ttname"><a href="../../d4/ddc/isr_8hpp.html#af4ae10cea59f9bb2f79c13b8036d81f1">isr31</a></div><div class="ttdeci">void isr31()</div></div>
-<div class="ttc" id="apanic_8cpp_html_ae22655ba6f328217f1ebd6248ed82727"><div class="ttname"><a href="../../d6/d1e/panic_8cpp.html#ae22655ba6f328217f1ebd6248ed82727">panic</a></div><div class="ttdeci">void panic(const char *msg)</div><div class="ttdoc">Halt the system and print the provided message on the panic screen.</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d1e/panic_8cpp_source.html#l00082">panic.cpp:82</a></div></div>
 <div class="ttc" id="aisr_8hpp_html_a09af768d636144aaeaddd76c92a0a2f5"><div class="ttname"><a href="../../d4/ddc/isr_8hpp.html#a09af768d636144aaeaddd76c92a0a2f5">isr4</a></div><div class="ttdeci">void isr4()</div></div>
 <div class="ttc" id="aisr_8hpp_html_ad16b5f77287df551e63d3f0c67f8f75d"><div class="ttname"><a href="../../d4/ddc/isr_8hpp.html#ad16b5f77287df551e63d3f0c67f8f75d">isr19</a></div><div class="ttdeci">void isr19()</div></div>
 <div class="ttc" id="aisr_8hpp_html_a59dbef11d3615eb79b6a13c82b5bf476"><div class="ttname"><a href="../../d4/ddc/isr_8hpp.html#a59dbef11d3615eb79b6a13c82b5bf476">irq9</a></div><div class="ttdeci">void irq9()</div></div>
@@ -461,6 +460,7 @@ Variables</h2></td></tr>
 <div class="ttc" id="aisr_8hpp_html_a8b63eaa37c03743718870964a3429ba8"><div class="ttname"><a href="../../d4/ddc/isr_8hpp.html#a8b63eaa37c03743718870964a3429ba8">isr14</a></div><div class="ttdeci">void isr14()</div></div>
 <div class="ttc" id="aisr_8hpp_html_ac7d1e81e585bc7c56b46280006402f9e"><div class="ttname"><a href="../../d4/ddc/isr_8hpp.html#ac7d1e81e585bc7c56b46280006402f9e">isr17</a></div><div class="ttdeci">void isr17()</div></div>
 <div class="ttc" id="aisr_8hpp_html_af106b9a26e06abf17eebb6f7ae54f905"><div class="ttname"><a href="../../d4/ddc/isr_8hpp.html#af106b9a26e06abf17eebb6f7ae54f905">isr21</a></div><div class="ttdeci">void isr21()</div></div>
+<div class="ttc" id="a_panic_8cpp_html_ae22655ba6f328217f1ebd6248ed82727"><div class="ttname"><a href="../../d9/d5d/_panic_8cpp.html#ae22655ba6f328217f1ebd6248ed82727">panic</a></div><div class="ttdeci">void panic(const char *msg)</div><div class="ttdoc">Halt the system and print the provided message on the panic screen.</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d5d/_panic_8cpp_source.html#l00082">Panic.cpp:82</a></div></div>
 <div class="ttc" id="aisr_8hpp_html_aaf8a8dc035d379d8173b06a2ebd881a1"><div class="ttname"><a href="../../d4/ddc/isr_8hpp.html#aaf8a8dc035d379d8173b06a2ebd881a1">irq13</a></div><div class="ttdeci">void irq13()</div></div>
 <div class="ttc" id="aisr_8hpp_html_a00f00421039cb85f9dd9375995c784bd"><div class="ttname"><a href="../../d4/ddc/isr_8hpp.html#a00f00421039cb85f9dd9375995c784bd">isr12</a></div><div class="ttdeci">void isr12()</div></div>
 <div class="ttc" id="aisr_8hpp_html_a0c86295415896333de5803b5255cc3fd"><div class="ttname"><a href="../../d4/ddc/isr_8hpp.html#a0c86295415896333de5803b5255cc3fd">irq5</a></div><div class="ttdeci">void irq5()</div></div>

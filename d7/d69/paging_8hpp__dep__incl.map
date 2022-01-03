@@ -10,7 +10,7 @@
 <area shape="rect" id="node8" href="$d0/dde/primes_8cpp.html" title="Prime computation tasks." alt="" coords="573,155,668,181"/>
 <area shape="rect" id="node9" href="$d8/da6/mutex_8hpp.html" title=" " alt="" coords="692,155,784,181"/>
 <area shape="rect" id="node13" href="$d1/d5a/semaphore_8hpp.html" title=" " alt="" coords="809,155,931,181"/>
-<area shape="rect" id="node15" href="$d6/d1e/panic_8cpp.html" title=" " alt="" coords="955,155,1038,181"/>
+<area shape="rect" id="node15" href="$d9/d5d/_panic_8cpp.html" title="Early CGA&#45;mode panic (no framebuffer)" alt="" coords="955,155,1038,181"/>
 <area shape="rect" id="node16" href="$d5/d9d/tasks_8cpp.html" title=" " alt="" coords="465,155,549,181"/>
 <area shape="rect" id="node10" href="$d9/dda/console_8cpp.html" title="Framebuffer console." alt="" coords="517,229,615,256"/>
 <area shape="rect" id="node11" href="$d4/dc7/rs232_8cpp.html" title=" " alt="" coords="639,229,725,256"/>

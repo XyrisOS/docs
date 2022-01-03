@@ -1,15 +1,18 @@
 var searchData=
 [
-  ['offset_1185',['Offset',['../d6/d09/class_bitset.html#ab09a95783d1b769e301de3a60530f12c',1,'Bitset']]],
-  ['operator_20delete_1186',['operator delete',['../d1/dd1/cxx_8cpp.html#a86107594327f3a001230df9802cd4422',1,'operator delete(void *p):&#160;cxx.cpp'],['../d1/dd1/cxx_8cpp.html#a66ce944bd1033155a0eed1220a1175b4',1,'operator delete(void *p, long unsigned int):&#160;cxx.cpp']]],
-  ['operator_20delete_5b_5d_1187',['operator delete[]',['../d1/dd1/cxx_8cpp.html#aaa8d8403dca7d813a59dd1f07728349d',1,'operator delete[](void *p):&#160;cxx.cpp'],['../d1/dd1/cxx_8cpp.html#a3d8a4b7bf03d809e20d760c505909e2b',1,'operator delete[](void *p, long unsigned int):&#160;cxx.cpp']]],
-  ['operator_20new_1188',['operator new',['../d1/dd1/cxx_8cpp.html#a205ed048fdf5259c2e8e0cb60ee8f719',1,'cxx.cpp']]],
-  ['operator_20new_5b_5d_1189',['operator new[]',['../d1/dd1/cxx_8cpp.html#a63ce4f64887b9307317aee5baae6b18f',1,'cxx.cpp']]],
-  ['operator_20struct_20frame_1190',['operator struct Frame',['../dd/dd2/class_arch_1_1_memory_1_1_address.html#a3473471786c9f604642891175a3c01b7',1,'Arch::Memory::Address']]],
-  ['operator_20struct_20page_1191',['operator struct Page',['../dd/dd2/class_arch_1_1_memory_1_1_address.html#abd44b12c127e43432479c740f71bfc03',1,'Arch::Memory::Address']]],
-  ['operator_20uintptr_5ft_1192',['operator uintptr_t',['../dd/dd2/class_arch_1_1_memory_1_1_address.html#ad31b8778b41b3054569c293e894aa859',1,'Arch::Memory::Address']]],
-  ['operator_2b_3d_1193',['operator+=',['../dd/dd2/class_arch_1_1_memory_1_1_address.html#ad72209e68fdbfe04b1221ac4607ea2a0',1,'Arch::Memory::Address']]],
-  ['operator_2d_3d_1194',['operator-=',['../dd/dd2/class_arch_1_1_memory_1_1_address.html#af2022438914c43840e887b11459c6ceb',1,'Arch::Memory::Address']]],
-  ['operator_3d_1195',['operator=',['../dd/dd2/class_arch_1_1_memory_1_1_address.html#a8f71a0daf0c9e1709fb775e334f8d198',1,'Arch::Memory::Address']]],
-  ['operator_5b_5d_1196',['operator[]',['../d6/d09/class_bitset.html#a43a289922a03ef41166f0e0e2b3278fa',1,'Bitset::operator[]()'],['../d0/dea/class_memory_1_1_memory_map.html#ac8288d90ea8f2406d6796c877a06f7b6',1,'Memory::MemoryMap::operator[](size_t idx) const'],['../d0/dea/class_memory_1_1_memory_map.html#a01ea2dda31ea61e3d9f95a5f94be4851',1,'Memory::MemoryMap::operator[](size_t idx)']]]
+  ['pages_1173',['pages',['../d8/d7f/class_memory_1_1_section.html#ad6b2480c725438f4946dfef5cbf172f4',1,'Memory::Section']]],
+  ['pagingdisable_1174',['pagingDisable',['../dd/d0e/namespace_arch_1_1_memory.html#ad4d3a669c172e1442fe3e2afe8d16172',1,'Arch::Memory']]],
+  ['pagingenable_1175',['pagingEnable',['../dd/d0e/namespace_arch_1_1_memory.html#a3ba8a1ea0a34ad98b2f304fbbda48b0a',1,'Arch::Memory']]],
+  ['panic_1176',['panic',['../d9/d5d/_panic_8cpp.html#ae22655ba6f328217f1ebd6248ed82727',1,'panic(const char *msg):&#160;Panic.cpp'],['../d9/d5d/_panic_8cpp.html#a034707ef0aa682b901aa0d5961c30c94',1,'panic(struct registers *registers):&#160;Panic.cpp'],['../d6/d64/_panic_8hpp.html#ae22655ba6f328217f1ebd6248ed82727',1,'panic(const char *msg):&#160;Panic.cpp'],['../d6/d64/_panic_8hpp.html#a034707ef0aa682b901aa0d5961c30c94',1,'panic(struct registers *registers):&#160;Panic.cpp']]],
+  ['panicf_1177',['panicf',['../d9/d5d/_panic_8cpp.html#a1f0f35d4cff831364cdc213f096e83e5',1,'panicf(const char *fmt,...):&#160;Panic.cpp'],['../d6/d64/_panic_8hpp.html#a1f0f35d4cff831364cdc213f096e83e5',1,'panicf(const char *fmt,...):&#160;Panic.cpp']]],
+  ['parsecommandline_1178',['parseCommandLine',['../da/d80/namespace_boot.html#a06e63f208a6743c77e14c9428a7446c9',1,'Boot']]],
+  ['parsestivale2_1179',['parseStivale2',['../df/d70/class_boot_1_1_handoff.html#aa2d1c752220db05f3602f99d07d0dca3',1,'Boot::Handoff']]],
+  ['peek_1180',['Peek',['../d4/d8f/class_ring_buffer.html#a7a71ef8d0f13f03308eaba134a480da3',1,'RingBuffer']]],
+  ['pixel_1181',['pixel',['../d6/d9b/namespace_graphics.html#a9a087c9e0e221a9939cbe6b958171886',1,'Graphics']]],
+  ['post_1182',['Post',['../d4/dbd/class_semaphore.html#a3035df6c720616bb1c194730d895c924',1,'Semaphore']]],
+  ['previous_1183',['Previous',['../d1/ddb/class_linked_list_1_1_linked_list_node.html#a2d05cf34bbec6db31f6e622b2bd21be4',1,'LinkedList::LinkedListNode']]],
+  ['printf_1184',['printf',['../d8/db5/namespace_console.html#aa92244db771ad2578967dd9f8fcac912',1,'Console::printf()'],['../d7/d75/namespace_r_s232.html#a394b7ac1c601a47c2881a460eb41171a',1,'RS232::printf()']]],
+  ['printf_5fhelper_1185',['printf_helper',['../d4/d64/printf_8cpp.html#a85a2fff114bf015eba22a1dc163bf1ba',1,'printf_helper(const char *fmt, va_list args, printf_cb_fnptr_t fn, void *ptr):&#160;printf.cpp'],['../d2/daf/stdio_8hpp.html#a85a2fff114bf015eba22a1dc163bf1ba',1,'printf_helper(const char *fmt, va_list args, printf_cb_fnptr_t fn, void *ptr):&#160;printf.cpp']]],
+  ['printtrace_1186',['printTrace',['../de/d66/namespace_stack.html#ab836051c392dd045b3bdfe4124ce04a8',1,'Stack']]],
+  ['putrect_1187',['putrect',['../d6/d9b/namespace_graphics.html#a0c60e5c671ea347d63839d16c3712268',1,'Graphics']]]
 ];

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['unused_1508',['unused',['../da/de0/struct_arch_1_1_memory_1_1_table_entry.html#ad32e36d502349a876cd12a2735ef08ce',1,'Arch::Memory::TableEntry']]],
-  ['usermode_1509',['usermode',['../da/de0/struct_arch_1_1_memory_1_1_table_entry.html#a171fb895f1cc8a6324c9b1508511a9eb',1,'Arch::Memory::TableEntry::usermode()'],['../d7/d7d/struct_arch_1_1_memory_1_1_directory_entry.html#a39cfc8e433fb6e1dd3dd8120a1f849ed',1,'Arch::Memory::DirectoryEntry::usermode()']]]
+  ['unused_1469',['unused',['../d5/d8c/struct_table_entry.html#a9707b060ee228bae55a8f265f10f886b',1,'TableEntry']]],
+  ['usermode_1470',['usermode',['../d5/d8c/struct_table_entry.html#afaa4024191a14dea12cc880a206fc7ea',1,'TableEntry::usermode()'],['../db/dc4/struct_directory_entry.html#ab4d0803e68e12534f33b44076f81907e',1,'DirectoryEntry::usermode()']]]
 ];

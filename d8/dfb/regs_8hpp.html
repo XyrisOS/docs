@@ -85,7 +85,6 @@ $(document).ready(function(){initNavTree('d8/dfb/regs_8hpp.html','../../'); init
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
-<a href="#namespaces">Namespaces</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">regs.hpp File Reference</div>  </div>
@@ -100,7 +99,7 @@ $(document).ready(function(){initNavTree('d8/dfb/regs_8hpp.html','../../'); init
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="../../d5/d6d/regs_8hpp__incl.png" border="0" usemap="#regs_8hpp" alt=""/></div>
 <map name="regs_8hpp" id="regs_8hpp">
-<area shape="rect" title=" " alt="" coords="49,5,128,32"/>
+<area shape="rect" title="i686 control register definitions. C &amp; C++ compatible header." alt="" coords="49,5,128,32"/>
 <area shape="rect" title=" " alt="" coords="5,80,76,107"/>
 <area shape="rect" title=" " alt="" coords="101,80,175,107"/>
 </map>
@@ -112,9 +111,10 @@ $(document).ready(function(){initNavTree('d8/dfb/regs_8hpp.html','../../'); init
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="../../dc/df6/regs_8hpp__dep__incl.png" border="0" usemap="#regs_8hppdep" alt=""/></div>
 <map name="regs_8hppdep" id="regs_8hppdep">
-<area shape="rect" title=" " alt="" coords="167,5,246,32"/>
+<area shape="rect" title="i686 control register definitions. C &amp; C++ compatible header." alt="" coords="278,5,357,32"/>
 <area shape="rect" href="../../d4/dc9/_arch_8i686_8cpp.html" title="i686 architecture implementation of Arch.hpp" alt="" coords="185,229,295,256"/>
 <area shape="rect" href="../../d7/dcf/_arch_8i686_8hpp.html" title="i686 architecture implementation of Arch.hpp" alt="" coords="262,80,373,107"/>
+<area shape="rect" href="../../dc/d20/stivale2_8c.html" title=" " alt="" coords="397,80,483,107"/>
 <area shape="rect" href="../../df/d77/gdt_8hpp.html" title="The Global Descriptor Table (GDT) is specific to the IA32 architecture. It contains entries telling t..." alt="" coords="433,155,503,181"/>
 <area shape="rect" href="../../dd/d12/idt_8hpp.html" title="Interrupt Descriptor Table header." alt="" coords="43,155,109,181"/>
 <area shape="rect" href="../../d4/ddc/isr_8hpp.html" title="Interrupt Service Routine header." alt="" coords="235,155,301,181"/>
@@ -137,40 +137,55 @@ $(document).ready(function(){initNavTree('d8/dfb/regs_8hpp.html','../../'); init
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d94/structregisters.html">registers</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dde/struct_registers_1_1_c_r0.html">Registers::CR0</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dc6/struct_c_r0.html">CR0</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dec/struct_registers_1_1_c_r2.html">Registers::CR2</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/df1/struct_c_r2.html">CR2</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dcd/struct_registers_1_1_c_r3.html">Registers::CR3</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
-Namespaces</h2></td></tr>
-<tr class="memitem:d4/ddf/namespace_registers"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/ddf/namespace_registers.html">Registers</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d5d/struct_c_r3.html">CR3</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aea57042ad4cd3d217fe32bdc95adeec1"><td class="memItemLeft" align="right" valign="top">struct CR0&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/ddf/namespace_registers.html#aea57042ad4cd3d217fe32bdc95adeec1">Registers::readCR0</a> ()</td></tr>
-<tr class="separator:aea57042ad4cd3d217fe32bdc95adeec1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a113bb16f2d30345fb54c5875ddd739ee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/ddf/namespace_registers.html#a113bb16f2d30345fb54c5875ddd739ee">Registers::writeCR0</a> (struct CR0 x)</td></tr>
-<tr class="separator:a113bb16f2d30345fb54c5875ddd739ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad96447b2ed04c03a9376ceb6ba831c86"><td class="memItemLeft" align="right" valign="top">struct CR2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/ddf/namespace_registers.html#ad96447b2ed04c03a9376ceb6ba831c86">Registers::readCR2</a> ()</td></tr>
-<tr class="separator:ad96447b2ed04c03a9376ceb6ba831c86"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae6c18455ddbbcc5b7bb417fbc78d3ed"><td class="memItemLeft" align="right" valign="top">struct CR3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/ddf/namespace_registers.html#aae6c18455ddbbcc5b7bb417fbc78d3ed">Registers::readCR3</a> ()</td></tr>
-<tr class="separator:aae6c18455ddbbcc5b7bb417fbc78d3ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a1056d5d641c0cbd1e3b74d6a429660"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/ddf/namespace_registers.html#a9a1056d5d641c0cbd1e3b74d6a429660">Registers::writeCR3</a> (struct CR3 x)</td></tr>
-<tr class="separator:a9a1056d5d641c0cbd1e3b74d6a429660"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66bb75d0222f92ec198058bfaee6e9a8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dfb/regs_8hpp.html#a66bb75d0222f92ec198058bfaee6e9a8">__attribute__</a> ((always_inline)) static inline struct <a class="el" href="../../dd/dc6/struct_c_r0.html">CR0</a> readCR0(void)</td></tr>
+<tr class="separator:a66bb75d0222f92ec198058bfaee6e9a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><dl class="section author"><dt>Author</dt><dd>Keeton Feavel (<a href="#" onclick="location.href='mai'+'lto:'+'kee'+'to'+'nfe'+'av'+'el@'+'ce'+'dar'+'vi'+'lle'+'.e'+'du'; return false;">keeto<span style="display: none;">.nosp@m.</span>nfea<span style="display: none;">.nosp@m.</span>vel@c<span style="display: none;">.nosp@m.</span>edar<span style="display: none;">.nosp@m.</span>ville<span style="display: none;">.nosp@m.</span>.edu</a>) </dd></dl>
+<div class="textblock"><p>i686 control register definitions. C &amp; C++ compatible header. </p>
+<dl class="section author"><dt>Author</dt><dd>Keeton Feavel (<a href="#" onclick="location.href='mai'+'lto:'+'kee'+'to'+'nfe'+'av'+'el@'+'ce'+'dar'+'vi'+'lle'+'.e'+'du'; return false;">keeto<span style="display: none;">.nosp@m.</span>nfea<span style="display: none;">.nosp@m.</span>vel@c<span style="display: none;">.nosp@m.</span>edar<span style="display: none;">.nosp@m.</span>ville<span style="display: none;">.nosp@m.</span>.edu</a>) </dd></dl>
 <dl class="section version"><dt>Version</dt><dd>0.3 </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>2019-12-10</dd></dl>
 <dl class="section copyright"><dt>Copyright</dt><dd>Copyright the Xyris Contributors (c) 2019 </dd></dl>
 
 <p class="definition">Definition in file <a class="el" href="../../d8/dfb/regs_8hpp_source.html">regs.hpp</a>.</p>
-</div></div><!-- contents -->
+</div><h2 class="groupheader">Function Documentation</h2>
+<a id="a66bb75d0222f92ec198058bfaee6e9a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66bb75d0222f92ec198058bfaee6e9a8">&#9670;&nbsp;</a></span>__attribute__()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__attribute__ </td>
+          <td>(</td>
+          <td class="paramtype">(always_inline)&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d8/dfb/regs_8hpp_source.html#l00062">62</a> of file <a class="el" href="../../d8/dfb/regs_8hpp_source.html">regs.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;{</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keyword">struct </span><a class="code" href="../../dd/dc6/struct_c_r0.html">CR0</a> x;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keyword">asm</span> <span class="keyword">volatile</span>(<span class="stringliteral">&quot;mov %%cr0, %0&quot;</span>: <span class="stringliteral">&quot;=r&quot;</span>(x));</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordflow">return</span> x;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="astruct_c_r0_html"><div class="ttname"><a href="../../dd/dc6/struct_c_r0.html">CR0</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dfb/regs_8hpp_source.html#l00030">regs.hpp:30</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

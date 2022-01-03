@@ -1,6 +1,5 @@
 <map id="Boot::parseCommandLine" name="Boot::parseCommandLine">
-<area shape="rect" id="node1" title="Parse a command line for registered arguments." alt="" coords="497,31,688,57"/>
-<area shape="rect" id="node2" href="$df/d70/class_boot_1_1_handoff.html#a660bc107223f5e3bf5b8c4604fed265c" title=" " alt="" coords="224,5,449,32"/>
-<area shape="rect" id="node4" href="$df/d70/class_boot_1_1_handoff.html#aa2d1c752220db05f3602f99d07d0dca3" title=" " alt="" coords="233,56,441,83"/>
-<area shape="rect" id="node3" href="$df/d70/class_boot_1_1_handoff.html#a63449bd33cc1e30ec2b8ae2bf9ef155d" title=" " alt="" coords="5,31,176,57"/>
+<area shape="rect" id="node1" title="Parse a command line for registered arguments." alt="" coords="480,5,671,32"/>
+<area shape="rect" id="node2" href="$df/d70/class_boot_1_1_handoff.html#aa2d1c752220db05f3602f99d07d0dca3" title=" " alt="" coords="224,5,432,32"/>
+<area shape="rect" id="node3" href="$df/d70/class_boot_1_1_handoff.html#a63449bd33cc1e30ec2b8ae2bf9ef155d" title=" " alt="" coords="5,5,176,32"/>
 </map>

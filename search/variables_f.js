@@ -1,8 +1,7 @@
 var searchData=
 [
-  ['readwrite_1482',['readWrite',['../da/de0/struct_arch_1_1_memory_1_1_table_entry.html#a3014be4c206b4b89844a79848e6e05e5',1,'Arch::Memory::TableEntry::readWrite()'],['../d7/d7d/struct_arch_1_1_memory_1_1_directory_entry.html#a717199d0ab19b3ef5b817da21ec1203f',1,'Arch::Memory::DirectoryEntry::readWrite()']]],
-  ['reserved_1483',['reserved',['../de/da7/struct_boot_1_1multiboot__fixed.html#a1257374db23681ceaf973cb559cb1f91',1,'Boot::multiboot_fixed']]],
-  ['reserveda_1484',['reservedA',['../d3/dde/struct_registers_1_1_c_r0.html#a4c1768487cd74f45fbbfdf6071c5d6d3',1,'Registers::CR0']]],
-  ['reservedb_1485',['reservedB',['../d3/dde/struct_registers_1_1_c_r0.html#ae7f06d56eb9595957d4cc715d50249be',1,'Registers::CR0']]],
-  ['reservedc_1486',['reservedC',['../d3/dde/struct_registers_1_1_c_r0.html#a51a9a30ed417f993a8025121366264a5',1,'Registers::CR0']]]
+  ['readwrite_1445',['readWrite',['../d5/d8c/struct_table_entry.html#a59b1560f0dcae073a725d99351d77f76',1,'TableEntry::readWrite()'],['../db/dc4/struct_directory_entry.html#a0dbf95c5a41c348007d8b0d3ba214b5d',1,'DirectoryEntry::readWrite()']]],
+  ['reserveda_1446',['reservedA',['../dd/dc6/struct_c_r0.html#a3ee94bae2cd8fda703fda10524a1610e',1,'CR0']]],
+  ['reservedb_1447',['reservedB',['../dd/dc6/struct_c_r0.html#a61bef2f080abf2939aa102bc90a6dfbb',1,'CR0']]],
+  ['reservedc_1448',['reservedC',['../dd/dc6/struct_c_r0.html#aa7cbaba8bb463a5a0e411e572182cfee',1,'CR0']]]
 ];

@@ -7,6 +7,6 @@
 <area shape="rect" id="node3" title=" " alt="" coords="20,304,94,331"/>
 <area shape="rect" id="node4" title=" " alt="" coords="271,304,342,331"/>
 <area shape="rect" id="node6" href="$d7/dcf/_arch_8i686_8hpp.html" title="i686 architecture implementation of Arch.hpp" alt="" coords="218,155,394,181"/>
-<area shape="rect" id="node7" href="$d8/dfb/regs_8hpp.html" title=" " alt="" coords="66,229,208,256"/>
+<area shape="rect" id="node7" href="$d8/dfb/regs_8hpp.html" title="i686 control register definitions. C &amp; C++ compatible header." alt="" coords="66,229,208,256"/>
 <area shape="rect" id="node8" href="$d8/d9f/ports_8hpp.html" title="Ports header file. Provides inline functions for getting and setting values at different ports...." alt="" coords="232,229,380,256"/>
 </map>

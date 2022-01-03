@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['offset_1470',['offset',['../d6/d88/struct_arch_1_1_memory_1_1_frame.html#a3894916a96f0dd21b5590ffd66dd7791',1,'Arch::Memory::Frame::offset()'],['../da/db3/struct_arch_1_1_memory_1_1_page.html#ae46a9f3c5f5b4b1a26122cdee849a407',1,'Arch::Memory::Page::offset()']]]
+  ['offset_1434',['offset',['../d5/d15/struct_frame.html#ae8b21ef11450432bec7b8cdd121dc6e3',1,'Frame::offset()'],['../df/d9b/struct_page.html#aceb1524483148459f90483de47a40b5c',1,'Page::offset()']]]
 ];

@@ -1,6 +1,6 @@
 <map id="Arch.i686.hpp" name="Arch.i686.hpp">
 <area shape="rect" id="node1" title="i686 architecture implementation of Arch.hpp" alt="" coords="188,5,299,32"/>
-<area shape="rect" id="node2" href="$d8/dfb/regs_8hpp.html" title=" " alt="" coords="333,80,476,107"/>
+<area shape="rect" id="node2" href="$d8/dfb/regs_8hpp.html" title="i686 control register definitions. C &amp; C++ compatible header." alt="" coords="333,80,476,107"/>
 <area shape="rect" id="node5" href="$d8/d9f/ports_8hpp.html" title="Ports header file. Provides inline functions for getting and setting values at different ports...." alt="" coords="5,80,153,107"/>
 <area shape="rect" id="node6" href="$d4/ddc/isr_8hpp.html" title="Interrupt Service Routine header." alt="" coords="178,80,309,107"/>
 <area shape="rect" id="node3" title=" " alt="" coords="208,155,279,181"/>

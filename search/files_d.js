@@ -1,17 +1,12 @@
 var searchData=
 [
-  ['sections_2ehpp_989',['sections.hpp',['../d0/d29/sections_8hpp.html',1,'']]],
-  ['semaphore_2ecpp_990',['semaphore.cpp',['../da/d20/semaphore_8cpp.html',1,'']]],
-  ['semaphore_2ehpp_991',['semaphore.hpp',['../d1/d5a/semaphore_8hpp.html',1,'']]],
-  ['spinner_2ecpp_992',['spinner.cpp',['../df/d57/spinner_8cpp.html',1,'']]],
-  ['spinner_2ehpp_993',['spinner.hpp',['../da/d14/spinner_8hpp.html',1,'']]],
-  ['spkr_2ecpp_994',['spkr.cpp',['../da/da5/spkr_8cpp.html',1,'']]],
-  ['spkr_2ehpp_995',['spkr.hpp',['../da/d1a/spkr_8hpp.html',1,'']]],
-  ['stacktrace_2ecpp_996',['Stacktrace.cpp',['../d3/ddc/_stacktrace_8cpp.html',1,'']]],
-  ['stacktrace_2ehpp_997',['Stacktrace.hpp',['../de/df5/_stacktrace_8hpp.html',1,'']]],
-  ['stdio_2ehpp_998',['stdio.hpp',['../d2/daf/stdio_8hpp.html',1,'']]],
-  ['stivale_2ecpp_999',['stivale.cpp',['../da/de5/stivale_8cpp.html',1,'']]],
-  ['stivale2_2es_1000',['stivale2.s',['../de/d60/stivale2_8s.html',1,'']]],
-  ['string_2ecpp_1001',['string.cpp',['../d5/d24/string_8cpp.html',1,'']]],
-  ['string_2ehpp_1002',['string.hpp',['../d4/da0/string_8hpp.html',1,'']]]
+  ['rand_2ecpp_964',['rand.cpp',['../d5/d92/rand_8cpp.html',1,'']]],
+  ['rand_2ehpp_965',['rand.hpp',['../d4/d0b/rand_8hpp.html',1,'']]],
+  ['readme_2emd_966',['README.md',['../d9/dd6/_r_e_a_d_m_e_8md.html',1,'']]],
+  ['regs_2ehpp_967',['regs.hpp',['../d8/dfb/regs_8hpp.html',1,'']]],
+  ['ringbuffer_2ehpp_968',['RingBuffer.hpp',['../d6/d15/_ring_buffer_8hpp.html',1,'']]],
+  ['rs232_2ecpp_969',['rs232.cpp',['../d4/dc7/rs232_8cpp.html',1,'']]],
+  ['rs232_2ehpp_970',['rs232.hpp',['../db/d90/rs232_8hpp.html',1,'']]],
+  ['rtc_2ecpp_971',['rtc.cpp',['../dd/d82/rtc_8cpp.html',1,'']]],
+  ['rtc_2ehpp_972',['rtc.hpp',['../d9/d89/rtc_8hpp.html',1,'']]]
 ];

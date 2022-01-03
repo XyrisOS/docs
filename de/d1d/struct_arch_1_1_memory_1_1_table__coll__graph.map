@@ -1,4 +1,0 @@
-<map id="Arch::Memory::Table" name="Arch::Memory::Table">
-<area shape="rect" id="node1" title="Page table structure as defined in accordance to the Intel Developer Manual Vol. 3a p...." alt="" coords="22,95,177,121"/>
-<area shape="rect" id="node2" href="$da/de0/struct_arch_1_1_memory_1_1_table_entry.html" title="Page table entry defined in accordance to the Intel Developer Manual Vol. 3a p. 4&#45;12." alt="" coords="5,5,193,32"/>
-</map>

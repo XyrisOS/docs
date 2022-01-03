@@ -1,0 +1,4 @@
+<map id="Arch::haltAndCatchFire" name="Arch::haltAndCatchFire">
+<area shape="rect" id="node1" title="Disable interrupts and halts execution." alt="" coords="160,5,331,32"/>
+<area shape="rect" id="node2" href="$dd/dad/_early_panic_8cpp.html#a9a5a812bf31b7a599c2b7772ae7d080d" title="Map bootloader information into the higher half of memory so that the kernel can access it and parse ..." alt="" coords="5,5,112,32"/>
+</map>

@@ -1,18 +1,17 @@
 var _memory_8i686_8hpp =
 [
-    [ "Frame", "d6/d88/struct_arch_1_1_memory_1_1_frame.html", "d6/d88/struct_arch_1_1_memory_1_1_frame" ],
-    [ "Page", "da/db3/struct_arch_1_1_memory_1_1_page.html", "da/db3/struct_arch_1_1_memory_1_1_page" ],
-    [ "TableEntry", "da/de0/struct_arch_1_1_memory_1_1_table_entry.html", "da/de0/struct_arch_1_1_memory_1_1_table_entry" ],
-    [ "Table", "da/d3b/struct_arch_1_1_memory_1_1_table.html", "da/d3b/struct_arch_1_1_memory_1_1_table" ],
-    [ "DirectoryEntry", "d7/d7d/struct_arch_1_1_memory_1_1_directory_entry.html", "d7/d7d/struct_arch_1_1_memory_1_1_directory_entry" ],
-    [ "Directory", "d8/d3a/struct_arch_1_1_memory_1_1_directory.html", "d8/d3a/struct_arch_1_1_memory_1_1_directory" ],
-    [ "Address", "dd/dd2/class_arch_1_1_memory_1_1_address.html", "dd/dd2/class_arch_1_1_memory_1_1_address" ],
+    [ "Frame", "d5/d15/struct_frame.html", "d5/d15/struct_frame" ],
+    [ "Page", "df/d9b/struct_page.html", "df/d9b/struct_page" ],
+    [ "TableEntry", "d5/d8c/struct_table_entry.html", "d5/d8c/struct_table_entry" ],
+    [ "Table", "d5/d0d/struct_table.html", "d5/d0d/struct_table" ],
+    [ "DirectoryEntry", "db/dc4/struct_directory_entry.html", "db/dc4/struct_directory_entry" ],
+    [ "Directory", "d5/d2b/struct_directory.html", "d5/d2b/struct_directory" ],
     [ "ARCH_PAGE_ALIGN", "d7/d42/_memory_8i686_8hpp.html#a000988a56f64747e74e8d52424e7223c", null ],
     [ "ARCH_PAGE_DIR_ENTRIES", "d7/d42/_memory_8i686_8hpp.html#a4be83e5acda4d5efb66fc1b247d2574b", null ],
+    [ "ARCH_PAGE_DIR_ENTRY_SHIFT", "d7/d42/_memory_8i686_8hpp.html#ad6629b43d368cfc8e251c2e213df7651", null ],
     [ "ARCH_PAGE_SIZE", "d7/d42/_memory_8i686_8hpp.html#acd327ff534c65e3c5772a67d62d74ca0", null ],
     [ "ARCH_PAGE_TABLE_ENTRIES", "d7/d42/_memory_8i686_8hpp.html#a4d1d75cc1e55b77dabd23586782ebe58", null ],
-    [ "pageAlign", "d7/d42/_memory_8i686_8hpp.html#a9118c8fdcb2627cdbd72b751d02e6bfc", null ],
-    [ "pageInvalidate", "d7/d42/_memory_8i686_8hpp.html#a206380258fe28756d0c70f4f700e65d8", null ],
-    [ "pageIsAligned", "d7/d42/_memory_8i686_8hpp.html#a1aa7a1c391d4d95b26303c5efa687dfb", null ],
-    [ "setPageDirectory", "d7/d42/_memory_8i686_8hpp.html#a5e171778619551ad6c074ce126c30d04", null ]
+    [ "ARCH_PAGE_TABLE_ENTRY_MASK", "d7/d42/_memory_8i686_8hpp.html#a2b86dedde2ed712f0889d90fe6a69113", null ],
+    [ "ARCH_PAGE_TABLE_ENTRY_SHIFT", "d7/d42/_memory_8i686_8hpp.html#adc5713f070e6e1e1c786a813d3c28064", null ],
+    [ "__attribute__", "d7/d42/_memory_8i686_8hpp.html#a953cec40c26fcfffd7faa7924a66f9ce", null ]
 ];

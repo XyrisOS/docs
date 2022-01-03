@@ -5,9 +5,8 @@
 <area shape="rect" id="node4" href="$d0/dcb/class_graphics_1_1_framebuffer.html#aeedf42e466d9ecd793a424cf63430f83" title=" " alt="" coords="197,136,363,177"/>
 <area shape="rect" id="node5" href="$da/d45/heap_8hpp.html#a1c8580582aae58105f16108d4ec89e9a" title=" " alt="" coords="247,202,313,229"/>
 <area shape="rect" id="node6" href="$db/d2f/namespace_memory.html#a5035c7465eb342a95802a5ec772bebc1" title="Map an address range into the kernel virtual address space." alt="" coords="161,253,399,279"/>
-<area shape="rect" id="node11" href="$d5/d24/string_8cpp.html#a370712322c794e949c996946f2283ea8" title=" " alt="" coords="241,303,319,330"/>
+<area shape="rect" id="node10" href="$d5/d24/string_8cpp.html#a370712322c794e949c996946f2283ea8" title=" " alt="" coords="241,303,319,330"/>
 <area shape="rect" id="node7" href="$d8/d7f/class_memory_1_1_section.html#aeacf47ee881cc66130ddcac9a2e51ac2" title=" " alt="" coords="453,202,624,229"/>
 <area shape="rect" id="node8" href="$d8/d7f/class_memory_1_1_section.html#a9145bcd59832a378ca6213bc1701b393" title=" " alt="" coords="457,253,620,279"/>
 <area shape="rect" id="node9" href="$db/d2f/namespace_memory.html#a314238689c58e6a280017f389b640c29" title="Map a page into the kernel address space." alt="" coords="447,303,631,330"/>
-<area shape="rect" id="node10" href="$d6/d1e/panic_8cpp.html#ae22655ba6f328217f1ebd6248ed82727" title="Halt the system and print the provided message on the panic screen." alt="" coords="679,303,736,330"/>
 </map>

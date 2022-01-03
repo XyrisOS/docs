@@ -1,5 +1,5 @@
 <map id="ksprintf" name="ksprintf">
 <area shape="rect" id="node1" title="Sends formatted output to a string." alt="" coords="221,31,293,57"/>
 <area shape="rect" id="node2" href="$de/d66/namespace_stack.html#ab836051c392dd045b3bdfe4124ce04a8" title=" " alt="" coords="24,5,155,32"/>
-<area shape="rect" id="node3" href="$d9/dc3/namespace_arch.html#a6cc0ef4abcb7c48c9e7d7cea419649b8" title=" " alt="" coords="5,56,173,83"/>
+<area shape="rect" id="node3" href="$d9/dc3/namespace_arch.html#a6cc0ef4abcb7c48c9e7d7cea419649b8" title="Write all register names and values as a string to a buffer. Provided buffer size must also take esca..." alt="" coords="5,56,173,83"/>
 </map>

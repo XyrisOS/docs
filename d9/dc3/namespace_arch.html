@@ -119,6 +119,9 @@ Functions</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void Arch::haltAndCatchFire </td>
@@ -127,16 +130,34 @@ Functions</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dc9/_arch_8i686_8cpp_source.html#l00051">51</a> of file <a class="el" href="../../d4/dc9/_arch_8i686_8cpp_source.html">Arch.i686.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;{</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordflow">while</span> (<span class="keyword">true</span>) {</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keyword">asm</span> <span class="keyword">volatile</span> (<span class="stringliteral">&quot;cli&quot;</span>);</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keyword">asm</span> <span class="keyword">volatile</span> (<span class="stringliteral">&quot;hlt&quot;</span>);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    }</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;}</div>
-</div><!-- fragment -->
+<p>Disable interrupts and halts execution. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/d9c/_arch_8hpp_source.html#l00042">42</a> of file <a class="el" href="../../d7/d9c/_arch_8hpp_source.html">Arch.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;{</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordflow">while</span> (<span class="keyword">true</span>) {</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keyword">asm</span> <span class="keyword">volatile</span> (<span class="stringliteral">&quot;cli&quot;</span>);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keyword">asm</span> <span class="keyword">volatile</span> (<span class="stringliteral">&quot;hlt&quot;</span>);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    }</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;}</div>
+</div><!-- fragment --><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="../../d9/dc3/namespace_arch_ac10469c72457034a4866422d8c97d15d_icgraph.png" border="0" usemap="#d9/dc3/namespace_arch_ac10469c72457034a4866422d8c97d15d_icgraph" alt=""/></div>
+<map name="d9/dc3/namespace_arch_ac10469c72457034a4866422d8c97d15d_icgraph" id="d9/dc3/namespace_arch_ac10469c72457034a4866422d8c97d15d_icgraph">
+<area shape="rect" title="Disable interrupts and halts execution." alt="" coords="160,5,331,32"/>
+<area shape="rect" href="../../dd/dad/_early_panic_8cpp.html#a9a5a812bf31b7a599c2b7772ae7d080d" title="Map bootloader information into the higher half of memory so that the kernel can access it and parse ..." alt="" coords="5,5,112,32"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="a92a5b423617ad7e5f935fe94915dc29b"></a>
@@ -155,40 +176,37 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dc9/_arch_8i686_8cpp_source.html#l00075">75</a> of file <a class="el" href="../../d4/dc9/_arch_8i686_8cpp_source.html">Arch.i686.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;{</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <a class="code" href="../../d2/daf/stdio_8hpp.html#a2f152e9062e9955e45fbcd8c914adf4d">log_all</a>(<span class="stringliteral">&quot;Exception: %lu (%s)\n\n&quot;</span>, regs-&gt;<a class="code" href="../../df/d94/structregisters.html#abee3a5b36ae0a28f77cbb6bca9839fe2">int_num</a>, <a class="code" href="../../d4/dc9/_arch_8i686_8cpp.html#aa9db01d3bad32e3abeb71ded065bcd0a">exceptionStrings</a>[regs-&gt;<a class="code" href="../../df/d94/structregisters.html#abee3a5b36ae0a28f77cbb6bca9839fe2">int_num</a>]);</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordflow">if</span> (regs-&gt;<a class="code" href="../../df/d94/structregisters.html#a1f90b3d484c66002c9ffcd0e54e97c2c">err_code</a>) {</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <a class="code" href="../../d2/daf/stdio_8hpp.html#a2f152e9062e9955e45fbcd8c914adf4d">log_all</a>(<span class="stringliteral">&quot;Error code: %lu&quot;</span>, regs-&gt;<a class="code" href="../../df/d94/structregisters.html#a1f90b3d484c66002c9ffcd0e54e97c2c">err_code</a>);</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    }</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordflow">if</span> (regs-&gt;<a class="code" href="../../df/d94/structregisters.html#abee3a5b36ae0a28f77cbb6bca9839fe2">int_num</a> == <a class="code" href="../../d4/ddc/isr_8hpp.html#a0419334e5d2a04960bcb98c595e92928a81f3242916a5ab92ab86fadfec185795">ISR_PAGE_FAULT</a>) {</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <a class="code" href="../../db/dec/struct_registers_1_1_c_r2.html">Registers::CR2</a> cr2 = <a class="code" href="../../d4/ddf/namespace_registers.html#ad96447b2ed04c03a9376ceb6ba831c86">Registers::readCR2</a>();</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <span class="keywordtype">int</span> missing = regs-&gt;<a class="code" href="../../df/d94/structregisters.html#a1f90b3d484c66002c9ffcd0e54e97c2c">err_code</a> &amp; 0x1;  <span class="comment">// Page not present</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="keywordtype">int</span> rw = regs-&gt;<a class="code" href="../../df/d94/structregisters.html#a1f90b3d484c66002c9ffcd0e54e97c2c">err_code</a> &amp; 0x2;       <span class="comment">// Write operation?</span></div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <span class="keywordtype">int</span> us = regs-&gt;<a class="code" href="../../df/d94/structregisters.html#a1f90b3d484c66002c9ffcd0e54e97c2c">err_code</a> &amp; 0x4;       <span class="comment">// Processor was in user-mode?</span></div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <span class="keywordtype">int</span> reserved = regs-&gt;<a class="code" href="../../df/d94/structregisters.html#a1f90b3d484c66002c9ffcd0e54e97c2c">err_code</a> &amp; 0x8; <span class="comment">// Overwritten CPU-reserved bits of page entry?</span></div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <span class="keywordtype">int</span> <span class="keywordtype">id</span> = regs-&gt;<a class="code" href="../../df/d94/structregisters.html#a1f90b3d484c66002c9ffcd0e54e97c2c">err_code</a> &amp; 0x10;      <span class="comment">// Caused by an instruction fetch?</span></div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">char</span>* real = (missing ? <span class="stringliteral">&quot;missing&quot;</span> : <span class="stringliteral">&quot;present&quot;</span>);</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">char</span>* rws = (rw ? <span class="stringliteral">&quot;reading&quot;</span> : <span class="stringliteral">&quot;writing&quot;</span>);</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">char</span>* uss = (us ? <span class="stringliteral">&quot;user-mode&quot;</span> : <span class="stringliteral">&quot;kernel&quot;</span>);</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">char</span>* avail = (reserved ? <span class="stringliteral">&quot;reserved&quot;</span> : <span class="stringliteral">&quot;available&quot;</span>);</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <a class="code" href="../../d2/daf/stdio_8hpp.html#a2f152e9062e9955e45fbcd8c914adf4d">log_all</a>(<span class="stringliteral">&quot;Page fault at 0x%08lX [ %s %s %s %s ] (id -&gt; %i)\n&quot;</span>, cr2.<a class="code" href="../../db/dec/struct_registers_1_1_c_r2.html#a3b95f8726a23163a476d3a764669349b">pageFaultAddr</a>, real, rws, uss, avail, <span class="keywordtype">id</span>);</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    }</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;}</div>
-</div><!-- fragment --><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="../../d9/dc3/namespace_arch_a92a5b423617ad7e5f935fe94915dc29b_cgraph.png" border="0" usemap="#d9/dc3/namespace_arch_a92a5b423617ad7e5f935fe94915dc29b_cgraph" alt=""/></div>
-<map name="d9/dc3/namespace_arch_a92a5b423617ad7e5f935fe94915dc29b_cgraph" id="d9/dc3/namespace_arch_a92a5b423617ad7e5f935fe94915dc29b_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,228,32"/>
-<area shape="rect" href="../../d4/ddf/namespace_registers.html#ad96447b2ed04c03a9376ceb6ba831c86" title=" " alt="" coords="276,5,423,32"/>
-</map>
-</div>
+<p>Print register information to all kernel terminals (serial, framebuffer, etc.). Used for panic and debug screens. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">regs</td><td>Register structure </td></tr>
+  </table>
+  </dd>
+</dl>
 
+<p class="definition">Definition at line <a class="el" href="../../d4/dc9/_arch_8i686_8cpp_source.html#l00067">67</a> of file <a class="el" href="../../d4/dc9/_arch_8i686_8cpp_source.html">Arch.i686.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;{</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <a class="code" href="../../d2/daf/stdio_8hpp.html#a2f152e9062e9955e45fbcd8c914adf4d">log_all</a>(<span class="stringliteral">&quot;Exception: %lu (%s)\n\n&quot;</span>, regs-&gt;<a class="code" href="../../df/d94/structregisters.html#abee3a5b36ae0a28f77cbb6bca9839fe2">int_num</a>, <a class="code" href="../../d4/dc9/_arch_8i686_8cpp.html#aa9db01d3bad32e3abeb71ded065bcd0a">exceptionStrings</a>[regs-&gt;<a class="code" href="../../df/d94/structregisters.html#abee3a5b36ae0a28f77cbb6bca9839fe2">int_num</a>]);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordflow">if</span> (regs-&gt;<a class="code" href="../../df/d94/structregisters.html#a1f90b3d484c66002c9ffcd0e54e97c2c">err_code</a>) {</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <a class="code" href="../../d2/daf/stdio_8hpp.html#a2f152e9062e9955e45fbcd8c914adf4d">log_all</a>(<span class="stringliteral">&quot;Error code: %lu&quot;</span>, regs-&gt;<a class="code" href="../../df/d94/structregisters.html#a1f90b3d484c66002c9ffcd0e54e97c2c">err_code</a>);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    }</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordflow">if</span> (regs-&gt;<a class="code" href="../../df/d94/structregisters.html#abee3a5b36ae0a28f77cbb6bca9839fe2">int_num</a> == <a class="code" href="../../d4/ddc/isr_8hpp.html#a0419334e5d2a04960bcb98c595e92928a81f3242916a5ab92ab86fadfec185795">ISR_PAGE_FAULT</a>) {</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        Registers::CR2 cr2 = Registers::readCR2();</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keywordtype">int</span> missing = regs-&gt;<a class="code" href="../../df/d94/structregisters.html#a1f90b3d484c66002c9ffcd0e54e97c2c">err_code</a> &amp; 0x1;  <span class="comment">// Page not present</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="keywordtype">int</span> rw = regs-&gt;<a class="code" href="../../df/d94/structregisters.html#a1f90b3d484c66002c9ffcd0e54e97c2c">err_code</a> &amp; 0x2;       <span class="comment">// Write operation?</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="keywordtype">int</span> us = regs-&gt;<a class="code" href="../../df/d94/structregisters.html#a1f90b3d484c66002c9ffcd0e54e97c2c">err_code</a> &amp; 0x4;       <span class="comment">// Processor was in user-mode?</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <span class="keywordtype">int</span> reserved = regs-&gt;<a class="code" href="../../df/d94/structregisters.html#a1f90b3d484c66002c9ffcd0e54e97c2c">err_code</a> &amp; 0x8; <span class="comment">// Overwritten CPU-reserved bits of page entry?</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="keywordtype">int</span> <span class="keywordtype">id</span> = regs-&gt;<a class="code" href="../../df/d94/structregisters.html#a1f90b3d484c66002c9ffcd0e54e97c2c">err_code</a> &amp; 0x10;      <span class="comment">// Caused by an instruction fetch?</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">char</span>* real = (missing ? <span class="stringliteral">&quot;missing&quot;</span> : <span class="stringliteral">&quot;present&quot;</span>);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">char</span>* rws = (rw ? <span class="stringliteral">&quot;reading&quot;</span> : <span class="stringliteral">&quot;writing&quot;</span>);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">char</span>* uss = (us ? <span class="stringliteral">&quot;user-mode&quot;</span> : <span class="stringliteral">&quot;kernel&quot;</span>);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">char</span>* avail = (reserved ? <span class="stringliteral">&quot;reserved&quot;</span> : <span class="stringliteral">&quot;available&quot;</span>);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <a class="code" href="../../d2/daf/stdio_8hpp.html#a2f152e9062e9955e45fbcd8c914adf4d">log_all</a>(<span class="stringliteral">&quot;Page fault at 0x%08lX [ %s %s %s %s ] (id -&gt; %i)\n&quot;</span>, cr2.pageFaultAddr, real, rws, uss, avail, <span class="keywordtype">id</span>);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    }</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a6cc0ef4abcb7c48c9e7d7cea419649b8"></a>
@@ -217,21 +235,30 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/dc9/_arch_8i686_8cpp_source.html#l00059">59</a> of file <a class="el" href="../../d4/dc9/_arch_8i686_8cpp_source.html">Arch.i686.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;{</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <a class="code" href="../../d4/d64/printf_8cpp.html#a4a8483991af81c2a4ae0025f4d2fb5e7">ksprintf</a>(</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        buf,</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="stringliteral">&quot;\033[31m DS:\033[0m 0x%08X\n&quot;</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="stringliteral">&quot;\033[31mEDI:\033[0m 0x%08X \033[31mESI:\033[0m 0x%08X \033[31mEBP:\033[0m 0x%08X \033[31mESP:\033[0m 0x%08X\n&quot;</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="stringliteral">&quot;\033[31mEAX:\033[0m 0x%08X \033[31mEBX:\033[0m 0x%08X \033[31mECX:\033[0m 0x%08X \033[31mEDX:\033[0m 0x%08X\n&quot;</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="stringliteral">&quot;\033[31mERR:\033[0m 0x%08X \033[31mEIP:\033[0m 0x%08X \033[31m CS:\033[0m 0x%08X\n&quot;</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="stringliteral">&quot;\033[31mFLG:\033[0m 0x%08X \033[31m SS:\033[0m 0x%08X\n\n&quot;</span>,</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        regs-&gt;<a class="code" href="../../df/d94/structregisters.html#a806ec3ba0cf965d456601aea4c039ec3">ds</a>,</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        regs-&gt;<a class="code" href="../../df/d94/structregisters.html#aeedcb447fe6640d43d09c27b7cb8db3b">edi</a>, regs-&gt;<a class="code" href="../../df/d94/structregisters.html#a8da011d75d93d36da6c4cf28e1fa3179">esi</a>, regs-&gt;<a class="code" href="../../df/d94/structregisters.html#a8d156d1d27fcb1c2f2bbcce1a784431f">ebp</a>, regs-&gt;<a class="code" href="../../df/d94/structregisters.html#a9cc3091e4c0f25d142ac74443dc8d384">esp</a>,</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        regs-&gt;<a class="code" href="../../df/d94/structregisters.html#a1e01e806248cd98e55e0b053db6a6a51">eax</a>, regs-&gt;<a class="code" href="../../df/d94/structregisters.html#aa8989b2fef42dca1d656f724eb324f51">ebx</a>, regs-&gt;<a class="code" href="../../df/d94/structregisters.html#a00ce491148fd90800c18bd2d4c22e090">ecx</a>, regs-&gt;<a class="code" href="../../df/d94/structregisters.html#af3b40afa73ecdaf2c9279b9ed482d26b">edx</a>,</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        regs-&gt;<a class="code" href="../../df/d94/structregisters.html#a1f90b3d484c66002c9ffcd0e54e97c2c">err_code</a>, regs-&gt;<a class="code" href="../../df/d94/structregisters.html#aaeedf83509826a731e436025aeb53576">eip</a>, regs-&gt;<a class="code" href="../../df/d94/structregisters.html#a7d73555c87de229a90292640f544ab27">cs</a>, regs-&gt;<a class="code" href="../../df/d94/structregisters.html#af9a17981c1cdac71d6f82ba32466a036">eflags</a>,</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        regs-&gt;<a class="code" href="../../df/d94/structregisters.html#a0da8015246d96b8dcebe98c945fd3d61">ss</a>);</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;}</div>
+<p>Write all register names and values as a string to a buffer. Provided buffer size must also take escape and control characters (for formatting) into account. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buf</td><td>Buffer to contain register information string </td></tr>
+    <tr><td class="paramname">regs</td><td>Register structure </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d4/dc9/_arch_8i686_8cpp_source.html#l00051">51</a> of file <a class="el" href="../../d4/dc9/_arch_8i686_8cpp_source.html">Arch.i686.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;{</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="code" href="../../d4/d64/printf_8cpp.html#a4a8483991af81c2a4ae0025f4d2fb5e7">ksprintf</a>(</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        buf,</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="stringliteral">&quot;\033[31m DS:\033[0m 0x%08X\n&quot;</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="stringliteral">&quot;\033[31mEDI:\033[0m 0x%08X \033[31mESI:\033[0m 0x%08X \033[31mEBP:\033[0m 0x%08X \033[31mESP:\033[0m 0x%08X\n&quot;</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="stringliteral">&quot;\033[31mEAX:\033[0m 0x%08X \033[31mEBX:\033[0m 0x%08X \033[31mECX:\033[0m 0x%08X \033[31mEDX:\033[0m 0x%08X\n&quot;</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="stringliteral">&quot;\033[31mERR:\033[0m 0x%08X \033[31mEIP:\033[0m 0x%08X \033[31m CS:\033[0m 0x%08X\n&quot;</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="stringliteral">&quot;\033[31mFLG:\033[0m 0x%08X \033[31m SS:\033[0m 0x%08X\n\n&quot;</span>,</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        regs-&gt;<a class="code" href="../../df/d94/structregisters.html#a806ec3ba0cf965d456601aea4c039ec3">ds</a>,</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        regs-&gt;<a class="code" href="../../df/d94/structregisters.html#aeedcb447fe6640d43d09c27b7cb8db3b">edi</a>, regs-&gt;<a class="code" href="../../df/d94/structregisters.html#a8da011d75d93d36da6c4cf28e1fa3179">esi</a>, regs-&gt;<a class="code" href="../../df/d94/structregisters.html#a8d156d1d27fcb1c2f2bbcce1a784431f">ebp</a>, regs-&gt;<a class="code" href="../../df/d94/structregisters.html#a9cc3091e4c0f25d142ac74443dc8d384">esp</a>,</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        regs-&gt;<a class="code" href="../../df/d94/structregisters.html#a1e01e806248cd98e55e0b053db6a6a51">eax</a>, regs-&gt;<a class="code" href="../../df/d94/structregisters.html#aa8989b2fef42dca1d656f724eb324f51">ebx</a>, regs-&gt;<a class="code" href="../../df/d94/structregisters.html#a00ce491148fd90800c18bd2d4c22e090">ecx</a>, regs-&gt;<a class="code" href="../../df/d94/structregisters.html#af3b40afa73ecdaf2c9279b9ed482d26b">edx</a>,</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        regs-&gt;<a class="code" href="../../df/d94/structregisters.html#a1f90b3d484c66002c9ffcd0e54e97c2c">err_code</a>, regs-&gt;<a class="code" href="../../df/d94/structregisters.html#aaeedf83509826a731e436025aeb53576">eip</a>, regs-&gt;<a class="code" href="../../df/d94/structregisters.html#a7d73555c87de229a90292640f544ab27">cs</a>, regs-&gt;<a class="code" href="../../df/d94/structregisters.html#af9a17981c1cdac71d6f82ba32466a036">eflags</a>,</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        regs-&gt;<a class="code" href="../../df/d94/structregisters.html#a0da8015246d96b8dcebe98c945fd3d61">ss</a>);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;}</div>
 </div><!-- fragment --><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -239,7 +266,7 @@ Functions</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="../../d9/dc3/namespace_arch_a6cc0ef4abcb7c48c9e7d7cea419649b8_cgraph.png" border="0" usemap="#d9/dc3/namespace_arch_a6cc0ef4abcb7c48c9e7d7cea419649b8_cgraph" alt=""/></div>
 <map name="d9/dc3/namespace_arch_a6cc0ef4abcb7c48c9e7d7cea419649b8_cgraph" id="d9/dc3/namespace_arch_a6cc0ef4abcb7c48c9e7d7cea419649b8_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,173,32"/>
+<area shape="rect" title="Write all register names and values as a string to a buffer. Provided buffer size must also take esca..." alt="" coords="5,5,173,32"/>
 <area shape="rect" href="../../d4/d64/printf_8cpp.html#a4a8483991af81c2a4ae0025f4d2fb5e7" title="Sends formatted output to a string." alt="" coords="221,5,293,32"/>
 <area shape="rect" href="../../d4/d64/printf_8cpp.html#a626c6babba88d2b34beacfb116a71fb8" title="Sends formatted output to a string using an argument list." alt="" coords="341,5,421,32"/>
 <area shape="rect" href="../../d4/d64/printf_8cpp.html#a85a2fff114bf015eba22a1dc163bf1ba" title="Perform all printf operations on the format string using the provided argument list and uses the call..." alt="" coords="469,5,575,32"/>
@@ -253,17 +280,14 @@ Functions</h2></td></tr>
 </div><!-- doc-content -->
 <div class="ttc" id="astructregisters_html_a00ce491148fd90800c18bd2d4c22e090"><div class="ttname"><a href="../../df/d94/structregisters.html#a00ce491148fd90800c18bd2d4c22e090">registers::ecx</a></div><div class="ttdeci">uint32_t ecx</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dfb/regs_8hpp_source.html#l00021">regs.hpp:21</a></div></div>
 <div class="ttc" id="astructregisters_html_af9a17981c1cdac71d6f82ba32466a036"><div class="ttname"><a href="../../df/d94/structregisters.html#af9a17981c1cdac71d6f82ba32466a036">registers::eflags</a></div><div class="ttdeci">uint32_t eflags</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dfb/regs_8hpp_source.html#l00023">regs.hpp:23</a></div></div>
-<div class="ttc" id="anamespace_registers_html_ad96447b2ed04c03a9376ceb6ba831c86"><div class="ttname"><a href="../../d4/ddf/namespace_registers.html#ad96447b2ed04c03a9376ceb6ba831c86">Registers::readCR2</a></div><div class="ttdeci">struct CR2 readCR2()</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dfb/regs_8hpp_source.html#l00072">regs.hpp:72</a></div></div>
 <div class="ttc" id="aprintf_8cpp_html_a4a8483991af81c2a4ae0025f4d2fb5e7"><div class="ttname"><a href="../../d4/d64/printf_8cpp.html#a4a8483991af81c2a4ae0025f4d2fb5e7">ksprintf</a></div><div class="ttdeci">int ksprintf(char *buf, const char *fmt,...)</div><div class="ttdoc">Sends formatted output to a string.</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d64/printf_8cpp_source.html#l00342">printf.cpp:342</a></div></div>
 <div class="ttc" id="astructregisters_html_a9cc3091e4c0f25d142ac74443dc8d384"><div class="ttname"><a href="../../df/d94/structregisters.html#a9cc3091e4c0f25d142ac74443dc8d384">registers::esp</a></div><div class="ttdeci">uint32_t esp</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dfb/regs_8hpp_source.html#l00023">regs.hpp:23</a></div></div>
 <div class="ttc" id="astructregisters_html_a806ec3ba0cf965d456601aea4c039ec3"><div class="ttname"><a href="../../df/d94/structregisters.html#a806ec3ba0cf965d456601aea4c039ec3">registers::ds</a></div><div class="ttdeci">uint32_t ds</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dfb/regs_8hpp_source.html#l00020">regs.hpp:20</a></div></div>
 <div class="ttc" id="astructregisters_html_a1e01e806248cd98e55e0b053db6a6a51"><div class="ttname"><a href="../../df/d94/structregisters.html#a1e01e806248cd98e55e0b053db6a6a51">registers::eax</a></div><div class="ttdeci">uint32_t eax</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dfb/regs_8hpp_source.html#l00021">regs.hpp:21</a></div></div>
-<div class="ttc" id="astruct_registers_1_1_c_r2_html_a3b95f8726a23163a476d3a764669349b"><div class="ttname"><a href="../../db/dec/struct_registers_1_1_c_r2.html#a3b95f8726a23163a476d3a764669349b">Registers::CR2::pageFaultAddr</a></div><div class="ttdeci">uint32_t pageFaultAddr</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dfb/regs_8hpp_source.html#l00048">regs.hpp:48</a></div></div>
 <div class="ttc" id="astructregisters_html_a8d156d1d27fcb1c2f2bbcce1a784431f"><div class="ttname"><a href="../../df/d94/structregisters.html#a8d156d1d27fcb1c2f2bbcce1a784431f">registers::ebp</a></div><div class="ttdeci">uint32_t ebp</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dfb/regs_8hpp_source.html#l00021">regs.hpp:21</a></div></div>
 <div class="ttc" id="astructregisters_html_a0da8015246d96b8dcebe98c945fd3d61"><div class="ttname"><a href="../../df/d94/structregisters.html#a0da8015246d96b8dcebe98c945fd3d61">registers::ss</a></div><div class="ttdeci">uint32_t ss</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dfb/regs_8hpp_source.html#l00023">regs.hpp:23</a></div></div>
 <div class="ttc" id="astructregisters_html_aeedcb447fe6640d43d09c27b7cb8db3b"><div class="ttname"><a href="../../df/d94/structregisters.html#aeedcb447fe6640d43d09c27b7cb8db3b">registers::edi</a></div><div class="ttdeci">uint32_t edi</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dfb/regs_8hpp_source.html#l00021">regs.hpp:21</a></div></div>
 <div class="ttc" id="astructregisters_html_aaeedf83509826a731e436025aeb53576"><div class="ttname"><a href="../../df/d94/structregisters.html#aaeedf83509826a731e436025aeb53576">registers::eip</a></div><div class="ttdeci">uint32_t eip</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dfb/regs_8hpp_source.html#l00023">regs.hpp:23</a></div></div>
-<div class="ttc" id="astruct_registers_1_1_c_r2_html"><div class="ttname"><a href="../../db/dec/struct_registers_1_1_c_r2.html">Registers::CR2</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dfb/regs_8hpp_source.html#l00046">regs.hpp:46</a></div></div>
 <div class="ttc" id="astdio_8hpp_html_a2f152e9062e9955e45fbcd8c914adf4d"><div class="ttname"><a href="../../d2/daf/stdio_8hpp.html#a2f152e9062e9955e45fbcd8c914adf4d">log_all</a></div><div class="ttdeci">#define log_all(fmt,...)</div><div class="ttdoc">Prints a statement to serial debugger and the kernel framebuffer. Max message size is 1024 (including...</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/daf/stdio_8hpp_source.html#l00083">stdio.hpp:83</a></div></div>
 <div class="ttc" id="astructregisters_html_a1f90b3d484c66002c9ffcd0e54e97c2c"><div class="ttname"><a href="../../df/d94/structregisters.html#a1f90b3d484c66002c9ffcd0e54e97c2c">registers::err_code</a></div><div class="ttdeci">uint32_t err_code</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dfb/regs_8hpp_source.html#l00022">regs.hpp:22</a></div></div>
 <div class="ttc" id="astructregisters_html_af3b40afa73ecdaf2c9279b9ed482d26b"><div class="ttname"><a href="../../df/d94/structregisters.html#af3b40afa73ecdaf2c9279b9ed482d26b">registers::edx</a></div><div class="ttdeci">uint32_t edx</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dfb/regs_8hpp_source.html#l00021">regs.hpp:21</a></div></div>

@@ -13,14 +13,14 @@ var files_dup =
     [ "Bitset.hpp", "d9/d35/_bitset_8hpp.html", [
       [ "Bitset", "d6/d09/class_bitset.html", "d6/d09/class_bitset" ]
     ] ],
-    [ "boot.s", "d3/daf/boot_8s.html", null ],
-    [ "boothelp.cpp", "d5/d6c/boothelp_8cpp.html", "d5/d6c/boothelp_8cpp" ],
     [ "console.cpp", "d9/dda/console_8cpp.html", "d9/dda/console_8cpp" ],
     [ "console.hpp", "d5/ddc/console_8hpp.html", "d5/ddc/console_8hpp" ],
     [ "crti.s", "d1/d76/crti_8s.html", null ],
     [ "crtn.s", "d4/da6/crtn_8s.html", null ],
     [ "cxx.cpp", "d1/dd1/cxx_8cpp.html", "d1/dd1/cxx_8cpp" ],
     [ "defines.hpp", "db/df8/defines_8hpp.html", "db/df8/defines_8hpp" ],
+    [ "EarlyPanic.cpp", "dd/dad/_early_panic_8cpp.html", "dd/dad/_early_panic_8cpp" ],
+    [ "EarlyPanic.hpp", "d2/d76/_early_panic_8hpp.html", "d2/d76/_early_panic_8hpp" ],
     [ "Entry.cpp", "d4/d01/_entry_8cpp.html", "d4/d01/_entry_8cpp" ],
     [ "errno.cpp", "d1/db0/errno_8cpp.html", "d1/db0/errno_8cpp" ],
     [ "errno.hpp", "d7/dae/errno_8hpp.html", "d7/dae/errno_8hpp" ],
@@ -34,9 +34,7 @@ var files_dup =
     [ "gdt.hpp", "df/d77/gdt_8hpp.html", "df/d77/gdt_8hpp" ],
     [ "graphics.cpp", "d6/d99/graphics_8cpp.html", "d6/d99/graphics_8cpp" ],
     [ "graphics.hpp", "d9/d31/graphics_8hpp.html", "d9/d31/graphics_8hpp" ],
-    [ "Handoff.cpp", "d4/d88/_handoff_8cpp.html", [
-      [ "multiboot_fixed", "de/da7/struct_boot_1_1multiboot__fixed.html", "de/da7/struct_boot_1_1multiboot__fixed" ]
-    ] ],
+    [ "Handoff.cpp", "d4/d88/_handoff_8cpp.html", "d4/d88/_handoff_8cpp" ],
     [ "Handoff.hpp", "d2/d1f/_handoff_8hpp.html", "d2/d1f/_handoff_8hpp" ],
     [ "heap.cpp", "de/d90/heap_8cpp.html", "de/d90/heap_8cpp" ],
     [ "heap.hpp", "da/d45/heap_8hpp.html", "da/d45/heap_8hpp" ],
@@ -50,21 +48,22 @@ var files_dup =
       [ "LinkedList", "d9/d3d/class_linked_list_1_1_linked_list.html", "d9/d3d/class_linked_list_1_1_linked_list" ]
     ] ],
     [ "linker.ld", "dd/d85/linker_8ld.html", null ],
+    [ "Loader.cpp", "d1/d51/_loader_8cpp.html", "d1/d51/_loader_8cpp" ],
+    [ "Loader.hpp", "dc/dc7/_loader_8hpp.html", "dc/dc7/_loader_8hpp" ],
     [ "Memory.hpp", "d9/d4f/_memory_8hpp.html", "d9/d4f/_memory_8hpp" ],
     [ "Memory.i686.hpp", "d7/d42/_memory_8i686_8hpp.html", "d7/d42/_memory_8i686_8hpp" ],
     [ "MemoryMap.hpp", "d6/dc1/_memory_map_8hpp.html", [
       [ "MemoryMap", "d0/dea/class_memory_1_1_memory_map.html", "d0/dea/class_memory_1_1_memory_map" ]
     ] ],
     [ "MemorySection.hpp", "d0/d91/_memory_section_8hpp.html", "d0/d91/_memory_section_8hpp" ],
-    [ "multiboot2.s", "df/d9b/multiboot2_8s.html", null ],
     [ "mutex.cpp", "d0/dbb/mutex_8cpp.html", null ],
     [ "mutex.hpp", "d8/da6/mutex_8hpp.html", [
       [ "Mutex", "d4/de8/class_mutex.html", "d4/de8/class_mutex" ]
     ] ],
+    [ "NullBoot.c", "d0/d0c/_null_boot_8c.html", "d0/d0c/_null_boot_8c" ],
     [ "paging.cpp", "d1/d5e/paging_8cpp.html", "d1/d5e/paging_8cpp" ],
     [ "paging.hpp", "d1/d75/paging_8hpp.html", "d1/d75/paging_8hpp" ],
-    [ "Arch/i686/Bootloader/panic.cpp", "df/d62/_arch_2i686_2_bootloader_2panic_8cpp.html", "df/d62/_arch_2i686_2_bootloader_2panic_8cpp" ],
-    [ "panic.cpp", "d6/d1e/panic_8cpp.html", "d6/d1e/panic_8cpp" ],
+    [ "Panic.cpp", "d9/d5d/_panic_8cpp.html", "d9/d5d/_panic_8cpp" ],
     [ "Panic.hpp", "d6/d64/_panic_8hpp.html", "d6/d64/_panic_8hpp" ],
     [ "Physical.hpp", "d0/d81/_physical_8hpp.html", "d0/d81/_physical_8hpp" ],
     [ "ports.cpp", "d7/d27/ports_8cpp.html", "d7/d27/ports_8cpp" ],
@@ -94,8 +93,7 @@ var files_dup =
     [ "Stacktrace.cpp", "d3/ddc/_stacktrace_8cpp.html", "d3/ddc/_stacktrace_8cpp" ],
     [ "Stacktrace.hpp", "de/df5/_stacktrace_8hpp.html", "de/df5/_stacktrace_8hpp" ],
     [ "stdio.hpp", "d2/daf/stdio_8hpp.html", "d2/daf/stdio_8hpp" ],
-    [ "stivale.cpp", "da/de5/stivale_8cpp.html", null ],
-    [ "stivale2.s", "de/d60/stivale2_8s.html", null ],
+    [ "stivale2.c", "dc/d20/stivale2_8c.html", "dc/d20/stivale2_8c" ],
     [ "string.cpp", "d5/d24/string_8cpp.html", "d5/d24/string_8cpp" ],
     [ "string.hpp", "d4/da0/string_8hpp.html", "d4/da0/string_8hpp" ],
     [ "tasks.cpp", "d5/d9d/tasks_8cpp.html", "d5/d9d/tasks_8cpp" ],

@@ -1,11 +1,12 @@
 var searchData=
 [
-  ['ver_5fmajor_1785',['VER_MAJOR',['../db/df8/defines_8hpp.html#ae9b0873c1004a01651f733d556db118c',1,'defines.hpp']]],
-  ['ver_5fminor_1786',['VER_MINOR',['../db/df8/defines_8hpp.html#ad78650efa42849c5f86d372f11f26403',1,'defines.hpp']]],
-  ['ver_5fname_1787',['VER_NAME',['../db/df8/defines_8hpp.html#abeb9a40f7454db8096f8e5af6127fe2c',1,'defines.hpp']]],
-  ['ver_5fpatch_1788',['VER_PATCH',['../db/df8/defines_8hpp.html#a44c51a6602606d9f6859f69975f0beed',1,'defines.hpp']]],
-  ['vga_5fchar_1789',['VGA_CHAR',['../df/d62/_arch_2i686_2_bootloader_2panic_8cpp.html#a80093d4b017b787b0d841e3e3b25a961',1,'panic.cpp']]],
-  ['vga_5fcolor_1790',['VGA_COLOR',['../df/d62/_arch_2i686_2_bootloader_2panic_8cpp.html#a0718d7e7bd332cb560596006be94b9a1',1,'panic.cpp']]],
-  ['vga_5fdefault_5fback_1791',['VGA_DEFAULT_BACK',['../d5/ddc/console_8hpp.html#a3f2f42b8d2389a0f805113d28ae54ca4',1,'console.hpp']]],
-  ['vga_5fdefault_5ffore_1792',['VGA_DEFAULT_FORE',['../d5/ddc/console_8hpp.html#ab44c24b2a61fd097bca00604033ab774',1,'console.hpp']]]
+  ['tab_5fwidth_1741',['TAB_WIDTH',['../d9/dda/console_8cpp.html#a49426d7a9b562958ad2ab7fbf134f368',1,'console.cpp']]],
+  ['task_5faction_1742',['TASK_ACTION',['../d5/d9d/tasks_8cpp.html#a525bc038ba8fbd7178e3b3d20f866af0',1,'tasks.cpp']]],
+  ['task_5fonly_1743',['TASK_ONLY',['../d2/dbd/tasks_8hpp.html#a5dc14e36eb87557e7c264d8596f37b55',1,'tasks.hpp']]],
+  ['time_5fslice_5fsize_1744',['TIME_SLICE_SIZE',['../d2/dbd/tasks_8hpp.html#ab3c4cf018b280f12e3726184a945728c',1,'tasks.hpp']]],
+  ['timer_5fcommand_5fport_1745',['TIMER_COMMAND_PORT',['../df/d05/timer_8hpp.html#abbc68cc890d6df8ae88e338b5cf1f1cb',1,'timer.hpp']]],
+  ['timer_5fdata_5fport_1746',['TIMER_DATA_PORT',['../df/d05/timer_8hpp.html#aed1aab994ad876be2344591496ac2cd6',1,'timer.hpp']]],
+  ['tty_5fheight_1747',['TTY_HEIGHT',['../dd/dad/_early_panic_8cpp.html#a316aa9eb7f8ac1ee5b9131ed887fb4a2',1,'EarlyPanic.cpp']]],
+  ['tty_5fwidth_1748',['TTY_WIDTH',['../dd/dad/_early_panic_8cpp.html#af42ee541fd72035283e0e1ffbbe0cdbd',1,'EarlyPanic.cpp']]],
+  ['type_5fwidth_1749',['TYPE_WIDTH',['../d4/d64/printf_8cpp.html#af4c03720817be7631cd23ca7aae64852',1,'printf.cpp']]]
 ];

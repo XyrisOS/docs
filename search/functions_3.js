@@ -1,11 +1,6 @@
 var searchData=
 [
-  ['calloc_1020',['calloc',['../da/d45/heap_8hpp.html#a77e880b1033d5a912be4333fc5d31eef',1,'heap.hpp']]],
-  ['capacity_1021',['Capacity',['../d4/d8f/class_ring_buffer.html#a8a4e5cda9c4b87e8ca6c563b51a20653',1,'RingBuffer']]],
-  ['close_1022',['close',['../d7/d75/namespace_r_s232.html#a2e5776c1b56f1688717939fe69e5abc1',1,'RS232']]],
-  ['cmdline_1023',['CmdLine',['../df/d70/class_boot_1_1_handoff.html#a8f3a880e777d85e24fcb18179cbb722e',1,'Boot::Handoff']]],
-  ['contains_1024',['contains',['../d8/d7f/class_memory_1_1_section.html#a03b0c93b7c0a5a53d7838d19ab9fe0d2',1,'Memory::Section']]],
-  ['converterepochtodate_1025',['converterEpochToDate',['../d9/dfc/class_time_1_1_time_descriptor.html#a4d8d64fb0799354b049840531dc99b55',1,'Time::TimeDescriptor']]],
-  ['count_1026',['Count',['../d9/d3d/class_linked_list_1_1_linked_list.html#a0bedbe5aed10d8cf9ccded17eea32cf4',1,'LinkedList::LinkedList::Count()'],['../d4/dbd/class_semaphore.html#a4404d1eda77fe45934716a410d1937ca',1,'Semaphore::Count()'],['../d0/dea/class_memory_1_1_memory_map.html#aec59c14e6071767b7436058e91f45f43',1,'Memory::MemoryMap::Count()']]],
-  ['criticalregion_1027',['criticalRegion',['../d9/d7a/namespace_arch_1_1_c_p_u.html#a286a0e21f38c30f57fe5b655da8a3249',1,'Arch::CPU']]]
+  ['data_1013',['Data',['../d1/ddb/class_linked_list_1_1_linked_list_node.html#a1abb33b32e623992be117714c75a5ded',1,'LinkedList::LinkedListNode']]],
+  ['dequeue_1014',['Dequeue',['../d4/d8f/class_ring_buffer.html#a39af34442e82d4cd5694f8a460e4a045',1,'RingBuffer::Dequeue(T *buf)'],['../d4/d8f/class_ring_buffer.html#a4adfbf6d8a20877dadd01bef18e674cf',1,'RingBuffer::Dequeue()']]],
+  ['draw_1015',['Draw',['../dc/d65/namespace_graphics_1_1_font.html#ae8d46d81e70d6c7edb55424a5f465f8b',1,'Graphics::Font::Draw(char c, uint32_t x, uint32_t y, uint32_t fore)'],['../dc/d65/namespace_graphics_1_1_font.html#ad410fe938a43b235cace00679ba8c481',1,'Graphics::Font::Draw(char c, uint32_t x, uint32_t y, uint32_t fore, uint32_t back)']]]
 ];

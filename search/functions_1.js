@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['address_1016',['Address',['../dd/dd2/class_arch_1_1_memory_1_1_address.html#ae2f3233cf33da608a132518d8e29a7de',1,'Arch::Memory::Address::Address(uintptr_t addr)'],['../dd/dd2/class_arch_1_1_memory_1_1_address.html#a90c4554a227a415cd454d18011840389',1,'Arch::Memory::Address::Address(struct Frame frame)'],['../dd/dd2/class_arch_1_1_memory_1_1_address.html#a192ebe76ed0f6f2879ca1b1dd5b111b5',1,'Arch::Memory::Address::Address(struct Page page)']]]
+  ['base_1002',['base',['../d8/d7f/class_memory_1_1_section.html#aeacf47ee881cc66130ddcac9a2e51ac2',1,'Memory::Section']]],
+  ['bitset_1003',['Bitset',['../d6/d09/class_bitset.html#a3fc1542fe4a8a95e36e1e4161f7caa67',1,'Bitset::Bitset()'],['../d6/d09/class_bitset.html#a517802ccce4424042a1af2928a33cb27',1,'Bitset::Bitset(size_t val)']]],
+  ['boottype_1004',['BootType',['../df/d70/class_boot_1_1_handoff.html#aa25cb451a589997db2d910a5f1697c98',1,'Boot::Handoff']]]
 ];

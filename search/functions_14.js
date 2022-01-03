@@ -1,6 +1,9 @@
 var searchData=
 [
-  ['val_1307',['val',['../dd/dd2/class_arch_1_1_memory_1_1_address.html#a253b11ae6c64f91169c2138355b4b878',1,'Arch::Memory::Address']]],
-  ['vendor_1308',['vendor',['../d9/d7a/namespace_arch_1_1_c_p_u.html#affa86e64ef5d7b52dffad4ffd6448962',1,'Arch::CPU']]],
-  ['vprintf_1309',['vprintf',['../d8/db5/namespace_console.html#ad86a1c0ed06d68a9f4ede8f6e56db406',1,'Console::vprintf()'],['../d7/d75/namespace_r_s232.html#a04a4582da3c891beaa849f3ce2189975',1,'RS232::vprintf()']]]
+  ['wait_1276',['Wait',['../d4/dbd/class_semaphore.html#ac3b3b6cd0044efda8fbd2dbd0fb6d995',1,'Semaphore']]],
+  ['write_1277',['write',['../d8/db5/namespace_console.html#a4c2d2de6b43a7c900831f4ee73716515',1,'Console::write(const char c)'],['../d8/db5/namespace_console.html#afd4ee2d6ab18c9d14f28391505f0acf6',1,'Console::write(const char *str)'],['../d7/d75/namespace_r_s232.html#a4f82e14c1586b0fdcc0f71a0806e4e7e',1,'RS232::write()']]],
+  ['writebyte_1278',['writeByte',['../d7/d27/ports_8cpp.html#aa89191491445201430ae9a8feb3184d9',1,'writeByte(uint16_t port, uint8_t data):&#160;ports.cpp'],['../d8/d9f/ports_8hpp.html#aa89191491445201430ae9a8feb3184d9',1,'writeByte(uint16_t port, uint8_t data):&#160;ports.cpp']]],
+  ['writebyteslow_1279',['writeByteSlow',['../d7/d27/ports_8cpp.html#a2682086e913ea19360f5dbbe445e1e96',1,'writeByteSlow(uint16_t port, uint8_t data):&#160;ports.cpp'],['../d8/d9f/ports_8hpp.html#a2682086e913ea19360f5dbbe445e1e96',1,'writeByteSlow(uint16_t port, uint8_t data):&#160;ports.cpp']]],
+  ['writelong_1280',['writeLong',['../d7/d27/ports_8cpp.html#a265b1802a8eeaa69afa141773de47366',1,'writeLong(uint16_t port, uint32_t data):&#160;ports.cpp'],['../d8/d9f/ports_8hpp.html#a265b1802a8eeaa69afa141773de47366',1,'writeLong(uint16_t port, uint32_t data):&#160;ports.cpp']]],
+  ['writeword_1281',['writeWord',['../d7/d27/ports_8cpp.html#a010bc0db93ee613a5973ecda3274cd12',1,'writeWord(uint16_t port, uint16_t data):&#160;ports.cpp'],['../d8/d9f/ports_8hpp.html#a010bc0db93ee613a5973ecda3274cd12',1,'writeWord(uint16_t port, uint16_t data):&#160;ports.cpp']]]
 ];

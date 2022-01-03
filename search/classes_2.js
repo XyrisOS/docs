@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['cr0_871',['CR0',['../d3/dde/struct_registers_1_1_c_r0.html',1,'Registers']]],
-  ['cr2_872',['CR2',['../db/dec/struct_registers_1_1_c_r2.html',1,'Registers']]],
-  ['cr3_873',['CR3',['../d0/dcd/struct_registers_1_1_c_r3.html',1,'Registers']]]
+  ['cr0_856',['CR0',['../dd/dc6/struct_c_r0.html',1,'']]],
+  ['cr2_857',['CR2',['../dc/df1/struct_c_r2.html',1,'']]],
+  ['cr3_858',['CR3',['../d9/d5d/struct_c_r3.html',1,'']]]
 ];

@@ -5,5 +5,5 @@
 <area shape="rect" id="node4" href="$dd/d53/font_8cpp.html" title=" " alt="" coords="267,80,341,107"/>
 <area shape="rect" id="node5" href="$d6/d99/graphics_8cpp.html" title="Graphics management and control." alt="" coords="365,80,469,107"/>
 <area shape="rect" id="node6" href="$d4/d01/_entry_8cpp.html" title="The entry point into the Xyris kernel." alt="" coords="494,80,575,107"/>
-<area shape="rect" id="node7" href="$d6/d1e/panic_8cpp.html" title=" " alt="" coords="600,80,683,107"/>
+<area shape="rect" id="node7" href="$d9/d5d/_panic_8cpp.html" title="Early CGA&#45;mode panic (no framebuffer)" alt="" coords="600,80,683,107"/>
 </map>

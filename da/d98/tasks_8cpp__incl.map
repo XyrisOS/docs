@@ -16,7 +16,7 @@
 <area shape="rect" id="node9" href="$d0/d91/_memory_section_8hpp.html" title=" " alt="" coords="322,304,533,331"/>
 <area shape="rect" id="node13" title=" " alt="" coords="1106,155,1181,181"/>
 <area shape="rect" id="node17" href="$d7/dcf/_arch_8i686_8hpp.html" title="i686 architecture implementation of Arch.hpp" alt="" coords="1119,304,1295,331"/>
-<area shape="rect" id="node18" href="$d8/dfb/regs_8hpp.html" title=" " alt="" coords="736,379,879,405"/>
+<area shape="rect" id="node18" href="$d8/dfb/regs_8hpp.html" title="i686 control register definitions. C &amp; C++ compatible header." alt="" coords="736,379,879,405"/>
 <area shape="rect" id="node19" href="$d8/d9f/ports_8hpp.html" title="Ports header file. Provides inline functions for getting and setting values at different ports...." alt="" coords="1056,379,1204,405"/>
 <area shape="rect" id="node20" href="$d4/ddc/isr_8hpp.html" title="Interrupt Service Routine header." alt="" coords="1229,379,1359,405"/>
 </map>

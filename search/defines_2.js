@@ -1,8 +1,9 @@
 var searchData=
 [
-  ['clear_5fvals_1673',['CLEAR_VALS',['../d9/dda/console_8cpp.html#af0d9fa1dd46c94bd6f9bceabae1eed7e',1,'console.cpp']]],
-  ['commit_1674',['COMMIT',['../db/df8/defines_8hpp.html#a23dad45b3801df8c11b2e32e59e3462e',1,'defines.hpp']]],
-  ['compare_5fexchange_1675',['COMPARE_EXCHANGE',['../da/d20/semaphore_8cpp.html#a80bfcf34f6237c6e9458164649f1de22',1,'semaphore.cpp']]],
-  ['ctors_5fend_1676',['CTORS_END',['../d0/d29/sections_8hpp.html#a59c90a103c1f262d2b4203e1a9149dab',1,'sections.hpp']]],
-  ['ctors_5fstart_1677',['CTORS_START',['../d0/d29/sections_8hpp.html#a22bfdd37dd2c2c3fa75b69498cf9817e',1,'sections.hpp']]]
+  ['b_5fto_5fgb_1630',['B_TO_GB',['../d9/d4f/_memory_8hpp.html#aa792b7a470cd9c08cd84c26006d08f46',1,'Memory.hpp']]],
+  ['b_5fto_5fkb_1631',['B_TO_KB',['../d9/d4f/_memory_8hpp.html#a58aa9789669ab63074a01bb7d55c0123',1,'Memory.hpp']]],
+  ['b_5fto_5fmb_1632',['B_TO_MB',['../d9/d4f/_memory_8hpp.html#ab336267a862a0ae573a1745dd7ce11fb',1,'Memory.hpp']]],
+  ['bss_5fend_1633',['BSS_END',['../d0/d29/sections_8hpp.html#a8885566a7b405e61ea4b55adbe108d35',1,'sections.hpp']]],
+  ['bss_5fstart_1634',['BSS_START',['../d0/d29/sections_8hpp.html#aaa4cac0bc6572368838af44d9cd914a0',1,'sections.hpp']]],
+  ['build_5fdate_1635',['BUILD_DATE',['../db/df8/defines_8hpp.html#a7f43b36cfbbd59cd83b3193004616f7e',1,'defines.hpp']]]
 ];

@@ -3,7 +3,7 @@
 <area shape="rect" id="node2" href="$d8/d9f/ports_8hpp.html" title="Ports header file. Provides inline functions for getting and setting values at different ports...." alt="" coords="37,80,185,107"/>
 <area shape="rect" id="node3" title=" " alt="" coords="64,304,135,331"/>
 <area shape="rect" id="node4" href="$d7/dcf/_arch_8i686_8hpp.html" title="i686 architecture implementation of Arch.hpp" alt="" coords="23,155,199,181"/>
-<area shape="rect" id="node5" href="$d8/dfb/regs_8hpp.html" title=" " alt="" coords="189,229,332,256"/>
+<area shape="rect" id="node5" href="$d8/dfb/regs_8hpp.html" title="i686 control register definitions. C &amp; C++ compatible header." alt="" coords="189,229,332,256"/>
 <area shape="rect" id="node7" href="$d4/ddc/isr_8hpp.html" title="Interrupt Service Routine header." alt="" coords="34,229,165,256"/>
 <area shape="rect" id="node6" title=" " alt="" coords="223,304,298,331"/>
 </map>

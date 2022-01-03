@@ -1,19 +1,4 @@
 var searchData=
 [
-  ['page_5fcount_1714',['PAGE_COUNT',['../d1/d5e/paging_8cpp.html#ab137e16ea1cf905a1c93665b83a879d3',1,'paging.cpp']]],
-  ['page_5ftables_5fend_1715',['PAGE_TABLES_END',['../d0/d29/sections_8hpp.html#a058cf06bbeed32ec8c8d084d29e4e823',1,'sections.hpp']]],
-  ['page_5ftables_5fstart_1716',['PAGE_TABLES_START',['../d0/d29/sections_8hpp.html#a823f9064f6a8b21bfa0d71de8e3b6aa4',1,'sections.hpp']]],
-  ['panic_5fcolor_5fback_1717',['PANIC_COLOR_BACK',['../d6/d1e/panic_8cpp.html#aede51fb46f4d4d294f2020b30c085d8d',1,'Panic.cpp']]],
-  ['panic_5fcolor_5ffore_1718',['PANIC_COLOR_FORE',['../d6/d1e/panic_8cpp.html#a0a6f503d2eb8e1b8c28631ba98938b51',1,'Panic.cpp']]],
-  ['panic_5fmax_5ftrace_1719',['PANIC_MAX_TRACE',['../d6/d1e/panic_8cpp.html#aee986e23abe0ad6e2d495f771f79f8cc',1,'Panic.cpp']]],
-  ['panic_5fmoo_5fbuf_5fsz_1720',['PANIC_MOO_BUF_SZ',['../d6/d1e/panic_8cpp.html#a050721bdae205f05ec1fb0e910588ac9',1,'Panic.cpp']]],
-  ['panic_5fmsg_5fbuf_5fsz_1721',['PANIC_MSG_BUF_SZ',['../d6/d1e/panic_8cpp.html#a6fd38ab22a679a30dbbe34a694835e43',1,'Panic.cpp']]],
-  ['panic_5freg_5fbug_5fsz_1722',['PANIC_REG_BUG_SZ',['../d6/d1e/panic_8cpp.html#aaeb595b7c6f6c66d83327d4c9467c609',1,'Panic.cpp']]],
-  ['panic_5freg_5fdump_5fmsg_1723',['PANIC_REG_DUMP_MSG',['../d6/d1e/panic_8cpp.html#a9cde798f0820b304d7c2d6d41e295792',1,'Panic.cpp']]],
-  ['pop_5fval_1724',['POP_VAL',['../d9/dda/console_8cpp.html#abb24b354459d64a7cf2a3b89f71e1ac9',1,'console.cpp']]],
-  ['pr_5fbuflen_1725',['PR_BUFLEN',['../d4/d64/printf_8cpp.html#a47e3daf525535345268f705184476c08',1,'printf.cpp']]],
-  ['prime_5fmax_1726',['PRIME_MAX',['../d0/dde/primes_8cpp.html#aa62c7fb21b0b1a4d6411ebd3c4bd764b',1,'primes.cpp']]],
-  ['prime_5fmax_5fsqrt_1727',['PRIME_MAX_SQRT',['../d0/dde/primes_8cpp.html#a940645b8b38b41954bc8a9d244ce7fa0',1,'primes.cpp']]],
-  ['primes_5fsize_1728',['PRIMES_SIZE',['../d0/dde/primes_8cpp.html#a7fffd785ab95c3ef9ad3b6fe92782489',1,'primes.cpp']]],
-  ['push_5fval_1729',['PUSH_VAL',['../d9/dda/console_8cpp.html#a76654bc36e3d7b3be3841a1b13ac41e9',1,'console.cpp']]]
+  ['named_5ftasklist_1677',['NAMED_TASKLIST',['../d5/d9d/tasks_8cpp.html#a4c4480fc9163e10c90c54e837778ef8f',1,'tasks.cpp']]]
 ];

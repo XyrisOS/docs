@@ -1,5 +1,0 @@
-<map id="Registers::writeCR0" name="Registers::writeCR0">
-<area shape="rect" id="node1" title=" " alt="" coords="267,31,417,57"/>
-<area shape="rect" id="node2" href="$dd/d0e/namespace_arch_1_1_memory.html#ad4d3a669c172e1442fe3e2afe8d16172" title="Disable hardware paging." alt="" coords="5,5,219,32"/>
-<area shape="rect" id="node3" href="$dd/d0e/namespace_arch_1_1_memory.html#a3ba8a1ea0a34ad98b2f304fbbda48b0a" title="Enable hardware paging." alt="" coords="8,56,216,83"/>
-</map>
