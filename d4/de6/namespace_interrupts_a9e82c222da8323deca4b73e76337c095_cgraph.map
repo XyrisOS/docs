@@ -1,0 +1,6 @@
+<map id="Interrupts::init" name="Interrupts::init">
+<area shape="rect" id="node1" title=" " alt="" coords="5,56,120,83"/>
+<area shape="rect" id="node2" href="$db/d3c/namespace_i_d_t.html#afc0b0ef5ee4c115b7ab32e60d22b85bc" title="Calls the lidt instruction and installs the IDT onto the CPU." alt="" coords="183,5,255,32"/>
+<area shape="rect" id="node3" href="$db/d3c/namespace_i_d_t.html#ad1b56298bd7894140cecb81c4e788176" title="Sets the handler function (via address) for a specific IDT." alt="" coords="168,56,271,83"/>
+<area shape="rect" id="node4" href="$d7/d27/ports_8cpp.html#aa89191491445201430ae9a8feb3184d9" title="Writes a byte (8 bits) to the CPU bus at a given port address." alt="" coords="177,107,262,133"/>
+</map>

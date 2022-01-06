@@ -31,7 +31,7 @@ var NAVTREE =
       ] ],
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [
-        [ "All", "namespacemembers.html", null ],
+        [ "All", "namespacemembers.html", "namespacemembers_dup" ],
         [ "Functions", "namespacemembers_func.html", null ],
         [ "Variables", "namespacemembers_vars.html", null ],
         [ "Typedefs", "namespacemembers_type.html", null ],
@@ -45,7 +45,7 @@ var NAVTREE =
       [ "Data Fields", "functions.html", [
         [ "All", "functions.html", "functions_dup" ],
         [ "Functions", "functions_func.html", null ],
-        [ "Variables", "functions_vars.html", null ]
+        [ "Variables", "functions_vars.html", "functions_vars" ]
       ] ]
     ] ],
     [ "Files", "files.html", [
@@ -66,11 +66,11 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"d4/d01/_entry_8cpp_source.html",
-"d5/d29/structtss__entry.html#a69bf522e3a865427a6325fe57ab70cb3",
-"d9/d31/graphics_8hpp.html#a9a087c9e0e221a9939cbe6b958171886",
-"dc/de5/timer_8cpp.html#aaa6c98e94749593031e039d184db09f4",
-"namespacemembers_eval.html"
+"d4/d07/union_g_d_t_1_1_limit.html#ad027767f104f868b9225b4278644cf05",
+"d5/d87/_arguments_8hpp.html#a3dcc11e7ed3addd0192494cf2b3527d3",
+"d8/ddb/animation_8cpp_source.html",
+"db/d78/struct_g_d_t_1_1_entry.html#ac7292567f996e4f8eb743b56aaa6a9ee",
+"df/dd0/class_boot_1_1_handoff_s_m_p_descriptor.html#a7db14180b66eab9eeb31a6cd723ba39a"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

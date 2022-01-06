@@ -84,6 +84,8 @@ $(document).ready(function(){initNavTree('d9/d87/idt_8cpp.html','../../'); initR
 
 <div class="header">
   <div class="summary">
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
@@ -91,6 +93,7 @@ $(document).ready(function(){initNavTree('d9/d87/idt_8cpp.html','../../'); initR
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="../../dd/d12/idt_8hpp_source.html">Arch/i686/idt.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="../../d8/dfb/regs_8hpp_source.html">Arch/i686/regs.hpp</a>&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Include dependency graph for idt.cpp:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -98,32 +101,42 @@ $(document).ready(function(){initNavTree('d9/d87/idt_8cpp.html','../../'); initR
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="../../df/d07/idt_8cpp__incl.png" border="0" usemap="#idt_8cpp" alt=""/></div>
 <map name="idt_8cpp" id="idt_8cpp">
-<area shape="rect" title=" " alt="" coords="343,5,410,32"/>
-<area shape="rect" href="../../dd/d12/idt_8hpp.html" title="Interrupt Descriptor Table header." alt="" coords="311,80,443,107"/>
-<area shape="rect" href="../../d7/dcf/_arch_8i686_8hpp.html" title="i686 architecture implementation of Arch.hpp" alt="" coords="226,155,402,181"/>
-<area shape="rect" title=" " alt="" coords="284,304,355,331"/>
-<area shape="rect" href="../../d8/dfb/regs_8hpp.html" title="i686 control register definitions. C &amp; C++ compatible header." alt="" coords="5,229,148,256"/>
-<area shape="rect" href="../../d8/d9f/ports_8hpp.html" title="Ports header file. Provides inline functions for getting and setting values at different ports...." alt="" coords="328,229,476,256"/>
-<area shape="rect" href="../../d4/ddc/isr_8hpp.html" title="Interrupt Service Routine header." alt="" coords="173,229,303,256"/>
-<area shape="rect" title=" " alt="" coords="39,304,114,331"/>
+<area shape="rect" title=" " alt="" coords="291,5,358,32"/>
+<area shape="rect" href="../../dd/d12/idt_8hpp.html" title="Interrupt Descriptor Table header." alt="" coords="196,80,328,107"/>
+<area shape="rect" href="../../d8/dfb/regs_8hpp.html" title="i686 control register definitions. C &amp; C++ compatible header." alt="" coords="352,229,495,256"/>
+<area shape="rect" href="../../d7/dcf/_arch_8i686_8hpp.html" title="i686 architecture implementation of Arch.hpp" alt="" coords="174,155,350,181"/>
+<area shape="rect" title=" " alt="" coords="145,304,216,331"/>
+<area shape="rect" href="../../d8/d9f/ports_8hpp.html" title="Ports header file. Provides inline functions for getting and setting values at different ports...." alt="" coords="24,229,172,256"/>
+<area shape="rect" href="../../d4/ddc/isr_8hpp.html" title="Interrupt Service Routine header." alt="" coords="197,229,327,256"/>
+<area shape="rect" title=" " alt="" coords="386,304,461,331"/>
 </map>
 </div>
 </div>
 <p><a href="../../d9/d87/idt_8cpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:db/d3c/namespace_i_d_t"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d3c/namespace_i_d_t.html">IDT</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a69bf5356e2f51da2b52df5c67de007e7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d87/idt_8cpp.html#a69bf5356e2f51da2b52df5c67de007e7">ARCH_IDT_MAX_ENTRIES</a>&#160;&#160;&#160;256</td></tr>
+<tr class="separator:a69bf5356e2f51da2b52df5c67de007e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ac026ee8412818db472b59fa2fad922fe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d87/idt_8cpp.html#ac026ee8412818db472b59fa2fad922fe">idt_set_gate</a> (int n, uint32_t handler_addr)</td></tr>
-<tr class="separator:ac026ee8412818db472b59fa2fad922fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aacb15cc09678bbe5e09fb652c56e884e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d87/idt_8cpp.html#aacb15cc09678bbe5e09fb652c56e884e">load_idt</a> ()</td></tr>
-<tr class="separator:aacb15cc09678bbe5e09fb652c56e884e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1b56298bd7894140cecb81c4e788176"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d3c/namespace_i_d_t.html#ad1b56298bd7894140cecb81c4e788176">IDT::setGate</a> (int n, uint32_t handler)</td></tr>
+<tr class="separator:ad1b56298bd7894140cecb81c4e788176"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc0b0ef5ee4c115b7ab32e60d22b85bc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d3c/namespace_i_d_t.html#afc0b0ef5ee4c115b7ab32e60d22b85bc">IDT::init</a> ()</td></tr>
+<tr class="separator:afc0b0ef5ee4c115b7ab32e60d22b85bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:ad133438f7cd1f36a17e9d0a2524c4b23"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="../../d4/d96/structidt__gate.html">idt_gate</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d87/idt_8cpp.html#ad133438f7cd1f36a17e9d0a2524c4b23">idt</a> [<a class="el" href="../../dd/d12/idt_8hpp.html#a2a59a505aa55f15c152f30f811fbd310">IDT_ENTRIES</a>]</td></tr>
-<tr class="separator:ad133438f7cd1f36a17e9d0a2524c4b23"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa80371998c7f7d27c1846fe165908823"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="../../d3/d1c/structidt__register.html">idt_register</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d87/idt_8cpp.html#aa80371998c7f7d27c1846fe165908823">idt_reg</a></td></tr>
-<tr class="separator:aa80371998c7f7d27c1846fe165908823"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1471397fe0e79ed6e87c408c89eca9f8"><td class="memItemLeft" align="right" valign="top">struct Gate&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d3c/namespace_i_d_t.html#a1471397fe0e79ed6e87c408c89eca9f8">IDT::idt</a> [<a class="el" href="../../d9/d87/idt_8cpp.html#a69bf5356e2f51da2b52df5c67de007e7">ARCH_IDT_MAX_ENTRIES</a>]</td></tr>
+<tr class="separator:a1471397fe0e79ed6e87c408c89eca9f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a679e209e5595ee3790c1958a83702e08"><td class="memItemLeft" align="right" valign="top">struct Registers::IDTR&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d3c/namespace_i_d_t.html#a679e209e5595ee3790c1958a83702e08">IDT::idtr</a></td></tr>
+<tr class="separator:a679e209e5595ee3790c1958a83702e08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><dl class="section author"><dt>Author</dt><dd>Keeton Feavel (<a href="#" onclick="location.href='mai'+'lto:'+'kee'+'to'+'nfe'+'av'+'el@'+'ce'+'dar'+'vi'+'lle'+'.e'+'du'; return false;">keeto<span style="display: none;">.nosp@m.</span>nfea<span style="display: none;">.nosp@m.</span>vel@c<span style="display: none;">.nosp@m.</span>edar<span style="display: none;">.nosp@m.</span>ville<span style="display: none;">.nosp@m.</span>.edu</a>) </dd></dl>
@@ -132,132 +145,15 @@ Variables</h2></td></tr>
 <dl class="section copyright"><dt>Copyright</dt><dd>Copyright the Xyris Contributors (c) 2019 </dd></dl>
 
 <p class="definition">Definition in file <a class="el" href="../../d9/d87/idt_8cpp_source.html">idt.cpp</a>.</p>
-</div><h2 class="groupheader">Function Documentation</h2>
-<a id="ac026ee8412818db472b59fa2fad922fe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac026ee8412818db472b59fa2fad922fe">&#9670;&nbsp;</a></span>idt_set_gate()</h2>
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a69bf5356e2f51da2b52df5c67de007e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69bf5356e2f51da2b52df5c67de007e7">&#9670;&nbsp;</a></span>ARCH_IDT_MAX_ENTRIES</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void idt_set_gate </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>n</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>handler</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Sets the handler function (via address) for a specific IDT. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">n</td><td>IDT index </td></tr>
-    <tr><td class="paramname">handler</td><td>Handler address </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="definition">Definition at line <a class="el" href="../../d9/d87/idt_8cpp_source.html#l00016">16</a> of file <a class="el" href="../../d9/d87/idt_8cpp_source.html">idt.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;                                                {</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="../../d9/d87/idt_8cpp.html#ad133438f7cd1f36a17e9d0a2524c4b23">idt</a>[n].<a class="code" href="../../d4/d96/structidt__gate.html#adc68f1dda5536cd60231c1104f0a7f25">low_offset</a> = (uint16_t)((handler_addr) &amp; 0xFFFF);</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="../../d9/d87/idt_8cpp.html#ad133438f7cd1f36a17e9d0a2524c4b23">idt</a>[n].<a class="code" href="../../d4/d96/structidt__gate.html#a839f4d5be34a2cf1c58190f8e7fe2b82">selector</a> = <a class="code" href="../../dd/d12/idt_8hpp.html#ab0b69b822e9207a5960bc07fc3d36ee4">KERNEL_CS</a>;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="../../d9/d87/idt_8cpp.html#ad133438f7cd1f36a17e9d0a2524c4b23">idt</a>[n].<a class="code" href="../../d4/d96/structidt__gate.html#aeea412c102b122e54eb1ffdd0aed45e1">always0</a> = 0;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="../../d9/d87/idt_8cpp.html#ad133438f7cd1f36a17e9d0a2524c4b23">idt</a>[n].<a class="code" href="../../d4/d96/structidt__gate.html#a3879edc772ef50bdef9af92eb1ccb970">flags</a> = 0x8E; <span class="comment">//    1 -&gt; present bit,</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                         <span class="comment">//   00 -&gt; ring 0 privilege</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;                         <span class="comment">//    0 -&gt; interrupt/trap gate</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;                         <span class="comment">// 1110 -&gt; type: 32-bit interrupt gate</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="../../d9/d87/idt_8cpp.html#ad133438f7cd1f36a17e9d0a2524c4b23">idt</a>[n].<a class="code" href="../../d4/d96/structidt__gate.html#a0c61b4d6c08713706583ed45844850be">high_offset</a> = (uint16_t)(((handler_addr) &gt;&gt; 16) &amp; 0xFFFF);</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;}</div>
-</div><!-- fragment --><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="../../closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="../../d9/d87/idt_8cpp_ac026ee8412818db472b59fa2fad922fe_icgraph.png" border="0" usemap="#d9/d87/idt_8cpp_ac026ee8412818db472b59fa2fad922fe_icgraph" alt=""/></div>
-<map name="d9/d87/idt_8cpp_ac026ee8412818db472b59fa2fad922fe_icgraph" id="d9/d87/idt_8cpp_ac026ee8412818db472b59fa2fad922fe_icgraph">
-<area shape="rect" title="Sets the handler function (via address) for a specific IDT." alt="" coords="301,5,404,32"/>
-<area shape="rect" href="../../d4/ddc/isr_8hpp.html#aed0ecf87a0ed3270ce0e9c68cd01a946" title=" " alt="" coords="168,5,253,32"/>
-<area shape="rect" href="../../d9/d7a/namespace_arch_1_1_c_p_u.html#a56d04c0a3e1b9d49d69c5d8d33875731" title=" " alt="" coords="5,5,120,32"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="aacb15cc09678bbe5e09fb652c56e884e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aacb15cc09678bbe5e09fb652c56e884e">&#9670;&nbsp;</a></span>load_idt()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void load_idt </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Calls the lidt instruction and installs the IDT onto the CPU. </p>
-
-<p class="definition">Definition at line <a class="el" href="../../d9/d87/idt_8cpp_source.html#l00027">27</a> of file <a class="el" href="../../d9/d87/idt_8cpp_source.html">idt.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                {</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="../../d9/d87/idt_8cpp.html#aa80371998c7f7d27c1846fe165908823">idt_reg</a>.<a class="code" href="../../d3/d1c/structidt__register.html#a9bf562fd7cf1a23e33c626b7126350c8">base</a> = (uint32_t) &amp;<a class="code" href="../../d9/d87/idt_8cpp.html#ad133438f7cd1f36a17e9d0a2524c4b23">idt</a>;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="../../d9/d87/idt_8cpp.html#aa80371998c7f7d27c1846fe165908823">idt_reg</a>.<a class="code" href="../../d3/d1c/structidt__register.html#addcddefbaf3d52c48d45ffac5178b4a0">limit</a> = <a class="code" href="../../dd/d12/idt_8hpp.html#a2a59a505aa55f15c152f30f811fbd310">IDT_ENTRIES</a> * <span class="keyword">sizeof</span>(<span class="keyword">struct </span><a class="code" href="../../d4/d96/structidt__gate.html">idt_gate</a>) - 1;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="comment">/* Don&#39;t make the mistake of loading &amp;idt -- always load &amp;idt_reg */</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keyword">asm</span> <span class="keyword">volatile</span>(<span class="stringliteral">&quot;lidt (%0)&quot;</span> : : <span class="stringliteral">&quot;r&quot;</span> (&amp;<a class="code" href="../../d9/d87/idt_8cpp.html#aa80371998c7f7d27c1846fe165908823">idt_reg</a>) : <span class="stringliteral">&quot;memory&quot;</span>);</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;}</div>
-</div><!-- fragment --><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="../../closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="../../d9/d87/idt_8cpp_aacb15cc09678bbe5e09fb652c56e884e_icgraph.png" border="0" usemap="#d9/d87/idt_8cpp_aacb15cc09678bbe5e09fb652c56e884e_icgraph" alt=""/></div>
-<map name="d9/d87/idt_8cpp_aacb15cc09678bbe5e09fb652c56e884e_icgraph" id="d9/d87/idt_8cpp_aacb15cc09678bbe5e09fb652c56e884e_icgraph">
-<area shape="rect" title="Calls the lidt instruction and installs the IDT onto the CPU." alt="" coords="301,5,376,32"/>
-<area shape="rect" href="../../d4/ddc/isr_8hpp.html#aed0ecf87a0ed3270ce0e9c68cd01a946" title=" " alt="" coords="168,5,253,32"/>
-<area shape="rect" href="../../d9/d7a/namespace_arch_1_1_c_p_u.html#a56d04c0a3e1b9d49d69c5d8d33875731" title=" " alt="" coords="5,5,120,32"/>
-</map>
-</div>
-
-</div>
-</div>
-<h2 class="groupheader">Variable Documentation</h2>
-<a id="ad133438f7cd1f36a17e9d0a2524c4b23"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad133438f7cd1f36a17e9d0a2524c4b23">&#9670;&nbsp;</a></span>idt</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">struct <a class="el" href="../../d4/d96/structidt__gate.html">idt_gate</a> idt[<a class="el" href="../../dd/d12/idt_8hpp.html#a2a59a505aa55f15c152f30f811fbd310">IDT_ENTRIES</a>]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="../../d9/d87/idt_8cpp_source.html#l00013">13</a> of file <a class="el" href="../../d9/d87/idt_8cpp_source.html">idt.cpp</a>.</p>
-
-</div>
-</div>
-<a id="aa80371998c7f7d27c1846fe165908823"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa80371998c7f7d27c1846fe165908823">&#9670;&nbsp;</a></span>idt_reg</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">struct <a class="el" href="../../d3/d1c/structidt__register.html">idt_register</a> idt_reg</td>
+          <td class="memname">#define ARCH_IDT_MAX_ENTRIES&#160;&#160;&#160;256</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -268,18 +164,6 @@ Variables</h2></td></tr>
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="astructidt__register_html_addcddefbaf3d52c48d45ffac5178b4a0"><div class="ttname"><a href="../../d3/d1c/structidt__register.html#addcddefbaf3d52c48d45ffac5178b4a0">idt_register::limit</a></div><div class="ttdeci">uint16_t limit</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d12/idt_8hpp_source.html#l00046">idt.hpp:46</a></div></div>
-<div class="ttc" id="aidt_8hpp_html_a2a59a505aa55f15c152f30f811fbd310"><div class="ttname"><a href="../../dd/d12/idt_8hpp.html#a2a59a505aa55f15c152f30f811fbd310">IDT_ENTRIES</a></div><div class="ttdeci">#define IDT_ENTRIES</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d12/idt_8hpp_source.html#l00018">idt.hpp:18</a></div></div>
-<div class="ttc" id="aidt_8cpp_html_aa80371998c7f7d27c1846fe165908823"><div class="ttname"><a href="../../d9/d87/idt_8cpp.html#aa80371998c7f7d27c1846fe165908823">idt_reg</a></div><div class="ttdeci">struct idt_register idt_reg</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d87/idt_8cpp_source.html#l00014">idt.cpp:14</a></div></div>
-<div class="ttc" id="astructidt__gate_html_a839f4d5be34a2cf1c58190f8e7fe2b82"><div class="ttname"><a href="../../d4/d96/structidt__gate.html#a839f4d5be34a2cf1c58190f8e7fe2b82">idt_gate::selector</a></div><div class="ttdeci">uint16_t selector</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d12/idt_8hpp_source.html#l00026">idt.hpp:26</a></div></div>
-<div class="ttc" id="astructidt__gate_html_aeea412c102b122e54eb1ffdd0aed45e1"><div class="ttname"><a href="../../d4/d96/structidt__gate.html#aeea412c102b122e54eb1ffdd0aed45e1">idt_gate::always0</a></div><div class="ttdeci">uint8_t always0</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d12/idt_8hpp_source.html#l00027">idt.hpp:27</a></div></div>
-<div class="ttc" id="astructidt__gate_html_a0c61b4d6c08713706583ed45844850be"><div class="ttname"><a href="../../d4/d96/structidt__gate.html#a0c61b4d6c08713706583ed45844850be">idt_gate::high_offset</a></div><div class="ttdeci">uint16_t high_offset</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d12/idt_8hpp_source.html#l00040">idt.hpp:40</a></div></div>
-<div class="ttc" id="astructidt__register_html_a9bf562fd7cf1a23e33c626b7126350c8"><div class="ttname"><a href="../../d3/d1c/structidt__register.html#a9bf562fd7cf1a23e33c626b7126350c8">idt_register::base</a></div><div class="ttdeci">uint32_t base</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d12/idt_8hpp_source.html#l00047">idt.hpp:47</a></div></div>
-<div class="ttc" id="astructidt__gate_html_a3879edc772ef50bdef9af92eb1ccb970"><div class="ttname"><a href="../../d4/d96/structidt__gate.html#a3879edc772ef50bdef9af92eb1ccb970">idt_gate::flags</a></div><div class="ttdeci">uint8_t flags</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d12/idt_8hpp_source.html#l00039">idt.hpp:39</a></div></div>
-<div class="ttc" id="aidt_8cpp_html_ad133438f7cd1f36a17e9d0a2524c4b23"><div class="ttname"><a href="../../d9/d87/idt_8cpp.html#ad133438f7cd1f36a17e9d0a2524c4b23">idt</a></div><div class="ttdeci">struct idt_gate idt[IDT_ENTRIES]</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d87/idt_8cpp_source.html#l00013">idt.cpp:13</a></div></div>
-<div class="ttc" id="aidt_8hpp_html_ab0b69b822e9207a5960bc07fc3d36ee4"><div class="ttname"><a href="../../dd/d12/idt_8hpp.html#ab0b69b822e9207a5960bc07fc3d36ee4">KERNEL_CS</a></div><div class="ttdeci">#define KERNEL_CS</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d12/idt_8hpp_source.html#l00017">idt.hpp:17</a></div></div>
-<div class="ttc" id="astructidt__gate_html_adc68f1dda5536cd60231c1104f0a7f25"><div class="ttname"><a href="../../d4/d96/structidt__gate.html#adc68f1dda5536cd60231c1104f0a7f25">idt_gate::low_offset</a></div><div class="ttdeci">uint16_t low_offset</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d12/idt_8hpp_source.html#l00025">idt.hpp:25</a></div></div>
-<div class="ttc" id="astructidt__gate_html"><div class="ttname"><a href="../../d4/d96/structidt__gate.html">idt_gate</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d12/idt_8hpp_source.html#l00024">idt.hpp:24</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

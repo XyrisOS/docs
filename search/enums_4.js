@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['irq_1485',['irq',['../d4/ddc/isr_8hpp.html#a01b4023ebbcebf993035ca8f0f7d2225',1,'isr.hpp']]],
-  ['isr_1486',['isr',['../d4/ddc/isr_8hpp.html#a0419334e5d2a04960bcb98c595e92928',1,'isr.hpp']]]
+  ['gatetype_1511',['GateType',['../db/d3c/namespace_i_d_t.html#a2fa82592795f2b54a2b80c4b389b8ad3',1,'IDT']]]
 ];

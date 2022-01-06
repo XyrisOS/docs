@@ -124,13 +124,13 @@ Functions</h2></td></tr>
 <tr class="separator:a4807334c4e90264cee03c6c529ff3846"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a44b3294305d8f0b6a4ec2e411755cda2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d24/string_8cpp.html#a44b3294305d8f0b6a4ec2e411755cda2">itoa</a> (int n, char str[])</td></tr>
 <tr class="separator:a44b3294305d8f0b6a4ec2e411755cda2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc296efabb90c20113d5420e4d162d14"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d24/string_8cpp.html#adc296efabb90c20113d5420e4d162d14">memset</a> (void *bufptr, int value, size_t size)</td></tr>
+<tr class="memitem:adc296efabb90c20113d5420e4d162d14"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d24/string_8cpp.html#adc296efabb90c20113d5420e4d162d14">memset</a> (void *bufptr, int value, size_t <a class="el" href="../../d8/dfb/regs_8hpp.html#aaba88b24a21a6c70c895c0d55f4a69a0">size</a>)</td></tr>
 <tr class="separator:adc296efabb90c20113d5420e4d162d14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e7d61eb280250fb55dce370ba1a1709"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d24/string_8cpp.html#a1e7d61eb280250fb55dce370ba1a1709">memcmp</a> (const void *ptr1, const void *ptr2, size_t num)</td></tr>
 <tr class="separator:a1e7d61eb280250fb55dce370ba1a1709"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a212726b095532a9f0543cdb9ae0fdca1"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d24/string_8cpp.html#a212726b095532a9f0543cdb9ae0fdca1">memmove</a> (void *destptr, const void *srcptr, size_t size)</td></tr>
+<tr class="memitem:a212726b095532a9f0543cdb9ae0fdca1"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d24/string_8cpp.html#a212726b095532a9f0543cdb9ae0fdca1">memmove</a> (void *destptr, const void *srcptr, size_t <a class="el" href="../../d8/dfb/regs_8hpp.html#aaba88b24a21a6c70c895c0d55f4a69a0">size</a>)</td></tr>
 <tr class="separator:a212726b095532a9f0543cdb9ae0fdca1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a370712322c794e949c996946f2283ea8"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d24/string_8cpp.html#a370712322c794e949c996946f2283ea8">memcpy</a> (void *dstptr, const void *srcptr, size_t size)</td></tr>
+<tr class="memitem:a370712322c794e949c996946f2283ea8"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d24/string_8cpp.html#a370712322c794e949c996946f2283ea8">memcpy</a> (void *dstptr, const void *srcptr, size_t <a class="el" href="../../d8/dfb/regs_8hpp.html#aaba88b24a21a6c70c895c0d55f4a69a0">size</a>)</td></tr>
 <tr class="separator:a370712322c794e949c996946f2283ea8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -311,7 +311,7 @@ Functions</h2></td></tr>
 <div class="fragment"><div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;{</div>
 <div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>* dst = (<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>*)dstptr;</div>
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>* src = (<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>*)srcptr;</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; size; i++)</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code" href="../../d8/dfb/regs_8hpp.html#aaba88b24a21a6c70c895c0d55f4a69a0">size</a>; i++)</div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        dst[i] = src[i];</div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    <span class="keywordflow">return</span> dstptr;</div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;}</div>
@@ -322,19 +322,16 @@ Functions</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="../../d5/d24/string_8cpp_a370712322c794e949c996946f2283ea8_icgraph.png" border="0" usemap="#d5/d24/string_8cpp_a370712322c794e949c996946f2283ea8_icgraph" alt=""/></div>
 <map name="d5/d24/string_8cpp_a370712322c794e949c996946f2283ea8_icgraph" id="d5/d24/string_8cpp_a370712322c794e949c996946f2283ea8_icgraph">
-<area shape="rect" title=" " alt="" coords="559,81,637,108"/>
-<area shape="rect" href="../../d7/de6/gdt_8cpp.html#ac3e3821e375498c85d135c475005ddbc" title=" " alt="" coords="397,5,503,32"/>
-<area shape="rect" href="../../d6/d9b/namespace_graphics.html#afc86122297c8c117c8793ddaf246e4ed" title="Initializes the framebuffer (if available)" alt="" coords="396,56,504,83"/>
-<area shape="rect" href="../../d4/da0/string_8hpp.html#adb8723e585ed29f2370cddf90f6891bc" title="Concatanates source onto destination." alt="" coords="421,107,479,133"/>
-<area shape="rect" href="../../d6/d9b/namespace_graphics.html#afb7733fe050948fc3a09cd9a87071ffc" title="Swap the data on backbuffer to memory video buffer and show in the screen." alt="" coords="389,157,511,184"/>
-<area shape="rect" href="../../df/d77/gdt_8hpp.html#aa2a6cef9d7f1d9430289dcbb74530bf3" title="Setup and install the GDT onto the system." alt="" coords="229,5,320,32"/>
-<area shape="rect" href="../../d9/d7a/namespace_arch_1_1_c_p_u.html#a56d04c0a3e1b9d49d69c5d8d33875731" title=" " alt="" coords="25,5,140,32"/>
-<area shape="rect" href="../../d8/db5/namespace_console.html#aa92244db771ad2578967dd9f8fcac912" title=" " alt="" coords="216,107,333,133"/>
-<area shape="rect" href="../../d6/d9b/namespace_graphics.html#a0c60e5c671ea347d63839d16c3712268" title="Draws and fills a rectangle of a given width and height, and color at the provided coordinates." alt="" coords="208,157,341,184"/>
-<area shape="rect" href="../../dc/da3/namespace_apps.html#a01ace99cc76e0adcf1428dadf9134e3e" title="Run a simple animation." alt="" coords="5,208,160,235"/>
-<area shape="rect" href="../../de/d66/namespace_stack.html#ab836051c392dd045b3bdfe4124ce04a8" title=" " alt="" coords="17,56,148,83"/>
-<area shape="rect" href="../../dc/da3/namespace_apps.html#aebbc688ed6a7097af1dd858ca0559d4b" title="Starts a task to display number of primes found by find_primes." alt="" coords="9,107,157,133"/>
-<area shape="rect" href="../../dc/da3/namespace_apps.html#aaa2be84c7a45c27af1e3bddb75e87a48" title="Starts a spinner in an infinite loop." alt="" coords="27,157,138,184"/>
+<area shape="rect" title=" " alt="" coords="559,56,637,83"/>
+<area shape="rect" href="../../d6/d9b/namespace_graphics.html#afc86122297c8c117c8793ddaf246e4ed" title="Initializes the framebuffer (if available)" alt="" coords="396,5,504,32"/>
+<area shape="rect" href="../../d4/da0/string_8hpp.html#adb8723e585ed29f2370cddf90f6891bc" title="Concatanates source onto destination." alt="" coords="421,56,479,83"/>
+<area shape="rect" href="../../d6/d9b/namespace_graphics.html#afb7733fe050948fc3a09cd9a87071ffc" title="Swap the data on backbuffer to memory video buffer and show in the screen." alt="" coords="389,107,511,133"/>
+<area shape="rect" href="../../d8/db5/namespace_console.html#aa92244db771ad2578967dd9f8fcac912" title=" " alt="" coords="216,56,333,83"/>
+<area shape="rect" href="../../d6/d9b/namespace_graphics.html#a0c60e5c671ea347d63839d16c3712268" title="Draws and fills a rectangle of a given width and height, and color at the provided coordinates." alt="" coords="208,107,341,133"/>
+<area shape="rect" href="../../dc/da3/namespace_apps.html#a01ace99cc76e0adcf1428dadf9134e3e" title="Run a simple animation." alt="" coords="5,157,160,184"/>
+<area shape="rect" href="../../de/d66/namespace_stack.html#ab836051c392dd045b3bdfe4124ce04a8" title=" " alt="" coords="17,5,148,32"/>
+<area shape="rect" href="../../dc/da3/namespace_apps.html#aebbc688ed6a7097af1dd858ca0559d4b" title="Starts a task to display number of primes found by find_primes." alt="" coords="9,56,157,83"/>
+<area shape="rect" href="../../dc/da3/namespace_apps.html#aaa2be84c7a45c27af1e3bddb75e87a48" title="Starts a spinner in an infinite loop." alt="" coords="27,107,138,133"/>
 </map>
 </div>
 
@@ -388,10 +385,10 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>* dst = (<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>*)destptr;</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>* src = (<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>*)srcptr;</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <span class="keywordflow">if</span> (dst &lt; src) {</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; size; i++)</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code" href="../../d8/dfb/regs_8hpp.html#aaba88b24a21a6c70c895c0d55f4a69a0">size</a>; i++)</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;            dst[i] = src[i];</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = size; i != 0; i--)</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = <a class="code" href="../../d8/dfb/regs_8hpp.html#aaba88b24a21a6c70c895c0d55f4a69a0">size</a>; i != 0; i--)</div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;            dst[i - 1] = src[i - 1];</div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    }</div>
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    <span class="keywordflow">return</span> destptr;</div>
@@ -445,7 +442,7 @@ Functions</h2></td></tr>
 <p class="definition">Definition at line <a class="el" href="../../d5/d24/string_8cpp_source.html#l00106">106</a> of file <a class="el" href="../../d5/d24/string_8cpp_source.html">string.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;{</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>* buf = (<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>*)bufptr;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; size; i++)</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code" href="../../d8/dfb/regs_8hpp.html#aaba88b24a21a6c70c895c0d55f4a69a0">size</a>; i++)</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        buf[i] = (<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>)value;</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keywordflow">return</span> bufptr;</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;}</div>
@@ -889,6 +886,7 @@ Functions</h2></td></tr>
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="aregs_8hpp_html_aaba88b24a21a6c70c895c0d55f4a69a0"><div class="ttname"><a href="../../d8/dfb/regs_8hpp.html#aaba88b24a21a6c70c895c0d55f4a69a0">size</a></div><div class="ttdeci">uint16_t size</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dfb/regs_8hpp_source.html#l00002">regs.hpp:2</a></div></div>
 <div class="ttc" id="astring_8cpp_html_a2dee044e4e667b5b789b493abd21cfa4"><div class="ttname"><a href="../../d5/d24/string_8cpp.html#a2dee044e4e667b5b789b493abd21cfa4">strlen</a></div><div class="ttdeci">int strlen(const char *s)</div><div class="ttdoc">Returns the length of a string.</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d24/string_8cpp_source.html#l00014">string.cpp:14</a></div></div>
 <div class="ttc" id="astring_8cpp_html_a11bd144d7d44914099a3aeddf1c8567d"><div class="ttname"><a href="../../d5/d24/string_8cpp.html#a11bd144d7d44914099a3aeddf1c8567d">strcmp</a></div><div class="ttdeci">int strcmp(const char *s1, const char *s2)</div><div class="ttdoc">Compares two strings.</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d24/string_8cpp_source.html#l00051">string.cpp:51</a></div></div>
 <div class="ttc" id="astring_8cpp_html_a4807334c4e90264cee03c6c529ff3846"><div class="ttname"><a href="../../d5/d24/string_8cpp.html#a4807334c4e90264cee03c6c529ff3846">reverse</a></div><div class="ttdeci">void reverse(char *s)</div><div class="ttdoc">Reverses the inputted string.</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d24/string_8cpp_source.html#l00078">string.cpp:78</a></div></div>

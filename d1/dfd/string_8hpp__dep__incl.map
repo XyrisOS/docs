@@ -1,6 +1,6 @@
 <map id="string.hpp" name="string.hpp">
 <area shape="rect" id="node1" title="Standard string and memory utility library." alt="" coords="497,5,584,32"/>
-<area shape="rect" id="node2" href="$d7/de6/gdt_8cpp.html" title="The Global Descriptor Table (GDT) is specific to the IA32 architecture. It contains entries telling t..." alt="" coords="5,80,76,107"/>
+<area shape="rect" id="node2" href="$d7/de6/gdt_8cpp.html" title="The Global Descriptor Table (GDT) is specific to the IA32 architecture." alt="" coords="5,80,76,107"/>
 <area shape="rect" id="node3" href="$d4/d85/_arguments_8cpp.html" title="Kernel command argument parsing." alt="" coords="101,80,221,107"/>
 <area shape="rect" id="node4" href="$d4/d88/_handoff_8cpp.html" title="Bootloader information parsing and kernel handoff container." alt="" coords="245,80,345,107"/>
 <area shape="rect" id="node5" href="$d6/d99/graphics_8cpp.html" title="Graphics management and control." alt="" coords="370,80,474,107"/>

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['framebuffermemorymodel_1483',['FramebufferMemoryModel',['../d6/d9b/namespace_graphics.html#a504dfc028c1d2f4ec0c4bf4ec2cbe7f8',1,'Graphics']]]
+  ['exception_1509',['Exception',['../d4/de6/namespace_interrupts.html#af22f8385beeba347ee34dd591bc8a823',1,'Interrupts']]]
 ];

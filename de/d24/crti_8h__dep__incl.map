@@ -1,0 +1,4 @@
+<map id="crti.h" name="crti.h">
+<area shape="rect" id="node1" title="C/C++ runtime initialization &amp; teardown. See crti.s and crtn.s for details https://wiki...." alt="" coords="24,5,79,32"/>
+<area shape="rect" id="node2" href="$d1/d51/_loader_8cpp.html" title="Bootloader agnostic pre&#45;kernel initialization." alt="" coords="5,80,97,107"/>
+</map>

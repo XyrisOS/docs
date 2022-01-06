@@ -1,0 +1,4 @@
+<map id="GDT::init" name="GDT::init">
+<area shape="rect" id="node1" title="Setup and install the GDT onto the system." alt="" coords="5,5,84,32"/>
+<area shape="rect" id="node2" href="$db/dc9/_flush_8h.html#a9cd7dac5fc545172ad9f8c88dd38fac4" title="Flush the global descriptor table and use the one provided." alt="" coords="132,5,213,32"/>
+</map>

@@ -1,11 +1,12 @@
 <map id="gdt.cpp" name="gdt.cpp">
-<area shape="rect" id="node1" title="The Global Descriptor Table (GDT) is specific to the IA32 architecture. It contains entries telling t..." alt="" coords="287,5,358,32"/>
-<area shape="rect" id="node2" href="$df/d77/gdt_8hpp.html" title="The Global Descriptor Table (GDT) is specific to the IA32 architecture. It contains entries telling t..." alt="" coords="192,80,328,107"/>
-<area shape="rect" id="node9" href="$d4/da0/string_8hpp.html" title="Standard string and memory utility library." alt="" coords="525,229,661,256"/>
-<area shape="rect" id="node3" title=" " alt="" coords="224,304,295,331"/>
-<area shape="rect" id="node4" href="$d7/dcf/_arch_8i686_8hpp.html" title="i686 architecture implementation of Arch.hpp" alt="" coords="172,155,348,181"/>
-<area shape="rect" id="node5" href="$d8/dfb/regs_8hpp.html" title="i686 control register definitions. C &amp; C++ compatible header." alt="" coords="358,229,500,256"/>
-<area shape="rect" id="node7" href="$d8/d9f/ports_8hpp.html" title="Ports header file. Provides inline functions for getting and setting values at different ports...." alt="" coords="186,229,334,256"/>
-<area shape="rect" id="node8" href="$d4/ddc/isr_8hpp.html" title="Interrupt Service Routine header." alt="" coords="30,229,161,256"/>
-<area shape="rect" id="node6" title=" " alt="" coords="473,304,548,331"/>
+<area shape="rect" id="node1" title="The Global Descriptor Table (GDT) is specific to the IA32 architecture." alt="" coords="259,5,329,32"/>
+<area shape="rect" id="node2" href="$df/d77/gdt_8hpp.html" title="The Global Descriptor Table (GDT) is specific to the IA32 architecture. It contains entries telling t..." alt="" coords="226,80,362,107"/>
+<area shape="rect" id="node9" href="$db/dc9/_flush_8h.html" title="Header for assembly functions defined in flush.s." alt="" coords="5,155,156,196"/>
+<area shape="rect" id="node10" href="$d4/da0/string_8hpp.html" title="Standard string and memory utility library." alt="" coords="727,244,863,271"/>
+<area shape="rect" id="node3" title=" " alt="" coords="353,319,424,345"/>
+<area shape="rect" id="node4" href="$d7/dcf/_arch_8i686_8hpp.html" title="i686 architecture implementation of Arch.hpp" alt="" coords="306,162,482,189"/>
+<area shape="rect" id="node5" href="$d8/dfb/regs_8hpp.html" title="i686 control register definitions. C &amp; C++ compatible header." alt="" coords="560,244,703,271"/>
+<area shape="rect" id="node7" href="$d8/d9f/ports_8hpp.html" title="Ports header file. Provides inline functions for getting and setting values at different ports...." alt="" coords="232,244,380,271"/>
+<area shape="rect" id="node8" href="$d4/ddc/isr_8hpp.html" title="Interrupt Service Routine header." alt="" coords="405,244,535,271"/>
+<area shape="rect" id="node6" title=" " alt="" coords="675,319,750,345"/>
 </map>

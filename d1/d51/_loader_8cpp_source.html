@@ -99,43 +99,40 @@ $(document).ready(function(){initNavTree('d1/d51/_loader_8cpp_source.html','../.
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="../../d7/d9c/_arch_8hpp.html">Arch/Arch.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="../../dc/dc7/_loader_8hpp.html">Arch/i686/Bootloader/Loader.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="../../d6/d64/_panic_8hpp.html">Panic.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="../../d0/d29/sections_8hpp.html">Support/sections.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">/* C/C++ runtime initialization &amp; teardown. See crti.s and crtn.s for details</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">   https://wiki.osdev.org/Calling_Global_Constructors */</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> <span class="keywordtype">void</span> <a class="code" href="../../d1/d51/_loader_8cpp.html#a53578094a6e7647b6a9f9ea86975c4c2">_init</a>();</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> <span class="keywordtype">void</span> <a class="code" href="../../d1/d51/_loader_8cpp.html#a9ce78f31b61c8a3f4330e814839a0219">_fini</a>();</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">/**</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment"> * @brief Bootloader agnostic pre-kernel entry initialization. Stage2 should not</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment"> * access any bootloader information and should only perform bootloader agnostic</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment"> * tasks before entering the kernel proper.</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="../../dc/dc7/_loader_8hpp.html#a89f3a8359da74ac68d51abc540390d86">   27</a></span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> <span class="keywordtype">void</span> <a class="code" href="../../d1/d51/_loader_8cpp.html#a89f3a8359da74ac68d51abc540390d86">stage2Entry</a>(<span class="keywordtype">void</span>* info, uint32_t magic)</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;{</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="comment">// Call global constructors</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="../../d1/d51/_loader_8cpp.html#a53578094a6e7647b6a9f9ea86975c4c2">_init</a>();</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="comment">// Enter the high-level kernel</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="code" href="../../d7/d9c/_arch_8hpp.html#a6663272297ce06af1a3c55a0eb2e3286">kernelEntry</a>(info, magic);</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="comment">// Call global destructors</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="../../d1/d51/_loader_8cpp.html#a9ce78f31b61c8a3f4330e814839a0219">_fini</a>();</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="comment">// By this point the kernel should have full execution</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="comment">// So, this should never be called unless the kernel returns</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <a class="code" href="../../d9/d5d/_panic_8cpp.html#ae22655ba6f328217f1ebd6248ed82727">panic</a>(<span class="stringliteral">&quot;Execution returned to stage2!&quot;</span>);</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;}</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="../../d5/d64/crti_8h.html">Arch/i686/Assembly/crti.h</a>&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="../../d6/d64/_panic_8hpp.html">Panic.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="../../d0/d29/sections_8hpp.html">Support/sections.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> * @brief Bootloader agnostic pre-kernel entry initialization. Stage2 should not</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> * access any bootloader information and should only perform bootloader agnostic</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> * tasks before entering the kernel proper.</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="../../dc/dc7/_loader_8hpp.html#a89f3a8359da74ac68d51abc540390d86">   23</a></span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> <span class="keywordtype">void</span> <a class="code" href="../../d1/d51/_loader_8cpp.html#a89f3a8359da74ac68d51abc540390d86">stage2Entry</a>(<span class="keywordtype">void</span>* info, uint32_t magic)</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;{</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="comment">// Call global constructors</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="code" href="../../d5/d64/crti_8h.html#a53578094a6e7647b6a9f9ea86975c4c2">_init</a>();</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="comment">// Enter the high-level kernel</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="../../d7/d9c/_arch_8hpp.html#a6663272297ce06af1a3c55a0eb2e3286">kernelEntry</a>(info, magic);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="comment">// Call global destructors</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="../../d5/d64/crti_8h.html#a9ce78f31b61c8a3f4330e814839a0219">_fini</a>();</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="comment">// By this point the kernel should have full execution</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="comment">// So, this should never be called unless the kernel returns</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="../../d9/d5d/_panic_8cpp.html#ae22655ba6f328217f1ebd6248ed82727">panic</a>(<span class="stringliteral">&quot;Execution returned to stage2!&quot;</span>);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="acrti_8h_html"><div class="ttname"><a href="../../d5/d64/crti_8h.html">crti.h</a></div><div class="ttdoc">C/C++ runtime initialization &amp; teardown. See crti.s and crtn.s for details https://wiki....</div></div>
 <div class="ttc" id="a_arch_8hpp_html_a6663272297ce06af1a3c55a0eb2e3286"><div class="ttname"><a href="../../d7/d9c/_arch_8hpp.html#a6663272297ce06af1a3c55a0eb2e3286">kernelEntry</a></div><div class="ttdeci">void kernelEntry(void *info, uint32_t magic)</div><div class="ttdoc">Kernel entry point. Performs all kernel initialization and starts the init process(es)....</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d01/_entry_8cpp_source.html#l00081">Entry.cpp:81</a></div></div>
+<div class="ttc" id="acrti_8h_html_a53578094a6e7647b6a9f9ea86975c4c2"><div class="ttname"><a href="../../d5/d64/crti_8h.html#a53578094a6e7647b6a9f9ea86975c4c2">_init</a></div><div class="ttdeci">void _init()</div><div class="ttdoc">Global constructor.</div></div>
 <div class="ttc" id="a_loader_8hpp_html"><div class="ttname"><a href="../../dc/dc7/_loader_8hpp.html">Loader.hpp</a></div></div>
 <div class="ttc" id="a_arch_8hpp_html"><div class="ttname"><a href="../../d7/d9c/_arch_8hpp.html">Arch.hpp</a></div><div class="ttdoc">Architecture control and initialization.</div></div>
+<div class="ttc" id="acrti_8h_html_a9ce78f31b61c8a3f4330e814839a0219"><div class="ttname"><a href="../../d5/d64/crti_8h.html#a9ce78f31b61c8a3f4330e814839a0219">_fini</a></div><div class="ttdeci">void _fini()</div><div class="ttdoc">Global destructor.</div></div>
 <div class="ttc" id="a_panic_8hpp_html"><div class="ttname"><a href="../../d6/d64/_panic_8hpp.html">Panic.hpp</a></div><div class="ttdoc">Kernel panic management.</div></div>
 <div class="ttc" id="asections_8hpp_html"><div class="ttname"><a href="../../d0/d29/sections_8hpp.html">sections.hpp</a></div><div class="ttdoc">Kernel ELF section definitions.</div></div>
-<div class="ttc" id="a_loader_8cpp_html_a53578094a6e7647b6a9f9ea86975c4c2"><div class="ttname"><a href="../../d1/d51/_loader_8cpp.html#a53578094a6e7647b6a9f9ea86975c4c2">_init</a></div><div class="ttdeci">void _init()</div></div>
 <div class="ttc" id="a_panic_8cpp_html_ae22655ba6f328217f1ebd6248ed82727"><div class="ttname"><a href="../../d9/d5d/_panic_8cpp.html#ae22655ba6f328217f1ebd6248ed82727">panic</a></div><div class="ttdeci">void panic(const char *msg)</div><div class="ttdoc">Halt the system and print the provided message on the panic screen.</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d5d/_panic_8cpp_source.html#l00082">Panic.cpp:82</a></div></div>
-<div class="ttc" id="a_loader_8cpp_html_a9ce78f31b61c8a3f4330e814839a0219"><div class="ttname"><a href="../../d1/d51/_loader_8cpp.html#a9ce78f31b61c8a3f4330e814839a0219">_fini</a></div><div class="ttdeci">void _fini()</div></div>
-<div class="ttc" id="a_loader_8cpp_html_a89f3a8359da74ac68d51abc540390d86"><div class="ttname"><a href="../../d1/d51/_loader_8cpp.html#a89f3a8359da74ac68d51abc540390d86">stage2Entry</a></div><div class="ttdeci">void stage2Entry(void *info, uint32_t magic)</div><div class="ttdoc">Bootloader agnostic pre-kernel entry initialization. Stage2 should not access any bootloader informat...</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d51/_loader_8cpp_source.html#l00027">Loader.cpp:27</a></div></div>
+<div class="ttc" id="a_loader_8cpp_html_a89f3a8359da74ac68d51abc540390d86"><div class="ttname"><a href="../../d1/d51/_loader_8cpp.html#a89f3a8359da74ac68d51abc540390d86">stage2Entry</a></div><div class="ttdeci">void stage2Entry(void *info, uint32_t magic)</div><div class="ttdoc">Bootloader agnostic pre-kernel entry initialization. Stage2 should not access any bootloader informat...</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d51/_loader_8cpp_source.html#l00023">Loader.cpp:23</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

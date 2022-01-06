@@ -1,9 +1,9 @@
 <map id="writeByte" name="writeByte">
-<area shape="rect" id="node1" title="Writes a byte (8 bits) to the CPU bus at a given port address." alt="" coords="320,107,405,133"/>
-<area shape="rect" id="node2" href="$db/de6/namespace_r_t_c.html#af746e6ba38c234affd66f9d86223ae89" title="Initializes the Real Time Clock driver for the x86_64 architecture." alt="" coords="183,5,257,32"/>
-<area shape="rect" id="node3" href="$d7/d75/namespace_r_s232.html#acbd0855fa0862424053ed439eb77e6b3" title="Activates the RS232 serial driver." alt="" coords="174,56,266,83"/>
-<area shape="rect" id="node4" href="$d4/ddc/isr_8hpp.html#a7d02908775a5c731ab311e9e9a05d802" title=" " alt="" coords="173,107,267,133"/>
-<area shape="rect" id="node5" href="$d4/ddc/isr_8hpp.html#aed0ecf87a0ed3270ce0e9c68cd01a946" title=" " alt="" coords="177,157,263,184"/>
-<area shape="rect" id="node7" href="$d7/d75/namespace_r_s232.html#a4f82e14c1586b0fdcc0f71a0806e4e7e" title="Write bytes to the serial device." alt="" coords="168,208,272,235"/>
-<area shape="rect" id="node6" href="$d9/d7a/namespace_arch_1_1_c_p_u.html#a56d04c0a3e1b9d49d69c5d8d33875731" title=" " alt="" coords="5,157,120,184"/>
+<area shape="rect" id="node1" title="Writes a byte (8 bits) to the CPU bus at a given port address." alt="" coords="416,107,501,133"/>
+<area shape="rect" id="node2" href="$db/de6/namespace_r_t_c.html#af746e6ba38c234affd66f9d86223ae89" title="Initializes the Real Time Clock driver for the x86_64 architecture." alt="" coords="231,5,305,32"/>
+<area shape="rect" id="node3" href="$d4/de6/namespace_interrupts.html#a9e82c222da8323deca4b73e76337c095" title=" " alt="" coords="211,56,325,83"/>
+<area shape="rect" id="node5" href="$d7/d75/namespace_r_s232.html#acbd0855fa0862424053ed439eb77e6b3" title="Activates the RS232 serial driver." alt="" coords="222,107,314,133"/>
+<area shape="rect" id="node6" href="$d4/de6/namespace_interrupts.html#af1b7e6680fa675e75cf712ff77cabef7" title="CPU interrupt handler. Must be available for each interrupt stub to be able to call." alt="" coords="168,157,368,184"/>
+<area shape="rect" id="node7" href="$d7/d75/namespace_r_s232.html#a4f82e14c1586b0fdcc0f71a0806e4e7e" title="Write bytes to the serial device." alt="" coords="216,208,320,235"/>
+<area shape="rect" id="node4" href="$d9/d7a/namespace_arch_1_1_c_p_u.html#a56d04c0a3e1b9d49d69c5d8d33875731" title=" " alt="" coords="5,56,120,83"/>
 </map>

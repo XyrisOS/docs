@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['rs232_900',['RS232',['../d7/d75/namespace_r_s232.html',1,'']]],
-  ['rtc_901',['RTC',['../db/de6/namespace_r_t_c.html',1,'']]]
+  ['memory_915',['Memory',['../db/d2f/namespace_memory.html',1,'']]],
+  ['physical_916',['Physical',['../d2/d75/namespace_memory_1_1_physical.html',1,'Memory']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['log_5fall_1669',['log_all',['../d2/daf/stdio_8hpp.html#a2f152e9062e9955e45fbcd8c914adf4d',1,'stdio.hpp']]]
+  ['named_5ftasklist_1708',['NAMED_TASKLIST',['../d5/d9d/tasks_8cpp.html#a4c4480fc9163e10c90c54e837778ef8f',1,'tasks.cpp']]]
 ];

@@ -85,7 +85,8 @@ $(document).ready(function(){initNavTree('d8/dfb/regs_8hpp.html','../../'); init
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">regs.hpp File Reference</div>  </div>
 </div><!--header-->
@@ -111,23 +112,24 @@ $(document).ready(function(){initNavTree('d8/dfb/regs_8hpp.html','../../'); init
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="../../dc/df6/regs_8hpp__dep__incl.png" border="0" usemap="#regs_8hppdep" alt=""/></div>
 <map name="regs_8hppdep" id="regs_8hppdep">
-<area shape="rect" title="i686 control register definitions. C &amp; C++ compatible header." alt="" coords="278,5,357,32"/>
-<area shape="rect" href="../../d4/dc9/_arch_8i686_8cpp.html" title="i686 architecture implementation of Arch.hpp" alt="" coords="185,229,295,256"/>
-<area shape="rect" href="../../d7/dcf/_arch_8i686_8hpp.html" title="i686 architecture implementation of Arch.hpp" alt="" coords="262,80,373,107"/>
-<area shape="rect" href="../../dc/d20/stivale2_8c.html" title=" " alt="" coords="397,80,483,107"/>
-<area shape="rect" href="../../df/d77/gdt_8hpp.html" title="The Global Descriptor Table (GDT) is specific to the IA32 architecture. It contains entries telling t..." alt="" coords="433,155,503,181"/>
-<area shape="rect" href="../../dd/d12/idt_8hpp.html" title="Interrupt Descriptor Table header." alt="" coords="43,155,109,181"/>
-<area shape="rect" href="../../d4/ddc/isr_8hpp.html" title="Interrupt Service Routine header." alt="" coords="235,155,301,181"/>
-<area shape="rect" href="../../d8/d9f/ports_8hpp.html" title="Ports header file. Provides inline functions for getting and setting values at different ports...." alt="" coords="325,155,408,181"/>
-<area shape="rect" href="../../df/d05/timer_8hpp.html" title=" " alt="" coords="622,155,706,181"/>
-<area shape="rect" href="../../d2/d59/tss_8hpp.html" title=" " alt="" coords="528,155,597,181"/>
-<area shape="rect" href="../../d7/de6/gdt_8cpp.html" title="The Global Descriptor Table (GDT) is specific to the IA32 architecture. It contains entries telling t..." alt="" coords="534,229,605,256"/>
-<area shape="rect" href="../../d9/d87/idt_8cpp.html" title=" " alt="" coords="5,229,72,256"/>
-<area shape="rect" href="../../d3/d68/isr_8cpp.html" title=" " alt="" coords="96,229,160,256"/>
-<area shape="rect" href="../../dc/de5/timer_8cpp.html" title="Programmable Interrupt Timer driver functions." alt="" coords="427,229,509,256"/>
-<area shape="rect" href="../../d7/d27/ports_8cpp.html" title="CPU port access functions." alt="" coords="320,229,403,256"/>
-<area shape="rect" href="../../da/da5/spkr_8cpp.html" title=" " alt="" coords="737,229,813,256"/>
-<area shape="rect" href="../../d5/d9d/tasks_8cpp.html" title=" " alt="" coords="629,229,713,256"/>
+<area shape="rect" title="i686 control register definitions. C &amp; C++ compatible header." alt="" coords="731,5,809,32"/>
+<area shape="rect" href="../../d4/dc9/_arch_8i686_8cpp.html" title="i686 architecture implementation of Arch.hpp" alt="" coords="424,229,535,256"/>
+<area shape="rect" href="../../d7/dcf/_arch_8i686_8hpp.html" title="i686 architecture implementation of Arch.hpp" alt="" coords="432,80,543,107"/>
+<area shape="rect" href="../../d9/d87/idt_8cpp.html" title=" " alt="" coords="807,229,874,256"/>
+<area shape="rect" href="../../d7/d03/_interrupts_8h.html" title="Interrupt/Exception stub functions and handlers." alt="" coords="721,80,819,107"/>
+<area shape="rect" href="../../dc/d20/stivale2_8c.html" title=" " alt="" coords="894,80,979,107"/>
+<area shape="rect" href="../../df/d77/gdt_8hpp.html" title="The Global Descriptor Table (GDT) is specific to the IA32 architecture. It contains entries telling t..." alt="" coords="308,155,379,181"/>
+<area shape="rect" href="../../dd/d12/idt_8hpp.html" title="Interrupt Descriptor Table header." alt="" coords="702,155,769,181"/>
+<area shape="rect" href="../../d4/ddc/isr_8hpp.html" title="Interrupt Service Routine header." alt="" coords="455,155,520,181"/>
+<area shape="rect" href="../../d8/d9f/ports_8hpp.html" title="Ports header file. Provides inline functions for getting and setting values at different ports...." alt="" coords="545,155,627,181"/>
+<area shape="rect" href="../../df/d05/timer_8hpp.html" title=" " alt="" coords="105,155,189,181"/>
+<area shape="rect" href="../../d2/d59/tss_8hpp.html" title=" " alt="" coords="214,155,283,181"/>
+<area shape="rect" href="../../d7/de6/gdt_8cpp.html" title="The Global Descriptor Table (GDT) is specific to the IA32 architecture." alt="" coords="321,229,392,256"/>
+<area shape="rect" href="../../d3/d68/isr_8cpp.html" title=" " alt="" coords="703,229,767,256"/>
+<area shape="rect" href="../../dc/de5/timer_8cpp.html" title="Programmable Interrupt Timer driver functions." alt="" coords="214,229,297,256"/>
+<area shape="rect" href="../../d7/d27/ports_8cpp.html" title="CPU port access functions." alt="" coords="559,229,642,256"/>
+<area shape="rect" href="../../da/da5/spkr_8cpp.html" title=" " alt="" coords="5,229,81,256"/>
+<area shape="rect" href="../../d5/d9d/tasks_8cpp.html" title=" " alt="" coords="105,229,189,256"/>
 </map>
 </div>
 </div>
@@ -143,11 +145,94 @@ Data Structures</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d5d/struct_c_r3.html">CR3</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d6a/struct_i_d_t_r.html">IDTR</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d33/struct_g_d_t_r.html">GDTR</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a6fcb01ccdc55519a680bfcaf484894b6"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="../../df/d94/structregisters.html">registers</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dfb/regs_8hpp.html#a6fcb01ccdc55519a680bfcaf484894b6">__attribute__</a> ((packed))</td></tr>
+<tr class="separator:a6fcb01ccdc55519a680bfcaf484894b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a66bb75d0222f92ec198058bfaee6e9a8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dfb/regs_8hpp.html#a66bb75d0222f92ec198058bfaee6e9a8">__attribute__</a> ((always_inline)) static inline struct <a class="el" href="../../dd/dc6/struct_c_r0.html">CR0</a> readCR0(void)</td></tr>
 <tr class="separator:a66bb75d0222f92ec198058bfaee6e9a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a6fe20edd854a1a653ae71ccf541a6b8b"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dfb/regs_8hpp.html#a6fe20edd854a1a653ae71ccf541a6b8b">ds</a></td></tr>
+<tr class="separator:a6fe20edd854a1a653ae71ccf541a6b8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36ffab8d34c6c411a7e5205ddb95eaf9"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dfb/regs_8hpp.html#a36ffab8d34c6c411a7e5205ddb95eaf9">edi</a></td></tr>
+<tr class="separator:a36ffab8d34c6c411a7e5205ddb95eaf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada78e3124de6adf5a5d212f9ebc4bbe0"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dfb/regs_8hpp.html#ada78e3124de6adf5a5d212f9ebc4bbe0">esi</a></td></tr>
+<tr class="separator:ada78e3124de6adf5a5d212f9ebc4bbe0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaba2ad0ff8ba480934feabfdab02b1e7"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dfb/regs_8hpp.html#aaba2ad0ff8ba480934feabfdab02b1e7">ebp</a></td></tr>
+<tr class="separator:aaba2ad0ff8ba480934feabfdab02b1e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaecb651207254463d57b82a269bf257a"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dfb/regs_8hpp.html#aaecb651207254463d57b82a269bf257a">ignored</a></td></tr>
+<tr class="separator:aaecb651207254463d57b82a269bf257a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7c1e3339e4dead200cab41010e9127c"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dfb/regs_8hpp.html#ae7c1e3339e4dead200cab41010e9127c">ebx</a></td></tr>
+<tr class="separator:ae7c1e3339e4dead200cab41010e9127c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6db045cebe7b4cf979120dccdee0d01"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dfb/regs_8hpp.html#ae6db045cebe7b4cf979120dccdee0d01">edx</a></td></tr>
+<tr class="separator:ae6db045cebe7b4cf979120dccdee0d01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2b16bef95c844028dd145264d1d3875"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dfb/regs_8hpp.html#af2b16bef95c844028dd145264d1d3875">ecx</a></td></tr>
+<tr class="separator:af2b16bef95c844028dd145264d1d3875"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93d929ad1fc57af9d4f1793c361fb4f2"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dfb/regs_8hpp.html#a93d929ad1fc57af9d4f1793c361fb4f2">eax</a></td></tr>
+<tr class="separator:a93d929ad1fc57af9d4f1793c361fb4f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae2424c1156912b596d0431811fecd99"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dfb/regs_8hpp.html#aae2424c1156912b596d0431811fecd99">int_num</a></td></tr>
+<tr class="separator:aae2424c1156912b596d0431811fecd99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20d3d7867d5207a846cf598532ca353f"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dfb/regs_8hpp.html#a20d3d7867d5207a846cf598532ca353f">err_code</a></td></tr>
+<tr class="separator:a20d3d7867d5207a846cf598532ca353f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1588906901fc3015e0865574669a56a6"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dfb/regs_8hpp.html#a1588906901fc3015e0865574669a56a6">eip</a></td></tr>
+<tr class="separator:a1588906901fc3015e0865574669a56a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8519dc239502dfcbac171b3128dc7054"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dfb/regs_8hpp.html#a8519dc239502dfcbac171b3128dc7054">cs</a></td></tr>
+<tr class="separator:a8519dc239502dfcbac171b3128dc7054"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeedfc39703ec8e0a1f052a832e74acd3"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dfb/regs_8hpp.html#aeedfc39703ec8e0a1f052a832e74acd3">eflags</a></td></tr>
+<tr class="separator:aeedfc39703ec8e0a1f052a832e74acd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7534a179bc9cc0ef26f0468e0959ee5c"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dfb/regs_8hpp.html#a7534a179bc9cc0ef26f0468e0959ee5c">esp</a></td></tr>
+<tr class="separator:a7534a179bc9cc0ef26f0468e0959ee5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c59346dd338708c94ca75cf21b78195"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dfb/regs_8hpp.html#a3c59346dd338708c94ca75cf21b78195">ss</a></td></tr>
+<tr class="separator:a3c59346dd338708c94ca75cf21b78195"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab43abceeab5f268de02fa6d393b38cb9"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dfb/regs_8hpp.html#ab43abceeab5f268de02fa6d393b38cb9">protectedMode</a></td></tr>
+<tr class="separator:ab43abceeab5f268de02fa6d393b38cb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa37c897ed9fd43911a1b8d34d8d0c454"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dfb/regs_8hpp.html#aa37c897ed9fd43911a1b8d34d8d0c454">monitorCoProcessor</a></td></tr>
+<tr class="separator:aa37c897ed9fd43911a1b8d34d8d0c454"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0dbdd8bfb610532de64d20b88d04ad91"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dfb/regs_8hpp.html#a0dbdd8bfb610532de64d20b88d04ad91">emulation</a></td></tr>
+<tr class="separator:a0dbdd8bfb610532de64d20b88d04ad91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a766101f4245bf14a667230ea9f3a4e7c"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dfb/regs_8hpp.html#a766101f4245bf14a667230ea9f3a4e7c">taskSwitched</a></td></tr>
+<tr class="separator:a766101f4245bf14a667230ea9f3a4e7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadd6f06404ed172b885b96dfce6c239f"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dfb/regs_8hpp.html#aadd6f06404ed172b885b96dfce6c239f">extensionType</a></td></tr>
+<tr class="separator:aadd6f06404ed172b885b96dfce6c239f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93ab2e04a4d8a2c4df6217696c0d146a"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dfb/regs_8hpp.html#a93ab2e04a4d8a2c4df6217696c0d146a">numericError</a></td></tr>
+<tr class="separator:a93ab2e04a4d8a2c4df6217696c0d146a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a683f7eb077f9eb30be5d6fbfc4cb63b1"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dfb/regs_8hpp.html#a683f7eb077f9eb30be5d6fbfc4cb63b1">reservedA</a></td></tr>
+<tr class="separator:a683f7eb077f9eb30be5d6fbfc4cb63b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17d3fa36389b14d037d0d0742bc73eb0"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dfb/regs_8hpp.html#a17d3fa36389b14d037d0d0742bc73eb0">writeProtection</a></td></tr>
+<tr class="separator:a17d3fa36389b14d037d0d0742bc73eb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1dc41c9df6bccdf9a0a6a64ea6039338"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dfb/regs_8hpp.html#a1dc41c9df6bccdf9a0a6a64ea6039338">reservedB</a></td></tr>
+<tr class="separator:a1dc41c9df6bccdf9a0a6a64ea6039338"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab58cca7b3d55b0e1ab77fa878db83cee"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dfb/regs_8hpp.html#ab58cca7b3d55b0e1ab77fa878db83cee">alignmentMask</a></td></tr>
+<tr class="separator:ab58cca7b3d55b0e1ab77fa878db83cee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a078db5c847cdda328a9e3d7e65ddc0c2"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dfb/regs_8hpp.html#a078db5c847cdda328a9e3d7e65ddc0c2">reservedC</a></td></tr>
+<tr class="separator:a078db5c847cdda328a9e3d7e65ddc0c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a468c398055529e9594446ac3562f5d66"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dfb/regs_8hpp.html#a468c398055529e9594446ac3562f5d66">nonWriteThrough</a></td></tr>
+<tr class="separator:a468c398055529e9594446ac3562f5d66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a553fc79f2ada362aeaff1f44d407d845"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dfb/regs_8hpp.html#a553fc79f2ada362aeaff1f44d407d845">cacheDisable</a></td></tr>
+<tr class="separator:a553fc79f2ada362aeaff1f44d407d845"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae81c6f8302488d94947a0d7b9a171de7"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dfb/regs_8hpp.html#ae81c6f8302488d94947a0d7b9a171de7">pagingEnable</a></td></tr>
+<tr class="separator:ae81c6f8302488d94947a0d7b9a171de7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3d8c16b9718381f611d032ef3980c99"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dfb/regs_8hpp.html#ad3d8c16b9718381f611d032ef3980c99">pageFaultAddr</a></td></tr>
+<tr class="separator:ad3d8c16b9718381f611d032ef3980c99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a7ae877e116757eee8692283aa2ef83"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dfb/regs_8hpp.html#a7a7ae877e116757eee8692283aa2ef83">ignoredA</a></td></tr>
+<tr class="separator:a7a7ae877e116757eee8692283aa2ef83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa0c4b3b31b4dc67cbd1a29045621bab"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dfb/regs_8hpp.html#afa0c4b3b31b4dc67cbd1a29045621bab">writeThrough</a></td></tr>
+<tr class="separator:afa0c4b3b31b4dc67cbd1a29045621bab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f97d8dd093250fd0bf705318977de6e"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dfb/regs_8hpp.html#a2f97d8dd093250fd0bf705318977de6e">ignoredB</a></td></tr>
+<tr class="separator:a2f97d8dd093250fd0bf705318977de6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a808403aae1f0c807990c200824bca621"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dfb/regs_8hpp.html#a808403aae1f0c807990c200824bca621">pageDir</a></td></tr>
+<tr class="separator:a808403aae1f0c807990c200824bca621"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaba88b24a21a6c70c895c0d55f4a69a0"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dfb/regs_8hpp.html#aaba88b24a21a6c70c895c0d55f4a69a0">size</a></td></tr>
+<tr class="separator:aaba88b24a21a6c70c895c0d55f4a69a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0523cedff47e2441fc198b7770ec5d3f"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dfb/regs_8hpp.html#a0523cedff47e2441fc198b7770ec5d3f">base</a></td></tr>
+<tr class="separator:a0523cedff47e2441fc198b7770ec5d3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>i686 control register definitions. C &amp; C++ compatible header. </p>
@@ -159,7 +244,7 @@ Functions</h2></td></tr>
 <p class="definition">Definition in file <a class="el" href="../../d8/dfb/regs_8hpp_source.html">regs.hpp</a>.</p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="a66bb75d0222f92ec198058bfaee6e9a8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a66bb75d0222f92ec198058bfaee6e9a8">&#9670;&nbsp;</a></span>__attribute__()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a66bb75d0222f92ec198058bfaee6e9a8">&#9670;&nbsp;</a></span>__attribute__() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -174,13 +259,624 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d8/dfb/regs_8hpp_source.html#l00062">62</a> of file <a class="el" href="../../d8/dfb/regs_8hpp_source.html">regs.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;{</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keyword">struct </span><a class="code" href="../../dd/dc6/struct_c_r0.html">CR0</a> x;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keyword">asm</span> <span class="keyword">volatile</span>(<span class="stringliteral">&quot;mov %%cr0, %0&quot;</span>: <span class="stringliteral">&quot;=r&quot;</span>(x));</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordflow">return</span> x;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../d8/dfb/regs_8hpp_source.html#l00083">83</a> of file <a class="el" href="../../d8/dfb/regs_8hpp_source.html">regs.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;{</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keyword">struct </span><a class="code" href="../../dd/dc6/struct_c_r0.html">CR0</a> x;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keyword">asm</span> <span class="keyword">volatile</span>(<span class="stringliteral">&quot;mov %%cr0, %0&quot;</span>: <span class="stringliteral">&quot;=r&quot;</span>(x));</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordflow">return</span> x;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;}</div>
 </div><!-- fragment -->
+</div>
+</div>
+<a id="a6fcb01ccdc55519a680bfcaf484894b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6fcb01ccdc55519a680bfcaf484894b6">&#9670;&nbsp;</a></span>__attribute__() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="../../da/d33/struct_g_d_t_r.html">GDTR</a> __attribute__ </td>
+          <td>(</td>
+          <td class="paramtype">(packed)&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="ab58cca7b3d55b0e1ab77fa878db83cee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab58cca7b3d55b0e1ab77fa878db83cee">&#9670;&nbsp;</a></span>alignmentMask</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t alignmentMask</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d8/dfb/regs_8hpp_source.html#l00011">11</a> of file <a class="el" href="../../d8/dfb/regs_8hpp_source.html">regs.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a0523cedff47e2441fc198b7770ec5d3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0523cedff47e2441fc198b7770ec5d3f">&#9670;&nbsp;</a></span>base</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t base</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d8/dfb/regs_8hpp_source.html#l00003">3</a> of file <a class="el" href="../../d8/dfb/regs_8hpp_source.html">regs.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a553fc79f2ada362aeaff1f44d407d845"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a553fc79f2ada362aeaff1f44d407d845">&#9670;&nbsp;</a></span>cacheDisable</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t cacheDisable</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d8/dfb/regs_8hpp_source.html#l00014">14</a> of file <a class="el" href="../../d8/dfb/regs_8hpp_source.html">regs.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a8519dc239502dfcbac171b3128dc7054"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8519dc239502dfcbac171b3128dc7054">&#9670;&nbsp;</a></span>cs</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t cs</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d8/dfb/regs_8hpp_source.html#l00005">5</a> of file <a class="el" href="../../d8/dfb/regs_8hpp_source.html">regs.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a6fe20edd854a1a653ae71ccf541a6b8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6fe20edd854a1a653ae71ccf541a6b8b">&#9670;&nbsp;</a></span>ds</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t ds</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d8/dfb/regs_8hpp_source.html#l00002">2</a> of file <a class="el" href="../../d8/dfb/regs_8hpp_source.html">regs.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a93d929ad1fc57af9d4f1793c361fb4f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93d929ad1fc57af9d4f1793c361fb4f2">&#9670;&nbsp;</a></span>eax</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t eax</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d8/dfb/regs_8hpp_source.html#l00003">3</a> of file <a class="el" href="../../d8/dfb/regs_8hpp_source.html">regs.hpp</a>.</p>
+
+</div>
+</div>
+<a id="aaba2ad0ff8ba480934feabfdab02b1e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaba2ad0ff8ba480934feabfdab02b1e7">&#9670;&nbsp;</a></span>ebp</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t ebp</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d8/dfb/regs_8hpp_source.html#l00003">3</a> of file <a class="el" href="../../d8/dfb/regs_8hpp_source.html">regs.hpp</a>.</p>
+
+</div>
+</div>
+<a id="ae7c1e3339e4dead200cab41010e9127c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7c1e3339e4dead200cab41010e9127c">&#9670;&nbsp;</a></span>ebx</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t ebx</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d8/dfb/regs_8hpp_source.html#l00003">3</a> of file <a class="el" href="../../d8/dfb/regs_8hpp_source.html">regs.hpp</a>.</p>
+
+</div>
+</div>
+<a id="af2b16bef95c844028dd145264d1d3875"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2b16bef95c844028dd145264d1d3875">&#9670;&nbsp;</a></span>ecx</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t ecx</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d8/dfb/regs_8hpp_source.html#l00003">3</a> of file <a class="el" href="../../d8/dfb/regs_8hpp_source.html">regs.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a36ffab8d34c6c411a7e5205ddb95eaf9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36ffab8d34c6c411a7e5205ddb95eaf9">&#9670;&nbsp;</a></span>edi</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t edi</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d8/dfb/regs_8hpp_source.html#l00003">3</a> of file <a class="el" href="../../d8/dfb/regs_8hpp_source.html">regs.hpp</a>.</p>
+
+</div>
+</div>
+<a id="ae6db045cebe7b4cf979120dccdee0d01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6db045cebe7b4cf979120dccdee0d01">&#9670;&nbsp;</a></span>edx</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t edx</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d8/dfb/regs_8hpp_source.html#l00003">3</a> of file <a class="el" href="../../d8/dfb/regs_8hpp_source.html">regs.hpp</a>.</p>
+
+</div>
+</div>
+<a id="aeedfc39703ec8e0a1f052a832e74acd3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeedfc39703ec8e0a1f052a832e74acd3">&#9670;&nbsp;</a></span>eflags</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t eflags</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d8/dfb/regs_8hpp_source.html#l00005">5</a> of file <a class="el" href="../../d8/dfb/regs_8hpp_source.html">regs.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a1588906901fc3015e0865574669a56a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1588906901fc3015e0865574669a56a6">&#9670;&nbsp;</a></span>eip</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t eip</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d8/dfb/regs_8hpp_source.html#l00005">5</a> of file <a class="el" href="../../d8/dfb/regs_8hpp_source.html">regs.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a0dbdd8bfb610532de64d20b88d04ad91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0dbdd8bfb610532de64d20b88d04ad91">&#9670;&nbsp;</a></span>emulation</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t emulation</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d8/dfb/regs_8hpp_source.html#l00004">4</a> of file <a class="el" href="../../d8/dfb/regs_8hpp_source.html">regs.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a20d3d7867d5207a846cf598532ca353f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20d3d7867d5207a846cf598532ca353f">&#9670;&nbsp;</a></span>err_code</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t err_code</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d8/dfb/regs_8hpp_source.html#l00004">4</a> of file <a class="el" href="../../d8/dfb/regs_8hpp_source.html">regs.hpp</a>.</p>
+
+</div>
+</div>
+<a id="ada78e3124de6adf5a5d212f9ebc4bbe0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada78e3124de6adf5a5d212f9ebc4bbe0">&#9670;&nbsp;</a></span>esi</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t esi</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d8/dfb/regs_8hpp_source.html#l00003">3</a> of file <a class="el" href="../../d8/dfb/regs_8hpp_source.html">regs.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a7534a179bc9cc0ef26f0468e0959ee5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7534a179bc9cc0ef26f0468e0959ee5c">&#9670;&nbsp;</a></span>esp</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t esp</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d8/dfb/regs_8hpp_source.html#l00005">5</a> of file <a class="el" href="../../d8/dfb/regs_8hpp_source.html">regs.hpp</a>.</p>
+
+</div>
+</div>
+<a id="aadd6f06404ed172b885b96dfce6c239f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aadd6f06404ed172b885b96dfce6c239f">&#9670;&nbsp;</a></span>extensionType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t extensionType</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d8/dfb/regs_8hpp_source.html#l00006">6</a> of file <a class="el" href="../../d8/dfb/regs_8hpp_source.html">regs.hpp</a>.</p>
+
+</div>
+</div>
+<a id="aaecb651207254463d57b82a269bf257a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaecb651207254463d57b82a269bf257a">&#9670;&nbsp;</a></span>ignored</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t ignored</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d8/dfb/regs_8hpp_source.html#l00003">3</a> of file <a class="el" href="../../d8/dfb/regs_8hpp_source.html">regs.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a7a7ae877e116757eee8692283aa2ef83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a7ae877e116757eee8692283aa2ef83">&#9670;&nbsp;</a></span>ignoredA</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t ignoredA</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d8/dfb/regs_8hpp_source.html#l00002">2</a> of file <a class="el" href="../../d8/dfb/regs_8hpp_source.html">regs.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a2f97d8dd093250fd0bf705318977de6e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f97d8dd093250fd0bf705318977de6e">&#9670;&nbsp;</a></span>ignoredB</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t ignoredB</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d8/dfb/regs_8hpp_source.html#l00005">5</a> of file <a class="el" href="../../d8/dfb/regs_8hpp_source.html">regs.hpp</a>.</p>
+
+</div>
+</div>
+<a id="aae2424c1156912b596d0431811fecd99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae2424c1156912b596d0431811fecd99">&#9670;&nbsp;</a></span>int_num</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t int_num</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d8/dfb/regs_8hpp_source.html#l00004">4</a> of file <a class="el" href="../../d8/dfb/regs_8hpp_source.html">regs.hpp</a>.</p>
+
+</div>
+</div>
+<a id="aa37c897ed9fd43911a1b8d34d8d0c454"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa37c897ed9fd43911a1b8d34d8d0c454">&#9670;&nbsp;</a></span>monitorCoProcessor</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t monitorCoProcessor</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d8/dfb/regs_8hpp_source.html#l00003">3</a> of file <a class="el" href="../../d8/dfb/regs_8hpp_source.html">regs.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a468c398055529e9594446ac3562f5d66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a468c398055529e9594446ac3562f5d66">&#9670;&nbsp;</a></span>nonWriteThrough</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t nonWriteThrough</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d8/dfb/regs_8hpp_source.html#l00013">13</a> of file <a class="el" href="../../d8/dfb/regs_8hpp_source.html">regs.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a93ab2e04a4d8a2c4df6217696c0d146a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93ab2e04a4d8a2c4df6217696c0d146a">&#9670;&nbsp;</a></span>numericError</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t numericError</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d8/dfb/regs_8hpp_source.html#l00007">7</a> of file <a class="el" href="../../d8/dfb/regs_8hpp_source.html">regs.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a808403aae1f0c807990c200824bca621"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a808403aae1f0c807990c200824bca621">&#9670;&nbsp;</a></span>pageDir</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t pageDir</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d8/dfb/regs_8hpp_source.html#l00006">6</a> of file <a class="el" href="../../d8/dfb/regs_8hpp_source.html">regs.hpp</a>.</p>
+
+</div>
+</div>
+<a id="ad3d8c16b9718381f611d032ef3980c99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3d8c16b9718381f611d032ef3980c99">&#9670;&nbsp;</a></span>pageFaultAddr</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t pageFaultAddr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d8/dfb/regs_8hpp_source.html#l00002">2</a> of file <a class="el" href="../../d8/dfb/regs_8hpp_source.html">regs.hpp</a>.</p>
+
+</div>
+</div>
+<a id="ae81c6f8302488d94947a0d7b9a171de7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae81c6f8302488d94947a0d7b9a171de7">&#9670;&nbsp;</a></span>pagingEnable</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t pagingEnable</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d8/dfb/regs_8hpp_source.html#l00015">15</a> of file <a class="el" href="../../d8/dfb/regs_8hpp_source.html">regs.hpp</a>.</p>
+
+</div>
+</div>
+<a id="ab43abceeab5f268de02fa6d393b38cb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab43abceeab5f268de02fa6d393b38cb9">&#9670;&nbsp;</a></span>protectedMode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t protectedMode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d8/dfb/regs_8hpp_source.html#l00002">2</a> of file <a class="el" href="../../d8/dfb/regs_8hpp_source.html">regs.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a683f7eb077f9eb30be5d6fbfc4cb63b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a683f7eb077f9eb30be5d6fbfc4cb63b1">&#9670;&nbsp;</a></span>reservedA</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t reservedA</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d8/dfb/regs_8hpp_source.html#l00008">8</a> of file <a class="el" href="../../d8/dfb/regs_8hpp_source.html">regs.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a1dc41c9df6bccdf9a0a6a64ea6039338"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1dc41c9df6bccdf9a0a6a64ea6039338">&#9670;&nbsp;</a></span>reservedB</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t reservedB</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d8/dfb/regs_8hpp_source.html#l00010">10</a> of file <a class="el" href="../../d8/dfb/regs_8hpp_source.html">regs.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a078db5c847cdda328a9e3d7e65ddc0c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a078db5c847cdda328a9e3d7e65ddc0c2">&#9670;&nbsp;</a></span>reservedC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t reservedC</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d8/dfb/regs_8hpp_source.html#l00012">12</a> of file <a class="el" href="../../d8/dfb/regs_8hpp_source.html">regs.hpp</a>.</p>
+
+</div>
+</div>
+<a id="aaba88b24a21a6c70c895c0d55f4a69a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaba88b24a21a6c70c895c0d55f4a69a0">&#9670;&nbsp;</a></span>size</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t size</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d8/dfb/regs_8hpp_source.html#l00002">2</a> of file <a class="el" href="../../d8/dfb/regs_8hpp_source.html">regs.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a3c59346dd338708c94ca75cf21b78195"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c59346dd338708c94ca75cf21b78195">&#9670;&nbsp;</a></span>ss</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t ss</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d8/dfb/regs_8hpp_source.html#l00005">5</a> of file <a class="el" href="../../d8/dfb/regs_8hpp_source.html">regs.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a766101f4245bf14a667230ea9f3a4e7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a766101f4245bf14a667230ea9f3a4e7c">&#9670;&nbsp;</a></span>taskSwitched</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t taskSwitched</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d8/dfb/regs_8hpp_source.html#l00005">5</a> of file <a class="el" href="../../d8/dfb/regs_8hpp_source.html">regs.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a17d3fa36389b14d037d0d0742bc73eb0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17d3fa36389b14d037d0d0742bc73eb0">&#9670;&nbsp;</a></span>writeProtection</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t writeProtection</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d8/dfb/regs_8hpp_source.html#l00009">9</a> of file <a class="el" href="../../d8/dfb/regs_8hpp_source.html">regs.hpp</a>.</p>
+
+</div>
+</div>
+<a id="afa0c4b3b31b4dc67cbd1a29045621bab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa0c4b3b31b4dc67cbd1a29045621bab">&#9670;&nbsp;</a></span>writeThrough</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t writeThrough</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d8/dfb/regs_8hpp_source.html#l00003">3</a> of file <a class="el" href="../../d8/dfb/regs_8hpp_source.html">regs.hpp</a>.</p>
+
 </div>
 </div>
 </div><!-- contents -->

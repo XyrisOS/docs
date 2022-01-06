@@ -1,9 +1,10 @@
 <map id="tss.hpp" name="tss.hpp">
-<area shape="rect" id="node1" title=" " alt="" coords="342,5,411,32"/>
-<area shape="rect" id="node2" href="$d7/dcf/_arch_8i686_8hpp.html" title="i686 architecture implementation of Arch.hpp" alt="" coords="226,80,402,107"/>
-<area shape="rect" id="node4" title=" " alt="" coords="284,229,355,256"/>
-<area shape="rect" id="node3" href="$d8/dfb/regs_8hpp.html" title="i686 control register definitions. C &amp; C++ compatible header." alt="" coords="5,155,148,181"/>
-<area shape="rect" id="node6" href="$d8/d9f/ports_8hpp.html" title="Ports header file. Provides inline functions for getting and setting values at different ports...." alt="" coords="328,155,476,181"/>
-<area shape="rect" id="node7" href="$d4/ddc/isr_8hpp.html" title="Interrupt Service Routine header." alt="" coords="173,155,303,181"/>
-<area shape="rect" id="node5" title=" " alt="" coords="39,229,114,256"/>
+<area shape="rect" id="node1" title=" " alt="" coords="478,5,547,32"/>
+<area shape="rect" id="node2" href="$d7/dcf/_arch_8i686_8hpp.html" title="i686 architecture implementation of Arch.hpp" alt="" coords="229,87,405,114"/>
+<area shape="rect" id="node4" title=" " alt="" coords="375,244,445,271"/>
+<area shape="rect" id="node8" href="$db/dc9/_flush_8h.html" title="Header for assembly functions defined in flush.s." alt="" coords="551,80,701,121"/>
+<area shape="rect" id="node3" href="$d8/dfb/regs_8hpp.html" title="i686 control register definitions. C &amp; C++ compatible header." alt="" coords="5,169,148,196"/>
+<area shape="rect" id="node6" href="$d8/d9f/ports_8hpp.html" title="Ports header file. Provides inline functions for getting and setting values at different ports...." alt="" coords="172,169,320,196"/>
+<area shape="rect" id="node7" href="$d4/ddc/isr_8hpp.html" title="Interrupt Service Routine header." alt="" coords="345,169,475,196"/>
+<area shape="rect" id="node5" title=" " alt="" coords="39,244,114,271"/>
 </map>

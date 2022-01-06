@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['registers_877',['registers',['../df/d94/structregisters.html',1,'']]],
-  ['ringbuffer_878',['RingBuffer',['../d4/d8f/class_ring_buffer.html',1,'']]]
+  ['offset_886',['Offset',['../d9/dbd/union_i_d_t_1_1_offset.html',1,'IDT']]],
+  ['offsetsections_887',['OffsetSections',['../d7/da3/struct_i_d_t_1_1_offset_1_1_offset_sections.html',1,'IDT::Offset']]]
 ];

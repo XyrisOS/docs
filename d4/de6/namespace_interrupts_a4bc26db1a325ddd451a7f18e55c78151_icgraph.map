@@ -1,0 +1,7 @@
+<map id="Interrupts::registerHandler" name="Interrupts::registerHandler">
+<area shape="rect" id="node1" title=" " alt="" coords="308,56,503,83"/>
+<area shape="rect" id="node2" href="$db/de6/namespace_r_t_c.html#af746e6ba38c234affd66f9d86223ae89" title="Initializes the Real Time Clock driver for the x86_64 architecture." alt="" coords="177,5,251,32"/>
+<area shape="rect" id="node3" href="$d7/d75/namespace_r_s232.html#acbd0855fa0862424053ed439eb77e6b3" title="Activates the RS232 serial driver." alt="" coords="168,56,260,83"/>
+<area shape="rect" id="node4" href="$df/d05/timer_8hpp.html#afe097e48aba5e0fc040df42695ab6b5b" title="Initialize the CPU timer with the given frequency." alt="" coords="171,107,257,133"/>
+<area shape="rect" id="node5" href="$d9/d7a/namespace_arch_1_1_c_p_u.html#a56d04c0a3e1b9d49d69c5d8d33875731" title=" " alt="" coords="5,107,120,133"/>
+</map>

@@ -1,7 +1,8 @@
 var idt_8cpp =
 [
-    [ "idt_set_gate", "d9/d87/idt_8cpp.html#ac026ee8412818db472b59fa2fad922fe", null ],
-    [ "load_idt", "d9/d87/idt_8cpp.html#aacb15cc09678bbe5e09fb652c56e884e", null ],
-    [ "idt", "d9/d87/idt_8cpp.html#ad133438f7cd1f36a17e9d0a2524c4b23", null ],
-    [ "idt_reg", "d9/d87/idt_8cpp.html#aa80371998c7f7d27c1846fe165908823", null ]
+    [ "ARCH_IDT_MAX_ENTRIES", "d9/d87/idt_8cpp.html#a69bf5356e2f51da2b52df5c67de007e7", null ],
+    [ "init", "d9/d87/idt_8cpp.html#afc0b0ef5ee4c115b7ab32e60d22b85bc", null ],
+    [ "setGate", "d9/d87/idt_8cpp.html#ad1b56298bd7894140cecb81c4e788176", null ],
+    [ "idt", "d9/d87/idt_8cpp.html#a1471397fe0e79ed6e87c408c89eca9f8", null ],
+    [ "idtr", "d9/d87/idt_8cpp.html#a679e209e5595ee3790c1958a83702e08", null ]
 ];

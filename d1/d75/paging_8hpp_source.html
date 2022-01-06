@@ -120,7 +120,7 @@ $(document).ready(function(){initNavTree('d1/d75/paging_8hpp_source.html','../..
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment"> * @param size Page size in bytes</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment"> * @return void* Page memory address</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keywordtype">void</span>* <a class="code" href="../../db/d2f/namespace_memory.html#ab679821559b51954042eb0715edd518f">newPage</a>(<span class="keywordtype">size_t</span> size);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keywordtype">void</span>* <a class="code" href="../../db/d2f/namespace_memory.html#ab679821559b51954042eb0715edd518f">newPage</a>(<span class="keywordtype">size_t</span> <a class="code" href="../../d8/dfb/regs_8hpp.html#aaba88b24a21a6c70c895c0d55f4a69a0">size</a>);</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">/**</span></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment"> * @brief Frees pages starting at a given page address.</span></div>
@@ -128,7 +128,7 @@ $(document).ready(function(){initNavTree('d1/d75/paging_8hpp_source.html','../..
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment"> * @param page Starting location of page(s) to be freed</span></div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment"> * @param size Number of bytes to be freed</span></div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../db/d2f/namespace_memory.html#a0924bf22fbd1767a53bf262b3b7a6426">freePage</a>(<span class="keywordtype">void</span>* page, <span class="keywordtype">size_t</span> size);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../db/d2f/namespace_memory.html#a0924bf22fbd1767a53bf262b3b7a6426">freePage</a>(<span class="keywordtype">void</span>* page, <span class="keywordtype">size_t</span> <a class="code" href="../../d8/dfb/regs_8hpp.html#aaba88b24a21a6c70c895c0d55f4a69a0">size</a>);</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment">/**</span></div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment"> * @brief Checks whether an address is mapped into memory.</span></div>
@@ -171,6 +171,7 @@ $(document).ready(function(){initNavTree('d1/d75/paging_8hpp_source.html','../..
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;} <span class="comment">// !namespace Paging</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="aregs_8hpp_html_aaba88b24a21a6c70c895c0d55f4a69a0"><div class="ttname"><a href="../../d8/dfb/regs_8hpp.html#aaba88b24a21a6c70c895c0d55f4a69a0">size</a></div><div class="ttdeci">uint16_t size</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dfb/regs_8hpp_source.html#l00002">regs.hpp:2</a></div></div>
 <div class="ttc" id="anamespace_memory_html"><div class="ttname"><a href="../../db/d2f/namespace_memory.html">Memory</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dc1/_memory_map_8hpp_source.html#l00015">MemoryMap.hpp:15</a></div></div>
 <div class="ttc" id="anamespace_memory_html_a314238689c58e6a280017f389b640c29"><div class="ttname"><a href="../../db/d2f/namespace_memory.html#a314238689c58e6a280017f389b640c29">Memory::mapKernelPage</a></div><div class="ttdeci">void mapKernelPage(Arch::Memory::Address vaddr, Arch::Memory::Address paddr)</div><div class="ttdoc">Map a page into the kernel address space.</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d5e/paging_8cpp_source.html#l00146">paging.cpp:146</a></div></div>
 <div class="ttc" id="anamespace_memory_html_a1662bc00ccf6e1987a9843dae05876af"><div class="ttname"><a href="../../db/d2f/namespace_memory.html#a1662bc00ccf6e1987a9843dae05876af">Memory::init</a></div><div class="ttdeci">void init(MemoryMap *map)</div><div class="ttdoc">Sets up the environment, page directories etc and enables paging.</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d5e/paging_8cpp_source.html#l00056">paging.cpp:56</a></div></div>

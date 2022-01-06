@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['frame_861',['Frame',['../d5/d15/struct_frame.html',1,'']]],
-  ['framebuffer_862',['Framebuffer',['../d0/dcb/class_graphics_1_1_framebuffer.html',1,'Graphics']]]
+  ['entry_870',['Entry',['../db/d78/struct_g_d_t_1_1_entry.html',1,'GDT']]]
 ];

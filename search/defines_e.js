@@ -1,24 +1,12 @@
 var searchData=
 [
-  ['repo_5furl_1694',['REPO_URL',['../db/df8/defines_8hpp.html#a48dbeb83837dd1fe90b3bf1d004f5a8a',1,'defines.hpp']]],
-  ['rs_5f232_5fcom1_1695',['RS_232_COM1',['../db/d90/rs232_8hpp.html#ae025cfd96aece589c9882a20e88ec1fa',1,'rs232.hpp']]],
-  ['rs_5f232_5fcom1_5firq_1696',['RS_232_COM1_IRQ',['../d4/dc7/rs232_8cpp.html#a4bf1fea207823c2e74e774193e5179e7',1,'rs232.cpp']]],
-  ['rs_5f232_5fcom2_1697',['RS_232_COM2',['../db/d90/rs232_8hpp.html#aaf2846e926bdb15a8344bbc995bd6236',1,'rs232.hpp']]],
-  ['rs_5f232_5fcom2_5firq_1698',['RS_232_COM2_IRQ',['../d4/dc7/rs232_8cpp.html#ae7f3728c9a84ecea2af4784d21c8722f',1,'rs232.cpp']]],
-  ['rs_5f232_5fcom3_1699',['RS_232_COM3',['../db/d90/rs232_8hpp.html#af891c972d49e28b901823ac70193d380',1,'rs232.hpp']]],
-  ['rs_5f232_5fcom3_5firq_1700',['RS_232_COM3_IRQ',['../d4/dc7/rs232_8cpp.html#af430bb1f9688047c1958ef5fe7cdb100',1,'rs232.cpp']]],
-  ['rs_5f232_5fcom4_1701',['RS_232_COM4',['../db/d90/rs232_8hpp.html#a2b412ba345f64ee456c0c58c59e3584b',1,'rs232.hpp']]],
-  ['rs_5f232_5fcom4_5firq_1702',['RS_232_COM4_IRQ',['../d4/dc7/rs232_8cpp.html#ab3c5e482c20bc20c5cf916c31917b157',1,'rs232.cpp']]],
-  ['rs_5f232_5fdata_5freg_1703',['RS_232_DATA_REG',['../d4/dc7/rs232_8cpp.html#a0b052c5493a0be0900ea6444428e588a',1,'rs232.cpp']]],
-  ['rs_5f232_5finterrupt_5fenable_5freg_1704',['RS_232_INTERRUPT_ENABLE_REG',['../d4/dc7/rs232_8cpp.html#a6bfe1d5b7906904e6802456e543f56dc',1,'rs232.cpp']]],
-  ['rs_5f232_5finterrupt_5fidentification_5freg_1705',['RS_232_INTERRUPT_IDENTIFICATION_REG',['../d4/dc7/rs232_8cpp.html#adf67b06877cbe27a2c3d5f930f8c5773',1,'rs232.cpp']]],
-  ['rs_5f232_5fline_5fcontrol_5freg_1706',['RS_232_LINE_CONTROL_REG',['../d4/dc7/rs232_8cpp.html#a2439f73c0dc9129c02f5b88a828c253b',1,'rs232.cpp']]],
-  ['rs_5f232_5fline_5fstatus_5freg_1707',['RS_232_LINE_STATUS_REG',['../d4/dc7/rs232_8cpp.html#a328aed7c3e9c133e4299e73a4cf9a4e3',1,'rs232.cpp']]],
-  ['rs_5f232_5fmodem_5fcontrol_5freg_1708',['RS_232_MODEM_CONTROL_REG',['../d4/dc7/rs232_8cpp.html#adcbdb5851e8e982b2dbd0127cf05f2a9',1,'rs232.cpp']]],
-  ['rs_5f232_5fmodem_5fstatus_5freg_1709',['RS_232_MODEM_STATUS_REG',['../d4/dc7/rs232_8cpp.html#add25047fbda3005bceb6f1174d125b49',1,'rs232.cpp']]],
-  ['rs_5f232_5fscratch_5freg_1710',['RS_232_SCRATCH_REG',['../d4/dc7/rs232_8cpp.html#ad03d5e164888d0ca4fbb3a26c038b967',1,'rs232.cpp']]],
-  ['rtc_5fcmos_5fport_1711',['RTC_CMOS_PORT',['../dd/d82/rtc_8cpp.html#ae5b74354abd267ee8b9f4d13d79e0b1c',1,'rtc.cpp']]],
-  ['rtc_5fcurrent_5fcentury_1712',['RTC_CURRENT_CENTURY',['../dd/d82/rtc_8cpp.html#adb5af1ca66051d862f1e75b5cc4b0b7b',1,'rtc.cpp']]],
-  ['rtc_5fcurrent_5fyear_1713',['RTC_CURRENT_YEAR',['../dd/d82/rtc_8cpp.html#a7ed6cabd4d807177316a7c3e1fabe2c2',1,'rtc.cpp']]],
-  ['rtc_5fdata_5fport_1714',['RTC_DATA_PORT',['../dd/d82/rtc_8cpp.html#aad87f77238d8ebc9250bb5cb789206df',1,'rtc.cpp']]]
+  ['tab_5fwidth_1749',['TAB_WIDTH',['../d9/dda/console_8cpp.html#a49426d7a9b562958ad2ab7fbf134f368',1,'console.cpp']]],
+  ['task_5faction_1750',['TASK_ACTION',['../d5/d9d/tasks_8cpp.html#a525bc038ba8fbd7178e3b3d20f866af0',1,'tasks.cpp']]],
+  ['task_5fonly_1751',['TASK_ONLY',['../d2/dbd/tasks_8hpp.html#a5dc14e36eb87557e7c264d8596f37b55',1,'tasks.hpp']]],
+  ['time_5fslice_5fsize_1752',['TIME_SLICE_SIZE',['../d2/dbd/tasks_8hpp.html#ab3c4cf018b280f12e3726184a945728c',1,'tasks.hpp']]],
+  ['timer_5fcommand_5fport_1753',['TIMER_COMMAND_PORT',['../df/d05/timer_8hpp.html#abbc68cc890d6df8ae88e338b5cf1f1cb',1,'timer.hpp']]],
+  ['timer_5fdata_5fport_1754',['TIMER_DATA_PORT',['../df/d05/timer_8hpp.html#aed1aab994ad876be2344591496ac2cd6',1,'timer.hpp']]],
+  ['tty_5fheight_1755',['TTY_HEIGHT',['../dd/dad/_early_panic_8cpp.html#a316aa9eb7f8ac1ee5b9131ed887fb4a2',1,'EarlyPanic.cpp']]],
+  ['tty_5fwidth_1756',['TTY_WIDTH',['../dd/dad/_early_panic_8cpp.html#af42ee541fd72035283e0e1ffbbe0cdbd',1,'EarlyPanic.cpp']]],
+  ['type_5fwidth_1757',['TYPE_WIDTH',['../d4/d64/printf_8cpp.html#af4c03720817be7631cd23ca7aae64852',1,'printf.cpp']]]
 ];

@@ -101,14 +101,14 @@ $(document).ready(function(){initNavTree('d1/dd1/cxx_8cpp_source.html','../../')
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="../../da/d45/heap_8hpp.html">Memory/heap.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="../../d1/dd1/cxx_8cpp.html#a205ed048fdf5259c2e8e0cb60ee8f719">   15</a></span>&#160;<span class="keywordtype">void</span>* <span class="keyword">operator</span> <span class="keyword">new</span>(<span class="keywordtype">size_t</span> size)</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="../../d1/dd1/cxx_8cpp.html#a205ed048fdf5259c2e8e0cb60ee8f719">   15</a></span>&#160;<span class="keywordtype">void</span>* <span class="keyword">operator</span> <span class="keyword">new</span>(<span class="keywordtype">size_t</span> <a class="code" href="../../d8/dfb/regs_8hpp.html#aaba88b24a21a6c70c895c0d55f4a69a0">size</a>)</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../da/d45/heap_8hpp.html#a1c8580582aae58105f16108d4ec89e9a">malloc</a>(size);</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../da/d45/heap_8hpp.html#a1c8580582aae58105f16108d4ec89e9a">malloc</a>(<a class="code" href="../../d8/dfb/regs_8hpp.html#aaba88b24a21a6c70c895c0d55f4a69a0">size</a>);</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;}</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="../../d1/dd1/cxx_8cpp.html#a63ce4f64887b9307317aee5baae6b18f">   20</a></span>&#160;<span class="keywordtype">void</span>* <span class="keyword">operator</span> <span class="keyword">new</span>[](<span class="keywordtype">size_t</span> size)</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="../../d1/dd1/cxx_8cpp.html#a63ce4f64887b9307317aee5baae6b18f">   20</a></span>&#160;<span class="keywordtype">void</span>* <span class="keyword">operator</span> <span class="keyword">new</span>[](<span class="keywordtype">size_t</span> <a class="code" href="../../d8/dfb/regs_8hpp.html#aaba88b24a21a6c70c895c0d55f4a69a0">size</a>)</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../da/d45/heap_8hpp.html#a1c8580582aae58105f16108d4ec89e9a">malloc</a>(size);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../da/d45/heap_8hpp.html#a1c8580582aae58105f16108d4ec89e9a">malloc</a>(<a class="code" href="../../d8/dfb/regs_8hpp.html#aaba88b24a21a6c70c895c0d55f4a69a0">size</a>);</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;}</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
 <div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="../../d1/dd1/cxx_8cpp.html#a86107594327f3a001230df9802cd4422">   25</a></span>&#160;<span class="keywordtype">void</span> <span class="keyword">operator</span> <span class="keyword">delete</span>(<span class="keywordtype">void</span>* p)</div>
@@ -132,6 +132,7 @@ $(document).ready(function(){initNavTree('d1/dd1/cxx_8cpp_source.html','../../')
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="aregs_8hpp_html_aaba88b24a21a6c70c895c0d55f4a69a0"><div class="ttname"><a href="../../d8/dfb/regs_8hpp.html#aaba88b24a21a6c70c895c0d55f4a69a0">size</a></div><div class="ttdeci">uint16_t size</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dfb/regs_8hpp_source.html#l00002">regs.hpp:2</a></div></div>
 <div class="ttc" id="aheap_8hpp_html_af07d89f5ceaea0c7c8252cc41fd75f37"><div class="ttname"><a href="../../da/d45/heap_8hpp.html#af07d89f5ceaea0c7c8252cc41fd75f37">free</a></div><div class="ttdeci">void free(void *)</div></div>
 <div class="ttc" id="aheap_8hpp_html_a1c8580582aae58105f16108d4ec89e9a"><div class="ttname"><a href="../../da/d45/heap_8hpp.html#a1c8580582aae58105f16108d4ec89e9a">malloc</a></div><div class="ttdeci">void * malloc(size_t)</div></div>
 <div class="ttc" id="aheap_8hpp_html"><div class="ttname"><a href="../../da/d45/heap_8hpp.html">heap.hpp</a></div><div class="ttdoc">Liballoc heap implementation.</div></div>

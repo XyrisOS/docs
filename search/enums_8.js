@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['vgacolor_1492',['vgaColor',['../d8/db5/namespace_console.html#a5a9f6ce125109cf2227962509ec62222',1,'Console']]]
+  ['printf_5fstate_1515',['printf_state',['../d4/d64/printf_8cpp.html#a4bf54934de52cb7eeeaa6fa19468f64d',1,'printf.cpp']]]
 ];

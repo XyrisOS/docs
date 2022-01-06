@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['handoffbootloadertype_1484',['HandoffBootloaderType',['../da/d80/namespace_boot.html#a43a46383cc6356be2c30e027f54ef211',1,'Boot']]]
+  ['framebuffermemorymodel_1510',['FramebufferMemoryModel',['../d6/d9b/namespace_graphics.html#a504dfc028c1d2f4ec0c4bf4ec2cbe7f8',1,'Graphics']]]
 ];

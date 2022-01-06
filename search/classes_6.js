@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['handoff_865',['Handoff',['../df/d70/class_boot_1_1_handoff.html',1,'Boot']]],
-  ['handoffcpudescriptor_866',['HandoffCPUDescriptor',['../db/d82/class_boot_1_1_handoff_c_p_u_descriptor.html',1,'Boot']]],
-  ['handoffrsdpdescriptor_867',['HandoffRSDPDescriptor',['../d5/d80/class_boot_1_1_handoff_r_s_d_p_descriptor.html',1,'Boot']]],
-  ['handoffsmpdescriptor_868',['HandoffSMPDescriptor',['../df/dd0/class_boot_1_1_handoff_s_m_p_descriptor.html',1,'Boot']]]
+  ['gate_873',['Gate',['../d4/de5/struct_i_d_t_1_1_gate.html',1,'IDT']]],
+  ['gdtr_874',['GDTR',['../da/d33/struct_g_d_t_r.html',1,'']]]
 ];

@@ -85,13 +85,13 @@ $(document).ready(function(){initNavTree('d2/d59/tss_8hpp.html','../../'); initR
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
-<a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">tss.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="../../d7/dcf/_arch_8i686_8hpp_source.html">Arch/i686/Arch.i686.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="../../db/dc9/_flush_8h_source.html">Arch/i686/Assembly/Flush.h</a>&gt;</code><br />
 <code>#include &lt;stdint.h&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Include dependency graph for tss.hpp:</div>
@@ -100,13 +100,14 @@ $(document).ready(function(){initNavTree('d2/d59/tss_8hpp.html','../../'); initR
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="../../d5/d3b/tss_8hpp__incl.png" border="0" usemap="#tss_8hpp" alt=""/></div>
 <map name="tss_8hpp" id="tss_8hpp">
-<area shape="rect" title=" " alt="" coords="342,5,411,32"/>
-<area shape="rect" href="../../d7/dcf/_arch_8i686_8hpp.html" title="i686 architecture implementation of Arch.hpp" alt="" coords="226,80,402,107"/>
-<area shape="rect" title=" " alt="" coords="284,229,355,256"/>
-<area shape="rect" href="../../d8/dfb/regs_8hpp.html" title="i686 control register definitions. C &amp; C++ compatible header." alt="" coords="5,155,148,181"/>
-<area shape="rect" href="../../d8/d9f/ports_8hpp.html" title="Ports header file. Provides inline functions for getting and setting values at different ports...." alt="" coords="328,155,476,181"/>
-<area shape="rect" href="../../d4/ddc/isr_8hpp.html" title="Interrupt Service Routine header." alt="" coords="173,155,303,181"/>
-<area shape="rect" title=" " alt="" coords="39,229,114,256"/>
+<area shape="rect" title=" " alt="" coords="478,5,547,32"/>
+<area shape="rect" href="../../d7/dcf/_arch_8i686_8hpp.html" title="i686 architecture implementation of Arch.hpp" alt="" coords="229,87,405,114"/>
+<area shape="rect" title=" " alt="" coords="375,244,445,271"/>
+<area shape="rect" href="../../db/dc9/_flush_8h.html" title="Header for assembly functions defined in flush.s." alt="" coords="551,80,701,121"/>
+<area shape="rect" href="../../d8/dfb/regs_8hpp.html" title="i686 control register definitions. C &amp; C++ compatible header." alt="" coords="5,169,148,196"/>
+<area shape="rect" href="../../d8/d9f/ports_8hpp.html" title="Ports header file. Provides inline functions for getting and setting values at different ports...." alt="" coords="172,169,320,196"/>
+<area shape="rect" href="../../d4/ddc/isr_8hpp.html" title="Interrupt Service Routine header." alt="" coords="345,169,475,196"/>
+<area shape="rect" title=" " alt="" coords="39,244,114,271"/>
 </map>
 </div>
 </div>
@@ -116,11 +117,6 @@ $(document).ready(function(){initNavTree('d2/d59/tss_8hpp.html','../../'); initR
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d29/structtss__entry.html">tss_entry</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:a01b6312c9386ac6c52c7b5c5d91e81cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d59/tss_8hpp.html#a01b6312c9386ac6c52c7b5c5d91e81cf">tss_flush</a> ()</td></tr>
-<tr class="separator:a01b6312c9386ac6c52c7b5c5d91e81cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -134,27 +130,7 @@ Variables</h2></td></tr>
 <dl class="section copyright"><dt>Copyright</dt><dd>Copyright the Xyris Contributors (c) 2019 </dd></dl>
 
 <p class="definition">Definition in file <a class="el" href="../../d2/d59/tss_8hpp_source.html">tss.hpp</a>.</p>
-</div><h2 class="groupheader">Function Documentation</h2>
-<a id="a01b6312c9386ac6c52c7b5c5d91e81cf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a01b6312c9386ac6c52c7b5c5d91e81cf">&#9670;&nbsp;</a></span>tss_flush()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void tss_flush </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>This function is defined in <a class="el" href="../../d7/d00/flush_8s.html">flush.s</a> (assembly) and is used to flush the TSS when we (re)load into the kernel or into userspace. The extern "C" syntax tells the compiler that our function is defined somewhere else and the "C" part tells the compiler to not string mangle our function and to instead look for a literal "tss_flush" function in assembly. </p>
-
-</div>
-</div>
-<h2 class="groupheader">Variable Documentation</h2>
+</div><h2 class="groupheader">Variable Documentation</h2>
 <a id="a2a2941650be8a44ceff28d916e7aeec8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2a2941650be8a44ceff28d916e7aeec8">&#9670;&nbsp;</a></span>tss_entry_t</h2>
 

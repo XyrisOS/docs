@@ -15,6 +15,7 @@ var files_dup =
     ] ],
     [ "console.cpp", "d9/dda/console_8cpp.html", "d9/dda/console_8cpp" ],
     [ "console.hpp", "d5/ddc/console_8hpp.html", "d5/ddc/console_8hpp" ],
+    [ "crti.h", "d5/d64/crti_8h.html", "d5/d64/crti_8h" ],
     [ "crti.s", "d1/d76/crti_8s.html", null ],
     [ "crtn.s", "d4/da6/crtn_8s.html", null ],
     [ "cxx.cpp", "d1/dd1/cxx_8cpp.html", "d1/dd1/cxx_8cpp" ],
@@ -24,6 +25,7 @@ var files_dup =
     [ "Entry.cpp", "d4/d01/_entry_8cpp.html", "d4/d01/_entry_8cpp" ],
     [ "errno.cpp", "d1/db0/errno_8cpp.html", "d1/db0/errno_8cpp" ],
     [ "errno.hpp", "d7/dae/errno_8hpp.html", "d7/dae/errno_8hpp" ],
+    [ "Flush.h", "db/dc9/_flush_8h.html", "db/dc9/_flush_8h" ],
     [ "flush.s", "d7/d00/flush_8s.html", null ],
     [ "font.cpp", "dd/d53/font_8cpp.html", "dd/d53/font_8cpp" ],
     [ "font.hpp", "df/d50/font_8hpp.html", "df/d50/font_8hpp" ],
@@ -41,6 +43,7 @@ var files_dup =
     [ "idt.cpp", "d9/d87/idt_8cpp.html", "d9/d87/idt_8cpp" ],
     [ "idt.hpp", "dd/d12/idt_8hpp.html", "dd/d12/idt_8hpp" ],
     [ "interrupt.s", "d6/dcb/interrupt_8s.html", null ],
+    [ "Interrupts.h", "d7/d03/_interrupts_8h.html", "d7/d03/_interrupts_8h" ],
     [ "isr.cpp", "d3/d68/isr_8cpp.html", "d3/d68/isr_8cpp" ],
     [ "isr.hpp", "d4/ddc/isr_8hpp.html", "d4/ddc/isr_8hpp" ],
     [ "LinkedList.hpp", "d5/d72/_linked_list_8hpp.html", [

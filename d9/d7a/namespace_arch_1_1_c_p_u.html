@@ -175,8 +175,8 @@ template&lt;typename Function &gt; </div>
 <p class="definition">Definition at line <a class="el" href="../../d4/dc9/_arch_8i686_8cpp_source.html#l00110">110</a> of file <a class="el" href="../../d4/dc9/_arch_8i686_8cpp_source.html">Arch.i686.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;{</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <a class="code" href="../../d9/d7a/namespace_arch_1_1_c_p_u.html#a286a0e21f38c30f57fe5b655da8a3249">criticalRegion</a>([]() {</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        <a class="code" href="../../d7/de6/gdt_8cpp.html#aa2a6cef9d7f1d9430289dcbb74530bf3">gdt_install</a>();      <span class="comment">// Initialize the Global Descriptor Table</span></div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        <a class="code" href="../../d3/d68/isr_8cpp.html#aed0ecf87a0ed3270ce0e9c68cd01a946">isr_install</a>();      <span class="comment">// Initialize Interrupt Service Requests</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        <a class="code" href="../../dc/d49/namespace_g_d_t.html#a37442c3edc67ddc4b75d83e97da46d16">GDT::init</a>();        <span class="comment">// Initialize the Global Descriptor Table</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        <a class="code" href="../../d4/de6/namespace_interrupts.html#a9e82c222da8323deca4b73e76337c095">Interrupts::init</a>(); <span class="comment">// Initialize Interrupt Service Requests</span></div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        <a class="code" href="../../dc/de5/timer_8cpp.html#afe097e48aba5e0fc040df42695ab6b5b">timer_init</a>(1000);   <span class="comment">// Programmable Interrupt Timer (1ms)</span></div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    });</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;}</div>
@@ -187,20 +187,18 @@ template&lt;typename Function &gt; </div>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="../../d9/d7a/namespace_arch_1_1_c_p_u_a56d04c0a3e1b9d49d69c5d8d33875731_cgraph.png" border="0" usemap="#d9/d7a/namespace_arch_1_1_c_p_u_a56d04c0a3e1b9d49d69c5d8d33875731_cgraph" alt=""/></div>
 <map name="d9/d7a/namespace_arch_1_1_c_p_u_a56d04c0a3e1b9d49d69c5d8d33875731_cgraph" id="d9/d7a/namespace_arch_1_1_c_p_u_a56d04c0a3e1b9d49d69c5d8d33875731_cgraph">
-<area shape="rect" title=" " alt="" coords="5,183,120,209"/>
+<area shape="rect" title=" " alt="" coords="5,169,120,196"/>
 <area shape="rect" href="../../d9/d7a/namespace_arch_1_1_c_p_u.html#a286a0e21f38c30f57fe5b655da8a3249" title=" " alt="" coords="168,56,351,83"/>
-<area shape="rect" href="../../d7/de6/gdt_8cpp.html#aa2a6cef9d7f1d9430289dcbb74530bf3" title="Setup and install the GDT onto the system." alt="" coords="214,157,305,184"/>
-<area shape="rect" href="../../d3/d68/isr_8cpp.html#aed0ecf87a0ed3270ce0e9c68cd01a946" title=" " alt="" coords="217,233,302,260"/>
-<area shape="rect" href="../../dc/de5/timer_8cpp.html#afe097e48aba5e0fc040df42695ab6b5b" title="Initialize the CPU timer with the given frequency." alt="" coords="217,313,302,340"/>
+<area shape="rect" href="../../dc/d49/namespace_g_d_t.html#a37442c3edc67ddc4b75d83e97da46d16" title="Setup and install the GDT onto the system." alt="" coords="220,119,299,145"/>
+<area shape="rect" href="../../d4/de6/namespace_interrupts.html#a9e82c222da8323deca4b73e76337c095" title=" " alt="" coords="202,195,317,221"/>
+<area shape="rect" href="../../dc/de5/timer_8cpp.html#afe097e48aba5e0fc040df42695ab6b5b" title="Initialize the CPU timer with the given frequency." alt="" coords="217,296,302,323"/>
 <area shape="rect" href="../../d9/d7a/namespace_arch_1_1_c_p_u.html#a8941628074d88629830ffd379a107588" title=" " alt="" coords="399,5,605,32"/>
 <area shape="rect" href="../../d9/d7a/namespace_arch_1_1_c_p_u.html#adadc066eb66ab14bf5a31d5b31eeaee2" title=" " alt="" coords="401,56,603,83"/>
-<area shape="rect" href="../../d7/de6/gdt_8cpp.html#a8b44d6c39bbbdfec25a2fd1c2f1b768a" title=" " alt="" coords="461,107,543,133"/>
-<area shape="rect" href="../../d7/de6/gdt_8cpp.html#ac3e3821e375498c85d135c475005ddbc" title=" " alt="" coords="449,157,555,184"/>
-<area shape="rect" href="../../d5/d24/string_8cpp.html#a370712322c794e949c996946f2283ea8" title=" " alt="" coords="653,157,732,184"/>
-<area shape="rect" href="../../d9/d87/idt_8cpp.html#ac026ee8412818db472b59fa2fad922fe" title="Sets the handler function (via address) for a specific IDT." alt="" coords="451,208,553,235"/>
-<area shape="rect" href="../../d9/d87/idt_8cpp.html#aacb15cc09678bbe5e09fb652c56e884e" title="Calls the lidt instruction and installs the IDT onto the CPU." alt="" coords="465,259,539,285"/>
-<area shape="rect" href="../../d7/d27/ports_8cpp.html#aa89191491445201430ae9a8feb3184d9" title="Writes a byte (8 bits) to the CPU bus at a given port address." alt="" coords="459,309,545,336"/>
-<area shape="rect" href="../../d3/d68/isr_8cpp.html#acc90c1ac3bbcb4fc45ccda7cde4882c7" title=" " alt="" coords="435,361,569,402"/>
+<area shape="rect" href="../../db/dc9/_flush_8h.html#a9cd7dac5fc545172ad9f8c88dd38fac4" title="Flush the global descriptor table and use the one provided." alt="" coords="461,107,543,133"/>
+<area shape="rect" href="../../db/d3c/namespace_i_d_t.html#afc0b0ef5ee4c115b7ab32e60d22b85bc" title="Calls the lidt instruction and installs the IDT onto the CPU." alt="" coords="466,157,538,184"/>
+<area shape="rect" href="../../db/d3c/namespace_i_d_t.html#ad1b56298bd7894140cecb81c4e788176" title="Sets the handler function (via address) for a specific IDT." alt="" coords="451,208,553,235"/>
+<area shape="rect" href="../../d7/d27/ports_8cpp.html#aa89191491445201430ae9a8feb3184d9" title="Writes a byte (8 bits) to the CPU bus at a given port address." alt="" coords="459,259,545,285"/>
+<area shape="rect" href="../../d4/de6/namespace_interrupts.html#a4bc26db1a325ddd451a7f18e55c78151" title=" " alt="" coords="405,309,599,336"/>
 </map>
 </div>
 
@@ -326,14 +324,14 @@ template&lt;typename Function &gt; </div>
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="anamespace_interrupts_html_a9e82c222da8323deca4b73e76337c095"><div class="ttname"><a href="../../d4/de6/namespace_interrupts.html#a9e82c222da8323deca4b73e76337c095">Interrupts::init</a></div><div class="ttdeci">void init()</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d68/isr_8cpp_source.html#l00070">isr.cpp:70</a></div></div>
 <div class="ttc" id="anamespace_arch_1_1_c_p_u_html_a286a0e21f38c30f57fe5b655da8a3249"><div class="ttname"><a href="../../d9/d7a/namespace_arch_1_1_c_p_u.html#a286a0e21f38c30f57fe5b655da8a3249">Arch::CPU::criticalRegion</a></div><div class="ttdeci">void criticalRegion(Function critWork)</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d9c/_arch_8hpp_source.html#l00082">Arch.hpp:82</a></div></div>
 <div class="ttc" id="anamespace_arch_1_1_c_p_u_html_affa86e64ef5d7b52dffad4ffd6448962"><div class="ttname"><a href="../../d9/d7a/namespace_arch_1_1_c_p_u.html#affa86e64ef5d7b52dffad4ffd6448962">Arch::CPU::vendor</a></div><div class="ttdeci">const char * vendor()</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dc9/_arch_8i686_8cpp_source.html#l00127">Arch.i686.cpp:127</a></div></div>
 <div class="ttc" id="anamespace_arch_1_1_c_p_u_html_adadc066eb66ab14bf5a31d5b31eeaee2"><div class="ttname"><a href="../../d9/d7a/namespace_arch_1_1_c_p_u.html#adadc066eb66ab14bf5a31d5b31eeaee2">Arch::CPU::interruptsEnable</a></div><div class="ttdeci">void interruptsEnable()</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dc9/_arch_8i686_8cpp_source.html#l00123">Arch.i686.cpp:123</a></div></div>
 <div class="ttc" id="atimer_8cpp_html_afe097e48aba5e0fc040df42695ab6b5b"><div class="ttname"><a href="../../dc/de5/timer_8cpp.html#afe097e48aba5e0fc040df42695ab6b5b">timer_init</a></div><div class="ttdeci">void timer_init(uint32_t freq)</div><div class="ttdoc">Initialize the CPU timer with the given frequency.</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/de5/timer_8cpp_source.html#l00031">timer.cpp:31</a></div></div>
 <div class="ttc" id="anamespace_arch_1_1_c_p_u_html_a8941628074d88629830ffd379a107588"><div class="ttname"><a href="../../d9/d7a/namespace_arch_1_1_c_p_u.html#a8941628074d88629830ffd379a107588">Arch::CPU::interruptsDisable</a></div><div class="ttdeci">void interruptsDisable()</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dc9/_arch_8i686_8cpp_source.html#l00119">Arch.i686.cpp:119</a></div></div>
-<div class="ttc" id="agdt_8cpp_html_aa2a6cef9d7f1d9430289dcbb74530bf3"><div class="ttname"><a href="../../d7/de6/gdt_8cpp.html#aa2a6cef9d7f1d9430289dcbb74530bf3">gdt_install</a></div><div class="ttdeci">void gdt_install()</div><div class="ttdoc">Setup and install the GDT onto the system.</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/de6/gdt_8cpp_source.html#l00053">gdt.cpp:53</a></div></div>
 <div class="ttc" id="anamespace_arch_1_1_c_p_u_html_a85dcde91876c9d4f28baf43399cda7f4"><div class="ttname"><a href="../../d9/d7a/namespace_arch_1_1_c_p_u.html#a85dcde91876c9d4f28baf43399cda7f4">Arch::CPU::model</a></div><div class="ttdeci">const char * model()</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dc9/_arch_8i686_8cpp_source.html#l00134">Arch.i686.cpp:134</a></div></div>
-<div class="ttc" id="aisr_8cpp_html_aed0ecf87a0ed3270ce0e9c68cd01a946"><div class="ttname"><a href="../../d3/d68/isr_8cpp.html#aed0ecf87a0ed3270ce0e9c68cd01a946">isr_install</a></div><div class="ttdeci">void isr_install()</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d68/isr_8cpp_source.html#l00027">isr.cpp:27</a></div></div>
+<div class="ttc" id="anamespace_g_d_t_html_a37442c3edc67ddc4b75d83e97da46d16"><div class="ttname"><a href="../../dc/d49/namespace_g_d_t.html#a37442c3edc67ddc4b75d83e97da46d16">GDT::init</a></div><div class="ttdeci">void init()</div><div class="ttdoc">Setup and install the GDT onto the system.</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/de6/gdt_8cpp_source.html#l00022">gdt.cpp:22</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

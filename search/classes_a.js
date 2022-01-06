@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['page_875',['Page',['../df/d9b/struct_page.html',1,'']]],
-  ['physicalmanager_876',['PhysicalManager',['../d6/d53/class_memory_1_1_physical_1_1_physical_manager.html',1,'Memory::Physical']]]
+  ['memorymap_884',['MemoryMap',['../d0/dea/class_memory_1_1_memory_map.html',1,'Memory']]],
+  ['mutex_885',['Mutex',['../d4/de8/class_mutex.html',1,'']]]
 ];
