@@ -12,7 +12,7 @@ jobs:
       - name: Update packages
         run: sudo apt update
       - name: Install packages
-        run: sudo apt install rsync doxygen-latex graphviz
+        run: sudo apt install rsync doxygen-latex graphviz scons
       - name: Checkout
         uses: actions/checkout@v2
         with:
@@ -20,9 +20,9 @@ jobs:
           repository: XyrisOS/xyris
           submodules: true
       - name: Build Xyris Docs
-        run: make docs
+        run: scons docs
       - name: Deploy to Github Pages
         uses: JamesIves/github-pages-deploy-action@4.1.5
         with:
           branch: gh-pages
-          folder: Documentation/build/html
+          folder: Documentation/Build/html
