@@ -1,0 +1,6 @@
+<map id="Semaphore::count" name="Semaphore::count">
+<area shape="rect" id="node1" title="Atomically get the semaphore&#39;s current counter value." alt="" coords="216,56,356,83"/>
+<area shape="rect" id="node2" href="$d4/dbd/class_semaphore.html#a6dc539d48cb394af657615e87ec74a5d" title="Wait on the semaphore for a set duration of time." alt="" coords="5,5,168,32"/>
+<area shape="rect" id="node3" href="$d4/dbd/class_semaphore.html#ad1116d95eb140b6b591f98ad645a12e2" title="Check if the semaphore is available. If unavailable, return immediately, otherwise wait on the semaph..." alt="" coords="11,56,162,83"/>
+<area shape="rect" id="node4" href="$d4/dbd/class_semaphore.html#a496aae0d0eceef9385c9dcae4c3d9b36" title="Wait for the semaphore to become available." alt="" coords="21,107,153,133"/>
+</map>

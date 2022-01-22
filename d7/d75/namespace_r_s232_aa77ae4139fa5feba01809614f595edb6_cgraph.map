@@ -1,7 +1,7 @@
 <map id="RS232::read" name="RS232::read">
 <area shape="rect" id="node1" title="Reads bytes from the serial buffer." alt="" coords="5,31,105,57"/>
-<area shape="rect" id="node2" href="$d4/de8/class_mutex.html#aa732ae651974555965dcaf9ad9e87882" title="Locks a provided mutex. This call will block if the mutex is already locked." alt="" coords="161,5,262,32"/>
-<area shape="rect" id="node4" href="$d4/de8/class_mutex.html#a669f7a1dd7992948b397726e5d187a39" title="Unlocks a mutex for others to use." alt="" coords="153,56,269,83"/>
-<area shape="rect" id="node3" href="$d5/d9d/tasks_8cpp.html#a2432c50b4d4264b5d5295bdb4f19e0d2" title=" " alt="" coords="325,5,461,32"/>
-<area shape="rect" id="node5" href="$d5/d9d/tasks_8cpp.html#a95269b08443b913d1ca443794e4aa3ad" title=" " alt="" coords="317,56,469,83"/>
+<area shape="rect" id="node2" href="$d4/de8/class_mutex.html#a5153267b9c954e794863dd94900a0e3b" title="Aquire the mutex." alt="" coords="161,5,260,32"/>
+<area shape="rect" id="node4" href="$d4/de8/class_mutex.html#adc0b8b863a4e7350297373127a9c7016" title="Release the mutex." alt="" coords="153,56,268,83"/>
+<area shape="rect" id="node3" href="$d5/d9d/tasks_8cpp.html#a2432c50b4d4264b5d5295bdb4f19e0d2" title=" " alt="" coords="324,5,460,32"/>
+<area shape="rect" id="node5" href="$d5/d9d/tasks_8cpp.html#a95269b08443b913d1ca443794e4aa3ad" title=" " alt="" coords="316,56,468,83"/>
 </map>

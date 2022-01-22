@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['bios_5fcolor_1506',['bios_color',['../dd/dad/_early_panic_8cpp.html#a4e312ac7be6e5be8358547d6b52ae402',1,'EarlyPanic.cpp']]]
+  ['bios_5fcolor_1505',['bios_color',['../dd/dad/_early_panic_8cpp.html#a4e312ac7be6e5be8358547d6b52ae402',1,'EarlyPanic.cpp']]]
 ];

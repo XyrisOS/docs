@@ -58,8 +58,8 @@ var files_dup =
       [ "MemoryMap", "d0/dea/class_memory_1_1_memory_map.html", "d0/dea/class_memory_1_1_memory_map" ]
     ] ],
     [ "MemorySection.hpp", "d0/d91/_memory_section_8hpp.html", "d0/d91/_memory_section_8hpp" ],
-    [ "mutex.cpp", "d0/dbb/mutex_8cpp.html", null ],
-    [ "mutex.hpp", "d8/da6/mutex_8hpp.html", [
+    [ "Mutex.cpp", "da/d4c/_mutex_8cpp.html", null ],
+    [ "Mutex.hpp", "d4/d48/_mutex_8hpp.html", [
       [ "Mutex", "d4/de8/class_mutex.html", "d4/de8/class_mutex" ]
     ] ],
     [ "NullBoot.c", "d0/d0c/_null_boot_8c.html", "d0/d0c/_null_boot_8c" ],
@@ -84,8 +84,8 @@ var files_dup =
     [ "rtc.cpp", "dd/d82/rtc_8cpp.html", "dd/d82/rtc_8cpp" ],
     [ "rtc.hpp", "d9/d89/rtc_8hpp.html", "d9/d89/rtc_8hpp" ],
     [ "sections.hpp", "d0/d29/sections_8hpp.html", "d0/d29/sections_8hpp" ],
-    [ "semaphore.cpp", "da/d20/semaphore_8cpp.html", "da/d20/semaphore_8cpp" ],
-    [ "semaphore.hpp", "d1/d5a/semaphore_8hpp.html", [
+    [ "Semaphore.cpp", "d6/d80/_semaphore_8cpp.html", "d6/d80/_semaphore_8cpp" ],
+    [ "Semaphore.hpp", "d4/dae/_semaphore_8hpp.html", [
       [ "Semaphore", "d4/dbd/class_semaphore.html", "d4/dbd/class_semaphore" ]
     ] ],
     [ "spinner.cpp", "df/d57/spinner_8cpp.html", "df/d57/spinner_8cpp" ],

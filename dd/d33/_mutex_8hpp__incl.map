@@ -1,0 +1,11 @@
+<map id="Mutex.hpp" name="Mutex.hpp">
+<area shape="rect" id="node1" title=" " alt="" coords="366,5,457,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="371,453,441,480"/>
+<area shape="rect" id="node3" href="$d2/dbd/tasks_8hpp.html" title=" " alt="" coords="277,80,431,107"/>
+<area shape="rect" id="node4" href="$d7/d9c/_arch_8hpp.html" title="Architecture control and initialization." alt="" coords="21,379,133,405"/>
+<area shape="rect" id="node6" href="$d1/d75/paging_8hpp.html" title=" " alt="" coords="213,155,365,181"/>
+<area shape="rect" id="node5" title=" " alt="" coords="114,453,189,480"/>
+<area shape="rect" id="node7" href="$d9/d4f/_memory_8hpp.html" title="Architecture memory management &amp; paging API." alt="" coords="157,379,292,405"/>
+<area shape="rect" id="node8" href="$d6/dc1/_memory_map_8hpp.html" title="Memory map containing a number of Memory sections that describe the physical memory layout." alt="" coords="193,229,384,256"/>
+<area shape="rect" id="node9" href="$d0/d91/_memory_section_8hpp.html" title=" " alt="" coords="183,304,394,331"/>
+</map>

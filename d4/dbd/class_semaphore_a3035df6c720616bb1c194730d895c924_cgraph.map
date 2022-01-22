@@ -1,4 +1,0 @@
-<map id="Semaphore::Post" name="Semaphore::Post">
-<area shape="rect" id="node1" title="Increments the semaphore&#39;s counter. This is used to indicate that the thread or process is done utili..." alt="" coords="5,5,137,32"/>
-<area shape="rect" id="node2" href="$d5/d9d/tasks_8cpp.html#a95269b08443b913d1ca443794e4aa3ad" title=" " alt="" coords="185,5,337,32"/>
-</map>

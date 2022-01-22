@@ -1,0 +1,5 @@
+<map id="Semaphore::wait" name="Semaphore::wait">
+<area shape="rect" id="node1" title="Wait for the semaphore to become available." alt="" coords="5,31,137,57"/>
+<area shape="rect" id="node2" href="$d4/dbd/class_semaphore.html#ae478e5b2733a8f7044eff376c2f540f3" title="Atomically get the semaphore&#39;s current counter value." alt="" coords="185,5,325,32"/>
+<area shape="rect" id="node3" href="$d5/d9d/tasks_8cpp.html#a2432c50b4d4264b5d5295bdb4f19e0d2" title=" " alt="" coords="187,56,323,83"/>
+</map>

@@ -1,7 +1,5 @@
 var NAVTREEINDEX4 =
 {
-"db/d78/struct_g_d_t_1_1_entry.html#ac7292567f996e4f8eb743b56aaa6a9ee":[1,0,2,1,0],
-"db/d78/struct_g_d_t_1_1_entry.html#ae913d263d25db1320fe29969151273f1":[1,0,2,1,2],
 "db/d82/class_boot_1_1_handoff_c_p_u_descriptor.html":[1,0,1,2],
 "db/d82/class_boot_1_1_handoff_c_p_u_descriptor.html#a190a6628a6ce9bfa45a140531e48ea5a":[1,0,1,2,11],
 "db/d82/class_boot_1_1_handoff_c_p_u_descriptor.html#a3ff59a86e9510182604def406631f80c":[1,0,1,2,2],
@@ -249,5 +247,7 @@ var NAVTREEINDEX4 =
 "df/dd0/class_boot_1_1_handoff_s_m_p_descriptor.html#a252c0ecc32d590d64f289a28223b85d8":[1,0,1,4,2],
 "df/dd0/class_boot_1_1_handoff_s_m_p_descriptor.html#a7994acceedc32a6e4cccdf09eaa690dd":[1,0,1,4,7],
 "df/dd0/class_boot_1_1_handoff_s_m_p_descriptor.html#a7db14180b66eab9eeb31a6cd723ba39a":[1,0,1,4,4],
-"df/dd0/class_boot_1_1_handoff_s_m_p_descriptor.html#a975ab4b0afe7c75bcfaece24ad1994e2":[1,0,1,4,1]
+"df/dd0/class_boot_1_1_handoff_s_m_p_descriptor.html#a975ab4b0afe7c75bcfaece24ad1994e2":[1,0,1,4,1],
+"df/dd0/class_boot_1_1_handoff_s_m_p_descriptor.html#ab03168ecb6b9cc4fb515d2a53dcb7f3d":[1,0,1,4,0],
+"df/dd0/class_boot_1_1_handoff_s_m_p_descriptor.html#ac633621801a9db57aea8e1d9711e90a1":[1,0,1,4,6]
 };
