@@ -20,7 +20,7 @@ jobs:
           repository: XyrisOS/xyris
           submodules: true
       - name: Build Xyris Docs
-        run: scons docs
+        run: python3.10 $(which scons) docs
       - name: Deploy to Github Pages
         uses: JamesIves/github-pages-deploy-action@4.1.5
         with:
