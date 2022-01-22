@@ -19,8 +19,11 @@ jobs:
           ref: dev
           repository: XyrisOS/xyris
           submodules: true
+      - uses: actions/setup-python@v2
+        with:
+          python-version: '3.10'
       - name: Build Xyris Docs
-        run: python3.10 $(which scons) docs
+        run: scons docs
       - name: Deploy to Github Pages
         uses: JamesIves/github-pages-deploy-action@4.1.5
         with:
