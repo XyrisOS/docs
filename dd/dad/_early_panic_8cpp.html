@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="../../logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Xyris
-   &#160;<span id="projectnumber">0.1</span>
+   &#160;<span id="projectnumber">0.5</span>
    </div>
   </td>
  </tr>
@@ -320,7 +320,7 @@ Functions</h2></td></tr>
 <p>Map bootloader information into the higher half of memory so that the kernel can access it and parse it. </p>
 <p>Stivale2 protocol kernel stage 1 entry. Stage 1 is responsible for providing an entry point for the bootloader in C, performing any necessary bootstrappign and then calling into the C++ stage 2.</p>
 <p>identity map from 0x00000000 -&gt; LOWMEM_END</p>
-<p>Map kernel memory into the higher half of memory See <a class="el" href="../../dd/d85/linker_8ld.html">linker.ld</a> for details on where the kernel should be mapped.</p>
+<p>Map kernel memory into the higher half of memory See linker.ld for details on where the kernel should be mapped.</p>
 
 <p class="definition">Definition at line <a class="el" href="../../dd/dad/_early_panic_8cpp_source.html#l00042">42</a> of file <a class="el" href="../../dd/dad/_early_panic_8cpp_source.html">EarlyPanic.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;{</div>

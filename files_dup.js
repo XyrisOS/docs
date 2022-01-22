@@ -50,7 +50,6 @@ var files_dup =
       [ "LinkedListNode", "d1/ddb/class_linked_list_1_1_linked_list_node.html", "d1/ddb/class_linked_list_1_1_linked_list_node" ],
       [ "LinkedList", "d9/d3d/class_linked_list_1_1_linked_list.html", "d9/d3d/class_linked_list_1_1_linked_list" ]
     ] ],
-    [ "linker.ld", "dd/d85/linker_8ld.html", null ],
     [ "Loader.cpp", "d1/d51/_loader_8cpp.html", "d1/d51/_loader_8cpp" ],
     [ "Loader.hpp", "dc/dc7/_loader_8hpp.html", "dc/dc7/_loader_8hpp" ],
     [ "Memory.hpp", "d9/d4f/_memory_8hpp.html", "d9/d4f/_memory_8hpp" ],
