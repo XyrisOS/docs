@@ -19,6 +19,7 @@ var annotated_dup =
     [ "IDTR", "dc/d6a/struct_i_d_t_r.html", "dc/d6a/struct_i_d_t_r" ],
     [ "Mutex", "d4/de8/class_mutex.html", "d4/de8/class_mutex" ],
     [ "Page", "df/d9b/struct_page.html", "df/d9b/struct_page" ],
+    [ "RAIIMutex", "d5/d9b/class_r_a_i_i_mutex.html", "d5/d9b/class_r_a_i_i_mutex" ],
     [ "registers", "df/d94/structregisters.html", "df/d94/structregisters" ],
     [ "RingBuffer", "d4/d8f/class_ring_buffer.html", "d4/d8f/class_ring_buffer" ],
     [ "Semaphore", "d4/dbd/class_semaphore.html", "d4/dbd/class_semaphore" ],

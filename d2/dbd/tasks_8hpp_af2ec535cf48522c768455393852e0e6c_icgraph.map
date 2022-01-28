@@ -1,6 +1,7 @@
 <map id="tasks_sync_block" name="tasks_sync_block">
-<area shape="rect" id="node1" title=" " alt="" coords="333,31,469,57"/>
-<area shape="rect" id="node2" href="$d4/de8/class_mutex.html#a5153267b9c954e794863dd94900a0e3b" title="Aquire the mutex." alt="" coords="170,5,269,32"/>
-<area shape="rect" id="node4" href="$d4/dbd/class_semaphore.html#a496aae0d0eceef9385c9dcae4c3d9b36" title="Wait for the semaphore to become available." alt="" coords="153,56,285,83"/>
-<area shape="rect" id="node3" href="$d7/d75/namespace_r_s232.html#aa77ae4139fa5feba01809614f595edb6" title="Reads bytes from the serial buffer." alt="" coords="5,5,105,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="397,56,533,83"/>
+<area shape="rect" id="node2" href="$d4/de8/class_mutex.html#a5153267b9c954e794863dd94900a0e3b" title="Aquire the mutex." alt="" coords="234,31,333,57"/>
+<area shape="rect" id="node5" href="$d4/dbd/class_semaphore.html#a496aae0d0eceef9385c9dcae4c3d9b36" title="Wait for the semaphore to become available." alt="" coords="217,81,349,108"/>
+<area shape="rect" id="node3" href="$d5/d9b/class_r_a_i_i_mutex.html#a23d8c84491f0fa71d306434864fbf415" title="Construct a new RAIIMutex object that locks when constructed and unlocks when destructed." alt="" coords="5,5,169,32"/>
+<area shape="rect" id="node4" href="$d7/d75/namespace_r_s232.html#aa77ae4139fa5feba01809614f595edb6" title="Reads bytes from the serial buffer." alt="" coords="37,56,137,83"/>
 </map>

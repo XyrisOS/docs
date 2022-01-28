@@ -1,4 +1,5 @@
 <map id="Mutex::lock" name="Mutex::lock">
-<area shape="rect" id="node1" title="Aquire the mutex." alt="" coords="153,5,252,32"/>
-<area shape="rect" id="node2" href="$d7/d75/namespace_r_s232.html#aa77ae4139fa5feba01809614f595edb6" title="Reads bytes from the serial buffer." alt="" coords="5,5,105,32"/>
+<area shape="rect" id="node1" title="Aquire the mutex." alt="" coords="217,31,316,57"/>
+<area shape="rect" id="node2" href="$d5/d9b/class_r_a_i_i_mutex.html#a23d8c84491f0fa71d306434864fbf415" title="Construct a new RAIIMutex object that locks when constructed and unlocks when destructed." alt="" coords="5,5,169,32"/>
+<area shape="rect" id="node3" href="$d7/d75/namespace_r_s232.html#aa77ae4139fa5feba01809614f595edb6" title="Reads bytes from the serial buffer." alt="" coords="37,56,137,83"/>
 </map>

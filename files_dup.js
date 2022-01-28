@@ -73,6 +73,7 @@ var files_dup =
     [ "primes.cpp", "d0/dde/primes_8cpp.html", "d0/dde/primes_8cpp" ],
     [ "primes.hpp", "d3/dee/primes_8hpp.html", "d3/dee/primes_8hpp" ],
     [ "printf.cpp", "d4/d64/printf_8cpp.html", "d4/d64/printf_8cpp" ],
+    [ "RAII.hpp", "db/d52/_r_a_i_i_8hpp.html", "db/d52/_r_a_i_i_8hpp" ],
     [ "rand.cpp", "d5/d92/rand_8cpp.html", "d5/d92/rand_8cpp" ],
     [ "rand.hpp", "d4/d0b/rand_8hpp.html", "d4/d0b/rand_8hpp" ],
     [ "regs.hpp", "d8/dfb/regs_8hpp.html", "d8/dfb/regs_8hpp" ],

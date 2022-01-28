@@ -1,15 +1,16 @@
 <map id="tasks.hpp" name="tasks.hpp">
-<area shape="rect" id="node1" title=" " alt="" coords="360,5,445,32"/>
-<area shape="rect" id="node2" href="$d0/dde/primes_8cpp.html" title="Prime computation tasks." alt="" coords="67,80,162,107"/>
-<area shape="rect" id="node3" href="$d4/d01/_entry_8cpp.html" title="The entry point into the Xyris kernel." alt="" coords="186,80,267,107"/>
-<area shape="rect" id="node4" href="$d4/d48/_mutex_8hpp.html" title=" " alt="" coords="292,80,383,107"/>
-<area shape="rect" id="node10" href="$d4/dae/_semaphore_8hpp.html" title=" " alt="" coords="407,80,531,107"/>
-<area shape="rect" id="node12" href="$d9/d5d/_panic_8cpp.html" title="Early CGA&#45;mode panic (no framebuffer)" alt="" coords="556,80,639,107"/>
-<area shape="rect" id="node13" href="$d5/d9d/tasks_8cpp.html" title=" " alt="" coords="663,80,747,107"/>
+<area shape="rect" id="node1" title=" " alt="" coords="304,5,389,32"/>
+<area shape="rect" id="node2" href="$d0/dde/primes_8cpp.html" title="Prime computation tasks." alt="" coords="11,80,106,107"/>
+<area shape="rect" id="node3" href="$d4/d01/_entry_8cpp.html" title="The entry point into the Xyris kernel." alt="" coords="130,80,211,107"/>
+<area shape="rect" id="node4" href="$d4/d48/_mutex_8hpp.html" title=" " alt="" coords="236,80,327,107"/>
+<area shape="rect" id="node11" href="$d4/dae/_semaphore_8hpp.html" title=" " alt="" coords="351,80,475,107"/>
+<area shape="rect" id="node13" href="$d9/d5d/_panic_8cpp.html" title="Early CGA&#45;mode panic (no framebuffer)" alt="" coords="500,80,583,107"/>
+<area shape="rect" id="node14" href="$d5/d9d/tasks_8cpp.html" title=" " alt="" coords="607,80,691,107"/>
 <area shape="rect" id="node5" href="$d9/dda/console_8cpp.html" title="Framebuffer console." alt="" coords="5,155,104,181"/>
-<area shape="rect" id="node6" href="$d4/dc7/rs232_8cpp.html" title=" " alt="" coords="128,155,213,181"/>
-<area shape="rect" id="node7" href="$da/d4c/_mutex_8cpp.html" title=" " alt="" coords="237,155,328,181"/>
-<area shape="rect" id="node8" href="$de/d90/heap_8cpp.html" title="Liballoc heap implementation." alt="" coords="353,155,434,181"/>
-<area shape="rect" id="node9" href="$d1/d5e/paging_8cpp.html" title=" " alt="" coords="459,155,552,181"/>
-<area shape="rect" id="node11" href="$d6/d80/_semaphore_8cpp.html" title=" " alt="" coords="576,155,699,181"/>
+<area shape="rect" id="node6" href="$da/d4c/_mutex_8cpp.html" title=" " alt="" coords="128,155,219,181"/>
+<area shape="rect" id="node7" href="$db/d52/_r_a_i_i_8hpp.html" title="Resource Acquisition Is Initialization mutex. Locks when constructed and unlocks when destructed." alt="" coords="243,155,319,181"/>
+<area shape="rect" id="node10" href="$de/d90/heap_8cpp.html" title="Liballoc heap implementation." alt="" coords="343,155,425,181"/>
+<area shape="rect" id="node8" href="$d4/dc7/rs232_8cpp.html" title=" " alt="" coords="183,229,268,256"/>
+<area shape="rect" id="node9" href="$d1/d5e/paging_8cpp.html" title=" " alt="" coords="292,229,385,256"/>
+<area shape="rect" id="node12" href="$d6/d80/_semaphore_8cpp.html" title=" " alt="" coords="449,155,572,181"/>
 </map>
