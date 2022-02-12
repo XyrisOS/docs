@@ -1,7 +1,8 @@
 <map id="tasks_sync_unblock" name="tasks_sync_unblock">
-<area shape="rect" id="node1" title=" " alt="" coords="408,31,560,57"/>
-<area shape="rect" id="node2" href="$d4/dbd/class_semaphore.html#a935c82ed97123c2e5569334dadce648e" title="Post to the semaphore." alt="" coords="228,5,360,32"/>
-<area shape="rect" id="node3" href="$d4/de8/class_mutex.html#adc0b8b863a4e7350297373127a9c7016" title="Release the mutex." alt="" coords="237,56,351,83"/>
-<area shape="rect" id="node4" href="$d7/d75/namespace_r_s232.html#aa77ae4139fa5feba01809614f595edb6" title="Reads bytes from the serial buffer." alt="" coords="43,31,143,57"/>
-<area shape="rect" id="node5" href="$d5/d9b/class_r_a_i_i_mutex.html#a5d011faee3026343b52c2a862b8d02db" title="Destroy the RAIIMutex object and unlock the mutex." alt="" coords="5,81,180,108"/>
+<area shape="rect" id="node1" title=" " alt="" coords="417,46,569,73"/>
+<area shape="rect" id="node2" href="$d4/dbd/class_semaphore.html#a935c82ed97123c2e5569334dadce648e" title="Post to the semaphore." alt="" coords="237,21,369,47"/>
+<area shape="rect" id="node3" href="$d4/de8/class_mutex.html#adc0b8b863a4e7350297373127a9c7016" title="Release the mutex." alt="" coords="246,71,361,98"/>
+<area shape="rect" id="node4" href="$da/d75/namespace____cxxabiv1.html#a105b72800529d499d2203e15f3b07b91" title=" " alt="" coords="5,5,189,47"/>
+<area shape="rect" id="node5" href="$d7/d75/namespace_r_s232.html#aa77ae4139fa5feba01809614f595edb6" title="Reads bytes from the serial buffer." alt="" coords="47,71,147,98"/>
+<area shape="rect" id="node6" href="$d5/d9b/class_r_a_i_i_mutex.html#a5d011faee3026343b52c2a862b8d02db" title="Destroy the RAIIMutex object and unlock the mutex." alt="" coords="10,122,185,149"/>
 </map>

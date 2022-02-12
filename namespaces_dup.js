@@ -1,5 +1,6 @@
 var namespaces_dup =
 [
+    [ "__cxxabiv1", "da/d75/namespace____cxxabiv1.html", null ],
     [ "Apps", "dc/da3/namespace_apps.html", null ],
     [ "Arch", "d9/dc3/namespace_arch.html", "d9/dc3/namespace_arch" ],
     [ "Boot", "da/d80/namespace_boot.html", null ],

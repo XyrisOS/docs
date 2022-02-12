@@ -1,7 +1,13 @@
 <map id="gcc.cpp" name="gcc.cpp">
-<area shape="rect" id="node1" title=" " alt="" coords="53,5,123,32"/>
-<area shape="rect" id="node2" href="$d7/d9c/_arch_8hpp.html" title="Architecture control and initialization." alt="" coords="47,155,159,181"/>
-<area shape="rect" id="node3" title=" " alt="" coords="5,229,80,256"/>
-<area shape="rect" id="node4" title=" " alt="" coords="114,229,185,256"/>
-<area shape="rect" id="node5" href="$d6/d64/_panic_8hpp.html" title="Kernel panic management." alt="" coords="86,80,170,107"/>
+<area shape="rect" id="node1" title=" " alt="" coords="419,5,490,32"/>
+<area shape="rect" id="node2" href="$d4/d48/_mutex_8hpp.html" title=" " alt="" coords="243,80,389,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="122,528,193,555"/>
+<area shape="rect" id="node5" href="$d7/d9c/_arch_8hpp.html" title="Architecture control and initialization." alt="" coords="479,229,591,256"/>
+<area shape="rect" id="node6" title=" " alt="" coords="507,528,581,555"/>
+<area shape="rect" id="node11" href="$d6/d64/_panic_8hpp.html" title="Kernel panic management." alt="" coords="493,155,577,181"/>
+<area shape="rect" id="node4" href="$d2/dbd/tasks_8hpp.html" title=" " alt="" coords="239,155,393,181"/>
+<area shape="rect" id="node7" href="$d1/d75/paging_8hpp.html" title=" " alt="" coords="240,229,392,256"/>
+<area shape="rect" id="node8" href="$d9/d4f/_memory_8hpp.html" title="Architecture memory management &amp; paging API." alt="" coords="321,453,455,480"/>
+<area shape="rect" id="node9" href="$d6/dc1/_memory_map_8hpp.html" title="Memory map containing a number of Memory sections that describe the physical memory layout." alt="" coords="209,304,399,331"/>
+<area shape="rect" id="node10" href="$d0/d91/_memory_section_8hpp.html" title=" " alt="" coords="195,379,405,405"/>
 </map>

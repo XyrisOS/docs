@@ -1,5 +1,6 @@
 var annotated_dup =
 [
+    [ "__cxxabiv1", "da/d75/namespace____cxxabiv1.html", "da/d75/namespace____cxxabiv1" ],
     [ "Arch", "d9/dc3/namespace_arch.html", "d9/dc3/namespace_arch" ],
     [ "Boot", "da/d80/namespace_boot.html", "da/d80/namespace_boot" ],
     [ "GDT", "dc/d49/namespace_g_d_t.html", "dc/d49/namespace_g_d_t" ],
