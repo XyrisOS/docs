@@ -132,7 +132,7 @@ Private Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="../../d0/d81/_physical_8hpp_source.html#l00023">23</a> of file <a class="el" href="../../d0/d81/_physical_8hpp_source.html">Physical.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d81/_physical_8hpp_source.html#l00024">24</a> of file <a class="el" href="../../d0/d81/_physical_8hpp_source.html">Physical.hpp</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a46ef47360e6208e8e6f403ef0940ae32"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a46ef47360e6208e8e6f403ef0940ae32">&#9670;&nbsp;</a></span>findNextFreePhysicalAddress()</h2>
@@ -157,10 +157,10 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d81/_physical_8hpp_source.html#l00098">98</a> of file <a class="el" href="../../d0/d81/_physical_8hpp_source.html">Physical.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    {</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d6/d53/class_memory_1_1_physical_1_1_physical_manager.html#a1f629b4d2064cc4005b1eadfef281b9d">m_memory</a>.<a class="code" href="../../d6/d09/class_bitset.html#a22260a1012d015dd5a3e69d95d2784b1">FindFirstBit</a>(<span class="keyword">false</span>);</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    }</div>
+<p class="definition">Definition at line <a class="el" href="../../d0/d81/_physical_8hpp_source.html#l00100">100</a> of file <a class="el" href="../../d0/d81/_physical_8hpp_source.html">Physical.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    {</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d6/d53/class_memory_1_1_physical_1_1_physical_manager.html#a1f629b4d2064cc4005b1eadfef281b9d">m_memory</a>.<a class="code" href="../../d6/d09/class_bitset.html#a22260a1012d015dd5a3e69d95d2784b1">FindFirstBit</a>(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    }</div>
 </div><!-- fragment --><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -199,16 +199,16 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d81/_physical_8hpp_source.html#l00087">87</a> of file <a class="el" href="../../d0/d81/_physical_8hpp_source.html">Physical.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    {</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="comment">// TODO: Optimize bitmap library to take number of bits to set</span></div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; sect.pages(); i++) {</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            <span class="keywordflow">if</span> (!<a class="code" href="../../d6/d53/class_memory_1_1_physical_1_1_physical_manager.html#a830f3274f07d5a97c3240dbf20c682f6">isFree</a>(<a class="code" href="../../d9/d4f/_memory_8hpp.html#a921385efd03dc5d230ca793d43e4e463">ADDRESS_TO_PAGE_IDX</a>(sect.base()) + i)) {</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            }</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        }</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    }</div>
+<p class="definition">Definition at line <a class="el" href="../../d0/d81/_physical_8hpp_source.html#l00089">89</a> of file <a class="el" href="../../d0/d81/_physical_8hpp_source.html">Physical.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    {</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <span class="comment">// TODO: Optimize bitmap library to take number of bits to set</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; sect.pages(); i++) {</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            <span class="keywordflow">if</span> (!<a class="code" href="../../d6/d53/class_memory_1_1_physical_1_1_physical_manager.html#a830f3274f07d5a97c3240dbf20c682f6">isFree</a>(<a class="code" href="../../d9/d4f/_memory_8hpp.html#a921385efd03dc5d230ca793d43e4e463">ADDRESS_TO_PAGE_IDX</a>(sect.base()) + i)) {</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            }</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        }</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    }</div>
 </div><!-- fragment --><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -251,10 +251,10 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d81/_physical_8hpp_source.html#l00082">82</a> of file <a class="el" href="../../d0/d81/_physical_8hpp_source.html">Physical.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    {</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d6/d53/class_memory_1_1_physical_1_1_physical_manager.html#a1f629b4d2064cc4005b1eadfef281b9d">m_memory</a>.<a class="code" href="../../d6/d09/class_bitset.html#a64c214a1b53eecdfcc713fc1e2462c6d">Test</a>(<a class="code" href="../../d9/d4f/_memory_8hpp.html#a921385efd03dc5d230ca793d43e4e463">ADDRESS_TO_PAGE_IDX</a>(addr)) == 0;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    }</div>
+<p class="definition">Definition at line <a class="el" href="../../d0/d81/_physical_8hpp_source.html#l00084">84</a> of file <a class="el" href="../../d0/d81/_physical_8hpp_source.html">Physical.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    {</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d6/d53/class_memory_1_1_physical_1_1_physical_manager.html#a1f629b4d2064cc4005b1eadfef281b9d">m_memory</a>.<a class="code" href="../../d6/d09/class_bitset.html#a64c214a1b53eecdfcc713fc1e2462c6d">Test</a>(<a class="code" href="../../d9/d4f/_memory_8hpp.html#a921385efd03dc5d230ca793d43e4e463">ADDRESS_TO_PAGE_IDX</a>(addr)) == 0;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    }</div>
 </div><!-- fragment --><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -306,12 +306,12 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d81/_physical_8hpp_source.html#l00054">54</a> of file <a class="el" href="../../d0/d81/_physical_8hpp_source.html">Physical.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    {</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keywordflow">if</span> (!<a class="code" href="../../d6/d53/class_memory_1_1_physical_1_1_physical_manager.html#a830f3274f07d5a97c3240dbf20c682f6">isFree</a>(addr)) {</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            <a class="code" href="../../d6/d53/class_memory_1_1_physical_1_1_physical_manager.html#a1f629b4d2064cc4005b1eadfef281b9d">m_memory</a>.<a class="code" href="../../d6/d09/class_bitset.html#a7550479c8346b33636cc9b0d5cdb7e02">Reset</a>(<a class="code" href="../../d9/d4f/_memory_8hpp.html#a921385efd03dc5d230ca793d43e4e463">ADDRESS_TO_PAGE_IDX</a>(addr));</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        }</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    }</div>
+<p class="definition">Definition at line <a class="el" href="../../d0/d81/_physical_8hpp_source.html#l00056">56</a> of file <a class="el" href="../../d0/d81/_physical_8hpp_source.html">Physical.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    {</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keywordflow">if</span> (!<a class="code" href="../../d6/d53/class_memory_1_1_physical_1_1_physical_manager.html#a830f3274f07d5a97c3240dbf20c682f6">isFree</a>(addr)) {</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            <a class="code" href="../../d6/d53/class_memory_1_1_physical_1_1_physical_manager.html#a1f629b4d2064cc4005b1eadfef281b9d">m_memory</a>.<a class="code" href="../../d6/d09/class_bitset.html#a7550479c8346b33636cc9b0d5cdb7e02">Reset</a>(<a class="code" href="../../d9/d4f/_memory_8hpp.html#a921385efd03dc5d230ca793d43e4e463">ADDRESS_TO_PAGE_IDX</a>(addr));</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        }</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    }</div>
 </div><!-- fragment --><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
@@ -352,12 +352,12 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d81/_physical_8hpp_source.html#l00032">32</a> of file <a class="el" href="../../d0/d81/_physical_8hpp_source.html">Physical.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    {</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; sect.pages(); i++) {</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            <a class="code" href="../../d6/d53/class_memory_1_1_physical_1_1_physical_manager.html#ad4702b2c633e077d59a544974e30839c">setFree</a>(<a class="code" href="../../d9/d4f/_memory_8hpp.html#a921385efd03dc5d230ca793d43e4e463">ADDRESS_TO_PAGE_IDX</a>(sect.base()) + i);</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        }</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    }</div>
+<p class="definition">Definition at line <a class="el" href="../../d0/d81/_physical_8hpp_source.html#l00033">33</a> of file <a class="el" href="../../d0/d81/_physical_8hpp_source.html">Physical.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; sect.pages(); i++) {</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            <a class="code" href="../../d6/d53/class_memory_1_1_physical_1_1_physical_manager.html#ad4702b2c633e077d59a544974e30839c">setFree</a>(<a class="code" href="../../d9/d4f/_memory_8hpp.html#a921385efd03dc5d230ca793d43e4e463">ADDRESS_TO_PAGE_IDX</a>(sect.base()) + i);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        }</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    }</div>
 </div><!-- fragment --><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-6-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-6-summary" class="dynsummary" style="display:block;">
@@ -398,12 +398,12 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d81/_physical_8hpp_source.html#l00068">68</a> of file <a class="el" href="../../d0/d81/_physical_8hpp_source.html">Physical.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    {</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="keywordflow">if</span> (!<a class="code" href="../../d6/d53/class_memory_1_1_physical_1_1_physical_manager.html#a830f3274f07d5a97c3240dbf20c682f6">isFree</a>(addr)) {</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            <a class="code" href="../../d6/d53/class_memory_1_1_physical_1_1_physical_manager.html#a1f629b4d2064cc4005b1eadfef281b9d">m_memory</a>.<a class="code" href="../../d6/d09/class_bitset.html#a7550479c8346b33636cc9b0d5cdb7e02">Reset</a>(<a class="code" href="../../d9/d4f/_memory_8hpp.html#a921385efd03dc5d230ca793d43e4e463">ADDRESS_TO_PAGE_IDX</a>(addr));</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        }</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    }</div>
+<p class="definition">Definition at line <a class="el" href="../../d0/d81/_physical_8hpp_source.html#l00070">70</a> of file <a class="el" href="../../d0/d81/_physical_8hpp_source.html">Physical.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    {</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="keywordflow">if</span> (!<a class="code" href="../../d6/d53/class_memory_1_1_physical_1_1_physical_manager.html#a830f3274f07d5a97c3240dbf20c682f6">isFree</a>(addr)) {</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            <a class="code" href="../../d6/d53/class_memory_1_1_physical_1_1_physical_manager.html#a1f629b4d2064cc4005b1eadfef281b9d">m_memory</a>.<a class="code" href="../../d6/d09/class_bitset.html#a7550479c8346b33636cc9b0d5cdb7e02">Reset</a>(<a class="code" href="../../d9/d4f/_memory_8hpp.html#a921385efd03dc5d230ca793d43e4e463">ADDRESS_TO_PAGE_IDX</a>(addr));</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        }</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    }</div>
 </div><!-- fragment --><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-7-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-7-summary" class="dynsummary" style="display:block;">
@@ -444,12 +444,12 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d81/_physical_8hpp_source.html#l00061">61</a> of file <a class="el" href="../../d0/d81/_physical_8hpp_source.html">Physical.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    {</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="../../d6/d53/class_memory_1_1_physical_1_1_physical_manager.html#a830f3274f07d5a97c3240dbf20c682f6">isFree</a>(addr)) {</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            <a class="code" href="../../d6/d53/class_memory_1_1_physical_1_1_physical_manager.html#a1f629b4d2064cc4005b1eadfef281b9d">m_memory</a>.<a class="code" href="../../d6/d09/class_bitset.html#a898b1c20c4d46232ba11e52292b54dcb">Set</a>(<a class="code" href="../../d9/d4f/_memory_8hpp.html#a921385efd03dc5d230ca793d43e4e463">ADDRESS_TO_PAGE_IDX</a>(addr));</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        }</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    }</div>
+<p class="definition">Definition at line <a class="el" href="../../d0/d81/_physical_8hpp_source.html#l00063">63</a> of file <a class="el" href="../../d0/d81/_physical_8hpp_source.html">Physical.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    {</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="../../d6/d53/class_memory_1_1_physical_1_1_physical_manager.html#a830f3274f07d5a97c3240dbf20c682f6">isFree</a>(addr)) {</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            <a class="code" href="../../d6/d53/class_memory_1_1_physical_1_1_physical_manager.html#a1f629b4d2064cc4005b1eadfef281b9d">m_memory</a>.<a class="code" href="../../d6/d09/class_bitset.html#a898b1c20c4d46232ba11e52292b54dcb">Set</a>(<a class="code" href="../../d9/d4f/_memory_8hpp.html#a921385efd03dc5d230ca793d43e4e463">ADDRESS_TO_PAGE_IDX</a>(addr));</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        }</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    }</div>
 </div><!-- fragment --><div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-8-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-8-summary" class="dynsummary" style="display:block;">
@@ -490,20 +490,21 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d81/_physical_8hpp_source.html#l00039">39</a> of file <a class="el" href="../../d0/d81/_physical_8hpp_source.html">Physical.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    {</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <a class="code" href="../../d2/daf/stdio_8hpp.html#aa1a1b09aada329c9352f1337d36ce184">debugf</a>(</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            <span class="stringliteral">&quot;0x%08zX-0x%08zX 0x%08zX [%zu] [%s]\n&quot;</span>,</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            sect.base(),</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            sect.end(),</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            sect.size(),</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            sect.pages(),</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            sect.typeString());</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="comment">// TODO: Optimize bitmap library to take number of bits to set</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; sect.pages(); i++) {</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            <a class="code" href="../../d6/d53/class_memory_1_1_physical_1_1_physical_manager.html#a2a1aba3973b12be8410b3e15c93ea5a0">setUsed</a>(<a class="code" href="../../d9/d4f/_memory_8hpp.html#a921385efd03dc5d230ca793d43e4e463">ADDRESS_TO_PAGE_IDX</a>(sect.base()) + i);</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        }</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    }</div>
+<p class="definition">Definition at line <a class="el" href="../../d0/d81/_physical_8hpp_source.html#l00040">40</a> of file <a class="el" href="../../d0/d81/_physical_8hpp_source.html">Physical.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    {</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <a class="code" href="../../d3/d42/class_logger.html#a8fbe47d81e3fb74576ea6c384b3313a5">Logger::Debug</a>(</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            __func__,</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            <span class="stringliteral">&quot;0x%08zX-0x%08zX 0x%08zX [%zu] [%s]&quot;</span>,</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            sect.base(),</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            sect.end(),</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            sect.size(),</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            sect.pages(),</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            sect.typeString());</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="comment">// TODO: Optimize bitmap library to take number of bits to set</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; sect.pages(); i++) {</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            <a class="code" href="../../d6/d53/class_memory_1_1_physical_1_1_physical_manager.html#a2a1aba3973b12be8410b3e15c93ea5a0">setUsed</a>(<a class="code" href="../../d9/d4f/_memory_8hpp.html#a921385efd03dc5d230ca793d43e4e463">ADDRESS_TO_PAGE_IDX</a>(sect.base()) + i);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        }</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    }</div>
 </div><!-- fragment --><div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-9-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-9-summary" class="dynsummary" style="display:block;">
@@ -511,13 +512,23 @@ Private Attributes</h2></td></tr>
 <div id="dynsection-9-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="../../d6/d53/class_memory_1_1_physical_1_1_physical_manager_a2a1aba3973b12be8410b3e15c93ea5a0_cgraph.png" border="0" usemap="#d6/d53/class_memory_1_1_physical_1_1_physical_manager_a2a1aba3973b12be8410b3e15c93ea5a0_cgraph" alt=""/></div>
 <map name="d6/d53/class_memory_1_1_physical_1_1_physical_manager_a2a1aba3973b12be8410b3e15c93ea5a0_cgraph" id="d6/d53/class_memory_1_1_physical_1_1_physical_manager_a2a1aba3973b12be8410b3e15c93ea5a0_cgraph">
-<area shape="rect" title=" " alt="" coords="5,99,204,141"/>
+<area shape="rect" title=" " alt="" coords="5,125,204,166"/>
 <area shape="rect" href="../../d8/d7f/class_memory_1_1_section.html#aeacf47ee881cc66130ddcac9a2e51ac2" title=" " alt="" coords="270,5,441,32"/>
-<area shape="rect" href="../../d8/d7f/class_memory_1_1_section.html#a9145bcd59832a378ca6213bc1701b393" title=" " alt="" coords="274,56,437,83"/>
-<area shape="rect" href="../../d8/d7f/class_memory_1_1_section.html#ad6b2480c725438f4946dfef5cbf172f4" title=" " alt="" coords="266,107,445,133"/>
-<area shape="rect" href="../../d8/d7f/class_memory_1_1_section.html#ab0ffe318d1627a1613688fc3e622fd21" title=" " alt="" coords="508,132,673,159"/>
-<area shape="rect" href="../../d8/d7f/class_memory_1_1_section.html#a5d0dfa35c7c723dcd8ebbd3408534fbd" title=" " alt="" coords="252,208,459,235"/>
-<area shape="rect" href="../../d8/d7f/class_memory_1_1_section.html#addf76897de2f98dec988a246c8c010a3" title=" " alt="" coords="507,208,675,235"/>
+<area shape="rect" href="../../d3/d42/class_logger.html#a8fbe47d81e3fb74576ea6c384b3313a5" title=" " alt="" coords="297,56,413,83"/>
+<area shape="rect" href="../../d8/d7f/class_memory_1_1_section.html#a9145bcd59832a378ca6213bc1701b393" title=" " alt="" coords="274,107,437,133"/>
+<area shape="rect" href="../../d8/d7f/class_memory_1_1_section.html#ad6b2480c725438f4946dfef5cbf172f4" title=" " alt="" coords="266,208,445,235"/>
+<area shape="rect" href="../../d8/d7f/class_memory_1_1_section.html#ab0ffe318d1627a1613688fc3e622fd21" title=" " alt="" coords="508,208,673,235"/>
+<area shape="rect" href="../../d8/d7f/class_memory_1_1_section.html#a5d0dfa35c7c723dcd8ebbd3408534fbd" title=" " alt="" coords="252,259,459,285"/>
+<area shape="rect" href="../../d3/d42/class_logger.html#a9037a21510052c0bcc285a5cea5daa80" title=" " alt="" coords="743,56,873,83"/>
+<area shape="rect" href="../../d3/d42/class_logger.html#a08420927c63b63e913e1eea1ffa1c9f8" title=" " alt="" coords="941,81,1036,108"/>
+<area shape="rect" href="../../d3/d42/class_logger.html#af7ace344d0d305c55bc2f8ad4119b142" title=" " alt="" coords="521,157,661,184"/>
+<area shape="rect" href="../../d4/d64/printf_8cpp.html#a4a8483991af81c2a4ae0025f4d2fb5e7" title="Sends formatted output to a string." alt="" coords="772,208,844,235"/>
+<area shape="rect" href="../../d3/d42/class_logger.html#a58b91294bd049d4d34d33bd2a38d5346" title=" " alt="" coords="729,259,887,285"/>
+<area shape="rect" href="../../d3/d42/class_logger.html#adaa59e8614dbdc87605d2f078ee40931" title=" " alt="" coords="723,157,893,184"/>
+<area shape="rect" href="../../d4/d64/printf_8cpp.html#a626c6babba88d2b34beacfb116a71fb8" title="Sends formatted output to a string using an argument list." alt="" coords="949,208,1029,235"/>
+<area shape="rect" href="../../d4/d64/printf_8cpp.html#a85a2fff114bf015eba22a1dc163bf1ba" title="Perform all printf operations on the format string using the provided argument list and uses the call..." alt="" coords="1084,208,1189,235"/>
+<area shape="rect" href="../../d5/d24/string_8cpp.html#a2dee044e4e667b5b789b493abd21cfa4" title="Returns the length of a string." alt="" coords="1237,208,1296,235"/>
+<area shape="rect" href="../../d8/d7f/class_memory_1_1_section.html#addf76897de2f98dec988a246c8c010a3" title=" " alt="" coords="507,259,675,285"/>
 </map>
 </div>
 
@@ -547,12 +558,12 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d81/_physical_8hpp_source.html#l00075">75</a> of file <a class="el" href="../../d0/d81/_physical_8hpp_source.html">Physical.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    {</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="../../d6/d53/class_memory_1_1_physical_1_1_physical_manager.html#a830f3274f07d5a97c3240dbf20c682f6">isFree</a>(addr)) {</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            <a class="code" href="../../d6/d53/class_memory_1_1_physical_1_1_physical_manager.html#a1f629b4d2064cc4005b1eadfef281b9d">m_memory</a>.<a class="code" href="../../d6/d09/class_bitset.html#a898b1c20c4d46232ba11e52292b54dcb">Set</a>(<a class="code" href="../../d9/d4f/_memory_8hpp.html#a921385efd03dc5d230ca793d43e4e463">ADDRESS_TO_PAGE_IDX</a>(addr));</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        }</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    }</div>
+<p class="definition">Definition at line <a class="el" href="../../d0/d81/_physical_8hpp_source.html#l00077">77</a> of file <a class="el" href="../../d0/d81/_physical_8hpp_source.html">Physical.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    {</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="../../d6/d53/class_memory_1_1_physical_1_1_physical_manager.html#a830f3274f07d5a97c3240dbf20c682f6">isFree</a>(addr)) {</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            <a class="code" href="../../d6/d53/class_memory_1_1_physical_1_1_physical_manager.html#a1f629b4d2064cc4005b1eadfef281b9d">m_memory</a>.<a class="code" href="../../d6/d09/class_bitset.html#a898b1c20c4d46232ba11e52292b54dcb">Set</a>(<a class="code" href="../../d9/d4f/_memory_8hpp.html#a921385efd03dc5d230ca793d43e4e463">ADDRESS_TO_PAGE_IDX</a>(addr));</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        }</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    }</div>
 </div><!-- fragment --><div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-10-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-10-summary" class="dynsummary" style="display:block;">
@@ -590,7 +601,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/d81/_physical_8hpp_source.html#l00104">104</a> of file <a class="el" href="../../d0/d81/_physical_8hpp_source.html">Physical.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/d81/_physical_8hpp_source.html#l00106">106</a> of file <a class="el" href="../../d0/d81/_physical_8hpp_source.html">Physical.hpp</a>.</p>
 
 </div>
 </div>
@@ -599,14 +610,14 @@ Private Attributes</h2></td></tr>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclass_memory_1_1_physical_1_1_physical_manager_html_a830f3274f07d5a97c3240dbf20c682f6"><div class="ttname"><a href="../../d6/d53/class_memory_1_1_physical_1_1_physical_manager.html#a830f3274f07d5a97c3240dbf20c682f6">Memory::Physical::PhysicalManager::isFree</a></div><div class="ttdeci">bool isFree(uintptr_t addr)</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d81/_physical_8hpp_source.html#l00082">Physical.hpp:82</a></div></div>
+<div class="ttc" id="aclass_memory_1_1_physical_1_1_physical_manager_html_a830f3274f07d5a97c3240dbf20c682f6"><div class="ttname"><a href="../../d6/d53/class_memory_1_1_physical_1_1_physical_manager.html#a830f3274f07d5a97c3240dbf20c682f6">Memory::Physical::PhysicalManager::isFree</a></div><div class="ttdeci">bool isFree(uintptr_t addr)</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d81/_physical_8hpp_source.html#l00084">Physical.hpp:84</a></div></div>
 <div class="ttc" id="aclass_bitset_html_a64c214a1b53eecdfcc713fc1e2462c6d"><div class="ttname"><a href="../../d6/d09/class_bitset.html#a64c214a1b53eecdfcc713fc1e2462c6d">Bitset::Test</a></div><div class="ttdeci">bool Test(size_t pos)</div><div class="ttdoc">Return the value of the bit at the given position.</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d35/_bitset_8hpp_source.html#l00091">Bitset.hpp:91</a></div></div>
 <div class="ttc" id="aclass_bitset_html_a898b1c20c4d46232ba11e52292b54dcb"><div class="ttname"><a href="../../d6/d09/class_bitset.html#a898b1c20c4d46232ba11e52292b54dcb">Bitset::Set</a></div><div class="ttdeci">void Set(size_t pos)</div><div class="ttdoc">Set the bit for a given position.</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d35/_bitset_8hpp_source.html#l00060">Bitset.hpp:60</a></div></div>
-<div class="ttc" id="astdio_8hpp_html_aa1a1b09aada329c9352f1337d36ce184"><div class="ttname"><a href="../../d2/daf/stdio_8hpp.html#aa1a1b09aada329c9352f1337d36ce184">debugf</a></div><div class="ttdeci">#define debugf(fmt,...)</div><div class="ttdoc">Prints a statement to serial debugger if the kernel is built with the debug flag defined....</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/daf/stdio_8hpp_source.html#l00074">stdio.hpp:74</a></div></div>
-<div class="ttc" id="aclass_memory_1_1_physical_1_1_physical_manager_html_a1f629b4d2064cc4005b1eadfef281b9d"><div class="ttname"><a href="../../d6/d53/class_memory_1_1_physical_1_1_physical_manager.html#a1f629b4d2064cc4005b1eadfef281b9d">Memory::Physical::PhysicalManager::m_memory</a></div><div class="ttdeci">Bitset&lt; MEM_BITMAP_SIZE &gt; m_memory</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d81/_physical_8hpp_source.html#l00104">Physical.hpp:104</a></div></div>
+<div class="ttc" id="aclass_memory_1_1_physical_1_1_physical_manager_html_a1f629b4d2064cc4005b1eadfef281b9d"><div class="ttname"><a href="../../d6/d53/class_memory_1_1_physical_1_1_physical_manager.html#a1f629b4d2064cc4005b1eadfef281b9d">Memory::Physical::PhysicalManager::m_memory</a></div><div class="ttdeci">Bitset&lt; MEM_BITMAP_SIZE &gt; m_memory</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d81/_physical_8hpp_source.html#l00106">Physical.hpp:106</a></div></div>
 <div class="ttc" id="aclass_bitset_html_a22260a1012d015dd5a3e69d95d2784b1"><div class="ttname"><a href="../../d6/d09/class_bitset.html#a22260a1012d015dd5a3e69d95d2784b1">Bitset::FindFirstBit</a></div><div class="ttdeci">size_t FindFirstBit(bool isSet)</div><div class="ttdoc">Finds and returns the position of the first clear bit.</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d35/_bitset_8hpp_source.html#l00116">Bitset.hpp:116</a></div></div>
-<div class="ttc" id="aclass_memory_1_1_physical_1_1_physical_manager_html_ad4702b2c633e077d59a544974e30839c"><div class="ttname"><a href="../../d6/d53/class_memory_1_1_physical_1_1_physical_manager.html#ad4702b2c633e077d59a544974e30839c">Memory::Physical::PhysicalManager::setFree</a></div><div class="ttdeci">void setFree(Section &amp;sect)</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d81/_physical_8hpp_source.html#l00032">Physical.hpp:32</a></div></div>
-<div class="ttc" id="aclass_memory_1_1_physical_1_1_physical_manager_html_a2a1aba3973b12be8410b3e15c93ea5a0"><div class="ttname"><a href="../../d6/d53/class_memory_1_1_physical_1_1_physical_manager.html#a2a1aba3973b12be8410b3e15c93ea5a0">Memory::Physical::PhysicalManager::setUsed</a></div><div class="ttdeci">void setUsed(Section &amp;sect)</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d81/_physical_8hpp_source.html#l00039">Physical.hpp:39</a></div></div>
+<div class="ttc" id="aclass_memory_1_1_physical_1_1_physical_manager_html_ad4702b2c633e077d59a544974e30839c"><div class="ttname"><a href="../../d6/d53/class_memory_1_1_physical_1_1_physical_manager.html#ad4702b2c633e077d59a544974e30839c">Memory::Physical::PhysicalManager::setFree</a></div><div class="ttdeci">void setFree(Section &amp;sect)</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d81/_physical_8hpp_source.html#l00033">Physical.hpp:33</a></div></div>
+<div class="ttc" id="aclass_logger_html_a8fbe47d81e3fb74576ea6c384b3313a5"><div class="ttname"><a href="../../d3/d42/class_logger.html#a8fbe47d81e3fb74576ea6c384b3313a5">Logger::Debug</a></div><div class="ttdeci">static void Debug(const char *tag, const char *fmt,...)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d27/_logger_8cpp_source.html#l00071">Logger.cpp:71</a></div></div>
+<div class="ttc" id="aclass_memory_1_1_physical_1_1_physical_manager_html_a2a1aba3973b12be8410b3e15c93ea5a0"><div class="ttname"><a href="../../d6/d53/class_memory_1_1_physical_1_1_physical_manager.html#a2a1aba3973b12be8410b3e15c93ea5a0">Memory::Physical::PhysicalManager::setUsed</a></div><div class="ttdeci">void setUsed(Section &amp;sect)</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d81/_physical_8hpp_source.html#l00040">Physical.hpp:40</a></div></div>
 <div class="ttc" id="a_memory_8hpp_html_a921385efd03dc5d230ca793d43e4e463"><div class="ttname"><a href="../../d9/d4f/_memory_8hpp.html#a921385efd03dc5d230ca793d43e4e463">ADDRESS_TO_PAGE_IDX</a></div><div class="ttdeci">#define ADDRESS_TO_PAGE_IDX(addr)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d4f/_memory_8hpp_source.html#l00028">Memory.hpp:28</a></div></div>
 <div class="ttc" id="aclass_bitset_html_a7550479c8346b33636cc9b0d5cdb7e02"><div class="ttname"><a href="../../d6/d09/class_bitset.html#a7550479c8346b33636cc9b0d5cdb7e02">Bitset::Reset</a></div><div class="ttdeci">void Reset(size_t pos)</div><div class="ttdoc">Reset (clear) the bit at the given position.</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d35/_bitset_8hpp_source.html#l00070">Bitset.hpp:70</a></div></div>
 <!-- start footer part -->

@@ -1,7 +1,13 @@
 <map id="tasks_exit" name="tasks_exit">
-<area shape="rect" id="node1" title="Exits the current task." alt="" coords="5,5,95,32"/>
-<area shape="rect" id="node2" href="$d7/d75/namespace_r_s232.html#a394b7ac1c601a47c2881a460eb41171a" title="Prints a formatted string to serial output." alt="" coords="143,5,249,32"/>
-<area shape="rect" id="node3" href="$d7/d75/namespace_r_s232.html#a04a4582da3c891beaa849f3ce2189975" title="Prints a formatted string to serial output using a va_list of arguments." alt="" coords="297,5,412,32"/>
-<area shape="rect" id="node4" href="$d4/d64/printf_8cpp.html#a85a2fff114bf015eba22a1dc163bf1ba" title="Perform all printf operations on the format string using the provided argument list and uses the call..." alt="" coords="460,5,565,32"/>
-<area shape="rect" id="node5" href="$d5/d24/string_8cpp.html#a2dee044e4e667b5b789b493abd21cfa4" title="Returns the length of a string." alt="" coords="613,5,672,32"/>
+<area shape="rect" id="node1" title="Exits the current task." alt="" coords="5,56,95,83"/>
+<area shape="rect" id="node2" href="$d3/d42/class_logger.html#a8fbe47d81e3fb74576ea6c384b3313a5" title=" " alt="" coords="143,56,259,83"/>
+<area shape="rect" id="node3" href="$d3/d42/class_logger.html#a9037a21510052c0bcc285a5cea5daa80" title=" " alt="" coords="311,5,442,32"/>
+<area shape="rect" id="node4" href="$d3/d42/class_logger.html#a08420927c63b63e913e1eea1ffa1c9f8" title=" " alt="" coords="713,107,808,133"/>
+<area shape="rect" id="node5" href="$d3/d42/class_logger.html#af7ace344d0d305c55bc2f8ad4119b142" title=" " alt="" coords="307,157,447,184"/>
+<area shape="rect" id="node6" href="$d4/d64/printf_8cpp.html#a4a8483991af81c2a4ae0025f4d2fb5e7" title="Sends formatted output to a string." alt="" coords="544,259,616,285"/>
+<area shape="rect" id="node10" href="$d3/d42/class_logger.html#a58b91294bd049d4d34d33bd2a38d5346" title=" " alt="" coords="501,107,659,133"/>
+<area shape="rect" id="node11" href="$d3/d42/class_logger.html#adaa59e8614dbdc87605d2f078ee40931" title=" " alt="" coords="495,157,665,184"/>
+<area shape="rect" id="node7" href="$d4/d64/printf_8cpp.html#a626c6babba88d2b34beacfb116a71fb8" title="Sends formatted output to a string using an argument list." alt="" coords="721,259,801,285"/>
+<area shape="rect" id="node8" href="$d4/d64/printf_8cpp.html#a85a2fff114bf015eba22a1dc163bf1ba" title="Perform all printf operations on the format string using the provided argument list and uses the call..." alt="" coords="856,259,961,285"/>
+<area shape="rect" id="node9" href="$d5/d24/string_8cpp.html#a2dee044e4e667b5b789b493abd21cfa4" title="Returns the length of a string." alt="" coords="1009,259,1068,285"/>
 </map>

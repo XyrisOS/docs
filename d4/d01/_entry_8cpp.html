@@ -89,22 +89,23 @@ $(document).ready(function(){initNavTree('d4/d01/_entry_8cpp.html','../../'); in
 <div class="title">Entry.cpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="../../d2/daf/stdio_8hpp_source.html">Library/stdio.hpp</a>&gt;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="../../d3/de3/_logger_8hpp_source.html">Logger.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d6/d64/_panic_8hpp_source.html">Panic.hpp</a>&quot;</code><br />
+<code>#include &lt;<a class="el" href="../../d2/daf/stdio_8hpp_source.html">Library/stdio.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../de/d99/time_8hpp_source.html">Library/time.hpp</a>&gt;</code><br />
-<code>#include &lt;stdint.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../d2/dbd/tasks_8hpp_source.html">Scheduler/tasks.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="../../d6/d64/_panic_8hpp_source.html">Panic.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../d2/d1f/_handoff_8hpp_source.html">Bootloader/Handoff.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../d7/d9c/_arch_8hpp_source.html">Arch/Arch.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../d1/d75/paging_8hpp_source.html">Memory/paging.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="../../d9/d31/graphics_8hpp_source.html">Devices/Graphics/graphics.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="../../d5/ddc/console_8hpp_source.html">Devices/Graphics/console.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../d9/d89/rtc_8hpp_source.html">Devices/Clock/rtc.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="../../db/d90/rs232_8hpp_source.html">Devices/Serial/rs232.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="../../d5/ddc/console_8hpp_source.html">Devices/Graphics/console.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="../../d9/d31/graphics_8hpp_source.html">Devices/Graphics/graphics.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../da/d1a/spkr_8hpp_source.html">Devices/PCSpeaker/spkr.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="../../db/d90/rs232_8hpp_source.html">Devices/Serial/rs232.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../d3/dee/primes_8hpp_source.html">Applications/primes.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../da/d14/spinner_8hpp_source.html">Applications/spinner.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../db/df8/defines_8hpp_source.html">Support/defines.hpp</a>&gt;</code><br />
+<code>#include &lt;stdint.h&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Include dependency graph for Entry.cpp:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -112,29 +113,32 @@ $(document).ready(function(){initNavTree('d4/d01/_entry_8cpp.html','../../'); in
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="../../de/d61/_entry_8cpp__incl.png" border="0" usemap="#_entry_8cpp" alt=""/></div>
 <map name="_entry_8cpp" id="_entry_8cpp">
-<area shape="rect" title="The entry point into the Xyris kernel." alt="" coords="968,5,1049,32"/>
-<area shape="rect" href="../../d2/daf/stdio_8hpp.html" title=" " alt="" coords="1034,80,1165,107"/>
-<area shape="rect" href="../../de/d99/time_8hpp.html" title="Time lib code." alt="" coords="1328,304,1457,331"/>
-<area shape="rect" title=" " alt="" coords="836,453,907,480"/>
-<area shape="rect" href="../../d2/dbd/tasks_8hpp.html" title=" " alt="" coords="336,80,489,107"/>
-<area shape="rect" href="../../d7/d9c/_arch_8hpp.html" title="Architecture control and initialization." alt="" coords="471,155,583,181"/>
-<area shape="rect" href="../../d1/d75/paging_8hpp.html" title=" " alt="" coords="223,155,375,181"/>
-<area shape="rect" href="../../d6/d64/_panic_8hpp.html" title="Kernel panic management." alt="" coords="565,80,649,107"/>
-<area shape="rect" href="../../d2/d1f/_handoff_8hpp.html" title=" " alt="" coords="955,155,1131,181"/>
-<area shape="rect" href="../../d9/d31/graphics_8hpp.html" title=" " alt="" coords="708,155,931,181"/>
-<area shape="rect" href="../../d5/ddc/console_8hpp.html" title="Framebuffer console." alt="" coords="1189,80,1407,107"/>
-<area shape="rect" href="../../d9/d89/rtc_8hpp.html" title=" " alt="" coords="1533,379,1695,405"/>
-<area shape="rect" href="../../db/d90/rs232_8hpp.html" title="A simple, write&#45;only driver for the RS232 serial device standard. Code mostly ported from Panix&#45;Archi..." alt="" coords="827,80,1009,107"/>
-<area shape="rect" href="../../da/d1a/spkr_8hpp.html" title=" " alt="" coords="575,229,781,256"/>
-<area shape="rect" href="../../d3/dee/primes_8hpp.html" title="Prime computation tasks." alt="" coords="1583,80,1762,107"/>
-<area shape="rect" href="../../da/d14/spinner_8hpp.html" title="Kernel spinner task." alt="" coords="1786,80,1967,107"/>
-<area shape="rect" href="../../db/df8/defines_8hpp.html" title="Compiler pre&#45;processor definitions." alt="" coords="1992,80,2143,107"/>
-<area shape="rect" title=" " alt="" coords="1206,155,1281,181"/>
-<area shape="rect" title=" " alt="" coords="94,453,169,480"/>
-<area shape="rect" href="../../d9/d4f/_memory_8hpp.html" title="Architecture memory management &amp; paging API." alt="" coords="220,379,355,405"/>
-<area shape="rect" href="../../d6/dc1/_memory_map_8hpp.html" title="Memory map containing a number of Memory sections that describe the physical memory layout." alt="" coords="205,229,396,256"/>
-<area shape="rect" href="../../d0/d91/_memory_section_8hpp.html" title=" " alt="" coords="195,304,406,331"/>
-<area shape="rect" href="../../d7/d1a/framebuffer_8hpp.html" title=" " alt="" coords="857,229,1099,256"/>
+<area shape="rect" title="The entry point into the Xyris kernel." alt="" coords="854,5,935,32"/>
+<area shape="rect" href="../../d3/de3/_logger_8hpp.html" title=" " alt="" coords="401,80,495,107"/>
+<area shape="rect" title=" " alt="" coords="814,677,885,704"/>
+<area shape="rect" href="../../d2/dbd/tasks_8hpp.html" title=" " alt="" coords="457,304,610,331"/>
+<area shape="rect" href="../../d7/d9c/_arch_8hpp.html" title="Architecture control and initialization." alt="" coords="751,379,863,405"/>
+<area shape="rect" href="../../d1/d75/paging_8hpp.html" title=" " alt="" coords="39,379,191,405"/>
+<area shape="rect" href="../../d6/d64/_panic_8hpp.html" title="Kernel panic management." alt="" coords="301,229,385,256"/>
+<area shape="rect" href="../../d2/daf/stdio_8hpp.html" title=" " alt="" coords="519,80,649,107"/>
+<area shape="rect" href="../../de/d99/time_8hpp.html" title="Time lib code." alt="" coords="1055,304,1185,331"/>
+<area shape="rect" href="../../d2/d1f/_handoff_8hpp.html" title=" " alt="" coords="223,379,399,405"/>
+<area shape="rect" href="../../d9/d89/rtc_8hpp.html" title=" " alt="" coords="1089,528,1252,555"/>
+<area shape="rect" href="../../d5/ddc/console_8hpp.html" title="Framebuffer console." alt="" coords="933,80,1150,107"/>
+<area shape="rect" href="../../d9/d31/graphics_8hpp.html" title=" " alt="" coords="427,379,650,405"/>
+<area shape="rect" href="../../da/d1a/spkr_8hpp.html" title=" " alt="" coords="1141,603,1347,629"/>
+<area shape="rect" href="../../db/d90/rs232_8hpp.html" title="A simple, write&#45;only driver for the RS232 serial device standard. Code mostly ported from Panix&#45;Archi..." alt="" coords="674,80,857,107"/>
+<area shape="rect" href="../../d3/dee/primes_8hpp.html" title="Prime computation tasks." alt="" coords="1379,80,1557,107"/>
+<area shape="rect" href="../../da/d14/spinner_8hpp.html" title="Kernel spinner task." alt="" coords="1581,80,1763,107"/>
+<area shape="rect" href="../../db/df8/defines_8hpp.html" title="Compiler pre&#45;processor definitions." alt="" coords="1787,80,1938,107"/>
+<area shape="rect" title=" " alt="" coords="607,155,681,181"/>
+<area shape="rect" href="../../d4/d48/_mutex_8hpp.html" title=" " alt="" coords="461,229,606,256"/>
+<area shape="rect" href="../../db/d52/_r_a_i_i_8hpp.html" title="Resource Acquisition Is Initialization mutex. Locks when constructed and unlocks when destructed." alt="" coords="452,155,583,181"/>
+<area shape="rect" title=" " alt="" coords="49,677,124,704"/>
+<area shape="rect" href="../../d9/d4f/_memory_8hpp.html" title="Architecture memory management &amp; paging API." alt="" coords="125,603,259,629"/>
+<area shape="rect" href="../../d6/dc1/_memory_map_8hpp.html" title="Memory map containing a number of Memory sections that describe the physical memory layout." alt="" coords="101,453,291,480"/>
+<area shape="rect" href="../../d0/d91/_memory_section_8hpp.html" title=" " alt="" coords="100,528,311,555"/>
+<area shape="rect" href="../../d7/d1a/framebuffer_8hpp.html" title=" " alt="" coords="417,453,660,480"/>
 </map>
 </div>
 </div>
@@ -185,75 +189,67 @@ Functions</h2></td></tr>
 <hr  />
 <p> | |/ /___ _ _ _ _ ___| | | __|_ _| |_ _ _ _ _ | ' &lt;/ -_) '_| ' \/ -_) | | _|| ' \ _| '_| || | |_|____|_| |_||____|_| |___|_||___|_| _, | |__/ </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d01/_entry_8cpp_source.html#l00081">81</a> of file <a class="el" href="../../d4/d01/_entry_8cpp_source.html">Entry.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;{</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="comment">// Initialize the CPU</span></div>
+<p class="definition">Definition at line <a class="el" href="../../d4/d01/_entry_8cpp_source.html#l00082">82</a> of file <a class="el" href="../../d4/d01/_entry_8cpp_source.html">Entry.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;{</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <a class="code" href="../../d9/d7a/namespace_arch_1_1_c_p_u.html#a56d04c0a3e1b9d49d69c5d8d33875731">Arch::CPU::init</a>();</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="comment">// Initialize devices</span></div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <a class="code" href="../../d9/d7a/namespace_arch_1_1_c_p_u.html#a286a0e21f38c30f57fe5b655da8a3249">Arch::CPU::criticalRegion</a>(devInit);</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="comment">// Initialize info from bootloader</span></div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <a class="code" href="../../df/d70/class_boot_1_1_handoff.html">Boot::Handoff</a> handoff(info, magic);</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <a class="code" href="../../db/d2f/namespace_memory.html#a1662bc00ccf6e1987a9843dae05876af">Memory::init</a>(handoff.MemoryMap());</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <a class="code" href="../../d6/d9b/namespace_graphics.html#afc86122297c8c117c8793ddaf246e4ed">Graphics::init</a>(handoff.FramebufferInfo());</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="comment">// Print the splash screen to show we&#39;ve booted into the kernel properly.</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <a class="code" href="../../d9/d7a/namespace_arch_1_1_c_p_u.html#a286a0e21f38c30f57fe5b655da8a3249">Arch::CPU::criticalRegion</a>(devInit);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <a class="code" href="../../df/d70/class_boot_1_1_handoff.html">Boot::Handoff</a> handoff(info, magic);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <a class="code" href="../../db/d2f/namespace_memory.html#a1662bc00ccf6e1987a9843dae05876af">Memory::init</a>(handoff.MemoryMap());</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <a class="code" href="../../d6/d9b/namespace_graphics.html#afc86122297c8c117c8793ddaf246e4ed">Graphics::init</a>(handoff.FramebufferInfo());</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <a class="code" href="../../d5/d9d/tasks_8cpp.html#a77bbf88fbecf73800c39fa4a887a506a">tasks_init</a>();</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    printSplash();</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="comment">// Print some info to show we did things right</span></div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <a class="code" href="../../d9/dfc/class_time_1_1_time_descriptor.html">Time::TimeDescriptor</a> time;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <a class="code" href="../../d8/db5/namespace_console.html#aa92244db771ad2578967dd9f8fcac912">Console::printf</a>(<a class="code" href="../../d2/daf/stdio_8hpp.html#a9615e001b781d55752b3d44f9bfd5162">DBG_INFO</a> <span class="stringliteral">&quot;UTC: %i/%i/%i %i:%i\n&quot;</span>,</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        time.<a class="code" href="../../d9/dfc/class_time_1_1_time_descriptor.html#aa487aeb2ec1da7eef566bbe7aa41e586">getMonth</a>(),</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        time.<a class="code" href="../../d9/dfc/class_time_1_1_time_descriptor.html#ac6255c71ab45ead9013651398a462838">getDay</a>(),</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        time.<a class="code" href="../../d9/dfc/class_time_1_1_time_descriptor.html#a2b6003db3ba9efed52b9d5e0d80d8163">getYear</a>(),</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        time.<a class="code" href="../../d9/dfc/class_time_1_1_time_descriptor.html#a1e68148dcb442cb001553dfed7fa0924">getHour</a>(),</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        time.<a class="code" href="../../d9/dfc/class_time_1_1_time_descriptor.html#a47d3dbc61ae95503974c3b5f0913f041">getMinutes</a>());</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="comment">// Get the CPU vendor and model data to print</span></div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="../../d9/d7a/namespace_arch_1_1_c_p_u.html#affa86e64ef5d7b52dffad4ffd6448962">vendor</a> = <a class="code" href="../../d9/d7a/namespace_arch_1_1_c_p_u.html#affa86e64ef5d7b52dffad4ffd6448962">Arch::CPU::vendor</a>();</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="../../d9/d7a/namespace_arch_1_1_c_p_u.html#a85dcde91876c9d4f28baf43399cda7f4">model</a> = <a class="code" href="../../d9/d7a/namespace_arch_1_1_c_p_u.html#a85dcde91876c9d4f28baf43399cda7f4">Arch::CPU::model</a>();</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <a class="code" href="../../d8/db5/namespace_console.html#aa92244db771ad2578967dd9f8fcac912">Console::printf</a>(<a class="code" href="../../d2/daf/stdio_8hpp.html#a9615e001b781d55752b3d44f9bfd5162">DBG_INFO</a> <span class="stringliteral">&quot;%s %s\n&quot;</span>, <a class="code" href="../../d9/d7a/namespace_arch_1_1_c_p_u.html#affa86e64ef5d7b52dffad4ffd6448962">vendor</a>, <a class="code" href="../../d9/d7a/namespace_arch_1_1_c_p_u.html#a85dcde91876c9d4f28baf43399cda7f4">model</a>);</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <a class="code" href="../../d7/d75/namespace_r_s232.html#a394b7ac1c601a47c2881a460eb41171a">RS232::printf</a>(<span class="stringliteral">&quot;%s\n%s\n&quot;</span>, <a class="code" href="../../d9/d7a/namespace_arch_1_1_c_p_u.html#affa86e64ef5d7b52dffad4ffd6448962">vendor</a>, <a class="code" href="../../d9/d7a/namespace_arch_1_1_c_p_u.html#a85dcde91876c9d4f28baf43399cda7f4">model</a>);</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <a class="code" href="../../d5/d9d/tasks_8cpp.html#a77bbf88fbecf73800c39fa4a887a506a">tasks_init</a>();</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keyword">struct </span><a class="code" href="../../db/da2/structtask.html">task</a> compute, status, <a class="code" href="../../dc/da3/namespace_apps.html#aaa2be84c7a45c27af1e3bddb75e87a48">spinner</a>;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <a class="code" href="../../d5/d9d/tasks_8cpp.html#a65c4921579a6bad97c037bc8db69fb26">tasks_new</a>(<a class="code" href="../../dc/da3/namespace_apps.html#a123741423e248d0925dba5b3a79a1849">Apps::find_primes</a>, &amp;compute, <a class="code" href="../../d2/dbd/tasks_8hpp.html#a46c7ab5dd73831ee98458db0a68fc4a2aebcd951a6127c3c50a4f197b2b637793">TASK_READY</a>, <span class="stringliteral">&quot;prime_compute&quot;</span>);</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <a class="code" href="../../d5/d9d/tasks_8cpp.html#a65c4921579a6bad97c037bc8db69fb26">tasks_new</a>(<a class="code" href="../../dc/da3/namespace_apps.html#aebbc688ed6a7097af1dd858ca0559d4b">Apps::show_primes</a>, &amp;status, <a class="code" href="../../d2/dbd/tasks_8hpp.html#a46c7ab5dd73831ee98458db0a68fc4a2aebcd951a6127c3c50a4f197b2b637793">TASK_READY</a>, <span class="stringliteral">&quot;prime_display&quot;</span>);</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <a class="code" href="../../d5/d9d/tasks_8cpp.html#a65c4921579a6bad97c037bc8db69fb26">tasks_new</a>(<a class="code" href="../../dc/da3/namespace_apps.html#aaa2be84c7a45c27af1e3bddb75e87a48">Apps::spinner</a>, &amp;<a class="code" href="../../dc/da3/namespace_apps.html#aaa2be84c7a45c27af1e3bddb75e87a48">spinner</a>, <a class="code" href="../../d2/dbd/tasks_8hpp.html#a46c7ab5dd73831ee98458db0a68fc4a2aebcd951a6127c3c50a4f197b2b637793">TASK_READY</a>, <span class="stringliteral">&quot;spinner&quot;</span>);</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="comment">// Now that we&#39;re done make a joyful noise</span></div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    bootTone();</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="comment">// Keep the kernel task alive.</span></div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <a class="code" href="../../d5/d9d/tasks_8cpp.html#ae954d27107c4990313982108234cae5d">tasks_block_current</a>(<a class="code" href="../../d2/dbd/tasks_8hpp.html#a46c7ab5dd73831ee98458db0a68fc4a2a70c1246153ef112b1baa60e2f6e36cd3">TASK_PAUSED</a>);</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <a class="code" href="../../d9/d5d/_panic_8cpp.html#ae22655ba6f328217f1ebd6248ed82727">panic</a>(<span class="stringliteral">&quot;Kernel terminated unexpectedly!&quot;</span>);</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;}</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <a class="code" href="../../d9/dfc/class_time_1_1_time_descriptor.html">Time::TimeDescriptor</a> time;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <a class="code" href="../../d8/db5/namespace_console.html#aa92244db771ad2578967dd9f8fcac912">Console::printf</a>(<span class="stringliteral">&quot;UTC: %i/%i/%i %i:%i\n&quot;</span>,</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        time.<a class="code" href="../../d9/dfc/class_time_1_1_time_descriptor.html#aa487aeb2ec1da7eef566bbe7aa41e586">getMonth</a>(),</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        time.<a class="code" href="../../d9/dfc/class_time_1_1_time_descriptor.html#ac6255c71ab45ead9013651398a462838">getDay</a>(),</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        time.<a class="code" href="../../d9/dfc/class_time_1_1_time_descriptor.html#a2b6003db3ba9efed52b9d5e0d80d8163">getYear</a>(),</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        time.<a class="code" href="../../d9/dfc/class_time_1_1_time_descriptor.html#a1e68148dcb442cb001553dfed7fa0924">getHour</a>(),</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        time.<a class="code" href="../../d9/dfc/class_time_1_1_time_descriptor.html#a47d3dbc61ae95503974c3b5f0913f041">getMinutes</a>());</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <a class="code" href="../../d3/d42/class_logger.html#aa35c9fb8188a9f8e727ffd52d7a5aada">Logger::Info</a>(__func__, <span class="stringliteral">&quot;%s\n%s\n&quot;</span>, <a class="code" href="../../d9/d7a/namespace_arch_1_1_c_p_u.html#affa86e64ef5d7b52dffad4ffd6448962">Arch::CPU::vendor</a>(), <a class="code" href="../../d9/d7a/namespace_arch_1_1_c_p_u.html#a85dcde91876c9d4f28baf43399cda7f4">Arch::CPU::model</a>());</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keyword">struct </span><a class="code" href="../../db/da2/structtask.html">task</a> compute, status, <a class="code" href="../../dc/da3/namespace_apps.html#aaa2be84c7a45c27af1e3bddb75e87a48">spinner</a>;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <a class="code" href="../../d5/d9d/tasks_8cpp.html#a65c4921579a6bad97c037bc8db69fb26">tasks_new</a>(<a class="code" href="../../dc/da3/namespace_apps.html#a123741423e248d0925dba5b3a79a1849">Apps::find_primes</a>, &amp;compute, <a class="code" href="../../d2/dbd/tasks_8hpp.html#a46c7ab5dd73831ee98458db0a68fc4a2aebcd951a6127c3c50a4f197b2b637793">TASK_READY</a>, <span class="stringliteral">&quot;prime_compute&quot;</span>);</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <a class="code" href="../../d5/d9d/tasks_8cpp.html#a65c4921579a6bad97c037bc8db69fb26">tasks_new</a>(<a class="code" href="../../dc/da3/namespace_apps.html#aebbc688ed6a7097af1dd858ca0559d4b">Apps::show_primes</a>, &amp;status, <a class="code" href="../../d2/dbd/tasks_8hpp.html#a46c7ab5dd73831ee98458db0a68fc4a2aebcd951a6127c3c50a4f197b2b637793">TASK_READY</a>, <span class="stringliteral">&quot;prime_display&quot;</span>);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <a class="code" href="../../d5/d9d/tasks_8cpp.html#a65c4921579a6bad97c037bc8db69fb26">tasks_new</a>(<a class="code" href="../../dc/da3/namespace_apps.html#aaa2be84c7a45c27af1e3bddb75e87a48">Apps::spinner</a>, &amp;<a class="code" href="../../dc/da3/namespace_apps.html#aaa2be84c7a45c27af1e3bddb75e87a48">spinner</a>, <a class="code" href="../../d2/dbd/tasks_8hpp.html#a46c7ab5dd73831ee98458db0a68fc4a2aebcd951a6127c3c50a4f197b2b637793">TASK_READY</a>, <span class="stringliteral">&quot;spinner&quot;</span>);</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="comment">// Now that we&#39;re done make a joyful noise</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    bootTone();</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="comment">// Keep the kernel task alive.</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <a class="code" href="../../d5/d9d/tasks_8cpp.html#ae954d27107c4990313982108234cae5d">tasks_block_current</a>(<a class="code" href="../../d2/dbd/tasks_8hpp.html#a46c7ab5dd73831ee98458db0a68fc4a2a70c1246153ef112b1baa60e2f6e36cd3">TASK_PAUSED</a>);</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <a class="code" href="../../d9/d5d/_panic_8cpp.html#ae22655ba6f328217f1ebd6248ed82727">panic</a>(<span class="stringliteral">&quot;Kernel terminated unexpectedly!&quot;</span>);</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclass_boot_1_1_handoff_html"><div class="ttname"><a href="../../df/d70/class_boot_1_1_handoff.html">Boot::Handoff</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d1f/_handoff_8hpp_source.html#l00088">Handoff.hpp:88</a></div></div>
-<div class="ttc" id="atasks_8cpp_html_a77bbf88fbecf73800c39fa4a887a506a"><div class="ttname"><a href="../../d5/d9d/tasks_8cpp.html#a77bbf88fbecf73800c39fa4a887a506a">tasks_init</a></div><div class="ttdeci">void tasks_init()</div><div class="ttdoc">Initializes the kernel task manager.</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d9d/tasks_8cpp_source.html#l00150">tasks.cpp:150</a></div></div>
+<div class="ttc" id="atasks_8cpp_html_a77bbf88fbecf73800c39fa4a887a506a"><div class="ttname"><a href="../../d5/d9d/tasks_8cpp.html#a77bbf88fbecf73800c39fa4a887a506a">tasks_init</a></div><div class="ttdeci">void tasks_init()</div><div class="ttdoc">Initializes the kernel task manager.</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d9d/tasks_8cpp_source.html#l00151">tasks.cpp:151</a></div></div>
 <div class="ttc" id="anamespace_arch_1_1_c_p_u_html_a56d04c0a3e1b9d49d69c5d8d33875731"><div class="ttname"><a href="../../d9/d7a/namespace_arch_1_1_c_p_u.html#a56d04c0a3e1b9d49d69c5d8d33875731">Arch::CPU::init</a></div><div class="ttdeci">void init()</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dc9/_arch_8i686_8cpp_source.html#l00110">Arch.i686.cpp:110</a></div></div>
 <div class="ttc" id="anamespace_arch_1_1_c_p_u_html_a286a0e21f38c30f57fe5b655da8a3249"><div class="ttname"><a href="../../d9/d7a/namespace_arch_1_1_c_p_u.html#a286a0e21f38c30f57fe5b655da8a3249">Arch::CPU::criticalRegion</a></div><div class="ttdeci">void criticalRegion(Function critWork)</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d9c/_arch_8hpp_source.html#l00082">Arch.hpp:82</a></div></div>
 <div class="ttc" id="astructtask_html"><div class="ttname"><a href="../../db/da2/structtask.html">task</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dbd/tasks_8hpp_source.html#l00032">tasks.hpp:32</a></div></div>
 <div class="ttc" id="atasks_8hpp_html_a46c7ab5dd73831ee98458db0a68fc4a2aebcd951a6127c3c50a4f197b2b637793"><div class="ttname"><a href="../../d2/dbd/tasks_8hpp.html#a46c7ab5dd73831ee98458db0a68fc4a2aebcd951a6127c3c50a4f197b2b637793">TASK_READY</a></div><div class="ttdeci">@ TASK_READY</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dbd/tasks_8hpp_source.html#l00022">tasks.hpp:22</a></div></div>
 <div class="ttc" id="anamespace_arch_1_1_c_p_u_html_affa86e64ef5d7b52dffad4ffd6448962"><div class="ttname"><a href="../../d9/d7a/namespace_arch_1_1_c_p_u.html#affa86e64ef5d7b52dffad4ffd6448962">Arch::CPU::vendor</a></div><div class="ttdeci">const char * vendor()</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dc9/_arch_8i686_8cpp_source.html#l00127">Arch.i686.cpp:127</a></div></div>
-<div class="ttc" id="anamespace_memory_html_a1662bc00ccf6e1987a9843dae05876af"><div class="ttname"><a href="../../db/d2f/namespace_memory.html#a1662bc00ccf6e1987a9843dae05876af">Memory::init</a></div><div class="ttdeci">void init(MemoryMap *map)</div><div class="ttdoc">Sets up the environment, page directories etc and enables paging.</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d5e/paging_8cpp_source.html#l00056">paging.cpp:56</a></div></div>
+<div class="ttc" id="anamespace_memory_html_a1662bc00ccf6e1987a9843dae05876af"><div class="ttname"><a href="../../db/d2f/namespace_memory.html#a1662bc00ccf6e1987a9843dae05876af">Memory::init</a></div><div class="ttdeci">void init(MemoryMap *map)</div><div class="ttdoc">Sets up the environment, page directories etc and enables paging.</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d5e/paging_8cpp_source.html#l00057">paging.cpp:57</a></div></div>
 <div class="ttc" id="anamespace_apps_html_aebbc688ed6a7097af1dd858ca0559d4b"><div class="ttname"><a href="../../dc/da3/namespace_apps.html#aebbc688ed6a7097af1dd858ca0559d4b">Apps::show_primes</a></div><div class="ttdeci">void show_primes(void)</div><div class="ttdoc">Starts a task to display number of primes found by find_primes.</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dde/primes_8cpp_source.html#l00037">primes.cpp:37</a></div></div>
 <div class="ttc" id="aclass_time_1_1_time_descriptor_html_a1e68148dcb442cb001553dfed7fa0924"><div class="ttname"><a href="../../d9/dfc/class_time_1_1_time_descriptor.html#a1e68148dcb442cb001553dfed7fa0924">Time::TimeDescriptor::getHour</a></div><div class="ttdeci">int getHour()</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d99/time_8hpp_source.html#l00028">time.hpp:28</a></div></div>
-<div class="ttc" id="astdio_8hpp_html_a9615e001b781d55752b3d44f9bfd5162"><div class="ttname"><a href="../../d2/daf/stdio_8hpp.html#a9615e001b781d55752b3d44f9bfd5162">DBG_INFO</a></div><div class="ttdeci">#define DBG_INFO</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/daf/stdio_8hpp_source.html#l00019">stdio.hpp:19</a></div></div>
-<div class="ttc" id="atasks_8cpp_html_a65c4921579a6bad97c037bc8db69fb26"><div class="ttname"><a href="../../d5/d9d/tasks_8cpp.html#a65c4921579a6bad97c037bc8db69fb26">tasks_new</a></div><div class="ttdeci">struct task * tasks_new(void(*entry)(void), struct task *storage, task_state state, const char *name)</div><div class="ttdoc">Creates a new kernel task with a provided entry point, register storage struct, and task state struct...</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d9d/tasks_8cpp_source.html#l00288">tasks.cpp:288</a></div></div>
+<div class="ttc" id="atasks_8cpp_html_a65c4921579a6bad97c037bc8db69fb26"><div class="ttname"><a href="../../d5/d9d/tasks_8cpp.html#a65c4921579a6bad97c037bc8db69fb26">tasks_new</a></div><div class="ttdeci">struct task * tasks_new(void(*entry)(void), struct task *storage, task_state state, const char *name)</div><div class="ttdoc">Creates a new kernel task with a provided entry point, register storage struct, and task state struct...</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d9d/tasks_8cpp_source.html#l00289">tasks.cpp:289</a></div></div>
 <div class="ttc" id="aclass_time_1_1_time_descriptor_html"><div class="ttname"><a href="../../d9/dfc/class_time_1_1_time_descriptor.html">Time::TimeDescriptor</a></div><div class="ttdef"><b>Definition:</b> <a href="../../de/d99/time_8hpp_source.html#l00019">time.hpp:19</a></div></div>
 <div class="ttc" id="anamespace_apps_html_a123741423e248d0925dba5b3a79a1849"><div class="ttname"><a href="../../dc/da3/namespace_apps.html#a123741423e248d0925dba5b3a79a1849">Apps::find_primes</a></div><div class="ttdeci">void find_primes(void)</div><div class="ttdoc">Starts a task to find prime numbers.</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dde/primes_8cpp_source.html#l00027">primes.cpp:27</a></div></div>
+<div class="ttc" id="aclass_logger_html_aa35c9fb8188a9f8e727ffd52d7a5aada"><div class="ttname"><a href="../../d3/d42/class_logger.html#aa35c9fb8188a9f8e727ffd52d7a5aada">Logger::Info</a></div><div class="ttdeci">static void Info(const char *tag, const char *fmt,...)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d27/_logger_8cpp_source.html#l00081">Logger.cpp:81</a></div></div>
 <div class="ttc" id="anamespace_apps_html_aaa2be84c7a45c27af1e3bddb75e87a48"><div class="ttname"><a href="../../dc/da3/namespace_apps.html#aaa2be84c7a45c27af1e3bddb75e87a48">Apps::spinner</a></div><div class="ttdeci">void spinner(void)</div><div class="ttdoc">Starts a spinner in an infinite loop.</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d57/spinner_8cpp_source.html#l00016">spinner.cpp:16</a></div></div>
 <div class="ttc" id="aclass_time_1_1_time_descriptor_html_a47d3dbc61ae95503974c3b5f0913f041"><div class="ttname"><a href="../../d9/dfc/class_time_1_1_time_descriptor.html#a47d3dbc61ae95503974c3b5f0913f041">Time::TimeDescriptor::getMinutes</a></div><div class="ttdeci">int getMinutes()</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d99/time_8hpp_source.html#l00027">time.hpp:27</a></div></div>
 <div class="ttc" id="atasks_8hpp_html_a46c7ab5dd73831ee98458db0a68fc4a2a70c1246153ef112b1baa60e2f6e36cd3"><div class="ttname"><a href="../../d2/dbd/tasks_8hpp.html#a46c7ab5dd73831ee98458db0a68fc4a2a70c1246153ef112b1baa60e2f6e36cd3">TASK_PAUSED</a></div><div class="ttdeci">@ TASK_PAUSED</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dbd/tasks_8hpp_source.html#l00026">tasks.hpp:26</a></div></div>
 <div class="ttc" id="aclass_time_1_1_time_descriptor_html_ac6255c71ab45ead9013651398a462838"><div class="ttname"><a href="../../d9/dfc/class_time_1_1_time_descriptor.html#ac6255c71ab45ead9013651398a462838">Time::TimeDescriptor::getDay</a></div><div class="ttdeci">int getDay()</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d99/time_8hpp_source.html#l00029">time.hpp:29</a></div></div>
 <div class="ttc" id="aclass_time_1_1_time_descriptor_html_a2b6003db3ba9efed52b9d5e0d80d8163"><div class="ttname"><a href="../../d9/dfc/class_time_1_1_time_descriptor.html#a2b6003db3ba9efed52b9d5e0d80d8163">Time::TimeDescriptor::getYear</a></div><div class="ttdeci">int getYear()</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d99/time_8hpp_source.html#l00031">time.hpp:31</a></div></div>
-<div class="ttc" id="anamespace_console_html_aa92244db771ad2578967dd9f8fcac912"><div class="ttname"><a href="../../d8/db5/namespace_console.html#aa92244db771ad2578967dd9f8fcac912">Console::printf</a></div><div class="ttdeci">int printf(const char *fmt,...)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dda/console_8cpp_source.html#l00272">console.cpp:272</a></div></div>
+<div class="ttc" id="anamespace_console_html_aa92244db771ad2578967dd9f8fcac912"><div class="ttname"><a href="../../d8/db5/namespace_console.html#aa92244db771ad2578967dd9f8fcac912">Console::printf</a></div><div class="ttdeci">int printf(const char *fmt,...)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dda/console_8cpp_source.html#l00273">console.cpp:273</a></div></div>
 <div class="ttc" id="anamespace_arch_1_1_c_p_u_html_a85dcde91876c9d4f28baf43399cda7f4"><div class="ttname"><a href="../../d9/d7a/namespace_arch_1_1_c_p_u.html#a85dcde91876c9d4f28baf43399cda7f4">Arch::CPU::model</a></div><div class="ttdeci">const char * model()</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dc9/_arch_8i686_8cpp_source.html#l00134">Arch.i686.cpp:134</a></div></div>
 <div class="ttc" id="aclass_time_1_1_time_descriptor_html_aa487aeb2ec1da7eef566bbe7aa41e586"><div class="ttname"><a href="../../d9/dfc/class_time_1_1_time_descriptor.html#aa487aeb2ec1da7eef566bbe7aa41e586">Time::TimeDescriptor::getMonth</a></div><div class="ttdeci">int getMonth()</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d99/time_8hpp_source.html#l00030">time.hpp:30</a></div></div>
 <div class="ttc" id="a_panic_8cpp_html_ae22655ba6f328217f1ebd6248ed82727"><div class="ttname"><a href="../../d9/d5d/_panic_8cpp.html#ae22655ba6f328217f1ebd6248ed82727">panic</a></div><div class="ttdeci">void panic(const char *msg)</div><div class="ttdoc">Halt the system and print the provided message on the panic screen.</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d5d/_panic_8cpp_source.html#l00082">Panic.cpp:82</a></div></div>
-<div class="ttc" id="atasks_8cpp_html_ae954d27107c4990313982108234cae5d"><div class="ttname"><a href="../../d5/d9d/tasks_8cpp.html#ae954d27107c4990313982108234cae5d">tasks_block_current</a></div><div class="ttdeci">void tasks_block_current(task_state reason)</div><div class="ttdoc">Blocks the current task.</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d9d/tasks_8cpp_source.html#l00421">tasks.cpp:421</a></div></div>
-<div class="ttc" id="anamespace_r_s232_html_a394b7ac1c601a47c2881a460eb41171a"><div class="ttname"><a href="../../d7/d75/namespace_r_s232.html#a394b7ac1c601a47c2881a460eb41171a">RS232::printf</a></div><div class="ttdeci">int printf(const char *format,...)</div><div class="ttdoc">Prints a formatted string to serial output.</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dc7/rs232_8cpp_source.html#l00080">rs232.cpp:80</a></div></div>
-<div class="ttc" id="anamespace_graphics_html_afc86122297c8c117c8793ddaf246e4ed"><div class="ttname"><a href="../../d6/d9b/namespace_graphics.html#afc86122297c8c117c8793ddaf246e4ed">Graphics::init</a></div><div class="ttdeci">void init(Framebuffer *fb)</div><div class="ttdoc">Initializes the framebuffer (if available)</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d99/graphics_8cpp_source.html#l00031">graphics.cpp:31</a></div></div>
+<div class="ttc" id="atasks_8cpp_html_ae954d27107c4990313982108234cae5d"><div class="ttname"><a href="../../d5/d9d/tasks_8cpp.html#ae954d27107c4990313982108234cae5d">tasks_block_current</a></div><div class="ttdeci">void tasks_block_current(task_state reason)</div><div class="ttdoc">Blocks the current task.</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d9d/tasks_8cpp_source.html#l00422">tasks.cpp:422</a></div></div>
+<div class="ttc" id="anamespace_graphics_html_afc86122297c8c117c8793ddaf246e4ed"><div class="ttname"><a href="../../d6/d9b/namespace_graphics.html#afc86122297c8c117c8793ddaf246e4ed">Graphics::init</a></div><div class="ttdeci">void init(Framebuffer *fb)</div><div class="ttdoc">Initializes the framebuffer (if available)</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d99/graphics_8cpp_source.html#l00032">graphics.cpp:32</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

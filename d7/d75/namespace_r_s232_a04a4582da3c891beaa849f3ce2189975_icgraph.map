@@ -1,7 +1,5 @@
 <map id="RS232::vprintf" name="RS232::vprintf">
-<area shape="rect" id="node1" title="Prints a formatted string to serial output using a va_list of arguments." alt="" coords="339,56,453,83"/>
-<area shape="rect" id="node2" href="$d7/d75/namespace_r_s232.html#a394b7ac1c601a47c2881a460eb41171a" title="Prints a formatted string to serial output." alt="" coords="184,56,291,83"/>
-<area shape="rect" id="node3" href="$d7/d75/namespace_r_s232.html#acbd0855fa0862424053ed439eb77e6b3" title="Activates the RS232 serial driver." alt="" coords="25,5,117,32"/>
-<area shape="rect" id="node4" href="$de/d66/namespace_stack.html#ab836051c392dd045b3bdfe4124ce04a8" title=" " alt="" coords="5,56,136,83"/>
-<area shape="rect" id="node5" href="$d2/dbd/tasks_8hpp.html#ac7a1f4f04e6d7bdbc47de59c05a61262" title="Exits the current task." alt="" coords="26,107,115,133"/>
+<area shape="rect" id="node1" title="Prints a formatted string to serial output using a va_list of arguments." alt="" coords="160,31,275,57"/>
+<area shape="rect" id="node2" href="$d7/d75/namespace_r_s232.html#acbd0855fa0862424053ed439eb77e6b3" title="Activates the RS232 serial driver." alt="" coords="13,5,105,32"/>
+<area shape="rect" id="node3" href="$d7/d75/namespace_r_s232.html#a394b7ac1c601a47c2881a460eb41171a" title="Prints a formatted string to serial output." alt="" coords="5,56,112,83"/>
 </map>

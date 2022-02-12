@@ -52,6 +52,10 @@ var files_dup =
     ] ],
     [ "Loader.cpp", "d1/d51/_loader_8cpp.html", "d1/d51/_loader_8cpp" ],
     [ "Loader.hpp", "dc/dc7/_loader_8hpp.html", "dc/dc7/_loader_8hpp" ],
+    [ "Logger.cpp", "de/d27/_logger_8cpp.html", "de/d27/_logger_8cpp" ],
+    [ "Logger.hpp", "d3/de3/_logger_8hpp.html", [
+      [ "Logger", "d3/d42/class_logger.html", "d3/d42/class_logger" ]
+    ] ],
     [ "Memory.hpp", "d9/d4f/_memory_8hpp.html", "d9/d4f/_memory_8hpp" ],
     [ "Memory.i686.hpp", "d7/d42/_memory_8i686_8hpp.html", "d7/d42/_memory_8i686_8hpp" ],
     [ "MemoryMap.hpp", "d6/dc1/_memory_map_8hpp.html", [

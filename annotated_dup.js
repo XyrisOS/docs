@@ -18,6 +18,7 @@ var annotated_dup =
     [ "Frame", "d5/d15/struct_frame.html", "d5/d15/struct_frame" ],
     [ "GDTR", "da/d33/struct_g_d_t_r.html", "da/d33/struct_g_d_t_r" ],
     [ "IDTR", "dc/d6a/struct_i_d_t_r.html", "dc/d6a/struct_i_d_t_r" ],
+    [ "Logger", "d3/d42/class_logger.html", "d3/d42/class_logger" ],
     [ "Mutex", "d4/de8/class_mutex.html", "d4/de8/class_mutex" ],
     [ "Page", "df/d9b/struct_page.html", "df/d9b/struct_page" ],
     [ "RAIIMutex", "d5/d9b/class_r_a_i_i_mutex.html", "d5/d9b/class_r_a_i_i_mutex" ],

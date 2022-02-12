@@ -1,12 +1,22 @@
 <map id="Graphics::init" name="Graphics::init">
-<area shape="rect" id="node1" title="Initializes the framebuffer (if available)" alt="" coords="5,173,113,199"/>
-<area shape="rect" id="node2" href="$d0/dcb/class_graphics_1_1_framebuffer.html#a3e4ac4d4ddcf0d27cc22f6494aba3ae7" title=" " alt="" coords="197,5,363,47"/>
-<area shape="rect" id="node3" href="$d0/dcb/class_graphics_1_1_framebuffer.html#a1606867ad41e312ab6ca584da8de85ea" title=" " alt="" coords="197,71,363,112"/>
-<area shape="rect" id="node4" href="$d0/dcb/class_graphics_1_1_framebuffer.html#aeedf42e466d9ecd793a424cf63430f83" title=" " alt="" coords="197,136,363,177"/>
-<area shape="rect" id="node5" href="$da/d45/heap_8hpp.html#a1c8580582aae58105f16108d4ec89e9a" title=" " alt="" coords="247,202,313,229"/>
-<area shape="rect" id="node6" href="$db/d2f/namespace_memory.html#a5035c7465eb342a95802a5ec772bebc1" title="Map an address range into the kernel virtual address space." alt="" coords="161,253,399,279"/>
-<area shape="rect" id="node10" href="$d5/d24/string_8cpp.html#a370712322c794e949c996946f2283ea8" title=" " alt="" coords="241,303,319,330"/>
-<area shape="rect" id="node7" href="$d8/d7f/class_memory_1_1_section.html#aeacf47ee881cc66130ddcac9a2e51ac2" title=" " alt="" coords="453,202,624,229"/>
-<area shape="rect" id="node8" href="$d8/d7f/class_memory_1_1_section.html#a9145bcd59832a378ca6213bc1701b393" title=" " alt="" coords="457,253,620,279"/>
-<area shape="rect" id="node9" href="$db/d2f/namespace_memory.html#a314238689c58e6a280017f389b640c29" title="Map a page into the kernel address space." alt="" coords="447,303,631,330"/>
+<area shape="rect" id="node1" title="Initializes the framebuffer (if available)" alt="" coords="5,245,113,272"/>
+<area shape="rect" id="node2" href="$d3/d42/class_logger.html#a8fbe47d81e3fb74576ea6c384b3313a5" title=" " alt="" coords="222,56,338,83"/>
+<area shape="rect" id="node12" href="$d0/dcb/class_graphics_1_1_framebuffer.html#a3e4ac4d4ddcf0d27cc22f6494aba3ae7" title=" " alt="" coords="197,107,363,149"/>
+<area shape="rect" id="node13" href="$d0/dcb/class_graphics_1_1_framebuffer.html#a1606867ad41e312ab6ca584da8de85ea" title=" " alt="" coords="197,173,363,214"/>
+<area shape="rect" id="node14" href="$d0/dcb/class_graphics_1_1_framebuffer.html#aeedf42e466d9ecd793a424cf63430f83" title=" " alt="" coords="197,238,363,279"/>
+<area shape="rect" id="node15" href="$da/d45/heap_8hpp.html#a1c8580582aae58105f16108d4ec89e9a" title=" " alt="" coords="247,304,313,331"/>
+<area shape="rect" id="node16" href="$db/d2f/namespace_memory.html#a5035c7465eb342a95802a5ec772bebc1" title="Map an address range into the kernel virtual address space." alt="" coords="161,355,399,381"/>
+<area shape="rect" id="node20" href="$d5/d24/string_8cpp.html#a370712322c794e949c996946f2283ea8" title=" " alt="" coords="241,405,319,432"/>
+<area shape="rect" id="node3" href="$d3/d42/class_logger.html#a9037a21510052c0bcc285a5cea5daa80" title=" " alt="" coords="699,5,829,32"/>
+<area shape="rect" id="node4" href="$d3/d42/class_logger.html#a08420927c63b63e913e1eea1ffa1c9f8" title=" " alt="" coords="897,107,992,133"/>
+<area shape="rect" id="node5" href="$d3/d42/class_logger.html#af7ace344d0d305c55bc2f8ad4119b142" title=" " alt="" coords="469,157,609,184"/>
+<area shape="rect" id="node6" href="$d4/d64/printf_8cpp.html#a4a8483991af81c2a4ae0025f4d2fb5e7" title="Sends formatted output to a string." alt="" coords="728,259,800,285"/>
+<area shape="rect" id="node10" href="$d3/d42/class_logger.html#a58b91294bd049d4d34d33bd2a38d5346" title=" " alt="" coords="685,107,843,133"/>
+<area shape="rect" id="node11" href="$d3/d42/class_logger.html#adaa59e8614dbdc87605d2f078ee40931" title=" " alt="" coords="679,157,849,184"/>
+<area shape="rect" id="node7" href="$d4/d64/printf_8cpp.html#a626c6babba88d2b34beacfb116a71fb8" title="Sends formatted output to a string using an argument list." alt="" coords="905,259,985,285"/>
+<area shape="rect" id="node8" href="$d4/d64/printf_8cpp.html#a85a2fff114bf015eba22a1dc163bf1ba" title="Perform all printf operations on the format string using the provided argument list and uses the call..." alt="" coords="1040,259,1145,285"/>
+<area shape="rect" id="node9" href="$d5/d24/string_8cpp.html#a2dee044e4e667b5b789b493abd21cfa4" title="Returns the length of a string." alt="" coords="1193,259,1252,285"/>
+<area shape="rect" id="node17" href="$d8/d7f/class_memory_1_1_section.html#aeacf47ee881cc66130ddcac9a2e51ac2" title=" " alt="" coords="453,304,624,331"/>
+<area shape="rect" id="node18" href="$d8/d7f/class_memory_1_1_section.html#a9145bcd59832a378ca6213bc1701b393" title=" " alt="" coords="457,355,620,381"/>
+<area shape="rect" id="node19" href="$db/d2f/namespace_memory.html#a314238689c58e6a280017f389b640c29" title="Map a page into the kernel address space." alt="" coords="447,405,631,432"/>
 </map>

@@ -47,7 +47,10 @@ var NAVTREE =
       [ "Data Fields", "functions.html", [
         [ "All", "functions.html", "functions_dup" ],
         [ "Functions", "functions_func.html", null ],
-        [ "Variables", "functions_vars.html", "functions_vars" ]
+        [ "Variables", "functions_vars.html", "functions_vars" ],
+        [ "Typedefs", "functions_type.html", null ],
+        [ "Enumerations", "functions_enum.html", null ],
+        [ "Enumerator", "functions_eval.html", null ]
       ] ]
     ] ],
     [ "Files", "files.html", [
@@ -68,11 +71,11 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"d4/d07/union_g_d_t_1_1_limit.html#ad027767f104f868b9225b4278644cf05",
-"d5/d80/class_boot_1_1_handoff_r_s_d_p_descriptor.html#ab67c84072cfd6aea54132640258182fc",
-"d8/d9f/ports_8hpp.html",
-"db/d52/_r_a_i_i_8hpp.html#a2ff7614fefe0a0947da1cd572eb67a4b",
-"df/d94/structregisters.html#aaeedf83509826a731e436025aeb53576"
+"d3/dd6/framebuffer_8cpp.html#af129f7076fdd0d3a4f109a652a0ba8ec",
+"d5/d3e/struct_arch_1_1stackframe.html#a5d2c4143be1bc33144bc6edf053ab228",
+"d8/d7f/class_memory_1_1_section.html",
+"da/d4c/_mutex_8cpp.html",
+"df/d70/class_boot_1_1_handoff.html#ad45246d4d4cff2a5cdc35e8471db2a59"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

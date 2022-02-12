@@ -1,0 +1,12 @@
+<map id="Logger::Warning" name="Logger::Warning">
+<area shape="rect" id="node1" title=" " alt="" coords="5,56,132,83"/>
+<area shape="rect" id="node2" href="$d3/d42/class_logger.html#a9037a21510052c0bcc285a5cea5daa80" title=" " alt="" coords="185,5,315,32"/>
+<area shape="rect" id="node3" href="$d3/d42/class_logger.html#a08420927c63b63e913e1eea1ffa1c9f8" title=" " alt="" coords="587,107,681,133"/>
+<area shape="rect" id="node4" href="$d3/d42/class_logger.html#af7ace344d0d305c55bc2f8ad4119b142" title=" " alt="" coords="180,157,320,184"/>
+<area shape="rect" id="node5" href="$d4/d64/printf_8cpp.html#a4a8483991af81c2a4ae0025f4d2fb5e7" title="Sends formatted output to a string." alt="" coords="417,259,489,285"/>
+<area shape="rect" id="node9" href="$d3/d42/class_logger.html#a58b91294bd049d4d34d33bd2a38d5346" title=" " alt="" coords="374,107,533,133"/>
+<area shape="rect" id="node10" href="$d3/d42/class_logger.html#adaa59e8614dbdc87605d2f078ee40931" title=" " alt="" coords="368,157,539,184"/>
+<area shape="rect" id="node6" href="$d4/d64/printf_8cpp.html#a626c6babba88d2b34beacfb116a71fb8" title="Sends formatted output to a string using an argument list." alt="" coords="594,259,674,285"/>
+<area shape="rect" id="node7" href="$d4/d64/printf_8cpp.html#a85a2fff114bf015eba22a1dc163bf1ba" title="Perform all printf operations on the format string using the provided argument list and uses the call..." alt="" coords="729,259,835,285"/>
+<area shape="rect" id="node8" href="$d5/d24/string_8cpp.html#a2dee044e4e667b5b789b493abd21cfa4" title="Returns the length of a string." alt="" coords="883,259,941,285"/>
+</map>

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['printf_5fcb_5ffnptr_5ft_1530',['printf_cb_fnptr_t',['../d2/daf/stdio_8hpp.html#a18adc43d71a61a1556a8dfd7ad2a918e',1,'stdio.hpp']]]
+  ['logwriter_1584',['LogWriter',['../d3/d42/class_logger.html#a2df4a6a7677d780e842bdc8af9551870',1,'Logger']]]
 ];
